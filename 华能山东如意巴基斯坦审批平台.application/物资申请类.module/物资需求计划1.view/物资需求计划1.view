@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e7-fb8d-14acaa46-b36b-a111d0b35b26">
+  <name>物资需求计划1</name>
+  <parentId>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2019-04-02T18:54:13.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef13-4f441bb5-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef13-4f43f4a4-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <sqlFilterScript><![CDATA[var bh = getItemValue("编号");
+var jhmc = getItemValue("计划名称");
+var kmbh = getItemValue("科目编号");
+var jhjeq = getItemValue("计划金额起");
+var jhjez = getItemValue("计划金额止");
+var sqr = getItemValue("申请人");
+var tbrqq = getItemValue("填报日期起");
+var tbrqz = getItemValue("填报日期止");
+var xyriq = getItemValue("需用日期起");
+var xyrqz = getItemValue("需用日期止");
+var km = getItemValue("科目");
+
+var w = "";
+
+if(isNotNull(bh)){
+	w +=" and ITEM_编号 like '%"+bh+"%'";
+}
+if(isNotNull(jhmc)){
+	w +=" and ITEM_需用计划名称 like '%"+jhmc+"%'";
+}
+if(isNotNull(kmbh)){
+	w +=" and ITEM_计划需用科目编号 like '"+kmbh+"%'";
+}
+//println(jhjeq==0)
+if(isNotNull(jhjeq)&&jhjeq!=0){
+	w +=" and ITEM_计划金额 >= "+jhjeq+"";
+}
+if(isNotNull(jhjez)&&jhjez!=0){
+	w +=" and ITEM_计划金额 <= "+jhjez+"";
+}
+if(isNotNull(sqr)){
+	w +=" and ITEM_编制人 like '%"+sqr+"%'";
+}
+if(isNotNull(tbrqq)){
+	w +=" and to_char(ITEM_填报日期,'yyyy-mm-dd') >= '"+tbrqq+"'";
+}
+if(isNotNull(tbrqz)){
+	w +=" and to_char(ITEM_填报日期,'yyyy-mm-dd') <= '"+tbrqz+"'";
+}
+if(isNotNull(xyriq)){
+	w +=" and to_char(ITEM_需用日期,'yyyy-mm-dd') >= '"+xyriq+"'";
+}
+
+if(isNotNull(xyrqz)){
+	w +=" and to_char(ITEM_需用日期,'yyyy-mm-dd') <= '"+xyrqz+"'";
+}
+if(isNotNull(km)){
+	w +=" and ITEM_计划需用科目 like '%"+km+"%'";
+}
+
+var sql = "select * from  TLK_物资需求计划  where 1=1 "+w +" order by ITEM_编号";
+//println(sql)
+sql;]]></sqlFilterScript>
+  <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'编号'},{field:'需用计划名称',operator:'LIKE',type:'03',match:'计划名称'},{field:'计划需用科目编号',operator:'LIKE',type:'03',match:'科目编号'},{field:'计划金额',operator:'>=',type:'03',match:'计划金额起'},{field:'计划金额',operator:'<=',type:'03',match:'计划金额止'},{field:'编制人',operator:'LIKE',type:'03',match:'申请人'},{field:'填报日期',operator:'>=',type:'03',match:'填报日期起'},{field:'填报日期',operator:'<=',type:'03',match:'填报日期止'},{field:'需用日期',operator:'>=',type:'03',match:'需用日期起'},{field:'需用日期',operator:'<=',type:'03',match:'需用日期止'},{field:'计划需用科目',operator:'LIKE',type:'03',match:'科目'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

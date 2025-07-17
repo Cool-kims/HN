@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e7-96c7-4a2caf05-91e3-93547e344c44">
+  <name>付汇单 Remittance Application Form</name>
+  <parentId>__11e7-ef14-67df960b-8f99-af63cc0890b3</parentId>
+  <type>43</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[var value = false;
+var doc = getCurrentDocument();
+var fkfs=doc.getItemValueAsString("付款方式");//付款方式
+if(fkfs!=""){
+if("银行付汇Bank Pay" !=fkfs){
+value = true;
+}	
+}
+value;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>5</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-67df960b-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[#include "getFormIds";
+#include "jumpURL";
+jumpFHD("FKSQDID","付款申请表");
+]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[]]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>2</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList>__11e7-ef14-67dab4d5-8f99-af63cc0890b3|11e7-ef14-67d9ca67-8f99-af63cc0890b3</targetList>
+  <processPreview>false</processPreview>
+</activity>

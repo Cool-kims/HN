@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11eb-5661-671fdd91-a8f8-fb49a99bba0b">
+  <name>出差申请表领导_S</name>
+  <parentId>11e7-ef14-ff999939-8f99-af63cc0890b3</parentId>
+  <sortId>161062619068900000</sortId>
+  <templatecontext><![CDATA[<p>编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-5de1-ebec0b7d-b989-097caeda21f3" text="text" name="编号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; 编制人：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-5de2-0f7a5ee8-b989-097caeda21f3" text="text" name="编制人" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; 日期：<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e8-5de2-24a8e313-b989-097caeda21f3" type="text" fieldtype="VALUE_TYPE_DATE" name="日期" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" />&nbsp; 出差人员：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ec-7385-c428df1d-a3ab-01b9fd03cc72" text="text" name="出差人员" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>3</version>
+  <mappingStr><![CDATA[{"formName":"出差申请表领导_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

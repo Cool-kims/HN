@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-b9d9-2b754c91-9c70-0ba95739f67e">
+  <name>上月等待验收计划 Awaiting acceptance plan last month</name>
+  <parentId>11e9-7a26-62fa0931-9820-539e9af1e136</parentId>
+  <description>上月等待验收计划 Awaiting acceptance plan last month</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e9-7a26-62fa0931-9820-539e9af1e136</superior>
+  <linkName>上月等待验收计划 Awaiting acceptance plan last month</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e9-7a26-62f43cbe-9820-539e9af1e136</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-b9d8-4e5441d6-9c70-0ba95739f67e]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>true</showtotalrow>
+</resourceVO>

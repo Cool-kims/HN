@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11ee-3ddc-34c5c6aa-b0b1-7d3966741e05">
+  <name>安反措计划实施验收单_4</name>
+  <parentId>11e7-ef13-4f455447-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2023-08-18T20:30:48.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11eb-e82b-8559936e-ba63-77a12763f65b</relatedForm>
+  <permissionType>public</permissionType>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

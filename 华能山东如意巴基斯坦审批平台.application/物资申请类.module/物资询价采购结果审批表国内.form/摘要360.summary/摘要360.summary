@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-b168-c3028a7f-b204-9943e185f520">
+  <name>摘要360</name>
+  <parentId>__11ea-b158-191d4b99-b204-9943e185f520</parentId>
+  <title>摘要360</title>
+  <type>00</type>
+  <formId>__11ea-b158-191d4b99-b204-9943e185f520</formId>
+  <fieldNames>采购计划编号;物资名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

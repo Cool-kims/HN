@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9319-9faed275-8eac-4b89bdea6b09">
+  <name>人资摘要2</name>
+  <parentId>__11e7-ef13-4f4442ca-8f99-af63cc0890b3</parentId>
+  <title>人资摘要2</title>
+  <type>00</type>
+  <formId>__11e7-ef13-4f4442ca-8f99-af63cc0890b3</formId>
+  <fieldNames>姓名;职位岗位</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

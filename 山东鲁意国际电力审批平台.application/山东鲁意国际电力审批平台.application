@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application id="11e7-ef12-415bbbbf-8f99-af63cc0890b3">
+  <name>山东鲁意国际电力审批平台</name>
+  <description>山东鲁意国际电力有限公司</description>
+  <type>0</type>
+  <orderNo>3</orderNo>
+  <datasourceId>11e7-ef12-6b6832e4-8f99-af63cc0890b3</datasourceId>
+  <activated>true</activated>
+  <category></category>
+  <brief></brief>
+  <ico>{"icon":"/uploads/resource/image/app_img.png","icontype":"img"}</ico>
+</application>

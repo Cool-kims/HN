@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e7-ef14-ffab2540-8f99-af63cc0890b3">
+  <name>内招用餐申请单</name>
+  <parentId>11e7-ef14-ff9be342-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2016-12-15T10:57:46.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef14-ff9ccdad-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef14-ff9db81a-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'来宾单位',operator:'LIKE',type:'03',match:'来宾单位'},{field:'日期',operator:'LIKE',type:'03',match:'日期'},{field:'编制人',operator:'LIKE',type:'03',match:'编制人'},{field:'编制日期',operator:'=',type:'03',match:'编制日期'}]]]></filterCondition>
+  <authorityCondition>[{_authFields:'author',_authFieldScope:'itself'}]</authorityCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

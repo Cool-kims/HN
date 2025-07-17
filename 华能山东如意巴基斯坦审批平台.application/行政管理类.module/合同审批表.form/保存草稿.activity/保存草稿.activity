@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e5-d8b9-711159dc-bb38-59181a4816d4">
+  <name>保存草稿</name>
+  <parentId>__11e7-ef13-4f3d3d81-8f99-af63cc0890b3</parentId>
+  <type>19</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[var booleans=true;
+var bzr=getItemValueAsString("编制人");
+var dlr=getWebUser().getName();
+var roles=getWebUser().getRoles();
+for(var iter=roles.iterator();roles!=null&&iter.hasNext();){
+	var role=iter.next();
+	var rolename=role.getName();
+	if("系统管理员"==(rolename)){  //分管领导是审批人的角色
+		booleans=false;
+	}
+}
+booleans;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef13-4f3d3d81-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

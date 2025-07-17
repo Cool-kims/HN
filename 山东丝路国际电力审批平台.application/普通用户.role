@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e7-ef16-8948390e-8f99-af63cc0890b3">
+  <name>普通用户</name>
+  <parentId>11e7-ef12-74ef29ec-8f99-af63cc0890b3</parentId>
+  <status>1</status>
+  <defaultRole>true</defaultRole>
+  <sortId>151454063177100000</sortId>
+  <orderNo>0</orderNo>
+  <roleNo>00</roleNo>
+</role>

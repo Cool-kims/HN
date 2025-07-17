@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-56a6-1538bde0-8c7f-45024b0e47eb">
+  <name>采购合同审批单摘要</name>
+  <parentId>__11e7-ef16-89421e87-8f99-af63cc0890b3</parentId>
+  <title>采购合同审批单摘要</title>
+  <type>00</type>
+  <formId>__11e7-ef16-89421e87-8f99-af63cc0890b3</formId>
+  <fieldNames>合同名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

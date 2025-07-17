@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ea-945c-0fe5509d-bcf0-133beec42517">
+  <name>废旧物资修复申请及鉴定表</name>
+  <parentId>11e7-ef13-4f49725e-8f99-af63cc0890b3</parentId>
+  <description>废旧物资修复申请及鉴定表Application and appraisal form for the recovery of waste materials</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f49725e-8f99-af63cc0890b3</superior>
+  <linkName>废旧物资修复申请及鉴定表Application and appraisal form for the recovery of waste materials</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f455447-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ea-b47a-41f7a5ce-b204-9943e185f520]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>7</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

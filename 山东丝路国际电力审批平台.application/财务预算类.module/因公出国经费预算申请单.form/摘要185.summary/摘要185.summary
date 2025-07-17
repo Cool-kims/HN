@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9413-39fc859d-8eac-4b89bdea6b09">
+  <name>摘要185</name>
+  <parentId>__11e7-ef16-8939446e-8f99-af63cc0890b3</parentId>
+  <title>摘要185</title>
+  <type>00</type>
+  <formId>__11e7-ef16-8939446e-8f99-af63cc0890b3</formId>
+  <fieldNames>团组名称;经办人员</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

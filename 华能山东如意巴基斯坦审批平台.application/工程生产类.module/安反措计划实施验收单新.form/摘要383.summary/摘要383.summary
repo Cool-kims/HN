@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ee-7dd8-18b6e081-8040-4156b014b596">
+  <name>摘要383</name>
+  <parentId>__11ee-7dd7-24c90bd7-8040-4156b014b596</parentId>
+  <title>摘要383</title>
+  <type>00</type>
+  <formId>__11ee-7dd7-24c90bd7-8040-4156b014b596</formId>
+  <fieldNames>编号;计划项目</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

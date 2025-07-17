@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-92f9-ba188097-8eac-4b89bdea6b09">
+  <name>行政摘要15</name>
+  <parentId>__11e8-69ab-3d9180d4-9dd9-7742dbd80144</parentId>
+  <title>行政摘要15</title>
+  <type>00</type>
+  <formId>__11e8-69ab-3d9180d4-9dd9-7742dbd80144</formId>
+  <fieldNames>申请人;科目编号</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11ea-f433-ea777c98-a410-2f3d7ac9a701">
+  <name>付款申请单_2</name>
+  <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2020-09-11T18:37:20.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef13-4f3acc66-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

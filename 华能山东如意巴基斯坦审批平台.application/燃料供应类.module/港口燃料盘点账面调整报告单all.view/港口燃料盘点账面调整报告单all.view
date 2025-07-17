@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e8-6efb-a89d5599-88b0-372d6ed18679">
+  <name>港口燃料盘点账面调整报告单all</name>
+  <parentId>11e7-ef13-4f4665c4-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2018-06-13T19:19:59.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-f1f9-df62bcba-9163-27ca43a6e6d6</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-f1cc-b609b017-9163-27ca43a6e6d6</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'编号'},{field:'编制时间',operator:'LIKE',type:'03',match:'编制时间'},{field:'通知部门',operator:'LIKE',type:'03',match:'通知部门'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

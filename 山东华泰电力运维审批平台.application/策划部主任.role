@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e7-ef14-67e8e510-8f99-af63cc0890b3">
+  <name>策划部主任</name>
+  <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+  <roleNo>R6d9a</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>151409304086700000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-67e89760-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-67e89760-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-67e89761-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-67e89761-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-67e89763-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-67e89763-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-67e8975e-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-67e8975e-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-67e89760-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-67e89760-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-67e89761-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-67e89761-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-67e89763-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-67e89763-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-67e8975e-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-67e8975e-8f99-af63cc0890b3"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

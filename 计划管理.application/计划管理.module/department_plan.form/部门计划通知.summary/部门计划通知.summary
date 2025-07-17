@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e9-7a26-62fa090c-9820-539e9af1e136">
+  <name>部门计划通知</name>
+  <parentId>__11e9-7a26-62f43cbd-9820-539e9af1e136</parentId>
+  <title>部门计划通知</title>
+  <type>00</type>
+  <formId>__11e9-7a26-62f43cbd-9820-539e9af1e136</formId>
+  <fieldNames>_pTitle;_pDepartment;_pResponsible;_pEndTime;$StateLabel</fieldNames>
+  <scope>1</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

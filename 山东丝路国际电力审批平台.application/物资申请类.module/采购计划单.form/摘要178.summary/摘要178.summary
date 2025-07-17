@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9412-8c4a1f15-8eac-4b89bdea6b09">
+  <name>摘要178</name>
+  <parentId>__11e7-ef16-893fd46c-8f99-af63cc0890b3</parentId>
+  <title>摘要178</title>
+  <type>00</type>
+  <formId>__11e7-ef16-893fd46c-8f99-af63cc0890b3</formId>
+  <fieldNames>物资类别;计划采购方式</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11ed-f44f-db4d406b-9fd5-29ccd4df9cbd">
+  <name>办事处外出住宿审批单_S</name>
+  <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
+  <sortId>168428593372200000</sortId>
+  <templatecontext><![CDATA[<p><span lang="EN-US" style="font-size: 12pt; font-family: 仿宋_GB2312;">申请部门</span><span lang="EN-US" style="font-size: 12pt; font-family: 仿宋_GB2312;">Application department&nbsp; &nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-f450-0183821c-9fd5-29ccd4df9cbd" text="text" name="申请部门" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp;</span><span lang="EN-US" style="font-size: 12pt; font-family: 仿宋_GB2312;">出差事由&nbsp;</span><span style="font-family: 仿宋_GB2312; font-size: 12pt;">Business trip reasons&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-f450-16079537-9fd5-29ccd4df9cbd" text="text" name="出差事由" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></span></p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>2</version>
+  <mappingStr><![CDATA[{"formName":"办事处外出住宿审批单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

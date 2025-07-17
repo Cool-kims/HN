@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ef-a61a-df1d62db-9e3d-9f45d4459cac">
+  <name>摘要300</name>
+  <parentId>__11ef-a618-c34c2d38-9e3d-9f45d4459cac</parentId>
+  <title>摘要300</title>
+  <type>00</type>
+  <formId>__11ef-a618-c34c2d38-9e3d-9f45d4459cac</formId>
+  <fieldNames>编号;合同编号</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ea-8fba-9ad4d5a0-bcf0-133beec42517">
+  <name>发票开具申请单 Invoice Application Form</name>
+  <parentId>11e7-ef13-4f494c42-8f99-af63cc0890b3</parentId>
+  <description>发票开具申请单 Invoice Application Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f494c42-8f99-af63cc0890b3</superior>
+  <linkName>发票开具申请单 Invoice Application Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3aa555-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ea-904f-5d1710a6-bcf0-133beec42517]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>16</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

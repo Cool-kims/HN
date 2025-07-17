@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ee-8d8e-0569dc0f-bf2e-a1f7fb21f6c1">
+  <name>摘要412</name>
+  <parentId>__11ee-8d8d-0f90ff9a-bf2e-a1f7fb21f6c1</parentId>
+  <title>摘要412</title>
+  <type>00</type>
+  <formId>__11ee-8d8d-0f90ff9a-bf2e-a1f7fb21f6c1</formId>
+  <fieldNames>经办部门;使用事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

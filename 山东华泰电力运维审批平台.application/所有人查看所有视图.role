@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e8-d771-3c990eec-910a-c9d6f560e02b">
+  <name>所有人查看所有视图</name>
+  <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+  <roleNo>Rac31</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>154037419827400000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-0127-13d07171-bd9f-71cbcd056375","type":1,"resId":"11e8-0127-13d07171-bd9f-71cbcd056375"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-234c-33c2c8ca-991c-29ec8acb9806","type":1,"resId":"11e8-234c-33c2c8ca-991c-29ec8acb9806"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-0126-dd6b6d19-bd9f-71cbcd056375","type":1,"resId":"11e8-0126-dd6b6d19-bd9f-71cbcd056375"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-234c-0a220b43-991c-29ec8acb9806","type":1,"resId":"11e8-234c-0a220b43-991c-29ec8acb9806"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-0127-13d07171-bd9f-71cbcd056375","type":1,"resId":"11e8-0127-13d07171-bd9f-71cbcd056375"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-234c-33c2c8ca-991c-29ec8acb9806","type":1,"resId":"11e8-234c-33c2c8ca-991c-29ec8acb9806"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-0126-dd6b6d19-bd9f-71cbcd056375","type":1,"resId":"11e8-0126-dd6b6d19-bd9f-71cbcd056375"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-234c-0a220b43-991c-29ec8acb9806","type":1,"resId":"11e8-234c-0a220b43-991c-29ec8acb9806"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

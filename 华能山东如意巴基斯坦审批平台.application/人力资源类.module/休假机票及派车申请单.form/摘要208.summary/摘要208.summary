@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e9-0b1f-f129f079-bdcc-87b7f930abeb">
+  <name>摘要208</name>
+  <parentId>__11e9-082a-002d54a1-bdcc-87b7f930abeb</parentId>
+  <title>摘要208</title>
+  <type>00</type>
+  <formId>__11e9-082a-002d54a1-bdcc-87b7f930abeb</formId>
+  <fieldNames>姓名;请假事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ec-42c7-4cac2dc7-9f15-396e4916eb21">
+  <name>燃煤运费（其他费用）暂估明细表</name>
+  <parentId>11e7-ef13-4f49727a-8f99-af63cc0890b3</parentId>
+  <description>燃煤运费（其他费用）暂估明细表  estimated coal freight (other cost) list in month year</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f49727a-8f99-af63cc0890b3</superior>
+  <linkName>燃煤运费（其他费用）暂估明细表  estimated coal freight (other cost) list in month year</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f4665c4-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef13-4f4f6603-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>785</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9353-2b4f0ec3-8eac-4b89bdea6b09">
+  <name>摘要128</name>
+  <parentId>__11e8-5db9-22920e0b-b989-097caeda21f3</parentId>
+  <title>摘要128</title>
+  <type>00</type>
+  <formId>__11e8-5db9-22920e0b-b989-097caeda21f3</formId>
+  <fieldNames>编制人;付款内容</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

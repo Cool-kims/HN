@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ee-b8c9-52f41900-848a-7d3c8a2cef35">
+  <name>摘要430</name>
+  <parentId>__11ee-b59a-cebdf2a9-848a-7d3c8a2cef35</parentId>
+  <title>摘要430</title>
+  <type>00</type>
+  <formId>__11ee-b59a-cebdf2a9-848a-7d3c8a2cef35</formId>
+  <fieldNames>专题会议题;编号</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

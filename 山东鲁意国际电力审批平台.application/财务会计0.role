@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e8-6ef6-9f0adea4-88b0-372d6ed18679">
+  <name>财务会计0</name>
+  <parentId>11e7-ef12-415bbbbf-8f99-af63cc0890b3</parentId>
+  <roleNo>R2b9c</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>152888661441000000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-8686-532eddae-8eac-4b89bdea6b09","type":1,"resId":"11e8-8686-532eddae-8eac-4b89bdea6b09"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-ffa88d6e-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-ffa88d6e-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-8686-532eddae-8eac-4b89bdea6b09","type":1,"resId":"11e8-8686-532eddae-8eac-4b89bdea6b09"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef14-ffa88d6e-8f99-af63cc0890b3","type":1,"resId":"11e7-ef14-ffa88d6e-8f99-af63cc0890b3"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

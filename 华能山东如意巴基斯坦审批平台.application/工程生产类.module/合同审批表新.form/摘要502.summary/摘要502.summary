@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-15de-a9335d81-930c-d13b4bbd9f9b">
+  <name>摘要502</name>
+  <parentId>__11ea-15de-1f4f391d-930c-d13b4bbd9f9b</parentId>
+  <title>摘要502</title>
+  <type>00</type>
+  <formId>__11ea-15de-1f4f391d-930c-d13b4bbd9f9b</formId>
+  <fieldNames>合同名称;价格</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

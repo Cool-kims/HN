@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11ec-78fc-bdc35720-b810-7bae9f65952d">
+  <name>单一来源采购报告</name>
+  <parentId>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2022-03-22T17:59:26.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11ec-78fc-a34bfb4f-b810-7bae9f65952d</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11ec-5cb7-f0ac5885-811e-db6d5a39b39c</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'采购编号',operator:'LIKE',type:'03',match:'采购编号'},{field:'采购名称',operator:'LIKE',type:'03',match:'采购名称'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

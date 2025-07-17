@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9355-e37db706-8eac-4b89bdea6b09">
+  <name>摘要156</name>
+  <parentId>__11e7-ef14-ffa35cc0-8f99-af63cc0890b3</parentId>
+  <title>摘要156</title>
+  <type>00</type>
+  <formId>__11e7-ef14-ffa35cc0-8f99-af63cc0890b3</formId>
+  <fieldNames>姓名;职位岗位</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

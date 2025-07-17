@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ea-7d83-a9f89673-809b-6193dc4a23b7">
+  <name>企业负责人绩效薪金发放表</name>
+  <parentId>11e7-ef14-67e8bebd-8f99-af63cc0890b3</parentId>
+  <description>企业负责人绩效薪金发放表</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-67e8bebd-8f99-af63cc0890b3</superior>
+  <linkName>企业负责人绩效薪金发放表</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67e366dd-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ea-7d83-0689e6f6-809b-6193dc4a23b7]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>11</orderno>
+</resourceVO>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11e7-ef14-67e8e4f3-8f99-af63cc0890b3">
+      
+    <name>主管</name>
+      
+    <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>150509843460300000</sortId>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>R9579</roleNo>
+</role>

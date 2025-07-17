@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataSource id="11e9-83bd-f221a71c-9b63-ffda5b016ece">
+  <name>JhglDataSource</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <useType>JDBC</useType>
+  <driverClass>oracle.jdbc.driver.OracleDriver</driverClass>
+  <url><![CDATA[jdbc:oracle:thin:@//192.168.88.140:1521/orcl]]></url>
+  <username>jhgl</username>
+  <password><![CDATA[jhgl]]></password>
+  <dbType>1</dbType>
+  <poolsize>300</poolsize>
+  <timeout>10000</timeout>
+  <readonly>false</readonly>
+  <readonlyUseType>JDBC</readonlyUseType>
+  <readonlyDbType>0</readonlyDbType>
+</dataSource>

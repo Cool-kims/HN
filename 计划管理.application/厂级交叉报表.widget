@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pageWidget id="11e9-7a26-62f5e9b6-9820-539e9af1e136">
+  <name>厂级交叉报表</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <type>report</type>
+  <moduleid>11e9-7a26-62f4d917-9820-539e9af1e136</moduleid>
+  <actionContent><![CDATA[11e3-4d12-4e8ab4f3-9100-7ba8e8ea4a97]]></actionContent>
+  <height>300</height>
+  <authMode>1</authMode>
+  <published>true</published>
+  <setup>true</setup>
+  <frequency>1</frequency>
+  <iconShow>false</iconShow>
+  <widgetType>0</widgetType>
+  <orderno>0</orderno>
+  <isRefresh>false</isRefresh>
+  <showAll>false</showAll>
+</pageWidget>

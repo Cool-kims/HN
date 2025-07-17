@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-0bf5-5dcefcf2-bdcc-87b7f930abeb">
+  <name>休假机票及用车申请单</name>
+  <parentId>11e7-ef13-4f49727a-8f99-af63cc0890b3</parentId>
+  <description>休假机票及用车申请单 Vacation Ticket and Car Application Form1</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f49727a-8f99-af63cc0890b3</superior>
+  <linkName>休假机票及用车申请单 Vacation Ticket and Car Application Form1</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f4442cb-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-083c-4a6c6b9b-bdcc-87b7f930abeb]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>502</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

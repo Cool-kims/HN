@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef16-89376f81-8f99-af63cc0890b3">
+  <name>修改签章密码查询表单</name>
+  <parentId>11e7-ef16-8937486a-8f99-af63cc0890b3</parentId>
+  <description>修改签章密码查询表单</description>
+  <sortId>140220191221100000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table width="350" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: right;">帐号：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e3-eeb0-995c3ab0-abeb-ad0d1ecb7157" text="text" name="C_帐号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: right;">旧密码<a id="fck_paste_padding">？</a>：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e3-eeb0-9959f0bf-abeb-ad0d1ecb7157" text="password" name="C_旧密码" texttype="password" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" />&nbsp;<img src="plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e3-f5c2-7b3d6bb7-aabd-d1b6acd1c760" valuescript="function@nbsp;modiPass(){@amp;#13;	var@nbsp;doc=getCurrentDocument();@amp;#13;	var@nbsp;zh@nbsp;=@nbsp;doc.getItemValueAsString(@quot;C_帐号@quot;);@amp;#13;	var@nbsp;mm@nbsp;=@nbsp;getItemValueAsString(@quot;C_旧密码@quot;);@amp;#13;	var@nbsp;xmm@nbsp;=@nbsp;getItemValueAsString(@quot;C_新密码@quot;);@amp;#13;	if@nbsp;(zh@nbsp;==@nbsp;null@nbsp;||@nbsp;zh.trim().length@nbsp;@lt;=@nbsp;0){@amp;#13;		createAlert(@quot;帐号不可为空！@quot;);@amp;#13;	}@amp;#13;	if@nbsp;(mm@nbsp;==@nbsp;null@nbsp;||@nbsp;mm.trim().length@nbsp;@lt;=@nbsp;0){@amp;#13;		createAlert(@quot;旧密码不可为空！@quot;);@amp;#13;	}@amp;#13;	if@nbsp;(xmm@nbsp;==@nbsp;null@nbsp;||@nbsp;xmm.trim().length@nbsp;@lt;=@nbsp;0){@amp;#13;		createAlert(@quot;新密码不可为空！@quot;);@amp;#13;	}@amp;#13;	println(@quot;zh:@quot;+zh);@amp;#13;	println(@quot;mm:@quot;+mm);@amp;#13;	println(@quot;xmm:@quot;+xmm);@amp;#13;@amp;#13;	//密码是否通过验证标识位@amp;#13;	var@nbsp;flag@nbsp;=@nbsp;false;@amp;#13;	var@nbsp;w@nbsp;=@nbsp;@quot;@quot;;@amp;#13;	if(isNotNull(zh)){@amp;#13;		w@nbsp;+=@quot;@nbsp;and@nbsp;ITEM_帐号=@#146;@quot;+zh+@quot;@#146;@quot;;@amp;#13;	}@amp;#13;@amp;#13;	var@nbsp;sql@nbsp;=@nbsp;@quot;select@nbsp;*@nbsp;from@nbsp;TLK_印签管理表单@nbsp;@nbsp;where@nbsp;@nbsp;ITEM_是否公章=@#146;是@#146;@nbsp;@nbsp;@nbsp;and@nbsp;ITEM_是否有效=@#146;是@#146;@nbsp;@nbsp;@quot;+w;@amp;#13;	println(@quot;sql:@quot;+sql);@amp;#13;	var@nbsp;query@nbsp;=@nbsp;queryBySQL(sql);@amp;#13;	if(query!=null){@amp;#13;		@nbsp;@nbsp;var@nbsp;iter@nbsp;@nbsp;=query.iterator();@amp;#13;		@nbsp;@nbsp;if(iter@nbsp;!=@nbsp;null@nbsp;@amp;@amp;@nbsp;iter.hasNext()){@amp;#13;		@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;doc@nbsp;=@nbsp;iter.next();@amp;#13;		@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;var@nbsp;rtn@nbsp;=@nbsp;doc.getItemValueAsString(@quot;密码@quot;);@nbsp;@amp;#13;		@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;if@nbsp;(rtn@nbsp;!=@nbsp;null@nbsp;@amp;@amp;@nbsp;rtn.trim().length@gt;0){@amp;#13;				var@nbsp;aa=new@nbsp;Packages.cn.myapps.common.util.Security();@amp;#13;				var@nbsp;jmm=aa.decryptPassword(rtn);//解密@amp;#13;				if@nbsp;(jmm@nbsp;!=null@nbsp;@amp;@amp;@nbsp;jmm==(mm)){@amp;#13;				@nbsp;@nbsp;@nbsp;@nbsp;flag=true;@amp;#13;				}@amp;#13;		@amp;#13;			}@nbsp;@nbsp;@amp;#13;		@nbsp;@nbsp;}@nbsp;@amp;#13;	}@amp;#13;@amp;#13;	//密码验证通过@amp;#13;	if@nbsp;(flag){@amp;#13;		//加密新密码@nbsp;@amp;#13;		var@nbsp;aa=new@nbsp;Packages.cn.myapps.common.util.Security();@amp;#13;		var@nbsp;jmxmm=Packages.cn.myapps.common.util.Security.encryptPassword(xmm);//将该字段的值加密@amp;#13;		@amp;#13;		//组装修改SQL@amp;#13;		var@nbsp;updateSql@nbsp;=@nbsp;@quot;update@nbsp;TLK_印签管理表单@nbsp;set@nbsp;ITEM_密码=@#146;@quot;+jmxmm+@quot;@#146;@nbsp;where@nbsp;ITEM_帐号=@#146;@quot;+zh+@quot;@#146;@quot;;@amp;#13;		try{@amp;#13;			updateByDSName(@quot;oracle@quot;,updateSql);@amp;#13;			println(@quot;updateSql:@quot;+updateSql);@amp;#13;			createAlert(@quot;修改密码成功！@quot;);	@amp;#13;		}catch(e){@amp;#13;			createAlert(@quot;修改密码失败！@quot;+e);@amp;#13;		}@amp;#13;	}@nbsp;else@nbsp;{@amp;#13;		createAlert(@quot;您输入的密码不正确！@quot;);@amp;#13;	}@amp;#13;}@amp;#13;@amp;#13;var@nbsp;retVal=@quot;@lt;input@nbsp;type=@#146;button@#146;@nbsp;value=@#146;修改@#146;@nbsp;@nbsp;@nbsp;onclick=@#146;modiPass();@#146;@nbsp;/@gt;@quot;;@amp;#13;retVal;" calculateonrefresh="true"  name="QZ51fcc1b6e"/></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: right;">新密码：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="QZ89eb1ba7f" id="11e3-eec6-14036a2c-abeb-ad0d1ecb7157" text="password" name="C_新密码" texttype="password" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>47</version>
+  <mappingStr><![CDATA[{"formName":"修改签章密码查询表单","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

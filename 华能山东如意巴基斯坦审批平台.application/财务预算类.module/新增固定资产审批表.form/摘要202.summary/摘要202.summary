@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-d615-9d29ce87-910a-c9d6f560e02b">
+  <name>摘要202</name>
+  <parentId>__11e8-8e91-248f1987-8eac-4b89bdea6b09</parentId>
+  <title>摘要202</title>
+  <type>00</type>
+  <formId>__11e8-8e91-248f1987-8eac-4b89bdea6b09</formId>
+  <fieldNames>资产名称;使用人</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

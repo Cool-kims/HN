@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e7-f08a-6463bb90-9f93-e7a696f747db">
+  <name>合同</name>
+  <parentId>__11e7-ef13-4f468cd5-8f99-af63cc0890b3</parentId>
+  <title>合同</title>
+  <type>00</type>
+  <formId>__11e7-ef13-4f468cd5-8f99-af63cc0890b3</formId>
+  <fieldNames>合同名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

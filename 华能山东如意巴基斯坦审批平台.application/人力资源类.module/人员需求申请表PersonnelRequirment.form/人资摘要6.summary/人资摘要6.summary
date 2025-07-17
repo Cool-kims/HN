@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11eb-7733-aebbe903-86e7-7bd47b70205b">
+  <name>人资摘要6</name>
+  <parentId>__11eb-7733-477c0699-86e7-7bd47b70205b</parentId>
+  <title>人资摘要6</title>
+  <type>00</type>
+  <formId>__11eb-7733-477c0699-86e7-7bd47b70205b</formId>
+  <fieldNames>编号;编制日期</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

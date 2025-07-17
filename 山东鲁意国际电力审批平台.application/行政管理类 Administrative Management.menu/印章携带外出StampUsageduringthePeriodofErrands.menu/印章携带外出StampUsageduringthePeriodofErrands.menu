@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef14-ffa88d83-8f99-af63cc0890b3">
+  <name>印章携带外出StampUsageduringthePeriodofErrands</name>
+  <parentId>11e7-ef14-ffa88d7c-8f99-af63cc0890b3</parentId>
+  <description>印章携带外出审批单 Stamp Usage during the Period of Errands</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-ffa88d7c-8f99-af63cc0890b3</superior>
+  <linkName>印章携带外出审批单 Stamp Usage during the Period of Errands</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-ff9be342-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ea-1588-6ca37ab6-930c-d13b4bbd9f9b]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>6</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

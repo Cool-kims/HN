@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-92ef-76b9fec3-8eac-4b89bdea6b09">
+  <name>物资计划摘要</name>
+  <parentId>__11e7-ef13-4f3fd5b4-8f99-af63cc0890b3</parentId>
+  <title>物资计划摘要</title>
+  <type>00</type>
+  <formId>__11e7-ef13-4f3fd5b4-8f99-af63cc0890b3</formId>
+  <fieldNames>需用计划名称;紧急采购原因</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

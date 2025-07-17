@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataSource id="11e7-ef12-35c63007-8f99-af63cc0890b3">
+  <name>oracle</name>
+  <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+  <useType>JDBC</useType>
+  <driverClass>oracle.jdbc.driver.OracleDriver</driverClass>
+  <url><![CDATA[jdbc:oracle:thin:@//192.168.88.140:1521/orcl]]></url>
+  <username>sdht</username>
+  <password><![CDATA[sdht]]></password>
+  <dbType>1</dbType>
+  <poolsize>300</poolsize>
+  <timeout>10000</timeout>
+  <readonly>false</readonly>
+  <readonlyUseType>JDBC</readonlyUseType>
+  <readonlyDbType>0</readonlyDbType>
+</dataSource>

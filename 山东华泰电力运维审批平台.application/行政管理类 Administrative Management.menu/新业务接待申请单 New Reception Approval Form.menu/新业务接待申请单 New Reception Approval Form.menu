@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-9be6-600ba5cc-bffc-fd2f695754f0">
+  <name>新业务接待申请单 New Reception Approval Form</name>
+  <parentId>11e7-ef14-67e8beaa-8f99-af63cc0890b3</parentId>
+  <description>新业务接待申请单 New Reception Approval Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-67e8beaa-8f99-af63cc0890b3</superior>
+  <linkName>新业务接待申请单 New Reception Approval Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67dc1470-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-b417-20700347-9896-1df69bbca83d]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>2</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

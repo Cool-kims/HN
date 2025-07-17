@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e7-f157-75bcb73d-b449-61bf0a28f1db">
+  <name>摘要018</name>
+  <parentId>__11e7-ef14-67df960b-8f99-af63cc0890b3</parentId>
+  <title>摘要018</title>
+  <type>00</type>
+  <formId>__11e7-ef14-67df960b-8f99-af63cc0890b3</formId>
+  <fieldNames>备注;费用科目名称;本次实际付款</fieldNames>
+  <scope>1</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

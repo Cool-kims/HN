@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef13-4f4999aa-8f99-af63cc0890b3">
+  <name>车辆加油申请表</name>
+  <parentId>11e7-ef13-4f497288-8f99-af63cc0890b3</parentId>
+  <description>车辆加油申请表 Vehicle refueling application form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f497288-8f99-af63cc0890b3</superior>
+  <linkName>车辆加油申请表 Vehicle refueling application form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3d166e-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e8-9875-3e826b47-8eac-4b89bdea6b09]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>206</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

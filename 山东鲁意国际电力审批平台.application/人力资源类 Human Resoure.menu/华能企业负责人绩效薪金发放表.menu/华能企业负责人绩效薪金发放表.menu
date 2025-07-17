@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ed-73d9-97abced4-8221-d1692677ae63">
+  <name>华能企业负责人绩效薪金发放表</name>
+  <parentId>11e7-ef14-ffa88d8f-8f99-af63cc0890b3</parentId>
+  <description>华能企业负责人绩效薪金发放表</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-ffa88d8f-8f99-af63cc0890b3</superior>
+  <linkName>华能企业负责人绩效薪金发放表</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-ffa335af-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ed-73d8-7294390b-8221-d1692677ae63]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>15</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

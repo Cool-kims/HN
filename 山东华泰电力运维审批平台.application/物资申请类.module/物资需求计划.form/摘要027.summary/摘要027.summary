@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e7-fdfe-6970cd4a-8497-93502d158b33">
+  <name>摘要027</name>
+  <parentId>__11e7-ef14-67e318b6-8f99-af63cc0890b3</parentId>
+  <title>摘要027</title>
+  <type>00</type>
+  <formId>__11e7-ef14-67e318b6-8f99-af63cc0890b3</formId>
+  <fieldNames>计划金额;费控部门;采购原因</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

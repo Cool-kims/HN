@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11ee-7ddc-5f5077a8-8040-4156b014b596">
+  <name>安反措计划实施验收单</name>
+  <parentId>11e7-ef13-4f455447-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2023-11-21T14:29:50.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11eb-ed17-a84b4cfd-8e51-610ba77dff7f</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11eb-e82b-8559936e-ba63-77a12763f65b</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'申请班组',operator:'LIKE',type:'03',match:'申请班组'},{field:'计划项目',operator:'LIKE',type:'03',match:'计划项目'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

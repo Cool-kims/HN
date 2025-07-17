@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef16-894293bc-8f99-af63cc0890b3">
+  <name>物资需求计划从表</name>
+  <parentId>11e7-ef16-893e4dbb-8f99-af63cc0890b3</parentId>
+  <sortId>151332266917300000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table width="600" border="1" cellpadding="1" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">
+            <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span style="font-family: 等线;">序号<span lang="EN-US"><o:p></o:p></span></span></b></p>
+            <p style="text-align: center;"><b><span lang="EN-US" style="font-size: 10.5pt; font-family: 等线;">Serial Number</span></b></p>
+            </td>
+            <td style="border: 1px solid rgb(180, 204, 238);">
+            <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span style="font-family: 等线;">物料编码<span lang="EN-US"><o:p></o:p></span></span></b></p>
+            <p style="text-align: center;"><b><span lang="EN-US" style="font-size: 10.5pt; font-family: 等线;">Material Code</span></b></p>
+            </td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><b><span style="font-size: 10.5pt; font-family: 等线;">物料描述<span lang="EN-US">Material Description<br />
+            </span></span></b><span style="font-size: 10.5pt; font-family: 等线;">（物资名称<span lang="EN-US">/</span>规格型号<span lang="EN-US">/</span>主要技术指标）</span></td>
+            <td style="border: 1px solid rgb(180, 204, 238);">
+            <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span style="font-family: 等线;">单位<span lang="EN-US"><o:p></o:p></span></span></b></p>
+            <p style="text-align: center;"><b><span lang="EN-US" style="font-size: 10.5pt; font-family: 等线;">UNIT</span></b></p>
+            </td>
+            <td style="border: 1px solid rgb(180, 204, 238);">
+            <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span style="font-family: 等线;">计划数量<span lang="EN-US"><o:p></o:p></span></span></b></p>
+            <p style="text-align: center;"><b><span lang="EN-US" style="font-size: 10.5pt; font-family: 等线;">Plan QUA</span></b></p>
+            </td>
+            <td style="border: 1px solid rgb(180, 204, 238);">
+            <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span style="font-family: 等线;">计划单价<span lang="EN-US"><o:p></o:p></span></span></b></p>
+            <b><span lang="EN-US" style="font-size: 10.5pt; font-family: 等线;">PLANNED UNIT PRICE</span></b></td>
+            <td style="border: 1px solid rgb(180, 204, 238);">
+            <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span style="font-family: 等线;">合计金额<span lang="EN-US"><o:p></o:p></span></span></b></p>
+            <b><span lang="EN-US" style="font-size: 10.5pt; font-family: 等线;">TOTAL AMOUNT</span></b></td>
+            <td style="border: 1px solid rgb(180, 204, 238);">
+            <p class="MsoNormal" align="center" style="text-align:center;mso-pagination:widow-orphan"><b><span style="font-family: 等线;">质量标准<span lang="EN-US"><o:p></o:p></span></span></b></p>
+            <p style="text-align: center;"><b><span lang="EN-US" style="font-size: 10.5pt; font-family: 等线;">Quality Standard</span></b></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e16a-b8d466e4-b4c9-3596f39b7578" text="text" name="序号" style="width:60px" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e16a-c1ed3316-b4c9-3596f39b7578" text="text" name="物料编码" style="width:60px" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e16a-ca03a978-b4c9-3596f39b7578" text="text" name="物料描述" style="width:60px" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e16a-d23aef4a-b4c9-3596f39b7578" text="text" name="单位" style="width:60px" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e16a-dcafc90c-b4c9-3596f39b7578" text="text" name="计划数量" style="width:60px" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="计划数量" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e16a-e93e32fe-b4c9-3596f39b7578" text="text" name="计划单价" style="width:60px" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="计划单价" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e16b-0f3a2b40-b4c9-3596f39b7578" text="readonly" name="合计金额" style="width:60px" texttype="readonly" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="var@nbsp;sl@nbsp;=@nbsp;getItemValueAsDouble(@quot;计划数量@quot;);@amp;#13;var@nbsp;dj@nbsp;=@nbsp;getItemValueAsDouble(@quot;计划单价@quot;);@amp;#13;var@nbsp;heji@nbsp;=@nbsp;sl*dj;@amp;#13;heji;" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="true" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e16b-19c5c152-b4c9-3596f39b7578" text="text" name="质量标准" style="width:60px" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>13</version>
+  <mappingStr><![CDATA[{"formName":"物资需求计划从表","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

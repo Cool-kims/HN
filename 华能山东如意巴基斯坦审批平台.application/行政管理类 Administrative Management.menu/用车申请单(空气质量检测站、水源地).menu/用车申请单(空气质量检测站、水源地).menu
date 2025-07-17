@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ea-10da-72c417c5-8f0a-d7f5e550fac4">
+  <name>用车申请单(空气质量检测站、水源地)</name>
+  <parentId>11e7-ef13-4f497288-8f99-af63cc0890b3</parentId>
+  <description>用车申请单(空气质量检测站、水源地)Car application form (air quality testing station、water source)</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f497288-8f99-af63cc0890b3</superior>
+  <linkName>用车申请单(空气质量检测站、水源地)Car application form (air quality testing station、water source)</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3d166e-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ea-14ba-121156a8-930c-d13b4bbd9f9b]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

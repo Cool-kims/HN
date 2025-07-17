@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e8-7d2a-30e82a21-88b0-372d6ed18679">
+  <name>费用报销单查看全部</name>
+  <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+  <roleNo>R9391</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>153044807974200000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-fb93-43b1330f-b36b-a111d0b35b26","type":1,"resId":"11e7-fb93-43b1330f-b36b-a111d0b35b26"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3c11-c1425330-94e7-ef330bda161e","type":1,"resId":"11e8-3c11-c1425330-94e7-ef330bda161e"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3c11-aa23e618-94e7-ef330bda161e","type":1,"resId":"11e8-3c11-aa23e618-94e7-ef330bda161e"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-fb93-43b1330f-b36b-a111d0b35b26","type":1,"resId":"11e7-fb93-43b1330f-b36b-a111d0b35b26"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3c11-c1425330-94e7-ef330bda161e","type":1,"resId":"11e8-3c11-c1425330-94e7-ef330bda161e"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3c11-aa23e618-94e7-ef330bda161e","type":1,"resId":"11e8-3c11-aa23e618-94e7-ef330bda161e"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

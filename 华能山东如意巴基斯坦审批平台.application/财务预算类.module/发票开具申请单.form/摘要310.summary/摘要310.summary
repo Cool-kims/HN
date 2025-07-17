@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-8fab-6fbe8e32-bcf0-133beec42517">
+  <name>摘要310</name>
+  <parentId>__11ea-8f91-e37c1083-bcf0-133beec42517</parentId>
+  <title>摘要310</title>
+  <type>00</type>
+  <formId>__11ea-8f91-e37c1083-bcf0-133beec42517</formId>
+  <fieldNames>编号;开票事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

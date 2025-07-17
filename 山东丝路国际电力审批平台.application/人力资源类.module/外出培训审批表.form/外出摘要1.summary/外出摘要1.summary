@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-8b46-e3247932-8eac-4b89bdea6b09">
+  <name>外出摘要1</name>
+  <parentId>__11e7-ef16-89435715-8f99-af63cc0890b3</parentId>
+  <title>外出摘要1</title>
+  <type>00</type>
+  <formId>__11e7-ef16-89435715-8f99-af63cc0890b3</formId>
+  <fieldNames>培训人员;培训目标</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11ed-4b8d-9c0ccdfa-8586-07623db05b40">
+  <name>施工服务项目到货验收单_S</name>
+  <parentId>11e7-ef14-ff9ec999-8f99-af63cc0890b3</parentId>
+  <sortId>166573070989100000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;合同名称：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-4b8d-c8e16581-8586-07623db05b40" text="text" name="合同名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp; &nbsp; &nbsp;合同编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-4b8d-dd1a178e-8586-07623db05b40" text="text" name="合同编号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>1</version>
+  <mappingStr><![CDATA[{"formName":"施工服务项目到货验收单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

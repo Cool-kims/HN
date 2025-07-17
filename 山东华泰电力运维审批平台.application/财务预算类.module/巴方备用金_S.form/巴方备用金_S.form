@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11ed-6a02-2f9d24e1-8221-d1692677ae63">
+  <name>巴方备用金_S</name>
+  <parentId>11e7-ef14-67d9ca67-8f99-af63cc0890b3</parentId>
+  <sortId>166907931396600000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;<span style="font-family: 宋体; font-size: 6.84pt; font-weight: bold;">Employee</span></p>
+<p><span style="font-family: 宋体; font-size: 6.84pt; font-weight: bold;">__ID&nbsp;</span>：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-6a01-38ce0233-8221-d1692677ae63" text="text" name="工号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="font-family: 宋体; font-size: 9.12px; font-weight: 700;">Department：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-6a01-5a3e09ed-8221-d1692677ae63" text="text" name="部门" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></span>&nbsp; &nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>1</version>
+  <mappingStr><![CDATA[{"formName":"巴方备用金_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

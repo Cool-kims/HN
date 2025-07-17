@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-6716-974602b5-9daa-bf7ae5f506d2">
+  <name>党委会议题审批单</name>
+  <parentId>11e7-ef13-4f497288-8f99-af63cc0890b3</parentId>
+  <description>党委会议题审批单Party committee issue approval form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f497288-8f99-af63cc0890b3</superior>
+  <linkName>党委会议题审批单Party committee issue approval form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3d166e-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-bcc8-2113af4e-9c70-0ba95739f67e]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>510</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

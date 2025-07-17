@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e8-9359-78c578f5-8eac-4b89bdea6b09">
+  <name>固定无形资产转资审批单_S</name>
+  <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
+  <sortId>153288731223800000</sortId>
+  <templatecontext><![CDATA[<p>采购订单号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-9359-f398a64d-8eac-4b89bdea6b09" text="text" name="采购订单号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp;资产编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-935a-095c8c4f-8eac-4b89bdea6b09" text="text" name="资产编号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; 资产明细分类：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-935a-248c15b1-8eac-4b89bdea6b09" text="text" name="资产明细分类" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp;&nbsp;</p>
+<p>资产名称：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-935a-526328e5-8eac-4b89bdea6b09" text="text" name="资产名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>3</version>
+  <mappingStr><![CDATA[{"formName":"固定无形资产转资审批单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

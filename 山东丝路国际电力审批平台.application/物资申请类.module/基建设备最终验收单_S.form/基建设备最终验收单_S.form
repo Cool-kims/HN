@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef16-89418239-8f99-af63cc0890b3">
+  <name>基建设备最终验收单_S</name>
+  <parentId>11e7-ef16-893e4dbb-8f99-af63cc0890b3</parentId>
+  <sortId>151218195857600000</sortId>
+  <templatecontext><![CDATA[<p>编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d709-2212473a-ae95-47caf4f32d12" text="text" name="编号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp;设备名称：&nbsp; &nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d709-283ca5e0-ae95-47caf4f32d12" text="text" name="设备名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>
+<p>合同编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d709-35637f16-ae95-47caf4f32d12" text="text" name="合同编号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />日期：&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e7-d709-3fcd5c2c-ae95-47caf4f32d12" type="text" fieldtype="VALUE_TYPE_DATE" name="日期" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" /></p>
+<table cellspacing="0" cellpadding="0" width="694" border="1" style="border: 1px solid rgb(180, 204, 238); height: 20px; width: 694px;">
+    <tbody>
+        <tr>
+            <td bgcolor="#000000" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;：新增</td>
+            <td bgcolor="#0000ff" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：审批中&nbsp;</td>
+            <td bgcolor="#408a10" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：已批准</td>
+            <td bgcolor="#ff0000" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：作废<br />
+            &nbsp;<br />
+            &nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>14</version>
+  <mappingStr><![CDATA[{"formName":"基建设备最终验收单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

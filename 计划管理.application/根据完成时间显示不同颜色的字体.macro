@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="11e9-7a26-62fa0913-9820-539e9af1e136">
+  <name>根据完成时间显示不同颜色的字体</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <content><![CDATA[function rtnColor_pEndTime(){
+	var stateLabel = getStateLabel();
+	var _pEndTime = getItemValueAsString("_pEndTime");
+	var curDate = getCurDate("yyyy-MM-dd HH:mm:ss");
+	var rtn = _pEndTime;
+	if(stateLabel!=null && stateLabel==("计划执行")){
+		if(curDate>_pEndTime){
+			rtn = "<span style=\'color:red;\'>"+_pEndTime+"</span>";
+		}else {
+			curDate = getCurDate("yyyy-MM-dd HH:mm:ss");
+			var _pEndTime1 = parseDate(_pEndTime,"yyyy-MM-dd");
+			var curDate1 = parseDate(curDate,"yyyy-MM-dd HH:mm:ss");
+			var days = diffDays(curDate1,_pEndTime1);
+			if(days<3 && days>0){
+				rtn = "<span style=\'color:blue;\'>"+_pEndTime+"</span>";
+			}
+		}
+	}
+	return rtn;
+}]]></content>
+  <version>7</version>
+</repositoryVO>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleRepositoryVO id="11e9-7a26-62fa3098-9820-539e9af1e136">
+  <name>test</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <content><![CDATA[/**表单--start**/
+.form_table {
+	background-color: #fff;
+	font-family: '微软雅黑';
+	border: 1px solid #bed4ed;
+}
+.form_table caption {
+	font-size: 22px;
+	font-family: '微软雅黑';
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+}
+.form_table .td_title1 {
+	background-color: #e0eaf4;
+	padding-left: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	font-family: '幼体';
+}
+.form_table td {
+	height: 33px;
+	font-size: 14px;
+	border-top: 0;
+	border-bottom: 1px dashed #bed4ed;
+	padding-left: 5px;
+}
+.form_table input[type="text"] {
+	height: 25px;
+	line-height: 25px;
+}
+.form_table input[type="button"] {
+	font-size: 14px;
+}
+.form_table .td_label {
+	background-color: #f6fbf7;
+	font-family: '微软雅黑';
+	text-align: right;
+	padding-right: 8px;
+	border-right: 1px solid #bed4ed;
+}
+.form_table .td_label .noEmpty {
+	color: red;
+}
+.textOneLine input{
+	border-color: #000;
+    border-width: 0 0 1px;
+}
+/**表单--end**/
+/**查询表单--start**/
+.form_table_select .td_label{
+	text-align: right;
+}
+/**查询表单--end**/
+]]></content>
+  <version>9</version>
+  <lastmodifytime class="sql-date">2013-10-19T17:02:00.000+08:00</lastmodifytime>
+</styleRepositoryVO>

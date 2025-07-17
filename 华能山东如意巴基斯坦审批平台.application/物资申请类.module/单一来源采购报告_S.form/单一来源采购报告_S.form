@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11ec-78fc-a34bfb4f-b810-7bae9f65952d">
+  <name>单一来源采购报告_S</name>
+  <parentId>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</parentId>
+  <sortId>164257870084000000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;&nbsp;<span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;">Purchase number</span><span style="font-size: 12pt; font-family: 宋体;">&nbsp;</span>：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ec-783a-7e8f7686-b810-7bae9f65952d" text="text" name="采购编号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp; &nbsp;Purchase name：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ec-783a-8e9b2075-b810-7bae9f65952d" text="text" name="采购名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>1</version>
+  <mappingStr><![CDATA[{"formName":"单一来源采购报告_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

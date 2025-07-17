@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-572d-6bfd7e97-8c7f-45024b0e47eb">
+  <name>出差申请单摘要</name>
+  <parentId>__11e7-ef16-89391d5a-8f99-af63cc0890b3</parentId>
+  <title>出差申请单摘要</title>
+  <type>00</type>
+  <formId>__11e7-ef16-89391d5a-8f99-af63cc0890b3</formId>
+  <fieldNames>出差事由;合计五</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

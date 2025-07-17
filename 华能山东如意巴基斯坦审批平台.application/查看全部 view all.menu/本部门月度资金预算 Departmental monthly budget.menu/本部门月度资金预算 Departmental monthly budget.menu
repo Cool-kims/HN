@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e8-234b-9a64d976-991c-29ec8acb9806">
+  <name>本部门月度资金预算 Departmental monthly budget</name>
+  <parentId>11e7-ef13-4f49727a-8f99-af63cc0890b3</parentId>
+  <description>本部门月度资金预算 Departmental monthly budget</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f49727a-8f99-af63cc0890b3</superior>
+  <linkName>本部门月度资金预算 Departmental monthly budget</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f38d164-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e8-2344-e24f829b-991c-29ec8acb9806]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>803</orderno>
+</resourceVO>

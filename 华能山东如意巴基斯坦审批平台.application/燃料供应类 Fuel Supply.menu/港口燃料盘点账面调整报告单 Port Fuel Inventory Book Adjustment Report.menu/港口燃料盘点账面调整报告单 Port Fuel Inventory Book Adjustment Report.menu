@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-f1fb-54d0ba39-9163-27ca43a6e6d6">
+  <name>港口燃料盘点账面调整报告单 Port Fuel Inventory Book Adjustment Report</name>
+  <parentId>11e7-ef13-4f497265-8f99-af63cc0890b3</parentId>
+  <description>港口燃料盘点账面调整报告单 Port Fuel Inventory Book Adjustment Report</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f497265-8f99-af63cc0890b3</superior>
+  <linkName>港口燃料盘点账面调整报告单 Port Fuel Inventory Book Adjustment Report</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f4665c4-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-f1f8-2a8b86f2-9163-27ca43a6e6d6]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>21</orderno>
+</resourceVO>

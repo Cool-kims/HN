@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e3-eb00-6b234e76-bbae-834f684c6f52">
+  <name>保存</name>
+  <parentId>__11e9-7a26-62f59b84-9820-539e9af1e136</parentId>
+  <type>4</type>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType></colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
+  <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
+  <hiddenScript><![CDATA[//“保存”按钮隐藏脚本
+var stateLabel = getStateLabel();
+var isExecuteDirector = false;		//是否执行部门主任或副主任
+var webUser = getWebUser();
+var depId = getItemValueAsString("_pDepartment");
+//当前登录用户是否执行部门主任
+var roleName=getRoleByRoleNo("1004",getApplication());	//1004是部门主任编号
+var roleId = getRoleIdByName(roleName);
+var users = getUsersByDptIdAndRoleId(depId,roleId);
+if(users!=null && users.size()>0){
+	for(var iter1=users.iterator();iter1.hasNext();){
+	    var user=iter1.next();
+	    if(user!=null && webUser!=null && webUser.getId()==(user.getId())){
+	    	isExecuteDirector = true;
+	    	break;
+	    }
+	}
+}
+//当前登录用户是否执行部门副主任
+if(!isExecuteDirector){
+	var roleName=getRoleByRoleNo("1003",getApplication());	//1003是部门副主任编号
+	var roleId = getRoleIdByName(roleName);
+	var users = getUsersByDptIdAndRoleId(depId,roleId);
+	if(users!=null && users.size()>0){
+		for(var iter1=users.iterator();iter1.hasNext();){
+		    var user=iter1.next();
+		    if(user!=null && webUser!=null && webUser.getId()==(user.getId())){
+		    	isExecuteDirector = true;
+		    }
+		}
+	}
+}
+
+if(!isExecuteDirector){
+	var roleName=getRoleByRoleNo("1012",getApplication());	//1012是计划分配员编号
+	var roleId = getRoleIdByName(roleName);
+	var users = getUsersByDptIdAndRoleId(depId,roleId);
+	if(users!=null && users.size()>0){
+		for(var iter1=users.iterator();iter1.hasNext();){
+		    var user=iter1.next();
+		    if(user!=null && webUser!=null && webUser.getId()==(user.getId())){
+		    	isExecuteDirector = true;
+		    }
+		}
+	}
+}
+var rtn = false;
+if(stateLabel!=null && stateLabel==("计划执行") && isExecuteDirector){
+	rtn = true;
+}
+rtn;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <iconurl></iconurl>
+  <orderno>211</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e9-7a26-62f59b84-9820-539e9af1e136</parentForm>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <icon></icon>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList>|</targetList>
+  <label><![CDATA[]]></label>
+  <processPreview>false</processPreview>
+</activity>

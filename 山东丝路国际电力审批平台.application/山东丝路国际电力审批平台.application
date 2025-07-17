@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application id="11e7-ef12-74ef29ec-8f99-af63cc0890b3">
+  <name>山东丝路国际电力审批平台</name>
+  <description>山东丝路国际电力有限公司</description>
+  <type>0</type>
+  <orderNo>4</orderNo>
+  <datasourceId>11e7-ef12-9c12d901-8f99-af63cc0890b3</datasourceId>
+  <activated>true</activated>
+  <category></category>
+  <brief></brief>
+  <ico>{"icon":"/uploads/resource/image/app_img.png","icontype":"img"}</ico>
+</application>

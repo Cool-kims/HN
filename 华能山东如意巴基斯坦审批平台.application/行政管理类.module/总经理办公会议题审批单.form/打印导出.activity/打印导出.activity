@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e9-60f7-0288d0e6-9daa-bf7ae5f506d2">
+  <name>打印导出</name>
+  <parentId>__11e9-5b52-b3f2f257-9daa-bf7ae5f506d2</parentId>
+  <type>43</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>32</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e9-5b52-b3f2f257-9daa-bf7ae5f506d2</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[#include "customlibs";
+ var request = $WEB.getParamsTable().getHttpRequest();
+var url1="http://" + request.getServerName()+":" + request.getServerPort() ;
+var url=url1+"/"+getmyprefix()+"nxreport/reportJsp/pubShowRpt.jsp?rptName=ZBHSPD.raq&params=id="+getId();
+url;]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[]]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

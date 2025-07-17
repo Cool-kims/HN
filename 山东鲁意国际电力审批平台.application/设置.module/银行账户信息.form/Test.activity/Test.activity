@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="__PAXFvlzsGjvuxS9srab">
+  <name>Test</name>
+  <parentId>__11e8-526e-f1e58157-8c7f-45024b0e47eb</parentId>
+  <type>13</type>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType></colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
+  <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <iconurl></iconurl>
+  <orderno>0</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e8-526e-f1e58157-8c7f-45024b0e47eb</parentForm>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <icon></icon>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[(function(){
+	var process = getFormProcess();
+	var forms = process.list(getApplication(), null, null);
+	for(var iter = forms.iterator();iter.hasNext();){
+		var form = iter.next();
+		form.inited();
+		var FieldList = form.getFields();//获取所有表单字段
+		if(FieldList!=null && FieldList.size()>0){
+			for(var iter1 = FieldList.iterator();iter1.hasNext();){
+				var field = iter1.next();
+				var name = field.getName();//获取字段名称
+				var TagName = field.getTagName();
+				var discript = field.getDiscript();//获取描述
+				println("TagName====>"+TagName);
+				if(isNotNull(TagName)&&"ButtonField" == (TagName)){
+					var afterActionScript = field.getAfterActionScript();//获取执行后脚本
+					println("afterActionScript===>"+afterActionScript);
+					var beforeActionScript = field.getBeforeActionScript();//获取执行前脚本
+					println("beforeActionScript===>"+beforeActionScript);
+				}
+				
+				
+			}
+		}
+		//form.setWaterMarkScript(waterScript);
+		//form.setShowWaterMark(true);//开启水印
+		//process.update(form);
+	}
+})()]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond></transpond>
+  <targetList>|</targetList>
+  <label><![CDATA[]]></label>
+  <processPreview>false</processPreview>
+</activity>

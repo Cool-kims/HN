@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e9-7a26-62fb6867-9820-539e9af1e136">
+  <name>year_plan_check</name>
+  <parentId>11e9-7a26-62f43cbe-9820-539e9af1e136</parentId>
+  <description>年度验收计划</description>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>30</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2019-07-25T21:00:15.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e9-7a26-62f4b1fd-9820-539e9af1e136</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e9-7a26-62f463d1-9820-539e9af1e136</relatedForm>
+  <permissionType>private</permissionType>
+  <sqlFilterScript><![CDATA[//月度验收计划视图Sql
+var userId = getWebUser().getId();
+var sql = "select * from tlk_plant_plan where id in (select DOC_ID from T_ACTORRT where ACTORID='"+userId+"') and (STATELABEL = '计划验收' or STATELABEL = '验收部门主任验收' or STATELABEL = '厂领导验收') and item__pType='年度'";
+var _pNo = getItemValue("_pNo");
+var _pTitle = getItemValue("_pTitle");
+var _p2Department = getItemValue("_p2Department");
+var _pCheckDepartment = getItemValue("_pCheckDepartment");
+var _pEndTime1 = getItemValue("_pEndTime1");
+var _pEndTime2 = getItemValue("_pEndTime2");
+var _pResponsible = getItemValue("_pResponsible");
+var _pChecker = getItemValue("_pChecker");
+var _pSource = getItemValue("_pSource");
+var _isDefer = getItemValue("_isDefer");
+var _pDepartment = getItemValue("_pDepartment");
+
+if(_pNo!=null && !_pNo==("")){
+	sql += " and ITEM__PNO like '%"+_pNo+"%' ";
+}
+if (_pTitle != null && _pTitle.trim().length > 0) {
+	sql += " and ITEM__PTITLE like  '%" + _pTitle + "%'";
+}
+if (_p2Department != null && _p2Department.trim().length > 0) {
+	sql += " and ITEM__p2Department like  '%" + _p2Department + "%'";
+}
+if (_pCheckDepartment != null && _pCheckDepartment.trim().length > 0) {
+	sql += " and ITEM__pCheckDepartment like  '%" + _pCheckDepartment + "%'";
+}
+if (_pEndTime1 != null && _pEndTime1.trim().length > 0) {
+ _pEndTime1 ="TO_DATE('"+_pEndTime1+"',  'YYYY-MM-DD HH24:MI:SS')";
+	sql += " and ITEM__pEndTime >=  " + _pEndTime1 + "";
+}
+if (_pEndTime2 != null && _pEndTime2.trim().length > 0) {
+_pEndTime2 ="TO_DATE('"+_pEndTime2+"',  'YYYY-MM-DD HH24:MI:SS')";
+	sql += " and ITEM__pEndTime <=  " + _pEndTime2 + "";
+}
+if (_pResponsible != null && _pResponsible.trim().length > 0) {
+	sql += " and ITEM__pResponsible like  '%" + _pResponsible + "%'";
+}
+if (_pChecker != null && _pChecker.trim().length > 0) {
+	sql += " and ITEM__pChecker like  '%" + _pChecker + "%'";
+}
+if (_pSource != null && _pSource.trim().length > 0) {
+	sql += " and ITEM__pSource like  '%" + _pSource + "%'";
+}
+if (_isDefer != null && _isDefer.trim().length > 0) {
+	sql += " and ITEM__isDefer like '" + _isDefer + "'";
+}
+if (_pDepartment != null && _pDepartment.trim().length > 0) {
+	sql += " and ITEM__pDepartment like  '%" + _pDepartment + "%'";
+}
+sql;]]></sqlFilterScript>
+  <filterCondition><![CDATA[[{field:'_pNo',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pEndTime',operator:'>=',type:'03',match:'_pEndTime1'},{field:'_pType',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pTitle',operator:'LIKE',type:'03',match:'_pTitle'},{field:'_pEndTime',operator:'<=',type:'03',match:'_pEndTime2'},{field:'_pLevel',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pDepartment',operator:'LIKE',type:'03',match:'_pDepartment'},{field:'_p2Department',operator:'LIKE',type:'03',match:'_p2Department'},{field:'_pResponsible',operator:'LIKE',type:'03',match:'_pResponsible'},{field:'_pCheckDepartment',operator:'LIKE',type:'03',match:'_pCheckDepartment'},{field:'_pChecker',operator:'LIKE',type:'03',match:'_pChecker'},{field:'_isDefer',operator:'LIKE',type:'03',match:'_isDefer'},{field:'_pSpecial',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pSource',operator:'LIKE',type:'03',match:'_pSource'},{field:'_isCancel',operator:'LIKE',type:'03',match:'_pNo'},{field:'$StateLabel',operator:'=',type:'00',match:'计划验收'},{field:'$StateLabel',operator:'=',type:'00',match:'厂领导验收'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <authorityCondition>[{_authFields:'auditor',_authFieldScope:'itself'}]</authorityCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

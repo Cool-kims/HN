@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef16-894049a3-8f99-af63cc0890b3">
+  <name>物资出库单子表</name>
+  <parentId>11e7-ef16-893e4dbb-8f99-af63cc0890b3</parentId>
+  <description>物资出库单子表222</description>
+  <sortId>151194052307200000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table width="85%" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">序号</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">物资名称</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">型号规格</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">单位</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">数量</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">单价(元)</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">金额</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">税率</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">税额</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d4d7-4cb92a5f-b0cf-41bab8fafee8" text="text" name="序号" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d4d7-5714af8a-b0cf-41bab8fafee8" text="text" name="物资名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d4d7-60af0795-b0cf-41bab8fafee8" text="text" name="型号规格" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="型号规格" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d4d7-6640f6c0-b0cf-41bab8fafee8" text="text" name="单位" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d4d7-6ad1546b-b0cf-41bab8fafee8" text="text" name="数量" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d4d7-72d8b066-b0cf-41bab8fafee8" text="text" name="单价" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="单价" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" numberpattern="##.##" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d4d7-7b0b1401-b0cf-41bab8fafee8" text="readonly" name="单项合计" texttype="readonly" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="var@nbsp;sl@nbsp;=@nbsp;getItemValueAsDouble(@quot;数量@quot;);@amp;#13;var@nbsp;dj@nbsp;=@nbsp;getItemValueAsDouble(@quot;单价@quot;);@amp;#13;var@nbsp;heji@nbsp;=@nbsp;sl*dj;@amp;#13;heji;" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" numberpattern="##.##" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-5d85-05f2ec9b-b989-097caeda21f3" text="text" name="税率" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-5d85-0ddd7275-b989-097caeda21f3" text="text" name="税额" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:90px" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>23</version>
+  <mappingStr><![CDATA[{"formName":"物资出库单子表","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11ee-9d41-f2616c2c-8fab-ff1bf1df9a4f">
+  <name>提交 Submit</name>
+  <parentId>__11ee-9d3f-16b1de80-8fab-ff1bf1df9a4f</parentId>
+  <type>5</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow>11e8-3361-17b67dc3-94e7-ef330bda161e</onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[#include "comm";
+#include "jumpURL";
+
+var doc=getCurrentDocument();
+//第一节点
+var isFirtNode1 = doc.isFirtNode();
+
+//填报人具备修改权限所以需要校验金额，通过后后续流程不再校验金额
+if (isFirtNode1){
+	
+	var depts=getItemValueAsString("编制部门"); // 部门
+	var times=getItemValueAsString("日期"); // 填表日期
+
+	var bill="费用报销单";// 单据类型 :
+	var cost=getItemValueAsString("费用类型");// 费用金额
+
+
+	//费用及资金预算双重控制
+	var a = con_mon("资金",depts,times,bill,cost);
+	var b = con_mon("费用",depts, times, bill, cost);	
+	var str="";
+	if (a==""){
+		str=b;
+	}else{
+		if (b==""){
+			str=a;
+		}else{
+			str=a+"\n"+b;
+		}
+	}
+	//判断是否已同步填写付汇单
+    //var v=isSubFHD("FYBXDID");
+       // str=str+v;
+        str;
+}
+]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+//println("fstate==="+fstate);
+var booleans=false;
+if(fstate==null){
+	booleans=true;
+}
+booleans;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>2</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11ee-9d3f-16b1de80-8fab-ff1bf1df9a4f</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

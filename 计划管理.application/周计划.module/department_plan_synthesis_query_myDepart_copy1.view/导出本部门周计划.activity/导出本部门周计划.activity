@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e9-a6f0-279971e3-82fc-f1e434779323">
+  <name>导出本部门周计划</name>
+  <parentId>11e9-7a26-62fd1645-9820-539e9af1e136</parentId>
+  <type>43</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>3</orderno>
+  <stateToShow></stateToShow>
+  <parentView>11e9-7a26-62fd1645-9820-539e9af1e136</parentView>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[#include "customlibs";
+ var request = $WEB.getParamsTable().getHttpRequest();
+ var deptid = getWebUser().getDefaultDepartment();
+ deptid='+deptid+';
+var url1="http://" + request.getServerName()+":" + request.getServerPort() ;
+var url=url1+"/jhnxreport/reportJsp/pubShowRpt.jsp?rptName=JHGLBMZB.raq&params=id="+getWebUser().getDefaultDepartment();
+url;]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[]]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

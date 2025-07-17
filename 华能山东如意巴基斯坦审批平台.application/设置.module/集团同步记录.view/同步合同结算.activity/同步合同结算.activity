@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e4-96df-4b4788a8-ad24-b530d4e48565">
+  <name>同步合同结算</name>
+  <parentId>11e7-ef13-4f4a3657-8f99-af63cc0890b3</parentId>
+  <type>1</type>
+  <onActionForm></onActionForm>
+  <onActionView>11e7-ef13-4f4a3657-8f99-af63cc0890b3</onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[  
+ var  tb=new Packages.cn.myapps.self.com.synch.HtSb();
+ if (tb.getSynchUser()==null)
+ {
+	 createAlert("当前用户集团没有授权同步权限，请联系管理员");
+ }
+ else
+ {
+	 var result=tb.get_history_data("balance_tb");
+	 if (result!=null)
+	{
+		   var pasjson= new (Java.type('cn.myapps.util.json.JsonUtil'))();
+		   var col=pasjson.toCollection("["+result+"]");
+		   
+		  for(var iter=col.iterator();iter.hasNext();)
+		  {
+			   var value1=iter.next();
+			   if (value1.get("error").trim()=="0")
+				   {
+				     var return_value=value1.get("return");
+				    if (return_value=="-12")
+					 {
+					   "登录集团系统失败,无法建立连接！";
+					 }
+					else
+					if (return_value=="-9999")
+					{
+					   createAlert("插入数据异常！");  
+					}
+					else
+					if (return_value=="-11")
+					{
+					   createAlert("与集团系统建立连接失败！，上报失败");  
+					}
+					else
+					if (return_value=="-10")
+					{
+					   createAlert("未获取到项目系统的访问地址！，上报失败");  
+					}
+					else
+					if (return_value=="-9")
+					{
+					   createAlert("未获取到项目接口配置信息！，上报失败");  
+					}
+					if (return_value=="-8")
+					{
+					   createAlert("当前合同类型(工程、物资)！,无法确定！！，上报失败");  
+					}
+					else
+					if (return_value=="-13")
+					{
+					   createAlert("送审记录已经生成，但存在错误，请联系管理员！，上报失败");  
+					}
+					else if  (return_value=="0")
+					{
+						createAlert("同步成功");  
+					}
+				  }
+		  }
+		  
+	 }
+ }
+
+  
+
+ ]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>17</orderno>
+  <stateToShow></stateToShow>
+  <parentView>11e7-ef13-4f4a3657-8f99-af63cc0890b3</parentView>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

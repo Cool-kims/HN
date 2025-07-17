@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef16-8937e4ca-8f99-af63cc0890b3">
+  <name>月度评优查询</name>
+  <parentId>11e7-ef16-8937bdb9-8f99-af63cc0890b3</parentId>
+  <sortId>145901118177200000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function(){
+        setTimeout(function(){
+                jQuery("div.changeColor_red").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#FF0000");
+                });
+  jQuery("div.changeColor_blue").each(function(){
+                                       jQuery(this).parents("tr").find("td").find("a").css("color","#111FEE");
+                                                        });
+  jQuery("div.changeColor_green").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#408A10");
+                });
+  jQuery("div.changeColor_black").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#000000");
+                });
+        },300);
+});
+</script>
+<table height="62" cellSpacing="1" cellPadding="1" width="801" border="0" style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none">
+    <tbody>
+        <tr>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">评审月份：</td>
+            <td colSpan="7" style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-f373-91a61fd2-87b5-9b74bd2c630e" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="月份起" prev_Name="" datePattern="YM" valueScript="" processDescription="[];[]" isDefaultValue="false" editMode="01" calculateOnRefresh="false" textType="text" printHiddenValue="" hiddenPrintScript="" hiddenValue="" validateRule="" validateLibs="" refreshOnChanged="false" hiddenScript="" readonlyScript="" mobile="true" filtercondition="" limit="false" discript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" fieldtype="VALUE_TYPE_DATE" />~<input id="11e5-f373-9743ce28-87b5-9b74bd2c630e" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="月份止" prev_Name="" datePattern="YM" valueScript="" processDescription="[];[]" isDefaultValue="false" editMode="01" calculateOnRefresh="false" textType="text" printHiddenValue="" hiddenPrintScript="" hiddenValue="" validateRule="" validateLibs="" refreshOnChanged="false" hiddenScript="" readonlyScript="" mobile="true" filtercondition="" limit="false" discript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" fieldtype="VALUE_TYPE_DATE" /></td>
+        </tr>
+        <tr>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">基建之星结果：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-ba87-0d634969-be1b-f344f04940f3" value="" name="C_编号" mobile="true" filtercondition="" discript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" text="text" bordertype="false" numberpattern="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" valuescript="" processdescription="[];[]" style=" width: 152px" /></td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">亮点示范区结果：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-ba87-0d63496a-be1b-f344f04940f3" value="" name="亮点示范区结果" valueScript="" processDescription="[];[]" isDefaultValue="false" editMode="01" calculateOnRefresh="false" textType="text" printHiddenValue="" hiddenPrintScript="" hiddenValue="" validateRule="" validateLibs="" refreshOnChanged="false" hiddenScript="" readonlyScript="" mobile="true" filtercondition="" discript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" borderType="false" numberPattern="" fieldType="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" text="text" class="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">编制日期：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-ba87-0d63496b-be1b-f344f04940f3" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="19" value="" name="编制日期" mobile="true" filtercondition="" limit="false" discript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" fieldtype="VALUE_TYPE_DATE" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" valuescript="" processdescription="[];[]" datepattern="YMD" prev_name="" style=" width: 151px" /></td>
+        </tr>
+    </tbody>
+</table>
+<table cellSpacing="0" cellPadding="0" width="694" border="1" style="border-top: #b4ccee 1px solid; height: 20px; border-right: #b4ccee 1px solid; width: 694px; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">
+    <tbody>
+        <tr>
+            <td bgColor="#000000" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;&nbsp;</td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;：新增</td>
+            <td bgColor="#0000ff" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;&nbsp;</td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：审批中&nbsp;</td>
+            <td bgColor="#408a10" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid"></td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：已批准</td>
+            <td bgColor="#ff0000" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid"></td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：作废</td>
+        </tr>
+    </tbody>
+</table>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>14</version>
+  <mappingStr><![CDATA[{"formName":"月度评优查询","tableName":"","columnMappings":[],"excelMapping":"{'excelDocInfo':{}}"}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

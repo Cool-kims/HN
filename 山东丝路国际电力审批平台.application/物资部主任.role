@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11e7-ef16-89483911-8f99-af63cc0890b3">
+      
+    <name>物资部主任</name>
+      
+    <parentId>11e7-ef12-74ef29ec-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>151472761538700000</sortId>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>R6dec</roleNo>
+</role>

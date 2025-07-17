@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ea-1198-2fc1746d-8f0a-d7f5e550fac4">
+  <name>用车申请单新 Car application form</name>
+  <parentId>11e7-ef14-67e8beaa-8f99-af63cc0890b3</parentId>
+  <description>用车申请单新 Car application form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-67e8beaa-8f99-af63cc0890b3</superior>
+  <linkName>用车申请单新 Car application form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67dc1470-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ea-14ba-78a19835-930c-d13b4bbd9f9b]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

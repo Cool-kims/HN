@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ec-78fc-5e33d6d8-b810-7bae9f65952d">
+  <name>摘要363</name>
+  <parentId>__11ec-5cb7-f0ac5885-811e-db6d5a39b39c</parentId>
+  <title>摘要363</title>
+  <type>00</type>
+  <formId>__11ec-5cb7-f0ac5885-811e-db6d5a39b39c</formId>
+  <fieldNames>采购名称;采购编号</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

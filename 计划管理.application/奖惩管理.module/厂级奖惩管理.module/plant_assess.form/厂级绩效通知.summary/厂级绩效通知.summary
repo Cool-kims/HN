@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e9-7a26-62fa090f-9820-539e9af1e136">
+  <name>厂级绩效通知</name>
+  <parentId>__11e9-7a26-62f4d916-9820-539e9af1e136</parentId>
+  <title>厂级绩效通知</title>
+  <type>00</type>
+  <formId>__11e9-7a26-62f4d916-9820-539e9af1e136</formId>
+  <fieldNames>_pTitle;_pEndTime;_pAssessTotal;_pRemark</fieldNames>
+  <scope>1</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

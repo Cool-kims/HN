@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e9-9cc6-e1f2bd47-bffc-fd2f695754f0">
+  <name>计划管理奖惩测试</name>
+  <parentId>11e9-7a26-62f5002c-9820-539e9af1e136</parentId>
+  <sortId>156207136197500000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table width="200" align="center" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.ButtonField" id="11e9-9c87-446e0653-81d7-33a04a154b6f" type="button" value="部门奖惩测试" name="部门奖惩测试" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" calculateonrefresh="false" mobile="true" filenamescript="" statetoshow="" approvelimit="" beforeactionscript="" beforeactionscript="@quot;生成绩效数据函数库@quot;;@amp;#13;createDepartmentAssess();@amp;#13;//createPlantAssess();" dispatcherurl="" dispatchermode="0" dispatcherparams="" acttype="13" actionview="" actionform="" actionflow="" transpond="" actionprint="" jumptype="0" jumpmode="0" jumpactopentype="0" targetlist="" flowmode="2" withold="false" startflowscript="" flowshowtype="ST01" refreshmode="0" refreshfields="" impmappingconfigid="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.ButtonField" id="11e9-9c87-5e413344-81d7-33a04a154b6f" type="button" value="厂级奖惩测试" name="厂级奖惩测试" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" calculateonrefresh="false" mobile="true" filenamescript="" statetoshow="" approvelimit="" beforeactionscript="" beforeactionscript="@quot;生成绩效数据函数库@quot;;@amp;#13;//createDepartmentAssess();@amp;#13;createPlantAssess();" dispatcherurl="" dispatchermode="0" dispatcherparams="" acttype="13" actionview="" actionform="" actionflow="" transpond="" actionprint="" jumptype="0" jumpmode="0" jumpactopentype="0" targetlist="" flowmode="2" withold="false" startflowscript="" flowshowtype="ST01" refreshmode="0" refreshfields="" impmappingconfigid="" /></td>
+            <td rowspan="3" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>2</version>
+  <mappingStr><![CDATA[{"formName":"计划管理奖惩测试","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

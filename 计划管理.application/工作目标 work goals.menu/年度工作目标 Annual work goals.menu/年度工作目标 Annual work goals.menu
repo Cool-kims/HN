@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-7a26-62fa093f-9820-539e9af1e136">
+  <name>年度工作目标 Annual work goals</name>
+  <parentId>11e9-7a26-62fa093e-9820-539e9af1e136</parentId>
+  <description>年度工作目标 Annual work goals</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e9-7a26-62fa093e-9820-539e9af1e136</superior>
+  <linkName>年度工作目标 Annual work goals</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e9-7a26-62f5002e-9820-539e9af1e136</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-7a26-62fc52e1-9820-539e9af1e136]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>1</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

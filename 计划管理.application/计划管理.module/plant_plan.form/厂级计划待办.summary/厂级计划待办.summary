@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e9-7a26-62f9e1f8-9820-539e9af1e136">
+  <name>厂级计划待办</name>
+  <parentId>__11e9-7a26-62f463d1-9820-539e9af1e136</parentId>
+  <title>厂级计划待办</title>
+  <type>00</type>
+  <formId>__11e9-7a26-62f463d1-9820-539e9af1e136</formId>
+  <fieldNames>_pTitle;_pDepartment;_pResponsible;$StateLabel</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

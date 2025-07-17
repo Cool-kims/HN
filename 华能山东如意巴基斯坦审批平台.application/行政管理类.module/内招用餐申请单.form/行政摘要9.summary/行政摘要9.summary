@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-92f8-d4d69f95-8eac-4b89bdea6b09">
+  <name>行政摘要9</name>
+  <parentId>__11e7-ef13-4f3ec436-8f99-af63cc0890b3</parentId>
+  <title>行政摘要9</title>
+  <type>00</type>
+  <formId>__11e7-ef13-4f3ec436-8f99-af63cc0890b3</formId>
+  <fieldNames>来宾单位;招待原因</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

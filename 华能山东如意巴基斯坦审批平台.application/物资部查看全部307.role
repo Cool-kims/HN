@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e8-0053-353c4d67-8497-93502d158b33">
+  <name>物资部查看全部307</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <roleNo>Rbdc0</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>151672180102300000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-fb8d-cc04b393-b36b-a111d0b35b26","type":1,"resId":"11e7-fb8d-cc04b393-b36b-a111d0b35b26"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef13-4f49727a-8f99-af63cc0890b3","type":1,"resId":"11e7-ef13-4f49727a-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-fb8d-cc04b393-b36b-a111d0b35b26","type":1,"resId":"11e7-fb8d-cc04b393-b36b-a111d0b35b26"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef13-4f49727a-8f99-af63cc0890b3","type":1,"resId":"11e7-ef13-4f49727a-8f99-af63cc0890b3"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

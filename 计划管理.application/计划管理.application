@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application id="11e9-83bd-91f5e6cf-9b63-ffda5b016ece">
+  <name>计划管理</name>
+  <description>电厂计划管理系统</description>
+  <type>0</type>
+  <orderNo>5</orderNo>
+  <datasourceId>11e9-83bd-f221a71c-9b63-ffda5b016ece</datasourceId>
+  <activated>true</activated>
+  <category></category>
+  <brief></brief>
+  <ico>{"icon":"/uploads/resource/image/app_img.png","icontype":"img"}</ico>
+</application>

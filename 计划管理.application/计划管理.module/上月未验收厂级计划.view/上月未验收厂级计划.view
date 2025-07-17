@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e9-b9d8-4e5441d6-9c70-0ba95739f67e">
+  <name>上月未验收厂级计划</name>
+  <parentId>11e9-7a26-62f43cbe-9820-539e9af1e136</parentId>
+  <description>上月上级计划未验收</description>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>30</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2019-08-08T17:35:14.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e9-7a26-62f4b1fc-9820-539e9af1e136</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e9-7a26-62f463d1-9820-539e9af1e136</relatedForm>
+  <permissionType>public</permissionType>
+  <sqlFilterScript><![CDATA[//月度计划综合查询视图Sql
+var userId = getWebUser().getId();
+var sql = "select * from tlk_plant_plan where (stateLabel='计划验收' " +
+    " or stateLabel='验收部门主任验收' or stateLabel='厂领导验收')" +
+    " and ((item__pEndTime>=(trunc(add_months(sysdate,-1),'mm')) and item__pEndTime<(trunc(sysdate, 'mm')))"
+    +" or (item__pLastCheckTime>=(trunc(add_months(sysdate,-1),'mm')) and item__pLastCheckTime<(trunc(sysdate, 'mm')))) and item__isCancel is null ";
+var _pNo = getItemValue("_pNo");
+var _pTitle = getItemValue("_pTitle");
+var _pDepartment = getItemValue("_pDepartment");
+var _pCheckDepartment = getItemValue("_pCheckDepartment");
+var _pSource = getItemValue("_pSource");
+var stateLabel = getItemValue("_stateLabel");
+var _pEndTime1 = getItemValue("_pEndTime1");
+var _pEndTime2 = getItemValue("_pEndTime2");
+var _p2Department = getItemValue("_p2Department");
+var _pChecker = getItemValue("_pChecker");
+var _pResponsible = getItemValue("_pResponsible");
+var author = getItemValue("_pCreater");	//起草人
+var _isDefer = getItemValue("_isDefer");
+var _isCancel = getItemValue("_isCancel");
+
+if(_pNo!=null && !_pNo==("")){
+	sql += " and ITEM__PNO like '%"+_pNo+"%' ";
+}
+if (_pTitle != null && _pTitle.trim().length > 0) {
+	sql += " and ITEM__PTITLE like  '%" + _pTitle + "%'";
+}
+if (_pDepartment != null && _pDepartment.trim().length > 0) {
+	sql += " and ITEM__pDepartment like  '%" + _pDepartment + "%'";
+}
+if (_pCheckDepartment != null && _pCheckDepartment.trim().length > 0) {
+	sql += " and ITEM__pCheckDepartment like  '%" + _pCheckDepartment + "%'";
+}
+if (_pSource != null && _pSource.trim().length > 0) {
+	sql += " and ITEM__pSource like  '%" + _pSource + "%'";
+}
+if (stateLabel != null && stateLabel.trim().length > 0) {
+	sql += " and STATELABEL like '%" + stateLabel + "%'";
+}
+if (_pEndTime1 != null && _pEndTime1.trim().length > 0) {
+ _pEndTime1 ="TO_DATE('"+_pEndTime1+"',  'YYYY-MM-DD HH24:MI:SS')";
+	sql += " and ITEM__pEndTime >=  " + _pEndTime1 + "";
+}
+if (_pEndTime2 != null && _pEndTime2.trim().length > 0) {
+_pEndTime2 ="TO_DATE('"+_pEndTime2+"',  'YYYY-MM-DD HH24:MI:SS')";
+	sql += " and ITEM__pEndTime <=  " + _pEndTime2 + "";
+}
+if (_p2Department != null && _p2Department.trim().length > 0) {
+	sql += " and ITEM__p2Department like  '%" + _p2Department + "%'";
+}
+if (_pChecker != null && _pChecker.trim().length > 0) {
+	sql += " and ITEM__pChecker like  '%" + _pChecker + "%'";
+}
+if (_pResponsible != null && _pResponsible.trim().length > 0) {
+	sql += " and ITEM__pResponsible like  '%" + _pResponsible + "%'";
+}
+if (author != null && author.trim().length > 0) {
+	sql += " and author like '%" + author + "%'";
+}
+if (_isDefer != null && _isDefer.length > 0) {
+	sql += " and ITEM__isDefer like '" + _isDefer + "'";
+}
+if (_isCancel != null && _isCancel.length > 0) {
+	sql += " and ITEM__isCancel like '" + _isCancel + "' and statelabel = '结束'";
+}
+sql;]]></sqlFilterScript>
+  <filterCondition><![CDATA[[{field:'_pNo',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pEndTime',operator:'>=',type:'03',match:'_pEndTime1'},{field:'_pType',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pTitle',operator:'LIKE',type:'03',match:'_pTitle'},{field:'_pEndTime',operator:'<=',type:'03',match:'_pEndTime2'},{field:'_pLevel',operator:'=',type:'03',match:'_pNo'},{field:'_pDepartment',operator:'LIKE',type:'03',match:'_pDepartment'},{field:'_p2Department',operator:'LIKE',type:'03',match:'_p2Department'},{field:'_pResponsible',operator:'LIKE',type:'03',match:'_pResponsible'},{field:'_pCheckDepartment',operator:'LIKE',type:'03',match:'_pCheckDepartment'},{field:'_pChecker',operator:'LIKE',type:'03',match:'_pChecker'},{field:'$StateLabel',operator:'LIKE',type:'03',match:'_stateLabel'},{field:'_pSource',operator:'LIKE',type:'03',match:'_pSource'},{field:'_pSpecial',operator:'LIKE',type:'03',match:'_pNo'},{field:'_isDefer',operator:'LIKE',type:'03',match:'_isDefer'},{field:'_isCancel',operator:'=',type:'03',match:'_isCancel'},{field:'$Author',operator:'LIKE',type:'03',match:'_pCreater'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e9-bbfd-92680015-9c70-0ba95739f67e">
+  <name>人资休假及机票查看全部</name>
+  <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+  <roleNo>R45fa</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>156550333689200000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-0bf5-b52ae15a-bdcc-87b7f930abeb","type":1,"resId":"11e9-0bf5-b52ae15a-bdcc-87b7f930abeb"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-0bf5-b52ae15a-bdcc-87b7f930abeb","type":1,"resId":"11e9-0bf5-b52ae15a-bdcc-87b7f930abeb"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

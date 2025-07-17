@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11ed-8b42-6d617859-8221-d1692677ae63">
+  <name>图书购买审批表</name>
+  <parentId>11e7-ef13-4f4442cb-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2023-01-03T14:04:30.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11ed-8b45-40e5a716-8221-d1692677ae63</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11ed-8b38-b9831b4c-8221-d1692677ae63</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'申请部门',operator:'LIKE',type:'03',match:'申请部门'},{field:'图书名称',operator:'LIKE',type:'03',match:'图书名称及数量'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <authorityCondition>[{_authFields:'author',_authFieldScope:'itself'}]</authorityCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

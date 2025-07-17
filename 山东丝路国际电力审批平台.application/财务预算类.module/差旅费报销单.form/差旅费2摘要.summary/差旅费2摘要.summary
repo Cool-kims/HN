@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-8b1d-652d25ba-8eac-4b89bdea6b09">
+  <name>差旅费2摘要</name>
+  <parentId>__11e7-ef16-893aa40e-8f99-af63cc0890b3</parentId>
+  <title>差旅费2摘要</title>
+  <type>00</type>
+  <formId>__11e7-ef16-893aa40e-8f99-af63cc0890b3</formId>
+  <fieldNames>姓名;出差事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

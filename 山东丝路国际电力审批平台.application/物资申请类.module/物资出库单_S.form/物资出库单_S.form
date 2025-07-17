@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef16-894049a4-8f99-af63cc0890b3">
+  <name>物资出库单_S</name>
+  <parentId>11e7-ef16-893e4dbb-8f99-af63cc0890b3</parentId>
+  <description>物资出库_S查询表单222</description>
+  <sortId>151194239880900000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table height="62" cellspacing="1" cellpadding="1" width="731" border="0" style="border: medium none; height: 62px; width: 731px;">
+    <tbody>
+        <tr>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">编号：</td>
+            <td colspan="3" style="border: medium none;"><input id="11e5-da90-a29cd0f1-bca3-1787d71be9d4" value="" name="C_编号" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" numberpattern="" bordertype="false" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" class="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+            <td style="text-align: right;">合同名称：</td>
+            <td><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e6-bdfc-cc7497ed-9714-f7b933202fae" text="text" name="C_合同名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" readonlyshowvalonly="true" refreshmode="0" refreshfields="" /></td>
+        </tr>
+        <tr>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">
+            <p>合同编号：</p>
+            </td>
+            <td colspan="3" style="border: medium none;"><input id="11e5-da90-a2da9d43-bca3-1787d71be9d4" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="C_合同编号" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" editmode="01" validatelibs="" processdescription="[];[]" numberpattern="" isdefaultvalue="false" valuescript="" validaterule="" bordertype="false" texttype="text" readonlyshowvalonly="true" refreshmode="0" refreshfields="" /></td>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">日期：</td>
+            <td style="border: medium none;"><input id="11e5-da90-a2e43a34-bca3-1787d71be9d4" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="C_日期" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" fieldtype="VALUE_TYPE_DATE" limit="false" datepattern="YMD" prev_name="" type="text" readonlyshowvalonly="true" refreshmode="0" refreshfields="" /></td>
+        </tr>
+    </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" width="694" border="1" style="border: 1px solid rgb(180, 204, 238); height: 20px; width: 694px;">
+    <tbody>
+        <tr>
+            <td bgcolor="#000000" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;：新增</td>
+            <td bgcolor="#0000ff" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：审批中&nbsp;</td>
+            <td bgcolor="#408a10" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：已批准</td>
+            <td bgcolor="#ff0000" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：作废<br />
+            &nbsp;<br />
+            &nbsp;</td>
+        </tr>
+    </tbody>
+</table>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>14</version>
+  <mappingStr><![CDATA[{"formName":"物资出库单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

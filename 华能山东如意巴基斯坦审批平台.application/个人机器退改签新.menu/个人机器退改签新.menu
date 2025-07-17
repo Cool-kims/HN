@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__MSCrWoW6qjajJOm1Bn9">
+  <name>个人机器退改签新</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <superior></superior>
+  <linkName>个人机器退改签新</linkName>
+  <linkType>00</linkType>
+  <moduleid>11e7-ef13-4f4442cb-8f99-af63cc0890b3</moduleid>
+  <actionContent><![CDATA[__11eb-d3bc-7c1deb81-ba63-77a12763f65b]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+</resourceVO>

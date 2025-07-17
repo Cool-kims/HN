@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e9-0a93-bc7fc0e7-bdcc-87b7f930abeb">
+  <name>休假机票及派车申请单_S</name>
+  <parentId>11e7-ef13-4f4442cb-8f99-af63cc0890b3</parentId>
+  <sortId>154599652504700000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table border="0" cellspacing="1" cellpadding="1" width="731" height="62" style="border: medium none; width: 731px; height: 62px;">
+    <tbody>
+        <tr>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">编号：</td>
+            <td colspan="3" style="border: medium none;"><input id="11e5-d92d-36ac8676-bca3-1787d71be9d4" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="C_编号" value="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" texttype="text" refreshonchanged="false" calculateonrefresh="false" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" /></td>
+            <td style="text-align: right;">单位部门：</td>
+            <td><input id="11e5-ba87-0d60d868-be1b-f344f04940f3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="C_工作单位" value="" size="1" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" texttype="text" refreshonchanged="false" calculateonrefresh="false" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" style="width: 250px;" /></td>
+        </tr>
+        <tr>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">
+            <p>请假人：</p>
+            </td>
+            <td colspan="3" style="border: medium none;"><input id="11e5-ba87-0d63496a-be1b-f344f04940f3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="编制人" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" hiddenscript="" processdescription="[];[]" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" valuescript="" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" /></td>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">编制日期：</td>
+            <td style="border: medium none;"><input id="11e5-d92d-7fce24e7-bca3-1787d71be9d4" class="cn.myapps.runtime.dynaform.form.ejb.DateField" name="编制日期" value="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" fieldtype="VALUE_TYPE_DATE" discript="" filtercondition="" limit="false" texttype="text" refreshonchanged="false" calculateonrefresh="false" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" datepattern="YMD" prev_name="" /></td>
+        </tr>
+    </tbody>
+</table>
+<table border="1" cellspacing="0" cellpadding="0" width="694" style="border: 1px solid rgb(180, 204, 238); width: 694px; height: 20px;">
+    <tbody>
+        <tr>
+            <td bgcolor="#000000" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;：新增</td>
+            <td bgcolor="#0000ff" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：审批中&nbsp;</td>
+            <td bgcolor="#408a10" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：已批准</td>
+            <td bgcolor="#ff0000" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：作废</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>2</version>
+  <mappingStr><![CDATA[{"formName":"休假机票及派车申请单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

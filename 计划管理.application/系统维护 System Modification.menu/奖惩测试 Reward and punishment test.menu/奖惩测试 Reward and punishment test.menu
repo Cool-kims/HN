@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-9cc7-2310f6c8-bffc-fd2f695754f0">
+  <name>奖惩测试 Reward and punishment test</name>
+  <parentId>11e9-7a26-62fa093c-9820-539e9af1e136</parentId>
+  <description>奖惩测试 Reward and punishment test</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e9-7a26-62fa093c-9820-539e9af1e136</superior>
+  <linkName>奖惩测试 Reward and punishment test</linkName>
+  <linkType>00</linkType>
+  <moduleid>11e9-7a26-62f5002c-9820-539e9af1e136</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[__11e9-9cc6-e1f2bd47-bffc-fd2f695754f0]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+</resourceVO>

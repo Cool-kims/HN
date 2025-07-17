@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e6-b90c-0cc964c0-80f3-a13ff81de2a8">
+  <name>保存并新建</name>
+  <parentId>__11e7-ef14-67d81c89-8f99-af63cc0890b3</parentId>
+  <type>42</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[
+//判断表单某字段不能为空,未加密者加密，已加密者不再加密
+var value = getItemValueAsString("密码"); 
+var retvar = "";
+if(value==null || value.trim().length<=0) {
+    retvar = "请填写密码";
+}else{
+ 	var yjm=getItemValueAsString("是否已加密") ;
+	if(value != null && value.trim().length >0 && yjm==("否")){
+		var aa=new Packages.cn.myapps.common.util.Security();
+        	//println("加密前："+value);
+        	value=Packages.cn.myapps.common.util.Security.encryptPassword(value);//将该字段的值加密
+        	//println("加密后："+value);
+       		var doc=getCurrentDocument();
+       	 	doc.findItem("密码").setValue(value);
+        	doc.findItem("是否已加密").setValue("是");
+	}	
+}
+retvar;]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-67d81c89-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<task id="11e9-7a26-62fa309c-9820-539e9af1e136">
+  <name>发送提报计划的提醒短信</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <description>每月24日提醒计划分配员提报下个月计划</description>
+  <type>1</type>
+  <runningTime class="sql-date">2019-06-17T08:30:00.000+08:00</runningTime>
+  <interval>1</interval>
+  <period>512</period>
+  <runtimes>1</runtimes>
+  <taskScript><![CDATA[var domainId = "11e3-33a2-6db7fe87-813d-659a841933da";
+var appId = getApplication();
+var content="计划提报提醒短信：请提报下个月计划！";
+//var userVO = getUserById("11e3-566f-1438769e-a71f-a9487b4defb0");		//系统管理员
+var receiver = "";
+var roleName=getRoleByRoleNo("1012",getApplication());	//1012就计划分配员角色编号
+var role1012Id = getRoleIdByName(roleName);
+//增加计划分配员
+var users = getUsersByRoleId(role1012Id);
+if(users!=null && users.size()>0){
+	for(var iter1=users.iterator();iter1.hasNext();){
+	    var userVO=iter1.next();
+	    var telephone = userVO.getTelephone();
+	    if(receiver==("")){
+		    receiver += telephone;
+	    }else {
+		    receiver += ","+telephone;
+		}
+	}
+}
+//println("===========receiver-->"+receiver);
+if(receiver!=null && !receiver==("")){
+	sendSMS4Task("", content, receiver, false,false,appId,domainId);
+}
+]]></taskScript>
+  <modifyTime class="sql-date">2019-06-17T11:35:39.000+08:00</modifyTime>
+  <creator>Admin</creator>
+  <creatorid>11e7-ef11-86509590-8f99-af63cc0890b3</creatorid>
+  <totalRuntimes>64</totalRuntimes>
+  <state>0</state>
+  <startupType>2</startupType>
+  <dayOfMonth>24</dayOfMonth>
+  <repeatTimes>0</repeatTimes>
+  <frequency>0</frequency>
+  <executedCount>0</executedCount>
+</task>

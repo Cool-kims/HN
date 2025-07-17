@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ed-f61f-e0ebc42b-9fd5-29ccd4df9cbd">
+  <name>办事处外出住宿审批单 Regional office outside accommodation application</name>
+  <parentId>11e7-ef14-67e89764-8f99-af63cc0890b3</parentId>
+  <description>办事处外出住宿审批单 Regional office outside accommodation application</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-67e89764-8f99-af63cc0890b3</superior>
+  <linkName>办事处外出住宿审批单 Regional office outside accommodation application</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67d9ca67-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ed-f61e-cdb2768a-9fd5-29ccd4df9cbd]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>25</orderno>
+</resourceVO>

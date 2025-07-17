@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-7d51-21fa356f-809b-6193dc4a23b7">
+  <name>摘要104</name>
+  <parentId>__11ea-7d50-6b56af5e-809b-6193dc4a23b7</parentId>
+  <title>摘要104</title>
+  <type>00</type>
+  <formId>__11ea-7d50-6b56af5e-809b-6193dc4a23b7</formId>
+  <fieldNames>$FormName;实发;合计实发</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

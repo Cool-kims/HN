@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e9-01f3-5409cd9d-8757-9ba2bef2ac21">
+  <name>信息产品耗材申请表新_S</name>
+  <parentId>11e7-ef14-ff9be342-8f99-af63cc0890b3</parentId>
+  <sortId>154504802101200000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table border="0" cellspacing="1" cellpadding="1" width="731" height="62" style="border: medium none; width: 731px; height: 62px;">
+    <tbody>
+        <tr>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">名称：</td>
+            <td colspan="3" style="border: medium none;"><input id="11e5-ba87-0d60d868-be1b-f344f04940f3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="C_名称" value="" size="1" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" numberpattern="" bordertype="false" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" style="width: 205px;" /></td>
+            <td style="text-align: right;">规格型号：</td>
+            <td colspan="3"><input id="11e6-c820-2985ecc9-ad68-01084507f2e0" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="C_规格型号" value="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" numberpattern="" bordertype="false" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" /></td>
+        </tr>
+        <tr>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">编号：</td>
+            <td style="border: medium none;"><input id="11e5-ba87-0d634969-be1b-f344f04940f3" name="C_编号" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" numberpattern="" isdefaultvalue="false" valuescript="" validaterule="" discript="" bordertype="false" fieldkeyevent="Tabkey" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" text="text" style="width: 152px;" /></td>
+            <td style="border: medium none; text-align: right;">编制人：</td>
+            <td style="border: medium none;"><input id="11e5-ba87-0d63496a-be1b-f344f04940f3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="编制人" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" numberpattern="" isdefaultvalue="false" valuescript="" validaterule="" discript="" bordertype="false" fieldkeyevent="Tabkey" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" text="text" /></td>
+            <td nowrap="noWrap" style="border: medium none; text-align: right;">编制日期：</td>
+            <td style="border: medium none;"><input id="11e5-ba87-0d63496b-be1b-f344f04940f3" class="cn.myapps.runtime.dynaform.form.ejb.DateField" name="编制日期" value="" size="19" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" isdefaultvalue="false" valuescript="" validaterule="" discript="" fieldtype="VALUE_TYPE_DATE" texttype="text" limit="false" prev_name="" datepattern="YMD" style="width: 151px;" /></td>
+        </tr>
+    </tbody>
+</table>
+<table border="1" cellspacing="0" cellpadding="0" width="694" style="border: 1px solid rgb(180, 204, 238); width: 694px; height: 20px;">
+    <tbody>
+        <tr>
+            <td bgcolor="#000000" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;：新增</td>
+            <td bgcolor="#0000ff" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：审批中&nbsp;</td>
+            <td bgcolor="#408a10" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：已批准</td>
+            <td bgcolor="#ff0000" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：作废</td>
+        </tr>
+    </tbody>
+</table>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>1</version>
+  <mappingStr><![CDATA[{"formName":"信息产品耗材申请表新_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

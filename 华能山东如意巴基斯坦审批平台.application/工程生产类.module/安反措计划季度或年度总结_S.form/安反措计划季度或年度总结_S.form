@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11eb-ee9c-c4e93a44-8e51-610ba77dff7f">
+  <name>安反措计划季度或年度总结_S</name>
+  <parentId>11e7-ef13-4f455447-8f99-af63cc0890b3</parentId>
+  <sortId>162736426508600000</sortId>
+  <templatecontext><![CDATA[<p>编制人：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11eb-ed17-975dce4d-8e51-610ba77dff7f" text="text" name="编制人" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp; 编制日期：&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11eb-ed17-9e66577a-8e51-610ba77dff7f" text="text" name="编制日期" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp;部门班组：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11eb-ee9f-affb13b6-8e51-610ba77dff7f" text="text" name="部门班组" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>2</version>
+  <mappingStr><![CDATA[{"formName":"安反措计划季度或年度总结_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

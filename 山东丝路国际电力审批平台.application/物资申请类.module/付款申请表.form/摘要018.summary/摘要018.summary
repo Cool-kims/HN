@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e7-f144-737188f1-b449-61bf0a28f1db">
+  <name>摘要018</name>
+  <parentId>__11e7-ef16-893ee9ff-8f99-af63cc0890b3</parentId>
+  <title>摘要018</title>
+  <type>00</type>
+  <formId>__11e7-ef16-893ee9ff-8f99-af63cc0890b3</formId>
+  <fieldNames>付款内容;合计本期应付</fieldNames>
+  <scope>1</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

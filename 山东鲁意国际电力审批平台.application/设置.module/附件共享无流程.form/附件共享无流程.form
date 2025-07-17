@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-ff97eb64-8f99-af63cc0890b3">
+  <name>附件共享无流程</name>
+  <parentId>11e7-ef14-ff979d38-8f99-af63cc0890b3</parentId>
+  <sortId>140620438464500000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table border="1" cellspacing="1" cellpadding="1" width="775" style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">
+    <tbody>
+        <tr>
+            <td width="100" style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">附件名称：</td>
+            <td width="200" style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><img id="11e3-e7a8-9f132267-8083-9d9a7554ffba" name="附件名称" src="plugins/attachmentuploadfield/attachment.gif" discript="" fieldtype="VALUE_TYPE_TEXT" classname="cn.myapps.runtime.dynaform.form.ejb.AttachmentUploadField" type="attachmentupload" refreshonchanged="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" opentype="download" limitsize="" filetype="00" customizetype="" limitnumber="3" filepattern="00" filecatalog="" class="cn.myapps.runtime.dynaform.form.ejb.AttachmentUploadField" /></td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">上传时间：</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-e7b2-2e2c8021-9d2d-37ed04e48293" name="上传时间" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" validaterule="" validatelibs="" valuescript="if@nbsp;(getItemValue(@quot;上传时间@quot;)==null@nbsp;||@nbsp;getItemValue(@quot;上传时间@quot;).trim().length@lt;=0)@amp;#13;{@amp;#13;@nbsp;@nbsp;@nbsp;getToday();@amp;#13;}" processdescription="[];[]" editmode="01" calculateonrefresh="false" refreshonchanged="false" texttype="readonly" discript="" filtercondition="" fieldtype="VALUE_TYPE_DATE" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" datepattern="YMD_HMS" prev_name="" limit="false" /></td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">上传人：</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-e7b2-5ecdd700-9d2d-37ed04e48293" name="上传人" value="" bordertype="false" numberpattern="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" validaterule="" validatelibs="" valuescript="var@nbsp;value1=getItemValue(@quot;上传人@quot;);@amp;#13;if@nbsp;(value1==null@nbsp;||@nbsp;value1.trim().length@lt;=0)@amp;#13;{@amp;#13;@nbsp;value1=getWebUser().getName();@amp;#13;}@amp;#13;value1;" processdescription="[];[]" editmode="01" calculateonrefresh="false" refreshonchanged="false" texttype="readonly" fieldkeyevent="Tabkey" text="readonly" discript="" filtercondition="" fieldtype="VALUE_TYPE_VARCHAR" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>10</version>
+  <iseditablescript><![CDATA[var pdoc=getParentDocument();
+println("pdoc==="+pdoc);
+var value=pdoc.getItemValueAsString("编制单位");
+var flag = false;
+var deptid= getWebUser().getDefaultDepartment();
+var depprocess=getDepartmentProcess();
+var dept=depprocess.doView(deptid);
+var  pdept=dept.getSuperior();
+var pname=pdept.getName();
+
+println("上级部门："+pname);
+
+var name=dept.getName();
+println("当前部门："+name);
+
+if (pname == "国网能源新疆准东煤电有限公司" || name==(value)) {
+	flag = true;
+}
+
+flag;]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"附件共享无流程","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

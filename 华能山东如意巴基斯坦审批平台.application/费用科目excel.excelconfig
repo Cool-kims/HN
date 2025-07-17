@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<impMappingConfigVO id="11e7-ef13-4f38d161-8f99-af63cc0890b3">
+  <name>费用科目excel</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <xml><![CDATA[<cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>
+<flowstatus>16</flowstatus>
+<flowpath></flowpath>
+<deleteMSG></deleteMSG>
+<TOP_ALIGNMENT>0.0</TOP_ALIGNMENT>
+<CENTER_ALIGNMENT>0.5</CENTER_ALIGNMENT>
+<BOTTOM_ALIGNMENT>1.0</BOTTOM_ALIGNMENT>
+<LEFT_ALIGNMENT>0.0</LEFT_ALIGNMENT>
+<RIGHT_ALIGNMENT>1.0</RIGHT_ALIGNMENT>
+<width>1192</width>
+<height>548</height>
+<PROPERTIES>4</PROPERTIES>
+<SOMEBITS>8</SOMEBITS>
+<FRAMEBITS>16</FRAMEBITS>
+<ALLBITS>32</ALLBITS>
+<ERROR>64</ERROR>
+<ABORT>128</ABORT>
+<needRollback>rollback</needRollback>
+<cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<formName>费用科目控制</formName>
+<x>114</x>
+<y>34</y>
+<scale>0</scale>
+<id>1514520042353</id>
+<name>sheet1</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>名称</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>100</x>
+<y>100</y>
+<scale>0</scale>
+<id>1514520064032</id>
+<name>名称</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+</cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>]]></xml>
+  <templatePath>/uploads/exceltemplate/费用科目控制2.xls</templatePath>
+</impMappingConfigVO>

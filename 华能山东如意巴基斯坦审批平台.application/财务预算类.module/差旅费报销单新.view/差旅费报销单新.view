@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e8-3308-1102c88f-94e7-ef330bda161e">
+  <name>差旅费报销单新</name>
+  <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2018-03-30T00:46:46.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef13-4f3b419b-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e8-3274-f7d86834-94e7-ef330bda161e</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'C_编号'},{field:'部门',operator:'LIKE',type:'03',match:'C_部门'},{field:'编制人',operator:'LIKE',type:'03',match:'C_人员名称'},{field:'创建时间',operator:'LIKE',type:'03',match:'C_日期'},{field:'创建时间',operator:'LIKE',type:'03',match:'结束日期'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <authorityCondition>[{_authFields:'author',_authFieldScope:'itself'}]</authorityCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

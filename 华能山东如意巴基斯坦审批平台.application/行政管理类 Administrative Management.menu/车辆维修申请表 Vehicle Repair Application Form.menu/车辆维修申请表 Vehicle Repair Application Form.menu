@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef13-4f4999a9-8f99-af63cc0890b3">
+  <name>车辆维修申请表 Vehicle Repair Application Form</name>
+  <parentId>11e7-ef13-4f497288-8f99-af63cc0890b3</parentId>
+  <description>车辆维修申请表 Vehicle Repair Application Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f497288-8f99-af63cc0890b3</superior>
+  <linkName>车辆维修申请表 Vehicle Repair Application Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3d166e-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e8-a10d-b8874709-910a-c9d6f560e02b]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>205</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

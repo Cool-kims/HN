@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e6-b9f8-db3b3fdd-a67f-d73469cc37a7">
+  <name>提交</name>
+  <parentId>__11e7-ef14-ff98fcee-8f99-af63cc0890b3</parentId>
+  <type>5</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow>11e7-ef14-ffaf6b62-8f99-af63cc0890b3</onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+//println("fstate==="+fstate);
+var booleans=false;
+if(fstate==null){
+	booleans=true;
+}
+booleans;
+]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>3</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-ff98fcee-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

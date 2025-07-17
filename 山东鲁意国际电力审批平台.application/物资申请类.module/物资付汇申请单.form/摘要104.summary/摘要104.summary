@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-934d-9885f231-8eac-4b89bdea6b09">
+  <name>摘要104</name>
+  <parentId>__11e7-ef14-ffa00229-8f99-af63cc0890b3</parentId>
+  <title>摘要104</title>
+  <type>00</type>
+  <formId>__11e7-ef14-ffa00229-8f99-af63cc0890b3</formId>
+  <fieldNames>汇款金额小写;编制部门</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

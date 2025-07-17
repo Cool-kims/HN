@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-7e01-d2045e02-809b-6193dc4a23b7">
+  <name>摘要102</name>
+  <parentId>__11ea-7e01-4057e3a7-809b-6193dc4a23b7</parentId>
+  <title>摘要102</title>
+  <type>00</type>
+  <formId>__11ea-7e01-4057e3a7-809b-6193dc4a23b7</formId>
+  <fieldNames>$FormName;绩效奖金实发;合计绩效奖金实发</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

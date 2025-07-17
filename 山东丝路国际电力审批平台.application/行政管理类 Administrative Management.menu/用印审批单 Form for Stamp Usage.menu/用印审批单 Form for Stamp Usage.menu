@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef16-894811a3-8f99-af63cc0890b3">
+  <name>用印审批单 Form for Stamp Usage</name>
+  <parentId>11e7-ef16-8948119e-8f99-af63cc0890b3</parentId>
+  <description>用印审批单 Form for Stamp Usage</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef16-8948119e-8f99-af63cc0890b3</superior>
+  <linkName>用印审批单 Form for Stamp Usage</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef16-893b6764-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e8-f3a1-41d65631-8757-9ba2bef2ac21]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>9</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef14-ffa88d79-8f99-af63cc0890b3">
+  <name>厂年度安全培训需求计划Plant Annual Safety Training requirements Plan</name>
+  <parentId>11e7-ef14-ffa88d73-8f99-af63cc0890b3</parentId>
+  <description>厂年度安全培训需求计划Plant Annual Safety Training requirements Plan</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-ffa88d73-8f99-af63cc0890b3</superior>
+  <linkName>厂年度安全培训需求计划Plant Annual Safety Training requirements Plan</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-ff983997-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef14-ffa9c58c-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>3</orderno>
+</resourceVO>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-67dc3a81-8f99-af63cc0890b3">
+  <name>办公用品采购子表</name>
+  <parentId>11e7-ef14-67dc1470-8f99-af63cc0890b3</parentId>
+  <sortId>145606871559000000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table border="1" cellSpacing="1" cellPadding="1" width="500" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+    <tbody>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">名称</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e5-d8b0-63f237a1-bb38-59181a4816d4" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="名称" value="" fieldType="VALUE_TYPE_VARCHAR" textType="text" fieldkeyevent="Tabkey" numberPattern="" borderType="false" refreshOnChanged="false" calculateOnRefresh="false" mobile="true" discript="" editMode="01" isDefaultValue="false" processDescription="[];[]" valueScript="" filtercondition="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" text="text" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">数量</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e5-d8b0-70501c7a-bb38-59181a4816d4" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="数量" value="" fieldType="VALUE_TYPE_NUMBER" textType="text" fieldkeyevent="Tabkey" numberPattern="" borderType="false" refreshOnChanged="false" calculateOnRefresh="false" mobile="true" discript="" editMode="01" isDefaultValue="false" processDescription="[];[]" valueScript="" filtercondition="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" text="text" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">估算金额</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e5-d8b0-7df610b3-bb38-59181a4816d4" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="估算金额" value="" fieldType="VALUE_TYPE_VARCHAR" textType="text" fieldkeyevent="Tabkey" numberPattern="" borderType="false" refreshOnChanged="false" calculateOnRefresh="false" mobile="true" discript="" editMode="01" isDefaultValue="false" processDescription="[];[]" valueScript="" filtercondition="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" text="text" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">&nbsp;</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>7</version>
+  <mappingStr><![CDATA[{"formName":"办公用品采购子表","tableName":"","columnMappings":[],"excelMapping":"{'excelDocInfo':{}}"}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

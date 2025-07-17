@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e8-3bb9-156047e1-94e7-ef330bda161e">
+  <name>供应商评价审批表_S</name>
+  <parentId>11e7-ef14-67e47859-8f99-af63cc0890b3</parentId>
+  <sortId>152325267484200000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table height="62" cellspacing="1" cellpadding="1" width="731" border="0" style="border-width: medium; border-style: none; border-color: initial; height: 62px; width: 731px;">
+    <tbody>
+        <tr>
+            <td nowrap="noWrap" style="border-width: medium; border-style: none; border-color: initial; text-align: right;">编号：</td>
+            <td colspan="3" style="border-width: medium; border-style: none; border-color: initial;"><input id="11e8-3bb9-1f589e8a-94e7-ef330bda161e" value="" name="C_编号" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" numberpattern="" bordertype="false" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" class="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+            <td style="text-align: right;">企业名称：</td>
+            <td><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-3bb9-1f59affb-94e7-ef330bda161e" text="text" name="C_企业名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /></td>
+        </tr>
+        <tr>
+            <td nowrap="noWrap" style="border-width: medium; border-style: none; border-color: initial; text-align: right;">
+            <p>编制人：</p>
+            </td>
+            <td colspan="3" style="border-width: medium; border-style: none; border-color: initial;"><input id="11e8-3bb9-1f5a734c-94e7-ef330bda161e" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="C_编制人" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" editmode="01" validatelibs="" processdescription="[];[]" numberpattern="" isdefaultvalue="false" valuescript="" validaterule="" bordertype="false" texttype="text" /></td>
+            <td nowrap="noWrap" style="border-width: medium; border-style: none; border-color: initial; text-align: right;">编制日期：</td>
+            <td style="border-width: medium; border-style: none; border-color: initial;"><input id="11e8-3bb9-1f5b369d-94e7-ef330bda161e" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="C_编制日期" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" fieldtype="VALUE_TYPE_DATE" limit="false" datepattern="YMD" prev_name="" type="text" /></td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>1</version>
+  <mappingStr><![CDATA[{"formName":"供应商评价审批表_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

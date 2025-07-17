@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<module id="11e9-7a26-62f4d917-9820-539e9af1e136">
+  <name>厂级奖惩管理</name>
+  <parentId>11e9-7a26-62f4d912-9820-539e9af1e136</parentId>
+  <description><![CDATA[厂级奖惩管理]]></description>
+  <orderNo>0</orderNo>
+  <superior>11e9-7a26-62f4d912-9820-539e9af1e136</superior>
+</module>

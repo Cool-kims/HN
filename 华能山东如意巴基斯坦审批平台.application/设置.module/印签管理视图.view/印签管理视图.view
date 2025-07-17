@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e7-ef13-4f49e830-8f99-af63cc0890b3">
+  <name>印签管理视图</name>
+  <parentId>11e7-ef13-4f38d164-8f99-af63cc0890b3</parentId>
+  <description>印签管理视图</description>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>15</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2018-02-05T23:58:26.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef13-4f38f878-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef13-4f38f877-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <sqlFilterScript><![CDATA[var mc = getItemValue("C_名称");
+var zh = getItemValue("C_帐号");
+var sfgz= getItemValue("C_是否公章");
+var sfyx = getItemValue("C_是否有效");
+
+var w = "";
+
+if(isNotNull(mc)){
+	w +=" and ITEM_名称 like '%"+mc+"%'";
+}
+if(isNotNull(zh)){
+	w +=" and ITEM_帐号  like '%"+zh+"%'";
+}
+if(isNotNull(sfgz)){
+	w +=" and ITEM_是否公章='"+sfgz+"'";
+}
+if(isNotNull(sfyx )){
+	w +=" and ITEM_是否有效='"+sfyx +"'";
+}
+
+var sql = "select * from TLK_印签管理表单  where 1=1 "+w;
+
+sql;]]></sqlFilterScript>
+  <filterCondition><![CDATA[[]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

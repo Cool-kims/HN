@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e9-c1b2-38335b24-9c70-0ba95739f67e">
+  <name>检修及检修党支部周计划查看</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <roleNo>Rf85e</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>156613068027400000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-c1b1-018f6e4e-9c70-0ba95739f67e","type":1,"resId":"11e9-c1b1-018f6e4e-9c70-0ba95739f67e"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-c1b1-018f6e4e-9c70-0ba95739f67e","type":1,"resId":"11e9-c1b1-018f6e4e-9c70-0ba95739f67e"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

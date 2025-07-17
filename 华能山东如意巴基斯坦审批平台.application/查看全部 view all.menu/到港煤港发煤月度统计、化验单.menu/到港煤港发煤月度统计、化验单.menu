@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ec-42c6-ac28b732-9f15-396e4916eb21">
+  <name>到港煤港发煤月度统计、化验单</name>
+  <parentId>11e7-ef13-4f49727a-8f99-af63cc0890b3</parentId>
+  <description>到港煤港发煤月度统计、化验单  monthly statistics  test report for port coal shipment</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f49727a-8f99-af63cc0890b3</superior>
+  <linkName>到港煤港发煤月度统计、化验单  monthly statistics  test report for port coal shipment</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f4665c4-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef13-4f4f6600-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>783</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

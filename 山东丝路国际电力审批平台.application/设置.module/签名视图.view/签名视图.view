@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e7-ef16-89485f38-8f99-af63cc0890b3">
+  <name>签名视图</name>
+  <parentId>11e7-ef16-8937486a-8f99-af63cc0890b3</parentId>
+  <description>签名视图</description>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>15</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2015-04-10T10:57:17.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef16-89376f80-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef16-8937486d-8f99-af63cc0890b3</relatedForm>
+  <permissionType>private</permissionType>
+  <sqlFilterScript><![CDATA[var zh = getWebUser().getLoginno();
+var mm = getItemValue("C_密码");
+println("zh==="+zh+"   mm==="+mm);
+var flag = false;//密码是否通过验证标识位
+var w = "";
+if(isNotNull(zh)){
+	w +=" and ITEM_帐号='"+zh+"'";
+}
+
+var sql = "select * from TLK_印签管理表单  where  ITEM_是否公章='否'   and ITEM_是否有效='是'  "+w;
+var query = queryBySQL(sql);
+println("sql==="+sql);
+if(query!=null){
+          var iter  =query.iterator();
+          if(iter != null && iter.hasNext()){
+               doc = iter.next();
+               var rtn = doc.getItemValueAsString("密码"); 
+               if (rtn != null && rtn.trim().length>0){
+			var aa=new Packages.cn.myapps.common.util.Security();
+			var jmm=aa.decryptPassword(rtn);//解密
+println("jmmm==="+jmm);
+			if (jmm !=null && jmm==(mm)){
+			    flag=true;
+			}
+	
+		}  
+          } 
+}
+//清空查询条件
+w="";
+if (flag){//密码验证
+	w +=" and ITEM_帐号='"+zh+"'";	
+} else {
+	//未通过验证，返回不可能条件
+  	w = " and 1=2 "
+}
+
+sql = "select * from TLK_印签管理表单  where  ITEM_是否公章='否'   and ITEM_是否有效='是'  "+w;
+println("sqll==="+sql);
+sql;]]></sqlFilterScript>
+  <filterCondition><![CDATA[[]]]></filterCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

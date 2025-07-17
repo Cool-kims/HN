@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-3bed-9ab214dd-94e7-ef330bda161e">
+  <name>摘要082</name>
+  <parentId>__11e8-3274-933e0302-94e7-ef330bda161e</parentId>
+  <title>摘要082</title>
+  <type>00</type>
+  <formId>__11e8-3274-933e0302-94e7-ef330bda161e</formId>
+  <fieldNames>付款金额;费控部门;费用类型名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

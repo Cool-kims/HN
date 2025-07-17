@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-8ebc-4b090757-bcf0-133beec42517">
+  <name>摘要301</name>
+  <parentId>__11ea-8eb7-520d6411-bcf0-133beec42517</parentId>
+  <title>摘要301</title>
+  <type>00</type>
+  <formId>__11ea-8eb7-520d6411-bcf0-133beec42517</formId>
+  <fieldNames>申请人;故障原因</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

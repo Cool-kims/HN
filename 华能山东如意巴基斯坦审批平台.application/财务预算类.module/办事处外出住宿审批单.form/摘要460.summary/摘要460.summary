@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ed-f450-59265ab0-9fd5-29ccd4df9cbd">
+  <name>摘要460</name>
+  <parentId>__11ed-f44a-462b8e06-9fd5-29ccd4df9cbd</parentId>
+  <title>摘要460</title>
+  <type>00</type>
+  <formId>__11ed-f44a-462b8e06-9fd5-29ccd4df9cbd</formId>
+  <fieldNames>申请部门;出差事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

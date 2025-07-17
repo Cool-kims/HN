@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9355-050f6c73-8eac-4b89bdea6b09">
+  <name>摘要146</name>
+  <parentId>__11e7-ef14-ff9d42e4-8f99-af63cc0890b3</parentId>
+  <title>摘要146</title>
+  <type>00</type>
+  <formId>__11e7-ef14-ff9d42e4-8f99-af63cc0890b3</formId>
+  <fieldNames>用印名称;主要内容</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

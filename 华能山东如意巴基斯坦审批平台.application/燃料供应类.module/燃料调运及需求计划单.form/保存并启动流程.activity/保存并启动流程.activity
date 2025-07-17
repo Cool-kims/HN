@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e7-deed-f2395bc3-8bc3-5d925c988896">
+  <name>保存并启动流程</name>
+  <parentId>__11e7-ef13-4f48d6df-8f99-af63cc0890b3</parentId>
+  <type>4</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[#include "customlibs";
+var number=getItemValue("编号");
+var doc = getCurrentDocument(); 
+var filename = doc.getFormname();
+var formname="";
+if(filename!=null) {
+formname = filename.substring(filename.lastIndexOf("/")+1, filename.length);
+}
+if(number==null||number.trim().length<=0){
+  number=getNextNo(formname,'编号',' ');
+  doc.findItem("编号").setValue(number);
+}]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[
+var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+var booleans=true;
+if(fstate==null){
+	booleans=false;
+}
+booleans;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef13-4f48d6df-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

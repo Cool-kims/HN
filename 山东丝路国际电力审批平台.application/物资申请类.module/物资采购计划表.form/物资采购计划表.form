@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef16-893f1110-8f99-af63cc0890b3">
+  <name>物资采购计划表</name>
+  <parentId>11e7-ef16-893e4dbb-8f99-af63cc0890b3</parentId>
+  <sortId>148125731551600000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table border="1" cellspacing="1" cellpadding="1" width="800" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+    <tbody>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">物料编码：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-59588f05-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="物料编码" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" valuescript="" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" /></td>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">物料描述：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-66877f89-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="物料描述" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" valuescript="" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" /></td>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">单位：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-6edf1e6d-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="单位" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" valuescript="" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">计划数量：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-7a0f58c1-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="计划数量" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="true" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" valuescript="" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_NUMBER" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" /></td>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">计划单价：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-8071de65-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="计划单价" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="true" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" valuescript="" bordertype="false" numberpattern="##.##" fieldtype="VALUE_TYPE_NUMBER" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" /></td>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">合计金额：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-8dcee3c9-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="合计金额" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="true" refreshonchanged="false" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="readonly" valuescript="var@nbsp;jhsl=getItemValueAsDouble(@quot;计划数量@quot;);@amp;#13;var@nbsp;jhdj=getItemValueAsDouble(@quot;计划单价@quot;);@amp;#13;var@nbsp;hjje=jhsl*jhdj;@amp;#13;hjje;" bordertype="false" numberpattern="##.##" fieldtype="VALUE_TYPE_NUMBER" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="readonly" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">质量标准：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-99b96d6d-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="质量标准" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" valuescript="" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" /></td>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">资金列支：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-a5422701-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="资金列支" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" valuescript="" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" /></td>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">费用类型：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e6-bc8f-b05144c5-8865-edb9ee0ca8a3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="费用类型" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" valuescript="" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>9</version>
+  <mappingStr><![CDATA[{"formName":"物资采购计划表","tableName":"","columnMappings":[],"excelMapping":"{'excelDocInfo':{}}"}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

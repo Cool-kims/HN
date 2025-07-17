@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ec-9092-453504c5-8d21-7b6c7f682898">
+  <name>666</name>
+  <parentId>__11ec-9091-c9f8b545-8d21-7b6c7f682898</parentId>
+  <title>666</title>
+  <type>00</type>
+  <formId>__11ec-9091-c9f8b545-8d21-7b6c7f682898</formId>
+  <fieldNames>编号;编制日期</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

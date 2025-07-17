@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9413-0c81269f-8eac-4b89bdea6b09">
+  <name>摘要182</name>
+  <parentId>__11e7-ef16-893a7cfd-8f99-af63cc0890b3</parentId>
+  <title>摘要182</title>
+  <type>00</type>
+  <formId>__11e7-ef16-893a7cfd-8f99-af63cc0890b3</formId>
+  <fieldNames>账户名称;金额</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

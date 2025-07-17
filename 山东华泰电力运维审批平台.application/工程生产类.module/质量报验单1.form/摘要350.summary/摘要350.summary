@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11eb-2239-da89b52b-b5d9-1f8458293e1b">
+  <name>摘要350</name>
+  <parentId>__11eb-2238-ee3efbe1-b5d9-1f8458293e1b</parentId>
+  <title>摘要350</title>
+  <type>00</type>
+  <formId>__11eb-2238-ee3efbe1-b5d9-1f8458293e1b</formId>
+  <fieldNames>服务项目名称;编制人</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

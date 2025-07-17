@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e8-d44d-27c2faef-910a-c9d6f560e02b">
+  <name>固定无形资产转资审批单1</name>
+  <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2018-10-26T20:07:45.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e8-9359-78c578f5-8eac-4b89bdea6b09</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e8-915c-cef2d74f-8eac-4b89bdea6b09</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'采购订单号',operator:'LIKE',type:'03',match:'采购订单号'},{field:'资产编号',operator:'LIKE',type:'03',match:'资产编号'},{field:'资产明细分类',operator:'LIKE',type:'03',match:'资产明细分类'},{field:'资产名称',operator:'LIKE',type:'03',match:'资产名称'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

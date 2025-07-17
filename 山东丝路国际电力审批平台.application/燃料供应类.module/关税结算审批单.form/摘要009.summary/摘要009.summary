@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e7-f142-4e081eec-b449-61bf0a28f1db">
+  <name>摘要009</name>
+  <parentId>__11e7-ef16-89463c6a-8f99-af63cc0890b3</parentId>
+  <title>摘要009</title>
+  <type>00</type>
+  <formId>__11e7-ef16-89463c6a-8f99-af63cc0890b3</formId>
+  <fieldNames>情况说明</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

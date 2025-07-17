@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef16-894811c8-8f99-af63cc0890b3">
+  <name>到货物资验收单 To the receipt of goods receipt</name>
+  <parentId>11e7-ef16-894811ba-8f99-af63cc0890b3</parentId>
+  <description>到货物资验收单 To the receipt of goods receipt</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef16-894811ba-8f99-af63cc0890b3</superior>
+  <linkName>到货物资验收单 To the receipt of goods receipt</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef16-893e4dbb-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef16-894c5739-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>11</orderno>
+</resourceVO>

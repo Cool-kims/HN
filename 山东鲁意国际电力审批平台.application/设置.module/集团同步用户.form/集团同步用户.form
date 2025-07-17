@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-ff97eb63-8f99-af63cc0890b3">
+  <name>集团同步用户</name>
+  <parentId>11e7-ef14-ff979d38-8f99-af63cc0890b3</parentId>
+  <sortId>140334761412900000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table border="1" cellSpacing="1" cellPadding="1" width="384" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; width: 384px; height: 90px; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+    <tbody>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">用户姓名：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><select id="11e3-f931-8043fdec-a74c-b13676f007e5" class="cn.myapps.runtime.dynaform.form.ejb.UserField" classname="cn.myapps.runtime.dynaform.form.ejb.UserField" discript="" filtercondition="" textType="text" refreshOnChanged="false" calculateOnRefresh="false" editMode="01" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" mobile="true" isUserField="isUserField" filterField="" limitByUser="false" limitSum="10" selectMode="selectOne" type="text" fieldtype="VALUE_TYPE_TEXT" name="选择用户"></select></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">集团登录账号：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e3-f931-9f7bc896-a74c-b13676f007e5" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="集团登录账号" value="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" fieldType="VALUE_TYPE_VARCHAR" textType="text" numberPattern="" borderType="false" refreshOnChanged="false" calculateOnRefresh="false" editMode="01" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" mobile="true" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">集团登录密码：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e3-f931-a4e1ebfc-a74c-b13676f007e5" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="集团登录密码" value="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="password" fieldkeyevent="Tabkey" discript="" filtercondition="" fieldType="VALUE_TYPE_VARCHAR" textType="password" numberPattern="" borderType="false" refreshOnChanged="false" calculateOnRefresh="false" editMode="01" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" mobile="true" /></td>
+        </tr>
+        <tr>
+            <td colSpan="2" style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">注：集团登录账号和密码，需要集团授权。</td>
+        </tr>
+    </tbody>
+</table>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>11</version>
+  <mappingStr><![CDATA[{"formName":"集团同步用户","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

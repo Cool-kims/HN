@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11f0-150e-58bd6d09-9445-4399d039f7dd">
+  <name>会签领导5</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <roleNo>R1901</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>175257257058300000</sortId>
+  <orderNo>0</orderNo>
+</role>

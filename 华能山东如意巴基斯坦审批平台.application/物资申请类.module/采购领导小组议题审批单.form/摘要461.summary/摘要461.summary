@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ed-f55a-4fdcb794-9fd5-29ccd4df9cbd">
+  <name>摘要461</name>
+  <parentId>__11e7-ef13-4f437f6e-8f99-af63cc0890b3</parentId>
+  <title>摘要461</title>
+  <type>00</type>
+  <formId>__11e7-ef13-4f437f6e-8f99-af63cc0890b3</formId>
+  <fieldNames>上会议题;议题概述</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

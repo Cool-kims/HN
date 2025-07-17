@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11eb-0dfd-de39a9f2-ab2e-11b272c869b9">
+  <name>法律咨询验收主任</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <roleNo>31</roleNo>
+  <sortId>160266695711400000</sortId>
+  <orderNo>0</orderNo>
+</role>

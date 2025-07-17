@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11e7-ef16-894811e0-8f99-af63cc0890b3">
+      
+    <name>机组长</name>
+      
+    <parentId>11e7-ef12-74ef29ec-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>150509878985900000</sortId>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>R30f9</roleNo>
+</role>

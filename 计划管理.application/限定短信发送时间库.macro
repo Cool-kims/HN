@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="11e9-7a26-62fa0914-9820-539e9af1e136">
+  <name>限定短信发送时间库</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <content><![CDATA[/**
+ * 根据当前时间重新计算超期时间
+ * @param startTime 	可以发送短信的开始时间(string)
+ * @param endTime		可以发送短信的结束时间(string)
+ * @param deferTime		超期时间(超期自动提到交到一节点,int,unit:hour)
+ * return rtnTime 		提醒日期(date)
+ */
+function computeOverTime(startTime,endTime,deferTime) {
+	var rtnTime = "";
+	var curDay = getCurDate("yyyy-MM-dd");
+	var curDate = getCurDate("yyyy-MM-dd HH:mm:ss");
+//	var curDay = "2014-06-03";
+//	var curDate = "2014-06-03 07:00:00";
+	var days = toFloor(deferTime/24);	//返回最小整数
+	var plusTime = deferTime%24;		//按天除余
+	var curHour = diffHours((curDay+" 00:00:00"),curDate);	//获取当前时间的小时数
+	var couHour = plusTime+curHour;		//相加算出原来发送时间的小时数
+	var aHour = 0;
+	if(couHour>24){
+		days++;
+		aHour = couHour%24;
+		if(aHour<startTime){
+			aHour = startTime;	//早于开始时间时加到开始时间
+		}else if(aHour>=endTime){
+			days++;
+			aHour = startTime;//晚于结束时间时在第二天的开始时间发送
+		}
+	}else {
+		aHour = couHour;
+		if(aHour<startTime){
+			aHour = startTime;	//早于开始时间时加到开始时间
+		}else if(aHour>=endTime){
+			days++;
+			aHour = startTime;//晚于结束时间时在第二天的开始时间发送
+		}
+	}
+	var temDate = parseDate(curDay+" "+aHour+":00:00","yyyy-MM-dd HH:mm:ss");
+	rtnTime = adjustDay(temDate,days);
+	return rtnTime;
+}
+
+/**
+ * 根据‘提前提醒的时间’和‘超时时间’计算‘提醒日期’
+ * 并限定提醒的时间段
+ * @param startTime 	可以发送短信的开始时间(string)
+ * @param endTime		可以发送短信的结束时间(string)
+ * @param remindTime	提前多久提醒int,unit:hour
+ * @param timeover		超时时间(string,格式：yyyy-MM-dd HH:mm:ss)
+ * return rtnTime 		提醒日期(date)
+ */
+function computeOverTimeByEndTime(startTime,endTime,remindTime,timeover){
+	var rtnTime = "";
+	var curDate = getCurDate("yyyy-MM-dd HH:mm:ss");
+	if(curDate>timeover){
+		return rtnTime;
+	}
+	var timeoverDate = parseDate(timeover,"yyyy-MM-dd HH:mm:ss");
+	timeoverY = getYear(timeoverDate);
+	timeoverM = getMonth(timeoverDate);
+	timeoverD = getDay(timeoverDate);
+	var timeoverD2 = (timeoverD<10) ? ("0"+timeoverD) : timeoverD;
+	var overHours = diffHours(timeoverY+"-"+timeoverM+"-"+timeoverD2+" 00:00:00",timeover);
+	overHours = (overHours==0) ? 24 :overHours;		//无小时数时按24小时算
+	var days = toFloor(remindTime/24);	//返回最小整数
+	var remindHours = remindTime%24;
+	var hours = overHours-remindHours;
+	//判断是否跨天
+	if(hours<0){
+		days++;
+		hours = 24+hours;
+	}
+	//限定发送时间
+	if(hours>endTime){
+		hours = endTime;
+	}else if (hours<startTime) {
+		hours = startTime;
+	}
+	hours = (hours<10) ? ("0"+hours) : hours;
+	var timeoverDate1 = parseDate(timeoverY+"-"+timeoverM+"-"+timeoverD2+" "+hours+":00:00","yyyy-MM-dd HH:mm:ss");
+	rtnTime = adjustDay(timeoverDate1,-days);
+	return rtnTime;
+}
+]]></content>
+  <version>9</version>
+</repositoryVO>

@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="11e9-7a26-62fa0915-9820-539e9af1e136">
+  <name>奖惩测试库</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <content><![CDATA[//定时任务拿计划表数据
+function createDepartmentAssess1(){
+println("****************开始生成部门计划绩效数据****************");
+var count = 0;
+var date1 = new Date();
+try {
+	/**部门计划--start**/
+	//获取部门计划奖惩金额数据
+	var cashObj = {
+			depart:{}
+	};
+	var sql2 = "select * from tlk_assess_data where item__pType='部门'";
+	var datas2 = queryByDSName("JhglDataSource", sql2);
+	if(datas2!=null && datas2.size()>0){
+		for(var iter2=datas2.iterator();iter2.hasNext();){
+			var data = iter2.next();
+			var _pAward = data.get("item__pAward");						//奖励
+			var _pPunish = data.get("item__pPunish");					//惩罚
+			var _pOver = data.get("item__pOver");						//超期
+			var _pAppDefer = data.get("item__pAppDefer");				//延期
+			var _pReject = data.get("item__pReject");					//驳回
+			var _pCapping = data.get("item__pCapping");					//封顶
+			var _pAwardCapping = data.get("item__pAwardCapping");		//额外奖励封顶
+			var _pPunishCapping = data.get("item__pPunishCapping");		//额外惩罚封顶
+
+			_pAward = parseDouble(_pAward);
+			_pPunish = parseDouble(_pPunish);
+			_pOver = parseDouble(_pOver);
+			_pAppDefer = parseDouble(_pAppDefer);
+			_pReject = parseDouble(_pReject);
+			_pCapping = parseDouble(_pCapping);
+			_pAwardCapping = parseDouble(_pAwardCapping);
+			_pPunishCapping = parseDouble(_pPunishCapping);
+			
+			cashObj.depart["_pAward"] = _pAward;
+			cashObj.depart["_pPunish"] = _pPunish;
+			cashObj.depart["_pOver"] = _pOver;
+			cashObj.depart["_pAppDefer"] = _pAppDefer;
+			cashObj.depart["_pReject"] = _pReject;
+			cashObj.depart["_pCapping"] = _pCapping;
+			cashObj.depart["_pAwardCapping"] = _pAwardCapping;
+			cashObj.depart["_pPunishCapping"] = _pPunishCapping;
+		}
+	}
+//	for(var _a in cashObj){
+//		println("==========="+_a+"-->"+cashObj[_a]);
+//	}
+
+	//获取一个用户，以计算工作天数
+	var userProcess=getUserProcess();
+	var webUser1=userProcess.login("sysadm","11e7-ef11-bb0c7e25-8f99-af63cc0890b3");
+	
+	var curDate = getCurDate("yyyy-MM-dd");		//-->string
+	//curDate = "2015-01-01";						//测试
+	curDate1 = parseDate(curDate,"yyyy-MM-dd");	//string-->date
+	var year = getYear(curDate1);
+	var month = getMonth(curDate1);
+	var eDate = year+"-"+month+"-01";
+	var sDate = "";
+	if(month == 1){
+		sDate = (year-1)+"-12-01";
+	}else{
+		sDate = year+"-"+(month-1)+"-01";
+	}
+	
+	//验收、取消、延期审批中的计划设置最后考核时间，留至下个月再考核
+	var sql4 = "update tlk_department_plan set item__pLastCheckTime='"+curDate+"' where stateLabel in " +
+			"('计划验收','验收人取消审核','部门副主任取消审核','部门主任取消审批','验收人延期审核','部门副主任延期审核','部门主任延期审批')" +
+			" and (item__pEndTime>='"+sDate+"' and item__pEndTime<'"+eDate+"')";
+	updateByDSName("JhglDataSource",sql4);
+	
+	//获取完成时间是上个月或者最后验收时间是上个月，且流程状态是“计划执行”，“结束”的计划
+	//还在起草和审批阶段的计划不做统计
+	var sql = "select * from tlk_department_plan where ((item__pEndTime>='"+sDate+"' and item__pEndTime<'"+eDate+"')"
+			+" or (item__pLastCheckTime>='"+sDate+"' and item__pLastCheckTime<'"+eDate+"')) and stateLabel in " +
+			"('计划执行','结束')";
+	var datas1 = queryByDSName("JhglDataSource", sql);
+	if(datas1!=null && datas1.size()>0){
+		for(var iter = datas1.iterator(); iter.hasNext();) {
+			var data = iter.next();
+			var _pNo = data.get("item__pNo");					//计划编号
+			var _pTitle = data.get("item__pTitle");				//计划标题
+			var _pStandard = data.get("item__pStandard");		//质量标准
+			var _pDepartment = data.get("item__pDepartment");	//所属部门
+			var _p2Type = data.get("item__p2Type");				//个人(班组)
+			var _p2Department = data.get("item__p2Department");	//负责单位(班组)
+			var _pResponsible = data.get("item__pResponsible");	//负责人
+			var _pCheckDepartment = data.get("item__pCheckDepartment");	//验收单位(班组)
+			var _pChecker = data.get("item__pChecker");			//验收人
+			var _pEndTime = data.get("item__pEndTime");			//完成时间
+			var _pReportTime = data.get("item__pReportTime");	//汇报时间
+			var _pReportCount = data.get("item__pReportCount");	//汇报次数
+			var _pDeferCount = data.get("item__pDeferCount");	//延期次数
+			var _pLastCheckTime = data.get("item__pLastCheckTime");	//最后验收时间
+			var _isCancel = data.get("item__isCancel");			//已取消
+			var stateLabel = data.get("stateLabel");
+			var _pRemark = "";
+			var _pAutoAssess = 0;
+			var _pAward = 0;
+			var _pPunish = 0;
+			
+			//增加created>eDate是为了避免一次生成两条相同计划编号的考核数据
+			var sqlRe = "select * from tlk_department_assess where item__pNo='"+_pNo+"' and created>'"+eDate+"'";
+			var countRe = queryByDSName("JhglDataSource",sqlRe);
+			if(countRe.size()>0){
+//				println("==============表中已有"+countRe.size()+"条编号为"+_pNo+"的数据!");
+				continue;
+			}
+			
+			//统计奖惩金额
+			if(stateLabel!=null && stateLabel==("结束")){	//计划完成
+				if(_pEndTime!=null && _pReportTime!=null && _pEndTime<_pReportTime){//超期完成，惩罚
+					_pReportTime = format(_pReportTime,"yyyy-MM-dd HH:mm:ss");
+					_pEndTime = format(_pEndTime,"yyyy-MM-dd HH:mm:ss");	//date-->string
+					var days = (Java.type('cn.myapps.util.DateUtil')).getWorkingDayCount(_pEndTime, _pReportTime, webUser1.getCalendarType());	//string-->int
+					days--;		//超期时间2天才开始算超期处罚，因超期时至少已超期1天，不应立刻计算超期天数
+					//超期惩罚
+					var deferCount = 0;		//超期惩罚金额小计
+					deferCount += cashObj.depart["_pPunish"];
+					_pRemark += "超期完成扣"+cashObj.depart["_pPunish"]+"元，";
+					if(days>0){
+						deferCount += days*cashObj.depart["_pOver"];
+						_pRemark += "超期"+days+"天，超期一天扣"+cashObj.depart["_pOver"]+"元，共扣"+deferCount+"元；";
+					}
+					_pPunish += deferCount;
+				}else {//按期完成，奖励
+					_pAward += cashObj.depart["_pAward"];
+					_pRemark += "按期完成，奖励"+cashObj.depart["_pAward"]+"元；";
+				}
+				//根据延期次数考核
+				if(_pDeferCount!=null && _pDeferCount>1){
+					_pPunish += (_pDeferCount-1)*cashObj.depart["_pAppDefer"];
+					_pRemark += "申请延期"+(_pDeferCount)+"次，第一次延期免考核，每次扣"+cashObj.depart["_pAppDefer"]+"元，共扣"
+						+(_pDeferCount-1)*cashObj.depart["_pAppDefer"]+"元；";
+				}
+				//根据驳回次数考核
+				if(_pReportCount!=null && _pReportCount>1){
+					_pPunish += (_pReportCount-1)*cashObj.depart["_pReject"];
+					_pRemark += "驳回"+(_pReportCount-1)+"次，每次扣"+cashObj.depart["_pReject"]+"元，共扣"+(_pReportCount-1)*cashObj.depart["_pReject"]+"元；";
+				}
+			}else{	//计划未完成
+				_pLastCheckTime = curDate;
+				//设置最后考核时间
+				var sql3 = "update tlk_plant_plan set item__pLastCheckTime='"+curDate+"' where item__pNo='"+_pNo+"'";
+				updateByDSName("JhglDataSource",sql3);
+
+				//计算超期时间
+				if(_pEndTime!=null && curDate!=null && _pEndTime<curDate){//超期完成，惩罚
+					_pEndTime = format(_pEndTime,"yyyy-MM-dd HH:mm:ss");
+					curDate = parseDate(curDate,"yyyy-MM-dd");
+					curDate = format(curDate,"yyyy-MM-dd HH:mm:ss");
+					var days = (Java.type('cn.myapps.util.DateUtil')).getWorkingDayCount(_pEndTime, curDate, webUser1.getCalendarType());	//string-->int
+					days--;		//超期时间2天才开始算超期处罚，因超期时至少已超期1天，不应立刻计算超期天数
+					//超期惩罚
+					var deferCount = 0;		//超期惩罚金额小计
+					deferCount += cashObj.depart["_pPunish"];
+					_pRemark += "未完成扣"+cashObj.depart["_pPunish"]+"元，";
+					if(days>0){
+						deferCount += days*cashObj.depart["_pOver"];
+						_pRemark += "超期"+days+"天，超期一天扣"+cashObj.depart["_pOver"]+"元，共扣"+deferCount+"元；";
+					}
+					_pPunish += deferCount;
+				}
+			}
+			//封顶
+			if(_pPunish>cashObj.depart["_pCapping"]){
+				_pPunish = cashObj.depart["_pCapping"];
+			}
+			_pRemark += "封顶扣"+cashObj.depart["_pCapping"]+"元；";
+			_pAutoAssess = _pAward - _pPunish;
+			_pRemark += "自动奖惩合计："+_pAutoAssess+"元。";
+
+		    var formProcess = new Packages.cn.myapps.core.dynaform.form.ejb.FormProcessBean();//申明表单业务处理类
+	        var form = formProcess.doViewByFormName("department_assess",getApplication());  //根据表单名查询出表单(fm_purchase_materials为对应的插入记录的表单名)
+	        var userProcess = createProcess("cn.myapps.core.user.ejb.UserProcess");
+			
+	        var userId = "";
+			if(""==(_pResponsible)){
+				var userVOs1 = getUsersByDptId(_p2Department);
+				for(var iter11= userVOs1.iterator();iter11.hasNext();){
+					var user11 = iter11.next();
+					userId = user11.getId();
+				}
+			}else{
+				userId = _pResponsible;
+			}
+	        var user = getUserById(userId);
+	        var webuser = new Packages.cn.myapps.core.user.action.WebUser(user);
+	        var process = getDocumentProcess();//申明文档业务处理类
+	        var doc = process.doNew(form,webuser,createParamsTable());//创建记录
+//	        doc.setFlowid("flowid");//flowid为对应的流程Id.
+	        
+			var uuid = new (Java.type('cn.myapps.util.sequence.Sequence'))();
+			doc.setId(uuid.getSequence());
+			doc.addStringItem("_pNo",_pNo);
+			doc.addStringItem("_pTitle",_pTitle);
+			doc.addStringItem("_pStandard",_pStandard);
+			doc.addStringItem("_pDepartment",_pDepartment);
+			doc.addStringItem("_p2Type",_p2Type);
+			doc.addStringItem("_p2Department",_p2Department);
+			doc.addStringItem("_pResponsible",_pResponsible);
+			doc.addStringItem("_pCheckDepartment",_pCheckDepartment);
+			doc.addStringItem("_pChecker",_pChecker);
+			doc.addStringItem("_pEndTime",_pEndTime);
+			doc.addStringItem("_pReportTime",_pReportTime);
+			doc.addStringItem("_pAutoAssess",_pAutoAssess);
+			doc.addStringItem("_pAssessTotal",_pAutoAssess);
+			doc.addStringItem("_pLastCheckTime",_pLastCheckTime);
+			doc.addStringItem("_pRemark",_pRemark);
+
+	        var params =createParamsTable();
+	        params.setParameter("_flowid", "11e9-7a26-62fe75f2-9820-539e9af1e136");	//value为对应的流程Id.
+	        try {
+		        process.doStartFlowOrUpdate(doc,params,webuser);//启动流程
+		        count++;
+			} catch (e) {
+				println("============="+_pNo+"启动流程报错："+e);
+			}
+		}
+	}
+	/**部门计划--end**/
+} catch (e) {
+	println("======================生成部门计划绩效数据时报错："+e);
+}
+var date2 = new Date();
+println("****************生成部门计划绩效数据共"+count+"条，耗时"+(date2-date1)/1000+"秒****************");
+println("****************生成部门计划绩效数据结束****************");	
+}
+
+
+//定时任务拿计划表数据
+function createPlantAssess1(){
+println("****************开始生成年度和月度计划绩效数据****************");
+var count = 0;
+var date1 = new Date();
+try {
+	/**厂级计划--start**/
+	//获取月度计划奖惩金额数据
+	var cashObj = {
+			common:{},
+			emphasis:{},
+			supervision:{},
+			year:{}
+	};
+	var sql2 = "select * from tlk_assess_data where (item__pType='月度' or item__pType='年度')";
+	var datas2 = queryByDSName("JhglDataSource", sql2);
+	if(datas2!=null && datas2.size()>0){
+		for(var iter2=datas2.iterator();iter2.hasNext();){
+			var data = iter2.next();
+			var _pType = data.get("item__pType");
+			var _pLevel = data.get("item__pLevel");
+			var _pAward = data.get("item__pAward");						//奖励
+			var _pPunish = data.get("item__pPunish");					//惩罚
+			var _pOver = data.get("item__pOver");						//超期
+			var _pAppDefer = data.get("item__pAppDefer");				//申请延期
+			var _pReject = data.get("item__pReject");					//驳回
+			var _pCapping = data.get("item__pCapping");					//封顶
+			var _pAwardCapping = data.get("item__pAwardCapping");		//额外奖励封顶
+			var _pPunishCapping = data.get("item__pPunishCapping");		//额外惩罚封顶
+
+			_pAward = parseDouble(_pAward);
+			_pPunish = parseDouble(_pPunish);
+			_pOver = parseDouble(_pOver);
+			_pAppDefer = parseDouble(_pAppDefer);
+			_pReject = parseDouble(_pReject);
+			_pCapping = parseDouble(_pCapping);
+			_pAwardCapping = parseDouble(_pAwardCapping);
+			_pPunishCapping = parseDouble(_pPunishCapping);
+			
+			if(_pType!=null &&_pType==("月度")){
+				if(_pLevel!=null && _pLevel==("常规")){
+					cashObj.common["_pAward"] = _pAward;
+					cashObj.common["_pPunish"] = _pPunish;
+					cashObj.common["_pOver"] = _pOver;
+					cashObj.common["_pAppDefer"] = _pAppDefer;
+					cashObj.common["_pReject"] = _pReject;
+					cashObj.common["_pCapping"] = _pCapping;
+					cashObj.common["_pAwardCapping"] = _pAwardCapping;
+					cashObj.common["_pPunishCapping"] = _pPunishCapping;
+				}else if (_pLevel!=null && _pLevel==("重点")) {
+					cashObj.emphasis["_pAward"] = _pAward;
+					cashObj.emphasis["_pPunish"] = _pPunish;
+					cashObj.emphasis["_pOver"] = _pOver;
+					cashObj.emphasis["_pAppDefer"] = _pAppDefer;
+					cashObj.emphasis["_pReject"] = _pReject;
+					cashObj.emphasis["_pCapping"] = _pCapping;
+					cashObj.emphasis["_pAwardCapping"] = _pAwardCapping;
+					cashObj.emphasis["_pPunishCapping"] = _pPunishCapping;
+				}else if (_pLevel!=null && _pLevel==("督办")) {
+					cashObj.supervision["_pAward"] = _pAward;
+					cashObj.supervision["_pPunish"] = _pPunish;
+					cashObj.supervision["_pOver"] = _pOver;
+					cashObj.supervision["_pAppDefer"] = _pAppDefer;
+					cashObj.supervision["_pReject"] = _pReject;
+					cashObj.supervision["_pCapping"] = _pCapping;
+					cashObj.supervision["_pAwardCapping"] = _pAwardCapping;
+					cashObj.supervision["_pPunishCapping"] = _pPunishCapping;
+				}
+			}else if(_pType!=null &&_pType==("年度")){
+				cashObj.year["_pAward"] = _pAward;
+				cashObj.year["_pPunish"] = _pPunish;
+				cashObj.year["_pOver"] = _pOver;
+				cashObj.year["_pAppDefer"] = _pAppDefer;
+				cashObj.year["_pReject"] = _pReject;
+				cashObj.year["_pCapping"] = _pCapping;
+				cashObj.year["_pAwardCapping"] = _pAwardCapping;
+				cashObj.year["_pPunishCapping"] = _pPunishCapping;
+			}
+		}
+	}
+//	for(var _a in cashObj){
+//		println("==========="+_a+"-->"+cashObj[_a]);
+//	}
+	//获取一个用户，以计算工作天数
+	var userProcess=getUserProcess();
+	var webUser1=userProcess.login("sysadm","11e3-33a2-6db7fe87-813d-659a841933da");
+	
+	var curDate = getCurDate("yyyy-MM-dd");		//-->string
+	curDate = "2015-01-01";						//测试
+	curDate1 = parseDate(curDate,"yyyy-MM-dd");	//string-->date
+	var year = getYear(curDate1);
+	var month = getMonth(curDate1);
+	var eDate = year+"-"+month+"-01";
+	var sDate = "";
+	if(month == 1){
+		sDate = (year-1)+"-12-01";
+	}else{
+		sDate = year+"-"+(month-1)+"-01";
+	}
+
+	//验收、取消、延期审批中的计划设置最后考核时间，留至下个月再考核
+	var sql4 = "update tlk_plant_plan set item__pLastCheckTime='"+curDate+"' where stateLabel in " +
+			"('计划验收','验收部门主任验收','厂领导验收','执行部门主任取消审核','验收人取消审核','验收部门主任取消审核','厂领导取消审批'," +
+			"'执行部门主任延期审核','验收人延期审核','验收部门主任延期审核','厂领导延期审批')" +
+			" and ((item__pEndTime>='"+sDate+"' and item__pEndTime<'"+eDate+"')"
+			+" or (item__pLastCheckTime>='"+sDate+"' and item__pLastCheckTime<'"+eDate+"'))";
+	updateByDSName("JhglDataSource",sql4);
+
+	//获取完成时间是上个月或者最后验收时间是上个月，且流程状态是“计划分配”，“计划执行”，“结束”的计划
+	var sql = "select * from tlk_plant_plan where (stateLabel='计划分配' " +
+		" or stateLabel='计划执行' or stateLabel='结束')" +
+		" and ((item__pEndTime>='"+sDate+"' and item__pEndTime<'"+eDate+"')"
+		+" or (item__pLastCheckTime>='"+sDate+"' and item__pLastCheckTime<'"+eDate+"'))";
+	var datas1 = queryByDSName("JhglDataSource", sql);
+	if(datas1!=null && datas1.size()>0){
+		for(var iter = datas1.iterator(); iter.hasNext();){
+			var data = iter.next();
+			var _pNo = data.get("item__pNo");					//计划编号
+			var _pTitle = data.get("item__pTitle");				//计划标题
+			var _pLevel = data.get("item__pLevel");				//计划级别
+			var _pStandard = data.get("item__pStandard");		//质量标准
+			var _pDepartment = data.get("item__pDepartment");	//执行部门
+			var _pType = data.get("item__pType");				//计划类型
+			var _p2Department = data.get("item__p2Department");	//二级单位(班组)
+			var _pResponsible = data.get("item__pResponsible");	//负责人
+			var _pCheckDepartment = data.get("item__pCheckDepartment");	//验收部门
+			var _pChecker = data.get("item__pChecker");			//验收人
+			var _pEndTime = data.get("item__pEndTime");			//完成时间
+			var _pReportTime = data.get("item__pReportTime");	//汇报时间
+			var _pReportCount = data.get("item__pReportCount");	//汇报次数
+			var _pDeferCount = data.get("item__pDeferCount");	//延期次数
+			var _pLastCheckTime = data.get("item__pLastCheckTime");	//最后验收时间
+			var _pSpecial = data.get("item__pSpecial");			//专项计划
+			var _isCancel = data.get("item__isCancel");			//已取消
+			var _pFactoryLeader = data.get("item__pFactoryLeader"); //厂领导审批人
+			var stateLabel = data.get("stateLabel");
+			var _pRemark = "";
+			var _pAutoAssess = 0;
+			var _pAward = 0;
+			var _pPunish = 0;
+			
+			//增加created>eDate是为了避免一次生成两条相同计划编号的考核数据
+			var sqlRe = "select count(*) from tlk_plant_assess where item__pNo='"+_pNo+"' and created>'"+eDate+"'";
+			var countRe = queryByDSName("JhglDataSource",sqlRe);
+			if(countRe!=null && countRe>0){
+//				println("==============表中已有"+countRe.size()+"条编号为"+_pNo+"的数据!");
+				continue;
+			}
+			
+			//统计奖惩金额
+			if(_pType==("月度")){
+				if(stateLabel!=null && stateLabel==("结束")){	//计划完成
+					if(_pEndTime!=null && _pReportTime!=null && _pEndTime<_pReportTime){//超期完成，惩罚
+						_pReportTime = format(_pReportTime,"yyyy-MM-dd HH:mm:ss");
+						_pEndTime = format(_pEndTime,"yyyy-MM-dd HH:mm:ss");	//date-->string
+						var days = (Java.type('cn.myapps.util.DateUtil')).getWorkingDayCount(_pEndTime, _pReportTime, webUser1.getCalendarType());	//string-->int
+						days--;	//超期时间2天才开始算超期处罚，因超期时至少已超期1天，不应立刻计算超期天数
+						
+						//超期惩罚
+						var deferCount = 0;		//超期惩罚金额小计
+						if(_pLevel!=null && _pLevel==("常规")){
+							deferCount += cashObj.common["_pPunish"];
+							_pRemark += "超期完成扣"+cashObj.common["_pPunish"]+"元，";
+							if(days>0){
+								deferCount += days*cashObj.common["_pOver"];
+								_pRemark += "超期"+days+"天，超期一天扣"	+cashObj.common["_pOver"]+"元，共扣"+deferCount+"元；";
+							}
+						}else if(_pLevel!=null && _pLevel==("重点")){
+							deferCount += cashObj.emphasis["_pPunish"];
+							_pRemark += "超期完成扣"+cashObj.emphasis["_pPunish"]+"元，";
+
+							if(days>0){
+								deferCount += days*cashObj.emphasis["_pOver"];
+								_pRemark += "超期"+days+"天，超期一天扣"+cashObj.emphasis["_pOver"]+"元，共扣"+deferCount+"元；";
+							}
+						}else if(_pLevel!=null && _pLevel==("督办")){
+							deferCount += cashObj.supervision["_pPunish"];
+							_pRemark += "超期完成扣"+cashObj.supervision["_pPunish"]+"元，";
+
+							if(days>0){
+								deferCount += days*cashObj.supervision["_pOver"];
+								_pRemark += "超期"+days+"天，超期一天扣"+cashObj.supervision["_pOver"]+"元，共扣"+deferCount+"元；";
+							}
+						}
+						_pPunish += deferCount;
+					}else {//按期完成，奖励
+						if(_pLevel!=null && _pLevel==("常规")){
+							_pAward += cashObj.common["_pAward"];
+							_pRemark += "按期完成，奖励"+cashObj.common["_pAward"]+"元；";
+						}else if(_pLevel!=null && _pLevel==("重点")){
+							_pAward += cashObj.emphasis["_pAward"];
+							_pRemark += "按期完成，奖励"+cashObj.emphasis["_pAward"]+"元；";
+						}else if(_pLevel!=null && _pLevel==("督办")){
+							_pAward += cashObj.supervision["_pAward"];
+							_pRemark += "按期完成，奖励"+cashObj.supervision["_pAward"]+"元；";
+						}
+					}
+					//根据延期次数考核
+					if(_pDeferCount!=null && _pDeferCount>1){
+						if(_pLevel!=null && _pLevel==("常规")){
+							_pPunish += (_pDeferCount-1)*cashObj.common["_pAppDefer"];
+							_pRemark += "申请延期"+(_pDeferCount)+"次，第一次延期免考核，每次扣"+cashObj.common["_pAppDefer"]+"元，共扣"
+								+(_pDeferCount-1)*cashObj.common["_pAppDefer"]+"元；";
+						}else if(_pLevel!=null && _pLevel==("重点")){
+							_pPunish += (_pDeferCount-1)*cashObj.emphasis["_pAppDefer"];
+							_pRemark += "申请延期"+(_pDeferCount)+"次，第一次延期免考核，每次扣"+cashObj.emphasis["_pAppDefer"]+"元，共扣"
+								+(_pDeferCount-1)*cashObj.emphasis["_pAppDefer"]+"元；";
+						}else if(_pLevel!=null && _pLevel==("督办")){
+							_pPunish += (_pDeferCount-1)*cashObj.supervision["_pAppDefer"];
+							_pRemark += "申请延期"+(_pDeferCount)+"次，第一次延期免考核，每次扣"+cashObj.supervision["_pAppDefer"]+"元，共扣"
+								+(_pDeferCount-1)*cashObj.supervision["_pAppDefer"]+"元；";
+						}
+					}
+					//根据驳回次数考核
+					if(_pReportCount!=null && _pReportCount>1){
+						if(_pLevel!=null && _pLevel==("常规")){
+							_pPunish += (_pReportCount-1)*cashObj.common["_pReject"];
+							_pRemark += "驳回"+(_pReportCount-1)+"次，每次扣"+cashObj.common["_pReject"]+"元，共扣"
+								+(_pReportCount-1)*cashObj.common["_pReject"]+"元；";
+						}else if(_pLevel!=null && _pLevel==("重点")){
+							_pPunish += (_pReportCount-1)*cashObj.emphasis["_pReject"];
+							_pRemark += "驳回"+(_pReportCount-1)+"次，每次扣"+cashObj.emphasis["_pReject"]+"元，共扣"
+								+(_pReportCount-1)*cashObj.emphasis["_pReject"]+"元；";
+						}else if(_pLevel!=null && _pLevel==("督办")){
+							_pPunish += (_pReportCount-1)*cashObj.supervision["_pReject"];
+							_pRemark += "驳回"+(_pReportCount-1)+"次，每次扣"+cashObj.supervision["_pReject"]+"元，共扣"
+								+(_pReportCount-1)*cashObj.supervision["_pReject"]+"元；";
+						}
+					}
+				}else{	//计划未完成--“计划分配”和“计划执行”阶段的计划
+					_pLastCheckTime = curDate;
+					//设置最后考核时间
+					var sql3 = "update tlk_plant_plan set item__pLastCheckTime='"+curDate+"' where item__pNo='"+_pNo+"'";
+					updateByDSName("JhglDataSource",sql3);
+
+					//计算超期时间
+					var days = 0;
+					if(_pEndTime!=null && curDate!=null && _pEndTime<curDate){//超期完成，惩罚
+						_pEndTime = format(_pEndTime,"yyyy-MM-dd HH:mm:ss");
+						curDate = parseDate(curDate,"yyyy-MM-dd");
+						curDate = format(curDate,"yyyy-MM-dd HH:mm:ss");
+						days = (Java.type('cn.myapps.util.DateUtil')).getWorkingDayCount(_pEndTime, curDate, webUser1.getCalendarType());	//string-->int
+						days--;	//超期时间2天才开始算超期处罚，因超期时至少已超期1天，不应立刻计算超期天数
+
+						//超期惩罚
+						var deferCount = 0;		//超期惩罚金额小计
+						if(_pLevel!=null && _pLevel==("常规")){
+							deferCount += cashObj.common["_pPunish"];
+							_pRemark += "未完成扣"+cashObj.common["_pPunish"]+"元，";
+							
+							if(days>0){
+								deferCount += days*cashObj.common["_pOver"];
+								_pRemark += "超期"+days+"天，超期一天扣"	+cashObj.common["_pOver"]+"元，共扣"+deferCount+"元；";
+							}
+						}else if(_pLevel!=null && _pLevel==("重点")){
+							deferCount += cashObj.emphasis["_pPunish"];
+							_pRemark += "未完成扣"+cashObj.emphasis["_pPunish"]+"元，";
+
+							if(days>0){
+								deferCount += days*cashObj.emphasis["_pOver"];
+								_pRemark += "超期"+days+"天，超期一天扣"+cashObj.emphasis["_pOver"]+"元，共扣"+deferCount+"元；";
+							}
+						}else if(_pLevel!=null && _pLevel==("督办")){
+							deferCount += cashObj.supervision["_pPunish"];
+							_pRemark += "未完成扣"+cashObj.supervision["_pPunish"]+"元，";
+
+							if(days>0){
+								deferCount += days*cashObj.supervision["_pOver"];
+								_pRemark += "超期"+days+"天，超期一天扣"+cashObj.supervision["_pOver"]+"元，共扣"+deferCount+"元；";
+							}
+						}
+						_pPunish += deferCount;
+					}
+				}
+				//封顶
+				if(_pLevel!=null && _pLevel==("常规")){
+					if(_pPunish>cashObj.common["_pCapping"]){
+						_pPunish = cashObj.common["_pCapping"];
+					}
+					_pRemark += "封顶扣"+cashObj.common["_pCapping"]+"元；";
+				}else if(_pLevel!=null && _pLevel==("重点")){
+					if(_pPunish>cashObj.emphasis["_pCapping"]){
+						_pPunish = cashObj.emphasis["_pCapping"];
+					}
+					_pRemark += "封顶扣"+cashObj.emphasis["_pCapping"]+"元；";
+				}else if(_pLevel!=null && _pLevel==("督办")){
+					if(_pPunish>cashObj.supervision["_pCapping"]){
+						_pPunish = cashObj.supervision["_pCapping"];
+					}
+					_pRemark += "封顶扣"+cashObj.supervision["_pCapping"]+"元；";
+				}
+			}else if(_pType==("年度")){
+				if(stateLabel!=null && stateLabel==("结束")){	//计划完成
+					if(_pEndTime!=null && _pReportTime!=null && _pEndTime<_pReportTime){//超期完成，惩罚
+						_pReportTime = format(_pReportTime,"yyyy-MM-dd HH:mm:ss");
+						_pEndTime = format(_pEndTime,"yyyy-MM-dd HH:mm:ss");
+						var days = (Java.type('cn.myapps.util.DateUtil')).getWorkingDayCount(_pEndTime, _pReportTime, webUser1.getCalendarType());
+						days--;	//超期时间2天才开始算超期处罚，因超期时至少已超期1天，不应立刻计算超期天数
+						
+						//超期惩罚
+						var deferCount = 0;		//超期惩罚金额小计
+						deferCount += cashObj.year["_pPunish"];
+						_pRemark += "超期完成扣"+cashObj.year["_pPunish"]+"元，";
+
+						if(days>0){
+							deferCount += days*cashObj.year["_pOver"];
+							_pRemark += "超期"+days+"天，超期一天扣"+cashObj.year["_pOver"]+"元，共扣"+deferCount+"元；";
+						}
+						_pPunish += deferCount;
+					}else {//按期完成，奖励
+						_pAward += cashObj.year["_pAward"];
+						_pRemark += "按期完成，奖励"+cashObj.year["_pAward"]+"元；";
+					}
+					//根据延期次数考核
+					if(_pDeferCount!=null && _pDeferCount>1){
+						_pPunish += (_pDeferCount-1)*cashObj.year["_pAppDefer"];
+						_pRemark += "申请延期"+(_pDeferCount)+"次，第一次延期免考核，每次扣"+cashObj.year["_pAppDefer"]+"元，共扣"
+							+(_pDeferCount-1)*cashObj.year["_pAppDefer"]+"元；";
+					}
+					//根据驳回次数考核
+					if(_pReportCount!=null && _pReportCount>1){
+						_pPunish += (_pReportCount-1)*cashObj.year["_pReject"];
+						_pRemark += "驳回"+(_pReportCount-1)+"次，每次扣"+cashObj.year["_pReject"]
+							+"元，共扣"+(_pReportCount-1)*cashObj.year["_pReject"]+"元；";
+					}
+				}else{	//计划未完成
+					_pLastCheckTime = curDate;
+					//设置最后考核时间
+					var sql3 = "update tlk_plant_plan set item__pLastCheckTime='"+curDate+"' where item__pNo='"+_pNo+"'";
+					updateByDSName("JhglDataSource",sql3);
+
+					//计算超期时间
+					var days = 0;
+					if(_pEndTime!=null && curDate!=null && _pEndTime<curDate){//超期完成，惩罚
+						_pEndTime = format(_pEndTime,"yyyy-MM-dd HH:mm:ss");
+						curDate = parseDate(curDate,"yyyy-MM-dd");
+						curDate = format(curDate,"yyyy-MM-dd HH:mm:ss");
+						days = (Java.type('cn.myapps.util.DateUtil')).getWorkingDayCount(_pEndTime, curDate, webUser1.getCalendarType());
+						days--;	//超期时间2天才开始算超期处罚，因超期时至少已超期1天，不应立刻计算超期天数
+						
+						//超期惩罚
+						var deferCount = 0;		//超期惩罚金额小计
+						deferCount += cashObj.year["_pPunish"];
+						_pRemark += "未完成扣"+cashObj.year["_pPunish"]+"元，";
+
+						if(days>0){
+							deferCount += days*cashObj.year["_pOver"];
+							_pRemark += "超期"+days+"天，超期一天扣"+cashObj.year["_pOver"]+"元，共扣"+deferCount+"元；";
+						}
+						_pPunish += deferCount;
+					}
+				}
+				//封顶
+				if(_pPunish>cashObj.year["_pCapping"]){
+					_pPunish = cashObj.year["_pCapping"];
+				}
+				_pRemark += "封顶扣"+cashObj.year["_pCapping"]+"元；";
+			}
+			_pAutoAssess = _pAward - _pPunish;
+			_pRemark += "最后奖惩："+_pAutoAssess+"元。";
+			
+			//还在起草和审批阶段的计划不做统计
+		    var formProcess = new Packages.cn.myapps.core.dynaform.form.ejb.FormProcessBean();//申明表单业务处理类
+	        var form = formProcess.doViewByFormName("plant_assess",getApplication());  //根据表单名查询出表单(fm_purchase_materials为对应的插入记录的表单名)
+	        var user = "";
+	        if(isNotNull(_pDepartment) && _pDepartment!=("")){
+	        	var roleName=getRoleByRoleNo("1004",getApplication());	//1004是部门主任角色编号
+	        	var roleId = getRoleIdByName(roleName);
+	        	var userVOs = getUsersByDptIdAndRoleId(_pDepartment,roleId);
+	        	if(userVOs!=null && userVOs.size()>0){
+		        	for(var iter1=userVOs.iterator();iter1!=null,iter1.hasNext();){
+		        		if(user==("")){
+		        			user = iter1.next();
+		        			break;
+		        		}
+		        	}
+	        	}
+	        }
+			println("===================_pNo-->"+_pNo);
+			println("===================user-->"+user);
+	        var webuser = new Packages.cn.myapps.core.user.action.WebUser(user);
+	        var process = getDocumentProcess();//申明文档业务处理类
+	        var doc = process.doNew(form,webuser,createParamsTable());//创建记录
+//	        doc.setFlowid("flowid");//flowid为对应的流程Id.
+
+			var uuid = new (Java.type('cn.myapps.util.sequence.Sequence'))();
+			doc.setId(uuid.getSequence());
+			doc.addStringItem("_pNo",_pNo);
+			doc.addStringItem("_pTitle",_pTitle);
+			doc.addStringItem("_pLevel",_pLevel);
+			doc.addStringItem("_pSpecial",_pSpecial);
+			doc.addStringItem("_pStandard",_pStandard);
+			doc.addStringItem("_pDepartment",_pDepartment);
+			doc.addStringItem("_pType",_pType);
+			doc.addStringItem("_p2Department",_p2Department);
+			doc.addStringItem("_pResponsible",_pResponsible);
+			doc.addStringItem("_pCheckDepartment",_pCheckDepartment);
+			doc.addStringItem("_pChecker",_pChecker);
+			doc.addStringItem("_pEndTime",_pEndTime);
+			doc.addStringItem("_pReportTime",_pReportTime);
+			doc.addStringItem("_pAutoAssess",_pAutoAssess);
+			doc.addStringItem("_pAssessTotal",_pAutoAssess);
+			doc.addStringItem("_pLastCheckTime",_pLastCheckTime);
+			doc.addStringItem("_pFactoryLeader",_pFactoryLeader);
+			doc.addStringItem("_pRemark",_pRemark);
+
+	        var params =createParamsTable();
+	        params.setParameter("_flowid", "11e9-7a26-62fe75f3-9820-539e9af1e136");	//value为对应的流程Id.
+	        try {
+		        process.doStartFlowOrUpdate(doc,params,webuser);//启动流程
+		        count++;
+			} catch (e) {
+				println("============="+_pNo+"启动流程报错："+e);
+			}
+		}
+	}
+	/**厂级计划--end**/
+} catch (e) {
+	println("=========================生成年度和月度计划绩效数据时报错："+e);
+}
+var date2 = new Date();
+println("****************生成年度和月度计划绩效数据共"+count+"条，耗时"+(date2-date1)/1000+"秒****************");
+println("****************生成年度和月度计划绩效数据结束****************");
+}
+
+
+/*刪除部門獎懲*/
+function scbmjc(){
+    var sql4 = "delete tlk_department_assess where (item__pEndTime>=(trunc(add_months(sysdate,-1),'mm')) and item__pEndTime<(trunc(sysdate, 'mm'))) and item__isCancel is null";
+
+    deleteByDSName("JhglDataSource",sql4);
+}
+/*刪除長級獎懲*/
+function sccjjc(){
+    var sql4 = "delete tlk_plant_assess where (item__pEndTime>=(trunc(add_months(sysdate,-1),'mm')) and item__pEndTime<(trunc(sysdate, 'mm'))) and item__isCancel is null";
+
+    deleteByDSName("JhglDataSource",sql4);
+}
+
+]]></content>
+  <version>19</version>
+</repositoryVO>

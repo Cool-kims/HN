@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11eb-ee9b-810a4f0e-8e51-610ba77dff7f">
+  <name>摘要373</name>
+  <parentId>__11eb-e82e-158c5572-ba63-77a12763f65b</parentId>
+  <title>摘要373</title>
+  <type>00</type>
+  <formId>__11eb-e82e-158c5572-ba63-77a12763f65b</formId>
+  <fieldNames>编制日期;编号;编制人</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

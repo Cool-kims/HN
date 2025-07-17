@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11eb-ba27-8777855a-b060-990d94d03158">
+  <name>工程摘要8</name>
+  <parentId>__11eb-ba25-3bc5d889-b060-990d94d03158</parentId>
+  <title>工程摘要8</title>
+  <type>00</type>
+  <formId>__11eb-ba25-3bc5d889-b060-990d94d03158</formId>
+  <fieldNames>编制人;工程名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

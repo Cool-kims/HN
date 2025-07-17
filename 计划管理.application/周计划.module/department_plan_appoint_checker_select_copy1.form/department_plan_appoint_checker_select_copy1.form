@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e9-7a26-62f5756f-9820-539e9af1e136">
+  <name>department_plan_appoint_checker_select_copy1</name>
+  <parentId>11e9-7a26-62f52745-9820-539e9af1e136</parentId>
+  <sortId>155672354732200000</sortId>
+  <templatecontext><![CDATA[<table class="form_table_select" borderColor="#b4ccee" cellSpacing="1" cellPadding="1" width="100%" align="center" border="0">
+    <tbody>
+        <tr>
+            <td class="td_label">计划编号：</td>
+            <td><input id="11e3-354a-7879ff77-a8dd-095908fcc4e1" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="_pNo" text="text" readonlyScript="" printHiddenValue="" borderType="false" hiddenValue="" filtercondition="" discript="计划编号" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" fieldkeyevent="Tabkey" mobile="true" numberPattern="" fieldType="VALUE_TYPE_VARCHAR" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" hiddenScript="" valueScript="" /></td>
+            <td class="td_label" rowSpan="2">完成时间：</td>
+            <td>从<input id="11e3-424a-8b0684fe-b62e-ebcbabb44b8a" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="_pEndTime1" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" discript="完成时间1" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" hiddenScript="" valueScript="" limit="false" prev_Name="" datePattern="YMD" fieldtype="VALUE_TYPE_DATE" /></td>
+            <td class="td_label">计划类型：</td>
+            <td><select id="11e3-4516-59091039-8520-7967cdca669c" class="cn.myapps.runtime.dynaform.form.ejb.SelectField" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" discript="计划类型" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" hiddenScript="" valueScript="" fieldtype="VALUE_TYPE_VARCHAR" module="" optionsEditMode="01" dialogView="" optionsValue="" optionsText="" optionsScript="@quot;;月度;年度@quot;" name="_pType"></select></td>
+        </tr>
+        <tr>
+            <td class="td_label">计划标题：</td>
+            <td><input id="11e3-424a-b106c259-b62e-ebcbabb44b8a" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="_pTitle" text="text" readonlyScript="" printHiddenValue="" borderType="false" hiddenValue="" filtercondition="" discript="计划标题" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" fieldkeyevent="Tabkey" mobile="true" numberPattern="" fieldType="VALUE_TYPE_VARCHAR" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" hiddenScript="" valueScript="" /></td>
+            <td>到<input id="11e3-424a-91457c19-b62e-ebcbabb44b8a" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="_pEndTime2" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" discript="完成时间2" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" hiddenScript="" valueScript="" limit="true" prev_Name="_pEndTime1" datePattern="YMD" fieldtype="VALUE_TYPE_DATE" /></td>
+            <td class="td_label">计划级别：</td>
+            <td><select id="11e3-4516-7556b364-8520-7967cdca669c" class="cn.myapps.runtime.dynaform.form.ejb.SelectField" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" discript="计划级别" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" hiddenScript="" valueScript="" fieldtype="VALUE_TYPE_VARCHAR" module="" optionsEditMode="01" dialogView="" optionsValue="" optionsText="" optionsScript="@quot;;常规;重点;督办@quot;" name="_pLevel"></select></td>
+        </tr>
+        <tr>
+            <td class="td_label">执行部门：</td>
+            <td><select id="11e3-424b-1ce13b19-b62e-ebcbabb44b8a" class="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" hiddenScript="" valueScript="" fieldtype="VALUE_TYPE_VARCHAR" limitByUser="false" departmentLevel="1" relatedField="" defaultOptionType="16" allowEmpty="true" isDepartmentField="isDepartmentField" type="text" style="width: 153px" name="_pDepartment"></select></td>
+            <td class="td_label">负责单位(班组)：</td>
+            <td>&nbsp;&nbsp;&nbsp; <select id="11e3-424b-258b66d4-b62e-ebcbabb44b8a" class="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" hiddenScript="" valueScript="" fieldtype="VALUE_TYPE_VARCHAR" limitByUser="false" departmentLevel="2" relatedField="" defaultOptionType="16" allowEmpty="true" isDepartmentField="isDepartmentField" type="text" style="width: 153px" name="_p2Department"></select></td>
+            <td class="td_label">专项计划：</td>
+            <td><input id="11e3-4516-1e5a065f-8520-7967cdca669c" class="cn.myapps.runtime.dynaform.form.ejb.CheckboxField" type="checkbox" value="on" name="_pSpecial" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" discript="专项计划" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.CheckboxField" hiddenScript="" valueScript="" fieldtype="VALUE_TYPE_TEXT" module="" optionsEditMode="01" dialogView="" optionsValue="" optionsText="" optionsScript="@quot;是@quot;" layout="horizontal" /></td>
+        </tr>
+        <tr>
+            <td class="td_label">负责人：</td>
+            <td><select id="11e3-424b-49fe9c0f-b62e-ebcbabb44b8a" class="cn.myapps.runtime.dynaform.form.ejb.UserField" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" discript="负责人" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.UserField" hiddenScript="" valueScript="" fieldtype="VALUE_TYPE_TEXT" limitByUser="false" type="text" selectMode="selectOne" limitSum="10" filterField="" isUserField="isUserField" style="width: 153px" name="_pResponsible"></select></td>
+            <td class="td_label">验收人：</td>
+            <td>&nbsp;&nbsp;&nbsp; <select id="11e3-424b-bc78073b-b62e-ebcbabb44b8a" class="cn.myapps.runtime.dynaform.form.ejb.UserField" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" discript="验收人" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.UserField" hiddenScript="" valueScript="" fieldtype="VALUE_TYPE_TEXT" limitByUser="false" type="text" selectMode="selectOne" limitSum="10" filterField="" isUserField="isUserField" style="width: 153px" name="_pChecker"></select></td>
+            <td class="td_label">已延期：</td>
+            <td><input id="11e3-424b-9e8a97c5-b62e-ebcbabb44b8a" class="cn.myapps.runtime.dynaform.form.ejb.CheckboxField" type="checkbox" value="on" name="_isDefer" readonlyScript="" printHiddenValue="" hiddenValue="" filtercondition="" discript="已延期" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" mobile="true" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.CheckboxField" hiddenScript="" valueScript="" fieldtype="VALUE_TYPE_TEXT" module="" optionsEditMode="01" dialogView="" optionsValue="" optionsText="" optionsScript="@quot;是@quot;" layout="horizontal" /></td>
+        </tr>
+        <tr>
+            <td class="td_label">计划来源：</td>
+            <td><input id="11e3-4516-470d070e-8520-7967cdca669c" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="_pSource" text="text" readonlyScript="" printHiddenValue="" borderType="false" hiddenValue="" filtercondition="" discript="计划来源" hiddenPrintScript="" validateLibs="" textType="text" validateRule="" editMode="01" processDescription="[];[]" refreshOnChanged="false" fieldkeyevent="Tabkey" mobile="true" numberPattern="" fieldType="VALUE_TYPE_VARCHAR" calculateOnRefresh="false" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" hiddenScript="" valueScript="" /></td>
+            <td class="td_label">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td class="td_label">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <styleId>11e9-7a26-62f43cbf-9820-539e9af1e136</styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>58</version>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

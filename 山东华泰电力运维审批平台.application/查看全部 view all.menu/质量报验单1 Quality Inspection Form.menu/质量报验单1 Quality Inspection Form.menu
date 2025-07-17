@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11eb-2418-a9b6b34b-b5d9-1f8458293e1b">
+  <name>质量报验单1 Quality Inspection Form</name>
+  <parentId>11e7-ef14-67e8be9c-8f99-af63cc0890b3</parentId>
+  <description>质量报验单1 Quality Inspection Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-67e8be9c-8f99-af63cc0890b3</superior>
+  <linkName>质量报验单1 Quality Inspection Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67e47859-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11eb-2416-d3eff1bf-b5d9-1f8458293e1b]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>317</orderno>
+</resourceVO>

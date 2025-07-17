@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e6-bc6d-ddf3d3bc-8865-edb9ee0ca8a3">
+  <name>保存并启动流程</name>
+  <parentId>__11e7-ef14-ff9ec998-8f99-af63cc0890b3</parentId>
+  <type>4</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[#include "customlibs";
+#include "comm";
+var number=getItemValue("编号");
+var doc = getCurrentDocument(); 
+var filename = doc.getFormname();
+var formname="";
+if(filename!=null) {
+formname = filename.substring(filename.lastIndexOf("/")+1, filename.length);
+}
+if(number==null||number.trim().length<=0){
+  number=getNextNo(formname,'编号','WZXYSQB-B');
+  doc.findItem("编号").setValue(number);
+}
+var formName="物资需用申请子表";
+var fieldName="合计金额";
+var moneys=sumSubDocument(formName, fieldName); // 金额
+
+var curr="卢比PKR"; // 币种
+//moneys=getItemValueAsString("概算金额");
+var bill="物资需用计划申请单";// 单据类型
+var cost=getItemValueAsString("资金来源"); // 费用金额
+if(""==(cost)){
+    str="资金来源未选择。<br />The source of funds is not selected.";
+}else{
+    var depts_c="申请部门";
+    var depts=getItemValueAsString(depts_c); // 部门
+    var deptid=getDeptIdByNameAndLevel(depts,1);
+    var times_c="填报日期";
+    var times=getItemValueAsString(times_c); // 填表日期
+    var a="";
+    var b="";
+    var str="";
+    a=control_money("资金","物资需用计划申请单",curr,"概算金额",moneys,bill,cost,depts_c,deptid,times_c,times);
+    b=control_money("费用","物资需用计划申请单",curr,"概算金额",moneys,bill,cost,depts_c,deptid,times_c,times);
+    if(a==""){
+        str=b;
+    }else{
+	    str=a+"\n"+b;
+    }
+}
+str;]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+var booleans=true;
+if(fstate==null){
+	booleans=false;
+}
+booleans;]]></hiddenScript>
+  <readonlyScript><![CDATA[var booleans=true;
+var bzr=getItemValueAsString("编制人");
+var dlr=getWebUser().getName();
+if(dlr==(bzr)){
+booleans=false;
+}
+booleans;]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-ff9ec998-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

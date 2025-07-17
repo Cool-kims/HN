@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-059a-144bbbe8-a4c3-83598629d569">
+  <name>摘要061</name>
+  <parentId>__11e7-ef14-ffa2c075-8f99-af63cc0890b3</parentId>
+  <title>摘要061</title>
+  <type>00</type>
+  <formId>__11e7-ef14-ffa2c075-8f99-af63cc0890b3</formId>
+  <fieldNames>编号;合同名称</fieldNames>
+  <scope>1</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e3-eb01-0ff620e0-bbae-834f684c6f52">
+  <name>提交</name>
+  <parentId>__11e9-7a26-62f59b84-9820-539e9af1e136</parentId>
+  <type>5</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow>11e9-7a26-62feeb29-9820-539e9af1e136</onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[//流程状态为“计划执行”时
+var stateLabel = getStateLabel();
+var webUser = getWebUser();
+var rtn = false;
+if(stateLabel!=null && stateLabel==("计划执行")){
+	rtn = true;
+	var isRight = false;		//当前登录用户是否执行部门主任、副主任、计划分配员、负责单位(班组)班长、负责人
+	var depId = getItemValue("_pDepartment");
+	var roleName=getRoleByRoleNo("1004",getApplication());	//1004是部门主任编号
+	var roleId = getRoleIdByName(roleName);
+	var users = getUsersByDptIdAndRoleId(depId,roleId);
+	if(users!=null && users.size()>0){
+		for(var iter1=users.iterator();iter1.hasNext();){
+		    var user=iter1.next();
+		    if(user!=null && webUser!=null && webUser.getId()==(user.getId())){
+		    	isRight = true;
+		    }
+		}
+	}
+	if(!isRight){
+		var roleName=getRoleByRoleNo("1003",getApplication());	//1003是部门副主任编号
+		var roleId = getRoleIdByName(roleName);
+		
+		var users = getUsersByDptIdAndRoleId(depId,roleId);
+		if(users!=null && users.size()>0){
+			for(var iter1=users.iterator();iter1.hasNext();){
+			    var user=iter1.next();
+			    if(user!=null && webUser!=null && webUser.getId()==(user.getId())){
+			    	isRight = true;
+			    }
+			}
+		}
+	}
+	if(!isRight){
+		var roleName=getRoleByRoleNo("1012",getApplication());	//1012是计划分配员编号
+		var roleId = getRoleIdByName(roleName);
+	
+		var users = getUsersByDptIdAndRoleId(depId,roleId);
+		if(users!=null && users.size()>0){
+			for(var iter1=users.iterator();iter1.hasNext();){
+			    var user=iter1.next();
+			    if(user!=null && webUser!=null && webUser.getId()==(user.getId())){
+			    	isRight = true;
+			    }
+			}
+		}
+	}
+	var dep2Id = getItemValueAsString("_p2Department");
+	var users = getUsersByDptId(dep2Id);
+	if(users!=null && users.size()>0){
+		for(var iter1=users.iterator();iter1.hasNext();){
+		    var user=iter1.next();
+		    if(user!=null && webUser!=null && webUser.getId()==(user.getId())){
+		    	isRight = true;
+		    }
+		}
+	}
+	if(!isRight){
+		var _pResponsible = getItemValueAsString("_pResponsible");		//负责人
+		var user = getUserById(_pResponsible);
+		if(user!=null){
+			if(webUser.getId()==(user.getId())){
+				isRight = true;
+			}
+		}
+	}
+	if(isRight){
+		rtn = false;
+	}
+}
+rtn;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>2114</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e9-7a26-62f59b84-9820-539e9af1e136</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-9459-7ac23737-bcf0-133beec42517">
+  <name>摘要303</name>
+  <parentId>__11ea-9446-1e95b253-bcf0-133beec42517</parentId>
+  <title>摘要303</title>
+  <type>00</type>
+  <formId>__11ea-9446-1e95b253-bcf0-133beec42517</formId>
+  <fieldNames>物资名称;设备型号</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

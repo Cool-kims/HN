@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e9-a1f6-27923220-8d81-499a5f60dbf2">
+  <name>计划标题2</name>
+  <parentId>__11e9-7a26-62f52747-9820-539e9af1e136</parentId>
+  <title>计划标题2</title>
+  <type>00</type>
+  <formId>__11e9-7a26-62f52747-9820-539e9af1e136</formId>
+  <fieldNames>_pTitle</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

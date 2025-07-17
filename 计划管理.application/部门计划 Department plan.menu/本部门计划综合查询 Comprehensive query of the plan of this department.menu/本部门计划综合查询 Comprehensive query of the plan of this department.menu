@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-7a26-62fa091f-9820-539e9af1e136">
+  <name>本部门计划综合查询 Comprehensive query of the plan of this department</name>
+  <parentId>11e9-7a26-62fa0916-9820-539e9af1e136</parentId>
+  <description>本部门计划综合查询 Comprehensive query of the plan of this department</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e9-7a26-62fa0916-9820-539e9af1e136</superior>
+  <linkName>本部门计划综合查询 Comprehensive query of the plan of this department</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e9-7a26-62f43cbe-9820-539e9af1e136</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-7a26-62fb1a42-9820-539e9af1e136]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>12</orderno>
+  <showtotalrow>true</showtotalrow>
+</resourceVO>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11e8-3b4a-5f0a7727-94e7-ef330bda161e">
+      
+    <name>出差经理</name>
+      
+    <parentId>11e7-ef12-74ef29ec-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>152320512429400000</sortId>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>R34e5</roleNo>
+</role>

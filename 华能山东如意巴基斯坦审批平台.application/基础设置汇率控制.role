@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11ed-f9e2-b0f49ee5-b0e1-11c240e8a514">
+  <name>基础设置汇率控制</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <roleNo>Rdc75</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>168489875451000000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef13-4f494c3a-8f99-af63cc0890b3","type":1,"resId":"11e7-ef13-4f494c3a-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef13-4f494c3c-8f99-af63cc0890b3","type":1,"resId":"11e7-ef13-4f494c3c-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef13-4f494c3a-8f99-af63cc0890b3","type":1,"resId":"11e7-ef13-4f494c3a-8f99-af63cc0890b3"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e7-ef13-4f494c3c-8f99-af63cc0890b3","type":1,"resId":"11e7-ef13-4f494c3c-8f99-af63cc0890b3"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

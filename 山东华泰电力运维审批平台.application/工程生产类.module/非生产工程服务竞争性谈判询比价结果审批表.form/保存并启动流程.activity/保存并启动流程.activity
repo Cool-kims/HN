@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11eb-ba25-4c0e646a-b060-990d94d03158">
+  <name>保存并启动流程</name>
+  <parentId>__11eb-ba25-3bc5d889-b060-990d94d03158</parentId>
+  <type>4</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[#include "customlibs";
+#include "comm";
+var number=getItemValue("编号");
+var doc = getCurrentDocument(); 
+var filename = doc.getFormname();
+var formname="";
+if(filename!=null) {
+formname = filename.substring(filename.lastIndexOf("/")+1, filename.length);
+}
+if(number==null||number.trim().length<=0){
+  number=getNextNo(formname,'编号','FSCXBB');
+  doc.findItem("编号").setValue(number);
+}
+
+]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+var booleans=true;
+if(fstate==null){
+	booleans=false;
+}
+booleans;]]></hiddenScript>
+  <readonlyScript><![CDATA[var booleans=true;
+var bzr=getItemValueAsString("编制人");
+var dlr=getWebUser().getName();
+if(dlr==(bzr)){
+booleans=false;
+}
+booleans;]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11eb-ba25-3bc5d889-b060-990d94d03158</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

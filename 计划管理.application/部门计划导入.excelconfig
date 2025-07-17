@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<impMappingConfigVO id="11e9-7a26-62f43cba-9820-539e9af1e136">
+  <name>部门计划导入</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <xml><![CDATA[<cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>
+<flowstatus>16</flowstatus>
+<flowpath></flowpath>
+<deleteMSG></deleteMSG>
+<TOP_ALIGNMENT>0.0</TOP_ALIGNMENT>
+<CENTER_ALIGNMENT>0.5</CENTER_ALIGNMENT>
+<BOTTOM_ALIGNMENT>1.0</BOTTOM_ALIGNMENT>
+<LEFT_ALIGNMENT>0.0</LEFT_ALIGNMENT>
+<RIGHT_ALIGNMENT>1.0</RIGHT_ALIGNMENT>
+<width>1730</width>
+<height>895</height>
+<PROPERTIES>4</PROPERTIES>
+<SOMEBITS>8</SOMEBITS>
+<FRAMEBITS>16</FRAMEBITS>
+<ALLBITS>32</ALLBITS>
+<ERROR>64</ERROR>
+<ABORT>128</ABORT>
+<needRollback>rollback</needRollback>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809521312</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>193;281;272;162</pointstack>
+<scale>0</scale>
+<id>1383809860921</id>
+<name>Relation1353</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809521769</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>314;305;272;162</pointstack>
+<scale>0</scale>
+<id>1383809864499</id>
+<name>Relation1367</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809533224</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>459;283;272;162</pointstack>
+<scale>0</scale>
+<id>1383809867596</id>
+<name>Relation1380</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809534008</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>537;212;272;162</pointstack>
+<scale>0</scale>
+<id>1383809871283</id>
+<name>Relation1391</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809534615</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>571;133;272;162</pointstack>
+<scale>0</scale>
+<id>1383809874686</id>
+<name>Relation1402</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809535174</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>520;75;272;162</pointstack>
+<scale>0</scale>
+<id>1383809878213</id>
+<name>Relation1417</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809535704</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>388;63;272;162</pointstack>
+<scale>0</scale>
+<id>1383809881197</id>
+<name>Relation1432</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809565049</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>235;75;272;162</pointstack>
+<scale>0</scale>
+<id>1383809884317</id>
+<name>Relation1443</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809565804</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>100;94;272;162</pointstack>
+<scale>0</scale>
+<id>1383809887118</id>
+<name>Relation1455</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809522664</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>44;167;272;162</pointstack>
+<scale>0</scale>
+<id>1383809890005</id>
+<name>Relation1475</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1383809520737</startnodeid>
+<endnodeid>1383809495954</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>92;231;272;162</pointstack>
+<scale>0</scale>
+<id>1383809892783</id>
+<name>Relation1486</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<formName>department_plan</formName>
+<x>272</x>
+<y>162</y>
+<scale>0</scale>
+<id>1383809495954</id>
+<name>department_plan</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pSource</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>92</x>
+<y>231</y>
+<scale>0</scale>
+<id>1383809520737</id>
+<name>计划来源</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pDepartment</fieldName>
+<valueScript>//所属部门
+#include @quot;函数库@quot;;
+var departName = getItemValue(@quot;_pDepartment@quot;);
+var rtn = getDepartmentByName(departName);
+rtn;</valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>193</x>
+<y>281</y>
+<scale>0</scale>
+<id>1383809521312</id>
+<name>所属部门</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_p2Type</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>314</x>
+<y>305</y>
+<scale>0</scale>
+<id>1383809521769</id>
+<name>个人(班组)</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pStandard</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>47</x>
+<y>175</y>
+<scale>0</scale>
+<id>1383809522664</id>
+<name>质量标准</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_p2Department</fieldName>
+<valueScript>#include @quot;函数库@quot;;
+var departName = getItemValue(@quot;_p2Department@quot;);
+var rtn = getDepartmentByName(departName);
+rtn;</valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>458</x>
+<y>282</y>
+<scale>0</scale>
+<id>1383809533224</id>
+<name>负责单位(班组)</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pResponsible</fieldName>
+<valueScript>//负责人
+var departName = getItemValueAsString(@quot;_pDepartment@quot;);
+var userName = getItemValueAsString(@quot;_pResponsible@quot;);
+userName=@quot;%@quot;+userName+@quot;%@quot;;
+var userId = @quot;@quot;;
+if(userName!=null @amp;@amp; !userName==(@quot;@quot;)){
+    var sql = @quot;select u.id from sppt.t_user u,sppt.t_department dept where u.name like'@quot;
+        + userName + @quot;' and dept.id='@quot; + departName + @quot;'@quot;;
+    (Java.type('java.lang.System')).out.println(@quot;sql@quot;+sql);
+    println(@quot;sql@quot;+sql);
+    var datas = queryByDSName(@quot;JhglDataSource@quot;, sql);
+    if(datas!=null @amp;@amp; datas.size()@gt;0){
+        for(var iter = datas.iterator();datas!=null,iter.hasNext();){
+            var user = iter.next();
+            userId = user.get(@quot;id@quot;);
+            break;
+        }
+    }
+}
+userId;</valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>537</x>
+<y>212</y>
+<scale>0</scale>
+<id>1383809534008</id>
+<name>负责人</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pEndTime</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>571</x>
+<y>133</y>
+<scale>0</scale>
+<id>1383809534615</id>
+<name>完成时间</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pCheckDepartment</fieldName>
+<valueScript>#include @quot;函数库@quot;;
+var departName = getItemValue(@quot;_pCheckDepartment@quot;);
+var rtn = getDepartmentByName(departName);
+rtn;</valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>520</x>
+<y>75</y>
+<scale>0</scale>
+<id>1383809535174</id>
+<name>验收单位(班组)</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pChecker</fieldName>
+<valueScript>var departName = getItemValue(@quot;_pDepartment@quot;);
+var userName = getItemValue(@quot;_pChecker@quot;);
+userName=@quot;%@quot;+userName+@quot;%@quot;;
+var userId = @quot;@quot;;
+if(userName!=null @amp;@amp; !userName==(@quot;@quot;)){
+    var sql = @quot;select u.id from sppt.t_user u,sppt.t_department dept where u.name like'@quot;
+        + userName + @quot;' and dept.id='@quot; + departName + @quot;'@quot;;
+    var datas = queryByDSName(@quot;JhglDataSource@quot;, sql);
+    if(datas!=null @amp;@amp; datas.size()@gt;0){
+        for(var iter = datas.iterator();datas!=null,iter.hasNext();){
+            var user = iter.next();
+            userId = user.get(@quot;id@quot;);
+            break;
+        }
+    }
+}
+userId;</valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>388</x>
+<y>63</y>
+<scale>0</scale>
+<id>1383809535704</id>
+<name>验收人</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pRemark</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>235</x>
+<y>75</y>
+<scale>0</scale>
+<id>1383809565049</id>
+<name>计划备注</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>_pTitle</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>100</x>
+<y>94</y>
+<scale>0</scale>
+<id>1383809565804</id>
+<name>计划标题</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+</cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>]]></xml>
+  <templatePath>/uploads/exceltemplate/部门计划导入模板.xls</templatePath>
+</impMappingConfigVO>

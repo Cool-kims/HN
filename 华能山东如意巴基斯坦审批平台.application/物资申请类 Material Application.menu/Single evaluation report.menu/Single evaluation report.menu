@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ec-78fd-3d0cf0d6-b810-7bae9f65952d">
+  <name>Single evaluation report</name>
+  <parentId>11e7-ef13-4f4999b4-8f99-af63cc0890b3</parentId>
+  <description>Single evaluation report</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f4999b4-8f99-af63cc0890b3</superior>
+  <linkName>Single evaluation report</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ec-78fc-bdc35720-b810-7bae9f65952d]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>25</orderno>
+</resourceVO>

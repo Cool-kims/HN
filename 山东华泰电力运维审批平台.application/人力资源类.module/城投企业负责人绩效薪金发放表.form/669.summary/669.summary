@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ec-9098-b17d9a21-8d21-7b6c7f682898">
+  <name>669</name>
+  <parentId>__11ec-9098-51e121af-8d21-7b6c7f682898</parentId>
+  <title>669</title>
+  <type>00</type>
+  <formId>__11ec-9098-51e121af-8d21-7b6c7f682898</formId>
+  <fieldNames>清空签字;编号;编制日期</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

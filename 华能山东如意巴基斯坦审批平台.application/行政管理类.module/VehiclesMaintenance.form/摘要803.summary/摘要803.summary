@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ec-61c6-e7672cd9-811e-db6d5a39b39c">
+  <name>摘要803</name>
+  <parentId>__11ec-61c4-539f36ae-811e-db6d5a39b39c</parentId>
+  <title>摘要803</title>
+  <type>00</type>
+  <formId>__11ec-61c4-539f36ae-811e-db6d5a39b39c</formId>
+  <fieldNames>编号;日期</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

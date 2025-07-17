@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e7-f612-c02601d4-916b-63a16bebd54a">
+  <name>导入</name>
+  <parentId>__11e7-ef14-67e1e01e-8f99-af63cc0890b3</parentId>
+  <type>43</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[#include "Others";
+!isCurDocEdit();]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>6</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-67e1e01e-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[#include "jumpURL";
+var request = $WEB.getParamsTable().getHttpRequest();
+var url1="http://" + request.getServerName()+":" + request.getServerPort() ;
+var fname="山东华泰电力运维审批平台/物资申请类/";
+var pname="随机专用工具借用单子表";
+fname=fname+pname;
+var url=getURL(fname,pname,"zygjjyd");
+url=url1+url;
+url;]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[]]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

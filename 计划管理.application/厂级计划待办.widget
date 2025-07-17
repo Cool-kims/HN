@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pageWidget id="11e9-7a26-62f5e9b7-9820-539e9af1e136">
+  <name>厂级计划待办</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <type>summary</type>
+  <actionContent><![CDATA[11e9-7a26-62f9e1f8-9820-539e9af1e136]]></actionContent>
+  <authMode>0</authMode>
+  <published>false</published>
+  <setup>false</setup>
+  <icon>{"icon":"if-lib icon-xinwenxinxi","icontype":"font","iconFontColor":"#000"}</icon>
+  <frequency>1</frequency>
+  <titleColor>#000</titleColor>
+  <iconShow>false</iconShow>
+  <widgetType>0</widgetType>
+  <orderno>0</orderno>
+  <isRefresh>false</isRefresh>
+  <showAll>false</showAll>
+</pageWidget>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11ed-63ba-838260cb-b23a-7b41347f3771">
+  <name>支票领用申请单_s</name>
+  <parentId>11e7-ef14-67d9ca67-8f99-af63cc0890b3</parentId>
+  <sortId>166838882397800000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;支票号码：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-6094-235cbdc5-b23a-7b41347f3771" text="text" name="支票号码" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp; &nbsp; &nbsp; 用途：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-6094-2d5a1cc7-b23a-7b41347f3771" text="text" name="用途" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>2</version>
+  <mappingStr><![CDATA[{"formName":"支票领用申请单_s","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

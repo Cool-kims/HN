@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-c51d-bce9221b-b204-9943e185f520">
+  <name>摘要362</name>
+  <parentId>__11ea-c518-3f576371-b204-9943e185f520</parentId>
+  <title>摘要362</title>
+  <type>00</type>
+  <formId>__11ea-c518-3f576371-b204-9943e185f520</formId>
+  <fieldNames>编号;编制人</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

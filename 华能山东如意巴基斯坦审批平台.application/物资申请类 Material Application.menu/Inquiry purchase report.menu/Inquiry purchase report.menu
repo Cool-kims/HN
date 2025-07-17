@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ec-78f8-acc6b9ce-b810-7bae9f65952d">
+  <name>Inquiry purchase report</name>
+  <parentId>11e7-ef13-4f4999b4-8f99-af63cc0890b3</parentId>
+  <description>Inquiry purchase report</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f4999b4-8f99-af63cc0890b3</superior>
+  <linkName>Inquiry purchase report</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ec-78f6-f97c3f7a-b810-7bae9f65952d]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>24</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

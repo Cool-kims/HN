@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-8b46-5bc57951-8eac-4b89bdea6b09">
+  <name>费用报销摘要</name>
+  <parentId>__11e8-3276-29c228c9-94e7-ef330bda161e</parentId>
+  <title>费用报销摘要</title>
+  <type>00</type>
+  <formId>__11e8-3276-29c228c9-94e7-ef330bda161e</formId>
+  <fieldNames>摘要;付款金额</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef13-4f42e320-8f99-af63cc0890b3">
+  <name>随机专用工具借用单子表</name>
+  <parentId>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</parentId>
+  <description>借用单子表444</description>
+  <sortId>151218022102600000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table border="1" style="border: 1px solid rgb(180, 204, 238);" align="left">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">工具名称</td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">型号规格</td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">单位</td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">数量</td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">借用时间</td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">计划归还时间</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d706-ab8adf1d-ae95-47caf4f32d12" text="text" name="工具名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:80px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d706-b1c87791-ae95-47caf4f32d12" text="text" name="型号规格" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:80px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d706-b76b089c-ae95-47caf4f32d12" text="text" name="单位" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:80px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-d706-d3e1de97-ae95-47caf4f32d12" text="text" name="数量" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width:80px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e7-d706-dbfebd86-ae95-47caf4f32d12" type="text" fieldtype="VALUE_TYPE_DATE" name="借用时间" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" style="width:80px" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e7-d706-e4253a39-ae95-47caf4f32d12" type="text" fieldtype="VALUE_TYPE_DATE" name="归还时间" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" style="width:80px" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>14</version>
+  <mappingStr><![CDATA[{"formName":"随机专用工具借用单子表","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

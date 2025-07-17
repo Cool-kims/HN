@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e8-0283-7dbdc446-a4c3-83598629d569">
+  <name>差旅费报销单_付汇</name>
+  <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2018-02-05T00:46:18.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef13-4f3c5318-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <filterScript><![CDATA[var value=getSession("_ids");//获取session值
+"select * from TLK_差旅费报销单 where ITEM_FHDID='"+value+"'";]]></filterScript>
+  <sqlFilterScript><![CDATA[var value=getSession("_ids");//获取session值
+"select * from TLK_差旅费报销单 where ITEM_FHDID='"+value+"'";]]></sqlFilterScript>
+  <filterCondition><![CDATA[[{field:'编号',operator:'=',type:'03',match:''},{field:'部门',operator:'LIKE',type:'03',match:''},{field:'编制人',operator:'LIKE',type:'03',match:''},{field:'创建时间',operator:'>=',type:'03',match:''},{field:'创建时间',operator:'<=',type:'03',match:''}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <authorityCondition>[{_authFields:'author',_authFieldScope:'itself'}]</authorityCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

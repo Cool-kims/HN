@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ec-61c6-f71ffbb4-811e-db6d5a39b39c">
+  <name>摘要802</name>
+  <parentId>__11ec-5fe9-c5b64ce7-811e-db6d5a39b39c</parentId>
+  <title>摘要802</title>
+  <type>00</type>
+  <formId>__11ec-5fe9-c5b64ce7-811e-db6d5a39b39c</formId>
+  <fieldNames>编号;编制日期;申请部门</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

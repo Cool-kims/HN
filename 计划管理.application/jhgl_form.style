@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleRepositoryVO id="11e9-7a26-62f43cbf-9820-539e9af1e136">
+  <name>jhgl_form</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <content><![CDATA[/**表单--start**/
+.form_table {
+	background-color: #f6fbf7;
+	border: 1px solid #BED4ED;
+	font-family: '宋体';
+}
+
+.form_table caption {
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+}
+
+.form_table .td_title1 {
+	background-color: #e0eaf4;
+	padding-left: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	font-family: '宋体';
+}
+
+.form_table td {
+	height: 26px;
+	font-size: 12px;
+	border-top: 0;
+}
+
+.form_table input[type="text"] {
+	
+}
+
+.form_table input[type="button"] {
+	
+}
+
+.form_table .td_label {
+	background-color: #f6fbf7;
+	text-align: right;
+}
+
+.noEmpty {
+	color: red;
+}
+
+.form_table .remind {
+	color: green;
+}
+
+.textOneLine input {
+	border-color: #000;
+	border-width: 0 0 1px;
+}
+/**表单--end**/
+/**查询表单--start**/
+.form_table_select .td_label {
+	text-align: right;
+}
+
+.form_table_select input[type=text] {
+	width: 115px !important;
+}
+
+.form_table_select select {
+	width: 119px !important;
+}
+/**查询表单--end**/]]></content>
+  <version>730</version>
+  <lastmodifytime class="sql-date">2019-06-17T20:48:58.000+08:00</lastmodifytime>
+</styleRepositoryVO>

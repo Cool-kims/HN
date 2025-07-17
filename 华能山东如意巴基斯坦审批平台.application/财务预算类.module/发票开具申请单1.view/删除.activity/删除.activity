@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11ea-8fb1-d17b663d-bcf0-133beec42517">
+  <name>删除</name>
+  <parentId>11ea-904f-5d1710a6-bcf0-133beec42517</parentId>
+  <type>3</type>
+  <editMode>0</editMode>
+  <orderno>1</orderno>
+  <parentView>11ea-904f-5d1710a6-bcf0-133beec42517</parentView>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <dispatcherMode>0</dispatcherMode>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <processPreview>false</processPreview>
+</activity>

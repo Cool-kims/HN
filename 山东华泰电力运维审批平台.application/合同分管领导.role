@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11ea-2c59-82bf2d88-9144-0905742bc3c3">
+      
+    <name>合同分管领导</name>
+      
+    <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>157785735455000000</sortId>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>Rc24b</roleNo>
+</role>

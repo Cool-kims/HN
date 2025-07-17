@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="__AknqqUe4tWs9NfJj0Rt">
+  <name>保存</name>
+  <parentId>__11e9-7a26-62f43cbd-9820-539e9af1e136</parentId>
+  <type>34</type>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType></colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[var _pSaveAndNewDocid = getSession("_pSaveAndNewDocid");	//获取session值
+var doc = findDocument(_pSaveAndNewDocid);
+var flowId = "11e9-7a26-62fe27cf-9820-539e9af1e136";	//表单绑定的要启动的流程id
+var webUser = getWebUser();
+
+var process = getDocumentProcess();//申明文档业务处理类
+var params =createParamsTable();
+params.setParameter("_flowid",flowId);
+try {
+	//启动前一个文档流程
+    process.doStartFlowOrUpdate(doc,params,webUser);//启动流程
+    
+} catch (e) {
+	println("=============保存并复制后启动流程报错："+e);
+}]]></afterActionScript>
+  <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
+  <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
+  <hiddenScript><![CDATA[var stateLabel = getStateLabel();
+var rtn = true;
+if(stateLabel==null || "计划起草" == stateLabel){
+    rtn = false;
+}
+rtn;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <iconurl></iconurl>
+  <orderno>0</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e9-7a26-62f43cbd-9820-539e9af1e136</parentForm>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <icon></icon>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond></transpond>
+  <targetList>|</targetList>
+  <label><![CDATA[]]></label>
+  <processPreview>false</processPreview>
+</activity>

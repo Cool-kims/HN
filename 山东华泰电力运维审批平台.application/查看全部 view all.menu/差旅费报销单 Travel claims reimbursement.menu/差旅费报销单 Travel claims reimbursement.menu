@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-fb93-5c459e70-b36b-a111d0b35b26">
+  <name>差旅费报销单 Travel claims reimbursement</name>
+  <parentId>11e7-ef14-67e8be9c-8f99-af63cc0890b3</parentId>
+  <description>差旅费报销单 Travel claims reimbursement</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-67e8be9c-8f99-af63cc0890b3</superior>
+  <linkName>差旅费报销单 Travel claims reimbursement</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67d9ca67-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef14-67eaba1b-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>208</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-7a26-62fa305f-9820-539e9af1e136">
+  <name>周计划 Weekly Plan</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <description>周计划 Weekly Plan</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <linkName>周计划 Weekly Plan</linkName>
+  <moduleid>11e9-7a26-62f52745-9820-539e9af1e136</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[__11e9-7a26-62f52744-9820-539e9af1e136]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+</resourceVO>

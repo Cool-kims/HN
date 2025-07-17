@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9339-a0d8ed0f-8eac-4b89bdea6b09">
+  <name>工程摘要1</name>
+  <parentId>__11e8-397e-a4e0abcc-94e7-ef330bda161e</parentId>
+  <title>工程摘要1</title>
+  <type>00</type>
+  <formId>__11e8-397e-a4e0abcc-94e7-ef330bda161e</formId>
+  <fieldNames>编制人;报价总金额</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

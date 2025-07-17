@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pageWidget id="__WUdT5Wkt7EPjkptXBHR">
+  <name>流程中心</name>
+  <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+  <type>system_workflow</type>
+  <moduleid></moduleid>
+  <actionContent><![CDATA[]]></actionContent>
+  <width></width>
+  <height></height>
+  <authMode>0</authMode>
+  <authRolesId></authRolesId>
+  <authRolesName></authRolesName>
+  <tabTags><![CDATA[]]></tabTags>
+  <published>true</published>
+  <setup>true</setup>
+  <icon>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img", "imgUrl": "/uploads/lib/icon_menu_default.png"}</icon>
+  <icontype>font</icontype>
+  <carouselImg>[]</carouselImg>
+  <helpPath></helpPath>
+  <frequency>0</frequency>
+  <titleColor>#000</titleColor>
+  <iconShow>false</iconShow>
+  <widgetType>0</widgetType>
+  <orderno>0</orderno>
+  <countType>none</countType>
+  <isRefresh>true</isRefresh>
+  <wgtWidth></wgtWidth>
+  <wgtHeight></wgtHeight>
+  <widgetGroupId></widgetGroupId>
+  <showAll>false</showAll>
+</pageWidget>

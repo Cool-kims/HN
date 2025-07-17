@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e8-397e-a4e0abcc-94e7-ef330bda161e">
+  <name>工程单一来源采购结果审批表</name>
+  <parentId>11e7-ef14-67e47859-8f99-af63cc0890b3</parentId>
+  <sortId>152300767296500000</sortId>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>11</version>
+  <mappingStr><![CDATA[{"formName":"工程单一来源采购结果审批表","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

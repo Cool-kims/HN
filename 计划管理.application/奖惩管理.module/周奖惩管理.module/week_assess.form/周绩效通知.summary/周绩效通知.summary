@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e9-9cbf-c2d8df05-bffc-fd2f695754f0">
+  <name>周绩效通知</name>
+  <parentId>__11e9-9cbd-f99c90a4-bffc-fd2f695754f0</parentId>
+  <title>周绩效通知</title>
+  <type>00</type>
+  <formId>__11e9-9cbd-f99c90a4-bffc-fd2f695754f0</formId>
+  <fieldNames>_pTitle;_pEndTime;_pAssessTotal;_pRemark</fieldNames>
+  <scope>1</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

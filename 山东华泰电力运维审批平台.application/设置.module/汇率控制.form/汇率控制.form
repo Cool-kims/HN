@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-67d843aa-8f99-af63cc0890b3">
+  <name>汇率控制</name>
+  <parentId>11e7-ef14-67d7f576-8f99-af63cc0890b3</parentId>
+  <sortId>151303975365700000</sortId>
+  <templatecontext><![CDATA[<p style="text-align: center;">&nbsp;</p>
+<table width="800" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">1美金(USD)=<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-ded7-78269a0f-8bc3-5d925c988896" text="text" name="美金_卢比" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />卢比(PKR)</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">1人民币(CNY)=<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-ded7-8c5f2500-8bc3-5d925c988896" text="text" name="人民币_卢比" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />卢比(PKR)</td>
+        </tr>
+        <tr>
+            <td><span style="text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1美金(USD)=<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-f9d3-2c1ce47b-9fd5-29ccd4df9cbd" text="text" name="美金_人民币" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></span>人民币(CNY)</td>
+        </tr>
+        <tr>
+            <td><span style="text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1卢比(PKR)=<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ed-f9d3-9c47a57c-9fd5-29ccd4df9cbd" text="text" name="卢比_人民币" texttype="text" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></span>人民币(CNY)</td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>16</version>
+  <mappingStr><![CDATA[{"formName":"汇率控制","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

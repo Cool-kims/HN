@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e8-a6c6-4e79a3e8-910a-c9d6f560e02b">
+  <name>月度资金预算追加审批表</name>
+  <parentId>11e7-ef13-4f494c42-8f99-af63cc0890b3</parentId>
+  <description>月度资金预算追加审批表Monthly fund budget additional approval form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f494c42-8f99-af63cc0890b3</superior>
+  <linkName>月度资金预算追加审批表Monthly fund budget additional approval form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3aa555-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-4eb0-df3abcdd-9daa-bf7ae5f506d2]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>15</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11e9-11aa-c518a5f5-bdcc-87b7f930abeb">
+      
+    <name>策划部查看全部</name>
+      
+    <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>154677607603500000</sortId>
+      
+    <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3fc7-72ef7ee2-9769-678d9eb15904","type":1,"resId":"11e8-3fc7-72ef7ee2-9769-678d9eb15904"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-6614-e03b45db-9dd9-7742dbd80144","type":1,"resId":"11e8-6614-e03b45db-9dd9-7742dbd80144"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3fc7-bdfd35de-9769-678d9eb15904","type":1,"resId":"11e8-3fc7-bdfd35de-9769-678d9eb15904"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3fc7-316e3d85-9769-678d9eb15904","type":1,"resId":"11e8-3fc7-316e3d85-9769-678d9eb15904"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3af2-f46386f4-94e7-ef330bda161e","type":1,"resId":"11e8-3af2-f46386f4-94e7-ef330bda161e"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3fc7-5c2377e0-9769-678d9eb15904","type":1,"resId":"11e8-3fc7-5c2377e0-9769-678d9eb15904"}]]]></permissions>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>R7970</roleNo>
+</role>

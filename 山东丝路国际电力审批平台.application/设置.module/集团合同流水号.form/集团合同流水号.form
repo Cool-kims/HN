@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef16-89376f82-8f99-af63cc0890b3">
+  <name>集团合同流水号</name>
+  <parentId>11e7-ef16-8937486a-8f99-af63cc0890b3</parentId>
+  <sortId>140332557831600000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table border="1" cellSpacing="1" cellPadding="1" width="362" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; width: 362px; height: 55px; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+    <tbody>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">流水号：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e3-f8fd-c82cf31a-8e08-ade42c588385" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="uniqueid" value="" mobile="true" readonlyScript="" printHiddenValue="" hiddenPrintScript="" validateRule="" validateLibs="" processDescription="[];[]" editMode="01" borderType="false" numberPattern="" textType="text" fieldType="VALUE_TYPE_NUMBER" refreshOnChanged="false" calculateOnRefresh="false" valueScript="" hiddenScript="" hiddenValue="" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+        </tr>
+        <tr>
+            <td colSpan="2" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">因为，集团所有合同都为同一个表。但是本地合同是根据类型创建的。因为，流水号的基数必须同一。流水号不能重复。此为计数器。</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>6</version>
+  <mappingStr><![CDATA[{"formName":"集团合同流水号","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

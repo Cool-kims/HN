@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-18b8-afd6321b-bdcc-87b7f930abeb">
+  <name>授权书审批单 Power of Attorney Approval Form</name>
+  <parentId>11e7-ef13-4f497265-8f99-af63cc0890b3</parentId>
+  <description>授权书审批单 Power of Attorney Approval Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f497265-8f99-af63cc0890b3</superior>
+  <linkName>授权书审批单 Power of Attorney Approval Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f4665c4-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ec-42c3-1bab4dd3-9f15-396e4916eb21]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>23</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9352-fd5446b9-8eac-4b89bdea6b09">
+  <name>摘要126</name>
+  <parentId>__11e8-3275-552cc591-94e7-ef330bda161e</parentId>
+  <title>摘要126</title>
+  <type>00</type>
+  <formId>__11e8-3275-552cc591-94e7-ef330bda161e</formId>
+  <fieldNames>编制人;借款事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

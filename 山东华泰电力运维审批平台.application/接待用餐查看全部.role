@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e8-64ed-1c343395-9dd9-7742dbd80144">
+  <name>接待用餐查看全部</name>
+  <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+  <roleNo>Re2a3</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>152778301780100000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-64ec-dc8c1f95-9dd9-7742dbd80144","type":1,"resId":"11e8-64ec-dc8c1f95-9dd9-7742dbd80144"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-6e02-ef350850-88b0-372d6ed18679","type":1,"resId":"11e8-6e02-ef350850-88b0-372d6ed18679"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-6c70-83475ff4-88b0-372d6ed18679","type":1,"resId":"11e8-6c70-83475ff4-88b0-372d6ed18679"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-b417-d5ab204f-9896-1df69bbca83d","type":1,"resId":"11e9-b417-d5ab204f-9896-1df69bbca83d"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-64ec-dc8c1f95-9dd9-7742dbd80144","type":1,"resId":"11e8-64ec-dc8c1f95-9dd9-7742dbd80144"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-6e02-ef350850-88b0-372d6ed18679","type":1,"resId":"11e8-6e02-ef350850-88b0-372d6ed18679"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-6c70-83475ff4-88b0-372d6ed18679","type":1,"resId":"11e8-6c70-83475ff4-88b0-372d6ed18679"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-b417-d5ab204f-9896-1df69bbca83d","type":1,"resId":"11e9-b417-d5ab204f-9896-1df69bbca83d"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

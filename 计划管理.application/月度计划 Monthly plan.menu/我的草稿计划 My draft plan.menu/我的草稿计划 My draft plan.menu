@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-7a26-62fa0926-9820-539e9af1e136">
+  <name>我的草稿计划 My draft plan</name>
+  <parentId>11e9-7a26-62fa0923-9820-539e9af1e136</parentId>
+  <description>我的草稿计划 My draft plan</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e9-7a26-62fa0923-9820-539e9af1e136</superior>
+  <linkName>我的草稿计划 My draft plan</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e9-7a26-62f43cbe-9820-539e9af1e136</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-7a26-62faa503-9820-539e9af1e136]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>2</orderno>
+  <showtotalrow>true</showtotalrow>
+</resourceVO>

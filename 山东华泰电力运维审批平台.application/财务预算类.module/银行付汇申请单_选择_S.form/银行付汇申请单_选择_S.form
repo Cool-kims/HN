@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e8-0b25-0d68d66b-991c-29ec8acb9806">
+  <name>银行付汇申请单_选择_S</name>
+  <parentId>11e7-ef14-67d9ca67-8f99-af63cc0890b3</parentId>
+  <sortId>151791144014700000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;日期<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e8-0b24-fb169790-991c-29ec8acb9806" type="text" fieldtype="VALUE_TYPE_DATE" name="开始日期" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="var@nbsp;statime=getItemValueAsString(@quot;开始日期@quot;);@amp;#13;if(!isNotNull(statime)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;var@nbsp;end=getItemValueAsString(@quot;结束日期@quot;);@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;end=getToday();@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;if(isNotNull(end)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;statime=@nbsp;adjustMonth@nbsp;(end,-1);@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;}@amp;#13;}@amp;#13;statime;@amp;#13;" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" />-<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e8-0b25-0a7056e8-991c-29ec8acb9806" type="text" fieldtype="VALUE_TYPE_DATE" name="结束日期" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="var@nbsp;endtime=getItemValueAsString(@quot;结束日期@quot;);@amp;#13;println(endtime)@amp;#13;if(!isNotNull(endtime)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;endtime=getToday();@amp;#13;}@amp;#13;endtime;@amp;#13;" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" /></p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>0</version>
+  <mappingStr><![CDATA[{"formName":"银行付汇申请单_选择_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

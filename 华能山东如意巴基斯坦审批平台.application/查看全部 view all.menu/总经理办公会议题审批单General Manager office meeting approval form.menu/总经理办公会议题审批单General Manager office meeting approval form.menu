@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-8d8e-524d4a4a-8327-9973b9254e25">
+  <name>总经理办公会议题审批单General Manager office meeting approval form</name>
+  <parentId>11e7-ef13-4f49727a-8f99-af63cc0890b3</parentId>
+  <description>总经理办公会议题审批单General Manager office meeting approval form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f49727a-8f99-af63cc0890b3</superior>
+  <linkName>总经理办公会议题审批单General Manager office meeting approval form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3d166e-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-8d8e-08297da1-8327-9973b9254e25]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>421</orderno>
+</resourceVO>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9413-8838e705-8eac-4b89bdea6b09">
+  <name>摘要187</name>
+  <parentId>__11e8-5dde-4e7b81cd-b989-097caeda21f3</parentId>
+  <title>摘要187</title>
+  <type>00</type>
+  <formId>__11e8-5dde-4e7b81cd-b989-097caeda21f3</formId>
+  <fieldNames>付款内容;收款单位</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

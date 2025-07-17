@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef13-4f49726e-8f99-af63cc0890b3">
+  <name>运费结算审批单 Freight billing approval form</name>
+  <parentId>11e7-ef13-4f497265-8f99-af63cc0890b3</parentId>
+  <description>运费结算审批单 Freight billing approval form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f497265-8f99-af63cc0890b3</superior>
+  <linkName>运费结算审批单 Freight billing approval form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f4665c4-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ec-42c3-08ff55ad-9f15-396e4916eb21]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>4</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

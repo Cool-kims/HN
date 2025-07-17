@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="11e9-7a26-62fa0911-9820-539e9af1e136">
+  <name>函数库</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <content><![CDATA[//根据部门名称获取部门ID
+function getDepartmentByName(name) {
+	if(name!=null && !name==("")){
+        var process = createProcess("cn.myapps.core.authtime.department.service.DepartmentProcess");
+        var domainid = getDomainid();
+        var deptId = "";
+        var deptlist = process.getDepartmentByName(name,domainid);
+        if(deptlist!=null && deptlist.size()>0){
+           for(var iter = deptlist.iterator();iter.hasNext();){
+                                var dept = iter.next();
+                                        deptId = dept.getId();
+                                        break;
+           }
+        }
+        if(deptId==null || deptId==("")){
+        	println("==============自定义函数getDepartmentByName(name)，返回值为\""+deptId+"\"");
+        }
+        return deptId;
+	}else{
+		println("==============自定义函数getDepartmentByName(name)，name不能为\""+name+"\"");
+	}
+}
+]]></content>
+  <version>7</version>
+</repositoryVO>

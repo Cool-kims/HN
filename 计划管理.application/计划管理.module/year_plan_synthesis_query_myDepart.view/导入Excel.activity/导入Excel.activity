@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e3-4786-8c670c08-a5dc-830f085bb312">
+  <name>导入Excel</name>
+  <parentId>11e9-7a26-62fb8f7b-9820-539e9af1e136</parentId>
+  <type>27</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[//“我的草稿计划”视图批量提交按钮执行后脚本
+var flowid = "11e9-7a26-62fe4ee0-9820-539e9af1e136";	//流程id
+var sql = "select * from tlk_plant_plan where (statelabel is null or statelabel = '')";
+var docs = queryBySQL(sql);
+var webuser = getWebUser();
+if(docs!=null && docs.size()>0){
+	for(var it = docs.iterator();it.hasNext();){
+			var process = getDocumentProcess();//申明文档业务处理类
+	        var doc = it.next();
+	        var params = createParamsTable();               
+	        params.setParameter("_flowid",flowid);
+	        process.doStartFlowOrUpdate(doc,params,webuser);
+	}
+}]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>3</orderno>
+  <stateToShow></stateToShow>
+  <parentView>11e9-7a26-62fb8f7b-9820-539e9af1e136</parentView>
+  <impmappingconfigid>11e9-7a26-62f43cbb-9820-539e9af1e136</impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

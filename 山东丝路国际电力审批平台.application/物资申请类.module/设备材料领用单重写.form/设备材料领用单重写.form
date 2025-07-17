@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-f135-748d304a-b449-61bf0a28f1db">
+  <name>设备材料领用单重写</name>
+  <parentId>11e7-ef16-893e4dbb-8f99-af63cc0890b3</parentId>
+  <sortId>151505975490600000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<h3 style="text-align: center;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-e237-dcba399c-bd5c-c9b904edfddb" name="QZ72f3f09e7" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span>&nbsp;</h3>
+<h3 style="text-align: center;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-e237-ec54368d-bd5c-c9b904edfddb" name="QZ9080dbd36" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" /></span></h3>
+<p><b style="text-align: center;"><span style="font-family: 宋体; font-size: 16pt;"><a name="_Toc500085978" style="background-image: url(&quot;images/fck_anchor.gif&quot;);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;萨希瓦尔<font face="Cambria">2x660MW</font></a></span></b><b style="text-align: center;"><span style="font-family: 宋体; font-size: 16pt;">燃煤电站工程</span></b></p>
+<p>&nbsp;</p>
+<table class="MsoNormalTable" style="border-collapse: collapse; width: 693.55pt; margin-left: 4.65pt;">
+    <tbody>
+        <tr style="height: 15pt;">
+            <td width="924" valign="center" style="border-top: none; border-right: 31.875pt none rgb(255, 255, 255); border-bottom: 31.875pt none rgb(255, 255, 255); border-left: 31.875pt none rgb(255, 255, 255); width: 693.55pt; padding: 0.75pt 0.75pt 0pt;">
+            <p class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; font-size: 9pt;">Sahiwal 2x660MW Coal Fired Power Project</span><b><span style="font-family: Calibri; font-size: 9pt;"><o:p></o:p></span></b></p>
+            </td>
+        </tr>
+        <tr style="height: 23.3pt;">
+            <td width="924" valign="bottom" style="border-top: none; border-right: 31.875pt none rgb(255, 255, 255); border-bottom: 31.875pt none rgb(255, 255, 255); border-left: 31.875pt none rgb(255, 255, 255); width: 693.55pt; padding: 0.75pt 0.75pt 0pt;">
+            <p class="MsoNormal" style="text-align: center;"><span style="font-family: 宋体; font-size: 10.5pt;">　</span><b><span style="font-family: 宋体; font-size: 18pt;">设 备<span class="Apple-converted-space">&nbsp;</span><font face="Calibri">/<span class="Apple-converted-space">&nbsp;</span></font><font face="宋体">材 料 领 用 单</font></span></b></p>
+            <p class="MsoNormal" style="text-align: center;"><b><span style="font-family: 宋体; font-size: 14pt;">Equipment/materials From</span></b></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<table width="800" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td>﻿领用单位：</td>
+            <td>
+            <table width="800" align="center" border="0" cellpadding="1" cellspacing="1">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>领用日期：</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a id="fck_paste_padding">﻿</a></td>
+            <td>&nbsp;</td>
+            <td>﻿编号：<a id="fck_paste_padding">﻿</a></td>
+        </tr>
+    </tbody>
+</table>
+<table width="800" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br />
+&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>2</version>
+  <mappingStr><![CDATA[{"formName":"设备材料领用单重写","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

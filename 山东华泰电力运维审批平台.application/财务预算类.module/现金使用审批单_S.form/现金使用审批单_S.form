@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11ee-8d8d-7b932545-bf2e-a1f7fb21f6c1">
+  <name>现金使用审批单_S</name>
+  <parentId>11e7-ef14-67d9ca67-8f99-af63cc0890b3</parentId>
+  <sortId>170113492982100000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;&nbsp;<span style="font-family: 宋体; font-size: 12pt;">经办部门</span><span style="font-family: 宋体; font-size: 12pt;"><br />
+</span><span style="font-family: 宋体; font-size: 12pt;">Application Department<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ee-8b77-680dfc85-a2ac-4d810f41a7a2" text="text" name="经办部门" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp;</span><font face="宋体" style="font-family: 宋体; font-size: 16px;">使用事由</font><font face="宋体" style="font-family: 宋体; font-size: 16px;">Use reason<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ee-8b77-7afb1b93-a2ac-4d810f41a7a2" text="text" name="使用事由" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></font></p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>0</version>
+  <mappingStr><![CDATA[{"formName":"现金使用审批单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

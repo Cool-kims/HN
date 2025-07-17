@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ed-874d-c926d402-8221-d1692677ae63">
+  <name>摘要420</name>
+  <parentId>__11ed-874c-ce542abb-8221-d1692677ae63</parentId>
+  <title>摘要420</title>
+  <type>00</type>
+  <formId>__11ed-874c-ce542abb-8221-d1692677ae63</formId>
+  <fieldNames>支票号码;编制人</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

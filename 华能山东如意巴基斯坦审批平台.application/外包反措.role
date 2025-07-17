@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11ef-c337-6b63b9f7-a729-bf9842bf9fff">
+  <name>外包反措</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <roleNo>Rf055</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>173518282640900000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11eb-ee9f-464db2c8-8e51-610ba77dff7f","type":1,"resId":"11eb-ee9f-464db2c8-8e51-610ba77dff7f"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11ee-7ddb-44e23834-8040-4156b014b596","type":1,"resId":"11ee-7ddb-44e23834-8040-4156b014b596"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11eb-ee9f-464db2c8-8e51-610ba77dff7f","type":1,"resId":"11eb-ee9f-464db2c8-8e51-610ba77dff7f"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11ee-7ddb-44e23834-8040-4156b014b596","type":1,"resId":"11ee-7ddb-44e23834-8040-4156b014b596"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

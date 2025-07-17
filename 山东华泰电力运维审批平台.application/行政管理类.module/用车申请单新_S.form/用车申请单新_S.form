@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11ea-1196-84c63422-8f0a-d7f5e550fac4">
+  <name>用车申请单新_S</name>
+  <parentId>11e7-ef14-67dc1470-8f99-af63cc0890b3</parentId>
+  <sortId>157491487585700000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;&nbsp;</p>
+<table height="62" cellspacing="1" cellpadding="1" width="731" border="0" style="border-width: medium; border-style: none; border-color: initial; height: 62px; width: 731px;">
+    <tbody>
+        <tr>
+            <td nowrap="noWrap" style="border-width: medium; border-style: none; border-color: initial; text-align: right;">申请人：</td>
+            <td colspan="3" style="border-width: medium; border-style: none; border-color: initial;"><input id="11e5-da2f-9c3fc184-bca3-1787d71be9d4" value="" name="申请人" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" validaterule="" validatelibs="" valuescript="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" class="cn.myapps.runtime.dynaform.form.ejb.InputField" readonlyshowvalonly="true" refreshmode="0" refreshfields="" /></td>
+            <td style="text-align: right;">编制日期：</td>
+            <td><input id="11e5-da2f-9c493765-bca3-1787d71be9d4" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="编制日期" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" calculateonrefresh="false" refreshonchanged="false" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" fieldtype="VALUE_TYPE_DATE" discript="" filtercondition="" limit="false" validaterule="" validatelibs="" valuescript="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" datepattern="YMD" prev_name="" type="text" readonlyshowvalonly="true" refreshmode="0" refreshfields="" /></td>
+        </tr>
+        <tr>
+            <td nowrap="noWrap" style="border-width: medium; border-style: none; border-color: initial; text-align: right;">
+            <p>&nbsp;</p>
+            </td>
+            <td colspan="3" style="border-width: medium; border-style: none; border-color: initial;">&nbsp;</td>
+            <td nowrap="noWrap" style="border-width: medium; border-style: none; border-color: initial; text-align: right;">&nbsp;</td>
+            <td style="border-width: medium; border-style: none; border-color: initial;">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>1</version>
+  <mappingStr><![CDATA[{"formName":"用车申请单新_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

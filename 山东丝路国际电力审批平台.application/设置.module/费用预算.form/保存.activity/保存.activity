@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e7-e168-b5848ac1-8dd9-01b9905d175c">
+  <name>保存</name>
+  <parentId>__11e7-ef16-893796a1-8f99-af63cc0890b3</parentId>
+  <type>34</type>
+  <onActionForm>选择</onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[#include "customlibs";    var dname=getItemValueAsString("部门");
+    var mon=getItemValueAsDouble("卢比");
+    var cost=getItemValueAsString("费用类型BH");
+
+
+var times=getItemValueAsString("日期");
+//    var year = format(time,"yyyy"); 
+//    var month =  format(time,"MM");
+    var year=times.substr(0,4);
+    var month=times.substr(5,2);
+    var msg="";
+    var number=getItemValue("编号");
+    var doc = getCurrentDocument();
+    var filename = doc.getFormname();
+    var formname="";
+    if(filename!=null) {
+        formname = filename.substring(filename.lastIndexOf("/")+1, filename.length);
+    }
+var kmwz=getItemValue("科目位置");
+var bm=getItemValue("部门");
+if(bm=="11e6-b717-dd4adb75-9274-2d649aa1d98e"&&kmwz.indexOf("付款申请单")>=0){
+    msg="物资部,付款申请单提报不纳入费用控制.<br />The material department, the payment application form is not included in the cost control.";
+}else{
+    if (!isNotNull(cost)) {
+        msg="费用类型不能为空.<br />The type of cost can not be empty.";
+    }else if (mon == 0) {
+        msg="卢比金额不能为0.<br />The amount of the rupee cannot be 0.";
+    }else{
+
+        if(number==null||number.trim().length<=0){
+            number=getNextNo(formname,'编号','FYYS');
+            doc.findItem("编号").setValue(number);
+            var sql = "SELECT * FROM TLK_费用预算 WHERE ITEM_部门='"+dname+"' AND ITEM_费用类型BH='"+cost+"' AND to_char(ITEM_日期,'yyyy')='"+(year)+"'";
+            var datas = findBySQL(sql);
+            if (!isNotNull(datas)) {
+            } else {
+                msg="该部门存在数据.<br />There is data in the Department.";
+            }
+        }
+    }    
+}
+    msg;]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>3</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef16-893796a1-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

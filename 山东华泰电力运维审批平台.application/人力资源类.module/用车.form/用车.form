@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11ed-6b06-31cda593-8221-d1692677ae63">
+  <name>用车</name>
+  <parentId>11e7-ef14-67e366dd-8f99-af63cc0890b3</parentId>
+  <sortId>166919098678900000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table width="800" align="center">
+    <caption><b style="font-size: large;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;用车申请单</b></caption><caption>
+    <p><font size="4"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Car application form</b></font></p>
+    <p><span style="font-size: 12px; text-align: start;">&nbsp;</span></p>
+    <table width="800" align="center">
+        <tbody>
+            <tr>
+                <td colspan="2" style="text-align: right;">&nbsp;编号</td>
+                <td colspan="2"><input id="11e5-dae4-8274f5d4-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="用车编号" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="readonly" fieldtype="VALUE_TYPE_VARCHAR" text="readonly" fieldkeyevent="Tabkey" discript="" filtercondition="" valuescript="" readonlyshowvalonly="true" refreshmode="0" refreshfields="" /></td>
+                <td colspan="2" style="text-align: right;"><input id="11e5-dae0-14da7a89-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.DateField" name="日期" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" fieldtype="VALUE_TYPE_DATE" discript="" filtercondition="" valuescript="var@nbsp;value@nbsp;=@nbsp;getItemValueAsString(@quot;日期@quot;);@amp;#10;@amp;#13;if@nbsp;(value==null||value==@#146;@#146;){@amp;#10;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;value@nbsp;=@nbsp;getToday();@amp;#10;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;value=format(value,@quot;yyyy-MM-dd@quot;);@nbsp;@amp;#10;@amp;#13;}@amp;#10;@amp;#13;value;" prev_name="" datepattern="YMD" limit="false" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="1" width="800" align="center">
+        <tbody>
+            <tr>
+                <td rowspan="6" nowrap="noWrap">用车申请</td>
+                <td>部门</td>
+                <td colspan="2"><input id="11e5-dae0-14daefba-afd0-717bed8aa98b" name="部门用车" value="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" text="readonly" fieldkeyevent="Tabkey" discript="" filtercondition="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" validaterule="" validatelibs="" valuescript="var@nbsp;value1@nbsp;=@nbsp;getItemValueAsString(@quot;部门用车@quot;);@amp;#13;if(value1==null||value1.trim().length@lt;=0){@amp;#13;@nbsp;@nbsp;var@nbsp;deptid@nbsp;=@nbsp;getWebUser().getDefaultDepartment();@amp;#13;&#9;var@nbsp;depprocess=getDepartmentProcess();@amp;#13;&#9;var@nbsp;dept=depprocess.doView(deptid);//deptid为部门ID@nbsp;@nbsp;//该句是根据部门id拿到部门对象@amp;#13;&#9;if@nbsp;(dept@nbsp;!=@nbsp;null)@nbsp;{@amp;#13;&#9;&#9;value1@nbsp;=@nbsp;dept.getName();@amp;#13;&#9;}@amp;#13;}@amp;#13;value1;" processdescription="[];[]" isdefaultvalue="false" editmode="01" calculateonrefresh="false" refreshonchanged="false" bordertype="false" numberpattern="" texttype="readonly" fieldtype="VALUE_TYPE_VARCHAR" class="cn.myapps.runtime.dynaform.form.ejb.InputField" readonlyshowvalonly="true" refreshmode="0" refreshfields="" /></td>
+                <td>用车申请人</td>
+                <td colspan="2"><input id="11e5-dae0-14db8bfb-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="用车申请人" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="readonly" fieldtype="VALUE_TYPE_VARCHAR" text="readonly" fieldkeyevent="Tabkey" discript="" filtercondition="" valuescript="var@nbsp;value@nbsp;=@nbsp;getItemValueAsString(@quot;用车申请人@quot;);@nbsp;@amp;#10;@amp;#13;if@nbsp;(value==null@nbsp;||@nbsp;value.trim().length@lt;=0){@amp;#10;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;value@nbsp;=@nbsp;getWebUser().getName();@nbsp;@amp;#10;@amp;#13;}@amp;#10;@amp;#13;value;" /></td>
+            </tr>
+            <tr>
+                <td nowrap="noWrap">用车事由</td>
+                <td colspan="5" rowspan="1"><textarea id="11e5-dae0-14dc4f4c-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.TextareaField" cols="54" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" fieldtype="VALUE_TYPE_TEXT" discript="" filtercondition="" valuescript="" name="用车事由" style="width: 492px; height: 36px;"></textarea></td>
+            </tr>
+            <tr>
+                <td>护照号</td>
+                <td width="100"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ea-0b85-f9612345-974f-9fc5bde2ffab" text="text" name="护照号车" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width: 100px;" /></td>
+                <td width="100">﻿签证到期日期<a id="fck_paste_padding">﻿</a></td>
+                <td width="100"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="11e9-628c-965d487b-9daa-bf7ae5f506d2" name="签证到期日期" readonlyshowvalonly="true" fieldtype="VALUE_TYPE_TEXT" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" validatelibs="" editmode="01" processdescription="[];[]" refreshmode="0" refreshfields="" style="margin: 0px; width: 130px; height: 27px;"></textarea></td>
+                <td width="80">联系方式</td>
+                <td width="110"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11ea-0b86-03736a54-974f-9fc5bde2ffab" text="text" name="联系方式" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="width: 100px;" /></td>
+            </tr>
+            <tr>
+                <td rowspan="2">用车时间</td>
+                <td colspan="2" rowspan="2">
+                <p><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e9-17bf-f3db52a7-bdcc-87b7f930abeb" type="text" fieldtype="VALUE_TYPE_DATE" name="开始时间用车" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" />至</p>
+                <p><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e9-17c0-0189d2bc-bdcc-87b7f930abeb" type="text" fieldtype="VALUE_TYPE_DATE" name="结束时间用车" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" /></p>
+                </td>
+                <td>乘车人数</td>
+                <td colspan="2" rowspan="1"><input id="11e5-dae0-14de240f-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="乘车人数" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="text" fieldtype="VALUE_TYPE_NUMBER" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" valuescript="" /></td>
+            </tr>
+            <tr>
+                <td>航班号</td>
+                <td rowspan="1" colspan="2"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-0810-19849c25-a4c3-83598629d569" text="text" name="航班号用车" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            </tr>
+            <tr>
+                <td>用车行程</td>
+                <td colspan="2"><input id="11e5-dae0-14dee760-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="用车行程" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" valuescript="" /></td>
+                <td>部门负责人</td>
+                <td colspan="2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img id="11e5-dae0-14e046f2-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.CalctextField" src="http://172.18.110.171/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" calculateonrefresh="true" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" valuescript="#include@nbsp;@quot;SignatureLibs@quot;;@amp;#13;showSign(@#146;部门负责人签字@#146;);" name="QZ087f785a9" style="font-stretch: normal;" /></td>
+            </tr>
+            <tr>
+                <td rowspan="2">申批部门</td>
+                <td>办公室</td>
+                <td colspan="2">&nbsp; &nbsp; &nbsp; &nbsp;<img id="11e5-dae0-14e290e5-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.CalctextField" src="http://172.18.110.171/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" calculateonrefresh="true" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" valuescript="#include@nbsp;@quot;SignatureLibs@quot;;@amp;#13;showSign(@#146;综合部@#146;);" name="QZa8b7d3396" style="font-stretch: normal;" /></td>
+                <td>车号</td>
+                <td colspan="2"><input id="11e5-dae0-14e41787-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="车号" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" valuescript="" /></td>
+            </tr>
+            <tr>
+                <td>车辆负责人</td>
+                <td colspan="2"><input id="11e5-dae0-14e4dad8-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="车辆负责人" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" valuescript="" /></td>
+                <td>驾驶员</td>
+                <td colspan="2"><input id="11e5-dae0-14e5c539-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="驾驶员" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" valuescript="" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">公司领导</td>
+                <td colspan="5">
+                <p>&nbsp;<textarea id="11e5-dae0-14e6fdba-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.TextareaField" cols="56" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" fieldtype="VALUE_TYPE_TEXT" discript="" filtercondition="" valuescript="var@nbsp;value1@nbsp;=@nbsp;getItemValueAsString(@quot;公司领导意见@quot;);@amp;#13;if(value1==null||value1.trim().length@lt;=0){@amp;#13;value1=@quot;同意。@quot;;@amp;#13;}@amp;#13;value1;" name="公司领导意见" readonlyshowvalonly="true" refreshmode="0" refreshfields="" style="width: 511px; height: 36px;"></textarea></p>
+                <p style="text-align: right;"><img id="11e5-dae0-14e8ab6c-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.CalctextField" src="http://172.18.110.171/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" calculateonrefresh="true" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" valuescript="#include@nbsp;@quot;SignatureLibs@quot;;@amp;#13;showSign(@#146;分管领导签字@#146;);" name="QZcc71a56b6" style="font-stretch: normal;" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">基本要求</td>
+                <td colspan="5">
+                <div>驾驶员：</div>
+                <div>1.严格遵守交通法规和公司车辆管理制度，保证行车安全</div>
+                <div>2.出车时间不准饮酒，不准疲劳驾驶，不准超速行驶</div>
+                <div>3.出车期间要精神饱满、热情服务、积极配合</div>
+                <div>乘车人：</div>
+                <div>1.严格执行用车审批程序，用车情况登记要详细真实</div>
+                <div>2.严格遵守行车路线及用车时间,特殊情况请与综合部联系</div>
+                <div>3.遇有不利安全行车情况如天气变化、路途条件、驾驶员身体状况不符合出车</div>
+                <div>要求等，切勿强行上路</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="font-size: 12px; text-align: start;">&nbsp;</p>
+    <p><span style="font-size: 12px; text-align: start;">&nbsp;</span></p>
+    </caption>
+    <tbody>
+        <tr>
+            <td colspan="2" style="text-align: right;">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2" style="text-align: right;">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>0</version>
+  <mappingStr><![CDATA[{"formName":"用车","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

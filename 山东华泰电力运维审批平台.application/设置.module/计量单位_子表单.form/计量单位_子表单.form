@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-67d7f575-8f99-af63cc0890b3">
+  <name>计量单位_子表单</name>
+  <parentId>11e7-ef14-67d7f576-8f99-af63cc0890b3</parentId>
+  <sortId>139598742001400000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+<table border="1" cellSpacing="1" cellPadding="1" width="500" style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">
+    <tbody>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">代码：</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-b641-a8339946-bf48-2fde04a45556" name="代码" value="" text="text" hiddenvalue="" printhiddenvalue="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" discript="" valuescript="" validaterule="var@nbsp;value=getItemValue(@quot;代码@quot;);@amp;#13;var@nbsp;rnt=@quot;@quot;;@amp;#13;if(value==null||value.trim().length@lt;=0)@amp;#13;rnt=@quot;代码@quot;;@amp;#13;rnt;" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" mobile="true" editmode="01" validatelibs="" fieldkeyevent="Tabkey" numberpattern="" bordertype="false" /><input id="11e3-b65a-f52bd88f-bf48-2fde04a45556" name="上级" value="" text="hidden" hiddenvalue="" printhiddenvalue="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" discript="" valuescript="var@nbsp;rtn@nbsp;=@nbsp;getParameter(@quot;treedocid@quot;);@amp;#13;if@nbsp;(rtn==@quot;root@quot;)@amp;#13;{@amp;#13;@nbsp;@nbsp;rtn=@quot;@quot;;@amp;#13;}@amp;#13;rtn;" validaterule="" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="hidden" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" mobile="true" editmode="01" validatelibs="" fieldkeyevent="Tabkey" numberpattern="" bordertype="false" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">名称：</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-b641-b9bc46da-bf48-2fde04a45556" name="名称" value="" text="text" hiddenvalue="" printhiddenvalue="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" discript="" valuescript="" validaterule="" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" mobile="true" editmode="01" validatelibs="" fieldkeyevent="Tabkey" numberpattern="" bordertype="false" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">换算率：</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-b641-dc372e5e-bf48-2fde04a45556" name="换算数字" value="" text="text" hiddenvalue="" printhiddenvalue="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" discript="" valuescript="" validaterule="" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" mobile="true" editmode="01" validatelibs="" fieldkeyevent="Tabkey" numberpattern="" bordertype="false" />&nbsp;x&nbsp;E&nbsp;<input id="11e3-b642-03af3f02-bf48-2fde04a45556" name="换算小数位" value="" text="text" hiddenvalue="" printhiddenvalue="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" discript="" valuescript="" validaterule="" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" mobile="true" editmode="01" validatelibs="" fieldkeyevent="Tabkey" numberpattern="" bordertype="false" />&nbsp;<select id="11e3-b88a-a81394b0-91f2-757e1cb260c4" class="cn.myapps.runtime.dynaform.form.ejb.SelectField" classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" discript="" fieldtype="VALUE_TYPE_VARCHAR" filtercondition="" mobile="true" readonlyScript="" printHiddenValue="" hiddenPrintScript="" hiddenValue="" hiddenScript="" validateRule="" validateLibs="" valueScript="" processDescription="[];[]" editMode="01" calculateOnRefresh="false" refreshOnChanged="false" textType="text" module="" optionsEditMode="01" dialogView="" optionsValue="" optionsText="" optionsScript="@quot;米;千克;小时;元@quot;;" name="单位名称"></select></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>20</version>
+  <mappingStr><![CDATA[{"formName":"计量单位_子表单","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

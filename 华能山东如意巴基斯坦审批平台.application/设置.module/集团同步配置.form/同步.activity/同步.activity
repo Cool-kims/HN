@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e4-157a-3f7c46bf-9741-a93a29a67733">
+  <name>同步</name>
+  <parentId>__11e7-ef13-4f38f875-8f99-af63cc0890b3</parentId>
+  <type>13</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[  var applicationid="11e3-b435-b41f18b0-a6d4-c5644e80cc2f";//固定死的软件id
+  var domainid="11e3-b435-aaa56801-a6d4-c5644e80cc2f";//固定死的企业域id
+  
+  var server_http="";//同步到集团的地址
+  var sql="select * from tlk_集团同步配置 ";
+  var blocport="";//集团中给公司项目建立的项目id
+  var blocport1="";//doc.getItemValueAsString("管理权限树");   //工程合同管理权限树
+  var blocport2="";   //物资合同管理权限树 
+  var jt_login_url="";
+  var jt_login_user="";//登陆集团的用户
+  var jt_login_password="";//登陆集团的密码
+  var datas = queryBySQL(sql);
+  if(datas!=null){
+  for(var iterator = datas.iterator(); iterator.hasNext();){
+		var doc = iterator.next();
+		server_http = doc.getItemValueAsString("pmis访问2");
+		blocport = doc.getItemValueAsString("集团项目ID");
+		blocport1 = doc.getItemValueAsString("blocport1");
+		blocport2 = doc.getItemValueAsString("blocport2");	
+		
+	}
+  }
+  //查询当前用户登陆集团pip的用户和密码
+sql="select * from tlk_集团同步用户 where to_char(item_选择用户)='"+getWebUser().getId()+"'";
+var datas_user = queryBySQL(sql);
+if(datas_user!=null){
+  for(var iterator = datas_user.iterator(); iterator.hasNext();){
+		var doc = iterator.next();
+        jt_login_user=doc.getItemValueAsString("集团登录账号");
+        jt_login_password=doc.getItemValueAsString("集团登录密码");		
+	}
+  }
+ var xmurl="http://127.0.0.1/";//不可以为空
+ var server_url=server_http+"DataSync/getPactRecord_state.jsp";
+ var jt_login_url=server_http+"login3.jsp";//集团PIP的登陆页面
+ var jt_uniqueid=0;//集团合同合同id
+ var  tb=new Packages.cn.myapps.self.com.synch.HtSb(jt_login_url,jt_login_user,jt_login_password,"1");
+  
+ sql="select t1.*  from tlk_工程合同记录表单 t1 ";
+ sql=sql+" where t1.item_上报状态='集团送审中' and t1.item_jt_uniqueid>0 ";
+ var datas_ht_gc = queryBySQL(sql);
+ if(datas_ht_gc!=null){
+  for(var iterator = datas_ht_gc.iterator(); iterator.hasNext();){
+		var doc = iterator.next();
+        
+		var result=tb.get_record_state(server_url,"pact_ht", xmurl, blocport, blocport1,
+			 blocport2, doc.getItemValueAsString("jt_uniqueid"));
+		if (result!=null)
+		{
+		      var pasjson= new (Java.type('cn.myapps.util.json.JsonUtil'))();
+		      var col=pasjson.toCollection("["+result+"]");					   
+			  for(var iter=col.iterator();iter.hasNext();)				
+			  {
+				   var value1=iter.next();
+				   if (value1.get("error").trim()=="0")
+				   {
+					   var return_value=value1.get("return");
+					 
+					   if (return_value=="1")
+					   {
+						 doc.findItem("上报状态").setValue("集团已批准");
+					   }
+					   if (return_value=="2")
+					   {
+						 doc.findItem("上报状态").setValue("集团已驳回");
+					   }
+					   var process = getDocProcess(applicationid);
+						process.doUpdate(doc);
+				  }
+			 }
+		}// end if (result!=null)	
+	
+	}
+  }
+
+ sql="select t1.*  from tlk_设备合同记录表单 t1 ";
+ sql=sql+" where t1.item_上报状态='集团送审中' and t1.item_jt_uniqueid>0 ";
+ var datas_ht_sb = queryBySQL(sql);
+ if(datas_ht_sb!=null){
+  for(var iterator = datas_ht_sb.iterator(); iterator.hasNext();){
+		var doc = iterator.next();
+      
+		var result=tb.get_record_state(server_url,"pact_ht", xmurl, blocport, blocport1,
+			 blocport2,doc.getItemValueAsString("jt_uniqueid"));
+		if (result!=null)
+		{
+		      var pasjson= new (Java.type('cn.myapps.util.json.JsonUtil'))();
+		      var col=pasjson.toCollection("["+result+"]");					   
+			  for(var iter=col.iterator();iter.hasNext();)				
+			  {
+				   var value1=iter.next();
+				   if (value1.get("error").trim()=="0")
+				   {
+					   var return_value=value1.get("return");
+					
+					   if (return_value=="1")
+					   {
+						 doc.findItem("上报状态").setValue("集团已批准");
+					   }
+					   if (return_value=="2")
+					   {
+						 doc.findItem("上报状态").setValue("集团已驳回");
+					   }
+					   var process = getDocProcess(applicationid);
+						process.doUpdate(doc);
+				  }
+			 }
+		}// end if (result!=null)
+	}
+  }
+
+ var sql1="select t1.* from tlk_服务合同记录表单 t1 ";
+ sql1=sql1+" where t1.item_上报状态='集团送审中' and t1.item_jt_uniqueid>0 ";
+ println("==");
+ var datas_ht_server = queryBySQL(sql1);
+ if(datas_ht_server!=null){
+  for(var iterator = datas_ht_server.iterator(); iterator.hasNext();){
+		var doc = iterator.next();
+
+		var result=tb.get_record_state(server_url,"pact_ht", xmurl, blocport, blocport1,
+			 blocport2, doc.getItemValueAsString("jt_uniqueid"));
+		println(result);
+		if (result!=null)
+		{
+		      var pasjson= new (Java.type('cn.myapps.util.json.JsonUtil'))();
+		      var col=pasjson.toCollection("["+result+"]");					   
+			  for(var iter=col.iterator();iter.hasNext();)				
+			  {
+				   var value1=iter.next();
+				   if (value1.get("error").trim()=="0")
+				   {
+					   var return_value=value1.get("return");
+				
+					   if (return_value=="1")
+					   {
+						 doc.findItem("上报状态").setValue("集团已批准");
+					   }
+					   if (return_value=="2")
+					   {
+						 doc.findItem("上报状态").setValue("集团已驳回");
+					   }
+					   var process = getDocProcess(getApplication());
+				    	process.doUpdate(doc);
+				  }
+			 }
+		}// end if (result!=null)
+	}
+  }
+ ]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>3</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef13-4f38f875-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-92ef-c1fa85b5-8eac-4b89bdea6b09">
+  <name>供应商摘要审批表</name>
+  <parentId>__11e7-ef13-4f3ffcc7-8f99-af63cc0890b3</parentId>
+  <title>供应商摘要审批表</title>
+  <type>00</type>
+  <formId>__11e7-ef13-4f3ffcc7-8f99-af63cc0890b3</formId>
+  <fieldNames>编制人;企业名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,3511 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BillDefiVO id="11e9-7a26-62feeb29-9820-539e9af1e136">
+  <name>厂级计划管理_copy3</name>
+  <parentId>11e9-7a26-62f57572-9820-539e9af1e136</parentId>
+  <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
+  <lastmodify class="sql-date">2019-06-11T15:25:13.000+08:00</lastmodify>
+  <subject>厂级计划管理_copy3</subject>
+  <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
+&lt;ACTION_NORMAL&gt;0&lt;/ACTION_NORMAL&gt;
+&lt;ACTION_REMOVE&gt;1&lt;/ACTION_REMOVE&gt;
+&lt;ACTION_ADD_ABORTNODE&gt;16&lt;/ACTION_ADD_ABORTNODE&gt;
+&lt;ACTION_ADD_AUTONODE&gt;17&lt;/ACTION_ADD_AUTONODE&gt;
+&lt;ACTION_ADD_COMPLETENODE&gt;18&lt;/ACTION_ADD_COMPLETENODE&gt;
+&lt;ACTION_ADD_MANUALNODE&gt;19&lt;/ACTION_ADD_MANUALNODE&gt;
+&lt;ACTION_ADD_STARTNODE&gt;20&lt;/ACTION_ADD_STARTNODE&gt;
+&lt;ACTION_ADD_SUSPENDNODE&gt;21&lt;/ACTION_ADD_SUSPENDNODE&gt;
+&lt;ACTION_ADD_TERMINATENODE&gt;22&lt;/ACTION_ADD_TERMINATENODE&gt;
+&lt;ACTION_ADD_SUBFLOW&gt;23&lt;/ACTION_ADD_SUBFLOW&gt;
+&lt;ACTION_ADD_RELATION&gt;4096&lt;/ACTION_ADD_RELATION&gt;
+&lt;ACTION_EDIT_NODE&gt;268435472&lt;/ACTION_EDIT_NODE&gt;
+&lt;ACTION_EDIT_RELATION&gt;268439552&lt;/ACTION_EDIT_RELATION&gt;
+&lt;ACTION_BREAK_LINE&gt;1048576&lt;/ACTION_BREAK_LINE&gt;
+&lt;flowstatus&gt;16&lt;/flowstatus&gt;
+&lt;flowpath&gt;&lt;/flowpath&gt;
+&lt;deleteMSG&gt;null&lt;/deleteMSG&gt;
+&lt;width&gt;2000&lt;/width&gt;
+&lt;height&gt;1536&lt;/height&gt;
+&lt;_applicationid&gt;null&lt;/_applicationid&gt;
+&lt;_sessionid&gt;null&lt;/_sessionid&gt;
+&lt;TOP_ALIGNMENT&gt;0.0&lt;/TOP_ALIGNMENT&gt;
+&lt;CENTER_ALIGNMENT&gt;0.5&lt;/CENTER_ALIGNMENT&gt;
+&lt;BOTTOM_ALIGNMENT&gt;1.0&lt;/BOTTOM_ALIGNMENT&gt;
+&lt;LEFT_ALIGNMENT&gt;0.0&lt;/LEFT_ALIGNMENT&gt;
+&lt;RIGHT_ALIGNMENT&gt;1.0&lt;/RIGHT_ALIGNMENT&gt;
+&lt;WIDTH&gt;1&lt;/WIDTH&gt;
+&lt;HEIGHT&gt;2&lt;/HEIGHT&gt;
+&lt;PROPERTIES&gt;4&lt;/PROPERTIES&gt;
+&lt;SOMEBITS&gt;8&lt;/SOMEBITS&gt;
+&lt;FRAMEBITS&gt;16&lt;/FRAMEBITS&gt;
+&lt;ALLBITS&gt;32&lt;/ALLBITS&gt;
+&lt;ERROR&gt;64&lt;/ERROR&gt;
+&lt;ABORT&gt;128&lt;/ABORT&gt;
+&lt;cn.myapps.runtime.workflow.element.StartNode&gt;
+&lt;id&gt;1383545258085&lt;/id&gt;
+&lt;name&gt;&#24320;&#22987;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;36&lt;/x&gt;
+&lt;y&gt;476&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#24320;&#22987;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.StartNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[var doc=getCurrentDocument();
+var author = doc.getAuthor();
+if(author==null){
+	getWebUser();
+}else {
+	author;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;(R11e9-7a26-62fa306e-9820-539e9af1e136|&#37096;&#38376;&#21103;&#20027;&#20219;;R11e9-7a26-62fa306f-9820-539e9af1e136|&#37096;&#38376;&#20027;&#20219;;R11e9-7a26-62fa3075-9820-539e9af1e136|&#21378;&#39046;&#23548;;R11e9-7a26-62fa3072-9820-539e9af1e136|&#30563;&#21150;&#31649;&#29702;&#20154;&#21592;;R11e9-7a26-62fa3073-9820-539e9af1e136|&#30563;&#21150;&#31649;&#29702;&#20027;&#20219;;R11e9-7a26-62fa306d-9820-539e9af1e136|&#20108;&#32423;&#21333;&#20301;(&#29677;&#32452;)&#36127;&#36131;&#20154;;R11e9-7a26-62fa3074-9820-539e9af1e136|&#21103;&#24635;&#24072;;R11e9-7a26-62fa3077-9820-539e9af1e136|&#35745;&#21010;&#20998;&#37197;&#21592;;R11e9-7a26-62fa3076-9820-539e9af1e136|&#31995;&#32479;&#31649;&#29702;&#21592;;R11e9-7a26-62fa306c-9820-539e9af1e136|&#21592;&#24037;;R11e9-7a26-62fa3070-9820-539e9af1e136|&#32844;&#33021;&#31649;&#29702;&#20154;&#21592;;R11e9-7a26-62fa3071-9820-539e9af1e136|&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;;)&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;false&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;0&lt;/backType&gt;
+&lt;isToPerson&gt;true&lt;/isToPerson&gt;
+&lt;bnodelist&gt;&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;curruser&lt;/orgField&gt;
+&lt;orgScope&gt;&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;false&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;0&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545263538&lt;/id&gt;
+&lt;name&gt;&#35745;&#21010;&#36215;&#33609;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;37&lt;/x&gt;
+&lt;y&gt;341&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#35745;&#21010;&#36215;&#33609;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[var doc=getCurrentDocument();
+var author = doc.getAuthor();
+if(author!=null){
+	var departments = author.getDepartments();
+	var depId = @quot;@quot;;
+
+	for(var iter = departments.iterator();iter.hasNext();){
+		if (!depId==(@quot;@quot;)) {
+			break;
+		}
+		var dep = iter.next();
+		var depVOId = dep.getId();
+
+		if (depVOId != null @amp;@amp; depVOId.trim().length @gt;0){
+			var deptProcess = createProcess(@quot;cn.myapps.core.authtime.department.service.DepartmentProcess@quot;);
+			var odeps = deptProcess.getSuperiorDeptListExcludeCurrent(depVOId);//&#24403;&#21069;&#37096;&#38376;&#19978;&#32423;&#30340;id&#38598;&#21512;
+			if(odeps != null @amp;@amp; odeps.size()@gt;0){
+				for (var it =odeps.iterator(); it.hasNext();){
+					var department = it.next();
+		            l=department.getLevel();  //&#33719;&#21462;&#37096;&#38376;&#30340;&#31561;&#32423;(int&#31867;&#22411;)0&#24448;&#21518;&#37096;&#38376;&#31561;&#32423;&#36234;&#20302;&#12290;
+		            if(l==1){
+		            	depId = department.getId();
+		            	break;
+		            }
+	            }
+			}
+		}
+	}
+
+	var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+	var roleId = getRoleIdByName(roleName);
+	
+	var users = getUsersByDptIdAndRoleId(depId,roleId);
+	users;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;0&lt;/backType&gt;
+&lt;isToPerson&gt;true&lt;/isToPerson&gt;
+&lt;bnodelist&gt;&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545291447&lt;/id&gt;
+&lt;name&gt;&#35745;&#21010;&#36215;&#33609;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;42&lt;/x&gt;
+&lt;y&gt;125&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#35745;&#21010;&#36215;&#33609;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//&#39564;&#25910;&#37096;&#38376;&#26159;&#21103;&#24635;&#24072;&#25110;&#21378;&#39046;&#23548;&#26102;&#36820;&#22238;&#39564;&#25910;&#20154;&#65292;&#21542;&#21017; &#36820;&#22238;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactoryLeader = false;	//&#26159;&#21542;&#21378;&#39046;&#23548;&#25110;&#21103;&#24635;&#24072;
+var userVO = @quot;@quot;;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	if(roles!=null @amp;@amp; roles.size()@gt;0){
+		for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+		   var role = it.next();
+		   if(role.getRoleNo()==(@quot;1010@quot;) || role.getRoleNo()==(@quot;1009@quot;)){
+			   isFactoryLeader = true;
+		   }
+		}
+	}
+}
+if(isFactoryLeader){
+	userVO;
+}else {
+	var depId = getItemValue(@quot;_pCheckDepartment@quot;);
+	var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+	var roleId = getRoleIdByName(roleName);
+	var users = getUsersByDptIdAndRoleId(depId,roleId);
+	users;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;(R11e9-7a26-62fa3071-9820-539e9af1e136|&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;;)&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;0&lt;/backType&gt;
+&lt;isToPerson&gt;true&lt;/isToPerson&gt;
+&lt;bnodelist&gt;&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545337551&lt;/id&gt;
+&lt;name&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;117&lt;/x&gt;
+&lt;y&gt;229&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//TIMELIMIT=true&#26159;&#36229;&#26102;&#33258;&#21160;&#25552;&#20132;
+var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
+var roleName=getRoleByRoleNo(@quot;1010@quot;,getApplication());	//1010&#26159;&#21378;&#39046;&#23548;&#32534;&#21495;
+var roleId = getRoleIdByName(roleName);
+var users = getUsersByRoleId(roleId);
+var user = @quot;@quot;;
+var isRight = false;	//&#21028;&#26029;&#20256;&#36807;&#26469;&#30340;&#25351;&#23450;&#23457;&#25209;&#20154;&#26159;&#21542;&#26159;&#33410;&#28857;&#23457;&#25209;&#20154;&#20013;&#30340;&#19968;&#20010;&#65292;&#40664;&#35748;&#19981;&#26159;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)) {	//&#36229;&#26102;&#33258;&#21160;&#23457;&#25209;&#26102;
+	var doc = getCurrentDocument();
+	var docid = @quot;@quot;;
+	var flowid = @quot;@quot;;
+	if(doc!=null){
+		docid = doc.getId();
+		flowid = doc.getFlowid();
+	}
+	var his =getLastRelationHis(docid, flowid);//&#33719;&#21462;&#26368;&#21518;&#19968;&#26465;&#27969;&#31243;&#21382;&#21490;&#12290;docid&#20026;&#25991;&#26723;&#23545;&#35937;__ID&#65307;flowid&#20026;&#34920;&#21333;&#32465;&#23450;&#30340;&#27969;&#31243;__ID&#12290;
+	var staid=his.getFlowStateId();//&#33719;&#21462;&#26368;&#21518;&#19968;&#26465;&#35760;&#24405;&#30340;&#27969;&#31243;&#23454;&#20363;__ID
+	var rtprocess =  new Packages.cn.myapps.runtime.workflow.storage.runtime.ejb.FlowStateRTProcessBean(doc.getApplicationid());
+
+	var statert=rtprocess.doView(staid);//&#33719;&#21462;&#27969;&#31243;&#23454;&#20363;
+	var statelabel=statert.getStateLabel();//&#33719;&#21462;&#29366;&#24577;&#26631;&#31614;
+//	println(@quot;================&#21378;&#39046;&#23548;&#23457;&#25209;&#33410;&#28857;&#30340;&#19978;&#19968;&#23457;&#25209;&#33410;&#28857;&#26159;--@gt;@quot;+statelabel);
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+			if (noder.getName()==(statelabel)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for(var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+	if(user!=null){
+		var pUser = user.getSuperior();
+		if(pUser!=null){
+			for(var it=users.iterator();it.hasNext();){
+				var user1 = it.next();
+				if(user1!=null){
+					if(user1.getId()==(pUser.getId())){
+						user = pUser;
+						break;
+					}
+				}
+			}
+		}
+	}
+}else if(_pAppointApprover!=null){	//&#25209;&#37327;&#25552;&#20132;&#26102;
+	user = getUserById(_pAppointApprover);
+	for(var it=users.iterator();it.hasNext();){
+		var user1 = it.next();
+		if(user1!=null @amp;@amp; user!=null){
+			if(user1.getId()==(user.getId())){
+				isRight = true;
+			}
+		}
+	}
+}
+if(isRight){	//&#25209;&#37327;&#25552;&#20132;&#20256;&#36882;&#36807;&#26469;&#30340;&#25351;&#23450;&#23457;&#25209;&#20154;&#27491;&#30830;&#26102;&#65292;&#36820;&#22238;&#25351;&#23450;&#23457;&#25209;&#20154;
+	println(@quot;==============&#25209;&#37327;&#25552;&#20132;@quot;);
+	//&#35774;&#32622;&#21378;&#39046;&#23548;&#23457;&#25209;&#20154;_pFactoryLeader&#23383;&#27573;&#20540;
+	var _pFactoryLeader = getItemValue(@quot;_pFactoryLeader@quot;);
+//	println(&apos;=================&#21378;&#39046;&#23548;&#23457;&#25209;&#20154;&#33050;&#26412;_pFactoryLeader--@gt;&apos;+_pFactoryLeader);
+	if(_pFactoryLeader!=null @amp;@amp; _pFactoryLeader==(@quot;@quot;)){
+//		println(&apos;=================_pFactoryLeader2--@gt;&apos;+_pFactoryLeader);
+		var curDoc = getCurrentDocument();
+		var process = getDocumentProcess();
+		curDoc.findItem(@quot;_pFactoryLeader@quot;).setValue(user.getId());
+		process.doUpdate(curDoc);
+	}
+	user;
+}else if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	println(@quot;==============&#36229;&#26102;&#33258;&#21160;&#25552;&#20132;@quot;);
+	//&#35774;&#32622;&#21378;&#39046;&#23548;&#23457;&#25209;&#20154;_pFactoryLeader&#23383;&#27573;&#20540;
+	var _pFactoryLeader = getItemValue(@quot;_pFactoryLeader@quot;);
+//	println(&apos;=================&#21378;&#39046;&#23548;&#23457;&#25209;&#20154;&#33050;&#26412;_pFactoryLeader--@gt;&apos;+_pFactoryLeader);
+	if(_pFactoryLeader!=null){
+//		println(&apos;=================_pFactoryLeader2--@gt;&apos;+_pFactoryLeader);
+		var curDoc = getCurrentDocument();
+		var process = getDocumentProcess();
+		curDoc.findItem(@quot;_pFactoryLeader@quot;).setValue(user.getId());
+		process.doUpdate(curDoc);
+	}
+	user;
+}else {
+	println(@quot;==============&#34920;&#21333;&#25552;&#20132;@quot;);
+	users;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;(R11e9-7a26-62fa3075-9820-539e9af1e136|&#21378;&#39046;&#23548;;)&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;0&lt;/backType&gt;
+&lt;isToPerson&gt;false&lt;/isToPerson&gt;
+&lt;bnodelist&gt;&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545356464&lt;/id&gt;
+&lt;name&gt;&#21378;&#39046;&#23548;&#23457;&#25209;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;312&lt;/x&gt;
+&lt;y&gt;195&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#21378;&#39046;&#23548;&#23457;&#25209;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//&#8220;&#35745;&#21010;&#25191;&#34892;&#8221;&#23457;&#25209;&#20154;&#33050;&#26412;
+var userlist = createObject(@quot;java.util.ArrayList@quot;);
+var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+var role = getRoleIdByName(roleName);
+var role1004Id = role.getId();
+var roleName=getRoleByRoleNo(@quot;1003@quot;,getApplication());	//1003&#26159;&#37096;&#38376;&#21103;&#20027;&#20219;&#32534;&#21495;
+var role1003Id = getRoleIdByName(roleName);
+var roleName=getRoleByRoleNo(@quot;1002@quot;,getApplication());	//1002&#26159;&#36127;&#36131;&#21333;&#20301;(&#29677;&#32452;)&#36127;&#36131;&#20154;&#32534;&#21495;
+var role1002Id = getRoleIdByName(roleName);
+var roleName=getRoleByRoleNo(@quot;1012@quot;,getApplication());	//101&#26159;&#35745;&#21010;&#20998;&#37197;&#21592;&#32534;&#21495;
+var role1012Id = getRoleIdByName(roleName);
+
+var depId = getItemValueAsString(@quot;_pDepartment@quot;);
+//&#22686;&#21152;&#25191;&#34892;&#37096;&#38376;&#35745;&#21010;&#20998;&#37197;&#21592;
+var users = getUsersByDptIdAndRoleId(depId,role1012Id);
+for(var iter1=users.iterator();iter1.hasNext();){
+var user=iter1.next();
+userlist.add(user);
+}
+//&#22686;&#21152; &#25191;&#34892;&#37096;&#38376;&#20027;&#20219;
+var users = getUsersByDptIdAndRoleId(depId,role1004Id);
+for(var iter1=users.iterator();iter1.hasNext();){
+	var user=iter1.next();
+	userlist.add(user);
+}
+//&#22686;&#21152;&#25191;&#34892;&#37096;&#38376;&#21103;&#20027;&#20219;
+var users = getUsersByDptIdAndRoleId(depId,role1003Id);
+for(var iter1=users.iterator();iter1.hasNext();){
+  var user=iter1.next();
+  userlist.add(user);
+}
+//&#39564;&#25910;&#37096;&#38376;
+var depId = getItemValueAsString(@quot;_pCheckDepartment@quot;);
+//&#22686;&#21152; &#39564;&#25910;&#37096;&#38376;&#20027;&#20219;
+var users = getUsersByDptIdAndRoleId(depId,role1004Id);
+for(var iter1=users.iterator();iter1.hasNext();){
+    var user=iter1.next();
+    userlist.add(user);
+}
+//&#22686;&#21152;&#39564;&#25910;&#37096;&#38376;&#21103;&#20027;&#20219;
+var users = getUsersByDptIdAndRoleId(depId,role1003Id);
+for(var iter1=users.iterator();iter1.hasNext();){
+    var user=iter1.next();
+    userlist.add(user);
+}
+//&#22686;&#21152;&#36127;&#36131;&#21333;&#20301;(&#29677;&#32452;)&#25152;&#26377;&#20154;
+var _p2Department = getItemValueAsString(@quot;_p2Department@quot;);
+if(_p2Department!=null @amp;@amp; _p2Department !=(@quot;@quot;)){
+	var users = getUsersByDptId(_p2Department);
+	for(var iter1=users.iterator();iter1.hasNext();){
+	    var user=iter1.next();
+	    userlist.add(user);
+	}
+}
+//&#22686;&#21152;&#36127;&#36131;&#20154;
+var _pResponsible = getItemValueAsString(@quot;_pResponsible@quot;);
+if(_pResponsible!=null @amp;@amp; _pResponsible !=(@quot;@quot;)){
+	var user = getUserById(_pResponsible);
+	userlist.add(user);
+}
+userlist;]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;(R11e9-7a26-62fa306f-9820-539e9af1e136|&#37096;&#38376;&#20027;&#20219;;)&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;true&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;false&lt;/cBack&gt;
+&lt;splitStartNode&gt;1385462145601&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;false&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1385628459303&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;false&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;0&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545368976&lt;/id&gt;
+&lt;name&gt;&#35745;&#21010;&#25191;&#34892;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;550&lt;/x&gt;
+&lt;y&gt;291&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#35745;&#21010;&#25191;&#34892;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//&#8220;&#35745;&#21010;&#39564;&#25910;&#8221;&#23457;&#25209;&#20154;&#33050;&#26412;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var user = getUserById(_pChecker);
+	user;
+}else{
+	var userlist = createObject(@quot;java.util.ArrayList@quot;);
+	var depId = getItemValue(@quot;_pCheckDepartment@quot;);
+	var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+	var role1004Id = getRoleIdByName(roleName);
+	var roleName=getRoleByRoleNo(@quot;1003@quot;,getApplication());	//1003&#26159;&#37096;&#38376;&#21103;&#20027;&#20219;&#32534;&#21495;
+	var role1003Id = getRoleIdByName(roleName);
+	//&#22686;&#21152; &#39564;&#25910;&#37096;&#38376;&#20027;&#20219;
+	var users = getUsersByDptIdAndRoleId(depId,role1004Id);
+	for(var iter1=users.iterator();iter1.hasNext();){
+	  var user=iter1.next();
+	  userlist.add(user);
+	}
+	//&#22686;&#21152;&#39564;&#25910;&#37096;&#38376;&#21103;&#20027;&#20219;
+	var users = getUsersByDptIdAndRoleId(depId,role1003Id);
+	for(var iter1=users.iterator();iter1.hasNext();){
+	  var user=iter1.next();
+	  userlist.add(user);
+	}
+	userlist;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;true&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545377528&lt;/id&gt;
+&lt;name&gt;&#35745;&#21010;&#39564;&#25910;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;657&lt;/x&gt;
+&lt;y&gt;217&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#35745;&#21010;&#39564;&#25910;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//&#39564;&#25910;&#20154;&#19981;&#26159;&#21378;&#39046;&#23548;&#26102;&#33719;&#21462;&#8220;&#21378;&#39046;&#23548;&#23457;&#25209;&#8221;&#29615;&#33410;&#30340;&#23457;&#25209;&#20154;
+var userVO = @quot;@quot;;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO1 = getUserById(_pChecker);
+	var roles = userVO1.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;)){
+		   userVO = userVO1;
+	   }
+	}
+}
+if(userVO==(@quot;@quot;)){
+	var _pFactoryLeader = getItemValueAsString(@quot;_pFactoryLeader@quot;);
+	if(_pFactoryLeader!=null @amp;@amp; !_pFactoryLeader==(@quot;@quot;)){
+		if(@quot;11e3-410c-f98c47f1-9637-e3e5b726995a@quot;==(_pFactoryLeader)){	//&#25226;&#23435;&#22826;&#32426;&#26367;&#25442;&#20026;&#23385;&#26641;&#21326;
+			_pFactoryLeader = @quot;11e3-4112-a2ca99bd-9637-e3e5b726995a@quot;;
+		}
+		userVO = getUserById(_pFactoryLeader);
+	}else {
+		println(@quot;=============&#21378;&#39046;&#23548;&#21462;&#28040;/&#39564;&#25910;/&#24310;&#26399;&#23457;&#25209;&#27809;&#26377;&#23457;&#25209;&#20154;&#65281;@quot;);
+	}
+}
+userVO;]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;(R11e9-7a26-62fa3075-9820-539e9af1e136|&#21378;&#39046;&#23548;;)&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;false&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545387305&lt;/id&gt;
+&lt;name&gt;&#21378;&#39046;&#23548;&#39564;&#25910;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;779&lt;/x&gt;
+&lt;y&gt;162&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#21378;&#39046;&#23548;&#39564;&#25910;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.CompleteNode&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isAutoArchive&gt;false&lt;/isAutoArchive&gt;
+&lt;id&gt;1383545401177&lt;/id&gt;
+&lt;name&gt;&#32467;&#26463;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;932&lt;/x&gt;
+&lt;y&gt;297&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#32467;&#26463;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.CompleteNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[var depId = getItemValue(@quot;_pDepartment@quot;);
+var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+var roleId = getRoleIdByName(roleName);
+var users = getUsersByDptIdAndRoleId(depId,roleId);
+users;]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;true&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545711080&lt;/id&gt;
+&lt;name&gt;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#21462;&#28040;&#23457;&#26680;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;282&lt;/x&gt;
+&lt;y&gt;85&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#21462;&#28040;&#23457;&#26680;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[var _pResponsible = getItemValue(@quot;_pChecker@quot;);
+if(_pResponsible!=null @amp;@amp; _pResponsible !=(@quot;@quot;)){
+	var user = getUserById(_pResponsible);
+	user;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;false&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545726016&lt;/id&gt;
+&lt;name&gt;&#39564;&#25910;&#20154;&#21462;&#28040;&#23457;&#26680;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;460&lt;/x&gt;
+&lt;y&gt;137&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#39564;&#25910;&#20154;&#21462;&#28040;&#23457;&#26680;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//&#39564;&#25910;&#37096;&#38376;&#26159;&#21103;&#24635;&#24072;&#26102;&#36820;&#22238;&#39564;&#25910;&#20154;&#65292;&#21542;&#21017;&#36820;&#22238;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactoryLeader = false;	//&#26159;&#21542;&#21103;&#24635;&#24072;
+var userVO = @quot;@quot;;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	if(roles!=null @amp;@amp; roles.size()@gt;0){
+		for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+		   var role = it.next();
+		   if(role.getRoleNo()==(@quot;1009@quot;)){
+			   isFactoryLeader = true;
+		   }
+		}
+	}
+}
+if(isFactoryLeader){
+	userVO;
+}else {
+	var depId = getItemValue(@quot;_pCheckDepartment@quot;);
+	var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+	var roleId = getRoleIdByName(roleName);
+	var users = getUsersByDptIdAndRoleId(depId,roleId);
+	users;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;true&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545737480&lt;/id&gt;
+&lt;name&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#21462;&#28040;&#23457;&#26680;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;549&lt;/x&gt;
+&lt;y&gt;72&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#21462;&#28040;&#23457;&#26680;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//&#39564;&#25910;&#20154;&#19981;&#26159;&#21378;&#39046;&#23548;&#26102;&#33719;&#21462;&#8220;&#21378;&#39046;&#23548;&#23457;&#25209;&#8221;&#29615;&#33410;&#30340;&#23457;&#25209;&#20154;
+var userVO = @quot;@quot;;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO1 = getUserById(_pChecker);
+	var roles = userVO1.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;)){
+		   userVO = userVO1;
+	   }
+	}
+}
+if(userVO==(@quot;@quot;)){
+	var _pFactoryLeader = getItemValueAsString(@quot;_pFactoryLeader@quot;);
+	if(_pFactoryLeader!=null @amp;@amp; !_pFactoryLeader==(@quot;@quot;)){
+		if(@quot;11e3-410c-f98c47f1-9637-e3e5b726995a@quot;==(_pFactoryLeader)){	//&#25226;&#23435;&#22826;&#32426;&#26367;&#25442;&#20026;&#23385;&#26641;&#21326;
+			_pFactoryLeader = @quot;11e3-4112-a2ca99bd-9637-e3e5b726995a@quot;;
+		}
+		userVO = getUserById(_pFactoryLeader);
+	}else {
+		println(@quot;=============&#21378;&#39046;&#23548;&#21462;&#28040;/&#39564;&#25910;/&#24310;&#26399;&#23457;&#25209;&#27809;&#26377;&#23457;&#25209;&#20154;&#65281;@quot;);
+	}
+}
+userVO;]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;(R11e9-7a26-62fa3075-9820-539e9af1e136|&#21378;&#39046;&#23548;;)&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;false&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545750305&lt;/id&gt;
+&lt;name&gt;&#21378;&#39046;&#23548;&#21462;&#28040;&#23457;&#25209;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;648&lt;/x&gt;
+&lt;y&gt;-6&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#21378;&#39046;&#23548;&#21462;&#28040;&#23457;&#25209;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[var depId = getItemValue(@quot;_pDepartment@quot;);
+var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+var roleId = getRoleIdByName(roleName);
+var users = getUsersByDptIdAndRoleId(depId,roleId);
+users;]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;true&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383545996612&lt;/id&gt;
+&lt;name&gt;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;345&lt;/x&gt;
+&lt;y&gt;519&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[var _pResponsible = getItemValue(@quot;_pChecker@quot;);
+if(_pResponsible!=null @amp;@amp; _pResponsible !=(@quot;@quot;)){
+	var user = getUserById(_pResponsible);
+	user;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;false&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383546007719&lt;/id&gt;
+&lt;name&gt;&#39564;&#25910;&#20154;&#24310;&#26399;&#23457;&#26680;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;509&lt;/x&gt;
+&lt;y&gt;422&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#39564;&#25910;&#20154;&#24310;&#26399;&#23457;&#26680;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//&#39564;&#25910;&#37096;&#38376;&#26159;&#21103;&#24635;&#24072;&#26102;&#36820;&#22238;&#39564;&#25910;&#20154;&#65292;&#21542;&#21017;&#36820;&#22238;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactoryLeader = false;	//&#26159;&#21542;&#21103;&#24635;&#24072;
+var userVO = @quot;@quot;;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	if(roles!=null @amp;@amp; roles.size()@gt;0){
+		for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+		   var role = it.next();
+		   if(role.getRoleNo()==(@quot;1009@quot;)){
+			   isFactoryLeader = true;
+		   }
+		}
+	}
+}
+if(isFactoryLeader){
+	userVO;
+}else {
+	var depId = getItemValue(@quot;_pCheckDepartment@quot;);
+	var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+	var roleId = getRoleIdByName(roleName);
+	var users = getUsersByDptIdAndRoleId(depId,roleId);
+	users;
+}]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;true&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383546028080&lt;/id&gt;
+&lt;name&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;632&lt;/x&gt;
+&lt;y&gt;463&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[//&#39564;&#25910;&#20154;&#19981;&#26159;&#21378;&#39046;&#23548;&#26102;&#33719;&#21462;&#8220;&#21378;&#39046;&#23548;&#23457;&#25209;&#8221;&#29615;&#33410;&#30340;&#23457;&#25209;&#20154;
+var userVO = @quot;@quot;;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO1 = getUserById(_pChecker);
+	var roles = userVO1.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;)){
+		   userVO = userVO1;
+	   }
+	}
+}
+if(userVO==(@quot;@quot;)){
+	var _pFactoryLeader = getItemValueAsString(@quot;_pFactoryLeader@quot;);
+	if(_pFactoryLeader!=null @amp;@amp; !_pFactoryLeader==(@quot;@quot;)){
+		if(@quot;11e3-410c-f98c47f1-9637-e3e5b726995a@quot;==(_pFactoryLeader)){	//&#25226;&#23435;&#22826;&#32426;&#26367;&#25442;&#20026;&#23385;&#26641;&#21326;
+			_pFactoryLeader = @quot;11e3-4112-a2ca99bd-9637-e3e5b726995a@quot;;
+		}
+		userVO = getUserById(_pFactoryLeader);
+	}else {
+		println(@quot;=============&#21378;&#39046;&#23548;&#21462;&#28040;/&#39564;&#25910;/&#24310;&#26399;&#23457;&#25209;&#27809;&#26377;&#23457;&#25209;&#20154;&#65281;@quot;);
+	}
+}
+userVO;]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;(R11e9-7a26-62fa3075-9820-539e9af1e136|&#21378;&#39046;&#23548;;)&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;false&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;superior&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1383546037792&lt;/id&gt;
+&lt;name&gt;&#21378;&#39046;&#23548;&#24310;&#26399;&#23457;&#25209;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;785&lt;/x&gt;
+&lt;y&gt;510&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#21378;&#39046;&#23548;&#24310;&#26399;&#23457;&#25209;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;ACTOR_EDIT_MODE_DESIGN&gt;0&lt;/ACTOR_EDIT_MODE_DESIGN&gt;
+&lt;ACTOR_EDIT_MODE_CODE&gt;1&lt;/ACTOR_EDIT_MODE_CODE&gt;
+&lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
+&lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
+&lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
+&lt;actorListScript&gt;&lt;![CDATA[var depId = getItemValue(@quot;_pCheckDepartment@quot;);
+var roleName=getRoleByRoleNo(@quot;1004@quot;,getApplication());	//1004&#26159;&#37096;&#38376;&#20027;&#20219;&#32534;&#21495;
+var roleId = getRoleIdByName(roleName);
+var users = getUsersByDptIdAndRoleId(depId,roleId);
+users;]]&gt;&lt;/actorListScript&gt;
+&lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
+&lt;namelist&gt;&lt;/namelist&gt;
+&lt;realnamelist&gt;&lt;/realnamelist&gt;
+&lt;passcondition&gt;0&lt;/passcondition&gt;
+&lt;isApproverEdit&gt;false&lt;/isApproverEdit&gt;
+&lt;exceedaction&gt;&lt;/exceedaction&gt;
+&lt;issetcurruser&gt;false&lt;/issetcurruser&gt;
+&lt;inputform&gt;&lt;/inputform&gt;
+&lt;isgather&gt;false&lt;/isgather&gt;
+&lt;issplit&gt;false&lt;/issplit&gt;
+&lt;cBack&gt;true&lt;/cBack&gt;
+&lt;splitStartNode&gt;&lt;/splitStartNode&gt;
+&lt;isFrontEdit&gt;false&lt;/isFrontEdit&gt;
+&lt;backType&gt;1&lt;/backType&gt;
+&lt;isToPerson&gt;false&lt;/isToPerson&gt;
+&lt;bnodelist&gt;1383545368976&lt;/bnodelist&gt;
+&lt;retracementEditMode&gt;0&lt;/retracementEditMode&gt;
+&lt;cRetracement&gt;false&lt;/cRetracement&gt;
+&lt;retracementScript&gt;&lt;/retracementScript&gt;
+&lt;notificationStrategyJSON&gt;&lt;/notificationStrategyJSON&gt;
+&lt;isCarbonCopy&gt;false&lt;/isCarbonCopy&gt;
+&lt;isSelectCirculator&gt;false&lt;/isSelectCirculator&gt;
+&lt;circulatorEditMode&gt;0&lt;/circulatorEditMode&gt;
+&lt;circulatorListScript&gt;&lt;![CDATA[]]&gt;&lt;/circulatorListScript&gt;
+&lt;circulatorNamelist&gt;&lt;/circulatorNamelist&gt;
+&lt;userList&gt;&lt;/userList&gt;
+&lt;circulatorNamelistByUser&gt;&lt;/circulatorNamelistByUser&gt;
+&lt;orgField&gt;auditor&lt;/orgField&gt;
+&lt;orgScope&gt;&lt;/orgScope&gt;
+&lt;orgRoleCondition&gt;&lt;/orgRoleCondition&gt;
+&lt;isLimited&gt;true&lt;/isLimited&gt;
+&lt;timeLimitEditMode&gt;1&lt;/timeLimitEditMode&gt;
+&lt;timeLimitDay&gt;2&lt;/timeLimitDay&gt;
+&lt;timeLimitHour&gt;&lt;/timeLimitHour&gt;
+&lt;timeLimitMinute&gt;&lt;/timeLimitMinute&gt;
+&lt;timeLimitScript&gt;&lt;![CDATA[//&#23457;&#25209;&#36229;&#26102;&#26102;&#38388;&#35745;&#31639;&#33050;&#26412;
+#include &quot;&#38480;&#23450;&#30701;&#20449;&#21457;&#36865;&#26102;&#38388;&#24211;&quot;;
+var startTime = 8;
+var endTime = 18;
+var deferTime = 48;
+var rtn = computeOverTime(startTime,endTime,deferTime);
+rtn;]]&gt;&lt;/timeLimitScript&gt;
+&lt;isUsbKeyVerify&gt;false&lt;/isUsbKeyVerify&gt;
+&lt;roleCondition&gt;&lt;/roleCondition&gt;
+&lt;handupEditMode&gt;0&lt;/handupEditMode&gt;
+&lt;isHandup&gt;false&lt;/isHandup&gt;
+&lt;handupScript&gt;&lt;![CDATA[]]&gt;&lt;/handupScript&gt;
+&lt;isAllowEditAuditor&gt;false&lt;/isAllowEditAuditor&gt;
+&lt;isAllowTermination&gt;false&lt;/isAllowTermination&gt;
+&lt;activityPermList&gt;&lt;/activityPermList&gt;
+&lt;urge2ApprovalEditMode&gt;0&lt;/urge2ApprovalEditMode&gt;
+&lt;allowUrge2Approval&gt;false&lt;/allowUrge2Approval&gt;
+&lt;allowUrge2ApprovalScript&gt;&lt;![CDATA[]]&gt;&lt;/allowUrge2ApprovalScript&gt;
+&lt;isAllowSkip&gt;false&lt;/isAllowSkip&gt;
+&lt;nextNodeCheckedStatus&gt;0&lt;/nextNodeCheckedStatus&gt;
+&lt;id&gt;1385002167707&lt;/id&gt;
+&lt;name&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#39564;&#25910;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;x&gt;661&lt;/x&gt;
+&lt;y&gt;99&lt;/y&gt;
+&lt;width&gt;75&lt;/width&gt;
+&lt;height&gt;80&lt;/height&gt;
+&lt;m_width&gt;20&lt;/m_width&gt;
+&lt;m_height&gt;20&lt;/m_height&gt;
+&lt;prenodeid&gt;&lt;/prenodeid&gt;
+&lt;statelabel&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#39564;&#25910;&lt;/statelabel&gt;
+&lt;backnodeid&gt;&lt;/backnodeid&gt;
+&lt;formname&gt;&lt;/formname&gt;
+&lt;fieldpermlist&gt;&lt;/fieldpermlist&gt;
+&lt;isstartandnext&gt;false&lt;/isstartandnext&gt;
+&lt;_iscurrent&gt;false&lt;/_iscurrent&gt;
+&lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545258085&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545263538&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;49;317;48;228&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545464057&lt;/id&gt;
+&lt;name&gt;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545263538&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545291447&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;true&#65292;&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#19981;&#26159;&#37096;&#38376;&#20027;&#20219;&#12289;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;&#12289;&#21103;&#24635;&#24072;&#12289;&#21378;&#39046;&#23548;&#26102;false
+var webUser = getWebUser();
+var roles = webUser.getRoles();
+var rtn = true;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1004 || roleNo==1006 || roleNo==1009 || roleNo==1010){
+		rtn = false;
+		break;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;48;228;51;139&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545466175&lt;/id&gt;
+&lt;name&gt;1&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545291447&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545337551&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;true&#65292;&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;&#26102;false
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+//			println(noder.getName() + @quot;    ======noder.getName====@quot;);
+			if (noder.getName()==(@quot;&#35745;&#21010;&#36215;&#33609;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+//						processor += actorrt.getName() + @quot;,@quot;;// &#33719;&#21462;&#23457;&#25209;&#20154;&#22995;&#21517;
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+						println(@quot;====================actorrt.getName()--@gt;@quot;+actorrt.getName());
+//						 processor += actorrt.getActorid() + @quot;,@quot;;//&#33719;&#21462;&#23457;&#25209;&#20154;__ID
+						// processor +=
+						// getUserById(actorrt.getActorid()).getLoginno()+
+						// @quot;,@quot;;//&#33719;&#21462;&#23457;&#25209;&#20154;&#30331;&#24405;&#36134;&#21495;&#21517;
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var rtn = true;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==(@quot;1006@quot;)){
+		rtn = false;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;51;139;153;134&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545467719&lt;/id&gt;
+&lt;name&gt;5&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545337551&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545356464&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#39564;&#25910;&#20154;&#26159;&#21378;&#39046;&#23548;&#26102;false
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var rtn = true;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;)){
+		   rtn = false;
+	   }
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;153;134;265;129&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[//&#24403;&#65288;&#19981;&#26159;&#36229;&#26102;&#33258;&#21160;&#25552;&#20132;and&#25209;&#37327;&#25552;&#20132;&#26410;&#25351;&#23450;&#23457;&#25209;&#20154;&#65289;&#26102;&#36820;&#22238;&#25552;&#31034;&#20449;&#24687;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;true@quot;)){
+	var submitTo = getParameter(@quot;submitTo@quot;);
+//	println(@quot;====================33&#36335;&#24452;&#36865;&#20986;&#26816;&#39564;&#33050;&#26412;submitTo--@gt;@quot;+submitTo);
+	if(submitTo==null || submitTo==(@quot;@quot;)){
+		var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
+		if(_pAppointApprover==null || _pAppointApprover==(@quot;@quot;)){
+			var rtn = @quot;&#35831;&#25351;&#23450;&#23457;&#25209;&#20154;&#65281;@quot;;
+			rtn;
+		}
+	}
+}]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545469472&lt;/id&gt;
+&lt;name&gt;6&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545377528&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;00&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var stateLabel = getStateLabel();
+if(stateLabel!=null @amp;@amp; stateLabel==(@quot;&#35745;&#21010;&#25191;&#34892;@quot;)){
+	var curDate = getCurDate(@quot;yyyy-MM-dd@quot;);
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	var _pReportCount = getItemValueAsInt(@quot;_pReportCount@quot;);
+	_pReportCount++;
+	curDoc.findItem(@quot;_pReportTime@quot;).setValue(curDate);
+	curDoc.findItem(@quot;_pReportCount@quot;).setValue(_pReportCount);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;376;135;474;137&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545473087&lt;/id&gt;
+&lt;name&gt;8&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545387305&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545401177&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;585;138;711;137&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545477667&lt;/id&gt;
+&lt;name&gt;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545263538&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545337551&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#26159;&#37096;&#38376;&#20027;&#20219;and&#19981;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;&#26102;true
+var webUser = getWebUser();
+var roles = webUser.getRoles();
+var rtn = false;
+var rtn1004 = false;
+var rtn1006 = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==(@quot;1004@quot;)){
+		rtn1004 = true;
+	}
+	if(roleNo==(@quot;1006@quot;)){
+		rtn1006 = true;
+	}
+}
+if(rtn1004 @amp;@amp; !rtn1006){
+	rtn = true;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;43;359;154;246&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545555207&lt;/id&gt;
+&lt;name&gt;2&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545263538&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545356464&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;&#26102;true
+var webUser = getWebUser();
+var roles = webUser.getRoles();
+var rtn = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1006){
+		rtn = true;
+		break;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;36;359;278;242&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[//&#24403;&#65288;&#19981;&#26159;&#36229;&#26102;&#33258;&#21160;&#25552;&#20132;and&#25209;&#37327;&#25552;&#20132;&#26410;&#25351;&#23450;&#23457;&#25209;&#20154;&#65289;&#26102;&#36820;&#22238;&#25552;&#31034;&#20449;&#24687;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;true@quot;)){
+	var submitTo = getParameter(@quot;submitTo@quot;);
+//	println(@quot;====================33&#36335;&#24452;&#36865;&#20986;&#26816;&#39564;&#33050;&#26412;submitTo--@gt;@quot;+submitTo);
+	if(submitTo==null || submitTo==(@quot;@quot;)){
+		var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
+		if(_pAppointApprover==null || _pAppointApprover==(@quot;@quot;)){
+			var rtn = @quot;&#35831;&#25351;&#23450;&#23457;&#25209;&#20154;&#65281;@quot;;
+			rtn;
+		}
+	}
+}]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545600928&lt;/id&gt;
+&lt;name&gt;3&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545377528&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545401177&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;&#20026;true&#65292;&#24403;&#35745;&#21010;&#32423;&#21035;&#20026;&#30563;&#21150;&#26102;false
+var _pLevel = getItemValue(@quot;_pLevel@quot;);
+var rtn = true;
+if(_pLevel!=null @amp;@amp; _pLevel==(@quot;&#30563;&#21150;@quot;)){
+	rtn = false;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;548;180;759;240&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545649576&lt;/id&gt;
+&lt;name&gt;9&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545401177&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;&#21069;&#29992;&#25143;&#26159;&#21378;&#39046;&#23548;&#26102;&#20026;true
+var rtn = false;
+var webUser = getWebUser();
+var roles = webUser.getRoles();
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1010){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;414;247;759;240&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545652144&lt;/id&gt;
+&lt;name&gt;10&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545711080&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;true&#65292;&#30003;&#35831;&#36807;&#21462;&#28040;or(&#24403;&#21069;&#29992;&#25143;&#26159;&#37096;&#38376;&#20027;&#20219;&#12289;&#21103;&#24635;&#24072;&#21644;&#21378;&#39046;&#23548;)&#26102;&#20026;false
+var rtn = true;
+var _isCancel = getItemValue(@quot;_isCancel@quot;);
+if(_isCancel!=null @amp;@amp; _isCancel==(@quot;@quot;)){
+	rtn = true;
+	var webUser = getWebUser();
+	var roles = webUser.getRoles();
+
+	for(var iter = roles.iterator();iter.hasNext();){
+		var role = iter.next();
+		var roleNo = role.getRoleNo();
+		if(roleNo==1004 || roleNo==1009 || roleNo==1010){
+			rtn = false;
+			break;
+		}
+	}
+}else {
+	rtn = false;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var _isCancel = getItemValue(@quot;_isCancel@quot;);
+if(_isCancel!=null @amp;@amp; _isCancel==(@quot;@quot;)){
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_isCancel@quot;).setValue(@quot;&#26159;@quot;);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;414;247;272;148&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[var _pCancelReason = getItemValue(@quot;_pCancelReason@quot;);
+if(_pCancelReason==(@quot;@quot;)){
+	var rtn = @quot;&#21462;&#28040;&#29702;&#30001;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+	rtn;
+}]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545795516&lt;/id&gt;
+&lt;name&gt;11&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545711080&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545726016&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;true&#65292;&#24403;&#27809;&#26377;&#39564;&#25910;&#20154;or&#39564;&#25910;&#20154;&#26159;&#21378;&#39046;&#23548;or&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#26159;&#32844;&#33021;&#37096;&#38376;&#20027;&#20219;&#26102;&#20026;false
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+			if (noder.getName()==(@quot;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#21462;&#28040;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var role1006 = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1006){
+		role1006 = true;
+	}
+}
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactory = false;		//&#39564;&#25910;&#20154;&#26159;&#21542;&#21378;&#39046;&#23548;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;)){
+		   isFactory = true;
+	   }
+	}
+}
+
+var rtn = true;
+if(_pChecker!=null @amp;@amp; _pChecker==(@quot;@quot;) || role1006 || isFactory){
+	rtn = false;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;272;148;270;42&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545797535&lt;/id&gt;
+&lt;name&gt;17&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545726016&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545737480&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;270;42;457;36&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545799559&lt;/id&gt;
+&lt;name&gt;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545737480&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545750305&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;457;36;673;28&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545801664&lt;/id&gt;
+&lt;name&gt;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545750305&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545401177&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;00&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;673;28;820;120;759;240&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545804055&lt;/id&gt;
+&lt;name&gt;20&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545726016&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#26410;&#30003;&#35831;&#36807;&#21462;&#28040;and(&#24403;&#21069;&#29992;&#25143;(&#26159;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;and&#19981;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;)and&#39564;&#25910;&#20154;&#19981;&#20026;&#31354;&#26102;&#20026;true
+var rtn = false;
+var _isCancel = getItemValue(@quot;_isCancel@quot;);
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactory = false;		//&#26159;&#21542;&#21378;&#39046;&#23548;&#25110;&#21103;&#24635;&#24072;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;) || role.getRoleNo()==(@quot;1009@quot;)){
+		   isFactory = true;
+	   }
+	}
+}
+if((_isCancel!=null @amp;@amp; _isCancel==(@quot;@quot;)) @amp;@amp; (_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)) @amp;@amp; !isFactory){
+	var role1004 = false;
+	var role1006 = false;
+	var webUser = getWebUser();
+	var roles = webUser.getRoles();
+	for(var iter = roles.iterator();iter.hasNext();){
+		var role = iter.next();
+		var roleNo = role.getRoleNo();
+		if(roleNo==1004){
+			role1004 = true;
+		}
+		if(roleNo==1006){
+			role1006 = true;
+		}
+	}
+	var webUserId = webUser.getId();
+	if(role1004 @amp;@amp; !role1006){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var _isCancel = getItemValue(@quot;_isCancel@quot;);
+if(_isCancel!=null @amp;@amp; _isCancel==(@quot;@quot;)){
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_isCancel@quot;).setValue(@quot;&#26159;@quot;);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;414;247;270;42&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[var _pCancelReason = getItemValue(@quot;_pCancelReason@quot;);
+if(_pCancelReason==(@quot;@quot;)){
+	var rtn = @quot;&#21462;&#28040;&#29702;&#30001;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+	rtn;
+}]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545846271&lt;/id&gt;
+&lt;name&gt;12&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545737480&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#26410;&#30003;&#35831;&#36807;&#21462;&#28040;and(&#24403;&#21069;&#29992;&#25143;&#26159;&#36127;&#36131;&#20154;or(&#26159;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;and&#19981;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;))and(&#39564;&#25910;&#20154;&#20026;&#31354;or&#39564;&#25910;&#20154;&#26159;&#21103;&#24635;&#24072;)&#26102;&#20026;true
+var rtn = false;
+var _isCancel = getItemValue(@quot;_isCancel@quot;);
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactory = false;		//&#39564;&#25910;&#20154;&#26159;&#21542;&#21103;&#24635;&#24072;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1009@quot;)){
+		   isFactory = true;
+	   }
+	}
+}
+if((_isCancel!=null @amp;@amp; _isCancel==(@quot;@quot;)) @amp;@amp; (_pChecker!=null @amp;@amp; (_pChecker==(@quot;@quot;) || isFactory))){
+	var _pResponsible = getItemValue(@quot;_pResponsible@quot;);
+	var role1004 = false;
+	var role1006 = false;
+	var webUser = getWebUser();
+	var roles = webUser.getRoles();
+	for(var iter = roles.iterator();iter.hasNext();){
+		var role = iter.next();
+		var roleNo = role.getRoleNo();
+		if(roleNo==1004){
+			role1004 = true;
+		}
+		if(roleNo==1006){
+			role1006 = true;
+		}
+	}
+	if((webUser==(_pResponsible) || (role1004 @amp;@amp; !role1006))){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var _isCancel = getItemValue(@quot;_isCancel@quot;);
+if(_isCancel!=null @amp;@amp; _isCancel==(@quot;@quot;)){
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_isCancel@quot;).setValue(@quot;&#26159;@quot;);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;414;247;457;36&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[var _pCancelReason = getItemValue(@quot;_pCancelReason@quot;);
+if(_pCancelReason==(@quot;@quot;)){
+	var rtn = @quot;&#21462;&#28040;&#29702;&#30001;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+	rtn;
+}]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545851799&lt;/id&gt;
+&lt;name&gt;13&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545750305&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#26410;&#30003;&#35831;&#36807;&#21462;&#28040;and&#24403;&#21069;&#29992;&#25143;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;&#26102;&#20026;true
+var rtn = false;
+var _isCancel = getItemValue(@quot;_isCancel@quot;);
+if(_isCancel!=null @amp;@amp; _isCancel==(@quot;@quot;)){
+	var webUser = getWebUser();
+	var roles = webUser.getRoles();
+	for(var iter = roles.iterator();iter.hasNext();){
+		var role = iter.next();
+		var roleNo = role.getRoleNo();
+		if(roleNo==1006){
+			rtn = true;
+		}
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var _isCancel = getItemValue(@quot;_isCancel@quot;);
+if(_isCancel!=null @amp;@amp; _isCancel==(@quot;@quot;)){
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_isCancel@quot;).setValue(@quot;&#26159;@quot;);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;414;247;673;28&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[var _pCancelReason = getItemValue(@quot;_pCancelReason@quot;);
+if(_pCancelReason==(@quot;@quot;)){
+	var rtn = @quot;&#21462;&#28040;&#29702;&#30001;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+	rtn;
+}]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383545854800&lt;/id&gt;
+&lt;name&gt;14&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545996612&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;true&#65292;&#24403;&#21069;&#29992;&#25143;&#26159;&#37096;&#38376;&#20027;&#20219;&#12289;&#21103;&#24635;&#24072;&#21644;&#21378;&#39046;&#23548;&#26102;&#20026;false
+var rtn = true;
+var webUser = getWebUser();
+var roles = webUser.getRoles();
+
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1004 || roleNo==1009 || roleNo==1010){
+		rtn = false;
+		break;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var stateLabel = getStateLabel();
+if(stateLabel!=null @amp;@amp; stateLabel==(@quot;&#35745;&#21010;&#25191;&#34892;@quot;)){
+	var curDate = getCurDate(@quot;yyyy-MM-dd@quot;);
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_pApplyDeferTime@quot;).setValue(curDate);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;414;247;269;374&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[var rtn = @quot;@quot;;
+var _pDeferReason = getItemValue(@quot;_pDeferReason@quot;);
+if(_pDeferReason!=null @amp;@amp; _pDeferReason==(@quot;@quot;)){
+	rtn = @quot;&#24310;&#26399;&#29702;&#30001;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+}
+var _pDeferTime = getItemValue(@quot;_pDeferTime@quot;);
+if(_pDeferTime!=null @amp;@amp; _pDeferTime==(@quot;@quot;)){
+	rtn = @quot;&#24310;&#26399;&#26102;&#38388;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+}
+rtn;]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546133321&lt;/id&gt;
+&lt;name&gt;21&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545996612&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383546007719&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;true&#65292;&#24403;&#27809;&#26377;&#39564;&#25910;&#20154;or&#39564;&#25910;&#20154;&#26159;&#21378;&#39046;&#23548;or&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#26159;&#32844;&#33021;&#37096;&#38376;&#20027;&#20219;&#26102;&#20026;false
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+			if (noder.getName()==(@quot;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var role1006 = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1006){
+		role1006 = true;
+	}
+}
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactory = false;		//&#26159;&#21542;&#21378;&#39046;&#23548;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;)){
+		   isFactory = true;
+	   }
+	}
+}
+var rtn = true;
+if(_pChecker!=null @amp;@amp; _pChecker==(@quot;@quot;) || role1006 || isFactory){
+	rtn = false;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;269;374;357;449&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546135663&lt;/id&gt;
+&lt;name&gt;28&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383546007719&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383546028080&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;357;449;471;519&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546137999&lt;/id&gt;
+&lt;name&gt;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383546028080&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383546037792&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;00&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;471;519;607;399&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546140632&lt;/id&gt;
+&lt;name&gt;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383546037792&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545368976&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var _isDefer = getItemValue(@quot;_isDefer@quot;);
+var _pDeferTime1 = getItemValueAsDate(@quot;_pDeferTime@quot;);
+var _pApplyDeferTime = getItemValueAsString(@quot;_pApplyDeferTime@quot;);
+var _pDeferTime = format(_pDeferTime1,@quot;yyyy-MM-dd@quot;);
+if(_isDefer!=null  @amp;@amp; _pDeferTime!=null @amp;@amp; !_pDeferTime==(@quot;@quot;)){
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	var _pDeferCount = getItemValueAsInt(@quot;_pDeferCount@quot;);
+	var _pEndTime = getItemValueAsString(@quot;_pEndTime@quot;);
+	if(_pApplyDeferTime@gt;_pEndTime){
+		_pDeferCount = _pDeferCount+2;
+	}else {
+		_pDeferCount++;
+	}
+	curDoc.findItem(@quot;_pDeferCount@quot;).setValue(_pDeferCount);
+	curDoc.findItem(@quot;_pEndTime@quot;).setValue(_pDeferTime);
+	curDoc.findItem(@quot;_isDefer@quot;).setValue(@quot;&#26159;@quot;);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;607;399;749;409;414;247&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546144024&lt;/id&gt;
+&lt;name&gt;25&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383546007719&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#39564;&#25910;&#20154;&#19981;&#20026;&#31354;and(&#26159;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;and&#19981;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;)&#26102;&#20026;true
+var rtn = false;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactory = false;		//&#26159;&#21542;&#21378;&#39046;&#23548;&#25110;&#21103;&#24635;&#24072;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;) || role.getRoleNo()==(@quot;1009@quot;)){
+		   isFactory = true;
+	   }
+	}
+}
+if((_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)) @amp;@amp; !isFactory){
+	var _pChecker = getItemValue(@quot;_pChecker@quot;);
+	var role1004 = false;
+	var role1006 = false;
+	var webUser = getWebUser();
+	var roles = webUser.getRoles();
+	for(var iter = roles.iterator();iter.hasNext();){
+		var role = iter.next();
+		var roleNo = role.getRoleNo();
+		if(roleNo==1004){
+			role1004 = true;
+		}
+		if(roleNo==1006){
+			role1006 = true;
+		}
+	}
+	if(role1004 @amp;@amp; !role1006){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var stateLabel = getStateLabel();
+if(stateLabel!=null @amp;@amp; stateLabel==(@quot;&#35745;&#21010;&#25191;&#34892;@quot;)){
+	var curDate = getCurDate(@quot;yyyy-MM-dd@quot;);
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_pApplyDeferTime@quot;).setValue(curDate);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;414;247;357;449&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[var rtn = @quot;@quot;;
+var _pDeferReason = getItemValue(@quot;_pDeferReason@quot;);
+if(_pDeferReason!=null @amp;@amp; _pDeferReason==(@quot;@quot;)){
+	rtn = @quot;&#24310;&#26399;&#29702;&#30001;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+}
+var _pDeferTime = getItemValue(@quot;_pDeferTime@quot;);
+if(_pDeferTime!=null @amp;@amp; _pDeferTime==(@quot;@quot;)){
+	rtn = @quot;&#24310;&#26399;&#26102;&#38388;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+}
+rtn;]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546155048&lt;/id&gt;
+&lt;name&gt;22&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383546028080&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;(&#24403;&#21069;&#29992;&#25143;&#26159;&#36127;&#36131;&#20154;or(&#26159;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;and&#19981;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;))and(&#39564;&#25910;&#20154;&#20026;&#31354;or&#39564;&#25910;&#20154;&#26159;&#21103;&#24635;&#24072;)&#26102;&#20026;true
+var rtn = false;
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var isFactory = false;		//&#39564;&#25910;&#20154;&#26159;&#21542;&#21103;&#24635;&#24072;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1009@quot;)){
+		   isFactory = true;
+	   }
+	}
+}
+if(_pChecker!=null @amp;@amp; (_pChecker==(@quot;@quot;) || isFactory)){
+	var _pResponsible = getItemValue(@quot;_pResponsible@quot;);
+	var role1004 = false;
+	var role1006 = false;
+	var webUser = getWebUser();
+	var roles = webUser.getRoles();
+	for(var iter = roles.iterator();iter.hasNext();){
+		var role = iter.next();
+		var roleNo = role.getRoleNo();
+		if(roleNo==1004){
+			role1004 = true;
+		}
+		if(roleNo==1006){
+			role1006 = true;
+		}
+	}
+	if((webUser==(_pResponsible) || (role1004 @amp;@amp; !role1006))){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var stateLabel = getStateLabel();
+if(stateLabel!=null @amp;@amp; stateLabel==(@quot;&#35745;&#21010;&#25191;&#34892;@quot;)){
+	var curDate = getCurDate(@quot;yyyy-MM-dd@quot;);
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_pApplyDeferTime@quot;).setValue(curDate);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;414;247;471;519&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[var rtn = @quot;@quot;;
+var _pDeferReason = getItemValue(@quot;_pDeferReason@quot;);
+if(_pDeferReason!=null @amp;@amp; _pDeferReason==(@quot;@quot;)){
+	rtn = @quot;&#24310;&#26399;&#29702;&#30001;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+}
+var _pDeferTime = getItemValue(@quot;_pDeferTime@quot;);
+if(_pDeferTime!=null @amp;@amp; _pDeferTime==(@quot;@quot;)){
+	rtn = @quot;&#24310;&#26399;&#26102;&#38388;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+}
+rtn;]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546157495&lt;/id&gt;
+&lt;name&gt;23&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545368976&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383546037792&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;&#21069;&#29992;&#25143;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;&#26102;&#20026;true
+var rtn = false;
+var webUser = getWebUser();
+var roles = webUser.getRoles();
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1006){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var stateLabel = getStateLabel();
+if(stateLabel!=null @amp;@amp; stateLabel==(@quot;&#35745;&#21010;&#25191;&#34892;@quot;)){
+	var curDate = getCurDate(@quot;yyyy-MM-dd@quot;);
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_pApplyDeferTime@quot;).setValue(curDate);
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;414;247;607;399&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[var rtn = @quot;@quot;;
+var _pDeferReason = getItemValue(@quot;_pDeferReason@quot;);
+if(_pDeferReason!=null @amp;@amp; _pDeferReason==(@quot;@quot;)){
+	rtn = @quot;&#24310;&#26399;&#29702;&#30001;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+}
+var _pDeferTime = getItemValue(@quot;_pDeferTime@quot;);
+if(_pDeferTime!=null @amp;@amp; _pDeferTime==(@quot;@quot;)){
+	rtn = @quot;&#24310;&#26399;&#26102;&#38388;&#24517;&#39035;&#22635;&#20889;&#65281;@quot;;
+}
+rtn;]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546160263&lt;/id&gt;
+&lt;name&gt;24&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545996612&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383546028080&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;&#27809;&#26377;&#39564;&#25910;&#20154;&#26102;&#20026;true
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+//			println(noder.getName() + @quot;    ======noder.getName====@quot;);
+			if (noder.getName()==(@quot;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+//						processor += actorrt.getName() + @quot;,@quot;;// &#33719;&#21462;&#23457;&#25209;&#20154;&#22995;&#21517;
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+						println(@quot;====================actorrt.getName()--@gt;@quot;+actorrt.getName());
+//						 processor += actorrt.getActorid() + @quot;,@quot;;//&#33719;&#21462;&#23457;&#25209;&#20154;__ID
+						// processor +=
+						// getUserById(actorrt.getActorid()).getLoginno()+
+						// @quot;,@quot;;//&#33719;&#21462;&#23457;&#25209;&#20154;&#30331;&#24405;&#36134;&#21495;&#21517;
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var role1006 = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1006){
+		role1006 = true;
+	}
+}
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var rtn = false;
+if(_pChecker!=null @amp;@amp; _pChecker==(@quot;@quot;) @amp;@amp; !role1006){
+	rtn = true;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;269;374;471;519&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546170384&lt;/id&gt;
+&lt;name&gt;27&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545711080&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545737480&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;&#27809;&#26377;&#39564;&#25910;&#20154;&#26102;&#20026;true
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+//			println(noder.getName() + @quot;    ======noder.getName====@quot;);
+			if (noder.getName()==(@quot;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#21462;&#28040;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+//						processor += actorrt.getName() + @quot;,@quot;;// &#33719;&#21462;&#23457;&#25209;&#20154;&#22995;&#21517;
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+						println(@quot;====================actorrt.getName()--@gt;@quot;+actorrt.getName());
+//						 processor += actorrt.getActorid() + @quot;,@quot;;//&#33719;&#21462;&#23457;&#25209;&#20154;__ID
+						// processor +=
+						// getUserById(actorrt.getActorid()).getLoginno()+
+						// @quot;,@quot;;//&#33719;&#21462;&#23457;&#25209;&#20154;&#30331;&#24405;&#36134;&#21495;&#21517;
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var role1006 = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1006){
+		role1006 = true;
+	}
+}
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var rtn = false;
+if(_pChecker!=null @amp;@amp; _pChecker==(@quot;@quot;) @amp;@amp; !role1006){
+	rtn = true;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;233;110;485;14&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383546319335&lt;/id&gt;
+&lt;name&gt;16&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545711080&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545750305&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#23457;&#25209;&#29992;&#25143;&#26159;(&#32844;&#33021;&#31649;&#29702;&#20154;&#21592;and&#19981;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;)
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+			if (noder.getName()==(@quot;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#21462;&#28040;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var rtn = false;
+
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1006){
+		rtn = true;
+	}
+}
+
+if(!rtn){
+	var _pChecker = getItemValue(@quot;_pChecker@quot;);
+	var isFactory = false;		//&#39564;&#25910;&#20154;&#26159;&#21542;&#21378;&#39046;&#23548;
+	if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+		var userVO = getUserById(_pChecker);
+		var roles = userVO.getRoles();
+		for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+		   var role = it.next();
+		   if(role.getRoleNo()==(@quot;1010@quot;)){
+			   isFactory = true;
+		   }
+		}
+	}
+
+	if(isFactory){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;195;109;602;24&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383914982459&lt;/id&gt;
+&lt;name&gt;31&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545996612&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383546037792&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#23457;&#25209;&#29992;&#25143;&#26159;(&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;or&#39564;&#25910;&#20154;&#26159;&#21378;&#39046;&#23548;)
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+			if (noder.getName()==(@quot;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+						println(@quot;====================actorrt.getName()--@gt;@quot;+actorrt.getName());
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var rtn = false;
+
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1006){
+		rtn = true;
+	}
+}
+if(!rtn){
+	var _pChecker = getItemValue(@quot;_pChecker@quot;);
+	var isFactory = false;		//&#26159;&#21542;&#21378;&#39046;&#23548;
+	if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+		var userVO = getUserById(_pChecker);
+		var roles = userVO.getRoles();
+		for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+		   var role = it.next();
+		   if(role.getRoleNo()==(@quot;1010@quot;)){
+			   isFactory = true;
+		   }
+		}
+	}
+	if(isFactory){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;205;492;662;539&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1383915003860&lt;/id&gt;
+&lt;name&gt;32&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545291447&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545356464&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#26159;&#32844;&#33021;&#31649;&#29702;&#20027;&#20219;&#26102;true
+var webUser = getWebUser();
+var user = @quot;@quot;;
+//println(@quot;====================33&#36335;&#24452;&#36827;&#20837;&#33050;&#26412;--webUser.getName()--@gt;@quot;+webUser.getName());
+var actorId = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		println(@quot;=====================noders.size()--@gt;@quot;+noders.size());
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+			println(noder.getName() + @quot;    ======noder.getName====@quot;);
+			if (noder.getName()==(@quot;&#35745;&#21010;&#36215;&#33609;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+//						processor += actorrt.getName() + @quot;,@quot;;// &#33719;&#21462;&#23457;&#25209;&#20154;&#22995;&#21517;
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+//							println(@quot;====================actorrt.getName()--@gt;@quot;+actorrt.getName());
+//							break;
+						}
+//						 processor += actorrt.getActorid() + @quot;,@quot;;//&#33719;&#21462;&#23457;&#25209;&#20154;__ID
+						// processor +=
+						// getUserById(actorrt.getActorid()).getLoginno()+
+						// @quot;,@quot;;//&#33719;&#21462;&#23457;&#25209;&#20154;&#30331;&#24405;&#36134;&#21495;&#21517;
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var rtn = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==(@quot;1006@quot;)){
+		rtn = true;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;println(@quot;=======================33&#36335;&#24452; &#25191;&#34892;&#33050;&#26412;@quot;);
+
+var webUser = getWebUser();
+println(@quot;====================33&#36335;&#24452;&#25191;&#34892;&#33050;&#26412;webUser.getName()--@gt;@quot;+webUser.getName());
+/**
+if(webUser.getName()==(@quot;admin@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+			println(noder.getName() + @quot;    ======noder.getName====@quot;);
+			if (noder.getName()==(@quot;&#35745;&#21010;&#36215;&#33609;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+//						processor += actorrt.getName() + @quot;,@quot;;// &#33719;&#21462;&#23457;&#25209;&#20154;&#22995;&#21517;
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+						println(@quot;====================actorrt.getName()--@gt;@quot;+actorrt.getName());
+					}
+				}
+				break;
+			}
+		}
+	}
+	var request = $WEB.getParamsTable().getHttpRequest();
+	request.getSession().setAttribute(@quot;_pAppointApprover@quot;,actorId);  //&#35774;&#32622;session&#20540; 
+}
+**/&lt;/action&gt;
+&lt;pointstack&gt;40;291;274;291&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[//&#24403;&#65288;&#19981;&#26159;&#36229;&#26102;&#33258;&#21160;&#25552;&#20132;and&#25209;&#37327;&#25552;&#20132;&#26410;&#25351;&#23450;&#23457;&#25209;&#20154;&#65289;&#26102;&#36820;&#22238;&#25552;&#31034;&#20449;&#24687;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;true@quot;)){
+	var submitTo = getParameter(@quot;submitTo@quot;);
+//	println(@quot;====================33&#36335;&#24452;&#36865;&#20986;&#26816;&#39564;&#33050;&#26412;submitTo--@gt;@quot;+submitTo);
+	if(submitTo==null || submitTo==(@quot;@quot;)){
+		var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
+		if(_pAppointApprover==null || _pAppointApprover==(@quot;@quot;)){
+			var rtn = @quot;&#35831;&#25351;&#23450;&#23457;&#25209;&#20154;&#65281;@quot;;
+			rtn;
+		}
+	}
+}]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1385001660863&lt;/id&gt;
+&lt;name&gt;33&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545377528&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1385002167707&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;(&#35745;&#21010;&#32423;&#21035;&#20026;&#30563;&#21150;)and(&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#19981;&#26159;&#21378;&#39046;&#23548;and&#19981;&#26159;&#37096;&#38376;&#20027;&#20219;)&#26102;&#20026;true
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+//			println(noder.getName() + @quot;    ======noder.getName====@quot;);
+			if (noder.getName()==(@quot;&#35745;&#21010;&#39564;&#25910;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+//						processor += actorrt.getName() + @quot;,@quot;;// &#33719;&#21462;&#23457;&#25209;&#20154;&#22995;&#21517;
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var _pLevel = getItemValue(@quot;_pLevel@quot;);
+var rtn = false;
+var role1004 = false;
+var role1010 = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1010){
+		role1010 = true;
+	}
+	if(roleNo==1004){
+		role1004 = true;
+	}
+}
+if(_pLevel!=null @amp;@amp; _pLevel==(@quot;&#30563;&#21150;@quot;) @amp;@amp; !role1004 @amp;@amp; !role1010){
+	rtn = true;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;547;235;610;131&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1385002197390&lt;/id&gt;
+&lt;name&gt;15&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1385002167707&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545387305&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;610;131;710;141&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1385002200576&lt;/id&gt;
+&lt;name&gt;&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545377528&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545387305&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false&#65292;&#24403;(&#35745;&#21010;&#32423;&#21035;&#20026;&#30563;&#21150;)and(&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#19981;&#26159;&#21378;&#39046;&#23548;and&#26159;&#37096;&#38376;&#20027;&#20219;)&#26102;&#20026;true
+var webUser = getWebUser();
+var user = @quot;@quot;;
+var isTimeLimit  = getParameter(@quot;TIMELIMIT@quot;);
+if(isTimeLimit!=null @amp;@amp; !isTimeLimit==(@quot;@quot;) @amp;@amp; isTimeLimit==(@quot;true@quot;)){
+	var doc = $CURRDOC.getCurrDoc();
+	var actorId = @quot;@quot;;
+	if (doc.getState() != null) {
+		var noders = doc.getState().getNoderts();
+		for ( var noderit = noders.iterator(); noderit.hasNext();) {
+			var noder = noderit.next();
+//			println(noder.getName() + @quot;    ======noder.getName====@quot;);
+			if (noder.getName()==(@quot;&#35745;&#21010;&#39564;&#25910;@quot;)) {
+				var actors = noder.getActorrts();
+				if (actors != null) {
+					for ( var it = actors.iterator(); it.hasNext();) {
+						var actorrt = it.next();
+//						processor += actorrt.getName() + @quot;,@quot;;// &#33719;&#21462;&#23457;&#25209;&#20154;&#22995;&#21517;
+						if(actorId==(@quot;@quot;)){
+							actorId = actorrt.getActorid();
+//							println(@quot;====================actorrt.getName()--@gt;@quot;+actorrt.getName());
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	user = getUserById(actorId);
+}else{
+	user = webUser;
+}
+var roles = user.getRoles();
+var _pLevel = getItemValue(@quot;_pLevel@quot;);
+var rtn = false;
+var role1004 = false;
+var role1010 = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1010){
+		role1010 = true;
+	}
+	if(roleNo==1004){
+		role1004 = true;
+	}
+}
+if(_pLevel!=null @amp;@amp; _pLevel==(@quot;&#30563;&#21150;@quot;) @amp;@amp; role1004 @amp;@amp; !role1010){
+	rtn = true;
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;547;235;710;141&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1385005468072&lt;/id&gt;
+&lt;name&gt;34&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545356464&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545368976&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;00&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var webUser = getWebUser();
+var _pFactoryLeader = getItemValue(@quot;_pFactoryLeader@quot;);
+if(_pFactoryLeader!=null @amp;@amp; _pFactoryLeader==(@quot;@quot;)){
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_pFactoryLeader@quot;).setValue(webUser.getId());
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;312;195;550;291&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1401884377291&lt;/id&gt;
+&lt;name&gt;7&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545337551&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545368976&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#39564;&#25910;&#20154;&#26159;&#21378;&#39046;&#23548;&#26102;true
+var _pChecker = getItemValue(@quot;_pChecker@quot;);
+var rtn = false;
+if(_pChecker!=null @amp;@amp; !_pChecker==(@quot;@quot;)){
+	var userVO = getUserById(_pChecker);
+	var roles = userVO.getRoles();
+	for(var it = roles.iterator();roles!=null @amp;@amp; it.hasNext();){
+	   var role = it.next();
+	   if(role.getRoleNo()==(@quot;1010@quot;)){
+		   rtn = true;
+	   }
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var webUser = getWebUser();
+var _pFactoryLeader = getItemValue(@quot;_pFactoryLeader@quot;);
+if(_pFactoryLeader!=null @amp;@amp; _pFactoryLeader==(@quot;@quot;)){
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_pFactoryLeader@quot;).setValue(webUser.getId());
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;117;229;550;291&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1401884430691&lt;/id&gt;
+&lt;name&gt;35&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545263538&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545368976&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false,&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#26159;&#21103;&#24635;&#24072;or&#21378;&#39046;&#23548;&#26102;true
+var webUser = getWebUser();
+var roles = webUser.getRoles();
+var rtn = false;
+for(var iter = roles.iterator();iter.hasNext();){
+	var role = iter.next();
+	var roleNo = role.getRoleNo();
+	if(roleNo==1009 || roleNo==1010){
+		rtn = true;
+		break;
+	}
+}
+rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;action&gt;var webUser = getWebUser();
+var _pFactoryLeader = getItemValue(@quot;_pFactoryLeader@quot;);
+if(_pFactoryLeader!=null @amp;@amp; _pFactoryLeader==(@quot;@quot;)){
+	var curDoc = getCurrentDocument();
+	var process = getDocumentProcess();
+	curDoc.findItem(@quot;_pFactoryLeader@quot;).setValue(webUser.getId());
+	process.doUpdate(curDoc);
+}&lt;/action&gt;
+&lt;pointstack&gt;37;343;550;291&lt;/pointstack&gt;
+&lt;EDITMODE_VIEW&gt;00&lt;/EDITMODE_VIEW&gt;
+&lt;EDITMODE_CODE&gt;01&lt;/EDITMODE_CODE&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1401884515556&lt;/id&gt;
+&lt;name&gt;4&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;/cn.myapps.runtime.workflow.element.FlowDiagram&gt;</flow>
+  <billdefiNo>0</billdefiNo>
+</BillDefiVO>

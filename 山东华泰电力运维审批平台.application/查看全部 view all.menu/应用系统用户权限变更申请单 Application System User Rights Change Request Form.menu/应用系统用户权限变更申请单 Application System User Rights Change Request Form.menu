@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ea-6453-7475c67f-acb2-e30f0e22bbe4">
+  <name>应用系统用户权限变更申请单 Application System User Rights Change Request Form</name>
+  <parentId>11e7-ef14-67e8be9c-8f99-af63cc0890b3</parentId>
+  <description>应用系统用户权限变更申请单 Application System User Rights Change Request Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-67e8be9c-8f99-af63cc0890b3</superior>
+  <linkName>应用系统用户权限变更申请单 Application System User Rights Change Request Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67dc1470-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11ea-6453-34c17cca-acb2-e30f0e22bbe4]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>420</orderno>
+</resourceVO>

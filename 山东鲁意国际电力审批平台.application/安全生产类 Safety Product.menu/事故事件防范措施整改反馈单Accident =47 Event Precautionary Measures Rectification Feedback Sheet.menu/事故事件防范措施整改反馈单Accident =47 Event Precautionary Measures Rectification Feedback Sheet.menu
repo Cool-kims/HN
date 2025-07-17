@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef14-ffa88d77-8f99-af63cc0890b3">
+  <name>事故事件防范措施整改反馈单Accident =47 Event Precautionary Measures Rectification Feedback Sheet</name>
+  <parentId>11e7-ef14-ffa88d73-8f99-af63cc0890b3</parentId>
+  <description>事故事件防范措施整改反馈单Accident / Event Precautionary Measures Rectification Feedback Sheet</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-ffa88d73-8f99-af63cc0890b3</superior>
+  <linkName>事故事件防范措施整改反馈单Accident / Event Precautionary Measures Rectification Feedback Sheet</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-ff983997-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef14-ffa9ec9f-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>5</orderno>
+</resourceVO>

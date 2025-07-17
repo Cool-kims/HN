@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11e9-3658-7c4d1899-bdcc-87b7f930abeb">
+      
+    <name>法务人员</name>
+      
+    <parentId>11e7-ef12-415bbbbf-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>155080892819600000</sortId>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>R60d1</roleNo>
+</role>

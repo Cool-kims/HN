@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e7-d66e-4231b5c6-ae95-47caf4f32d12">
+  <name>提交</name>
+  <parentId>__11e7-ef14-67e191fa-8f99-af63cc0890b3</parentId>
+  <type>5</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow>11e7-ef14-67f2f71c-8f99-af63cc0890b3</onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[#include "comm";
+#include "bmfzr";
+var doc=getCurrentDocument();
+//第一节点
+var isFirtNode1 = doc.isFirtNode();
+
+var curuser=getWebUser();
+//本部门专工
+var curzgs=getbmzg();
+//填报人和本部门专工具备修改权限所以需要校验金额，通过后后续流程不再校验金额
+if (isFirtNode1 || (curzgs!=null && curzgs.contains(curuser))){
+	
+	var depts=getItemValueAsString("编制部门"); // 部门
+	var times=getItemValueAsString("需求时间"); // 填表日期
+	
+	var bill="物资单一来源采购申请单";// 单据类型 :
+	var cost=getItemValueAsString("费用科目编号");// 费用金额
+
+	//仅控制费用预算
+	var str = con_mon("费用",depts, times, bill, cost);	
+	str;
+}]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+//println("fstate==="+fstate);
+var booleans=false;
+if(fstate==null){
+	booleans=true;
+}
+booleans;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>3</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-67e191fa-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

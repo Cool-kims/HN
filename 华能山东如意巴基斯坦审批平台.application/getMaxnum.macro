@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="__bkjQAg0PNfcQuLXxmqW">
+  <name>getMaxnum</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <description></description>
+  <content><![CDATA[//获取最大编号
+function maxnumgd(bm, sj) {
+  var l = sj.length + 2;
+  var maxnum = 1;
+  var maxn = 0;
+  var ml = 0;
+  var data1 = createObject("java.util.ArrayList");
+  if (bm != null && bm != '') {
+      var sql1 = "select * from TLK_固定资产下拉菜单 where ITEM_编号='" + bm + "'";
+      var data1 = queryBySQL(sql1);
+  }
+  if (isNotNull(data1) && data1.size() > 0) {
+      for (var it = data1.iterator(); data1 != null && it.hasNext();) {
+          var us = it.next();
+          maxnum = us.getItemValueAsString("编号");
+      }
+  } else if (isNotNull(data1) && data1.size() == 0) {
+      var sql = "select * from TLK_固定资产下拉菜单 where ITEM_编号 like '" + sj + "__' order by ITEM_编号 desc";
+      var datas = queryBySQL(sql);
+      for (var it = datas.iterator(); datas != null && it.hasNext();) {
+          var us = it.next();
+          var num = us.getItemValueAsDouble("编号");
+          if (maxn < num) {
+              maxn = num;
+          }
+      }
+      if (maxn != 0) {
+          maxnum = maxn + 1;
+          var maxstr = "" + maxnum + "";
+          ml = maxstr.length;
+          if (l != ml) {
+              maxnum = "0" + maxnum;
+          }
+      } else if (maxn == 0) {
+          maxnum = sj + "01";
+      }
+  }
+  return maxnum;
+}]]></content>
+  <version>0</version>
+</repositoryVO>

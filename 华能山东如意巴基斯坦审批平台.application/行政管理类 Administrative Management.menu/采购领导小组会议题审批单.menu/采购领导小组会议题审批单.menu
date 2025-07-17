@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-718f-acc90dc4-bc84-75f136ac31b8">
+  <name>采购领导小组会议题审批单</name>
+  <parentId>11e7-ef13-4f497288-8f99-af63cc0890b3</parentId>
+  <description>采购领导小组会议题审批单Procurement Leading Group Meeting Issue Approval Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f497288-8f99-af63cc0890b3</superior>
+  <linkName>采购领导小组会议题审批单Procurement Leading Group Meeting Issue Approval Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3d166e-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-b77d-66e37b2a-9c70-0ba95739f67e]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>512</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

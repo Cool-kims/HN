@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11e8-41f0-55969b92-9769-678d9eb15904">
+      
+    <name>财务会计</name>
+      
+    <parentId>11e7-ef12-74ef29ec-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>152393611186900000</sortId>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>Rc283</roleNo>
+</role>

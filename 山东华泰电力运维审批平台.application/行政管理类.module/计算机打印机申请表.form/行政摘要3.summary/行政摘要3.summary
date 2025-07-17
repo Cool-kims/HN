@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-933a-413b6d8d-8eac-4b89bdea6b09">
+  <name>行政摘要3</name>
+  <parentId>__11e7-ef14-67de366a-8f99-af63cc0890b3</parentId>
+  <title>行政摘要3</title>
+  <type>00</type>
+  <formId>__11e7-ef14-67de366a-8f99-af63cc0890b3</formId>
+  <fieldNames>申请人;申请原因</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

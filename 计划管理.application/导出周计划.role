@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11e9-b9d8-18fb56e0-9c70-0ba95739f67e">
+  <name>导出周计划</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <roleNo>R57de</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>156526733947100000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-7a26-62fa3069-9820-539e9af1e136","type":1,"resId":"11e9-7a26-62fa3069-9820-539e9af1e136"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-7a26-62fa0918-9820-539e9af1e136","type":1,"resId":"11e9-7a26-62fa0918-9820-539e9af1e136"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-7a26-62fa3069-9820-539e9af1e136","type":1,"resId":"11e9-7a26-62fa3069-9820-539e9af1e136"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e9-7a26-62fa0918-9820-539e9af1e136","type":1,"resId":"11e9-7a26-62fa0918-9820-539e9af1e136"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e7-fdf0-34614e5c-8497-93502d158b33">
+  <name>摘要026</name>
+  <parentId>__11e7-ef13-4f3bb6d3-8f99-af63cc0890b3</parentId>
+  <title>摘要026</title>
+  <type>00</type>
+  <formId>__11e7-ef13-4f3bb6d3-8f99-af63cc0890b3</formId>
+  <fieldNames>汇款金额小写;备注</fieldNames>
+  <scope>1</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

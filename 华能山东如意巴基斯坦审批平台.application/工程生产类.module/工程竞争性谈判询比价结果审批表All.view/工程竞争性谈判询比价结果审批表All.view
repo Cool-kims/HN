@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e8-3fa2-eeb59789-9769-678d9eb15904">
+  <name>工程竞争性谈判询比价结果审批表All</name>
+  <parentId>11e7-ef13-4f455447-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2018-04-14T13:19:50.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e8-3957-cf1ad413-94e7-ef330bda161e</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e8-3948-57e0aa6e-94e7-ef330bda161e</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'工程名称',operator:'LIKE',type:'03',match:'工程名称'},{field:'项目预算',operator:'LIKE',type:'03',match:'项目预算'},{field:'费用来源',operator:'LIKE',type:'03',match:'费用来源'},{field:'地点',operator:'LIKE',type:'03',match:'地点'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

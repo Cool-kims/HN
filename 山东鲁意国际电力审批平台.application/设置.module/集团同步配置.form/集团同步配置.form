@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-ff97c449-8f99-af63cc0890b3">
+  <name>集团同步配置</name>
+  <parentId>11e7-ef14-ff979d38-8f99-af63cc0890b3</parentId>
+  <sortId>139601408346800000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table border="1" cellSpacing="1" cellPadding="1" width="782" align="left" style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; width: 782px; height: 228px; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">
+    <caption></caption>
+    <thead>
+        <tr>
+            <th scope="col">序号</th>
+            <th scope="col">名称</th>
+            <th scope="col">值</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">1</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">天气获取方式</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-b67f-1697b70e-bf48-2fde04a45556" name="天气获取方式" value="on" type="radio" layout="horizontal" classname="cn.myapps.runtime.dynaform.form.ejb.RadioField" discript="" filtercondition="" mobile="true" fieldtype="VALUE_TYPE_VARCHAR" module="" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" editmode="01" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" hiddenvalue="" printhiddenvalue="" optionsscript="@quot;从网络自动获取;手动添加@quot;;" optionstext="" optionsvalue="" optionseditmode="01" dialogview="" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">2</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">系统标题</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-b67f-1e6a4759-bf48-2fde04a45556" name="系统标题" value="" size="80" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" mobile="true" fieldtype="VALUE_TYPE_VARCHAR" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" editmode="01" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" hiddenvalue="" printhiddenvalue="" numberpattern="" bordertype="false" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">3</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">公司名称</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-b67f-2737d974-bf48-2fde04a45556" name="公司名称" value="" size="80" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" mobile="true" fieldtype="VALUE_TYPE_VARCHAR" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" editmode="01" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" hiddenvalue="" printhiddenvalue="" numberpattern="" bordertype="false" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">4</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">集团基建PMIS访问1</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-b680-4e9ae5d9-bf48-2fde04a45556" name="PMIS访问1" value="" size="80" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" mobile="true" fieldtype="VALUE_TYPE_VARCHAR" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" editmode="01" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" hiddenvalue="" printhiddenvalue="" numberpattern="" bordertype="false" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">4</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">集团基建PMIS访问2</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid"><input id="11e3-b680-42a27982-bf48-2fde04a45556" name="PMIS访问2" value="" size="80" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" mobile="true" fieldtype="VALUE_TYPE_VARCHAR" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenprintscript="" readonlyscript="" texttype="text" editmode="01" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" hiddenvalue="" printhiddenvalue="" numberpattern="" bordertype="false" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">5</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">本项目对应集团接口</td>
+            <td style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">对应集团分配项目id：<input id="11e3-b680-612ec183-bf48-2fde04a45556" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="集团项目id" value="" size="11" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="text" fieldkeyevent="Tabkey" discript="需要集团分配好之后，获取uniqueid" filtercondition="" fieldType="VALUE_TYPE_VARCHAR" textType="text" numberPattern="" borderType="false" refreshOnChanged="false" calculateOnRefresh="false" editMode="01" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" mobile="true" style="width: 84px" />&nbsp;工程合同权限分类：<input id="11e3-f91e-f2d669d8-8e08-ade42c588385" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="blocport1" value="" size="9" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" fieldType="VALUE_TYPE_VARCHAR" textType="text" numberPattern="" borderType="false" refreshOnChanged="false" calculateOnRefresh="false" editMode="01" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" mobile="true" style="width: 74px" />设备物资管理权限：<input id="11e3-f91f-0fe9cdb3-8e08-ade42c588385" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="blocport2" value="" size="9" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" fieldType="VALUE_TYPE_VARCHAR" textType="text" numberPattern="" borderType="false" refreshOnChanged="false" calculateOnRefresh="false" editMode="01" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" mobile="true" style="width: 73px" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>27</version>
+  <mappingStr><![CDATA[{"formName":"集团同步配置","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

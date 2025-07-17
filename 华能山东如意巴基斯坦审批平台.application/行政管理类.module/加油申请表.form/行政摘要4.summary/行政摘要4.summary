@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-92f8-5bcb12ac-8eac-4b89bdea6b09">
+  <name>行政摘要4</name>
+  <parentId>__11e7-ef13-4f3db2b6-8f99-af63cc0890b3</parentId>
+  <title>行政摘要4</title>
+  <type>00</type>
+  <formId>__11e7-ef13-4f3db2b6-8f99-af63cc0890b3</formId>
+  <fieldNames>车辆号码;车辆类型号</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

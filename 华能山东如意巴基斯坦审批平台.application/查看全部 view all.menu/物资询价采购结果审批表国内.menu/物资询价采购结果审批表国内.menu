@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ea-d2df-c07eb221-b801-85efc0a491e9">
+  <name>物资询价采购结果审批表国内</name>
+  <parentId>11e7-ef13-4f49727a-8f99-af63cc0890b3</parentId>
+  <description>物资询价采购结果审批表国内 Material Inquiry Procurement Approval Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f49727a-8f99-af63cc0890b3</superior>
+  <linkName>物资询价采购结果审批表国内 Material Inquiry Procurement Approval Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef13-4f4cf4c1-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>125</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

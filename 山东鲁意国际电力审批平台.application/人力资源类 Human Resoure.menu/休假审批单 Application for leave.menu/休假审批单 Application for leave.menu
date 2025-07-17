@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef14-ffa88d94-8f99-af63cc0890b3">
+  <name>休假审批单 Application for leave</name>
+  <parentId>11e7-ef14-ffa88d8f-8f99-af63cc0890b3</parentId>
+  <description>休假审批单 Application for leave</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-ffa88d8f-8f99-af63cc0890b3</superior>
+  <linkName>休假审批单 Application for leave</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-ffa335af-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e8-94ba-80a20651-8eac-4b89bdea6b09]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>3</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

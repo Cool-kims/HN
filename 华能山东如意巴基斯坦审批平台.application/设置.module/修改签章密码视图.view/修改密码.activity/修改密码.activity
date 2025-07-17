@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e3-eeed-98b11a1d-abeb-ad0d1ecb7157">
+  <name>修改密码</name>
+  <parentId>11e7-ef13-4f4a0f43-8f99-af63cc0890b3</parentId>
+  <type>1</type>
+  <onActionForm></onActionForm>
+  <onActionView>11e7-ef13-4f4a0f43-8f99-af63cc0890b3</onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[var doc=getCurrentDocument();
+var zh = getItemValue("C_帐号");
+var mm = getItemValueAsString("C_旧密码");
+var xmm = doc.getItemValueAsString("C_新密码");
+if (zh == null || zh.trim().length <= 0){
+	createAlert("帐号不可为空！");
+}
+if (mm == null || mm.trim().length <= 0){
+	createAlert("旧密码不可为空！");
+}
+if (xmm == null || xmm.trim().length <= 0){
+	createAlert("新密码不可为空！");
+}
+println("zh:"+zh);
+println("mm:"+mm);
+println("xmm:"+xmm);
+
+//密码是否通过验证标识位
+var flag = false;
+var w = "";
+if(isNotNull(zh)){
+	w +=" and ITEM_帐号='"+zh+"'";
+}
+
+var sql = "select * from TLK_印签管理表单  where  ITEM_是否公章='是'   and ITEM_是否有效='是'  "+w;
+println("sql:"+sql);
+var query = queryBySQL(sql);
+if(query!=null){
+          var iter  =query.iterator();
+          if(iter != null && iter.hasNext()){
+               doc = iter.next();
+               var rtn = doc.getItemValueAsString("密码"); 
+               if (rtn != null && rtn.trim().length>0){
+			var aa=new Packages.cn.myapps.common.util.Security();
+			var jmm=aa.decryptPassword(rtn);//解密
+			if (jmm !=null && jmm==(mm)){
+			    flag=true;
+			}
+	
+		}  
+          } 
+}
+
+//密码验证通过
+if (flag){
+	//加密新密码 
+        var aa=new Packages.cn.myapps.common.util.Security();
+        var jmxmm=Packages.cn.myapps.common.util.Security.encryptPassword(xmm);//将该字段的值加密
+ 	
+	//组装修改SQL
+	var updateSql = "update TLK_印签管理表单 set ITEM_密码='"+jmxmm+"' where ITEM_帐号='"+zh+"'";
+	try{
+		updateByDSName("oracle",updateSql);
+		println("updateSql:"+updateSql);
+		createAlert("修改密码成功！");	
+	}catch(e){
+		createAlert("修改密码失败！" + e);
+	}
+} else {
+	createAlert("您输入的密码不正确！");
+}]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <stateToShow></stateToShow>
+  <parentView>11e7-ef13-4f4a0f43-8f99-af63cc0890b3</parentView>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

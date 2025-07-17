@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e9-7a26-62f4d915-9820-539e9af1e136">
+  <name>department_assess_test</name>
+  <parentId>11e9-7a26-62f4d911-9820-539e9af1e136</parentId>
+  <description>部门绩效测试</description>
+  <sortId>140203996010100000</sortId>
+  <templatecontext><![CDATA[<p abp="3210">
+<table width="100%" align="center" class="form_table" border="0" cellspacing="1" cellpadding="1" abp="3211">
+    <caption abp="3212">部门奖惩表</caption>
+    <tbody abp="3213">
+        <tr abp="3214">
+            <td width="120" class="td_label" abp="3215">计划编号</td>
+            <td abp="3216"><input name="_pNo" class="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e3-0efa-e4ed81b6-a0a4-df64d61cdd0b" abp="3217" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" fieldkeyevent="Tabkey" bordertype="false" text="text" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" discript="计划编号" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" value="" isdefaultvalue="false" /></td>
+            <td width="120" class="td_label" abp="3218">&nbsp;</td>
+            <td abp="3219">&nbsp;</td>
+        </tr>
+        <tr abp="3220">
+            <td class="td_label" abp="3221">计划标题</td>
+            <td colspan="3" abp="3222"><input name="_pTitle" class="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e3-3470-226d0b7a-9257-15373ee2b333" size="1" abp="3223" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" fieldkeyevent="Tabkey" bordertype="false" text="text" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" discript="计划标题" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" value="" style="width: 680px; height: 22px;" isdefaultvalue="false" /></td>
+        </tr>
+        <tr abp="3224">
+            <td class="td_label" abp="3225">质量标准</td>
+            <td colspan="3" abp="3226"><textarea class="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="11e3-3af6-8d27d374-8426-7b355eda1d73" rows="1" cols="22" abp="3227" fieldtype="VALUE_TYPE_TEXT" bordertype="false" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" validatelibs="" hiddenprintscript="" discript="质量标准" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" style="width: 680px; height: 42px;" name="_pStandard" isdefaultvalue="false"></textarea></td>
+        </tr>
+        <tr abp="3228">
+            <td class="td_label" abp="3229">所属部门</td>
+            <td abp="3230"><select class="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="11e3-422d-ed55c725-89f4-ffe2ceff1059" abp="3231" fieldtype="VALUE_TYPE_VARCHAR" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" type="text" limitbyuser="false" departmentlevel="1" relatedfield="" defaultoptiontype="16" allowempty="true" isdepartmentfield="true" style="width: 153px;" name="_pDepartment" isdefaultvalue="false" discript=""></select></td>
+            <td class="td_label" abp="3232">个人/班组</td>
+            <td abp="3233"><select class="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="11e3-422e-564bbe61-89f4-ffe2ceff1059" abp="3234" fieldtype="VALUE_TYPE_VARCHAR" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" discript="个人/班组" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" optionsscript="@quot;个人;班组@quot;" optionstext="" optionsvalue="" dialogview="" optionseditmode="01" module="" style="width: 153px;" name="_p2Type" isdefaultvalue="false"></select></td>
+        </tr>
+        <tr abp="3235">
+            <td class="td_label" abp="3236">负责单位(班组)</td>
+            <td abp="3237"><select class="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="11e3-422e-fb1d0adf-89f4-ffe2ceff1059" abp="3238" fieldtype="VALUE_TYPE_VARCHAR" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" calculateonrefresh="true" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" type="text" limitbyuser="false" departmentlevel="2" relatedfield="" defaultoptiontype="16" allowempty="true" isdepartmentfield="true" style="width: 153px;" name="_p2Department" isdefaultvalue="false" discript=""></select></td>
+            <td class="td_label" abp="3239">负责人</td>
+            <td abp="3240"><select class="cn.myapps.runtime.dynaform.form.ejb.UserField" id="11e3-4231-3f0c5418-89f4-ffe2ceff1059" abp="3241" fieldtype="VALUE_TYPE_TEXT" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.UserField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" discript="负责人" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" type="text" limitbyuser="false" selectmode="multiSelect" limitsum="10" filterfield="" isuserfield="true" name="_pResponsible" isdefaultvalue="false"></select></td>
+        </tr>
+        <tr abp="3242" name="_pReportTime_hide">
+            <td class="td_label" abp="3243">汇报时间</td>
+            <td abp="3244"><input name="_pReportTime" class="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e3-4232-7f5c255d-89f4-ffe2ceff1059" abp="3245" fieldtype="VALUE_TYPE_DATE" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="readonly" validatelibs="" hiddenprintscript="" discript="汇报时间" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" limit="false" prev_name="" datepattern="YMD" value="" /></td>
+            <td class="td_label" abp="3246">完成时间</td>
+            <td abp="3247"><input name="_pEndTime" class="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e3-4235-138e2748-89f4-ffe2ceff1059" abp="3248" fieldtype="VALUE_TYPE_DATE" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" discript="完成时间" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" limit="false" prev_name="" datepattern="YMD" value="" type="text" isdefaultvalue="false" /></td>
+        </tr>
+        <tr abp="3249">
+            <td class="td_label" abp="3250">验收单位(班组)</td>
+            <td abp="3251"><select class="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="11e3-4235-71b369d0-89f4-ffe2ceff1059" abp="3252" fieldtype="VALUE_TYPE_VARCHAR" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" type="text" limitbyuser="false" departmentlevel="2" relatedfield="" defaultoptiontype="16" allowempty="true" isdepartmentfield="true" style="width: 153px;" name="_pCheckDepartment" isdefaultvalue="false" discript=""></select></td>
+            <td class="td_label" abp="3253">验收人</td>
+            <td abp="3254"><select class="cn.myapps.runtime.dynaform.form.ejb.UserField" id="11e3-4236-320ae9b6-89f4-ffe2ceff1059" abp="3255" fieldtype="VALUE_TYPE_TEXT" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.UserField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" discript="验收人" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" type="text" limitbyuser="false" selectmode="selectOne" limitsum="10" filterfield="" isuserfield="true" name="_pChecker" isdefaultvalue="false"></select></td>
+        </tr>
+        <tr abp="3256" style="display: none;">
+            <td class="td_label" abp="3257">最后考核时间</td>
+            <td abp="3258"><input name="_pLastCheckTime" class="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e3-4b5e-3c12a300-9e60-2fb8180195a0" abp="3259" fieldtype="VALUE_TYPE_DATE" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="readonly" validatelibs="" hiddenprintscript="" discript="最后考核时间" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" limit="false" prev_name="" datepattern="YMD" value="" /></td>
+            <td class="td_label" abp="3260">&nbsp;</td>
+            <td abp="3261">&nbsp;</td>
+        </tr>
+        <tr abp="3262">
+            <td class="td_label" abp="3263">奖惩(元)</td>
+            <td abp="3264"><input name="_pAutoAssess" class="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e3-4a82-d764fbaa-ba70-679dc534e2ac" abp="3265" fieldtype="VALUE_TYPE_NUMBER" numberpattern="####" fieldkeyevent="Tabkey" bordertype="false" text="readonly" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="readonly" validatelibs="" hiddenprintscript="" discript="奖惩(元)" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="" value="" /></td>
+            <td class="td_label" abp="3266">额外奖惩(元)</td>
+            <td abp="3267"><input name="_pExtraAssess" class="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e3-4a82-e9bf782b-ba70-679dc534e2ac" abp="3268" fieldtype="VALUE_TYPE_NUMBER" numberpattern="####" fieldkeyevent="Tabkey" bordertype="false" text="text" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" calculateonrefresh="false" mobile="true" refreshonchanged="true" processdescription="[];[]" editmode="01" validaterule="@amp;#10;@amp;#13;var@nbsp;_pAutoAssess@nbsp;=@nbsp;getItemValueAsInt(@quot;_pAutoAssess@quot;);@amp;#10;@amp;#13;var@nbsp;_pExtraAssess@nbsp;=@nbsp;getItemValueAsInt(@quot;_pExtraAssess@quot;);@amp;#10;@amp;#13;var@nbsp;sql2@nbsp;=@nbsp;@quot;select@nbsp;*@nbsp;from@nbsp;tlk_assess_data@nbsp;where@nbsp;item__pType=@#146;部门@#146;@quot;;@amp;#10;@amp;#13;var@nbsp;datas2@nbsp;=@nbsp;queryByDSName(@quot;JhglDataSource@quot;,@nbsp;sql2);@amp;#10;@amp;#13;if(datas2!=null@nbsp;@amp;@amp;@nbsp;datas2.size()@gt;0){@amp;#10;@amp;#13;	for(var@nbsp;iter2=datas2.iterator();iter2.hasNext();){@amp;#10;@amp;#13;		var@nbsp;data@nbsp;=@nbsp;iter2.next();@amp;#10;@amp;#13;		var@nbsp;tmp@nbsp;=@nbsp;0;@amp;#10;@amp;#13;		if@nbsp;(_pExtraAssess@lt;0)@nbsp;{//惩罚@amp;#10;@amp;#13;			tmp@nbsp;=@nbsp;data.get(@quot;item__pPunishCapping@quot;);@amp;#10;@amp;#13;			if(_pExtraAssess@gt;0@nbsp;||@nbsp;_pExtraAssess@lt;-tmp){@amp;#10;@amp;#13;				var@nbsp;rtn@nbsp;=@nbsp;@quot;额外奖惩金额只能在@#146;-@quot;+tmp+@quot;@#146;到@#146;0@#146;之间！@quot;;@amp;#10;@amp;#13;				rtn;@amp;#10;@amp;#13;			}@amp;#10;@amp;#13;		}else@nbsp;{//奖励@amp;#10;@amp;#13;			tmp@nbsp;=@nbsp;data.get(@quot;item__pAwardCapping@quot;);@amp;#10;@amp;#13;			if(_pExtraAssess@lt;0@nbsp;||@nbsp;_pExtraAssess@gt;tmp){@amp;#10;@amp;#13;				var@nbsp;rtn@nbsp;=@nbsp;@quot;额外奖惩金额只能在@#146;0@#146;到@#146;@quot;+tmp+@quot;@#146;之间！@quot;;@amp;#10;@amp;#13;				rtn;@amp;#10;@amp;#13;			}@amp;#10;@amp;#13;		}@amp;#10;@amp;#13;	}@amp;#10;@amp;#13;}" texttype="text" validatelibs="" hiddenprintscript="" discript="额外奖惩(元)" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="var@nbsp;stateLabel@nbsp;=@nbsp;getStateLabel();@amp;#10;@amp;#13;if(stateLabel!=null@nbsp;@amp;@amp;@nbsp;stateLabel==(@quot;负责人(班组)确认@quot;)){@amp;#10;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;var@nbsp;rtn@nbsp;=@nbsp;true;@amp;#10;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;rtn;@amp;#10;@amp;#13;}" value="" /><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e3-ed49-3abc6f21-8931-197da320cc28" text="hidden" name="_pExtraAssessOldVal" texttype="hidden" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" bordertype="false" discript="额外奖惩在上一流程节点的值" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="##" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /></td>
+        </tr>
+        <tr abp="3269" name="_pAssessTotalName">
+            <td class="td_label" abp="3270">奖惩小计(元)</td>
+            <td abp="3271"><input name="_pAssessTotal" class="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e3-4a82-f90c186c-ba70-679dc534e2ac" abp="3272" fieldtype="VALUE_TYPE_NUMBER" numberpattern="####" fieldkeyevent="Tabkey" bordertype="false" text="readonly" valuescript="var@nbsp;_pAutoAssess@nbsp;=@nbsp;getItemValueAsInt(@quot;_pAutoAssess@quot;);@amp;#10;@amp;#13;var@nbsp;_pExtraAssess@nbsp;=@nbsp;getItemValueAsInt(@quot;_pExtraAssess@quot;);@amp;#10;@amp;#13;var@nbsp;val@nbsp;=@nbsp;_pAutoAssess*_pExtraAssess;@amp;#10;@amp;#13;val;" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" calculateonrefresh="true" mobile="true" refreshonchanged="false" processdescription="[{@quot;text@quot;:@#146;_pAutoAssess@#146;,@quot;value@quot;:@#146;VALUE_TYPE_NUMBER@#146;},{@quot;text@quot;:@#146;_pExtraAssess@#146;,@quot;value@quot;:@#146;VALUE_TYPE_NUMBER@#146;}];[_pAutoAssess+_pExtraAssess]" editmode="00" validaterule="" texttype="readonly" validatelibs="" hiddenprintscript="" discript="奖惩小计(元)" filtercondition="var doc= $CURRDOC.getCurrDoc();
+            (doc.getItemValueAsDouble('_pAutoAssess'))+(doc.getItemValueAsDouble('_pExtraAssess'));" hiddenvalue="" printhiddenvalue="" readonlyscript="var@nbsp;stateLabel@nbsp;=@nbsp;getStateLabel();@amp;#10;@amp;#13;if(stateLabel!=null@nbsp;@amp;@amp;@nbsp;(stateLabel==(@quot;验收人审核@quot;)@nbsp;||@nbsp;stateLabel==(@quot;部门分管主任审核@quot;)@nbsp;@amp;#10;@amp;#13;	||@nbsp;stateLabel==(@quot;部门主任审批@quot;))){@amp;#10;@amp;#13;	var@nbsp;rtn@nbsp;=@nbsp;true;@amp;#10;@amp;#13;	rtn;@amp;#10;@amp;#13;}" value="" /></td>
+            <td class="td_label" abp="3273">&nbsp;</td>
+            <td abp="3274">&nbsp;</td>
+        </tr>
+        <tr abp="3275" name="_pResponsibleOpinionName">
+            <td class="td_label" abp="3276">负责人(班组)意见反馈</td>
+            <td colspan="3" abp="3277"><textarea class="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="11e3-4a83-0886cd8d-ba70-679dc534e2ac" cols="16" abp="3278" fieldtype="VALUE_TYPE_TEXT" bordertype="false" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" validatelibs="" hiddenprintscript="" discript="负责人(班组)意见反馈" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="var@nbsp;stateLabel@nbsp;=@nbsp;getStateLabel();@amp;#10;@amp;#13;if(stateLabel!=null@nbsp;@amp;@amp;@nbsp;(stateLabel==(@quot;验收人审核@quot;)@nbsp;||@nbsp;stateLabel==(@quot;部门分管主任审核@quot;)@nbsp;@amp;#10;@amp;#13;	||@nbsp;stateLabel==(@quot;部门主任审批@quot;))){@amp;#10;@amp;#13;	var@nbsp;rtn@nbsp;=@nbsp;true;@amp;#10;@amp;#13;	rtn;@amp;#10;@amp;#13;}" style="width: 762px; height: 36px;" name="_pResponsibleOpinion"></textarea></td>
+        </tr>
+        <tr abp="3279" name="_pCheckerOpinionName">
+            <td class="td_label" abp="3280">验收人奖惩意见</td>
+            <td colspan="3" abp="3281"><textarea class="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="11e3-4a83-6c889b71-ba70-679dc534e2ac" abp="3282" fieldtype="VALUE_TYPE_TEXT" bordertype="false" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" validatelibs="" hiddenprintscript="" discript="验收人奖惩意见" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="var@nbsp;stateLabel@nbsp;=@nbsp;getStateLabel();@amp;#10;@amp;#13;if(stateLabel!=null@nbsp;@amp;@amp;@nbsp;(stateLabel==(@quot;部门分管主任审核@quot;)@nbsp;@amp;#10;@amp;#13;	||@nbsp;stateLabel==(@quot;部门主任审批@quot;)@nbsp;||@nbsp;stateLabel==(@quot;结束@quot;))){@amp;#10;@amp;#13;	var@nbsp;rtn@nbsp;=@nbsp;true;@amp;#10;@amp;#13;	rtn;@amp;#10;@amp;#13;}" style="width: 762px; height: 36px;" name="_pCheckerOpinion"></textarea></td>
+        </tr>
+        <tr abp="3283" name="_pDeputyDirectorOpinionName">
+            <td class="td_label" abp="3284">部门副主任奖惩意见</td>
+            <td colspan="3" abp="3285"><textarea class="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="11e3-4a83-79155872-ba70-679dc534e2ac" abp="3286" fieldtype="VALUE_TYPE_TEXT" bordertype="false" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" validatelibs="" hiddenprintscript="" discript="部门副主任奖惩意见" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="var@nbsp;stateLabel@nbsp;=@nbsp;getStateLabel();@amp;#10;@amp;#13;if(stateLabel!=null@nbsp;@amp;@amp;@nbsp;(stateLabel==(@quot;部门主任审批@quot;)@nbsp;||@nbsp;stateLabel==(@quot;结束@quot;))){@amp;#10;@amp;#13;	var@nbsp;rtn@nbsp;=@nbsp;true;@amp;#10;@amp;#13;	rtn;@amp;#10;@amp;#13;}" style="width: 762px; height: 36px;" name="_pDeputyDirectorOpinion"></textarea></td>
+        </tr>
+        <tr abp="3287" name="_pDirectorOpinionName">
+            <td class="td_label" abp="3288">部门主任奖惩意见</td>
+            <td colspan="3" abp="3289"><textarea class="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="11e3-4a83-82a1a6b3-ba70-679dc534e2ac" abp="3290" fieldtype="VALUE_TYPE_TEXT" bordertype="false" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" validatelibs="" hiddenprintscript="" discript="部门主任奖惩意见" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="var@nbsp;stateLabel@nbsp;=@nbsp;getStateLabel();@amp;#10;@amp;#13;if(stateLabel!=null@nbsp;@amp;@amp;@nbsp;stateLabel==(@quot;结束@quot;)){@amp;#10;@amp;#13;	var@nbsp;rtn@nbsp;=@nbsp;true;@amp;#10;@amp;#13;	rtn;@amp;#10;@amp;#13;}" style="width: 762px; height: 36px;" name="_pDirectorOpinion"></textarea></td>
+        </tr>
+        <tr abp="3291" name="_pDirectorOpinionName">
+            <td class="td_label" abp="3292">奖惩备注</td>
+            <td colspan="3" abp="3293"><textarea class="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="11e3-5cea-7f1f30ea-9285-5b2c78067386" abp="3294" fieldtype="VALUE_TYPE_TEXT" bordertype="false" valuescript="" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" calculateonrefresh="false" mobile="true" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" validatelibs="" hiddenprintscript="" discript="奖惩备注" filtercondition="" hiddenvalue="" printhiddenvalue="" readonlyscript="true" style="width: 762px; height: 36px;" name="_pRemark"></textarea></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p abp="3295">
+<table width="100%" align="center" class="form_table" id="approval_history" border="0" cellspacing="1" cellpadding="1" abp="3296">
+    <tbody abp="3297">
+        <tr abp="3298">
+            <td class="td_label" abp="3299">&nbsp;审批历史：</td>
+        </tr>
+        <tr abp="3300">
+            <td abp="3301">&nbsp;<img class="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e3-13a0-3baaa1d2-954a-1b879b4b7440" src="http://localhost:8080/obpm/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" abp="3302" valuescript="#include@nbsp;@quot;表单函数@quot;;@amp;#10;@amp;#13;testhis();" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" calculateonrefresh="true"  name="QZf0b764fc4"/></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p abp="3303"><img class="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e3-423a-bbbd7982-89f4-ffe2ceff1059" src="http://localhost:8080/obpm/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" abp="3304" valuescript="#include@nbsp;@quot;表单函数@quot;;@amp;#10;@amp;#13;thisStateLabel();" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" calculateonrefresh="true"  name="QZ2863eb9d7"/></p>]]></templatecontext>
+  <type>1</type>
+  <styleId>11e9-7a26-62f43cbf-9820-539e9af1e136</styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>7</version>
+  <mappingStr><![CDATA[{"formName":"department_assess_test","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

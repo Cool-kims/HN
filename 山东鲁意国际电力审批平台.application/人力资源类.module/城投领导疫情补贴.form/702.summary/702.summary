@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ed-0cc9-81dd09f8-9b1f-ed35ebb0a0b2">
+  <name>702</name>
+  <parentId>__11ed-0cc8-9ef5e1e3-9b1f-ed35ebb0a0b2</parentId>
+  <title>702</title>
+  <type>00</type>
+  <formId>__11ed-0cc8-9ef5e1e3-9b1f-ed35ebb0a0b2</formId>
+  <fieldNames>编号;编制日期</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<impMappingConfigVO id="11e7-ef14-67d7f574-8f99-af63cc0890b3">
+  <name>印签管理excel</name>
+  <parentId>11e7-ef12-0db9f5b2-8f99-af63cc0890b3</parentId>
+  <xml><![CDATA[<cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>
+<flowstatus>16</flowstatus>
+<flowpath></flowpath>
+<deleteMSG></deleteMSG>
+<TOP_ALIGNMENT>0.0</TOP_ALIGNMENT>
+<CENTER_ALIGNMENT>0.5</CENTER_ALIGNMENT>
+<BOTTOM_ALIGNMENT>1.0</BOTTOM_ALIGNMENT>
+<LEFT_ALIGNMENT>0.0</LEFT_ALIGNMENT>
+<RIGHT_ALIGNMENT>1.0</RIGHT_ALIGNMENT>
+<width>1192</width>
+<height>548</height>
+<PROPERTIES>4</PROPERTIES>
+<SOMEBITS>8</SOMEBITS>
+<FRAMEBITS>16</FRAMEBITS>
+<ALLBITS>32</ALLBITS>
+<ERROR>64</ERROR>
+<ABORT>128</ABORT>
+<needRollback>rollback</needRollback>
+<cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<formName>印签管理表单</formName>
+<x>110</x>
+<y>32</y>
+<scale>0</scale>
+<id>1514520120019</id>
+<name>sheet1</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>名称</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>100</x>
+<y>100</y>
+<scale>0</scale>
+<id>1514520135511</id>
+<name>名称</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+</cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>]]></xml>
+  <templatePath>/uploads/exceltemplate/印签管理011.xls</templatePath>
+</impMappingConfigVO>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e3-4786-2fcf20b4-a5dc-830f085bb312">
+  <name>导入Excel</name>
+  <parentId>11e9-7a26-62fb4154-9820-539e9af1e136</parentId>
+  <type>27</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[(function(){
+var users=getWebUser();
+var flowid = "11e9-7a26-62fe4ee0-9820-539e9af1e136";	//流程id
+var sql = "select * from tlk_plant_plan where (statelabel is null or statelabel = '') and item__pType='年度'";
+var docs = queryBySQL(sql);
+if(docs!=null && docs.size()>0){
+println("if------>");
+	for(var it = docs.iterator();it.hasNext();){
+println("for-------->");
+	    var doc = it.next();
+doc.setAuthorId(users.getId());
+		var process = getDocumentProcess();
+		//var params =getParamsTable() || createParamsTable();
+	    var params = createParamsTable();               
+	    params.setParameter("_flowid",flowid);         
+	    process.doStartFlowOrUpdate(doc,params,users);
+	}
+}
+})()]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>4</orderno>
+  <stateToShow></stateToShow>
+  <parentView>11e9-7a26-62fb4154-9820-539e9af1e136</parentView>
+  <impmappingconfigid>11e9-7a26-62f43cbb-9820-539e9af1e136</impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

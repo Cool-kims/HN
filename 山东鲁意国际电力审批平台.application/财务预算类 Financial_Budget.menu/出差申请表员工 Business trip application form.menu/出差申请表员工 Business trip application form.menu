@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e8-5e74-fd84dc51-b989-097caeda21f3">
+  <name>出差申请表员工 Business trip application form</name>
+  <parentId>11e7-ef14-ffa86636-8f99-af63cc0890b3</parentId>
+  <description>出差申请表员工 Business trip application form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-ffa86636-8f99-af63cc0890b3</superior>
+  <linkName>出差申请表员工 Business trip application form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-ff999939-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e8-8686-077026c5-8eac-4b89bdea6b09]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>5</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

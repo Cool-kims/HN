@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TreeView id="11e8-37c1-da65cb70-94e7-ef330bda161e">
+  <name>费用科目控制_财务All</name>
+  <parentId>11e7-ef13-4f38d164-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>false</pagination>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2019-05-13T23:41:43.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef13-4f3945a9-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <sqlFilterScript><![CDATA[var sql = "select * from  TLK_费用科目控制  where ITEM_编号 like '02%'  order by ITEM_编号";
+
+sql;]]></sqlFilterScript>
+  <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'00',match:'01%'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+  <innerType>FORM</innerType>
+</TreeView>

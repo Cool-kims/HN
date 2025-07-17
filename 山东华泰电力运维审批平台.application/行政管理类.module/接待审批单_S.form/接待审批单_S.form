@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-67dcfddb-8f99-af63cc0890b3">
+  <name>接待审批单_S</name>
+  <parentId>11e7-ef14-67dc1470-8f99-af63cc0890b3</parentId>
+  <sortId>145619332221700000</sortId>
+  <templatecontext><![CDATA[<script>
+jQuery(document).ready(function(){
+        setTimeout(function(){
+                jQuery("div.changeColor_red").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#FF0000");
+                });
+  jQuery("div.changeColor_blue").each(function(){
+                                       jQuery(this).parents("tr").find("td").find("a").css("color","#111FEE");
+                                                        });
+  jQuery("div.changeColor_green").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#408A10");
+                });
+  jQuery("div.changeColor_black").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#000000");
+                });
+        },300);
+});
+</script>
+<table height="62" cellspacing="1" cellpadding="1" width="731" border="0" style="border-top: medium none; height: 62px; border-right: medium none; width: 731px; border-bottom: medium none; border-left: medium none">
+    <tbody>
+        <tr>
+            <td nowrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">来宾单位：</td>
+            <td colspan="3" style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-e4e4-598039c3-8038-491baf11ff74" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="来宾单位" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" discript="" filtercondition="" text="text" fieldkeyevent="Tabkey" processdescription="[];[]" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" valuescript="" /></td>
+            <td style="text-align: right">日期：</td>
+            <td><input id="11e5-d9ca-4fd33146-bca3-1787d71be9d4" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="日期起" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" discript="" fieldtype="VALUE_TYPE_DATE" filtercondition="" processdescription="[];[]" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" valuescript="" limit="false" datepattern="YMD" prev_name="" type="text" readonlyshowvalonly="true" refreshmode="0" refreshfields="" />-<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e8-63ba-3966b899-9dd9-7742dbd80144" type="text" fieldtype="VALUE_TYPE_DATE" name="日期止" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" /></td>
+        </tr>
+        <tr>
+            <td nowrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">
+            <p>编制人：</p>
+            </td>
+            <td colspan="3" style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-ba87-0d63496a-be1b-f344f04940f3" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="编制人" hiddenscript="" readonlyscript="" refreshonchanged="false" calculateonrefresh="false" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" valuescript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" validatelibs="" validaterule="" discript="" fieldtype="VALUE_TYPE_VARCHAR" filtercondition="" text="text" fieldkeyevent="Tabkey" bordertype="false" numberpattern="" /></td>
+            <td nowrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">编制日期：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-d92d-7fce24e7-bca3-1787d71be9d4" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="编制日期" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" discript="" fieldtype="VALUE_TYPE_DATE" filtercondition="" processdescription="[];[]" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" valuescript="" limit="false" datepattern="YMD" prev_name="" /></td>
+        </tr>
+    </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" width="694" border="1" style="border-top: #b4ccee 1px solid; height: 20px; border-right: #b4ccee 1px solid; width: 694px; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">
+    <tbody>
+        <tr>
+            <td bgcolor="#000000" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;&nbsp;</td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;：新增</td>
+            <td bgcolor="#0000ff" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;&nbsp;</td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：审批中&nbsp;</td>
+            <td bgcolor="#408a10" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;</td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：已批准</td>
+            <td bgcolor="#ff0000" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;</td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：作废</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>29</version>
+  <mappingStr><![CDATA[{"formName":"接待审批单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

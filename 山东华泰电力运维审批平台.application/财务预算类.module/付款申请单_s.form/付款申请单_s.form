@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e8-3025-1935f5cb-94e7-ef330bda161e">
+  <name>付款申请单_s</name>
+  <parentId>11e7-ef14-67d9ca67-8f99-af63cc0890b3</parentId>
+  <sortId>152197965296900000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table cellspacing="1" cellpadding="1" width="731" border="0">
+    <tbody>
+        <tr>
+            <td nowrap="noWrap" style="text-align: left;" colspan="6">编号：<input id="11e8-3025-178d75e1-94e7-ef330bda161e" value="" name="C_编号" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" numberpattern="" bordertype="false" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" class="cn.myapps.runtime.dynaform.form.ejb.InputField" />&nbsp; &nbsp; &nbsp; 合同名称：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-3025-178e6042-94e7-ef330bda161e" text="text" name="C_合同名称" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" />&nbsp; 编制人：<input id="11e8-3025-178f4aa3-94e7-ef330bda161e" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="C_编制人" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" editmode="01" validatelibs="" processdescription="[];[]" numberpattern="" isdefaultvalue="false" valuescript="" validaterule="" bordertype="false" texttype="text" /></td>
+        </tr>
+        <tr>
+            <td nowrap="noWrap" style="text-align: right;" colspan="6">
+            <p style="text-align: left;">部门：<select classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="11e8-3ca8-cee5d0f0-94e7-ef330bda161e" type="text" name="部门选择" refreshonchanged="true" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="hidden" limitbyuser="false" departmentlevel="1" relatedfield="" isdepartmentfield="true" defaultoptiontype="16" allowempty="true" discript="" filtercondition="" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01"></select><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e8-3ca8-ede01cde-94e7-ef330bda161e" text="text" name="编制部门" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="var@nbsp;value1@nbsp;;@amp;#13;@amp;#13;@nbsp;@nbsp;var@nbsp;deptid@nbsp;=getItemValueAsString(@quot;部门选择@quot;);@amp;#13;&#9;var@nbsp;depprocess=getDepartmentProcess();@amp;#13;&#9;var@nbsp;dept=depprocess.doView(deptid);//deptid为部门ID@nbsp;@nbsp;//该句是根据部门id拿到部门对象@amp;#13;&#9;if@nbsp;(dept@nbsp;!=@nbsp;null)@nbsp;{@amp;#13;&#9;&#9;value1@nbsp;=@nbsp;dept.getName();@amp;#13;&#9;}else{@amp;#13;&#9;value1=@#146;@#146;;@amp;#13;&#9;}@amp;#13;@amp;#13;value1;" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="00" refreshmode="0" refreshfields="" />&nbsp; &nbsp; &nbsp;<span style="text-align: right;">编制日期：</span><input id="11e8-3025-17900df4-94e7-ef330bda161e" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="C_编制日期" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" fieldtype="VALUE_TYPE_DATE" limit="false" datepattern="YMD" prev_name="" type="text" /><span style="text-align: right;">-</span><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e8-3025-17911f65-94e7-ef330bda161e" type="text" fieldtype="VALUE_TYPE_DATE" name="结束日期" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" /></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>8</version>
+  <mappingStr><![CDATA[{"formName":"付款申请单_s","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

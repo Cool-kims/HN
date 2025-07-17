@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e9-59e8-5e96178e-9daa-bf7ae5f506d2">
+  <name>摘要220</name>
+  <parentId>__11e9-59b1-7b74b408-9daa-bf7ae5f506d2</parentId>
+  <title>摘要220</title>
+  <type>00</type>
+  <formId>__11e9-59b1-7b74b408-9daa-bf7ae5f506d2</formId>
+  <fieldNames>合同名称;合同总额</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

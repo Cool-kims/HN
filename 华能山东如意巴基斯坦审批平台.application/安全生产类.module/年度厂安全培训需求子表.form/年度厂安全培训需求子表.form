@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef13-4f39e1f8-8f99-af63cc0890b3">
+  <name>年度厂安全培训需求子表</name>
+  <parentId>11e7-ef13-4f396cc3-8f99-af63cc0890b3</parentId>
+  <sortId>148077717741800000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table width="600" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">培训项目：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e6-b969-34683cf3-80f3-a13ff81de2a8" text="text" name="培训项目" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);">培训内容：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e6-b969-42ed95dd-80f3-a13ff81de2a8" text="text" name="培训内容" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /><img src="plugins/attachmentuploadfield/attachment.gif" classname="cn.myapps.runtime.dynaform.form.ejb.AttachmentUploadField" id="11e6-b969-5572a4ce-80f3-a13ff81de2a8" type="attachmentupload" fieldtype="VALUE_TYPE_TEXT" name="内容附件" validaterule="" validatelibs="" limitsize="" opentype="download" limitnumber="1" refreshonchanged="false" discript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="var booleans=true;
+            var bzr=getItemValueAsString(&quot;编制人&quot;);
+            var dlr=getWebUser().getName();
+            if(dlr==(bzr)){
+            booleans=false;
+            }
+            booleans;" filepattern="00" filecatalog="" filetype="00" customizetype="" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">培训对象：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e6-b969-620afac8-80f3-a13ff81de2a8" text="text" name="培训对象" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);">培训形式：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e6-b969-6d517b62-80f3-a13ff81de2a8" text="text" name="培训形式" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);">培训时间：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="11e6-b969-802805fc-80f3-a13ff81de2a8" type="text" fieldtype="VALUE_TYPE_DATE" name="培训时间" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD_HM" processdescription="[];[]" validatelibs="" editmode="01" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);">责任部门：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e6-b969-90b22f96-80f3-a13ff81de2a8" text="text" name="责任部门" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" bordertype="false" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" /></td>
+        </tr>
+    </tbody>
+</table>]]></templatecontext>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>7</version>
+  <mappingStr><![CDATA[{"formName":"年度厂安全培训需求子表","tableName":"","columnMappings":[],"excelMapping":"{'excelDocInfo':{}}"}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e7-c361-d495caa9-9051-454adfbb5217">
+  <name>付款申请单</name>
+  <parentId>__11e7-ef14-ff9a83a7-8f99-af63cc0890b3</parentId>
+  <type>43</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[true]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>5</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-ff9a83a7-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[(function(){
+	var doc = getCurrentDocument();
+	var formid="__11e7-ef14-ff9f65dd-8f99-af63cc0890b3";
+	var domainid="11e7-93dc-0bfbf8af-a05d-399d6b234c98";
+	var application = getApplication();
+	var docid = doc.getId();
+	var activity_name=doc.getItemValueAsString("activity_name");
+	var activity_id=doc.getId();
+     var sql="select * from TLK_付款申请表 where ITEM_SHENQINGDANID= '"+docid+"' ";
+	var datas=findBySQL(sql);
+	var request = $WEB.getParamsTable().getHttpRequest();//获取当前request
+	var url1="http://"+request.getServerName()+":"+request.getServerPort();
+	if(datas!=null){
+		var fuhuidanid=datas.getId();	url=url1+getContextPath()+"/portal/dynaform/document/view.action?_docid="+fuhuidanid+"&_formid="+formid+"&isSubDoc=true&_currpage=1&_pagelines=2147483647&_rowcount=1&domain="+domainid+"&application="+application+"&message=&isedit=&ApplicationID="+application+"&item_fuhuidanid="+docid+"&treedocid=&_openType=1&isinner=&_fieldid=11e7-ad84-9b941130-9f33-cf360b624b91&isRelate=true&_viewid=11e7-ef14-ffaa61d9-8f99-af63cc0890b3&divid=11e7-ad84-9b941130-9f33-cf360b624b91_divid&_sortCol=&_orderby=&_sortStatus=&_isSubDoc=true&_resourceid=&signatureExist=false&_selectsText=&_isJump=1";
+	}else{
+	   url = url1+getContextPath()+"/portal/dynaform/document/newWithPermission.action?_formid="+formid+"&_isJump=1&application="+application+"&budget="+docid+"&_activity_name="+activity_name+"&_fuhuidanid="+activity_id;
+	}
+	return url;
+	})()]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[]]]></dispatcherParams>
+  <jumpMode>1</jumpMode>
+  <jumpActOpenType>2</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

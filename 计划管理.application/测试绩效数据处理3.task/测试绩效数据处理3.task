@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<task id="11e9-7a26-62fa309d-9820-539e9af1e136">
+  <name>测试绩效数据处理3</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <type>1</type>
+  <runningTime class="sql-date">2015-01-12T14:56:30.000+08:00</runningTime>
+  <interval>1</interval>
+  <period>0</period>
+  <runtimes>1</runtimes>
+  <taskScript><![CDATA[//]]></taskScript>
+  <modifyTime class="sql-date">2019-05-27T18:41:28.000+08:00</modifyTime>
+  <creator>admin</creator>
+  <creatorid>11e3-3346-b2e228ff-8d05-175e9baadec4</creatorid>
+  <totalRuntimes>61</totalRuntimes>
+  <state>0</state>
+  <startupType>2</startupType>
+  <dayOfMonth>1</dayOfMonth>
+  <repeatTimes>0</repeatTimes>
+  <frequency>0</frequency>
+  <executedCount>0</executedCount>
+</task>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-ff9d69f8-8f99-af63cc0890b3">
+  <name>请假单统计_S</name>
+  <parentId>11e7-ef14-ff9be342-8f99-af63cc0890b3</parentId>
+  <sortId>145741454647000000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function(){
+        setTimeout(function(){
+                jQuery("div.changeColor_red").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#FF0000");
+                });
+  jQuery("div.changeColor_blue").each(function(){
+                                       jQuery(this).parents("tr").find("td").find("a").css("color","#111FEE");
+                                                        });
+  jQuery("div.changeColor_green").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#408A10");
+                });
+  jQuery("div.changeColor_black").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#000000");
+                });
+        },300);
+});
+</script>
+<table height="62" cellSpacing="1" cellPadding="1" width="831" border="0" style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none">
+    <tbody>
+        <tr>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">
+            <p>部门：</p>
+            </td>
+            <td colSpan="3" style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-daa8-9bd55bc7-afd0-717bed8aa98b" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="部门" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" discript="" filtercondition="" text="text" fieldkeyevent="Tabkey" processDescription="[];[]" borderType="false" numberPattern="" fieldType="VALUE_TYPE_VARCHAR" validateRule="" validateLibs="" isDefaultValue="false" editMode="01" textType="text" readonlyScript="" printHiddenValue="" hiddenPrintScript="" hiddenValue="" calculateOnRefresh="false" refreshOnChanged="false" hiddenScript="" valueScript="" /></td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">
+            <p>请假日期：</p>
+            </td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-e4ed-db46cb7f-8038-491baf11ff74" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="1" value="" name="请假日期起" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" discript="" fieldtype="VALUE_TYPE_DATE" filtercondition="" processDescription="[];[]" validateRule="" validateLibs="" isDefaultValue="false" editMode="01" textType="text" readonlyScript="" printHiddenValue="" hiddenPrintScript="" hiddenValue="" calculateOnRefresh="false" refreshOnChanged="false" hiddenScript="" valueScript="" limit="false" datePattern="YMD" prev_Name="" style=" width: 81px" />~<input id="11e5-e4ed-e5d93f6e-8038-491baf11ff74" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="1" value="" name="请假日期止" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" discript="" fieldtype="VALUE_TYPE_DATE" filtercondition="" processDescription="[];[]" validateRule="" validateLibs="" isDefaultValue="false" editMode="01" textType="text" readonlyScript="" printHiddenValue="" hiddenPrintScript="" hiddenValue="" calculateOnRefresh="false" refreshOnChanged="false" hiddenScript="" valueScript="" limit="false" datePattern="YMD" prev_Name="" style=" width: 85px" /></td>
+            <td>
+            <p>请假人姓名：</p>
+            </td>
+            <td><input id="11e5-d9ca-5b24398d-bca3-1787d71be9d4" class="cn.myapps.runtime.dynaform.form.ejb.InputField" size="1" value="" name="姓名" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" discript="" filtercondition="" text="text" fieldkeyevent="Tabkey" processDescription="[];[]" borderType="false" numberPattern="" fieldType="VALUE_TYPE_VARCHAR" validateRule="" validateLibs="" isDefaultValue="false" editMode="01" textType="text" readonlyScript="" printHiddenValue="" hiddenPrintScript="" hiddenValue="" calculateOnRefresh="false" refreshOnChanged="false" hiddenScript="" valueScript="" style=" width: 92px" /></td>
+        </tr>
+        <tr>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">请假类别：</td>
+            <td colSpan="7" style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-e4ee-583a401f-8038-491baf11ff74" class="cn.myapps.runtime.dynaform.form.ejb.CheckboxField" type="checkbox" value="on" name="请假类别" classname="cn.myapps.runtime.dynaform.form.ejb.CheckboxField" mobile="true" discript="" fieldtype="VALUE_TYPE_TEXT" filtercondition="" module="" processDescription="[];[]" validateRule="" validateLibs="" isDefaultValue="false" editMode="01" textType="text" readonlyScript="" printHiddenValue="" hiddenPrintScript="" hiddenValue="" calculateOnRefresh="false" refreshOnChanged="false" hiddenScript="" valueScript="" layout="horizontal" optionsEditMode="01" dialogView="" optionsValue="" optionsText="" optionsScript="@quot;公假（产假、婚假、丧假、护理假）;事假;病假（一天以上需医生证明）;探亲假;其他（请说明）;@quot;;" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>17</version>
+  <mappingStr><![CDATA[{"formName":"请假单统计_S","tableName":"","columnMappings":[],"excelMapping":"{'excelDocInfo':{}}"}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

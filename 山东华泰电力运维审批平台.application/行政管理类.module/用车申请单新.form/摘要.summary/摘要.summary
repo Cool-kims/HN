@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-1195-b598552c-8f0a-d7f5e550fac4">
+  <name>摘要</name>
+  <parentId>__11ea-118e-de2dc0a5-8f0a-d7f5e550fac4</parentId>
+  <title>摘要</title>
+  <type>00</type>
+  <formId>__11ea-118e-de2dc0a5-8f0a-d7f5e550fac4</formId>
+  <fieldNames>申请人;用车事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

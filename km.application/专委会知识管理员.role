@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="KMCOMMITTEEADMINROLEID">
+  <name>专委会知识管理员</name>
+  <parentId>km</parentId>
+  <roleNo>0020</roleNo>
+  <status>1</status>
+  <orderNo>0</orderNo>
+</role>

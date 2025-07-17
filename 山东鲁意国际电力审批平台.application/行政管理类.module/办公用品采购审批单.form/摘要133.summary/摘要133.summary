@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9353-d61db615-8eac-4b89bdea6b09">
+  <name>摘要133</name>
+  <parentId>__11e7-ef14-ff9be341-8f99-af63cc0890b3</parentId>
+  <title>摘要133</title>
+  <type>00</type>
+  <formId>__11e7-ef14-ff9be341-8f99-af63cc0890b3</formId>
+  <fieldNames>申请人;总估算金额</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

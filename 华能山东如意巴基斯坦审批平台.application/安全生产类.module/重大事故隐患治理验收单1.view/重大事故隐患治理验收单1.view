@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e9-747d-a83636c9-bc84-75f136ac31b8">
+  <name>重大事故隐患治理验收单1</name>
+  <parentId>11e7-ef13-4f396cc3-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2019-05-12T14:17:54.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef13-4f3aa553-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef13-4f3a7e3c-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'隐患编号',operator:'LIKE',type:'03',match:'C_编号'},{field:'隐患名称',operator:'LIKE',type:'03',match:'C_隐患名称'},{field:'编制人',operator:'LIKE',type:'03',match:'C_编制人'},{field:'编制日期',operator:'LIKE',type:'03',match:'C_编制日期'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

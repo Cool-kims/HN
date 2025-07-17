@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="11e9-7a26-62fa0910-9820-539e9af1e136">
+  <name>表单函数</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <content><![CDATA[//输出流程状态
+function thisStateLabel(){
+	var stateLabel = getStateLabel();
+	var rtn = "";
+	rtn += "<input type=\"hidden\" id=\"stateLabel\" value=\"" + stateLabel + "\" />";
+	return rtn;
+}
+
+//审批意见
+function testhis() {
+	var curDoc = getCurrentDocument();
+	var message = "<table cellSpacing='0' cellPadding='1' width='100%' align='center' style='border:solid #cccccc;border-width:1px 0px 0px 1px;text-align:center;'><tbody><tr style='line-height:22px;'>" +
+			"<td style='align:center;font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;background-color:#EFF0F1;width=110px' >办理人</td>" +
+			"<td style='align:center;font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;background-color:#EFF0F1;width=150px;' >操作</td>" +
+			"<td style='align:center;font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;background-color:#EFF0F1;width=100px' >办理意见</td>" +
+			"<td style='font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;background-color:#EFF0F1;'  >备注信息</td>" +
+			"<td style='font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;background-color:#EFF0F1;width=150px' >办理时间</td></tr>";
+	var txtNo = curDoc.getId();
+	var webUser = getWebUser();
+	var docNamestr = curDoc.getFormname();
+	if(docNamestr!=null){
+		var docName = docNamestr.substring(docNamestr.lastIndexOf("/") + 1,
+				docNamestr.trim().length);
+		var sql = "select nodehis_id,name,attitude,processtime from t_actorhis where flowstatert_id in (select state from tlk_"
+				+ docName + " where id ='" + txtNo + "') order by processtime";
+		var datas = queryByDSName("JhglDataSource", sql);
+		var count = 0;
+		if (datas != null && datas.size() > 0) {
+			for ( var iter = datas.iterator(); iter.hasNext();) {
+				count = count + 1;
+				var doc = iter.next();
+				var name = doc.get("NAME");
+				var namebak = name;
+				if (name==("system")) {
+					name = "自动审批";
+				}
+				var attitude = "";
+				var att = doc.get("ATTITUDE");
+				if (att != null && att.trim().length > 0) {
+					attitude = att;
+				}
+
+				var time1 = doc.get("PROCESSTIME");
+				var time = format(time1, "yyyy-MM-dd HH:mm:ss");
+				// var time= parseDate(time2,"yyyy-MM-dd HH:mm:ss");
+
+				var id = doc.get("NODEHIS_ID");
+				var nodeName = "";
+				var status = "";
+				var sql1 = "select startNodename,flowoperation from t_relationhis  where id = '"
+						+ id + "' order by actiontime";
+				var datas1 = queryByDSName("JhglDataSource", sql1);
+				if (datas1 != null && datas1.size() > 0) {
+					var hisdate = datas1.iterator().next();
+					nodeName = hisdate.get("STARTNODENAME");
+					var statusNum = hisdate.get("FLOWOPERATION") - 0;
+					if (statusNum == 80) {
+						if (name.indexOf("[") >= 0 || name.indexOf("]") >= 0) {
+							status = "代理审批";
+						} else {
+							status = "同意";
+						}
+					} else if (statusNum == 81) {
+						status = "退回";
+					} else if (statusNum == 7) {
+						status = "完成";
+					} else if (statusNum == 87) {
+						status = "同意";
+						if(webUser!=null && webUser.getLoginno()==("sysadmin")){
+							status="自动审批";
+						}
+					} else if (statusNum == 85) {
+						status = "回撤";
+					} else if (statusNum == 86) {
+						status = "系统干预";
+						name = "系统干预";
+					}
+					//83--流转到自动节点
+				}
+				if (count > 1) {
+					message += "<tr style='line-height:22px;'><td style='font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;font-weight:bold;'>"
+							+ name
+							+ "</td><td style='font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;align:center;'>"
+							+ nodeName
+							+ "</td><td style='font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;'>"
+							+ status
+							+ "</td><td style='font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;'>"
+							+ attitude
+							+ "</td><td style='font-size:larger;font-family: Arial;border:solid #cccccc;border-width:0px 1px 1px 0px;'>"
+							+ time + "</td></tr>";
+				}
+			}
+		}
+	}
+	message += "</tbody></table>";
+	return message;
+}]]></content>
+  <version>51</version>
+</repositoryVO>

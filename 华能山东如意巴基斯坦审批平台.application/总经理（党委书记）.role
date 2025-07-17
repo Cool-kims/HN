@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11ec-61b5-a14a2ba2-811e-db6d5a39b39c">
+      
+    <name>总经理（党委书记）</name>
+      
+    <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>164001932646100000</sortId>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>R4927</roleNo>
+</role>

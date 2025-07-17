@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11ea-1c0f-8f3a20ee-98e0-911440110548">
+  <name>费用报销单Expense Reimbursement Application</name>
+  <parentId>11ea-1c0c-66bb08a9-98e0-911440110548</parentId>
+  <description>费用报销单Expense Reimbursement Application</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11ea-1c0c-66bb08a9-98e0-911440110548</superior>
+  <linkName>费用报销单Expense Reimbursement Application</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67d9ca67-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef14-67ea6bf6-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>21</orderno>
+</resourceVO>

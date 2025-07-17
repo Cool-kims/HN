@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e9-7a26-62f50029-9820-539e9af1e136">
+  <name>plant_assess_table_select</name>
+  <parentId>11e9-7a26-62f4d917-9820-539e9af1e136</parentId>
+  <description>厂级奖惩交叉报表查询表单</description>
+  <sortId>138442215688900000</sortId>
+  <templatecontext><![CDATA[<table class="form_table_select" bordercolor="#b4ccee" cellspacing="1" cellpadding="1" width="100%" align="center" border="0">
+    <tbody>
+        <tr>
+            <td class="td_label">汇总年月：</td>
+            <td><input id="11e3-4d11-a9537aae-9100-7ba8e8ea4a97" value="" name="_pDate" valuescript="" hiddenscript="" limit="false" prev_name="" datepattern="YM" filtercondition="" discript="汇总年月" mobile="true" fieldtype="VALUE_TYPE_DATE" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" readonlyscript="" printhiddenvalue="" hiddenvalue="" hiddenprintscript="" validatelibs="" texttype="text" validaterule="" editmode="01" processdescription="[];[]" refreshonchanged="false" calculateonrefresh="false" class="cn.myapps.runtime.dynaform.form.ejb.DateField" type="text" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>18</version>
+  <mappingStr><![CDATA[{"formName":"plant_assess_table_select","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>private</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

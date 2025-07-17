@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef16-894811cf-8f99-af63cc0890b3">
+  <name>物资需求计划 Material Requirements Planning</name>
+  <parentId>11e7-ef16-894811ba-8f99-af63cc0890b3</parentId>
+  <description>物资需求计划 Material Requirements Planning</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef16-894811ba-8f99-af63cc0890b3</superior>
+  <linkName>物资需求计划 Material Requirements Planning</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef16-893e4dbb-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-4193-496dc7c2-9daa-bf7ae5f506d2]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>1</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

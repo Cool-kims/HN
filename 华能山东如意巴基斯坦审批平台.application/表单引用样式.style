@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleRepositoryVO id="11e7-ef13-4f391f94-8f99-af63cc0890b3">
+  <name>表单引用样式</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <content><![CDATA[.InfoAdd_table {
+	border-width:1px 0 0 1px;
+	border-style:solid;
+	border-color:#d5e3e7;
+}
+.InfoAdd_table td {
+	height:24px;
+	line-height:24px;
+	border-width:0 1px 1px 0;
+	border-style:solid;
+	border-color:#d5e3e7;
+	padding:2px 3px;
+}
+.InfoAdd_tdLeft {
+	text-align:right;
+	background:#f6f9fa;
+}
+.InfoAdd_tdRight {
+	text-align:Left;
+}]]></content>
+  <version>46</version>
+  <lastmodifytime class="sql-date">2015-01-23T13:58:51.000+08:00</lastmodifytime>
+</styleRepositoryVO>

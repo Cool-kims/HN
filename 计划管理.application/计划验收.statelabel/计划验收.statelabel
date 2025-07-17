@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<stateLabel id="11e9-7a26-62fa3090-9820-539e9af1e136">
+  <name>计划验收</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <description>计划验收</description>
+  <value>计划验收</value>
+  <orderNo>008</orderNo>
+</stateLabel>

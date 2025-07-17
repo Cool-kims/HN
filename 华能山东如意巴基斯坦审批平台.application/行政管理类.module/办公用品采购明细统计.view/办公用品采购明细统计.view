@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e7-ef13-4f4c0b49-8f99-af63cc0890b3">
+  <name>办公用品采购明细统计</name>
+  <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
+  <description>办公用品采购明细统计</description>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>30</pageLines>
+  <showTotalRow>false</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2016-03-07T17:14:17.000+08:00</lastModifyTime>
+  <readonly>true</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef13-4f3e7613-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef13-4f3db2b6-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <sqlFilterScript><![CDATA[var w="";
+var wpmc=getItemValueAsString("C_物品名称");
+var sqbm=getItemValueAsString("C_申请部门");
+var sqr=getItemValueAsString("C_申请人");
+var sqrqq=getItemValueAsString("申请日期起");
+var sqrqz=getItemValueAsString("申请日期止");
+
+if(isNotNull(wpmc)){
+	w +=" and Upper(c.item_名称) like Upper('%"+wpmc+"%')";
+}
+if(isNotNull(sqbm)){
+	w +=" and Upper(c.item_申请部门) like Upper('%"+sqbm+"%')";
+}
+if(isNotNull(sqr)){
+	w +=" and Upper(c.item_申请人) like Upper('%"+sqr+"%')";
+}
+
+if(isNotNull(sqrqq)){
+	w +=" and c.item_日期>=TO_DATE('"+sqrqq+"','yyyy-MM-dd') ";
+}
+if(isNotNull(sqrqz)){
+	w +=" and c.item_日期<=TO_DATE('"+sqrqz+"','yyyy-MM-dd')";
+}
+
+var sql="select c.* from (select b.id,b.applicationid,b.formid,b.domainid, a.item_申请人,a.item_申请部门,b.item_名称,b.item_数量,b.item_估算金额 ,a.item_日期 from sxmd.tlk_办公用品采购审批单 a inner join sxmd.tlk_办公用品采购子表 b on a.id=b.parent) c where 1=1 "+w;
+sql;]]></sqlFilterScript>
+  <filterCondition><![CDATA[[]]]></filterCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

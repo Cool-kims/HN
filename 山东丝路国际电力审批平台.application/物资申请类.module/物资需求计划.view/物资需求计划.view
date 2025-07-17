@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e7-ef16-894ccc78-8f99-af63cc0890b3">
+  <name>物资需求计划</name>
+  <parentId>11e7-ef16-893e4dbb-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2021-11-18T10:58:03.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef16-894293bb-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef16-89426caa-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'编号'},{field:'需用计划名称',operator:'LIKE',type:'03',match:'计划名称'},{field:'计划需用科目',operator:'LIKE',type:'03',match:'科目'},{field:'计划金额',operator:'>=',type:'03',match:'计划金额起'},{field:'计划金额',operator:'<=',type:'03',match:'计划金额止'},{field:'编制人',operator:'LIKE',type:'03',match:'申请人'},{field:'填报日期',operator:'>=',type:'03',match:'填报日期起'},{field:'填报日期',operator:'<=',type:'03',match:'填报日期止'},{field:'需用日期',operator:'>=',type:'03',match:'需用日期起'},{field:'需用日期',operator:'<=',type:'03',match:'需用日期止'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

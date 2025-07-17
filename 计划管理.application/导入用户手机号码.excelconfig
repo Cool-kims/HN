@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<impMappingConfigVO id="11e9-7a26-62f43cbc-9820-539e9af1e136">
+  <name>导入用户手机号码</name>
+  <parentId>11e9-83bd-91f5e6cf-9b63-ffda5b016ece</parentId>
+  <xml><![CDATA[<cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>
+<flowstatus>16</flowstatus>
+<flowpath></flowpath>
+<deleteMSG></deleteMSG>
+<TOP_ALIGNMENT>0.0</TOP_ALIGNMENT>
+<CENTER_ALIGNMENT>0.5</CENTER_ALIGNMENT>
+<BOTTOM_ALIGNMENT>1.0</BOTTOM_ALIGNMENT>
+<LEFT_ALIGNMENT>0.0</LEFT_ALIGNMENT>
+<RIGHT_ALIGNMENT>1.0</RIGHT_ALIGNMENT>
+<width>1192</width>
+<height>555</height>
+<PROPERTIES>4</PROPERTIES>
+<SOMEBITS>8</SOMEBITS>
+<FRAMEBITS>16</FRAMEBITS>
+<ALLBITS>32</ALLBITS>
+<ERROR>64</ERROR>
+<ABORT>128</ABORT>
+<needRollback>rollback</needRollback>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1386166351757</startnodeid>
+<endnodeid>1386166740467</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>256;119;234;33</pointstack>
+<scale>0</scale>
+<id>1386166867460</id>
+<name>Relation451</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1386166351757</startnodeid>
+<endnodeid>1386166510020</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>256;119;412;34</pointstack>
+<scale>0</scale>
+<id>1386166869778</id>
+<name>Relation456</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<formName>test</formName>
+<x>256</x>
+<y>119</y>
+<scale>0</scale>
+<id>1386166351757</id>
+<name>inputPhone</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>TELEPHONE</fieldName>
+<valueScript>var LOGINNO = getItemValueAsString(@quot;LOGINNO@quot;);
+var TELEPHONE = getItemValueAsString(@quot;TELEPHONE@quot;);
+if(LOGINNO!=null @amp;@amp; !LOGINNO==(@quot;@quot;) @amp;@amp; TELEPHONE!=null @amp;@amp; !TELEPHONE==(@quot;@quot;)){
+	var sql = @quot;update t_user set TELEPHONE='@quot;+TELEPHONE+@quot;' where (LOGINNO='@quot;+LOGINNO+@quot;')@quot;;
+	updateByDSName(@quot;obpmDataSource@quot;, sql);
+}</valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>412</x>
+<y>34</y>
+<scale>0</scale>
+<id>1386166510020</id>
+<name>手机号码</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<fieldName>LOGINNO</fieldName>
+<valueScript></valueScript>
+<validateRule></validateRule>
+<primaryKey>false</primaryKey>
+<x>234</x>
+<y>33</y>
+<scale>0</scale>
+<id>1386166740467</id>
+<name>员工工号</name>
+<description></description>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+</cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>]]></xml>
+  <templatePath>/uploads/exceltemplate/工号编号20131024.xls</templatePath>
+</impMappingConfigVO>

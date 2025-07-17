@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9412-542827a4-8eac-4b89bdea6b09">
+  <name>摘要176</name>
+  <parentId>__11e7-ef16-8941d05f-8f99-af63cc0890b3</parentId>
+  <title>摘要176</title>
+  <type>00</type>
+  <formId>__11e7-ef16-8941d05f-8f99-af63cc0890b3</formId>
+  <fieldNames>询价单位;付款条件</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11ec-9f7c-b2fc8fc5-bbb8-c5018ef79583">
+  <name>仝西昊查看全部</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <roleNo>R326d</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>164681184693000000</sortId>
+  <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3fc7-316e3d85-9769-678d9eb15904","type":1,"resId":"11e8-3fc7-316e3d85-9769-678d9eb15904"},{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11e8-3fc7-316e3d85-9769-678d9eb15904","type":1,"resId":"11e8-3fc7-316e3d85-9769-678d9eb15904"}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-92f9-cb17b315-8eac-4b89bdea6b09">
+  <name>行政摘要16</name>
+  <parentId>__11e8-68d1-795ad745-9dd9-7742dbd80144</parentId>
+  <title>行政摘要16</title>
+  <type>00</type>
+  <formId>__11e8-68d1-795ad745-9dd9-7742dbd80144</formId>
+  <fieldNames>编制人;合同名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

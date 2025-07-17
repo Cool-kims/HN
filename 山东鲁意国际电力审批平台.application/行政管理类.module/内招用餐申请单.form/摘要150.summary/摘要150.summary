@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9355-5f07098b-8eac-4b89bdea6b09">
+  <name>摘要150</name>
+  <parentId>__11e7-ef14-ff9db81a-8f99-af63cc0890b3</parentId>
+  <title>摘要150</title>
+  <type>00</type>
+  <formId>__11e7-ef14-ff9db81a-8f99-af63cc0890b3</formId>
+  <fieldNames>招待原因;姓名职务及事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

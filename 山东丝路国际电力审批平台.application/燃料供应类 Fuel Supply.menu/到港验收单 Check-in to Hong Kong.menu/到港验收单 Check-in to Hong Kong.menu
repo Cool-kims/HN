@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e7-ef16-8947ea77-8f99-af63cc0890b3">
+  <name>到港验收单 Check-in to Hong Kong</name>
+  <parentId>11e7-ef16-8947ea6b-8f99-af63cc0890b3</parentId>
+  <description>到港验收单 Check-in to Hong Kong</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef16-8947ea6b-8f99-af63cc0890b3</superior>
+  <linkName>到港验收单 Check-in to Hong Kong</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef16-8944dcca-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e7-ef16-894dde05-8f99-af63cc0890b3]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>1</orderno>
+</resourceVO>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-ff9d69f7-8f99-af63cc0890b3">
+  <name>办公用品采购明细_S</name>
+  <parentId>11e7-ef14-ff9be342-8f99-af63cc0890b3</parentId>
+  <sortId>145733152644200000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function(){
+        setTimeout(function(){
+                jQuery("div.changeColor_red").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#FF0000");
+                });
+  jQuery("div.changeColor_blue").each(function(){
+                                       jQuery(this).parents("tr").find("td").find("a").css("color","#111FEE");
+                                                        });
+  jQuery("div.changeColor_green").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#408A10");
+                });
+  jQuery("div.changeColor_black").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#000000");
+                });
+        },300);
+});
+</script>
+<table height="62" cellSpacing="1" cellPadding="1" width="731" border="0" style="border-top: medium none; height: 62px; border-right: medium none; width: 731px; border-bottom: medium none; border-left: medium none">
+    <tbody>
+        <tr>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">物品名称：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none">&nbsp;<input id="11e5-e42d-aabfb65a-8038-491baf11ff74" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="C_物品名称" fieldType="VALUE_TYPE_VARCHAR" textType="text" numberPattern="" borderType="false" editMode="01" isDefaultValue="false" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshOnChanged="false" calculateOnRefresh="false" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" /></td>
+            <td style="text-align: right">申请日期：</td>
+            <td colSpan="5"><input id="11e5-e427-0d829fd0-8038-491baf11ff74" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="2" value="" name="申请日期起" textType="text" editMode="01" isDefaultValue="false" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" filtercondition="" discript="" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" refreshOnChanged="false" calculateOnRefresh="false" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" prev_Name="" datePattern="YMD" limit="false" fieldtype="VALUE_TYPE_DATE" style=" width: 81px" />~<input id="11e5-e427-18d381b7-8038-491baf11ff74" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="1" value="" name="申请日期止" textType="text" editMode="01" isDefaultValue="false" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" filtercondition="" discript="" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" refreshOnChanged="false" calculateOnRefresh="false" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" prev_Name="" datePattern="YMD" limit="false" fieldtype="VALUE_TYPE_DATE" style=" width: 95px" /></td>
+        </tr>
+        <tr>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">申请部门：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-bc2f-871d5793-a552-133080ec50fa" class="cn.myapps.runtime.dynaform.form.ejb.InputField" size="1" value="" name="C_申请部门" fieldType="VALUE_TYPE_VARCHAR" textType="text" numberPattern="" borderType="false" editMode="01" isDefaultValue="false" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshOnChanged="false" calculateOnRefresh="false" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" style=" width: 126px" /></td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">申请人：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-bc2f-8726cd75-a552-133080ec50fa" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="C_申请人" fieldType="VALUE_TYPE_VARCHAR" textType="text" numberPattern="" borderType="false" editMode="01" isDefaultValue="false" processDescription="[];[]" valueScript="" validateLibs="" validateRule="" filtercondition="" discript="" fieldkeyevent="Tabkey" text="text" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshOnChanged="false" calculateOnRefresh="false" hiddenScript="" hiddenValue="" hiddenPrintScript="" printHiddenValue="" readonlyScript="" /></td>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">&nbsp;</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>16</version>
+  <mappingStr><![CDATA[{"formName":"办公用品采购明细_S","tableName":"","columnMappings":[],"excelMapping":"{'excelDocInfo':{}}"}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

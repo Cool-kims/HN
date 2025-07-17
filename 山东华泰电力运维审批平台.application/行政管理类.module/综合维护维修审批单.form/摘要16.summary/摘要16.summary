@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-933b-88d4543a-8eac-4b89bdea6b09">
+  <name>摘要16</name>
+  <parentId>__11e8-6987-7124ab64-9dd9-7742dbd80144</parentId>
+  <title>摘要16</title>
+  <type>00</type>
+  <formId>__11e8-6987-7124ab64-9dd9-7742dbd80144</formId>
+  <fieldNames>申请人;科目名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

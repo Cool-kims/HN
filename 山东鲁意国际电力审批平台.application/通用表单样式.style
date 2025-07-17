@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleRepositoryVO id="11e7-ef14-ff99993b-8f99-af63cc0890b3">
+  <name>通用表单样式</name>
+  <parentId>11e7-ef12-415bbbbf-8f99-af63cc0890b3</parentId>
+  <content><![CDATA[.mytable {
+	font-family: 微软雅黑, 宋体;
+	border-bottom: rgb(180,204,238) 2px solid; 
+	border-left: rgb(180,204,238) 2px solid; 
+	border-top: rgb(180,204,238) 2px solid; 
+	border-right: rgb(180,204,238) 2px solid;
+	width: 1000px;
+	text-align: center;
+}
+.mytable tr .mytable_head_title {
+	font-family: 微软雅黑, 宋体;
+	text-align: center; 
+    font-weight: bold;
+	font-size: 28px;
+	border-bottom: rgb(180,204,238) 1px solid; 
+	border-left: rgb(180,204,238) 1px solid; 
+	border-top: rgb(180,204,238) 1px solid; 
+	border-right: rgb(180,204,238) 1px solid;
+
+}
+.mytable tr .mytable_td_title {
+	font-family: 微软雅黑, 宋体;
+	text-align: right; 
+	width:15%;
+	background-color:#dbe5f1;
+	color:black;
+	font-size: 14px;
+	/*font-weight:bold;*/
+	border-bottom: rgb(180,204,238) 1px solid;
+	border-left: rgb(180,204,238) 1px solid; 
+	border-top: rgb(180,204,238) 1px solid; 
+	border-right: rgb(180,204,238) 1px solid;
+	/*height: 30px;*/
+}
+.mytable tr .mytable_td_title font {
+	color: red;
+}
+.mytable tr .mytable_td_content {
+	font-family: 微软雅黑, 宋体;
+	text-align: left;
+	width: 35%;
+	background-color:white;
+	border-bottom: rgb(180,204,238) 1px solid; 
+	border-left: rgb(180,204,238) 1px solid; 
+	border-top: rgb(180,204,238) 1px solid; 
+	border-right: rgb(180,204,238) 1px solid;
+}
+.formTable td {
+    padding: 2px;
+}
+
+.form-control{
+padding-left:2px;
+padding-right:2px;
+}
+]]></content>
+  <version>75</version>
+  <lastmodifytime class="sql-date">2018-01-22T13:55:15.000+08:00</lastmodifytime>
+</styleRepositoryVO>

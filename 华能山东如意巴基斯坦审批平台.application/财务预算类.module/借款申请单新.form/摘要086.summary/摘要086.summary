@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-3bee-14b854d0-94e7-ef330bda161e">
+  <name>摘要086</name>
+  <parentId>__11e8-3274-c10efd09-94e7-ef330bda161e</parentId>
+  <title>摘要086</title>
+  <type>00</type>
+  <formId>__11e8-3274-c10efd09-94e7-ef330bda161e</formId>
+  <fieldNames>借款金额;费用类型</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9412-c0ffecc4-8eac-4b89bdea6b09">
+  <name>摘要180</name>
+  <parentId>__11e7-ef16-89396b7f-8f99-af63cc0890b3</parentId>
+  <title>摘要180</title>
+  <type>00</type>
+  <formId>__11e7-ef16-89396b7f-8f99-af63cc0890b3</formId>
+  <fieldNames>借款事由;借款金额</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

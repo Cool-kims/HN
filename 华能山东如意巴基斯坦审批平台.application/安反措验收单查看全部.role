@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="11ef-f03c-bc669d37-ba8d-2bc2507f9992">
+  <name>安反措验收单查看全部</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <roleNo>R1991</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>175257255488300000</sortId>
+  <orderNo>0</orderNo>
+</role>

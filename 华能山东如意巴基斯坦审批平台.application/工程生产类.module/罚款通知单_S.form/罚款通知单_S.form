@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef13-4f455446-8f99-af63cc0890b3">
+  <name>罚款通知单_S</name>
+  <parentId>11e7-ef13-4f455447-8f99-af63cc0890b3</parentId>
+  <sortId>145189365895200000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function(){
+        setTimeout(function(){
+                jQuery("div.changeColor_red").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#FF0000");
+                });
+  jQuery("div.changeColor_blue").each(function(){
+                                       jQuery(this).parents("tr").find("td").find("a").css("color","#111FEE");
+                                                        });
+  jQuery("div.changeColor_green").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#408A10");
+                });
+  jQuery("div.changeColor_black").each(function(){
+                                        jQuery(this).parents("tr").find("td").find("a").css("color","#000000");
+                });
+        },300);
+});
+</script>
+<table height="62" cellSpacing="1" cellPadding="1" width="731" border="0" style="border-top: medium none; height: 62px; border-right: medium none; width: 731px; border-bottom: medium none; border-left: medium none">
+    <tbody>
+        <tr>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">罚款单位：</td>
+            <td colSpan="7" style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><select id="11e5-e683-b5a790a6-bec4-b74320de8137" class="cn.myapps.runtime.dynaform.form.ejb.TreeDepartmentField" refreshOnChanged="false" calculateOnRefresh="false" hiddenValue="" hiddenPrintScript="" printHiddenValue="" classname="cn.myapps.runtime.dynaform.form.ejb.TreeDepartmentField" mobile="true" hiddenScript="" readonlyScript="" fieldtype="VALUE_TYPE_TEXT" discript="" istreedepartmentfield="istreedepartmentfield" limit="" type="text" isDefaultValue="" textType="text" editMode="" validateRule="" validateLibs="" style="width: 388px" name="C_罚款单位"></select></td>
+        </tr>
+        <tr>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">编号：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-0353-35184551-9da9-61fcbe57c060" value="" name="C_编号" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" processdescription="[];[]" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" valuescript="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" refreshonchanged="false" calculateonrefresh="false" fieldtype="VALUE_TYPE_VARCHAR" discript="" filtercondition="" numberpattern="" bordertype="false" fieldkeyevent="Tabkey" text="text" style=" width: 152px" /></td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">编制人：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-0353-351ab652-9da9-61fcbe57c060" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="编制人" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" processdescription="[];[]" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" valuescript="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" refreshonchanged="false" calculateonrefresh="false" fieldtype="VALUE_TYPE_VARCHAR" discript="" filtercondition="" numberpattern="" bordertype="false" fieldkeyevent="Tabkey" text="text" /></td>
+            <td noWrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">编制日期：</td>
+            <td style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="11e5-0353-351ab653-9da9-61fcbe57c060" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="19" value="" name="编制日期" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" processdescription="[];[]" validaterule="" validatelibs="" isdefaultvalue="false" editmode="01" texttype="text" valuescript="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" refreshonchanged="false" calculateonrefresh="false" fieldtype="VALUE_TYPE_DATE" discript="" filtercondition="" limit="false" prev_name="" datepattern="YMD" style=" width: 151px" /></td>
+        </tr>
+    </tbody>
+</table>
+<table cellSpacing="0" cellPadding="0" width="694" border="1" style="border-top: #b4ccee 1px solid; height: 20px; border-right: #b4ccee 1px solid; width: 694px; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">
+    <tbody>
+        <tr>
+            <td bgColor="#000000" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;&nbsp;</td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;：新增</td>
+            <td bgColor="#0000ff" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;&nbsp;</td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：审批中&nbsp;</td>
+            <td bgColor="#408a10" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid"></td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：已批准</td>
+            <td bgColor="#ff0000" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid"></td>
+            <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：作废</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>18</version>
+  <mappingStr><![CDATA[{"formName":"罚款通知单_S","tableName":"","columnMappings":[],"excelMapping":"{'excelDocInfo':{}}"}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

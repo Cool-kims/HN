@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e7-e156-e1e111a0-8dd9-01b9905d175c">
+  <name>提交</name>
+  <parentId>__11e7-ef14-ff9b1fec-8f99-af63cc0890b3</parentId>
+  <type>5</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow>11e7-ef14-ffb007a9-8f99-af63cc0890b3</onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[#include "comm";
+
+var doc=getCurrentDocument();
+//第一节点
+var isFirtNode1 = doc.isFirtNode();
+
+//填报人具备修改权限所以需要校验金额，通过后后续流程不再校验金额
+if (isFirtNode1){
+	
+	var depts=getItemValueAsString("部门"); // 部门
+	var times=getItemValueAsString("创建时间"); // 填表日期
+
+	var bill="差旅费报销单";// 单据类型 :
+	var cost=getItemValueAsString("费用类型");// 费用金额
+
+	//仅费用预算控制	
+	var str=con_mon("费用",depts, times, bill, cost);
+	
+	//str;
+}]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+//println("fstate==="+fstate);
+var booleans=false;
+if(fstate==null){
+	booleans=true;
+}
+booleans;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>2</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-ff9b1fec-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>

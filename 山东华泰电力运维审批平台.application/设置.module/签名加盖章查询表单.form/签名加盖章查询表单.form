@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-67d843a7-8f99-af63cc0890b3">
+  <name>签名加盖章查询表单</name>
+  <parentId>11e7-ef14-67d7f576-8f99-af63cc0890b3</parentId>
+  <sortId>142374275077100000</sortId>
+  <templatecontext><![CDATA[
+
+
+
+
+
+
+
+<table border="1" cellSpacing="1" cellPadding="1" width="335" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; width: 335px; height: 63px; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+    <tbody>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">签名密码：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e4-b2af-6cebf05d-afa0-ad0a87f95ed0" value="" name="签名密码" readonlyScript="" printHiddenValue="" hiddenPrintScript="" hiddenValue="" validateRule="" validateLibs="" processDescription="[];[]" isDefaultValue="false" editMode="01" calculateOnRefresh="false" refreshOnChanged="false" borderType="false" numberPattern="" textType="password" fieldType="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" mobile="true" discript="" filtercondition="" text="password" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" hiddenScript="" valueScript="" class="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+        </tr>
+        <tr>
+            <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">盖章密码：</td>
+            <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid"><input id="11e4-b2af-7699f68d-afa0-ad0a87f95ed0" value="" name="盖章密码" readonlyScript="" printHiddenValue="" hiddenPrintScript="" hiddenValue="" validateRule="" validateLibs="" processDescription="[];[]" isDefaultValue="false" editMode="01" calculateOnRefresh="false" refreshOnChanged="false" borderType="false" numberPattern="" textType="password" fieldType="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" mobile="true" discript="" filtercondition="" text="password" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" hiddenScript="" valueScript="" class="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>25</version>
+  <mappingStr><![CDATA[{"formName":"签名加盖章查询表单","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

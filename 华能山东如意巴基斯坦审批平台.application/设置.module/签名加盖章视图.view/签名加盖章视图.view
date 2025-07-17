@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11e7-ef13-4f4a5d68-8f99-af63cc0890b3">
+  <name>签名加盖章视图</name>
+  <parentId>11e7-ef13-4f38d164-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>false</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2015-02-13T17:12:10.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11e7-ef13-4f391f95-8f99-af63cc0890b3</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e7-ef13-4f38f877-8f99-af63cc0890b3</relatedForm>
+  <permissionType>public</permissionType>
+  <sqlFilterScript><![CDATA[//要求必须正确输入签名密码和盖章密码，部门的公章必须是唯一并且公章对应的账号必须与该部门在系统中的默认部门名称一致
+var loginno = getWebUser().getLoginno();
+var qmmm = getItemValue("签名密码");
+var gzmm = getItemValue("盖章密码");
+var deptid = getWebUser().getDefaultDepartment();
+var process = createProcess("cn.myapps.core.authtime.department.service.DepartmentProcess");//部门业务处理类
+var dept=process.doView(deptid);//id为部门ID，获取部门对象
+var name=dept.getName();//获取部门名称
+var qmflag = false;//签名密码是否通过验证标识位
+var gzflag = false;//盖章密码是否通过验证标识位
+var w = "";
+var qmsql= "select * from TLK_印签管理表单  where  ITEM_是否公章='否'   and ITEM_是否有效='是' and ITEM_帐号='"+loginno+"'"+w;
+var query = queryBySQL(qmsql);
+if(query!=null){
+          var iter  =query.iterator();
+          if(iter != null && iter.hasNext()){
+               doc = iter.next();
+               var rtn = doc.getItemValueAsString("密码"); 
+               if (rtn != null && rtn.trim().length>0){
+			var aa=new Packages.cn.myapps.common.util.Security();
+			var jmm=aa.decryptPassword(rtn);//解密
+			if (jmm !=null && jmm==(qmmm)){
+			    qmflag=true;
+			}
+	
+		}  
+          } 
+}
+var gzsql= "select * from TLK_印签管理表单  where  ITEM_是否公章='是'   and ITEM_是否有效='是' and ITEM_帐号='"+name+"'"+w;
+var query = queryBySQL(gzsql);
+if(query!=null){
+          var iter  =query.iterator();
+          if(iter != null && iter.hasNext()){
+               doc = iter.next();
+               var rtn = doc.getItemValueAsString("密码"); 
+               if (rtn != null && rtn.trim().length>0){
+			var aa=new Packages.cn.myapps.common.util.Security();
+			var jmm=aa.decryptPassword(rtn);//解密
+			if (jmm !=null && jmm==(gzmm)){
+			    gzflag=true;
+			}
+	
+		}  
+          } 
+}
+
+//清空查询条件
+w="";
+if (qmflag&&gzflag){//密码验证
+	w +=" and ITEM_帐号='"+loginno+"'";	
+} else {
+	//未通过验证，返回不可能条件
+  	w = " and 1=2 "
+}
+var sql1 = "select * from nxmd.tlk_印签管理表单 where  ITEM_是否公章='否'   and ITEM_是否有效='是'"+w;
+var sql2 = "select t.* from nxmd.tlk_印签管理表单 t where t.ITEM_是否公章='是'  and t.ITEM_是否有效='是' and t.Item_帐号='"+name+"'";
+var a1 = countBySQL(sql1);
+var a2 = countBySQL(sql2);
+if(a1==1&&a2==1){
+ // var sql = "select * from nxmd.tlk_印签管理表单 where ITEM_是否公章='否' and ITEM_是否有效='是' "+w+"union select t.Item_印签 from nxmd.tlk_印签管理表单 t "+
+   //"where t.ITEM_是否公章='是' and t.ITEM_是否有效='是' and t.Item_帐号='"+name+"'";    
+var sql = "select t.id,t.formid,t.domainid,t.Item_帐号 as Item_签名账号,t.Item_名称,t.Item_印签,(select b.Item_印签 from nxmd.tlk_印签管理表单 b where b.ITEM_是否公章='是' and b.ITEM_是否有效='是'"+ 
+"and b.Item_帐号='"+name+"') as Item_盖章,(select c.Item_帐号 from nxmd.tlk_印签管理表单 c where c.ITEM_是否公章='是' and c.ITEM_是否有效='是' and c.Item_帐号='"+name+"') as Item_盖章账号 "+ 
+ "from nxmd.tlk_印签管理表单 t where t.ITEM_是否公章='否'   and t.ITEM_是否有效='是'"+w;
+}else{
+    var sql = "select * from nxmd.tlk_印签管理表单 where 1=2";
+}
+println("sql==="+sql);
+sql;
+]]></sqlFilterScript>
+  <filterCondition><![CDATA[[]]]></filterCondition>
+  <openType>1</openType>
+  <editMode>02</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

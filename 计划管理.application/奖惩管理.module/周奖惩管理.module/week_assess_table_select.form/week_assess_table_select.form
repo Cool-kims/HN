@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e9-9cc0-6940350e-bffc-fd2f695754f0">
+  <name>week_assess_table_select</name>
+  <parentId>11e9-9cba-e3a4d088-bffc-fd2f695754f0</parentId>
+  <description>周计划奖惩交叉报表查询表单</description>
+  <sortId>156206858249800000</sortId>
+  <templatecontext><![CDATA[<p>&nbsp;</p>
+<table class="form_table_select" cellspacing="1" cellpadding="1" width="100%" align="center" border="0">
+    <tbody>
+        <tr>
+            <td class="td_label">汇总年月：</td>
+            <td><input id="11e3-4d11-a9537aae-9100-7ba8e8ea4a97" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="_pDate" calculateonrefresh="false" refreshonchanged="false" processdescription="[];[]" editmode="01" validaterule="" texttype="text" validatelibs="" hiddenprintscript="" hiddenvalue="" printhiddenvalue="" readonlyscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" fieldtype="VALUE_TYPE_DATE" mobile="true" discript="汇总年月" filtercondition="" datepattern="YM" prev_name="" limit="false" hiddenscript="" valuescript="" /></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <styleId>11e9-7a26-62f43cbf-9820-539e9af1e136</styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>0</version>
+  <mappingStr><![CDATA[{"formName":"week_assess_table_select","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

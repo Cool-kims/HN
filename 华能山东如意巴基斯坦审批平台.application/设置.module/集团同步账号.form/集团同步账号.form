@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef13-4f391f8e-8f99-af63cc0890b3">
+  <name>集团同步账号</name>
+  <parentId>11e7-ef13-4f38d164-8f99-af63cc0890b3</parentId>
+  <sortId>140334760758800000</sortId>
+  <type>1</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>5</version>
+  <mappingStr><![CDATA[{"formName":"集团同步账号","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

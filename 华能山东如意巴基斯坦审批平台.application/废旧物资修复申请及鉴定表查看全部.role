@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><role id="11ea-b47b-064f9fb8-b204-9943e185f520">
+      
+    <name>废旧物资修复申请及鉴定表查看全部</name>
+      
+    <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+      
+    <status>1</status>
+      
+    <defaultRole>false</defaultRole>
+      
+    <sortId>159282510680800000</sortId>
+      
+    <permissions><![CDATA[[{"resName":"菜单","resType":2,"roleId":"","operationCode":1002,"operationId":"11ea-b47a-e087898a-b204-9943e185f520","type":1,"resId":"11ea-b47a-e087898a-b204-9943e185f520"}]]]></permissions>
+      
+    <orderNo>0</orderNo>
+    
+    <roleNo>R04ec</roleNo>
+</role>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-9351-9c95ff9a-8eac-4b89bdea6b09">
+  <name>摘要117</name>
+  <parentId>__11e7-ef14-ff9ef0ab-8f99-af63cc0890b3</parentId>
+  <title>摘要117</title>
+  <type>00</type>
+  <formId>__11e7-ef14-ff9ef0ab-8f99-af63cc0890b3</formId>
+  <fieldNames>编制人;企业名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

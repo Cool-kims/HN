@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__11e7-ef14-ffa83ef6-8f99-af63cc0890b3">
+  <name>燃煤到港验收发运结存月度统计单_S</name>
+  <parentId>11e7-ef14-ffa558a8-8f99-af63cc0890b3</parentId>
+  <sortId>151324190085400000</sortId>
+  <templatecontext><![CDATA[<p>月份：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-e0ac-fee115ae-8dd9-01b9905d175c" text="text" name="时间" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>
+<p>&nbsp;</p>
+<table cellspacing="0" cellpadding="0" width="694" border="1" style="border: 1px solid rgb(180, 204, 238); height: 20px; width: 694px;">
+    <tbody>
+        <tr>
+            <td bgcolor="#000000" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;：新增</td>
+            <td bgcolor="#0000ff" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：审批中&nbsp;</td>
+            <td bgcolor="#408a10" width="40" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：已批准</td>
+            <td bgcolor="#ff0000" style="border: 1px solid rgb(180, 204, 238);">&nbsp;</td>
+            <td style="border: 1px solid rgb(180, 204, 238);">：作废<br />
+            &nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>]]></templatecontext>
+  <type>256</type>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <version>13</version>
+  <mappingStr><![CDATA[{"formName":"燃煤到港验收发运结存月度统计单_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>0</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

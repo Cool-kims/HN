@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ed-63ba-6544d571-b23a-7b41347f3771">
+  <name>摘要400</name>
+  <parentId>__11ed-63b6-c0fdf5c3-b23a-7b41347f3771</parentId>
+  <title>摘要400</title>
+  <type>00</type>
+  <formId>__11ed-63b6-c0fdf5c3-b23a-7b41347f3771</formId>
+  <fieldNames>支票号码;用途</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

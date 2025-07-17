@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="11ea-a3ed-e9088e13-b204-9943e185f520">
+  <name>服务人员工资发放表All</name>
+  <parentId>11e7-ef13-4f4442cb-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime class="sql-date">2020-06-01T14:56:08.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11ea-7d4b-e4d1df34-809b-6193dc4a23b7</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11ea-7d49-f2a8e1ec-809b-6193dc4a23b7</relatedForm>
+  <permissionType>public</permissionType>
+  <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'C_编号'},{field:'编制日期',operator:'LIKE',type:'03',match:'编制日期'},{field:'编制人',operator:'LIKE',type:'03',match:'编制人'}]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[{field:'C_编号',isCommonFilter:'true'},{field:'编制人',isCommonFilter:'true'}]]]></commonFilterCondition>
+  <openType>1</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

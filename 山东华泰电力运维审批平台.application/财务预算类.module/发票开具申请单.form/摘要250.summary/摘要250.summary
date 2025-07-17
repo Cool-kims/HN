@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-9126-478c674e-bcf0-133beec42517">
+  <name>摘要250</name>
+  <parentId>__11ea-9112-ddbf1ea3-bcf0-133beec42517</parentId>
+  <title>摘要250</title>
+  <type>00</type>
+  <formId>__11ea-9112-ddbf1ea3-bcf0-133beec42517</formId>
+  <fieldNames>编制人;开票事由</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

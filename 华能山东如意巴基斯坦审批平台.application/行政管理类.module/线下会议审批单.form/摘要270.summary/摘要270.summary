@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ea-7011-98a02bb7-bc73-45e49200ba50">
+  <name>摘要270</name>
+  <parentId>__11ea-6fec-e07b8e37-bc73-45e49200ba50</parentId>
+  <title>摘要270</title>
+  <type>00</type>
+  <formId>__11ea-6fec-e07b8e37-bc73-45e49200ba50</formId>
+  <fieldNames>申请人;会议时间</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

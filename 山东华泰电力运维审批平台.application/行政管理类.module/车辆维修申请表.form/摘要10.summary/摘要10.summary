@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11e8-933a-c50d9d1d-8eac-4b89bdea6b09">
+  <name>摘要10</name>
+  <parentId>__11e7-ef14-67ded2b2-8f99-af63cc0890b3</parentId>
+  <title>摘要10</title>
+  <type>00</type>
+  <formId>__11e7-ef14-67ded2b2-8f99-af63cc0890b3</formId>
+  <fieldNames>申请人;故障原因</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

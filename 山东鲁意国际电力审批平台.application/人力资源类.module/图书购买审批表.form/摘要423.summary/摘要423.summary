@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="11ed-8c0d-9741841f-8221-d1692677ae63">
+  <name>摘要423</name>
+  <parentId>__11ed-8c0c-618adcbd-8221-d1692677ae63</parentId>
+  <title>摘要423</title>
+  <type>00</type>
+  <formId>__11ed-8c0c-618adcbd-8221-d1692677ae63</formId>
+  <fieldNames>申请部门;图书名称</fieldNames>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

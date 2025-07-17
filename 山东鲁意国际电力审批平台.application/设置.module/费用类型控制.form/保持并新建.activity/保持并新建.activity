@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="11e7-deed-89589a28-8bc3-5d925c988896">
+  <name>保持并新建</name>
+  <parentId>__11e7-ef14-ff98127e-8f99-af63cc0890b3</parentId>
+  <type>42</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <onActionFlow></onActionFlow>
+  <onActionPrint></onActionPrint>
+  <colorType>default</colorType>
+  <beforeActionScript><![CDATA[#include "customlibs";
+var number=getItemValue("编号");
+var doc = getCurrentDocument(); 
+var filename = doc.getFormname();
+var formname="";
+if(filename!=null) {
+  formname = filename.substring(filename.lastIndexOf("/")+1, filename.length);
+}
+if(number==null||number.trim().length<=0){
+  number=getNextNo(formname,'编号','FYLXKZ');
+  doc.findItem("编号").setValue(number);
+}
+var str="";
+var name=getItemValueAsString("名称");
+println("name:"+(!isNotNull(name)));
+if(!isNotNull(name)){
+	str="名称不能为空";
+}else{
+  var sql="SELECT * FROM TLK_费用类型控制 WHERE ITEM_名称='"+name+"'";
+  var datas=findBySQL(sql);
+  if(datas!=null){
+	   str="改数据已存在";
+	}
+}
+str;]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <flowShowType>ST01</flowShowType>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11e7-ef14-ff98127e-8f99-af63cc0890b3</parentForm>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>true</expSub>
+  <icon></icon>
+  <disableFlowNode>true</disableFlowNode>
+  <changeFlowOperator>true</changeFlowOperator>
+  <changeFlowCc>true</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond>选择</transpond>
+  <targetList></targetList>
+  <processPreview>false</processPreview>
+</activity>
