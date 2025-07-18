@@ -7,13 +7,14 @@
   <expandQueryForm>false</expandQueryForm>
   <orderno>0</orderno>
   <isAllowDrag>true</isAllowDrag>
+  <dataSourceId></dataSourceId>
   <pagination>true</pagination>
   <pageLines>10</pageLines>
   <showTotalRow>true</showTotalRow>
   <refresh>false</refresh>
   <refreshAll>false</refreshAll>
   <newPage>false</newPage>
-  <lastModifyTime class="sql-date">2018-10-05T13:49:54.000+08:00</lastModifyTime>
+  <lastModifyTime>2018-10-05T05:49:54.000+08:00</lastModifyTime>
   <readonly>false</readonly>
   <displayType>relatedForm</displayType>
   <defaultShowMode>month</defaultShowMode>
@@ -24,6 +25,7 @@
   <autoCompose>false</autoCompose>
   <relatedForm>__11e7-ef13-4f43f4a4-8f99-af63cc0890b3</relatedForm>
   <permissionType>public</permissionType>
+  <filterScript><![CDATA[]]></filterScript>
   <sqlFilterScript><![CDATA[var bh = getItemValue("编号");
 var jhmc = getItemValue("计划名称");
 var kmbh = getItemValue("科目编号");
@@ -77,9 +79,10 @@ if(isNotNull(km)){
 var sql = "select * from  TLK_物资需求计划  where 1=1 "+w +" order by ITEM_编号";
 //println(sql)
 sql;]]></sqlFilterScript>
-  <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'编号'},{field:'需用计划名称',operator:'LIKE',type:'03',match:'计划名称'},{field:'计划金额',operator:'>=',type:'03',match:'计划金额起'},{field:'计划金额',operator:'<=',type:'03',match:'计划金额止'},{field:'编制人',operator:'LIKE',type:'03',match:'申请人'},{field:'填报日期',operator:'>=',type:'03',match:'填报日期起'},{field:'填报日期',operator:'<=',type:'03',match:'填报日期止'},{field:'需用日期',operator:'>=',type:'03',match:'需用日期起'},{field:'需用日期',operator:'<=',type:'03',match:'需用日期止'},{field:'需求部门',operator:'LIKE',type:'03',match:'部门'},{field:'计划需用科目编号',operator:'LIKE',type:'03',match:'科目编号'},{field:'计划需用科目',operator:'LIKE',type:'03',match:'科目'}]]]></filterCondition>
+  <procedureFilterScript><![CDATA[]]></procedureFilterScript>
+  <filterCondition><![CDATA[[{"field":"编号","operator":"LIKE","type":"03","match":"编号","ipField":"","numField":0,"daField":"","sfField":"编号","syField":""},{"field":"需用计划名称","operator":"LIKE","type":"03","match":"计划名称","ipField":"","numField":0,"daField":"","sfField":"计划名称","syField":""},{"field":"计划金额","operator":">=","type":"03","match":"计划金额起","ipField":"","numField":0,"daField":"","sfField":"计划金额起","syField":""},{"field":"计划金额","operator":"<=","type":"03","match":"计划金额止","ipField":"","numField":0,"daField":"","sfField":"计划金额止","syField":""},{"field":"编制人","operator":"LIKE","type":"03","match":"申请人","ipField":"","numField":0,"daField":"","sfField":"申请人","syField":""},{"field":"填报日期","operator":">=","type":"03","match":"填报日期起","ipField":"","numField":0,"daField":"","sfField":"填报日期起","syField":""},{"field":"填报日期","operator":"<=","type":"03","match":"填报日期止","ipField":"","numField":0,"daField":"","sfField":"填报日期止","syField":""},{"field":"需用日期","operator":">=","type":"03","match":"需用日期起","ipField":"","numField":0,"daField":"","sfField":"需用日期起","syField":""},{"field":"需用日期","operator":"<=","type":"03","match":"需用日期止","ipField":"","numField":0,"daField":"","sfField":"需用日期止","syField":""},{"field":"需求部门","operator":"LIKE","type":"03","match":"部门","ipField":"","numField":0,"daField":"","sfField":"部门","syField":""},{"field":"计划需用科目编号","operator":"LIKE","type":"03","match":"科目编号","ipField":"","numField":0,"daField":"","sfField":"科目编号","syField":""},{"field":"计划需用科目","operator":"LIKE","type":"03","match":"科目","ipField":"","numField":0,"daField":"","sfField":"科目","syField":""}]]]></filterCondition>
   <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
-  <authorityCondition>[{_authFields:'authorDefaultDept',_authFieldScope:'default'}]</authorityCondition>
+  <authorityCondition>[{"_authFields":"authorDefaultDept","_authFieldScope":"default"}]</authorityCondition>
   <openType>1</openType>
   <editMode>00</editMode>
   <width>0</width>

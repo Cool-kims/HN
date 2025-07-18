@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="11ef-5490-8337ca20-ac46-3750974dc4f4">
+<column id="__Cyjh5bn7GUdzBTWUNL9">
   <name>编号</name>
-  <parentId>11e7-ef13-4f4af9bf-8f99-af63cc0890b3</parentId>
+  <parentId>__CNx7pyvlJCMACsMiILV</parentId>
   <width></width>
-  <valueScript><![CDATA[]]></valueScript>
+  <valueScript><![CDATA[var flowType= getCurrentDocument().getLastFlowOperation();
+var bh=getItemValueAsString("编号");
+var state = getCurrentDocument().getStateInt();
+var col=bh;
+if(flowType==8){//表示流程终止
+	 col+= "<div  class='changeColor_red'  style='display:none;'></div>";//设置不同状态时候字段值显示的颜色
+}else if(state==256){//审批中
+	 col+= "<div  class='changeColor_blue'  style='display:none;'></div>";//设置不同状态时候字段值显示的颜色
+}else if(state==1048576){//审批通过
+	 col+= "<div  class='changeColor_green'  style='display:none;'></div>";//设置不同状态时候字段值显示的颜色
+}else{
+	 col+= "<div  class='changeColor_black'  style='display:none;'></div>";//设置不同状态时候字段值显示的颜色
+	}
+col;]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
-  <parentView>11e7-ef13-4f4af9bf-8f99-af63cc0890b3</parentView>
-  <type>COLUMN_TYPE_FIELD</type>
+  <parentView>__CNx7pyvlJCMACsMiILV</parentView>
+  <type>COLUMN_TYPE_SCRIPT</type>
   <formid>__11e7-ef13-4f3aa554-8f99-af63cc0890b3</formid>
   <fieldName>编号</fieldName>
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
-  <fontColor></fontColor>
-  <orderno>1</orderno>
+  <fontColor>FFFFFF</fontColor>
+  <orderno>0</orderno>
   <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>
@@ -27,20 +40,21 @@
   <decimalsNum></decimalsNum>
   <thouSign>false</thouSign>
   <decimalsCurr></decimalsCurr>
-  <color></color>
+  <color>000000</color>
   <fontSize>12</fontSize>
-  <groundColor></groundColor>
+  <groundColor>FFFFFF</groundColor>
   <showIcon>false</showIcon>
   <iconMapping></iconMapping>
   <buttonType></buttonType>
   <buttonName></buttonName>
+  <approveLimit></approveLimit>
   <visible>true</visible>
   <visible4ExpExcel>true</visible4ExpExcel>
   <visible4Print>true</visible4Print>
   <visible4PagePrint>true</visible4PagePrint>
   <templateForm></templateForm>
   <icon></icon>
-  <showType>01</showType>
+  <showType>00</showType>
   <mappingField></mappingField>
   <showMoon>false</showMoon>
   <showAsLabel>false</showAsLabel>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="11ef-5491-85193fa4-ac46-3750974dc4f4">
+<column id="__9GrjfZArcNGE5L0Ty6v">
   <name>编制日期</name>
-  <parentId>11e7-ef13-4f4af9bf-8f99-af63cc0890b3</parentId>
+  <parentId>__CNx7pyvlJCMACsMiILV</parentId>
   <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
-  <parentView>11e7-ef13-4f4af9bf-8f99-af63cc0890b3</parentView>
+  <parentView>__CNx7pyvlJCMACsMiILV</parentView>
   <type>COLUMN_TYPE_FIELD</type>
   <formid>__11e7-ef13-4f3aa554-8f99-af63cc0890b3</formid>
   <fieldName>编制日期</fieldName>
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
-  <fontColor></fontColor>
-  <orderno>8</orderno>
+  <fontColor>FFFFFF</fontColor>
+  <orderno>12</orderno>
   <sum>false</sum>
   <total>false</total>
-  <isOrderByField>false</isOrderByField>
-  <orderType>ASC</orderType>
+  <isOrderByField>true</isOrderByField>
+  <orderType>DESC</orderType>
   <multiLanguageLabel></multiLanguageLabel>
   <actionScript><![CDATA[]]></actionScript>
   <clickSorting>true</clickSorting>
@@ -27,20 +27,21 @@
   <decimalsNum></decimalsNum>
   <thouSign>false</thouSign>
   <decimalsCurr></decimalsCurr>
-  <color></color>
+  <color>000000</color>
   <fontSize>12</fontSize>
-  <groundColor></groundColor>
+  <groundColor>FFFFFF</groundColor>
   <showIcon>false</showIcon>
   <iconMapping></iconMapping>
   <buttonType></buttonType>
   <buttonName></buttonName>
+  <approveLimit></approveLimit>
   <visible>true</visible>
   <visible4ExpExcel>true</visible4ExpExcel>
   <visible4Print>true</visible4Print>
   <visible4PagePrint>true</visible4PagePrint>
   <templateForm></templateForm>
   <icon></icon>
-  <showType>01</showType>
+  <showType>00</showType>
   <mappingField></mappingField>
   <showMoon>false</showMoon>
   <showAsLabel>false</showAsLabel>

@@ -1,47 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<activity id="11ef-59f0-7bfdd35b-ac46-3750974dc4f4">
+<activity id="__4e0LZTdkiLS5LKTsds7">
   <name>新建</name>
-  <parentId>11e7-ef13-4f4af9bf-8f99-af63cc0890b3</parentId>
+  <parentId>__CNx7pyvlJCMACsMiILV</parentId>
   <type>2</type>
   <onActionForm>__11e7-ef13-4f3aa554-8f99-af63cc0890b3</onActionForm>
-  <onActionView></onActionView>
-  <onActionFlow></onActionFlow>
-  <onActionPrint></onActionPrint>
-  <colorType>default</colorType>
-  <beforeActionScript><![CDATA[]]></beforeActionScript>
-  <afterActionScript><![CDATA[]]></afterActionScript>
-  <hiddenScript><![CDATA[]]></hiddenScript>
-  <readonlyScript><![CDATA[]]></readonlyScript>
-  <startFlowScript><![CDATA[]]></startFlowScript>
   <editMode>0</editMode>
-  <flowShowType>ST01</flowShowType>
-  <fileNameScript><![CDATA[]]></fileNameScript>
-  <orderno>1</orderno>
-  <stateToShow></stateToShow>
-  <parentView>11e7-ef13-4f4af9bf-8f99-af63cc0890b3</parentView>
-  <impmappingconfigid></impmappingconfigid>
+  <orderno>0</orderno>
+  <parentView>__CNx7pyvlJCMACsMiILV</parentView>
   <jumpType>0</jumpType>
-  <expSub>true</expSub>
-  <icon></icon>
-  <disableFlowNode>true</disableFlowNode>
-  <changeFlowOperator>true</changeFlowOperator>
-  <changeFlowCc>true</changeFlowCc>
-  <multiLanguageLabel></multiLanguageLabel>
+  <expSub>false</expSub>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
   <dispatcherMode>0</dispatcherMode>
-  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
-  <dispatcherParams><![CDATA[]]></dispatcherParams>
-  <jumpMode>1</jumpMode>
+  <jumpMode>0</jumpMode>
   <jumpActOpenType>0</jumpActOpenType>
   <withOld>false</withOld>
   <actionType>0</actionType>
-  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
   <actionSelection>0</actionSelection>
-  <relatedFormId></relatedFormId>
-  <actionScript><![CDATA[]]></actionScript>
   <workFlowType>0</workFlowType>
   <contextMenu>false</contextMenu>
   <showInToolbar>true</showInToolbar>
-  <transpond>选择</transpond>
-  <targetList></targetList>
   <processPreview>false</processPreview>
 </activity>
