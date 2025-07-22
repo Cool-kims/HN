@@ -14,7 +14,7 @@
   <refresh>false</refresh>
   <refreshAll>false</refreshAll>
   <newPage>false</newPage>
-  <lastModifyTime>2018-01-07T09:13:17.000+08:00</lastModifyTime>
+  <lastModifyTime>2018-01-07T01:13:17.000+08:00</lastModifyTime>
   <readonly>false</readonly>
   <displayType>relatedForm</displayType>
   <defaultShowMode>month</defaultShowMode>
@@ -30,7 +30,7 @@
   <procedureFilterScript><![CDATA[]]></procedureFilterScript>
   <filterCondition><![CDATA[[{"field":"编号","operator":"LIKE","type":"03","match":"编号","ipField":"","numField":0,"daField":"","sfField":"编号","syField":""},{"field":"编制时间","operator":"LIKE","type":"03","match":"编制时间","ipField":"","numField":0,"daField":"","sfField":"编制时间","syField":""},{"field":"通知部门","operator":"LIKE","type":"03","match":"通知部门","ipField":"","numField":0,"daField":"","sfField":"通知部门","syField":""}]]]></filterCondition>
   <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
-  <authorityCondition>[{"_authFields":"authorDefaultDept","_authFieldScope":"default"}]</authorityCondition>
+  <authorityCondition>[]</authorityCondition>
   <openType>1</openType>
   <editMode>00</editMode>
   <width>0</width>

@@ -2,11 +2,14 @@
 <column id="11e7-d632-c0e8a40a-b0cf-41bab8fafee8">
   <name>单位</name>
   <parentId>11e7-ef14-ffacac04-8f99-af63cc0890b3</parentId>
-  <width>80px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
+  <beforeScript><![CDATA[]]></beforeScript>
+  <afterScript><![CDATA[]]></afterScript>
   <parentView>11e7-ef14-ffacac04-8f99-af63cc0890b3</parentView>
   <type>COLUMN_TYPE_FIELD</type>
+  <labelScript><![CDATA[]]></labelScript>
   <formid>__11e7-ef14-ffa139bb-8f99-af63cc0890b3</formid>
   <fieldName>单位</fieldName>
   <flowReturnCss>false</flowReturnCss>
@@ -22,18 +25,20 @@
   <clickSorting>true</clickSorting>
   <sortStandard>00</sortStandard>
   <jumpMapping></jumpMapping>
+  <jumpMode>00</jumpMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
   <mappingform></mappingform>
   <formatType>simple</formatType>
-  <decimalsNum></decimalsNum>
+  <decimalsNum>1</decimalsNum>
   <thouSign>false</thouSign>
-  <decimalsCurr></decimalsCurr>
+  <decimalsCurr>1</decimalsCurr>
   <currType>zh_CN</currType>
-  <color>000000</color>
+  <color>rgba(0, 0, 0, 1)</color>
   <fontSize>12</fontSize>
-  <groundColor>FFFFFF</groundColor>
+  <groundColor></groundColor>
   <showIcon>false</showIcon>
   <iconMapping></iconMapping>
-  <buttonType></buttonType>
+  <buttonType>00</buttonType>
   <buttonName></buttonName>
   <visible>true</visible>
   <visible4ExpExcel>true</visible4ExpExcel>
@@ -47,13 +52,15 @@
   <showAsLabel>false</showAsLabel>
   <showAsButton>false</showAsButton>
   <displayType>00</displayType>
-  <displayLength>-1</displayLength>
+  <displayLength></displayLength>
   <showTitle>true</showTitle>
   <customIcon>false</customIcon>
   <isFilter>false</isFilter>
   <isShowThisColumn>false</isShowThisColumn>
+  <selectOptionScript><![CDATA[]]></selectOptionScript>
   <isEnter>false</isEnter>
   <isShowExplain>false</isShowExplain>
   <rowMerge>false</rowMerge>
+  <showExplainScript><![CDATA[]]></showExplainScript>
   <jumpActOpenType>0</jumpActOpenType>
 </column>

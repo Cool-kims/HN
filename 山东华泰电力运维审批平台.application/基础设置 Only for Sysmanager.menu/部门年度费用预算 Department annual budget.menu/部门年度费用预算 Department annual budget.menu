@@ -11,13 +11,13 @@
   <linkType>01</linkType>
   <moduleid>11e7-ef14-67d7f576-8f99-af63cc0890b3</moduleid>
   <directory>portal</directory>
-  <actionContent><![CDATA[11e8-0126-edd5b25f-bd9f-71cbcd056375]]></actionContent>
+  <actionContent><![CDATA[11e7-ef14-67e9a891-8f99-af63cc0890b3]]></actionContent>
   <queryString><![CDATA[[]]]></queryString>
   <permissionType>private</permissionType>
   <showType>0</showType>
   <status>1</status>
   <isUsual>false</isUsual>
   <isMobile>false</isMobile>
-  <orderno>0</orderno>
+  <orderno>6</orderno>
   <showtotalrow>false</showtotalrow>
 </resourceVO>

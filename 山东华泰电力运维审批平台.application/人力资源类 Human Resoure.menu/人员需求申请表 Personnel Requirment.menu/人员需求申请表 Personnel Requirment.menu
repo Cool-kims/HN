@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="11e9-5114-4ccf4b06-9daa-bf7ae5f506d2">
+  <name>人员需求申请表 Personnel Requirment</name>
+  <parentId>11e7-ef14-67e8bebd-8f99-af63cc0890b3</parentId>
+  <description>人员需求申请表Personnel Requirment Application Form</description>
+  <type>00</type>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef14-67e8bebd-8f99-af63cc0890b3</superior>
+  <linkName>人员需求申请表Personnel Requirment Application Form</linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef14-67e366dd-8f99-af63cc0890b3</moduleid>
+  <directory>portal</directory>
+  <actionContent><![CDATA[11e9-507f-a8cbae2d-9daa-bf7ae5f506d2]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>10</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

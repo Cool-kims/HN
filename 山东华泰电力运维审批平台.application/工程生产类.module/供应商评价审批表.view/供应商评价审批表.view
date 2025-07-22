@@ -7,13 +7,14 @@
   <expandQueryForm>false</expandQueryForm>
   <orderno>0</orderno>
   <isAllowDrag>true</isAllowDrag>
+  <dataSourceId></dataSourceId>
   <pagination>true</pagination>
   <pageLines>10</pageLines>
   <showTotalRow>true</showTotalRow>
   <refresh>false</refresh>
   <refreshAll>false</refreshAll>
   <newPage>false</newPage>
-  <lastModifyTime class="sql-date">2018-04-09T13:49:23.000+08:00</lastModifyTime>
+  <lastModifyTime>2018-04-09T05:49:23.000+08:00</lastModifyTime>
   <readonly>false</readonly>
   <displayType>relatedForm</displayType>
   <defaultShowMode>month</defaultShowMode>
@@ -24,9 +25,12 @@
   <autoCompose>false</autoCompose>
   <relatedForm>__11e8-3bb8-4eeee40f-94e7-ef330bda161e</relatedForm>
   <permissionType>public</permissionType>
-  <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'C_编号'},{field:'企业名称',operator:'LIKE',type:'03',match:'C_企业名称'},{field:'编制人',operator:'LIKE',type:'03',match:'C_编制人'},{field:'编制日期',operator:'LIKE',type:'03',match:'C_编制日期'}]]]></filterCondition>
+  <filterScript><![CDATA[]]></filterScript>
+  <sqlFilterScript><![CDATA[]]></sqlFilterScript>
+  <procedureFilterScript><![CDATA[]]></procedureFilterScript>
+  <filterCondition><![CDATA[[{"field":"编号","operator":"LIKE","type":"03","match":"C_编号","ipField":"","numField":0,"daField":"","sfField":"C_编号","syField":""},{"field":"企业名称","operator":"LIKE","type":"03","match":"C_企业名称","ipField":"","numField":0,"daField":"","sfField":"C_企业名称","syField":""},{"field":"编制人","operator":"LIKE","type":"03","match":"C_编制人","ipField":"","numField":0,"daField":"","sfField":"C_编制人","syField":""},{"field":"编制日期","operator":"LIKE","type":"03","match":"C_编制日期","ipField":"","numField":0,"daField":"","sfField":"C_编制日期","syField":""}]]]></filterCondition>
   <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
-  <authorityCondition>[{_authFields:'author',_authFieldScope:'itself'}]</authorityCondition>
+  <authorityCondition>[{"_authFields":"author","_authFieldScope":"itself"}]</authorityCondition>
   <openType>1</openType>
   <editMode>00</editMode>
   <width>0</width>

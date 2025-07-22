@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="__VLovbqpuW5kMWsHlyXC">
+<column id="__Wiq9BGnRpNRh2H8EYEV">
   <name>用途</name>
   <parentId>11e9-01b8-6676e97e-8757-9ba2bef2ac21</parentId>
   <width></width>
@@ -12,7 +12,7 @@
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
   <fontColor></fontColor>
-  <orderno>12</orderno>
+  <orderno>5</orderno>
   <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>

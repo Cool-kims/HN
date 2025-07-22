@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="11e8-4496-aa8fe459-9769-678d9eb15904">
+<column id="__XV9HU8R3D4DlPpwvulW">
   <name>已用金额</name>
   <parentId>11e7-ef14-67e9a891-8f99-af63cc0890b3</parentId>
   <width></width>
@@ -13,15 +13,18 @@ var money2=mybalance("费用",money,did,times,cost).toFixed(2)+"";
 var money3=money-money2;
 money3]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
+  <beforeScript><![CDATA[]]></beforeScript>
+  <afterScript><![CDATA[]]></afterScript>
   <parentView>11e7-ef14-67e9a891-8f99-af63cc0890b3</parentView>
   <type>COLUMN_TYPE_SCRIPT</type>
+  <labelScript><![CDATA[]]></labelScript>
   <formid></formid>
   <fieldName></fieldName>
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
   <fontColor></fontColor>
-  <orderno>7</orderno>
-  <sum>true</sum>
+  <orderno>6</orderno>
+  <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>
   <orderType>ASC</orderType>
@@ -30,17 +33,20 @@ money3]]></valueScript>
   <clickSorting>true</clickSorting>
   <sortStandard>00</sortStandard>
   <jumpMapping></jumpMapping>
+  <jumpMode>00</jumpMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
   <mappingform></mappingform>
-  <formatType>number</formatType>
-  <decimalsNum></decimalsNum>
+  <formatType>simple</formatType>
+  <decimalsNum>1</decimalsNum>
   <thouSign>false</thouSign>
-  <decimalsCurr></decimalsCurr>
-  <color></color>
+  <decimalsCurr>1</decimalsCurr>
+  <currType>zh_CN</currType>
+  <color>rgba(0, 0, 0, 1)</color>
   <fontSize>12</fontSize>
   <groundColor></groundColor>
   <showIcon>false</showIcon>
   <iconMapping></iconMapping>
-  <buttonType></buttonType>
+  <buttonType>00</buttonType>
   <buttonName></buttonName>
   <visible>true</visible>
   <visible4ExpExcel>true</visible4ExpExcel>
@@ -55,12 +61,14 @@ money3]]></valueScript>
   <showAsButton>false</showAsButton>
   <displayType>00</displayType>
   <displayLength></displayLength>
-  <showTitle>false</showTitle>
+  <showTitle>true</showTitle>
   <customIcon>false</customIcon>
   <isFilter>false</isFilter>
   <isShowThisColumn>false</isShowThisColumn>
+  <selectOptionScript><![CDATA[]]></selectOptionScript>
   <isEnter>false</isEnter>
   <isShowExplain>false</isShowExplain>
   <rowMerge>false</rowMerge>
+  <showExplainScript><![CDATA[]]></showExplainScript>
   <jumpActOpenType>0</jumpActOpenType>
 </column>

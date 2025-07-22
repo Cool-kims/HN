@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <resourceVO id="11e7-ef14-ffa88d88-8f99-af63cc0890b3">
-  <name> 内招用餐申请单  Reception Approval Form</name>
+  <name>内招用餐申请单  Reception Approval Form</name>
   <parentId>11e7-ef14-ffa88d7c-8f99-af63cc0890b3</parentId>
   <description> 内招用餐申请单  Reception Approval Form</description>
   <type>00</type>
@@ -11,7 +11,7 @@
   <linkType>01</linkType>
   <moduleid>11e7-ef14-ff9be342-8f99-af63cc0890b3</moduleid>
   <directory>portal</directory>
-  <actionContent><![CDATA[11e8-6c73-c6f00ef2-88b0-372d6ed18679]]></actionContent>
+  <actionContent><![CDATA[11e7-ef14-ffab2540-8f99-af63cc0890b3]]></actionContent>
   <queryString><![CDATA[[]]]></queryString>
   <permissionType>public</permissionType>
   <showType>0</showType>

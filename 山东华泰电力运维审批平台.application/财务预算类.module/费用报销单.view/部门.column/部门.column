@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="__iT8juObsuGYq8WDYShZ">
+<column id="__zvU1H1UlZLNv24VdS7G">
   <name>部门</name>
   <parentId>11e7-ef14-67ea6bf6-8f99-af63cc0890b3</parentId>
   <width></width>
@@ -12,7 +12,7 @@
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
   <fontColor></fontColor>
-  <orderno>4</orderno>
+  <orderno>2</orderno>
   <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>

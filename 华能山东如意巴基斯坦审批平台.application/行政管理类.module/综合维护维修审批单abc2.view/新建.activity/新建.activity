@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="__RzSvuzYCipgixfXUJB8">
+  <name>新建</name>
+  <parentId>__477RSOeKsiduJn6jnYj</parentId>
+  <type>2</type>
+  <onActionForm>__11e8-69ab-3d9180d4-9dd9-7742dbd80144</onActionForm>
+  <editMode>0</editMode>
+  <orderno>0</orderno>
+  <parentView>__477RSOeKsiduJn6jnYj</parentView>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <dispatcherMode>0</dispatcherMode>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionSelection>0</actionSelection>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <processPreview>false</processPreview>
+</activity>
