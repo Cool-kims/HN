@@ -1,5 +1,5 @@
 #
-#Tue Jul 22 20:49:34 CST 2025
+#Wed Jul 23 19:36:16 CST 2025
 11e8-68eb-2154aac5-9dd9-7742dbd80144=/山东鲁意国际电力审批平台.application/行政管理类.module/差旅费报销凭证子表_1.view/轮船票价.column/轮船票价.column
 11e6-b90c-0cc964c0-80f3-a13ff81de2a8=/山东鲁意国际电力审批平台.application/设置.module/印签管理表单.form/保存并新建.activity/保存并新建.activity
 11e9-01f2-763419a7-8757-9ba2bef2ac21=/山东鲁意国际电力审批平台.application/行政管理类.module/信息产品耗材申请表新.view/新建.activity/新建.activity
@@ -1813,6 +1813,7 @@ __11e7-ef14-ffa64311-8f99-af63cc0890b3=/山东鲁意国际电力审批平台.app
 11e7-218e-45bdaaf0-a60c-cf927eb9b3bb=/山东鲁意国际电力审批平台.application/燃料供应类.module/运费结算审批单.view/编号.column/编号.column
 11e7-0181-122d0ac8-a14b-a508f8c0a621=/山东鲁意国际电力审批平台.application/燃料供应类.module/内陆运输计划审批单.form/保存并启动流程.activity/保存并启动流程.activity
 11ed-73ae-f4e427b9-8221-d1692677ae63=/山东鲁意国际电力审批平台.application/人力资源类.module/城投员工疫情补贴.view/编制日期.column/编制日期.column
+__XTVH67Aum1MyLolPBHc=/山东鲁意国际电力审批平台.application/物资申请类.module/采购合同审批单2.view/编号.column/编号.column
 11eb-5664-5c2ddd50-a8f8-fb49a99bba0b=/山东鲁意国际电力审批平台.application/财务预算类.module/出差申请表领导.view/当前审批人.column/当前审批人.column
 11e7-ef14-ff999939-8f99-af63cc0890b3=/山东鲁意国际电力审批平台.application/财务预算类.module/财务预算类.module
 11e7-ef14-ffa86632-8f99-af63cc0890b3=/山东鲁意国际电力审批平台.application/基础设置 Only for Sysmanager.menu/部门年度费用预算 Department annual budget.menu/部门年度费用预算 Department annual budget.menu
@@ -2027,6 +2028,7 @@ __11e7-ef14-ffa1d604-8f99-af63cc0890b3=/山东鲁意国际电力审批平台.app
 11e5-da30-6ddc7d6d-bca3-1787d71be9d4=/山东鲁意国际电力审批平台.application/行政管理类.module/机票申请单.view/删除.activity/删除.activity
 11e6-bc26-0ecc072a-8865-edb9ee0ca8a3=/山东鲁意国际电力审批平台.application/人力资源类.module/工资核定审批表.view/当前处理人.column/当前处理人.column
 11eb-8073-0954aaad-86e7-7bd47b70205b=/山东鲁意国际电力审批平台.application/查看全部 view all.menu/出差申请表领导 Business trip application form.menu/出差申请表领导 Business trip application form.menu
+__ThLr0fo5SQ0zSTeAaKR=/山东鲁意国际电力审批平台.application/物资申请类.module/采购合同审批单2.view/开始审批时间.column/开始审批时间.column
 11e7-e9dc-748464ef-b963-ed61b29a709b=/山东鲁意国际电力审批平台.application/设置.module/软件维护.view/英.column/英.column
 11e7-d89f-c2b1a0c1-ae95-47caf4f32d12=/山东鲁意国际电力审批平台.application/物资申请类.module/物资询价采购结果审批表子表.view/报价日期.column/报价日期.column
 11e7-e912-4794da0e-b020-5bca08029dcb=/山东鲁意国际电力审批平台.application/工程生产类.module/工程公开招标申请表.form/保存并启动流程.activity/保存并启动流程.activity
@@ -2157,6 +2159,7 @@ __11ed-0cc8-9ef5e1e3-9b1f-ed35ebb0a0b2=/山东鲁意国际电力审批平台.app
 11e6-c79f-3e1b8fe5-ad68-01084507f2e0=/山东鲁意国际电力审批平台.application/行政管理类.module/计算机打印机申请表.view/编号.column/编号.column
 11ec-78c6-3d995744-b810-7bae9f65952d=/山东鲁意国际电力审批平台.application/物资申请类.module/单一来源采购.flow/单一来源采购.flow
 11e5-d9c9-2c9c425e-bca3-1787d71be9d4=/山东鲁意国际电力审批平台.application/行政管理类.module/加油申请表.view/上次加油公里数.column/上次加油公里数.column
+__jLQk93uofvTHnXeVUta=/山东鲁意国际电力审批平台.application/物资申请类.module/采购合同审批单2.view/合同承办人.column/合同承办人.column
 11e3-b63f-7ec6f659-bf48-2fde04a45556=/山东鲁意国际电力审批平台.application/设置.module/设置_v_tree_form_langxp.view/本级代码.column/本级代码.column
 11e7-ef14-ffa8b4dd-8f99-af63cc0890b3=/山东鲁意国际电力审批平台.application/财务出纳.role
 11e3-e7a9-5a76efdf-8083-9d9a7554ffba=/山东鲁意国际电力审批平台.application/设置.module/附件管理共享.view/附件名称.column/附件名称.column

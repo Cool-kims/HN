@@ -7,13 +7,14 @@
   <expandQueryForm>false</expandQueryForm>
   <orderno>0</orderno>
   <isAllowDrag>true</isAllowDrag>
+  <dataSourceId></dataSourceId>
   <pagination>true</pagination>
   <pageLines>10</pageLines>
   <showTotalRow>true</showTotalRow>
   <refresh>false</refresh>
   <refreshAll>false</refreshAll>
   <newPage>false</newPage>
-  <lastModifyTime class="sql-date">2018-04-14T13:28:33.000+08:00</lastModifyTime>
+  <lastModifyTime>2018-04-14T05:28:33.000+08:00</lastModifyTime>
   <readonly>false</readonly>
   <displayType>relatedForm</displayType>
   <defaultShowMode>month</defaultShowMode>
@@ -24,8 +25,12 @@
   <autoCompose>false</autoCompose>
   <relatedForm>__11e8-397f-38a1d595-94e7-ef330bda161e</relatedForm>
   <permissionType>public</permissionType>
-  <filterCondition><![CDATA[[{field:'工程名称',operator:'LIKE',type:'03',match:'工程名称'},{field:'项目预算',operator:'LIKE',type:'03',match:'项目预算'},{field:'费用来源',operator:'LIKE',type:'03',match:'费用来源'},{field:'地点',operator:'LIKE',type:'03',match:'地点'}]]]></filterCondition>
+  <filterScript><![CDATA[]]></filterScript>
+  <sqlFilterScript><![CDATA[]]></sqlFilterScript>
+  <procedureFilterScript><![CDATA[]]></procedureFilterScript>
+  <filterCondition><![CDATA[[{"field":"工程名称","operator":"LIKE","type":"03","match":"工程名称","ipField":"","numField":0,"daField":"","sfField":"工程名称","syField":""},{"field":"项目预算","operator":"LIKE","type":"03","match":"项目预算","ipField":"","numField":0,"daField":"","sfField":"项目预算","syField":""},{"field":"费用来源","operator":"LIKE","type":"03","match":"费用来源","ipField":"","numField":0,"daField":"","sfField":"费用来源","syField":""},{"field":"地点","operator":"LIKE","type":"03","match":"地点","ipField":"","numField":0,"daField":"","sfField":"地点","syField":""}]]]></filterCondition>
   <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <authorityCondition>[]</authorityCondition>
   <openType>1</openType>
   <editMode>00</editMode>
   <width>0</width>

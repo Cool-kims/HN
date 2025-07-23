@@ -5,43 +5,36 @@
   <type>2</type>
   <onActionForm>__11e9-01b7-1bba7c38-8757-9ba2bef2ac21</onActionForm>
   <onActionView></onActionView>
-  <onActionFlow></onActionFlow>
-  <onActionPrint></onActionPrint>
   <colorType>default</colorType>
   <beforeActionScript><![CDATA[]]></beforeActionScript>
   <afterActionScript><![CDATA[]]></afterActionScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <readonlyScript><![CDATA[]]></readonlyScript>
-  <startFlowScript><![CDATA[]]></startFlowScript>
   <editMode>0</editMode>
-  <flowShowType>ST01</flowShowType>
   <fileNameScript><![CDATA[]]></fileNameScript>
   <orderno>1</orderno>
-  <stateToShow></stateToShow>
   <parentView>11ea-313a-06f0f424-9144-0905742bc3c3</parentView>
   <impmappingconfigid></impmappingconfigid>
   <jumpType>0</jumpType>
   <expSub>true</expSub>
   <icon></icon>
-  <disableFlowNode>true</disableFlowNode>
-  <changeFlowOperator>true</changeFlowOperator>
-  <changeFlowCc>true</changeFlowCc>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
   <multiLanguageLabel></multiLanguageLabel>
   <dispatcherMode>0</dispatcherMode>
   <dispatcherUrl><![CDATA[]]></dispatcherUrl>
-  <dispatcherParams><![CDATA[]]></dispatcherParams>
-  <jumpMode>1</jumpMode>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
   <jumpActOpenType>0</jumpActOpenType>
   <withOld>false</withOld>
   <actionType>0</actionType>
   <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
   <actionSelection>0</actionSelection>
   <relatedFormId></relatedFormId>
-  <actionScript><![CDATA[]]></actionScript>
   <workFlowType>0</workFlowType>
   <contextMenu>false</contextMenu>
   <showInToolbar>true</showInToolbar>
-  <transpond>选择</transpond>
-  <targetList></targetList>
+  <label><![CDATA[]]></label>
   <processPreview>false</processPreview>
 </activity>
