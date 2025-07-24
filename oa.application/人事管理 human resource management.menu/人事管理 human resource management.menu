@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__SD56p4ONdYWNilD0YVb">
+  <name>人事管理 human resource management</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description>人事管理</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p133_Personnel.png","icontype":"img"}</ico>
+  <linkType></linkType>
+  <actionContent><![CDATA[__dPQYF0CDVYL7d50TGAl]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>40</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

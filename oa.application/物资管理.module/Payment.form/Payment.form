@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__BpisGNeW39rasui5BqE">
+  <name>Payment</name>
+  <parentId>__r0RjkLvSGDhDBeF8UwP</parentId>
+  <description>付款信息</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;<br />
+<span style="font-size: x-large;"><strong>付款信息&nbsp;Payment information</strong></span><br />
+<br />
+&nbsp;</div>
+<table width="100%" height="119" border="1" cellpadding="1" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="20%"><span style="color: rgb(255, 0, 0);">*</span>付款事由&nbsp;Reason for payment</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC" colspan="3" width="80%"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__c8BDpjFrHyeipnLbHgl" name="Reason" readonlyshowvalonly="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="付款事由" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="text"></textarea></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>付款总额(元)Total payment amount (yuan)</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC" width="30%"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__7CzLwzkjH2ijVrTJ51l" text="text" name="Amount" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="付款总额" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="0.00" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="20%"><span style="color: rgb(255, 0, 0);">*</span>付款方式&nbsp;payment method</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC" width="30%"><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__gom3fZp3oKOCTsDw02J" name="PaymentMethod" discript="付款方式" layout="horizontal" readonlyshowvalonly="true" valuescript="" optionsscript="(function(){@amp;#13;var@nbsp;opts@nbsp;=@nbsp;$TOOLS.createOptions();@nbsp;//创建指定类对象@amp;#13;opts.add(@quot;@quot;,@quot;@quot;);@amp;#13;opts.add(@quot;支票@quot;,@quot;支票@quot;);@amp;#13;opts.add(@quot;贷记@quot;,@quot;贷记@quot;);@amp;#13;opts.add(@quot;电汇@quot;,@quot;电汇@quot;);@amp;#13;opts.add(@quot;汇票@quot;,@quot;汇票@quot;);@amp;#13;opts.add(@quot;现金@quot;,@quot;现金@quot;);@amp;#13;opts.add(@quot;银行卡@quot;,@quot;银行卡@quot;);@amp;#13;opts.add(@quot;其他@quot;,@quot;其他@quot;);@amp;#13;return@nbsp;opts;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="100" widthunit="%" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext=""></select></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>支付日期&nbsp;Payment Date</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__Y4gBWewmclqhTjbxqVY" type="text" fieldtype="VALUE_TYPE_DATE" name="PaymentDate" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="支付日期" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>支付对象&nbsp;Payment recipient</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__zXdCkKSXosmU9oGZr1R" text="text" name="Payee" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="支付对象" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" refreshmode="0" refreshfields="" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">开户行&nbsp;Opening Bank</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__3krFGjVASJlaGOZMvRX" text="text" name="Bank" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="开户行" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">银行账户&nbsp;bank account</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__UMCcaX4qnYEsRRNQESo" text="text" name="BankAccount" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="银行账户" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;<br />
+<br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"Payment","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>20</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

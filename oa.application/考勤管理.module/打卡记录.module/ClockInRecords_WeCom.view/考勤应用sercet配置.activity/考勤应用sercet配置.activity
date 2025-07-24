@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="__zljQtPAqZVnK2PewxLr">
+  <name>考勤应用sercet配置</name>
+  <parentId>__nzQRwrS6l9sJd1V1fUS</parentId>
+  <type>43</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>0</orderno>
+  <parentView>__nzQRwrS6l9sJd1V1fUS</parentView>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <icon>{"icon":"fa fa-gear","type":"font"}</icon>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[(function(){
+	var appid=getApplication();
+	var request = $WEB.getParamsTable().getHttpRequest();
+	var schema = request.getScheme();
+	var serverName = request.getServerName();
+	var url_head = schema+"://"+serverName+":"+request.getServerPort();
+	var url="";
+	var sql="select * from tlk_wecom_attendance_configuration";
+	var data=findBySQL(sql);
+	if(data!=null){
+		var zdocid=data.getId();
+		url=url_head+"/static/portal/vue/index.html#/open?appId="+appid+"&docid="+zdocid+"&actionContent=__Lc3fIIgwYqxPQbNb3Ey&opentarget=detail&linkType=00&dialogWidth=1100&dialogHeight=500";
+	}else{
+		url=url_head+"/static/portal/vue/index.html#/open?appId="+appid+"&actionContent=__Lc3fIIgwYqxPQbNb3Ey&opentarget=detail&linkType=00&dialogWidth=1100&dialogHeight=500";
+	}
+	return url;
+})();]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>1</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <workFlowType>0</workFlowType>
+  <contextMenu>true</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <targetList>__nzQRwrS6l9sJd1V1fUS|</targetList>
+  <label><![CDATA[]]></label>
+  <processPreview>false</processPreview>
+</activity>

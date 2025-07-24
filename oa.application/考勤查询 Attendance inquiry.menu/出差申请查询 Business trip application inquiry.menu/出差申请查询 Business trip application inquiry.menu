@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__C6DVXohmVqUEiRnxKWK">
+  <name>出差申请查询 Business trip application inquiry</name>
+  <parentId>__ODY8RX6EGnrbS7jqOLq</parentId>
+  <description>出差申请查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__ODY8RX6EGnrbS7jqOLq</superior>
+  <linkType>01</linkType>
+  <moduleid>__oVGLyK9uUQDxmSDCkln</moduleid>
+  <actionContent><![CDATA[__qVyI3p4gRH8152wipT5]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>10</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

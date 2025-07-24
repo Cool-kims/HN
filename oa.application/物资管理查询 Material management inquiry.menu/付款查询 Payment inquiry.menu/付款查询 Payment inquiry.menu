@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__oR2pyYSOk7KuGAQUoSk">
+  <name>付款查询 Payment inquiry</name>
+  <parentId>__4giBFpQpXVgLYLUQA4F</parentId>
+  <description>付款查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__4giBFpQpXVgLYLUQA4F</superior>
+  <linkType>01</linkType>
+  <moduleid>__r0RjkLvSGDhDBeF8UwP</moduleid>
+  <actionContent><![CDATA[__t4O1EMdHZNTiJNT3uqN]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>20</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

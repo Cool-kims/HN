@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__KUVqdHRmJ5NsJE8KuRt">
+  <name>GeneralApplication</name>
+  <parentId>__viKzAdJiU6ClOXvX4d1</parentId>
+  <description>通用申请</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;<br />
+<span style="font-size: x-large;"><strong>通用审批&nbsp;General approval</strong></span><br />
+<br />
+&nbsp;&nbsp;</div>
+<div style="text-align: center;">
+<table width="80%" height="60" border="1" cellpadding="1" cellspacing="1" align="center" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" style="border: 1px solid rgb(220, 220, 220);" width="20%"><span style="color: rgb(255, 0, 0);">*</span>﻿申请人&nbsp;applicant</td>
+            <td align="left" bordercolor="#DCDCDC" style="border: 1px solid rgb(220, 220, 220);" width="30%"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__czJj2YokmkIkJZTF79G" type="text" name="Applicant" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="(function(){@amp;#13;@nbsp;var@nbsp;applicant@nbsp;=@nbsp;getItemValueAsString(@quot;Applicant@quot;);@nbsp;@nbsp;@amp;#13;if(applicant@nbsp;==@nbsp;@quot;@quot;){@amp;#13;@nbsp;@nbsp;@nbsp;var@nbsp;user=@nbsp;getWebUser().getId();@amp;#13;@nbsp;}@amp;#13;return@nbsp;user;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="申请人" layout="horizontal" limitsum="10" width="100" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="readonly" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="multiSelect"></select></td>
+            <td align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" style="border: 1px solid rgb(220, 220, 220);" width="20%"><span style="color: rgb(255, 0, 0);">*</span>﻿申请内容&nbsp;Application content</td>
+            <td align="left" bordercolor="#DCDCDC" style="border: 1px solid rgb(220, 220, 220);" width="30%"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__JBIRG8xe151fjOnWSa5" text="text" name="Content" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="申请内容" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" refreshmode="0" refreshfields="" /></td>
+        </tr>
+        <tr>
+            <td align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" style="border: 1px solid rgb(220, 220, 220);"><span style="color: rgb(255, 0, 0);">*</span>﻿审批详情&nbsp;Approval Details</td>
+            <td colspan="3" align="left" bordercolor="#DCDCDC" style="border: 1px solid rgb(220, 220, 220);"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__ahVo8UZJjC10EigmXni" name="ApprovalDetail" readonlyshowvalonly="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="审批详情" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="text"></textarea></td>
+        </tr>
+        <tr>
+            <td align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" style="border: 1px solid rgb(220, 220, 220);">﻿图片&nbsp;Picture</td>
+            <td colspan="3" align="left" bordercolor="#DCDCDC" style="border: 1px solid rgb(220, 220, 220);"><img src="http://192.168.88.236:8080/designer/image/form/imageuploadfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.ImageUploadField" id="__3LLciX0V6glmqalTvqe" type="imageupload" fieldtype="VALUE_TYPE_TEXT" imgh="100" imgw="100" limitsize="" opentype="dialog" name="picture" refreshonchanged="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" hidetype="parent" ishidetype="false" discript="图片" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filepattern="00" filecatalog="" refreshmode="0" refreshfields="" limitnumber="10" instantvalidate="false" validatelibs="" /></td>
+        </tr>
+        <tr>
+            <td align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" style="border: 1px solid rgb(220, 220, 220);">附件&nbsp;attachment</td>
+            <td colspan="3" align="left" bordercolor="#DCDCDC" style="border: 1px solid rgb(220, 220, 220);"><img src="http://192.168.88.236:8080/designer/image/form/attachment.gif" classname="cn.myapps.runtime.dynaform.form.ejb.AttachmentUploadField" id="__RHWz707wtoFXlbnlsaH" type="attachmentupload" fieldtype="VALUE_TYPE_TEXT" openwatermark="false" watermarksupportmode="" watermarkscript="" name="file" validaterule="" instantvalidate="false" validatelibs="" limitsize="" limitnumber="10" refreshonchanged="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" previewedit="true" showtrackrevisions="true" showusernameanddate="true" supportsorting="false" islogicdelete="false" discript="附件" hidetype="parent" ishidetype="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filepattern="00" filecatalog="" filetype="00" refreshmode="0" refreshfields="" customizetype="" selecteditplug="tray" /></td>
+        </tr>
+    </tbody>
+</table>
+<div>&nbsp;<br />
+&nbsp;</div>
+<div>&nbsp;</div>
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"GeneralApplication","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>1</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

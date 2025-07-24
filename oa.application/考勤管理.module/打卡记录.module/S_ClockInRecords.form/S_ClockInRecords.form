@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__JS9WcqF8wrFCDShDoYF">
+  <name>S_ClockInRecords</name>
+  <parentId>__CmG4oeGgx8WtMkqMs1l</parentId>
+  <description>打卡查询</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;<br />
+<br />
+<br />
+&nbsp;</div>
+<table width="80%" height="60" border="0" cellpadding="1" cellspacing="1" style="" align="center">
+    <tbody>
+        <tr>
+            <td style="" align="right" width="15%">打卡人&nbsp;Check in person</td>
+            <td style="" align="left" bordercolor="#DCDCDC" width="35%"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__0n9zldaxaEwg0Z5GFKO" type="text" name="wecom_user" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" showlog="true" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="打卡人" layout="horizontal" limitsum="10" width="" widthunit="px" fieldtype="VALUE_TYPE_TEXT" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="selectOne" attributeid="undefined"></select></td>
+            <td style="" align="right" width="15%">﻿异常类型&nbsp;Exception</td>
+            <td style="" align="left" bordercolor="#DCDCDC" width="35%"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__0kwy6BiM7V96qrwdqOQ" text="text" name="wecom_exception_type" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" showlog="true" discript="异常类型" validaterule="" valuescript="" width="" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" attributeid="undefined" /></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;<br />
+<br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"S_ClockInRecords","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>40</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

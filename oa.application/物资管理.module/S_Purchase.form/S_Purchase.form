@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__wcqokXN2lismQKSbgGU">
+  <name>S_Purchase</name>
+  <parentId>__r0RjkLvSGDhDBeF8UwP</parentId>
+  <description>采购申请查询</description>
+  <templatecontext><![CDATA[<table width="80%" height="30" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td style="text-align: right;" width="15%" align="right"><span style="text-align: right;">申请事由&nbsp;Reason for application</span></td>
+            <td><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__vy2PeLIkobnty4kFQtf" text="text" name="Reason" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="申请事由" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="text-align: right;" width="15%" align="right"><span style="text-align: right;">采购类型&nbsp;procurement type</span></td>
+            <td width="15%"><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__DJkFiQTnfBGzUAcr2IO" name="PurchaseType" discript="采购类型" layout="horizontal" readonlyshowvalonly="true" valuescript="" optionsscript="(function(){@amp;#13;var@nbsp;opts@nbsp;=@nbsp;$TOOLS.createOptions();@nbsp;//创建指定类对象@amp;#13;opts.add(@quot;@quot;,@quot;@quot;);@amp;#13;opts.add(@quot;办公用品@quot;,@quot;办公用品@quot;);@amp;#13;opts.add(@quot;其他@quot;,@quot;其他@quot;);@amp;#13;return@nbsp;opts;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" validatelibs="" editmode="01" width="100" widthunit="%" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext=""></select></td>
+        </tr>
+    </tbody>
+</table>
+<br />]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"S_Purchase","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>41</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

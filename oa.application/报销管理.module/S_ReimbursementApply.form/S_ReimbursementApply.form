@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__gZqz6QbNBpYStTMbeHR">
+  <name>S_ReimbursementApply</name>
+  <parentId>__vT4EDEMNh36Jb1CZ6yf</parentId>
+  <description>报销单查询</description>
+  <templatecontext><![CDATA[<table width="100%" height="55" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td style="text-align: right;" width="15%" align="right"><span style="text-align: right;">申请人&nbsp;applicant</span></td>
+            <td><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__7UvlqnzYhibNtcQ5kqV" type="text" name="Applicant" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="申请人" layout="horizontal" limitsum="10" width="" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="selectOne"></select></td>
+            <td style="text-align: right;" width="15%" align="right">﻿申请日期&nbsp;Application date</td>
+            <td><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__OT34ygSeG728Pmb1BNx" type="text" fieldtype="VALUE_TYPE_DATE" name="StartTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="开始日期" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" />﻿ -&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__mU6sdNLvC9PAP8wzxMP" type="text" fieldtype="VALUE_TYPE_DATE" name="EndTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="true" prev_name="StartTime" discript="结束日期" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" /></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">报销单号&nbsp;Reimbursement number</td>
+            <td><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__9euob8DFwao8P7Loxel" text="text" name="ReimbursementNo" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" showlog="true" discript="报销单号" validaterule="" valuescript="" width="" widthunit="px" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" attributeid="undefined" /></td>
+            <td style="text-align: right;">状态&nbsp;state</td>
+            <td><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__jgFyAjCapH4XLRyGFY7" name="statelabel" discript="状态" layout="horizontal" readonlyshowvalonly="true" showlog="true" valuescript="" optionsscript="(function(){@amp;#13;var@nbsp;opts@nbsp;=@nbsp;$TOOLS.createOptions();@nbsp;//创建指定类对象@amp;#13;opts.add(@quot;@quot;,@quot;@quot;);@amp;#13;opts.add(@quot;未提交@quot;,@quot;未提交@quot;);@amp;#13;opts.add(@quot;直属主管@quot;,@quot;直属主管@quot;);@amp;#13;opts.add(@quot;总经理@quot;,@quot;总经理@quot;);@amp;#13;opts.add(@quot;财务专员@quot;,@quot;财务专员@quot;);@amp;#13;opts.add(@quot;出纳付款@quot;,@quot;出纳付款@quot;);@amp;#13;opts.add(@quot;归档@quot;,@quot;归档@quot;);@amp;#13;return@nbsp;opts;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" clearable="false" multipledisplaymode="full" validatelibs="" editmode="01" width="" widthunit="px" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext="" attributeid="undefined"></select></td>
+        </tr>
+    </tbody>
+</table>
+<br />]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"S_ReimbursementApply","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>20</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

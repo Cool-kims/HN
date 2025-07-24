@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__grSo4AQ7rbIwOb4DIgw">
+  <name>ResignationApplication</name>
+  <parentId>__wXopwOgzVWrFYEdrKkL</parentId>
+  <description>离职申请</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;<br />
+<span style="font-size: x-large;"><strong>离职申请&nbsp;Resignation application</strong></span><br />
+<br />
+&nbsp;</div>
+<table width="100%" height="133" border="1" cellpadding="1" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="20%">申请人&nbsp;applicant</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC" colspan="3"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__5sTcWTFffzEbUKKujQ4" type="text" name="Applicant" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="(function(){@amp;#13;@nbsp;var@nbsp;applicant@nbsp;=@nbsp;getItemValueAsString(@quot;Applicant@quot;);@nbsp;@nbsp;@amp;#13;if(applicant@nbsp;==@nbsp;@quot;@quot;){@amp;#13;@nbsp;@nbsp;@nbsp;var@nbsp;user=@nbsp;getWebUser().getId();@amp;#13;@nbsp;}@amp;#13;return@nbsp;user;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="申请人" layout="horizontal" limitsum="10" width="100" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="readonly" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="1" refreshfields="EntryDate" selectmode="multiSelect"></select></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>入职日期&nbsp;Service Date</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__omLL9vI4va0lrk2ntnC" type="text" fieldtype="VALUE_TYPE_DATE" name="EntryDate" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" limit="false" prev_name="" discript="入职日期" valuescript="(function(){@amp;#13;&#9;var@nbsp;doc@nbsp;=@nbsp;getCurrentDocument();@amp;#13;&#9;var@nbsp;userid@nbsp;=@nbsp;doc.getItemValueAsString(@quot;Applicant@quot;);@amp;#13;&#9;&#9;var@nbsp;sql@nbsp;=@nbsp;@quot;select@nbsp;*@nbsp;from@nbsp;tlk_EmploymentApplication@nbsp;where@nbsp;item_EmployeeName=@#146;@quot;+userid+@quot;@#146;@quot;;@amp;#13;&#9;&#9;var@nbsp;data@nbsp;=@nbsp;findBySQL(sql);@amp;#13;&#9;&#9;if(data@nbsp;!=@nbsp;null){@amp;#13;&#9;&#9;&#9;var@nbsp;date@nbsp;=@nbsp;data.getItemValueAsDate(@quot;EmploymentDate@quot;);@amp;#13;&#9;&#9;}@amp;#13;&#9;&#9;return@nbsp;date;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01" /></td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="20%"><span style="color: rgb(255, 0, 0);">*</span>最后工作日&nbsp;last working day</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__fN22E5Rge2MvGFHwxtq" type="text" fieldtype="VALUE_TYPE_DATE" name="LastWorkingDay" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="最后工作日" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>离职原因&nbsp;Reason for leaving</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" colspan="3" align="left" bordercolor="#DCDCDC"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__EI6iE0tJkhLNMvi8o5G" name="Reasons" readonlyshowvalonly="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="离职原因" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="text"></textarea></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">离职原因备注&nbsp;Reason for Resignation Remarks</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" colspan="3" align="left" bordercolor="#DCDCDC"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__ELUiDOYctHqxGWowGFY" name="remarks" readonlyshowvalonly="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="离职原因备注" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="" editmode="01" width="" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="text"></textarea></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;<br />
+<br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"ResignationApplication","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>1</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__8mlLrOKfApCW9lqaxDo">
+  <name>JobTransferApplication</name>
+  <parentId>__wXopwOgzVWrFYEdrKkL</parentId>
+  <description>调岗申请</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;<br />
+<span style="font-size: x-large;"><strong>调岗申请</strong></span><br />
+<br />
+&nbsp;</div>
+<table width="100%" height="96" border="1" cellpadding="1" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">申请人</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC" colspan="3"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__4UmcLQ1Z9ZmFC12j8Fv" type="text" name="Applicant" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="(function(){@amp;#13;@nbsp;var@nbsp;applicant@nbsp;=@nbsp;getItemValueAsString(@quot;Applicant@quot;);@nbsp;@nbsp;@amp;#13;if(applicant@nbsp;==@nbsp;@quot;@quot;){@amp;#13;@nbsp;@nbsp;@nbsp;var@nbsp;user=@nbsp;getWebUser().getId();@amp;#13;@nbsp;}@amp;#13;return@nbsp;user;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="申请人" layout="horizontal" limitsum="10" width="100" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="1" refreshfields="EmploymentDate" selectmode="selectOne"></select></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">﻿﻿入职日期</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__ebqGDrjIVjKczocukCP" type="text" fieldtype="VALUE_TYPE_DATE" name="EmploymentDate" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" limit="false" prev_name="" discript="入职日期" valuescript="(function(){@amp;#13;&#9;var@nbsp;doc@nbsp;=@nbsp;getCurrentDocument();@amp;#13;&#9;var@nbsp;userid@nbsp;=@nbsp;doc.getItemValueAsString(@quot;Applicant@quot;);@amp;#13;&#9;&#9;var@nbsp;sql@nbsp;=@nbsp;@quot;select@nbsp;*@nbsp;from@nbsp;tlk_EmploymentApplication@nbsp;where@nbsp;item_EmployeeName=@#146;@quot;+userid+@quot;@#146;@quot;;@amp;#13;&#9;&#9;var@nbsp;data@nbsp;=@nbsp;findBySQL(sql);@amp;#13;&#9;&#9;if(data@nbsp;!=@nbsp;null){@amp;#13;&#9;&#9;&#9;var@nbsp;date@nbsp;=@nbsp;data.getItemValueAsDate(@quot;EmploymentDate@quot;);@amp;#13;&#9;&#9;}@amp;#13;&#9;&#9;return@nbsp;date;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="0" refreshfields="" editmode="01" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>生效日期</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__dQIigIck2ugVFi3b8yf" type="text" fieldtype="VALUE_TYPE_DATE" name="EffectiveDate" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="生效日期" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>原部门</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><select classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="__8iwEn6AHeJ122XZnWsb" type="text" name="OriginalDept" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" width="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" departmentlevel="-1" relatedfield="" isdepartmentfield="true" defaultoptiontype="16" allowempty="false" discript="原部门" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01"></select></td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>原职位</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__6tR05eVUKfAMCc1ffZn" name="OriginalPosition" discript="原职位" layout="horizontal" readonlyshowvalonly="true" valuescript="" optionsscript="#include@nbsp;@quot;basic@quot;;@amp;#13;(function(){@amp;#13;return@nbsp;getPosition();@amp;#13;})()@amp;#13;" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="100" widthunit="%" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext=""></select></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>转入部门</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><select classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="__7e6iBdPBgbaW5ths4wp" type="text" name="TransferInDept" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" width="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" departmentlevel="-1" relatedfield="" isdepartmentfield="true" defaultoptiontype="16" allowempty="false" discript="转入部门" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01"></select></td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>转入职位</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC"><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__pv9OS1cpAvBbMObkgww" name="TransferInPosition" discript="转入职位" layout="horizontal" readonlyshowvalonly="true" valuescript="" optionsscript="#include@nbsp;@quot;basic@quot;;@amp;#13;(function(){@amp;#13;return@nbsp;getPosition();@amp;#13;})()@amp;#13;" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="100" widthunit="%" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext=""></select></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;<br />
+<br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"JobTransferApplication","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>30</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

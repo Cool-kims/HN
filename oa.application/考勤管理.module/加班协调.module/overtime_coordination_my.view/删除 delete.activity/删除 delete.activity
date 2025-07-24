@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="__c3wiYX2moIZNlslOe5W">
+  <name>删除 delete</name>
+  <parentId>__CUZCqzWdeqBVQricBXn</parentId>
+  <type>3</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <colorType></colorType>
+  <beforeActionScript><![CDATA[(function(){
+    var curDoc = getCurrentDocument();
+    var docid = curDoc.getId();
+    var selectId = getParameter("_selects");
+    var sel = selectId.replace(";", "','");
+    sel = "('" + sel + "')";
+     if (selectId != null || selectId.length > 0) {
+        var sql = "select * from tlk_overtime_coordination where id in " + sel;
+        var datas = queryBySQL(sql);
+        if (datas.size() > 0) {
+            for (var iter = datas.iterator(); iter.hasNext(); ) {
+                var data = iter.next();
+                var StateLabel=data.getStateLabel();
+               if(!"申请人"==(StateLabel)&&""!= (StateLabel)){
+                 return "选中的数据中含有提交后的数据，不允许删除！";
+               }
+            }
+        }
+    }
+    
+})()]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <parentView>__CUZCqzWdeqBVQricBXn</parentView>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <icon></icon>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <label><![CDATA[]]></label>
+  <processPreview>false</processPreview>
+</activity>

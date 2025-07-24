@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__IrukYrsHk8ivMdcoLrl">
+  <name>补卡申请</name>
+  <parentId>__iO2mkW0ozLXsWMAkb0H</parentId>
+  <description>补卡申请</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p47_Approval.png","icontype":"img"}</ico>
+  <superior>__iO2mkW0ozLXsWMAkb0H</superior>
+  <linkType>00</linkType>
+  <moduleid>__lvVm5eYexdTlxBHGrhV</moduleid>
+  <actionContent><![CDATA[__s0UWS9KRMjvFeE64tiH]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>true</isUsual>
+  <isMobile>true</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

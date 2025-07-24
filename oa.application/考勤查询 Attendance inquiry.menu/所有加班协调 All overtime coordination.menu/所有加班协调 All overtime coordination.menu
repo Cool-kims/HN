@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__f1dAaF2TTiJOFXbNf10">
+  <name>所有加班协调 All overtime coordination</name>
+  <parentId>__ODY8RX6EGnrbS7jqOLq</parentId>
+  <description>所有加班协调</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__ODY8RX6EGnrbS7jqOLq</superior>
+  <linkType>01</linkType>
+  <moduleid>__9oIv2jNaenGrbkAJqHh</moduleid>
+  <actionContent><![CDATA[__wtzfAbUjZp1PIOAOSUb]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>90</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

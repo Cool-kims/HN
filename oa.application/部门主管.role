@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="__ev0hlPmuzRwjW8dyLws">
+  <name>部门主管</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <roleNo>003</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>167636222820300000</sortId>
+</role>

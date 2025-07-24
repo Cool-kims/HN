@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__7rPqupkrWjWA6LR9QA8">
+  <name>ClockInRecords</name>
+  <parentId>__CmG4oeGgx8WtMkqMs1l</parentId>
+  <description>打卡记录</description>
+  <templatecontext><![CDATA[&nbsp;<img src="../image/form/tabfield.gif" type="tabfield" classname="cn.myapps.runtime.dynaform.form.ejb.TabField" id="__A9ZLWccmPuSmi43bEV9" relstr="[{name:'打卡信息',moduleId:'__CmG4oeGgx8WtMkqMs1l',type:'form',formId:'__MVgyXswascW7Cx3sEtb',hiddenScript:'(function(){@amp;#13;&#9;var@nbsp;checkin_app=getItemValueAsString(@quot;checkin_app@quot;);@amp;#13;&#9;if(@quot;企业微信@quot;==(checkin_app)){@amp;#13;&#9;&#9;return@nbsp;false;@amp;#13;&#9;}else{@amp;#13;&#9;&#9;return@nbsp;true;@amp;#13;&#9;}@amp;#13;})();',readOnlyScript:'',hiddenPrintScript:'',refreshOnChanged:false,calculateOnRefresh:true,selectRefreshScript:'',relate:false},{name:'打卡信息',moduleId:'__CmG4oeGgx8WtMkqMs1l',type:'form',formId:'__jK5KHnah1BamVV7PXdS',hiddenScript:'(function(){@amp;#13;&#9;var@nbsp;checkin_app=getItemValueAsString(@quot;checkin_app@quot;);@amp;#13;&#9;if(@quot;钉钉@quot;==(checkin_app)){@amp;#13;&#9;&#9;return@nbsp;false;@amp;#13;&#9;}else{@amp;#13;&#9;&#9;return@nbsp;true;@amp;#13;&#9;}@amp;#13;})();',readOnlyScript:'',hiddenPrintScript:'',refreshOnChanged:false,calculateOnRefresh:true,selectRefreshScript:'',relate:false}]" tabname="records" tabselwidth="" tabselheight="" showmode="0" openall="false" allowsamename="on" selectedscript="" tabpercentage="px" /><br />
+<select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__30A7EDrbwDfo3x77ivC" name="checkin_app" discript="打卡应用" layout="horizontal" readonlyshowvalonly="true" showlog="true" valuescript="" optionsscript="(function(){@amp;#13;var@nbsp;opts=createOptions();@amp;#13;opts.add(@quot;企业微信@quot;,@quot;企业微信@quot;);@amp;#13;opts.add(@quot;钉钉@quot;,@quot;钉钉@quot;);@amp;#13;return@nbsp;opts;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="hidden" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" clearable="false" multipledisplaymode="full" validatelibs="" editmode="01" width="" widthunit="px" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext="" attributeid="undefined"></select><br />
+<br type="_moz" />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"ClockInRecords","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>10</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

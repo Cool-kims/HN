@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__to8riPAKO9cuqHzCge5">
+  <name>新建收文单 Create new incoming document form</name>
+  <parentId>__9VBEowWr27itxkchrb0</parentId>
+  <description>新建收文单</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p79_Orderies.png","icontype":"img"}</ico>
+  <superior>__9VBEowWr27itxkchrb0</superior>
+  <linkType>00</linkType>
+  <moduleid>__XTyqU85jOesMMnOeiuE</moduleid>
+  <actionContent><![CDATA[__uq3dozboEM3B1ma1ikE]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__OGQRJgEtnznOEdvkdvF">
+  <name>主数据维护 Master data maintenance</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description>主数据维护</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p39_Dispatch.png","icontype":"img"}</ico>
+  <linkType></linkType>
+  <actionContent><![CDATA[__BpisGNeW39rasui5BqE]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>100</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

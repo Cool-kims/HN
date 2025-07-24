@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__sTmgc8PMlWGDVTA4Dur">
+  <name>加班申请查询 Overtime application inquiry</name>
+  <parentId>__ODY8RX6EGnrbS7jqOLq</parentId>
+  <description>加班申请查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__ODY8RX6EGnrbS7jqOLq</superior>
+  <linkType>01</linkType>
+  <moduleid>__8myszuD8QrnwSWBE8t9</moduleid>
+  <actionContent><![CDATA[__8GEfV0e4EB0a1PN0DzM]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>40</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="__ksteXOuVtvsnrOSC42R">
+  <name>收文管理岗</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <roleNo>23</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>168631842430000000</sortId>
+</role>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__7eDH4aXvFETDI2ZmelE">
+  <name>离职交接 Resignation handover</name>
+  <parentId>__SD56p4ONdYWNilD0YVb</parentId>
+  <description>离职交接</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p134_mail.png","icontype":"img"}</ico>
+  <superior>__SD56p4ONdYWNilD0YVb</superior>
+  <linkType>00</linkType>
+  <moduleid>__wXopwOgzVWrFYEdrKkL</moduleid>
+  <actionContent><![CDATA[__t2w4UV9aeZfs4phsivV]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>40</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

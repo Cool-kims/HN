@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__cBa0EdbjCZYmiXCeE3F">
+  <name>物品领用申请 Reimbursement application</name>
+  <parentId>__8LmL61yQSSgoibqn2Kz</parentId>
+  <description>物品领用申请</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p24_box.png","icontype":"img"}</ico>
+  <superior>__8LmL61yQSSgoibqn2Kz</superior>
+  <linkType>00</linkType>
+  <moduleid>__r0RjkLvSGDhDBeF8UwP</moduleid>
+  <actionContent><![CDATA[__QcXcAAyABgmHPUPKjTQ]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

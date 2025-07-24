@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__UpiglXyrSaDeFDtBpI7">
+  <name>报销类别维护 Reimbursement maintenance</name>
+  <parentId>__OGQRJgEtnznOEdvkdvF</parentId>
+  <description>报销类别维护</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__OGQRJgEtnznOEdvkdvF</superior>
+  <linkType>01</linkType>
+  <moduleid>__tHbgiIgT2zXZs0aRQtM</moduleid>
+  <actionContent><![CDATA[__Mau9PS7RVxJHO433TXl]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>10</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

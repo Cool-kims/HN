@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__fDPcbHo5zMEemWikclm">
+  <name>钉钉考勤记录 DingTalk Attendance Record</name>
+  <parentId>__SZZtJCNOdBc0DC6KMBB</parentId>
+  <description>钉钉考勤记录</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__SZZtJCNOdBc0DC6KMBB</superior>
+  <linkType>01</linkType>
+  <moduleid>__CmG4oeGgx8WtMkqMs1l</moduleid>
+  <actionContent><![CDATA[__jdjnXYGTpzBMyEJYgcH]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>2</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

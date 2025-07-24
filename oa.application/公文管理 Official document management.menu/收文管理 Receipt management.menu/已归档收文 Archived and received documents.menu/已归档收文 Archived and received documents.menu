@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__pnkIYgf72eIvLvAcmax">
+  <name>已归档收文 Archived and received documents</name>
+  <parentId>__9VBEowWr27itxkchrb0</parentId>
+  <description>已归档收文</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"fa fa-send-o","icontype":"font","iconFontColor":"undefined"}</ico>
+  <superior>__9VBEowWr27itxkchrb0</superior>
+  <linkType>01</linkType>
+  <moduleid>__XTyqU85jOesMMnOeiuE</moduleid>
+  <actionContent><![CDATA[__QqMbNHTI13e5iqwK0nS]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

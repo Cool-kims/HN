@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__Lc3fIIgwYqxPQbNb3Ey">
+  <name>wecom_attendance_configuration</name>
+  <parentId>__CmG4oeGgx8WtMkqMs1l</parentId>
+  <description>企微考勤应用配置表</description>
+  <templatecontext><![CDATA[<div style="text-align: center;"><span style="font-size: x-large;"><strong>企微考勤应用配置&nbsp;Enterprise WeChat Attendance Application Configuration</strong></span><br />
+<br />
+&nbsp;</div>
+<table width="90%" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);" align="center" height="28">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="23%"><span style="color: rgb(255, 0, 0);">*</span>考勤应用sercet</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="left" bordercolor="#DCDCDC" width="77%" colspan="3"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__ni8CTWdc64auXtYKLoE" text="text" name="secret" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" showlog="true" discript="考勤应用sercet" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" refreshmode="0" refreshfields="" attributeid="undefined" /></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;<br />
+<br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"wecom_attendance_configuration","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>50</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

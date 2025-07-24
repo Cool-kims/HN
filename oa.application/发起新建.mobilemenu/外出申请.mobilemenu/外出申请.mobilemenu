@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__6EmWm1eBcPLxImVi5IM">
+  <name>外出申请</name>
+  <parentId>__iO2mkW0ozLXsWMAkb0H</parentId>
+  <description>外出申请</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p147_vehicle.png","icontype":"img"}</ico>
+  <superior>__iO2mkW0ozLXsWMAkb0H</superior>
+  <linkType>00</linkType>
+  <moduleid>__oVGLyK9uUQDxmSDCkln</moduleid>
+  <actionContent><![CDATA[__NFBl8NFZfglC1p6DTEm]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>true</isUsual>
+  <isMobile>true</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

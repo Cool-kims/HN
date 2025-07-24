@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__IfXFOo9okgLkIAoytrh">
+  <name>发文管理 Document Management</name>
+  <parentId>__gOCXvazDfqNPjhd29nI</parentId>
+  <description>发文管理</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p76_bill.png","icontype":"img"}</ico>
+  <superior>__gOCXvazDfqNPjhd29nI</superior>
+  <linkType></linkType>
+  <actionContent><![CDATA[]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>2</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

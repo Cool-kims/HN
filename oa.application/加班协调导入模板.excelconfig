@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<impMappingConfigVO id="__RHefhqYPDFdCO9oUZQQ">
+  <name>加班协调导入模板</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <xml><![CDATA[<cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>
+<flowstatus>16</flowstatus>
+<flowpath></flowpath>
+<deleteMSG></deleteMSG>
+<width>2048</width>
+<height>1536</height>
+<needRollback>rollback</needRollback>
+<cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<id>1711701871701</id>
+<name>加班协调</name>
+<scale>0</scale>
+<x>281</x>
+<y>44</y>
+<width>142</width>
+<height>34</height>
+<formName>overtime_coordination</formName>
+</cn.myapps.runtime.dynaform.dts.excelimport.MasterSheet>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<id>1711701877213</id>
+<name>加班类型</name>
+<scale>0</scale>
+<x>229</x>
+<y>154</y>
+<width>142</width>
+<height>34</height>
+<formName></formName>
+<fieldName>OvertimeType</fieldName>
+<primaryKey>false</primaryKey>
+<valueScript></valueScript>
+<validateRule></validateRule>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<id>1711701877549</id>
+<name>加班人</name>
+<scale>0</scale>
+<x>117</x>
+<y>150</y>
+<width>142</width>
+<height>34</height>
+<formName></formName>
+<fieldName>overPersonnel</fieldName>
+<primaryKey>false</primaryKey>
+<valueScript>(function () {        
+        var doc = getCurrentDocument();        
+        var overPersonnel = doc.getItemValueAsString(@quot;overPersonnel@quot;);        
+        var userid = @quot;@quot;;        
+        if (overPersonnel != null@amp;@amp;@quot;@quot;!=(overPersonnel)) {        
+     	   var sql = @quot;select domainid,id from t_user where name = '@quot; + overPersonnel + @quot;'@quot;; // oracle        
+     	   var datas = queryByDSName(@quot;obpm_oa_system@quot;,sql);        
+     	   if (datas.size() @gt; 0) {        
+     		   userid = datas.iterator().next().get(@quot;id@quot;);        
+     	   }        
+        }        
+        return userid;        
+  })()</valueScript>
+<validateRule>(function(){
+	var overPersonnel = getItemValueAsString(@quot;overPersonnel@quot;);
+	var name=@quot;@quot;;
+	if(overPersonnel!=null@amp;@amp;@quot;@quot;!=(overPersonnel)){
+		var userVo= getUserById(overPersonnel);
+		name=userVo.getName();
+	}
+	
+	var StartTime = getItemValueAsDate(@quot;StartTime@quot;);
+	StartTime = format(StartTime,@quot;yyyy-MM-dd@quot;)
+	var sql=@quot;select * from tlk_overtime_coordination where item_overPersonnel ='@quot;+overPersonnel+@quot;' and to_days(item_StartTime)=to_days('@quot;+StartTime+@quot;')@quot;;
+	var count1 = countBySQL(sql);
+	if(count1@gt;0){
+		return name+ @quot;,@quot;+StartTime+@quot;日加班数据重复,请检查！@quot;;
+	}
+})()</validateRule>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<id>1711701877789</id>
+<name>计划加班结束时间</name>
+<scale>0</scale>
+<x>415</x>
+<y>157</y>
+<width>142</width>
+<height>34</height>
+<formName></formName>
+<fieldName>EndTime</fieldName>
+<primaryKey>false</primaryKey>
+<valueScript></valueScript>
+<validateRule></validateRule>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<id>1711701878104</id>
+<name>计划加班开始时间</name>
+<scale>0</scale>
+<x>322</x>
+<y>157</y>
+<width>142</width>
+<height>34</height>
+<formName></formName>
+<fieldName>StartTime</fieldName>
+<primaryKey>false</primaryKey>
+<valueScript></valueScript>
+<validateRule></validateRule>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<id>1711701904245</id>
+<name>安排加班理由</name>
+<scale>0</scale>
+<x>525</x>
+<y>160</y>
+<width>142</width>
+<height>34</height>
+<formName></formName>
+<fieldName>Content</fieldName>
+<primaryKey>false</primaryKey>
+<valueScript></valueScript>
+<validateRule></validateRule>
+</cn.myapps.runtime.dynaform.dts.excelimport.Column>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1711701871701</startnodeid>
+<endnodeid>1711701877549</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>117;151;253;34</pointstack>
+<id>1711701906677</id>
+<name></name>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1711701871701</startnodeid>
+<endnodeid>1711701877213</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>229;154;253;34</pointstack>
+<id>1711701908477</id>
+<name></name>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1711701871701</startnodeid>
+<endnodeid>1711701877789</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>335;155;253;34</pointstack>
+<id>1711701910101</id>
+<name></name>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1711701871701</startnodeid>
+<endnodeid>1711701878104</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>445;159;253;34</pointstack>
+<id>1711701912149</id>
+<name></name>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+<state></state>
+<startnodeid>1711701871701</startnodeid>
+<endnodeid>1711701904245</endnodeid>
+<ispassed>false</ispassed>
+<isreturn>false</isreturn>
+<condition></condition>
+<pointstack>565;166;253;34</pointstack>
+<id>1711701913789</id>
+<name></name>
+</cn.myapps.runtime.dynaform.dts.excelimport.Relation>
+</cn.myapps.runtime.dynaform.dts.excelimport.ExcelMappingDiagram>
+]]></xml>
+  <templatePath>/uploads/exceltemplate/加班协调.xlsx</templatePath>
+</impMappingConfigVO>

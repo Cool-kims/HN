@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="__EV22qHRcMMwgYPQIK76">
+  <name>basic</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <content><![CDATA[/**
+分页获取用户集合
+**/
+function getUserByPage(list,pagesize,currentPage) {
+	
+	var totalcount = list.size();
+	var pagecount = 0;
+	var subList = new (Java.type('java.util.ArrayList'))();
+	var m = totalcount % pagesize;
+	if (m > 0) {
+		pagecount = totalcount / pagesize;
+		pagecount = Math.floor(pagecount)+1;
+	} else {
+		pagecount = totalcount / pagesize;
+	}
+	if (m == 0) {
+		subList = list.subList((currentPage - 1) * pagesize, pagesize * (currentPage));
+	} else {
+		if (currentPage == pagecount) {
+			subList = list.subList((currentPage - 1) * pagesize, totalcount);
+		} else {
+			subList = list.subList((currentPage - 1) * pagesize, pagesize * (currentPage));
+		}
+	}
+	return subList;
+    
+	
+};
+
+//根据数字获取对应字段
+function getItemName(dk_day){
+	var item_name = "";
+	if(dk_day==1){
+		item_name = "one";
+	}
+	if(dk_day==2){
+		item_name = "two";
+	}
+	if(dk_day==3){
+		item_name = "three";
+	}
+	if(dk_day==4){
+		item_name = "four";
+	}
+	if(dk_day==5){
+		item_name = "five";
+	}
+	if(dk_day==6){
+		item_name = "six";
+	}
+	if(dk_day==7){
+		item_name = "seven";
+	}
+	if(dk_day==8){
+		item_name = "eight";
+	}
+	if(dk_day==9){
+		item_name = "nine";
+	}
+	if(dk_day==10){
+		item_name = "ten";
+	}
+	if(dk_day==11){
+		item_name = "eleven";
+	}
+	if(dk_day==12){
+		item_name = "twelve";
+	}
+	if(dk_day==13){
+		item_name = "thirteen";
+	}
+	if(dk_day==14){
+		item_name = "fourteen";
+	}
+	if(dk_day==15){
+		item_name = "fifteen";
+	}
+	if(dk_day==16){
+		item_name = "sixteen";
+	}
+	if(dk_day==17){
+		item_name = "seventeen";
+	}
+	if(dk_day==18){
+		item_name = "eighteen";
+	}
+	if(dk_day==19){
+		item_name = "nineteen";
+	}
+	if(dk_day==20){
+		item_name = "twenty";
+	}
+	if(dk_day==21){
+		item_name = "twenty_one";
+	}
+	if(dk_day==22){
+		item_name = "twenty_two";
+	}
+	if(dk_day==23){
+		item_name = "twenty_three";
+	}
+	if(dk_day==24){
+		item_name = "twenty_four";
+	}
+	if(dk_day==25){
+		item_name = "twenty_five";
+	}
+	if(dk_day==26){
+		item_name = "twenty_six";
+	}
+	if(dk_day==27){
+		item_name = "twenty_seven";
+	}
+	if(dk_day==28){
+		item_name = "twenty_eight";
+	}
+	if(dk_day==29){
+		item_name = "twenty_nine";
+	}
+	if(dk_day==30){
+		item_name = "thirty";
+	}
+	if(dk_day==31){
+		item_name = "thirty_one";
+	}
+  return item_name;
+}
+
+//获取打卡状态
+function getDKStatus(dk_day){
+	var itemName = getItemName(dk_day);
+	
+	var attendance_month = getItemValueAsDate("attendance_month");
+	var dqdate = format(attendance_month,"yyyy-MM-dd HH:mm:ss");
+	dqdate = parseDate(dqdate,"yyyy-MM-dd HH:mm:ss");
+	
+	var year = dqdate.getYear();
+	var month = dqdate.getMonth();
+	var days = new Date(year,month+1,0).getDate();
+	if(dk_day<=days){
+		var dk_day2="";
+		if(dk_day<10){
+			dk_day2="0"+dk_day;
+		}else{
+			dk_day2=dk_day;
+		}
+		var value = getItemValueAsString(itemName);
+		var color = "green";
+		
+		var attendance_month2 = format(attendance_month,"yyyy-MM-"+dk_day2+" 11:00:00");
+		var startdate = parseDate(attendance_month2,"yyyy-MM-dd HH:mm:ss");
+		
+		var isWork = isWorkingTime(startdate);//true是工作日，false为非工作日
+		var weekday=startdate.getDay();
+		if(isWork){
+			if("缺勤"==(value)){
+				color = "red";
+			}else if("正常"==(value)){
+				color = "black";
+			}else if("请假"==(value)){
+				var today = format(attendance_month,"yyyy-MM-"+dk_day2);
+				var sql = "select * from tlk_LeaveApplication where substring(item_StartTime,1,10)<='"+today+"' and substring(item_EndTime,1,10)>='"+today+"' ";
+				var data=findBySQL(sql);
+				if(data!=null){
+					var dataid=data.getId();
+					var appid=getApplication();
+					var rtn="<o-action action-type='opendocument' formid='__Snw5utsO4r6LIogffqz' docid='"+dataid+"' appid='"+appid+"' open-type='open-eject' isRefresh='false' dialog-width='1100px' dialog-height='700px' exparams='&openread=true' parentid='parentid' style='cursor:pointer;color:blue;'>请假</o-action>";
+					return rtn;
+				}else{
+					return "<font color='blue'>请假</font>";
+				}
+			}else if("出差"==(value)){
+				var today = format(attendance_month,"yyyy-MM-"+dk_day2);
+				var sql = "select * from tlk_TravelApplication where substring(item_StartTime,1,10)<='"+today+"' and substring(item_EndTime,1,10)>='"+today+"' ";
+				var data=findBySQL(sql);
+				if(data!=null){
+					var dataid=data.getId();
+					var appid=getApplication();
+					var rtn="<o-action action-type='opendocument' formid='__AQ6kX1DThAErLxCdqnJ' docid='"+dataid+"' appid='"+appid+"' open-type='open-eject' isRefresh='false' dialog-width='1100px' dialog-height='700px' exparams='&openread=true' parentid='parentid' style='cursor:pointer;color:blue;'>出差</o-action>";
+					return rtn;
+				}else{
+					return "<font color='blue'>出差</font>";
+				}
+			}else if("外出"==(value)){
+				var today = format(attendance_month,"yyyy-MM-"+dk_day2);
+				var sql = "select * from tlk_GoOutApplication where substring(item_StartTime,1,10)<='"+today+"' and substring(item_EndTime,1,10)>='"+today+"' ";
+				var data=findBySQL(sql);
+				if(data!=null){
+					var dataid=data.getId();
+					var appid=getApplication();
+					var rtn="<o-action action-type='opendocument' formid='__NFBl8NFZfglC1p6DTEm' docid='"+dataid+"' appid='"+appid+"' open-type='open-eject' isRefresh='false' dialog-width='1100px' dialog-height='700px' exparams='&openread=true' parentid='parentid' style='cursor:pointer;color:blue;'>外出</o-action>";
+					return rtn;
+				}else{
+					return "<font color='blue'>外出</font>";
+				}
+			}
+		}else{
+			return "<div style='background-color:rgba(208, 224, 227, 1);'>节假日</div>";
+		}
+		return "<font color='"+color+"'>"+value+"</font>";
+	}else{
+		return "<div style='background-color:rgba(208, 224, 227, 1);'>无</div>";
+	}
+}
+
+
+/**
+获取请假类型
+*/
+function LeaveType() {
+	var opts = $TOOLS.createOptions(); 
+	opts.add("","");
+	var sql = "select * from tlk_LeaveTypeData";
+	var datas = queryBySQL(sql);
+	if(datas!=null&& datas.size() > 0){
+		for(var iter = datas.iterator();iter.hasNext();){
+			 var subdoc = iter.next();
+			 var LeaveType = subdoc.getItemValueAsString("LeaveType");
+			 opts.add(LeaveType,LeaveType);
+		}
+	}
+	return opts;
+};
+
+/**
+获取报销类别
+*/
+function ReimbursementType() {
+	var opts = $TOOLS.createOptions(); 
+	opts.add("","");
+	var sql = "select * from tlk_ReimbursementTypeData";
+	var datas = queryBySQL(sql);
+	if(datas!=null&& datas.size() > 0){
+		for(var iter = datas.iterator();iter.hasNext();){
+			 var subdoc = iter.next();
+			 var type = subdoc.getItemValueAsString("ReimbursementType");
+			 opts.add(type,type);
+		}
+	}
+	return opts;
+};
+
+/**
+获取职位
+*/
+function getPosition() {
+	var opts = $TOOLS.createOptions(); 
+	opts.add("","");
+	var sql = "select * from tlk_PositionRankData order by item_SerialNumber";
+	var datas = queryBySQL(sql);
+	if(datas!=null&& datas.size() > 0){
+		for(var iter = datas.iterator();iter.hasNext();){
+			 var subdoc = iter.next();
+			 var Position = subdoc.getItemValueAsString("Position");
+			 opts.add(Position,Position);
+		}
+	}
+	return opts;
+};
+
+/**
+获取职级
+*/
+function getRank(value) {
+	var opts = $TOOLS.createOptions(); 
+	opts.add("","");
+if(value != ""){
+	var sql = "select * from tlk_PositionRankData where item_Position='"+value+"' group by item_Rank";
+	var datas = queryBySQL(sql);
+	if(datas!=null&& datas.size() > 0){
+		for(var iter = datas.iterator();iter.hasNext();){
+			 var subdoc = iter.next();
+			 var Rank = subdoc.getItemValueAsString("Rank");
+			 opts.add(Rank,Rank);
+		}
+	}
+  }
+	return opts;
+};
+
+/**
+获取员工类型
+*/
+function EmployeeType() {
+	var opts = $TOOLS.createOptions(); 
+	opts.add("","");
+	var sql = "select * from tlk_EmployeeTypeData order by item_SerialNumber";
+	var datas = queryBySQL(sql);
+	if(datas!=null&& datas.size() > 0){
+		for(var iter = datas.iterator();iter.hasNext();){
+			 var subdoc = iter.next();
+			 var type = subdoc.getItemValueAsString("EmployeeType");
+			 opts.add(type,type);
+		}
+	}
+	return opts;
+};
+/**
+获取数据字典对应类型的选项
+*/
+function MasterDataType(type) {
+	var opts = $TOOLS.createOptions(); 
+	opts.add("","");
+	var sql = "select * from tlk_MasterData where item_Type='"+type+"'";
+	var datas = queryBySQL(sql);
+	if(datas!=null&& datas.size() > 0){
+		for(var iter = datas.iterator();iter.hasNext();){
+			 var subdoc = iter.next();
+			 var value = subdoc.getItemValueAsString("Option");
+			 opts.add(value,value);
+		}
+	}
+	return opts;
+}]]></content>
+  <version>0</version>
+</repositoryVO>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="__1KTe8cWBYIqrfXpyDSZ">
+  <name>请假待办</name>
+  <parentId>__Snw5utsO4r6LIogffqz</parentId>
+  <title>请假待办</title>
+  <type>00</type>
+  <formId>__Snw5utsO4r6LIogffqz</formId>
+  <fieldNames>LeaveNO;Applicant;LeaveType;StartTime;EndTime</fieldNames>
+  <summaryScript><![CDATA[]]></summaryScript>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

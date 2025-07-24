@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__t2w4UV9aeZfs4phsivV">
+  <name>ResignationHandover</name>
+  <parentId>__wXopwOgzVWrFYEdrKkL</parentId>
+  <description>离职交接</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;<br />
+<span style="font-size: x-large;"><strong>离职交接&nbsp;Resignation handover</strong></span><br />
+<br />
+&nbsp;</div>
+<table width="100%" height="133" border="1" cellpadding="1" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="20%">﻿申请人&nbsp;Applicant</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC" width="30%"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__Czf11zMkW03xtLIGeAB" type="text" name="Applicant" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="(function(){@amp;#13;@nbsp;var@nbsp;applicant@nbsp;=@nbsp;getItemValueAsString(@quot;Applicant@quot;);@nbsp;@nbsp;@amp;#13;if(applicant@nbsp;==@nbsp;@quot;@quot;){@amp;#13;@nbsp;@nbsp;@nbsp;var@nbsp;user=@nbsp;getWebUser().getId();@amp;#13;@nbsp;}@amp;#13;return@nbsp;user;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="申请人" layout="horizontal" limitsum="10" width="100" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="readonly" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="multiSelect"></select></td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="20%"><span style="color: rgb(255, 0, 0);">*</span>最后工作日&nbsp;last working day</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC" width="30%"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__n7a2Ro7Ut4qjgJMAtjO" type="text" fieldtype="VALUE_TYPE_DATE" name="LastWorkingDay" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="最后工作日" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>工作交接人&nbsp;Work handover person</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" colspan="3" align="left" bordercolor="#DCDCDC"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__XYqoFSH6hI3jwCOb74J" type="text" name="HandoverPerson" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="工作交接人" layout="horizontal" limitsum="10" width="100" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" refreshmode="0" refreshfields="" selectmode="multiSelect"></select></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>工作交接事项&nbsp;Work handover matters</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" colspan="3" align="left" bordercolor="#DCDCDC"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__UrPU1ACGlVb0QM4OhOS" name="HandoverMatters" readonlyshowvalonly="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="工作交接事项" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="text"></textarea></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>公司财务交接事项&nbsp;Financial handover matters of the company</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" colspan="3" align="left" bordercolor="#DCDCDC"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__4ioPnrtjG4Ay5Ua7gQn" name="FinanceHandover" readonlyshowvalonly="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="公司财务交接" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="text"></textarea></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;<br />
+<br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"ResignationHandover","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>10</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

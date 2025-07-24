@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__Hhv26jqzpcktn76uMD4">
+  <name>MasterData</name>
+  <parentId>__ePjxL9J8WD2zsLgENBR</parentId>
+  <description>数据字典</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;<br />
+<font size="5"><b>数据字典</b></font><br />
+<br />
+&nbsp;</div>
+<table width="80%" height="30" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">序号</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__0qBYPvM770Wr3gpFiM3" text="text" name="SerialNumber" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_NUMBER" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="序号" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="0" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" showlog="true" attributeid="undefined" /></td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">&nbsp;</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">类型</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__VyWCH2wlmzYUjWjgpsn" text="text" name="Type" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="类型" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" showlog="true" attributeid="undefined" /></td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">选项值</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__szp8pphpfDFqnqtsveT" text="text" name="Option" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" showlog="true" discript="选项值" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" attributeid="undefined" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">说明</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC" colspan="3"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__OymGG6TFs5iXuh5cxqm" name="Describe" readonlyshowvalonly="true" showlog="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="说明" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="" editmode="01" width="" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="text" attributeid="undefined"></textarea></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;<br />
+<br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"MasterData","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>1</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__NTvOr6SJG9PxRHHNV0o">
+  <name>请假申请 Leave Application</name>
+  <parentId>__smMSOjVnZUzNPbqroyr</parentId>
+  <description>请假申请</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p139_leave.png","icontype":"img"}</ico>
+  <superior>__smMSOjVnZUzNPbqroyr</superior>
+  <linkType>00</linkType>
+  <moduleid>__XGmg3jTk1QWIhzDrgas</moduleid>
+  <actionContent><![CDATA[__Snw5utsO4r6LIogffqz]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

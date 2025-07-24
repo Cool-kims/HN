@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__W0rh9eolIC5oRqJY2a6">
+  <name>发起付款 Initiate payment</name>
+  <parentId>__8LmL61yQSSgoibqn2Kz</parentId>
+  <description>发起付款</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p100_receipt.png","icontype":"img"}</ico>
+  <superior>__8LmL61yQSSgoibqn2Kz</superior>
+  <linkType>00</linkType>
+  <moduleid>__r0RjkLvSGDhDBeF8UwP</moduleid>
+  <actionContent><![CDATA[__BpisGNeW39rasui5BqE]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>20</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<column id="__SRZQYzcGHILL5E0Vzed">
+  <name>备注</name>
+  <parentId>__e26UoRuP21suGmSxY3e</parentId>
+  <parentView>__e26UoRuP21suGmSxY3e</parentView>
+  <type>COLUMN_TYPE_FIELD</type>
+  <formid>__7rPqupkrWjWA6LR9QA8</formid>
+  <fieldName>wecom_notes</fieldName>
+  <flowReturnCss>false</flowReturnCss>
+  <orderno>6</orderno>
+  <sum>false</sum>
+  <total>false</total>
+  <isOrderByField>false</isOrderByField>
+  <clickSorting>true</clickSorting>
+  <formatType>simple</formatType>
+  <thouSign>false</thouSign>
+  <color>rgba(0,0,0,1)</color>
+  <fontSize>12</fontSize>
+  <groundColor></groundColor>
+  <showIcon>false</showIcon>
+  <iconMapping></iconMapping>
+  <visible>true</visible>
+  <visible4ExpExcel>true</visible4ExpExcel>
+  <visible4Print>true</visible4Print>
+  <visible4PagePrint>true</visible4PagePrint>
+  <showType>01</showType>
+  <showMoon>false</showMoon>
+  <showAsLabel>false</showAsLabel>
+  <showAsButton>false</showAsButton>
+  <displayType>00</displayType>
+  <displayLength>-1</displayLength>
+  <showTitle>true</showTitle>
+  <customIcon>false</customIcon>
+  <isFilter>false</isFilter>
+  <isShowThisColumn>false</isShowThisColumn>
+  <isEnter>false</isEnter>
+</column>

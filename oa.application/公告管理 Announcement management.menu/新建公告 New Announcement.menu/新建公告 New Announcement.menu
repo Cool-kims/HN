@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__GajhYCGk8ImJT8NIhQ6">
+  <name>新建公告 New Announcement</name>
+  <parentId>__TASz1ziJ2M3qaZKJc7a</parentId>
+  <description>新建公告</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p18_tidings.png","icontype":"img"}</ico>
+  <superior>__TASz1ziJ2M3qaZKJc7a</superior>
+  <linkType>00</linkType>
+  <moduleid>__omj4XzaIuuj5Lecx1U8</moduleid>
+  <actionContent><![CDATA[__DfBdtcXyyCNCMBCEMed]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>5</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

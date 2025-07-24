@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__IazdWNevISqRKLeF656">
+  <name>所有请假申请查询 All leave application inquiries</name>
+  <parentId>__ODY8RX6EGnrbS7jqOLq</parentId>
+  <description>所有请假申请查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__ODY8RX6EGnrbS7jqOLq</superior>
+  <linkType>01</linkType>
+  <moduleid>__XGmg3jTk1QWIhzDrgas</moduleid>
+  <actionContent><![CDATA[__qT3K5wZqllclhlOjflp]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>private</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

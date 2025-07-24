@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__MJLcFGCn5CxoLohEZHv">
+  <name>报销申请 Reimbursement application</name>
+  <parentId>__YFISRGyXhjYq8VIDFB9</parentId>
+  <description>报销申请</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p105_Investment.png","icontype":"img"}</ico>
+  <superior>__YFISRGyXhjYq8VIDFB9</superior>
+  <linkType>00</linkType>
+  <moduleid>__vT4EDEMNh36Jb1CZ6yf</moduleid>
+  <actionContent><![CDATA[__V7InkcdFqxSt19EHtBj]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

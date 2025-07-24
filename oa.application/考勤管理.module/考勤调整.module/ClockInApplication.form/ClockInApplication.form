@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__s0UWS9KRMjvFeE64tiH">
+  <name>ClockInApplication</name>
+  <parentId>__lvVm5eYexdTlxBHGrhV</parentId>
+  <description>补卡申请 Card replacement application</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: center;">&nbsp;</div>
+<table width="100%" height="89" align="center" border="1" cellpadding="1" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td style="text-align: center; border: 1px solid rgb(180, 204, 238);"><span style="color: rgb(96, 98, 102);"><strong style="font-size: x-large; text-align: center;">补卡申请&nbsp;Card replacement application</strong></span></td>
+        </tr>
+    </tbody>
+</table>
+<table width="100%" height="92" border="1" cellpadding="1" cellspacing="0" align="center" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td align="right" style="border: 1px solid rgb(180, 204, 238);" width="20%">
+            <p><span style="color: rgb(96, 98, 102);">﻿申请人 Applicant：</span></p>
+            </td>
+            <td align="left" style="border: 1px solid rgb(180, 204, 238);" width="30%"><span style="color: rgb(96, 98, 102);"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__W6I2pZb5snnwwhtJGTS" type="text" name="Applicant" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="(function(){@amp;#13;@nbsp;var@nbsp;applicant@nbsp;=@nbsp;getItemValueAsString(@quot;Applicant@quot;);@nbsp;@nbsp;@amp;#13;if(applicant@nbsp;==@nbsp;@quot;@quot;){@amp;#13;@nbsp;@nbsp;@nbsp;var@nbsp;user=@nbsp;getWebUser().getId();@amp;#13;@nbsp;}@amp;#13;return@nbsp;user;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="申请人" layout="horizontal" limitsum="10" width="100" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="readonly" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="multiSelect"></select>&nbsp;</span></td>
+            <td align="right" style="border: 1px solid rgb(180, 204, 238);" width="20%"><span style="color: rgb(255, 0, 0);">*﻿</span><span style="color: rgb(96, 98, 102);">补卡时间 Card replacement time：</span></td>
+            <td align="left" bordercolor="#DCDCDC" style="border: 1px solid rgb(180, 204, 238);"><span style="color: rgb(96, 98, 102);"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__FzrnFJAf767kvklg1rZ" type="text" fieldtype="VALUE_TYPE_DATE" name="ClockInTime" width="100" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="补卡时间" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD_HM" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01" widthunit="%" showlog="true" attributeid="undefined" /></span></td>
+        </tr>
+        <tr>
+            <td align="right" style="border: 1px solid rgb(180, 204, 238);"><span style="color: rgb(255, 0, 0);">*</span><span style="color: rgb(96, 98, 102);">﻿补卡理由 Reason for card replacement：</span></td>
+            <td colspan="3" align="left" bordercolor="#DCDCDC" style="border: 1px solid rgb(180, 204, 238);"><span style="color: rgb(96, 98, 102);"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__8l5DiosTRLRkC7u6EKt" name="Reasons" readonlyshowvalonly="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="补卡理由" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="100" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="text" showlog="true" widthunit="%" attributeid="undefined"></textarea></span></td>
+        </tr>
+        <tr>
+            <td align="right" style="border: 1px solid rgb(180, 204, 238);"><span style="color: rgb(96, 98, 102);">图片 picture：</span></td>
+            <td colspan="3" align="left" bordercolor="#DCDCDC" style="border: 1px solid rgb(180, 204, 238);"><span style="color: rgb(96, 98, 102);"><img src="http://192.168.88.236:8080/designer/image/form/imageuploadfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.ImageUploadField" id="__ZjeZTrLYQ6VUZiIGcGb" type="imageupload" fieldtype="VALUE_TYPE_TEXT" imgh="100" imgw="100" limitsize="" opentype="dialog" name="picture" refreshonchanged="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" hidetype="parent" ishidetype="false" discript="图片" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filepattern="00" filecatalog="" refreshmode="0" refreshfields="" limitnumber="10" instantvalidate="false" validatelibs="" /></span></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;"><br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"ClockInApplication","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>1</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__D5cVKS3yRbGQrtam7Ew">
+  <name>S_ArticleCollection</name>
+  <parentId>__r0RjkLvSGDhDBeF8UwP</parentId>
+  <description>物品领用查询</description>
+  <templatecontext><![CDATA[<table width="100%" height="30" align="center" border="1" cellpadding="1" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td style="text-align: right; border: 1px solid rgb(180, 204, 238);" width="20%" align="right"><span style="text-align: right;">领用人&nbsp;Recipient</span></td>
+            <td style="border: 1px solid rgb(180, 204, 238);" width="20%"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__TtoAv4eaitJzv2xfD2e" type="text" name="Applicant" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="领用人" layout="horizontal" limitsum="10" width="" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="selectOne"></select></td>
+            <td style="text-align: right; border: 1px solid rgb(180, 204, 238);" width="20%" align="right">﻿领用日期&nbsp;Collection date</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" width="40%"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__jTmIPDYc1n8pYln7Jjz" type="text" fieldtype="VALUE_TYPE_DATE" name="StartTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="开始日期" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD_HM" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" />﻿ -&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__tNAeqjvTvV5Ct4x2HdH" type="text" fieldtype="VALUE_TYPE_DATE" name="EndTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="true" prev_name="StartTime" discript="﻿结束日期" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD_HM" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" /></td>
+        </tr>
+    </tbody>
+</table>
+<br />]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"S_ArticleCollection","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>11</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

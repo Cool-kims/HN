@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__luhrMoaEwp3XjKxJrQ4">
+  <name>采购申请 My reimbursement</name>
+  <parentId>__8LmL61yQSSgoibqn2Kz</parentId>
+  <description>采购申请</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p106_database.png","icontype":"img"}</ico>
+  <superior>__8LmL61yQSSgoibqn2Kz</superior>
+  <linkType>00</linkType>
+  <moduleid>__r0RjkLvSGDhDBeF8UwP</moduleid>
+  <actionContent><![CDATA[__VcnrqD9S7Dir5hVeFiI]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>10</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

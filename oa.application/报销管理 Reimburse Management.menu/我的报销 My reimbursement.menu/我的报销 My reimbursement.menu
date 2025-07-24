@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__gZcMCFHtCdA5OZ3OWhr">
+  <name>我的报销 My reimbursement</name>
+  <parentId>__YFISRGyXhjYq8VIDFB9</parentId>
+  <description>我的报销</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__YFISRGyXhjYq8VIDFB9</superior>
+  <linkType>01</linkType>
+  <moduleid>__vT4EDEMNh36Jb1CZ6yf</moduleid>
+  <actionContent><![CDATA[__Fznzjof18PtoDtLAjTo]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>10</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

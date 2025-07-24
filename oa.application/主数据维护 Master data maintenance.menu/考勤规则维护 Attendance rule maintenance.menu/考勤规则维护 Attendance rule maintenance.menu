@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__ddHGopCtp9ERX4Ed25N">
+  <name>考勤规则维护 Attendance rule maintenance</name>
+  <parentId>__OGQRJgEtnznOEdvkdvF</parentId>
+  <description>考勤规则维护</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__OGQRJgEtnznOEdvkdvF</superior>
+  <linkType>01</linkType>
+  <moduleid>__LJ26cpBxdWaSPgoDSXH</moduleid>
+  <actionContent><![CDATA[__wfOzGIuCnnVcP0t66jo]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

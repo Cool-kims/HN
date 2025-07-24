@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__XFiIViqFq56XUemLKQW">
+  <name>S_LeaveApplication</name>
+  <parentId>__XGmg3jTk1QWIhzDrgas</parentId>
+  <description>请假查询</description>
+  <templatecontext><![CDATA[<table width="80%" height="60" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td style="text-align: right;" width="10%" align="right"><span style="text-align: right;">申请人&nbsp;applicant</span></td>
+            <td width="60%" style="text-align: left;"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__8X2j0QSPhGH8yYU9hLj" type="text" name="Applicant" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="申请人" layout="horizontal" limitsum="10" width="" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="selectOne"></select></td>
+            <td style="text-align: right;" width="10%" align="right"><span style="text-align: right;">请假类型&nbsp;Leave type</span></td>
+            <td width="15%"><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__JSg8yOy3MqTOMgEgLCE" name="LeaveType" discript="请假类型" layout="horizontal" readonlyshowvalonly="true" valuescript="" optionsscript="#include@nbsp;@quot;basic@quot;;@amp;#13;(function(){@amp;#13;return@nbsp;LeaveType();@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" editmode="01" width="100" widthunit="%" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext="" showlog="true" clearable="false" multipledisplaymode="full" attributeid="undefined"></select></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><span style="text-align: right;">﻿请假时间&nbsp;Leave time</span></td>
+            <td style="text-align: left;"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__pVmHdmZq85GOUiUM0Ji" type="text" fieldtype="VALUE_TYPE_DATE" name="StartTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="开始时间" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" widthunit="px" showlog="true" attributeid="undefined" />﻿ -&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__F6QL9HgR8gVjA1I3WQ0" type="text" fieldtype="VALUE_TYPE_DATE" name="EndTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="true" prev_name="StartTime" discript="结束时间" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" widthunit="px" showlog="true" attributeid="undefined" /></td>
+            <td align="right">状态&nbsp;state</td>
+            <td><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__3JhV0MaLe14GYa7Gegn" name="statelabel" discript="状态" layout="horizontal" readonlyshowvalonly="true" showlog="true" valuescript="" optionsscript="(function(){@amp;#13;var@nbsp;opts@nbsp;=@nbsp;$TOOLS.createOptions();@nbsp;//创建指定类对象@amp;#13;opts.add(@quot;@quot;,@quot;@quot;);@amp;#13;opts.add(@quot;未提交@quot;,@quot;未提交@quot;);@amp;#13;opts.add(@quot;直属主管@quot;,@quot;直属主管@quot;);@amp;#13;opts.add(@quot;总经理@quot;,@quot;总经理@quot;);@amp;#13;opts.add(@quot;行政专员@quot;,@quot;行政专员@quot;);@amp;#13;opts.add(@quot;归档@quot;,@quot;归档@quot;);@amp;#13;return@nbsp;opts;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" clearable="false" multipledisplaymode="full" validatelibs="" editmode="01" width="100" widthunit="%" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext="" attributeid="undefined"></select></td>
+        </tr>
+    </tbody>
+</table>
+<br />]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"S_LeaveApplication","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>10</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

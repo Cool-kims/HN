@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<column id="__PTXp90KKZLfw1NkGIPD">
+  <name>下班时间</name>
+  <parentId>__wfOzGIuCnnVcP0t66jo</parentId>
+  <width></width>
+  <valueScript><![CDATA[(function(){
+  var rtn="";
+  var isFlexible=getItemValueAsString("isFlexible");
+  var value1=getItemValueAsDate("endtime1");
+  var endtime1 =  format(value1,"H:mm:ss");
+  rtn+=endtime1;
+  if("是"==(isFlexible)){
+    var value2=getItemValueAsDate("endtime2");
+  	  var endtime2 =  format(value2,"H:mm:ss");
+    rtn+="~"+endtime2;
+  }
+  return rtn;
+})();]]></valueScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <beforeScript><![CDATA[]]></beforeScript>
+  <afterScript><![CDATA[]]></afterScript>
+  <parentView>__wfOzGIuCnnVcP0t66jo</parentView>
+  <type>COLUMN_TYPE_SCRIPT</type>
+  <labelScript><![CDATA[]]></labelScript>
+  <formid>__hSvXtZ8uqgwlyxYUMuv</formid>
+  <fieldName>endtime1</fieldName>
+  <flowReturnCss>false</flowReturnCss>
+  <imageName></imageName>
+  <fontColor></fontColor>
+  <orderno>3</orderno>
+  <sum>false</sum>
+  <total>false</total>
+  <isOrderByField>false</isOrderByField>
+  <orderType>ASC</orderType>
+  <multiLanguageLabel></multiLanguageLabel>
+  <actionScript><![CDATA[]]></actionScript>
+  <clickSorting>true</clickSorting>
+  <sortStandard>00</sortStandard>
+  <jumpMapping></jumpMapping>
+  <jumpMode>00</jumpMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <mappingform></mappingform>
+  <formatType>simple</formatType>
+  <decimalsNum>1</decimalsNum>
+  <thouSign>false</thouSign>
+  <decimalsCurr>1</decimalsCurr>
+  <currType>zh_CN</currType>
+  <color>rgba(0,0,0,1)</color>
+  <fontSize>12</fontSize>
+  <groundColor></groundColor>
+  <showIcon>false</showIcon>
+  <iconMapping></iconMapping>
+  <buttonType>00</buttonType>
+  <buttonName></buttonName>
+  <visible>true</visible>
+  <visible4ExpExcel>true</visible4ExpExcel>
+  <visible4Print>true</visible4Print>
+  <visible4PagePrint>true</visible4PagePrint>
+  <templateForm></templateForm>
+  <icon></icon>
+  <showType>01</showType>
+  <mappingField></mappingField>
+  <showMoon>false</showMoon>
+  <showAsLabel>false</showAsLabel>
+  <showAsButton>false</showAsButton>
+  <displayType>00</displayType>
+  <displayLength></displayLength>
+  <showTitle>true</showTitle>
+  <customIcon>false</customIcon>
+  <isFilter>false</isFilter>
+  <isShowThisColumn>false</isShowThisColumn>
+  <selectOptionScript><![CDATA[]]></selectOptionScript>
+  <isEnter>false</isEnter>
+  <isShowExplain>false</isShowExplain>
+  <showExplainScript><![CDATA[]]></showExplainScript>
+</column>

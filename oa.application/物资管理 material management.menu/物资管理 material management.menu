@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__8LmL61yQSSgoibqn2Kz">
+  <name>物资管理 material management</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description>物资管理</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p24_box.png","icontype":"img"}</ico>
+  <linkType></linkType>
+  <actionContent><![CDATA[__wtzfAbUjZp1PIOAOSUb]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>30</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

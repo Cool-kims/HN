@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__ODY8RX6EGnrbS7jqOLq">
+  <name>考勤查询 Attendance inquiry</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description>考勤查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p135_search.png","icontype":"img"}</ico>
+  <linkType></linkType>
+  <actionContent><![CDATA[]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>10</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

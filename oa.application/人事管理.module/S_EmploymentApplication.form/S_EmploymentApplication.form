@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__or7MmucW7LdyeXcSMcJ">
+  <name>S_EmploymentApplication</name>
+  <parentId>__wXopwOgzVWrFYEdrKkL</parentId>
+  <description>入职申请查询</description>
+  <sortId>167653004972400000</sortId>
+  <templatecontext><![CDATA[<table width="80%" height="60" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td style="text-align: right;">员工姓名</td>
+            <td><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__sOewksOgyRJpPub1fyA" text="text" name="EmployeeName" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="员工姓名" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="text-align: right;">用人部门</td>
+            <td><select classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="__5EbbNHEQCPhfniYTwqY" type="text" name="Dept" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" width="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" departmentlevel="-1" relatedfield="" isdepartmentfield="true" defaultoptiontype="16" allowempty="true" discript="用人部门" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="0" refreshfields="" editmode="01"></select></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">职位</td>
+            <td><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__d1m9dLRTkr4u9OSCCsb" name="Position" discript="职位" layout="horizontal" readonlyshowvalonly="true" valuescript="" optionsscript="#include@nbsp;@quot;basic@quot;;@amp;#13;(function(){@amp;#13;return@nbsp;getPosition();@amp;#13;})()@amp;#13;" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" validatelibs="" editmode="01" width="100" widthunit="%" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext=""></select></td>
+            <td style="text-align: right;">员工类型</td>
+            <td><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__bdE3sZ85qfazE0zTgjP" name="EmployeeType" discript="员工类型" layout="horizontal" readonlyshowvalonly="true" valuescript="" optionsscript="#include@nbsp;@quot;basic@quot;;@amp;#13;(function(){@amp;#13;return@nbsp;EmployeeType();@amp;#13;})()@amp;#13;" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" validatelibs="" editmode="01" width="100" widthunit="%" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext=""></select></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><span style="text-align: right;">入职日期</span></td>
+            <td colspan="3"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__eyrDFrL5GhYNZG2HUgP" type="text" fieldtype="VALUE_TYPE_DATE" name="StartTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="开始日期" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" />﻿ -&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__yV6R0Etxp2OFLRKzXPG" type="text" fieldtype="VALUE_TYPE_DATE" name="EndTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="true" prev_name="StartTime" discript="结束日期" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" /></td>
+        </tr>
+    </tbody>
+</table>
+<br />]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <recordlogForever>false</recordlogForever>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>0</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>70</orderno>
+  <permissionType>public</permissionType>
+</form>

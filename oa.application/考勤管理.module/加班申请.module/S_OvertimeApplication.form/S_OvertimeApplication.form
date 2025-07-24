@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__5bgHkhCf9HX7M8U1zYV">
+  <name>S_OvertimeApplication</name>
+  <parentId>__8myszuD8QrnwSWBE8t9</parentId>
+  <description></description>
+  <templatecontext><![CDATA[<table width="100%" height="60" align="center" border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+        <tr>
+            <td style="text-align: right;" width="15%" align="right"><span style="text-align: right;">申请人&nbsp;applicant</span></td>
+            <td style="text-align: left;"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__A32ltUFRhu4iI4BpQxW" type="text" name="Applicant" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="申请人" layout="horizontal" limitsum="10" width="" widthunit="%" fieldtype="VALUE_TYPE_TEXT" texttype="text" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="selectOne"></select></td>
+            <td style="text-align: right;" width="15%" align="right">状态&nbsp;state</td>
+            <td width="15%"><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__tTFMzD8wVDxyyh2kLyG" name="statelabel" discript="状态" layout="horizontal" readonlyshowvalonly="true" showlog="true" valuescript="" optionsscript="(function(){@amp;#13;var@nbsp;opts@nbsp;=@nbsp;$TOOLS.createOptions();@nbsp;//创建指定类对象@amp;#13;opts.add(@quot;@quot;,@quot;@quot;);@amp;#13;opts.add(@quot;未提交@quot;,@quot;未提交@quot;);@amp;#13;opts.add(@quot;部门主管审批@quot;,@quot;部门主管审批@quot;);@amp;#13;opts.add(@quot;人事备案@quot;,@quot;人事备案@quot;);@amp;#13;opts.add(@quot;归档@quot;,@quot;归档@quot;);@amp;#13;return@nbsp;opts;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="text" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" clearable="false" multipledisplaymode="full" validatelibs="" editmode="01" width="" widthunit="px" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext="" attributeid="undefined"></select></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><span style="text-align: right;">加班时间&nbsp;overtime</span></td>
+            <td><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__LmtLxSPLu9nsFu2XxRZ" type="text" fieldtype="VALUE_TYPE_DATE" name="StartTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="开始时间" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" widthunit="px" showlog="true" attributeid="undefined" />﻿ -&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__FeGsuGHo6DBoN9EPRDk" type="text" fieldtype="VALUE_TYPE_DATE" name="EndTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="true" prev_name="StartTime" discript="结束时间" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="1" refreshfields="" editmode="01" widthunit="px" showlog="true" attributeid="undefined" /></td>
+            <td align="right">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<br />]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"S_OvertimeApplication","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>1</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

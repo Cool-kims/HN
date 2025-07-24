@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__smMSOjVnZUzNPbqroyr">
+  <name>考勤管理 Attendance management</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description>考勤管理</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p23_Location.png","icontype":"img"}</ico>
+  <linkType></linkType>
+  <actionContent><![CDATA[]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

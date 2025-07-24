@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__TLDZ70Z0jxIALe6WQ7s">
+  <name>外出申请查询 Outbound application inquiry</name>
+  <parentId>__ODY8RX6EGnrbS7jqOLq</parentId>
+  <description>外出申请查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__ODY8RX6EGnrbS7jqOLq</superior>
+  <linkType>01</linkType>
+  <moduleid>__oVGLyK9uUQDxmSDCkln</moduleid>
+  <actionContent><![CDATA[__csEDpnAX99jrtOOnqM8]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>20</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

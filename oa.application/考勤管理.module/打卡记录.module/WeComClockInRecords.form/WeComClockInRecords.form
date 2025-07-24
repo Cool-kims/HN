@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__MVgyXswascW7Cx3sEtb">
+  <name>WeComClockInRecords</name>
+  <parentId>__CmG4oeGgx8WtMkqMs1l</parentId>
+  <description>企业微信打卡记录</description>
+  <templatecontext><![CDATA[<div style="text-align: center;">&nbsp;<br />
+<span style="font-size: x-large;"><strong>企业微信打卡记录 Enterprise WeChat check-in record</strong></span><br />
+<br />
+&nbsp;</div>
+<table width="80%" height="60" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);" align="center">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="15%">打卡人&nbsp;Check in person</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC" width="35%"><select classname="cn.myapps.runtime.dynaform.form.ejb.UserField" id="__tQuV44tlbm9AVuhCKUN" type="text" name="wecom_user" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" readonlyshowvalonly="true" showlog="true" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="打卡人" layout="horizontal" limitsum="10" width="" widthunit="px" fieldtype="VALUE_TYPE_TEXT" texttype="readonly" hidetype="parent" ishidetype="false" limitbyuser="false" isuserfield="true" filterfield="" filtercondition="" processdescription="[];[]" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" selectmode="selectOne" attributeid="undefined"></select></td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5" width="15%">打卡类型&nbsp;Check in type</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC" width="35%"><select classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" id="__3BV5qP2fFecz4Nyxuie" name="wecom_checkin_type" discript="打卡类型" layout="horizontal" readonlyshowvalonly="true" showlog="true" valuescript="" optionsscript="(function(){@amp;#13;var@nbsp;opts=createOptions();@amp;#13;opts.add(@quot;@quot;,@quot;@quot;);@amp;#13;opts.add(@quot;上班打卡@quot;,@quot;上班打卡@quot;);@amp;#13;opts.add(@quot;下班打卡@quot;,@quot;下班打卡@quot;);@amp;#13;opts.add(@quot;外出打卡@quot;,@quot;外出打卡@quot;);@amp;#13;return@nbsp;opts;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" texttype="readonly" hidetype="parent" ishidetype="false" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" processdescription="[];[]" filtercondition="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" multiselect="false" clearable="false" multipledisplaymode="full" validatelibs="" editmode="01" width="" widthunit="px" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="0" refreshfields="" optionstext="" attributeid="undefined"></select></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">异常类型&nbsp;Exception</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__MmjLJML3ykzS2UZDeKJ" text="readonly" name="wecom_exception_type" texttype="readonly" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" showlog="true" discript="异常类型" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" attributeid="undefined" /></td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">打卡时间&nbsp;Check in time</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__RIPcvGKItTvm0k44gJ4" type="text" fieldtype="VALUE_TYPE_DATE" name="wecom_checkin_time" width="" widthunit="px" refreshonchanged="false" readonlyshowvalonly="true" showlog="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="打卡时间" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="readonly" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD_HMS" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="0" refreshfields="" editmode="01" attributeid="undefined" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">打卡地点&nbsp;Check in location</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" colspan="3" align="left" bordercolor="#DCDCDC"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__W2TjFRrdNYyG2rpHeRx" text="readonly" name="wecom_location_detail" texttype="readonly" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" showlog="true" discript="打卡地点" validaterule="" valuescript="" width="100" widthunit="%" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" attributeid="undefined" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(220, 220, 220);" align="right" bordercolor="#DCDCDC" bgcolor="#F5F5F5">备注 remarks</td>
+            <td style="border: 1px solid rgb(220, 220, 220);" colspan="3" align="left" bordercolor="#DCDCDC"><textarea classname="cn.myapps.runtime.dynaform.form.ejb.TextareaField" id="__CBrUdiiKmMOetG0aEPZ" name="wecom_notes" readonlyshowvalonly="true" showlog="true" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_TEXT" discript="备注" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" filtercondition="" refreshonchanged="false" worklimitchecked="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" instantvalidate="false" validatelibs="" editmode="01" width="" processdescription="[];[]" refreshmode="0" refreshfields="" textareaheight="" textareamaxlimit="" texttype="readonly" attributeid="undefined"></textarea></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;<br />
+<br />
+&nbsp;</div>
+<br />]]></templatecontext>
+  <type>2</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"WeComClockInRecords","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>20</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

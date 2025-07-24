@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__HN4JCLzsKlMmcMGS14y">
+  <name>职位职级数据维护 Job level data maintenance</name>
+  <parentId>__OGQRJgEtnznOEdvkdvF</parentId>
+  <description>职位职级数据维护</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__OGQRJgEtnznOEdvkdvF</superior>
+  <linkType>01</linkType>
+  <moduleid>__p1R5knlSJbZ4xKfX5PE</moduleid>
+  <actionContent><![CDATA[__0hJZuF1rUCI2M60Pejh]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>20</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

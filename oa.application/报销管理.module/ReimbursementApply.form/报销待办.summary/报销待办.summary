@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="__IvxIaytxaQDSOYEsduK">
+  <name>报销待办</name>
+  <parentId>__V7InkcdFqxSt19EHtBj</parentId>
+  <title>报销待办</title>
+  <type>00</type>
+  <formId>__V7InkcdFqxSt19EHtBj</formId>
+  <fieldNames>ReimbursementNo;Applicant;ApplicationDate;dept;PaymentMethod;Total;ApprovedAmount</fieldNames>
+  <summaryScript><![CDATA[]]></summaryScript>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleRepositoryVO id="__Rb7NSR2boZ1gmzPEZ6n">
+  <name>公文表单样式</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <content><![CDATA[#yy{                                      
+                       	display:inline-block !important;                                      
+                       	border:none;                                      
+                       }                              
+                       .formTable-wrap{                                       
+                       	text-align: center;                                       
+                       	font-family: 仿宋体;                                       
+                       	letter-spacing:0.6px;                                    
+                       	color:#555555;                                            
+                       	//color:#2d2b2b;                                       
+                       				                       
+                       }                                  
+                       .formTable{                                       
+                       	text-align: center;                                       
+                       	font-family: 仿宋体;                                       
+                       	letter-spacing:0.6px;                                    
+                       	color:#555555;                                            
+                       	//color:#2d2b2b;                                       
+                       				                       
+                       }                    
+                      .obpm-viewHtml{                    
+                      width: 100% !important;                    
+                      }                    
+                       .td_label{                                       
+                       	text-align: center;                                       
+                       	font-family: 仿宋体;                                 
+                       	color:#555555;           
+                       //font-size: 18px;//设置字体大小8/11          
+                       }                                       
+                       				                       
+                       .form_table .MsoNormalTable>tbody>tr>td{                                       
+                       	border:0px !important;                                       
+                       }                                       
+                       .form_table{                                       
+                       	border-collapse: collapse !important;                                       
+                       	margin:2% 4.2% !important;                                       
+                       	width:92% !important;                               
+                         	box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.15);                             
+                       }                                       
+                       .form_table>tbody>tr:not(:first-child)>td, .otherTable>tbody>tr>td{                                       
+                       	//border:1px solid #2d2b2b !important;                                  
+                       	border:1px solid #444444 !important;        
+                          //#2d2b2b      
+                       	padding: 10px 8px;                                       
+                       }                                      
+                       			                          
+                       			                          
+                       			                          
+                       .form_table>tbody>tr:not(:first-child)>td:nth-of-type(odd), .otherTable>tbody>tr>td:nth-of-type(odd),.MsoNormalTable{                                       
+                       	font-weight: bold;                                      
+                       }                                      
+                       .form_table>tbody>tr:not(:first-child)>td:nth-of-type(odd), .otherTable>tbody>tr>td:nth-of-type(odd){                                       
+                       	width:15%;                                      
+                       }                                      
+                       			                         
+                       			                          
+                       .form_table>tbody{                                       
+                       	margin: 1.9% 1.7% !important;                                       
+                       	display: inherit !important;                                       
+                       	width: 96% !important;                                       
+                       }                                       
+                       				                       
+                       #table_all>tbody>tr>td{                                       
+                       	border:1px solid #E9E9E9 !important;                                       
+                       }                                      
+                        #table_all,.otherTable{                                      
+                         font-size:18px;                                      
+                        }                                      
+                       				                       
+                       .form_table td {                                        
+                       	height:50px;                                       
+                       	padding: 0px;                                       
+                       }                                       
+                       .formTable td {                                       
+                       	height:50px;                                       
+                       	//padding: 0px;      
+                           padding: 10px 8px;   
+                       }                                       
+                       				                       
+                       				                       
+                       .obpm-input {                                       
+                       	display: inline-block;                                       
+                       	width:100%;                                       
+                       	height:100%;                                       
+                       	line-height: 2;                                       
+                       }                                       
+                       textarea[fieldtype="TextareaField"]{                                       
+                       	height:100% !important;                                       
+                       	width:100% !important;                                       
+                       }                                       
+                       .hqyj{                                       
+                       	style="overflow-y: scroll; margin: 0px; width: auto; height: 200px;"                                       
+                       }                                       
+                       .rcwx tr:nth-child(2) td:nth-child(2) span:nth-child(2) div{                                       
+                       display: inline-block;                                       
+                       width:40px !important;                                       
+                       }                                       
+                       				                       
+                       input[name='startAddress']{                                       
+                       	display: inline-block;                                       
+                       	width:40% !important;                                       
+                       }                                       
+                       #xfk{                                       
+                       	display: inline-block;                                       
+                       	width:80px !important;                                       
+                       	height:40px !important;                                       
+                       }                                       
+                       input[name='IrregularPeriod']{                                       
+                       	display: inline-block;                                       
+                       	width:40% !important;                                       
+                       }                                       
+                       input[name='dueTimrPeriod']{                                       
+                       	display: inline-block;                                       
+                       	width:40% !important;                                       
+                       }                                       
+                       input[name='jiafangalls']{                                       
+                       	display: inline-block;                                       
+                       	width:80% !important;                                       
+                       }                                       
+                       input[name='yifangalls']{                                       
+                       	display: inline-block;                                       
+                       	width:80% !important;                                       
+                       }                                       
+                       select[name='fileWord']{                                       
+                       	display: inline-block;                                       
+                       	width:120px !important;                                       
+                       }                                       
+                       input[name='fileNumber']{                                       
+                       	display: inline-block;                                       
+                       	width:80px !important;                                       
+                       	height:32px !important;                                       
+                       }                                       
+                       input[name='meetNumber']{                                       
+                       	display: inline-block;                                       
+                       	width:30% !important;                                       
+                       }                                       
+                       #rqb{                                       
+                       	display: inline-block;                                       
+                       	width:80px !important;                                       
+                       	height:40px !important;                                       
+                       }                                       
+                       				                       
+                       #zdy_span input,#my_span input{                                       
+                       	display: inline-block;                                       
+                       	width:80px !important;                                       
+                       	height:40px !important;                                       
+                       }                                       
+                       #wh{                                       
+                       	display: inline-block;                                       
+                       	width:100px !important;                                       
+                       	height:40px !important;                                       
+                       }                                       
+                       #currentYear_show{ font-size: 18px; }                                        
+                       .search{                                       
+                       	position: relative;                                       
+                       }                                       
+                       .t_td{                                       
+                       	width:15% !important;                                       
+                       }                                       
+                       .title textarea{                                       
+                       	height:75px !important;                                       
+                       	display:inline-block !important;                                        
+                       	vertical-align:middle !important;                        
+                  		font-size: 18px !important;                  
+                       }                                    
+                       		                         
+                        .upload-title{                             
+                       	padding-left: 25px;                           
+                       	text-align: left;                           
+                       	height: 40px;                                   
+                       	line-height: 40px;                                   
+                       	background: #FAFAFA;                                   
+                       	border-bottom: 1px solid #eee;                                   
+                       }                                  
+                       .upload-content{    
+						text-align: left;
+						 padding: 24px;					   
+                       }                            
+                       .d-inline-block{                                  
+                          	display: inline-block                                  
+                        }                           
+                       .fileslist{                           
+                        height:20px;           
+                         width:20px;           
+                          	line-height: 40px;                          
+                       	margin-right: 4px;                         
+                          	display: inline-block;                          
+                          	vertical-align: middle;                          
+                          	background: url(/obpm/uploads/lib/icon/ic_attachment.png) left no-repeat;                           
+                       }                           
+                       .related-doc{                           
+                       	width: 20px;                          
+                          	height: 20px;                          
+                          	line-height: 40px;                         
+                         	margin-right: 4px;                         
+                          	display: inline-block;                          
+                          	vertical-align: middle;                          
+                       	background: url(../images/ic_papers.svg) left no-repeat;                           
+                       }                          
+                       .ic_datas{                           
+                       	width: 20px;                          
+                          	height: 20px;                          
+                          	line-height: 40px;                          
+                       	margin-right: 4px;                         
+                          	display: inline-block;                          
+                          	vertical-align: middle;                          
+                       	background: url(../images/ic_datas.svg) left no-repeat;                           
+                       }                  
+                   #postingTitle_show{                  
+                  		 display: table-cell;                  
+                  		vertical-align: middle;                   
+              }                 
+              #opinionSummary_show{                  
+              height:560px !important;                  
+              }]]></content>
+  <version>0</version>
+  <description><![CDATA[公文表单样式]]></description>
+</styleRepositoryVO>

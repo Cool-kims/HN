@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__4giBFpQpXVgLYLUQA4F">
+  <name>物资管理查询 Material management inquiry</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description>物资管理查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p65_query.png","icontype":"img"}</ico>
+  <linkType></linkType>
+  <actionContent><![CDATA[]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>31</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="__ngR1kNvJp4vtIT6X0Fx">
+  <name>总经理</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <roleNo>004</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>167636223808200000</sortId>
+  <permissions><![CDATA[[{"operationCode":1002,"operationId":"__1H5OGCMaas606RFT5Mp","resId":"__1H5OGCMaas606RFT5Mp","resName":"菜单","resType":2,"roleId":"","type":1}]]]></permissions>
+</role>

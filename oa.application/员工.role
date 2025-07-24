@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="__9QVcyd6e5Ib0fySmK2z">
+  <name>员工</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <roleNo>002</roleNo>
+  <status>1</status>
+  <defaultRole>true</defaultRole>
+  <sortId>167636222045200000</sortId>
+</role>

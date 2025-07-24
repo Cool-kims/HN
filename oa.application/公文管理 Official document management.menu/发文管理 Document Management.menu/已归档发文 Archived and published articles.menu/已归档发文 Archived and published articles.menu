@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__R3nvIDEj1zcPdo32U8V">
+  <name>已归档发文 Archived and published articles</name>
+  <parentId>__IfXFOo9okgLkIAoytrh</parentId>
+  <description>已归档发文</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"fa fa-send-o","icontype":"font","iconFontColor":"undefined"}</ico>
+  <superior>__IfXFOo9okgLkIAoytrh</superior>
+  <linkType>01</linkType>
+  <moduleid>__XTyqU85jOesMMnOeiuE</moduleid>
+  <actionContent><![CDATA[__ekVP1nN2FZPK92siorS]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

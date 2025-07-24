@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__1yYxWJgXB8PaVgKq2lN">
+  <name>加班申请</name>
+  <parentId>__iO2mkW0ozLXsWMAkb0H</parentId>
+  <description>加班申请</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p126_user.png","icontype":"img"}</ico>
+  <superior>__iO2mkW0ozLXsWMAkb0H</superior>
+  <linkType>00</linkType>
+  <moduleid>__8myszuD8QrnwSWBE8t9</moduleid>
+  <actionContent><![CDATA[__hOTLLr34IsFf9a1k99d]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>true</isUsual>
+  <isMobile>true</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

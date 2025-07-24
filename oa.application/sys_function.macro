@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="__YLSr5sFSbIj81cO5aIO">
+  <name>sys_function</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description></description>
+  <content><![CDATA[//--------------------系统函数库----------------------                                                         
+                          var sys_function = {                          
+                          	/**                                                                    
+                                 * obpm后台管理员角色名称                                                                    
+                                 */                          
+                          	_HOU_DOMAINID: "nice专用",                          
+                          	/**                                                                    
+                                 * obpm后台管理员角色名称                                                                    
+                                 */                          
+                          	_WEB_DOMAINID: "系统管理员",                          
+                          	/**                                                                    
+                                 * 系统数据库名称                                                                    
+                                 */                          
+                          	SYSDBNAME: "gzqhjys_sys",                          
+                                                    
+                          	/**                                                                    
+                                 * URL路径                                                          
+                                  http://gxq.76peter.work:8088/                                                         
+                                 */                          
+                          	SERVER_URL: "http://localhost:8080/",                          
+                                                    
+                          	/**                                                                    
+                                 * WEIXIN URL路径                                                          
+                                						                                  
+                                 */                          
+                          	WEIXIN_URL: "http://gxq.76peter.work:8088/",                          
+                          	/**                                                                    
+                                *                                                                    
+                                * domainid                                                                    
+                                */                          
+                          	DOMAINID: "",                          
+                          	/**                                                                    
+                                 * applicationid                                                                    
+                                 */                          
+                          	applicationid: "",                          
+                                                    
+                          	/*                                                                    
+                                *  数据源                                                                    
+                                */                          
+                          	DATASOURCENAME: "JYS_OA",                          
+                                                    
+                          	/**                                                                    
+                                 * 设置session                                                                    
+                                 */                          
+                          	setSession: function(key, value) {},                          
+                                                    
+                          	/**                                                                    
+                                 * 获取session中的参数                                                                    
+                                 */                          
+                          	getSession: function(key) {},                          
+                                                    
+                          	/**                                                                    
+                                 * 移除session中的参数                                                                    
+                                 */                          
+                          	removeSession: function(key) {},                          
+                          	/**                                                                    
+                                 * 判断当前用户是否含有某角色                                                                    
+                                 * roleName : 角色名称                                                                    
+                                 */                          
+                          	curUserHasThisRole: function(roleName) {                          
+                          		var flag = false;                          
+                          		if (roleName == null || ""==(roleName)) {                          
+                          			return flag;                          
+                          		}                          
+                          		var roles = getWebUser().getRoles();                          
+                          		for (var iter = roles.iterator(); iter.hasNext();) {                          
+                          			var role = iter.next();                          
+                          			var _roleName = role.getName();                          
+                          			if (_roleName==(roleName)) {                          
+                          				flag = true;                          
+                          				break;                          
+                          			}                          
+                          		}                          
+                          		return flag;                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 根据用户id判断用户是否含有某角色                                                                    
+                                 * roleName : 角色名称                                                                    
+                                 */                          
+                          	curUserIdHasThisRole: function(userID, roleName) {                          
+                          		var flag = false;                          
+                          		if (roleName == null || ""==(roleName) || userID == null || ""==(userID)) {                          
+                          			return flag;                          
+                          		}                          
+                          		var userd = getUserById(userID);                          
+                          		if (userd != null) {                          
+                          			var roles = userd.getRoles();                          
+                          			for (var iter = roles.iterator(); iter.hasNext();) {                          
+                          				var role = iter.next();                          
+                          				var _roleName = role.getName();                          
+                          				if (_roleName==(roleName)) {                          
+                          					flag = true;                          
+                          					break;                          
+                          				}                          
+                          			}                          
+                          		}                          
+                          		return flag;                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 判断用户ID是否含有某角色                                                                    
+                                 * roleName : 角色名称                                                                    
+                                 */                          
+                          	isUserIdHasThisRole: function(userid, roleName) {                          
+                          		var flag = false;                          
+                          		if (roleName == null || ""==(roleName) || userid == null) {                          
+                          			return flag;                          
+                          		}                          
+                          		var roles = getUserById(userid).getRoles();                          
+                          		for (var iter = roles.iterator(); iter.hasNext();) {                          
+                          			var role = iter.next();                          
+                          			var _roleName = role.getName();                          
+                          			if (_roleName==(roleName)) {                          
+                          				flag = true;                          
+                          				break;                          
+                          			}                          
+                          		}                          
+                          		return flag;                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 封装内网URL为外网访问URL                                                                    
+                                 * url :  内网应用URL                                                                    
+                                 */                          
+                          	getServerUrl: function(url) {                          
+                          		return sys_function.SERVER_URL + url;                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 封装内网URL为外网访问URL                                                                    
+                                 * url :  内网应用URL                                                                    
+                                 */                          
+                          	getCommonUrl: function(url) {                          
+                          		var request = $WEB.getParamsTable().getHttpRequest();                          
+                          		var url_head = "http://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();                          
+                          		return (url_head + url);                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 通过用户ID获取该用户名称                                                                    
+                                 * userId : 用户ID                                                                    
+                                 */                          
+                          	getUserByName: function(userId) {                          
+                          		if (userId == null) {                          
+                          			return "";                          
+                          		}                          
+                          		var user = getUserById(userId);                          
+                          		if (user != null) {                          
+                          			return user.getName();                          
+                          		}                          
+                          		return "";                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 通过部门ID获取部门名称                                                                    
+                                 * depId : 部门ID                                                                    
+                                 */                          
+                          	getDepNameById: function(depId) {                          
+                          		var depName = "";                          
+                          		if (depId == null || ""==(depId)) {                          
+                          			return depName;                          
+                          		}                          
+                          		var depProcess = getDepartmentProcess();                          
+                          		var dep = depProcess.doView(depId);                          
+                          		if (dep != null) {                          
+                          			depName = dep.getName();                          
+                          		}                          
+                          		return depName;                          
+                          	},                          
+                          	/**                                                                    
+                                 * 通过用户ID获取用户的名称                                                                    
+                                 * userIds ：用户ID已分号隔开                                                                    
+                                 */                          
+                          	getUserNamesByUserIds: function(userIds) {                          
+                          		if (userIds == null) {                          
+                          			return "";                          
+                          		}                          
+                          		var userNames = "";                          
+                          		var newUserIds = new (Java.type('java.lang.String'))(userIds);                          
+                          		var arrUserId = splitText(newUserIds, ";");                          
+                          		for (var i = 0; i < arrUserId.length; i++) {                          
+                          			var userId = arrUserId[i];                          
+                          			var user = getUserById(userId);                          
+                          			if (user != null) {                          
+                          				userNames += ";" + user.getName();                          
+                          			}                          
+                          		}                          
+                          		if (""!= (userNames)) {                          
+                          			userNames = new (Java.type('java.lang.String'))(userNames);                          
+                          			userNames = userNames.substring(1, userNames.length);                          
+                          		}                          
+                          		//println(sys_function._FUNCTION_LIBNAME + "(sys_function)  函数(getUserNamesByUserIds)结束执行");                                                                    
+                          		return userNames;                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 是否启动流程                                                                    
+                                 */                          
+                          	isStateStarted: function() {                          
+                          		var doc = getCurrentDocument();                          
+                          		var statelabel = doc.getStateLabel();                          
+                          		var flag = true;                          
+                          		if (statelabel == null || statelabel.trim().length <= 0) {                          
+                          			flag = false;                          
+                          		}                          
+                          		return flag;                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 判断当前用户是否含有某角色                                                                    
+                                 * roleName : 角色名称                                                                    
+                                 */                          
+                          	curUserHasThisRole: function(roleName) {                          
+                          		var flag = false;                          
+                          		if (roleName == null || ""==(roleName)) {                          
+                          			return flag;                          
+                          		}                          
+                          		var roles = getWebUser().getRoles();                          
+                          		for (var iter = roles.iterator(); iter.hasNext();) {                          
+                          			var role = iter.next();                          
+                          			var _roleName = role.getName();                          
+                          			if (_roleName==(roleName)) {                          
+                          				flag = true;                          
+                          				break;                          
+                          			}                          
+                          		}                          
+                          		return flag;                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                 * 视图中勾选的记录存在流程数据，不能删除                                                                    
+                                 */                          
+                          	isDelState: function() {                          
+                          		/*if (sys_function.curUserHasThisRole(sys_function._HOU_DOMAINID)) {                          
+                          			return "";                          
+                          		}*/                          
+                          		var selectId = getParameterAsText("_selects");  
+								//println("selectId=============="+selectId);                        
+                          		var sel = selectId.replace(";", "','");                          
+                          		sel = "('" + sel + "')";                          
+                          		//var sql = "select domainid from t_document where (statelabel <> '' and statelabel is not null and statelabel <> '未提交') and id in " + sel;                          
+                          		//sql += " union all ";                          
+                          		var sql = " select domainid from t_document where author <> '" + getWebUser().getId() + "' and id in " + sel; 
+								//println("sql=============="+sql);
+                          		if (countBySQL(sql) > 0) {   
+									//println("不能删除！");
+                          			return "非本人创建的单据，不能删除！";                          
+                          		}                          
+                          		return "";                          
+                          	},                          
+                                                    
+                          	/**                                                                    
+                                * 视图中勾选的记录存在审批完成的数据,不能删除.(以防结束插入的数据)                                                                    
+                                */                          
+                          	isDelStated: function() {                          
+                          		var selectId = getParameterAsText("_selects");                          
+                          		var sel = selectId.replace(";", "','");                          
+                          		sel = "('" + sel + "')";                          
+                          		var sql = "select domainid from t_document where  statelabel = '审批完成' and id in " + sel;                          
+                          		if (countBySQL(sql) > 0) {                          
+                          			return "视图中勾选的记录存在审批完成的数据,不能删除.(以防插入的数据有错误),建议新建一条负值.或者去数据把参数置为null或0";                          
+                          		}                          
+                          		return "";                          
+                          	},                          
+                          	/*                                                                    
+                                判断是否为PC端                                                                    
+                                */                          
+                          	curoptiscomputer: function() {                          
+                          		var user = getWebUser();                          
+                          		var rtn = false;                          
+                          		if (user.getEquipment() == 1) {                          
+                          			rtn = true;                          
+                          		}                          
+                          		return rtn;                          
+                          	},                          
+                                                    
+                          	//所有下级部门(部门id)（废弃）                                                                    
+                          	getParentDepartment: function(depart) {                          
+                          		var process = createProcess("cn.myapps.core.department.ejb.DepartmentProcess");                          
+                          		var deptlist2 = process.getDatasByParent(depart);                          
+                          		var deptids = "";                          
+                          		if (deptlist2 != null && deptlist2.size() > 0) {                          
+                          			for (var iter = deptlist2.iterator(); iter.hasNext();) {                          
+                          				var dept = iter.next();                          
+                          				var deptid = dept.getId();                          
+                          				deptids += deptid + ";";                          
+                          				deptids += getParentDepartment(deptid);                          
+                          			}                          
+                          		}                          
+                          		return deptids;                          
+                          	},                          
+                          	/*                                                                    
+                                判断是否为空不为空 则返回 输入的默认值                                                                    
+                                */                          
+                          	getNull2NotNull: function(ItemName, value) {                          
+                          		var doc = getCurrentDocument();                          
+                          		var today = doc.getItemValueAsString(ItemName);                          
+                          		if (""==(today) || today == null || today.trim().length <= 0) {                          
+                          			today = value;                          
+                          		}                          
+                          		return today;                          
+                          	},                          
+                          	/*                                                                    
+                                判断是否为第一个节点 和 未保存状态                                                                    
+                                */                          
+                          	IsStart: function() {                          
+                          		var doc = getCurrentDocument();                          
+                          		var state = doc.getStateLabel();                          
+                          		var flag = false;                          
+                          		if (state == null || "未提交"==(state) || ""==(state)) {                          
+                          			flag = true;                          
+                          		}                          
+                          		return flag;                          
+                          	},                          
+                          	/*流水号*/                          
+                          	getSerialNumber: function(prefix) {                          
+                          		var doc = getCurrentDocument();                          
+                          		var docid = doc.getId();                          
+                          		var serialNumber = doc.getItemValueAsString("serialNumber");                          
+                                 if (serialNumber == null || serialNumber.trim().length <= 0) {                    
+                                   	var decimalFormat = new (Java.type('java.text.DecimalFormat'))("000")                  
+                                 	  	var yearNum = getYear(getToday());                    
+                             	     	var userNum = getUserById(getWebUser().getId()).getOrderByNo();                     
+                   			     	userNum = decimalFormat .format(userNum);                 
+                             	     	var deptNum = getDepartmentProcess().doView(getWebUser().getDefaultDepartment()).getOrderByNo();                       
+                                   	deptNum = decimalFormat .format(deptNum);                  
+                                   	var nextCount = countNext2("", false, false, false, 3);                     
+                                   	serialNumber = prefix + yearNum + userNum + deptNum + nextCount;                   
+                          		}        	                   
+                          		return serialNumber;                          
+                          	},                                
+                          	/*部门合同编号*/                          
+                          	getSerialNumber1: function(prefix) {                          
+                          		var doc = getCurrentDocument();                          
+                          		var docid = doc.getId();                          
+                          		var serialNumber = doc.getItemValueAsString("bmhtbh");                          
+                                 if (serialNumber == null || serialNumber.trim().length <= 0) {                    
+                                   	var decimalFormat = new (Java.type('java.text.DecimalFormat'))("000")                  
+                                 	  	var yearNum = getYear(getToday());                    
+                             	     	var userNum = getUserById(getWebUser().getId()).getOrderByNo();                     
+                   			     	//userNum = decimalFormat .format(userNum);                 
+                             	     	var deptNum = getDepartmentProcess().doView(getWebUser().getDefaultDepartment()).getOrderByNo();                       
+                                   	//deptNum = decimalFormat .format(deptNum);                  
+                                   	var nextCount = countNext2("", false, false, false, 3);
+									//println("流水号：==========="+nextCount);									
+                                   	serialNumber = prefix + yearNum + userNum + deptNum + nextCount;                   
+                          		}        	                   
+                          		return serialNumber;                          
+                          	},                                    
+                          	/*所合同编号*/                          
+                          	getSerialNumber2: function(prefix) {                          
+                          		var doc = getCurrentDocument();                          
+                          		var docid = doc.getId();                          
+                          		var serialNumber = doc.getItemValueAsString("htbh");                          
+                                 if (serialNumber == null || serialNumber.trim().length <= 0) {                    
+                                   	var decimalFormat = new (Java.type('java.text.DecimalFormat'))("000")                  
+                                 	  	var yearNum = getYear(getToday());                    
+                             	     	var userNum = getUserById(getWebUser().getId()).getOrderByNo();                     
+                   			     	userNum = decimalFormat .format(userNum);                 
+                             	     	var deptNum = getDepartmentProcess().doView(getWebUser().getDefaultDepartment()).getOrderByNo();                       
+                                   	deptNum = decimalFormat .format(deptNum);                  
+                                   	var nextCount = countNext2("", false, false, false, 3);                     
+                                   	serialNumber = prefix + yearNum + deptNum + nextCount;                   
+                          		}        	              
+                          		doc.findItem("htbh").setValue(serialNumber);                          
+                          	},                               
+                          	/*审核编号*/                          
+                          	getSerialNumber3: function(prefix) {                          
+                          		var doc = getCurrentDocument();                          
+                          		var docid = doc.getId();                          
+                          		var serialNumber = doc.getItemValueAsString("shbh");                          
+                                 if (serialNumber == null || serialNumber.trim().length <= 0) {                    
+                                   	var decimalFormat = new (Java.type('java.text.DecimalFormat'))("000")                  
+                                 	  	var yearNum = getYear(getToday());                    
+                             	     	var userNum = getUserById(getWebUser().getId()).getOrderByNo();                     
+                   			     	userNum = decimalFormat .format(userNum);                 
+                             	     	var deptNum = getDepartmentProcess().doView(getWebUser().getDefaultDepartment()).getOrderByNo();                       
+                                   	deptNum = decimalFormat .format(deptNum);                  
+                                   	var nextCount = countNext2("", false, false, false, 3);                     
+                                   	serialNumber = prefix + yearNum + userNum + deptNum + nextCount;                   
+                          		}        	                   
+                          		doc.findItem("shbh").setValue(serialNumber);                           
+                          	},                      
+                          	/*  发文文号  */                          
+                          	getFWchange: function() {                          
+                          		var domainid = getWebUser().getDomainid();                          
+                          		var deptid = getWebUser().getDefaultDepartment();                          
+                          		var opts = $TOOLS.createOptions();                          
+                          		var doc = getCurrentDocument();                          
+                          		var istmp = doc.getIstmp();                          
+                          		opts.add("", "");                          
+                          		var sql = "select * from TLK_DOCUMENT_NUMBER_TAB where item_isuse = '是'";                          
+                                                    
+                          		if (istmp) {                          
+                          			sql += " and item_dept = '" + deptid + "' order by item_type asc";                          
+                                                    
+                          		}                          
+                          		//println("11111111111111111111:"+sql);                                                                     
+                          		var datas = queryBySQL(sql);                          
+                          		if (datas != null) {                          
+                          			for (var iter = datas.iterator(); iter.hasNext();) {                          
+                          				var data = iter.next();                          
+                          				opts.add(data.getItemValueAsString("documentNumber"), data.getItemValueAsString("documentNumber"));                          
+                          			}                          
+                          		}                          
+                          		return opts;                          
+                          	},                          
+                          	/*                                                                    
+                                获取部门负责人                                                                    
+                                */                          
+                          	getUserByDeptIdAndRoleId: function(dptid,rolename) {                          
+                          		var userlist = createObject("java.util.ArrayList");                          
+                          		var roleid = getRoleIdByName(rolename);                          
+                          		//var dptid = getWebUser().getDefaultDepartment();    
+ 							println("角色id================"+roleid);								  
+                          		var users = getUsersByDptIdAndRoleId(dptid, roleid);                         
+                          		if (users != null) for (var iter = users.iterator(); iter.hasNext();) {                             
+                          			var user = iter.next();                          
+                          			var idd = user.getId();                          
+                          			var userVO = getUserById(idd);                          
+                          			userlist.add(userVO);                          
+                          		}                          
+                          		return userlist;                          
+                          	},                          
+                          	/*                                                                    
+                                获取 查询视图->列->表单类型                                                                    
+                                */                          
+                          	getFormType: function() {                          
+                          		var doc = getCurrentDocument();                          
+                          		var formId = doc.getFormid();                          
+                          		var Discription = "";                          
+                          		var Form = new (Java.type('cn.myapps.core.runtime.dynaform.form.ejb.FormServiceImpl'))().doView(formId);                          
+                          		if (Form != null) {                          
+                          			Discription = Form.getDiscription()                          
+                          		}                          
+                          		return Discription;                          
+                          	},                          
+                          	/*                                                                    
+                                判断设备返回 true/false                                                                    
+                                */                          
+                          	getIsPhone: function() {                          
+                          		var user = getWebUser();                          
+                          		var rtn = true;                          
+                          		if (user.getEquipment() == 0) {                          
+                          			var rtn = false;                          
+                          		}                          
+                          		return rtn;                          
+                          	},                          
+                          	/*                                                                    
+                                	date转时间戳                                                         
+                                */                          
+                          	DateToStamp: function(date) {                          
+                          		var newdate = parseDate(date, "yyyy-MM-dd HH:mm:ss");                          
+                          		var stamp = newdate.getTime() + "";                          
+                          		var stamp = stamp.substr(0, stamp.length - 3);                          
+                          		return stamp;                          
+                          	},                          
+                          	/*                                                                    
+                                	时间戳转date                                                         
+                                */                          
+                          	StampToDate: function(stamp) {                          
+                          		stamp = stamp + "000";                          
+                          		var Longstamp = parseLong(stamp);                          
+                          		var newdate = parseDate(longstamp, "yyyy-MM-dd HH:mm:ss");                          
+                          		var data = format(newdate, "yyyy-MM-dd HH:mm:ss");                          
+                          		return data;                          
+                          	},                          
+                          	/*                                                                    
+                                	通过部门id获取用户                                                         
+                                */                          
+                          	getDeptUsersByDeptid: function(deptid) {                          
+                          		var users = "";                          
+                          		if (!"__Jnen3Gj4vDZDS7vEipp"==(deptid)) {                          
+                          			var deptUnderUserList = getUsersByDptId(deptid);                          
+                          			for (var iter = deptUnderUserList.iterator(); iter.hasNext();) {                          
+                          				var UserInfo = iter.next();                          
+                          				var uid = UserInfo.getId();                          
+                          				users += "'" + uid + "',"                          
+                          			}                          
+                          			users = users.substring(0, users.length - 1);                          
+                          		}                          
+                          		return users;                          
+                          	},                          
+                          	getSummary: function() {                          
+                          		var doc = getCurrentDocument();                          
+                          		var title = isNotNull(doc.getItemValueAsString("title")) ? doc.getItemValueAsString("title") : " ";                          
+                          		var serialNumber = isNotNull(doc.getItemValueAsString("serialNumber")) ? doc.getItemValueAsString("serialNumber") : " ";                          
+                          		var priorities = isNotNull(doc.getItemValueAsString("priorities")) ? doc.getItemValueAsString("priorities") : " ";                          
+                          		//var wjbh = isNotNull(doc.getItemValueAsString("wjbh")) ? doc.getItemValueAsString("wjbh") : isNotNull(doc.getItemValueAsString("messageNumber")) ? doc.getItemValueAsString("messageNumber") : " ";                                                          
+                          		return title + ";" + priorities + ";" + serialNumber;                          
+                          	},                          
+                          	//待办通知，标题，缓急                                               
+                          	ToDoTotice: function() {                          
+                          		var doc = getCurrentDocument();                          
+                          		var title = isNotNull(doc.getItemValueAsString("title")) ? doc.getItemValueAsString("title") : " ";                          
+                          		//var serialNumber = isNotNull(doc.getItemValueAsString("serialNumber")) ? doc.getItemValueAsString("serialNumber") : " ";                                                       
+                          		var priorities = isNotNull(doc.getItemValueAsString("priorities")) ? doc.getItemValueAsString("priorities") : " ";                          
+                          		//var wjbh = isNotNull(doc.getItemValueAsString("wjbh")) ? doc.getItemValueAsString("wjbh") : isNotNull(doc.getItemValueAsString("messageNumber")) ? doc.getItemValueAsString("messageNumber") : " ";                                                          
+                          		return title + ";" + priorities;                          
+                          	},                          
+                                                    
+                          	winxingTotice: function() {                          
+                          		var doc = getCurrentDocument();                          
+                          		var isNotice = doc.getItemValueAsString("isNotice");                          
+                          		//(Java.type('java.lang.System')).out.println("测试消息提醒=============："+isNotice);                                
+                          		var StateLabel = doc.getStateLabel();                          
+                          		if (("参会人员"==(StateLabel) || "各单位"==(StateLabel)) && !"已发布通知"==(isNotice)) {                          
+                          			var process = getDocumentProcess();                          
+                          			var webUserId = getWebUser().getId();                          
+                          			var domainId = getWebUser().getDomainid();                          
+                          			var docid = doc.getId();                          
+                          			var formid = doc.getFormid();                          
+                          			var touser = "";                          
+                          			var applicationId = getApplication();                          
+                          			var title = doc.getItemValueAsString("title");                          
+                          			//var deptId = doc.getItemValueAsString("dept");                                                            
+                          			//var userIds = doc.getItemValueAsString("receiver");  //用户Id                                                            
+                          			//var deptPro = getDepartmentProcess();                                                            
+                          			//var deptVo = deptPro.doView(deptId);                                                            
+                          			//var deptName = deptVo.getName();                                                            
+                          			var lastApprovedTime = getToday();                          
+                          			var curDate = format(lastApprovedTime, "yyyy-MM-dd HH:mm");                          
+                          			//	var content = "景德镇高新区智慧政务平台提醒您，您于" + curDate  + "收到来自" + deptName  + "发布的通知(公告)（《" + title + "》），请查看。" ;                                              
+                          			var content = "景德镇高新区智慧政务平台提醒您，您于" + curDate + "收到来自单位账号待处理通知（《" + title + "》），请查看。";                          
+                          			var sql = "select * from T_ACTORRT where DOC_ID='" + docid + "'";                          
+                          			var datas = queryByDSName("O_DS", sql);                          
+                          			if (datas != null) {                          
+                          				for (var iterator = datas.iterator(); iterator.hasNext();) {                          
+                          					var map1 = iterator.next(); //取值                                                        
+                          					var userid = map1.get("ACTORID");                          
+                          					touser += getUserById(userid).getField1() + "|";                          
+                          					//(Java.type('java.lang.System')).out.println("测试消息提醒1=============："+touser);                                                       
+                          				}                          
+                          				var url1 = "actionContent=" + formid + "&docId=" + docid + "&openType=from_weixin_message";                          
+                          				url1 = sys_function.WEIXIN_URL + "obpm/mobile/index.html?application=__4svxZB6wTFsmrRt1bch#/open?linkType=00&" + url1;                          
+                          				url1 = encodeURIComponent(url1);                          
+                          				var url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wwd1314fd58d639528&redirect_uri=" + url1 + "&response_type=code&scope=snsapi_base&agentid=1000002&state=" + domainId + "#wechat_redirect";                          
+                                                    
+                          				var picUrl = "http://www.flxoa.cn/obpm/resource/image/tz_bg.png";                          
+                          				touser = touser.substring(0, touser.length - 1);                          
+                          				//(Java.type('java.lang.System')).out.println("测试消息提醒2=============："+touser);                                  
+                          				sendWeixinRichTextMessage(touser, title, content, url, picUrl, domainId, applicationId);                          
+                          				doc.findItem("isNotice").setValue("已发布通知");                          
+                          				process.doCreateOrUpdate(doc, getWebUser());                          
+                          			}                          
+                          		}                          
+                          	},                          
+                          	getyulanFileUrl: function(fileJson) {                          
+                          		var path = "";                          
+                          		var name = "";                          
+                          		var user = getWebUser();                          
+                          		if (fileJson != null && fileJson.trim().length > 0) {                          
+                          			var jsonArray = new (Java.type('org.json.JSONArray'))(fileJson);                          
+                          			for (var i = 0; i < jsonArray.length; i++) {                          
+                          				var jsonObject = jsonArray.getJSONObject(i);                          
+                          				path = jsonObject.getString("path");                          
+                          				name = jsonObject.getString("name");                          
+                          			}                          
+                          		}                          
+                          		//var filename = path.substr(path.lastIndexOf("/"),path.length);                                            
+                          		var request = $WEB.getParamsTable().getHttpRequest(); //获取当前request                                            
+                          		//var url=$WEB.getParamsTable().getContextPath();                                            
+                          		var url = "";                          
+                          		var truchurl = "/obpm/portal/good/html/pdfviewer.html?action=&path=" + path + "&name=" + name + "&showName=" + name + "&waterMark=null&openWaterMark=false&curEditUserId=" + getWebUser().getId();                          
+                          		if (user.getEquipment() == 1) {                          
+                          			truchurl = "/obpm/portal/good/html/pdfviewer.html?action=&path=" + path + "&name=" + name + "&showName=" + name + "&waterMark=null&openWaterMark=false&curEditUserId=" + getWebUser().getId();                          
+                          		}                          
+                          		url = url + truchurl;                          
+                          		return url;                          
+                          	},                          
+                          	curAuthorHasThisRole: function(roleName) {                          
+                          		var flag = false;                          
+                          		if (roleName == null || ""==(roleName)) {                          
+                          			return flag;                          
+                          		}                          
+                          		var doc = getCurrentDocument();                          
+                          		var author = doc.getAuthor();                          
+                          		var authorid = author.getId();                          
+                          		var rolelist = new (Java.type('cn.myapps.core.web.WebUser'))(getUserById(authorid)).getRolelist();                          
+                          		//println("rolelist=============="+rolelist);                                 
+                          		var arr = splitString(roleName, ";");                          
+                          		var roleid = ""                          
+                          		for (var i = 0; i < arr.length; i++) {                          
+                          			roleid = getRoleIdByName(arr[i]);                          
+                          			if (roleid != null && rolelist.indexOf(roleid) != -1) {                          
+                          				//println("22222222222")                                    
+                          				return true;                          
+                          			}                          
+                          		}                          
+                          		return flag;                          
+                          	},               
+                          
+                          
+             				getAttentionName:function() {             
+             					  var isattention = "";             
+             					  var doc = getCurrentDocument();					             
+             					  var docId = doc.getId();               
+             					  var userId = getWebUser().getId();               
+             					  //println("111函数库是否关注");               
+             					  var querySql = "select * from tlk_gw_gz_set where ITEM_FORM_DOCID = '" + docId + "' AND ITEM_USERID = '" + userId + "'";               
+             					  var datas = queryByDSName("JYS_OA", querySql);               
+             					  if (datas != null && datas.size() > 0) {               
+             					  //println("取消关注");             
+             							  isattention = "取消关注";               
+             					  } else {               
+             					  //println("关注");             
+             							  isattention = "取消关注";               
+             					  }               
+             					  return isattention;             
+             				},             
+             				isAttention:function(type) {             
+             					 var doc = getCurrentDocument();             
+             					 var id = (Java.type('cn.myapps.core.util.sequence.Sequence')).getSequence();              
+             					 var docId = doc.getId();  
+                                 var inituserid =  doc.getAuthor().getId();
+								 var inituserdptid = doc.getAuthor().getDefaultDepartment();
+                                 var initusername = doc.getAuthor().getName();								 
+             					 var formId = doc.getFormid();              
+             					 var title = doc.getItemValueAsString("title");              
+             					 var starttime = doc.getCreated();              
+             					 var userId = getWebUser().getId(); 
+                                 var depName = 	sys_function.getDepNameById(inituserdptid);							 
+             					 //var type = "签报";              
+             					 //println("docid===" + docId + "====formid==" + formId + "===title===" + title);              
+             					 var querySql = "select * from tlk_gw_gz_set where ITEM_FORM_DOCID = '" + docId + "' AND ITEM_USERID = '" + userId + "'";              
+             					 var datas = queryByDSName("JYS_OA", querySql);              
+             					 if (datas != null && datas.size() > 0) {              
+             							 var deleteSql = "delete from tlk_gw_gz_set WHERE ITEM_FORM_DOCID = '" + docId + "' AND ITEM_USERID = '" + userId + "'";             
+             							 //println("删除");							              
+             							 //println("deleteSql==" + deleteSql);              
+             							 deleteByDSName("JYS_OA", deleteSql);              
+             					 } else {              
+             							 var insertSql = "INSERT INTO tlk_gw_gz_set (DOMAINID,APPLICATIONID,ITEM_FORM_DOCID,ITEM_FORM_FORMID,ITEM_USERID,ITEM_FORM_TITLE,ITEM_FORM_TYPE,ITEM_STARTTIME,ID,ITEM_起草人,ITEM_起草人id,ITEM_发起部门) VALUES ('" + getDomainid() + "','" + getApplication() + "','" + docId + "','" + formId + "','" + userId + "','" + title + "','" + type + "','" + starttime + "','" + id + "','" + initusername + "','" + inituserid + "','" + depName + "'); ";              
+             							 println("添加===>"+insertSql);	             
+             							 insertByDSName("JYS_OA", insertSql);              
+             					 }              
+             				             
+             				},       
+       					/**                                                                    
+                                 * 返回指定部门、角色的所有用户对象的集合                                                                   
+                                 * dptid : 部门id                                                                                        
+                                 * rolename : 角色名称                                                
+                                 */                          
+                          	getUsersByDptIdAndRoleName: function(dptid, rolename) {      
+                             		var roleid=getRoleIdByName(rolename);       
+                                	//println("组长id2========="+roleid);      
+                               		//println("部门id========="+dptid);     
+    								    
+       								var users = getUsersByDptIdAndRoleId(dptid,roleid);	    
+    								  
+    								return users;								    
+                          		},        
+       					/**                                                                    
+                                 * 返回指定部门、角色的所有用户对象的集合，去除自己和组长                                                                   
+                                 * dptid : 部门id                                                                                        
+                                 * rolename : 角色名称                                                
+                                 */                          
+ getUsersByDptIdAndRoleName2:function(dptid, rolename){ 
+ 								var userlist = createObject("java.util.ArrayList");  
+ 								var removeuser = getWebUser().getId(); 
+ 								var users = sys_function.getUsersByDptIdAndRoleName(dptid,rolename);	  
+ 								if (users != null) {                         
+ 									for (var iterator = users.iterator(); iterator.hasNext();) {                         
+ 										var user = iterator.next(); //取值  
+ 										var userid = user.getId(); 
+ 										removeuser+=userid;								 
+ 									 
+ 									} 
+ 								} 
+ 								var deptusers = getUsersByDptId(dptid); 
+ 								if (deptusers != null) {                         
+ 									for (var iterator = deptusers.iterator(); iterator.hasNext();) {                       
+ 										var user = iterator.next(); //取值  
+ 										var userid = user.getId(); 
+ 										if(removeuser.indexOf(userid)<0){ 
+ 											userlist.add(user); 
+ 										} 
+ 									} 
+ 								} 
+								 println("userlist========="+userlist);
+ 								return userlist; 
+ 							},
+							getIpPath: function() { 
+							     var request = $WEB.getParamsTable().getHttpRequest();      
+                              var path = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+"/static/portal/vue/index.html#";
+                                                    
+    							 return path;								    
+                          		},
+                            getymPath: function() { 
+					      var request = $WEB.getParamsTable().getHttpRequest(); 
+						
+                             	 //var path = "http://oa.gfex.net/static/portal/vue/index.html#";
+                                 var path = request.getScheme()+"://172.16.200.120:8080/static/portal/vue/index.html#"    
+    							 return path;			                          						    
+                          		}, 								
+							
+                          }]]></content>
+  <version>0</version>
+</repositoryVO>

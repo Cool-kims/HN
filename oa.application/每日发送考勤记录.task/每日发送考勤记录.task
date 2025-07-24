@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<task id="__6YeTLmSifz9NFdWTQKJ">
+  <name>每日发送考勤记录</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description></description>
+  <type>1</type>
+  <runningTime>2023-12-13T12:00:00.832+08:00</runningTime>
+  <interval>1</interval>
+  <period>2</period>
+  <runtimes>0</runtimes>
+  <terminateScript><![CDATA[]]></terminateScript>
+  <taskScript><![CDATA[  #include "basic";
+(function () {
+	var domainName = "广州市天翎网络科技有限公司";//企业名称
+	var domainProcess = getDomainProcess(); //创建指定类对象
+	var domain = domainProcess.getDomainByName(domainName);
+	var domainid=domain.getId();
+    var UserProcessBean = new (Java.type('cn.myapps.core.authtime.user.service.UserProcessBean'))();
+    var dingdingSecretCache = (Java.type('cn.myapps.core.support.dingding.util.DingdingSecretCache'));
+    var ddApiService = (Java.type('cn.myapps.core.support.dingding.service.DdApiService'));
+    var accessToken = ddApiService.getAccessToken(dingdingSecretCache.get(domainid));
+    var process = getDocumentProcess();
+    var userProcess = getUserProcess();
+	var userv = userProcess.getUserByLoginno("jackson",domainid);//domainid
+	var webuser = new (Java.type('cn.myapps.core.web.WebUser'))(userv);
+    var userlist = new (Java.type('java.util.ArrayList'))();
+    var users = userProcess.queryByDomain(domainid);
+    for (var iter = users.iterator(); users != null && iter.hasNext(); ) {
+        var user = iter.next();
+        var ddUserId = user.getDdUserId();
+        if (isNotNull(ddUserId)) {
+            userlist.add(ddUserId);
+        }
+    }
+
+    var userTotal = userlist.size(); //总用户数
+    var pagesize = 50; //每页用户数
+    var pagecount = 0; //总页数
+    var m = userTotal % pagesize;
+    if (m > 0) {
+        pagecount = userTotal / pagesize;
+        pagecount = Math.floor(pagecount) + 1;
+    } else {
+        pagecount = userTotal / pagesize;
+    }
+
+    var todate = getToday();
+    var starttime = format(adjustDay(todate, -7), "yyyy-MM-dd HH:mm:ss");
+    var endtime = format(todate, "yyyy-MM-dd HH:mm:ss");
+
+    var sql = "select max(domainid) as domainid,max(item_dd_checkin_time) as item_dd_checkin_time from tlk_ClockInRecords where item_checkin_app='钉钉'";
+    var data = process.findBySQL(sql, domainid);
+    if (data != null) {
+        starttime = data.getItemValueAsDate("dd_checkin_time");
+    }
+
+    //每50个用户调一次接口（钉钉接口限制每次50位用户）
+    for (var j = 1; j <= pagecount; j++) {
+        var sublist = getUserByPage(userlist, pagesize, j);
+
+        var inputjson = createObject("net.sf.json.JSONObject");
+        inputjson.put("checkDateFrom", String(starttime));
+        inputjson.put("checkDateTo", String(endtime));
+        inputjson.put("userIds", sublist);
+        var url = "https://oapi.dingtalk.com/attendance/listRecord?access_token=" + accessToken;
+        var dingdingHttpsRequestUtil = (Java.type('cn.myapps.core.support.dingding.util.DingdingHttpsRequestUtil'));
+        var result = dingdingHttpsRequestUtil.post(url, inputjson.toString());
+
+        if (result != null) {
+            var errcode = result.getInt("errcode");
+            if (errcode != 0) {
+                var errmsg = result.getString("errmsg");
+                return "同步异常：" + errmsg;
+            }
+
+            var domainProcess = getDomainProcess();
+            var domainvo = domainProcess.doView(domainid);
+            var domainName = domainvo.getName();
+
+            var application = getApplication();
+            var params = createParamsTable();
+            var formProcess = getFormProcess();
+            var Form = formProcess.doViewByFormName("ClockInRecords", application);
+
+            var recordresult = result.getJSONArray("recordresult");
+            for (var i = 0; i < recordresult.size(); i++) {
+                var userinfo = recordresult.getJSONObject(i);
+                var userId = userinfo.get("userId");
+                var checkType = userinfo.get("checkType");
+                var locationResult = userinfo.get("locationResult");
+                var timeResult = userinfo.get("timeResult");
+                var userCheckTime = userinfo.getDouble("userCheckTime");
+                var sourceType = userinfo.get("sourceType");
+
+                if ("NotSigned"!=(timeResult) && "OnDuty"==(checkType)) {
+                    var zdoc = process.doNew(Form, webuser, params);
+                    var ptuser = userProcess.getUserByDdUserIdAndDoaminName(userId, domainName);
+                    var ptuserid = ptuser.getId();
+                    var userdept = ptuser.getDefaultDepartment();
+                    var dktime = new Date(userCheckTime);
+                    var dktime2 = format(dktime, "yyyy-MM-dd HH:mm:ss");
+                    var dktime3 = format(dktime, "yyyy-MM-dd");
+					zdoc.setDomainid(domainid);
+                    zdoc.addStringItem("dd_user", ptuserid); //打卡人
+                    zdoc.addStringItem("dd_checkin_type", checkType); //打卡类型
+                    zdoc.addDateItem("dd_checkin_time", dktime); //打卡时间
+                    zdoc.addStringItem("dd_sourcetype", sourceType); //数据来源
+                    zdoc.addStringItem("dd_locationresult", locationResult); //位置结果
+                    zdoc.addStringItem("checkin_app", "钉钉");
+                    var timeResult2 = "";
+                    //上班
+                    if ("OnDuty"==(checkType)) {
+                        var sql2 = "select * from tlk_AttendanceRulesForm where item_dept like '%" + userdept + "%'";
+                        var data2 = process.findBySQL(sql2, domainid);
+                        if (data2 != null) {
+                            var isFlexible = data2.getItemValueAsString("isFlexible");
+                            if ("是"==(isFlexible)) {
+                                //是弹性上班时间
+                                var starttime = data2.getItemValueAsDate("starttime2");
+                                var dkRuleTime = format(starttime, dktime3 + " HH:mm:ss");
+                                if (dkRuleTime > dktime2) {
+                                    timeResult2 = "Normal";
+                                } else {
+                                    timeResult2 = "Late";
+                                }
+                            } else {
+                                //不是弹性上班时间
+                                var starttime = data2.getItemValueAsDate("starttime1");
+
+                                var dkRuleTime = format(starttime, dktime3 + " HH:mm:ss");
+                                if (dkRuleTime > dktime2) {
+                                    timeResult2 = "Normal";
+                                } else {
+                                    timeResult2 = "Late";
+                                }
+                            }
+                        } else {
+                            //没维护规则，按8点半时间为上班时间
+                            var dkRuleTime = format(dktime, "yyyy-MM-dd 08:30:00");
+                            if (dkRuleTime > dktime2) {
+                                timeResult2 = "Normal";
+                            } else {
+                                timeResult2 = "Late";
+                            }
+                        }
+                    }
+                    zdoc.addStringItem("dd_exception_type", timeResult2); //打卡结果
+                    process.doCreate(zdoc);
+                }
+            }
+            for (var i = 0; i < recordresult.size(); i++) {
+                var userinfo = recordresult.getJSONObject(i);
+                var userId = userinfo.get("userId");
+                var checkType = userinfo.get("checkType");
+                var locationResult = userinfo.get("locationResult");
+                var timeResult = userinfo.get("timeResult");
+                var userCheckTime = userinfo.getDouble("userCheckTime");
+                var sourceType = userinfo.get("sourceType");
+                if ("NotSigned"!=(timeResult) && "OffDuty"==(checkType)) {
+                    var zdoc = process.doNew(Form, webuser, params);
+                    var ptuser = userProcess.getUserByDdUserIdAndDoaminName(userId, domainName);
+                    var ptuserid = ptuser.getId();
+                    var userdept = ptuser.getDefaultDepartment();
+                    var dktime = new Date(userCheckTime);
+                    var dktime2 = format(dktime, "yyyy-MM-dd HH:mm:59");
+                    var dktime3 = format(dktime, "yyyy-MM-dd");
+					zdoc.setDomainid(domainid);
+                    zdoc.addStringItem("dd_user", ptuserid); //打卡人
+                    zdoc.addStringItem("dd_checkin_type", checkType); //打卡类型
+                    zdoc.addDateItem("dd_checkin_time", dktime); //打卡时间
+                    zdoc.addStringItem("dd_sourcetype", sourceType); //数据来源
+                    zdoc.addStringItem("dd_locationresult", locationResult); //位置结果
+                    zdoc.addStringItem("checkin_app", "钉钉");
+                    var timeResult2 = "";
+                    //下班
+                    if ("OffDuty"==(checkType)) {
+                        var sql2 = "select * from tlk_AttendanceRulesForm where item_dept like '%" + userdept + "%'";
+                        var data2 = process.findBySQL(sql2, domainid);
+                        if (data2 != null) {
+                            var isFlexible = data2.getItemValueAsString("isFlexible");
+                            //是弹性上班时间
+                            if ("是"==(isFlexible)) {
+                                var endtime1 = data2.getItemValueAsDate("endtime1");
+                                var endtime2 = data2.getItemValueAsDate("endtime2");
+                                var xbdkRuleTime1 = format(endtime1, dktime3 + " HH:mm:ss");
+                                var xbdkRuleTime2 = format(endtime2, dktime3 + " HH:mm:ss");
+                                if (xbdkRuleTime2 <= dktime2) { //先判断下班打卡时间比最晚下班时间晚
+                                    timeResult2 = "Normal";
+                                } else if (xbdkRuleTime1 > dktime2) { //先判断下班打卡时间比最早下班时间早
+                                    timeResult2 = "Early";
+                                } else {
+                                    //与上班打卡时间对比
+                                    //有正常的上班打卡记录
+                                    var pdTimeS = format(dktime, "yyyy-MM-dd 00:00:00");
+                                    var pdTimeE = format(dktime, "yyyy-MM-dd 23:59:59");
+                                    var sql3 = "select domainid,item_dd_checkin_time from tlk_ClockInRecords where item_dd_user='" + ptuserid + "' and item_dd_checkin_time>='" + pdTimeS + "' and item_dd_checkin_time<='" + pdTimeE + "' and item_dd_checkin_type='OnDuty' and item_dd_exception_type='Normal' and item_checkin_app='钉钉' order by item_dd_checkin_time";
+                                    var data3 = process.findBySQL(sql3, domainid);
+                                    if (data3 != null) {
+                                        var starttime = data2.getItemValueAsDate("starttime1");
+                                        var sbdkRuleTime = format(starttime, dktime3 + " HH:mm:ss");
+                                        var sbdktime = data3.getItemValueAsDate("dd_checkin_time");
+                                        if (sbdktime <= sbdkRuleTime) { //比最早的上班时间早，按最早下班时间判断
+                                            if (xbdkRuleTime1 <= dktime2) {
+                                                timeResult2 = "Normal";
+                                            } else {
+                                                timeResult2 = "Early";
+                                            }
+                                        } else {
+                                            //获取规则的上班下班时间计算相隔的毫秒数
+                                            var starthms = starttime2.getTime();
+                                            var endhms = enddate1.getTime();
+                                            var xghms = endhms - starthms;
+                                            //相隔毫秒数+上班时间，得到下班打卡时间
+                                            var sbdkhms = sbdktime.getTime();
+                                            var xbdkRuleshms = sbdkhms + xghms;
+                                            var xbtime = new Date(xbdkRuleshms);
+                                            var dkRuleTime = format(xbtime, "yyyy-MM-dd HH:mm:ss");
+                                            if (dkRuleTime <= dktime2) {
+                                                timeResult2 = "Normal";
+                                            } else {
+                                                timeResult2 = "Early";
+                                            }
+                                        }
+                                    } else {
+                                        //有迟到打卡记录,按最晚下班时间判断
+                                        var sql4 = "select * from tlk_ClockInRecords where item_dd_user='" + ptuserid + "' and item_dd_checkin_time>='" + pdTimeS + "' and item_dd_checkin_time<='" + pdTimeE + "' and item_dd_checkin_type='OnDuty' and item_dd_exception_type='Late' and item_checkin_app='钉钉'";
+                                        var count = process.countBySQL(sql4, domainid);
+                                        if (count > 0) {
+                                            if (xbdkRuleTime2 <= dktime2) {
+                                                timeResult2 = "Normal";
+                                            } else {
+                                                timeResult2 = "Early";
+                                            }
+                                        } else {
+                                            //没有上班打卡记录，按最早下班时间判断
+                                            if (xbdkRuleTime1 <= dktime2) {
+                                                timeResult2 = "Normal";
+                                            } else {
+                                                timeResult2 = "Early";
+                                            }
+                                        }
+                                    }
+                                }
+
+                            } else {
+                                //不是弹性上班时间
+                                var endtime = data2.getItemValueAsDate("endtime1");
+
+                                var dkRuleTime = format(endtime, dktime3 + " HH:mm:ss");
+                                if (dkRuleTime <= dktime2) {
+                                    timeResult2 = "Normal";
+                                } else {
+                                    timeResult2 = "Early";
+                                }
+                            }
+                        } else {
+                            //没维护规则，按18点时间为下班时间
+                            var dkRuleTime = format(dktime, "yyyy-MM-dd 18:00:00");
+                            if (dkRuleTime <= dktime2) {
+                                timeResult2 = "Normal";
+                            } else {
+                                timeResult2 = "Early";
+                            }
+                        }
+                    }
+                    zdoc.addStringItem("dd_exception_type", timeResult2); //打卡结果
+                    process.doCreate(zdoc);
+                }
+            }
+        } else {
+            return "同步异常!";
+        }
+    }
+
+    /**
+     ** 同步企微考勤
+     **/
+    var corpid = "wxb11b73237f69f7ea"; //获取企业ID
+    var secret = ""; //密钥
+    var sql2 = "select * from tlk_wecom_attendance_configuration";
+    var data2 = process.findBySQL(sql2, domainid);
+    if (data2 != null) {
+        secret = data2.getItemValueAsString("secret");
+    } else {
+        return "请配置考勤应用sercet！";
+    }
+
+    var qyApiService =  (Java.type('cn.myapps.core.support.weixin.service.QyApiService'));
+    var accessToken = qyApiService.getAccessToken(corpid, secret); //根据企业ID和应用密钥调用企微接口获取accessToken
+
+    var userlist = new (Java.type('java.util.ArrayList'))();
+    var users = userProcess.queryByDomain(domainid);
+    for (var iter = users.iterator(); users != null && iter.hasNext(); ) {
+        var user = iter.next();
+        var userStatus = user.getStatus();
+        if (userStatus == 1) {
+            userlist.add(user.getLoginno());
+        }
+    }
+
+    var userTotal = userlist.size(); //总用户数
+    var pagesize = 100; //每页用户数
+    var pagecount = 0; //总页数
+    var m = userTotal % pagesize;
+    if (m > 0) {
+        pagecount = userTotal / pagesize;
+        pagecount = Math.floor(pagecount) + 1;
+    } else {
+        pagecount = userTotal / pagesize;
+    }
+    var todate = getToday();
+    var starttime = Math.floor(adjustDay(todate, -7).getTime() / 1000);
+    var endtime = Math.floor(todate.getTime() / 1000);
+
+    var sql = "select max(domainid) as domainid,max(item_wecom_checkin_time) as item_wecom_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信'";
+    var data = process.findBySQL(sql, domainid);
+    if (data != null) {
+        var wecom_checkin_time = data.getItemValueAsDate("wecom_checkin_time");
+        starttime = Math.floor(wecom_checkin_time.getTime() / 1000) + 1;
+    }
+
+    //每100个用户调一次接口（企微接口限制每次100位用户）
+    for (var j = 1; j <= pagecount; j++) {
+        var sublist = getUserByPage(userlist, pagesize, j);
+
+        var inputjson = createObject("net.sf.json.JSONObject");
+        inputjson.put("opencheckindatatype", 3);
+        inputjson.put("starttime", String(starttime));
+        inputjson.put("endtime", String(endtime));
+        inputjson.put("useridlist", sublist);
+
+        var url = "https://qyapi.weixin.qq.com/cgi-bin/checkin/getcheckindata?access_token=" + accessToken + "&debug=1";
+        var weixinHttpsRequestUtil =  (Java.type('cn.myapps.core.support.weixin.util.WeixinHttpsRequestUtil'));
+        var result = weixinHttpsRequestUtil.post(url, inputjson.toString());
+
+        if (result != null) {
+            var errcode = result.getInt("errcode");
+            if (errcode != 0) {
+                var errmsg = result.getString("errmsg");
+                return "同步异常：" + errmsg;
+            }
+
+            var process = getDocumentProcess();
+            var application = getApplication();
+            var params = createParamsTable();
+            var formProcess = getFormProcess();
+            var Form = formProcess.doViewByFormName("ClockInRecords", application);
+
+            var checkindata = result.getJSONArray("checkindata");
+            //上班打卡
+            for (var i = 0; i < checkindata.size(); i++) {
+                var userinfo = checkindata.getJSONObject(i);
+                var userid = userinfo.get("userid");
+                var checkin_type = userinfo.get("checkin_type");
+                var exception_type = userinfo.get("exception_type");
+                var checkin_time = userinfo.getInt("checkin_time");
+                var location_detail = userinfo.get("location_detail");
+                var notes = userinfo.get("notes");
+
+                if ("未打卡"!=(exception_type) && "上班打卡"==(checkin_type)) {
+                    var zdoc = process.doNew(Form, webuser, params);
+                    var ptuser = getUserByLoginno(userid);
+                    var ptuserid = ptuser.getId();
+                    var userdept = ptuser.getDefaultDepartment();
+                    var dktime = new Date(checkin_time * 1000);
+                    var dktime2 = format(dktime, "yyyy-MM-dd HH:mm:ss");
+                    var dktime3 = format(dktime, "yyyy-MM-dd");
+					zdoc.setDomainid(domainid);
+                    zdoc.addStringItem("wecom_user", ptuserid);
+                    zdoc.addStringItem("wecom_checkin_type", checkin_type);
+                    zdoc.addDateItem("wecom_checkin_time", dktime);
+                    zdoc.addStringItem("wecom_location_detail", location_detail);
+                    zdoc.addStringItem("wecom_notes", notes);
+                    zdoc.addStringItem("checkin_app", "企业微信");
+
+                    var exception_type2 = "";
+                    var sql2 = "select * from tlk_AttendanceRulesForm where item_dept like '%" + userdept + "%'";
+                    var data2 = process.findBySQL(sql2, domainid);
+                    if (data2 != null) {
+                        var isFlexible = data2.getItemValueAsString("isFlexible");
+                        if ("是"==(isFlexible)) {
+                            //是弹性上班时间
+                            var starttime = data2.getItemValueAsDate("starttime2");
+
+                            var dkRuleTime = format(starttime, dktime3 + " HH:mm:ss");
+                            if (dkRuleTime > dktime2) {
+                                exception_type2 = "正常";
+                            } else {
+                                exception_type2 = "迟到";
+                            }
+                        } else {
+                            //不是弹性上班时间
+                            var starttime = data2.getItemValueAsDate("starttime1");
+
+                            var dkRuleTime = format(starttime, dktime3 + " HH:mm:ss");
+                            if (dkRuleTime > dktime2) {
+                                exception_type2 = "正常";
+                            } else {
+                                exception_type2 = "迟到";
+                            }
+                        }
+                    } else {
+                        //没维护规则，按8点半时间为上班时间
+                        var dkRuleTime = format(dktime, "yyyy-MM-dd 08:30:00");
+                        if (dkRuleTime > dktime2) {
+                            exception_type2 = "正常";
+                        } else {
+                            exception_type2 = "迟到";
+                        }
+                    }
+
+                    zdoc.addStringItem("wecom_exception_type", exception_type2);
+                    process.doCreate(zdoc);
+                }
+            }
+            //下班打卡
+            for (var i = 0; i < checkindata.size(); i++) {
+                var userinfo = checkindata.getJSONObject(i);
+                var userid = userinfo.get("userid");
+                var checkin_type = userinfo.get("checkin_type");
+                var exception_type = userinfo.get("exception_type");
+                var checkin_time = userinfo.getInt("checkin_time");
+                var location_detail = userinfo.get("location_detail");
+                var notes = userinfo.get("notes");
+
+                if ("未打卡"!=(exception_type) && "下班打卡"==(checkin_type)) {
+                    var zdoc = process.doNew(Form, webuser, params);
+                    var ptuser = getUserByLoginno(userid);
+                    var ptuserid = ptuser.getId();
+                    var userdept = ptuser.getDefaultDepartment();
+                    var dktime = new Date(checkin_time * 1000);
+                    var dktime2 = format(dktime, "yyyy-MM-dd HH:mm:59");
+                    var dktime3 = format(dktime, "yyyy-MM-dd");
+					zdoc.setDomainid(domainid);
+                    zdoc.addStringItem("wecom_user", ptuserid);
+                    zdoc.addStringItem("wecom_checkin_type", checkin_type);
+                    zdoc.addDateItem("wecom_checkin_time", dktime);
+                    zdoc.addStringItem("wecom_location_detail", location_detail);
+                    zdoc.addStringItem("wecom_notes", notes);
+                    zdoc.addStringItem("checkin_app", "企业微信");
+
+                    var exception_type2 = "";
+                    var sql2 = "select * from tlk_AttendanceRulesForm where item_dept like '%" + userdept + "%'";
+                    var data2 = process.findBySQL(sql2, domainid);
+                    if (data2 != null) {
+                        var isFlexible = data2.getItemValueAsString("isFlexible");
+                        //是弹性上班时间
+                        if ("是"==(isFlexible)) {
+                            var endtime1 = data2.getItemValueAsDate("endtime1");
+                            var endtime2 = data2.getItemValueAsDate("endtime2");
+                            var xbdkRuleTime1 = format(endtime1, dktime3 + " HH:mm:ss");
+                            var xbdkRuleTime2 = format(endtime2, dktime3 + " HH:mm:ss");
+                            if (xbdkRuleTime2 <= dktime2) { //先判断下班打卡时间比最晚下班时间晚
+                                exception_type2 = "正常";
+                            } else if (xbdkRuleTime1 > dktime2) { //先判断下班打卡时间比最早下班时间早
+                                exception_type2 = "早退";
+                            } else {
+                                //与上班打卡时间对比
+                                //有正常的上班打卡记录
+                                var pdTimeS = format(dktime, "yyyy-MM-dd 00:00:00");
+                                var pdTimeE = format(dktime, "yyyy-MM-dd 23:59:59");
+                                var sql3 = "select domainid,item_wecom_checkin_time from tlk_ClockInRecords where item_wecom_user='" + ptuserid + "' and item_wecom_checkin_time>='" + pdTimeS + "' and item_wecom_checkin_time<='" + pdTimeE + "' and item_wecom_checkin_type='上班打卡' and item_wecom_exception_type='正常' and item_checkin_app='企业微信' order by item_wecom_checkin_time";
+                                var data3 = process.findBySQL(sql3, domainid);
+                                if (data3 != null) {
+                                    var starttime = data2.getItemValueAsDate("starttime1");
+                                    var sbdkRuleTime = format(starttime, dktime3 + " HH:mm:ss");
+                                    var sbdktime = data3.getItemValueAsDate("wecom_checkin_time");
+                                    if (sbdktime <= sbdkRuleTime) { //比最早的上班时间早，按最早下班时间判断
+                                        if (xbdkRuleTime1 <= dktime2) {
+                                            exception_type2 = "正常";
+                                        } else {
+                                            exception_type2 = "早退";
+                                        }
+                                    } else {
+                                        //获取规则的上班下班时间计算相隔的毫秒数
+                                        var starthms = starttime2.getTime();
+                                        var endhms = enddate1.getTime();
+                                        var xghms = endhms - starthms;
+                                        //相隔毫秒数+上班时间，得到下班打卡时间
+                                        var sbdkhms = sbdktime.getTime();
+                                        var xbdkRuleshms = sbdkhms + xghms;
+                                        var xbtime = new Date(xbdkRuleshms);
+                                        var dkRuleTime = format(xbtime, "yyyy-MM-dd HH:mm:ss");
+                                        if (dkRuleTime <= dktime2) {
+                                            exception_type2 = "正常";
+                                        } else {
+                                            exception_type2 = "早退";
+                                        }
+                                    }
+                                } else {
+                                    //有迟到打卡记录,按最晚下班时间判断
+                                    var sql4 = "select * from tlk_ClockInRecords where item_wecom_user='" + ptuserid + "' and item_wecom_checkin_time>='" + pdTimeS + "' and item_wecom_checkin_time<='" + pdTimeE + "' and item_wecom_checkin_type='上班打卡' and item_wecom_exception_type='迟到' and item_checkin_app='企业微信'";
+                                    var count = process.countBySQL(sql4, domainid);
+                                    if (count > 0) {
+                                        if (xbdkRuleTime2 <= dktime2) {
+                                            exception_type2 = "正常";
+                                        } else {
+                                            exception_type2 = "早退";
+                                        }
+                                    } else {
+                                        //没有上班打卡记录，按最早下班时间判断
+                                        if (xbdkRuleTime1 <= dktime2) {
+                                            exception_type2 = "正常";
+                                        } else {
+                                            exception_type2 = "早退";
+                                        }
+                                    }
+                                }
+                            }
+
+                        } else {
+                            //不是弹性上班时间
+                            var endtime = data2.getItemValueAsDate("endtime1");
+
+                            var dkRuleTime = format(endtime, dktime3 + " HH:mm:ss");
+                            if (dkRuleTime <= dktime2) {
+                                exception_type2 = "正常";
+                            } else {
+                                exception_type2 = "早退";
+                            }
+                        }
+                    } else {
+                        //没维护规则，按18点时间为下班时间
+                        var dkRuleTime = format(dktime, "yyyy-MM-dd 18:00:00");
+                        if (dkRuleTime <= dktime2) {
+                            exception_type2 = "正常";
+                        } else {
+                            exception_type2 = "早退";
+                        }
+                    }
+                    zdoc.addStringItem("wecom_exception_type", exception_type2);
+                    process.doCreate(zdoc);
+                }
+            }
+        } else {
+            return "同步异常!";
+        }
+    }
+    var today = getToday();
+    var yesterday = adjustDay(today, -1);
+    var yesterday2 = format(yesterday, "yyyy-MM-dd 11:00:00");
+	var currDate = parseDate(yesterday2,"yyyy-MM-dd HH:mm:ss");
+    if (isWorkingTimeByCalendarName(currDate, "标准日历",domainid)) {
+        var process = getDocumentProcess();
+        var year = getYear(yesterday);
+        var day = getDay(yesterday);
+        var month = getMonth(yesterday);
+        var day = getDay(yesterday);
+        var time1 = format(yesterday, "yyyy-MM-dd 00:00:00");
+        var time2 = format(yesterday, "yyyy-MM-dd 23:59:59");
+
+        var time3 = format(yesterday, "yyyy-MM-dd 12:00:00");
+		var time4 = format(yesterday, "yyyy-MM-dd 13:30:00");
+
+        var subject = year + "年" + month + "月" + day + "日考勤记录";
+        var html = "<p style='font-size:14pt;font-family:仿宋'>以下是" + year + "年" + month + "月" + day + "日考勤记录</p>";
+        html += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0' style='border: 1px solid black;'>";
+        html += "<tr align=center><td style='font-size:14pt;font-family:仿宋;height:30pt;'><strong style='font-size:14pt;font-family:仿宋'>部门</strong></td><td><strong>姓名</strong></td><td><strong style='font-size:14pt;font-family:仿宋'>考勤</strong></td><td><strong style='font-size:14pt;font-family:仿宋'>上班打卡时间</strong></td><td><strong style='font-size:14pt;font-family:仿宋'>下班打卡时间</strong></td><td><strong style='font-size:14pt;font-family:仿宋'>工作时长</strong></td><td><strong style='font-size:14pt;font-family:仿宋'>备注</strong></td></tr>";
+
+		var deptid = getDeptIdByNameAndLevelAndDomainid("营销部",1,domainid);
+		var deptUnderUserList = getUsersByDptId(deptid);
+        for (var iter = deptUnderUserList.iterator(); iter.hasNext(); ) {
+            var UserInfo = iter.next();
+            var name = UserInfo.getName();
+            var userid = UserInfo.getId();
+            var status = UserInfo.getStatus();
+            if ("1"==(status)) {
+				
+				//先判断是否请假了
+				var remarks = "";
+				var leave_sql="select * from tlk_LeaveApplication where item_Applicant='"+userid+"' and ((item_StartTime>='"+time1+"' and item_StartTime<='"+time2+"') or (item_EndTime>='"+time1+"' and item_EndTime<='"+time2+"') or (item_StartTime<'"+time1+"' and item_EndTime>'"+time1+"')) and statelabel != '' and statelabel is Not Null  and statelabel!='未提交' ";
+				var data_leave = process.findBySQL(leave_sql, domainid);
+				if (data_leave != null) {
+                    var LeaveType = data_leave.getItemValueAsString("LeaveType");//请假类型
+					var StartTime = data_leave.getItemValueAsDate("StartTime");//请假开始时间
+					var EndTime = data_leave.getItemValueAsDate("EndTime");//请假结束时间
+					StartTime = format(StartTime,"yyyy-MM-dd HH:mm");
+					EndTime = format(EndTime,"yyyy-MM-dd HH:mm");
+					var LeaveDays = data_leave.getItemValueAsString("LeaveDays");//请假天数
+					
+					remarks = LeaveType+"，"+LeaveDays+"天";
+                }
+				
+				
+                var sbstatus = ""; //上班打卡状态
+				var sbtime = ""; //上班打卡时间
+				var xbtime = ""; //下班打卡时间
+				var sbtime1 = ""; //上班打卡时间
+				var xbtime1 = ""; //下班打卡时间
+                var sql = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='上班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='正常' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OnDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Normal') s order by s.item_checkin_time";
+
+                var data10 = process.findBySQL(sql, domainid);
+                if (data10 != null) {
+                    sbstatus = "";
+					sbtime = data10.getItemValueAsDate("checkin_time");
+					sbtime = format(sbtime,"yyyy-MM-dd HH:mm");
+					sbtime1 = sbtime;
+                } else {
+                    var sql2 = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='上班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='迟到' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OnDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Late') s order by s.item_checkin_time";
+                    var data11 = process.findBySQL(sql2, domainid);
+                    if (data11 != null) {
+                        sbstatus = "迟到";
+						sbtime = data11.getItemValueAsDate("checkin_time");
+						sbtime = format(sbtime,"yyyy-MM-dd HH:mm");
+						sbtime1 = sbtime;
+						sbtime = "<span style='color:red;'>" + sbtime + "</span>";
+                    } else {
+                        sbstatus = "上班未打卡";
+						sbtime = "<span style='color:red;'>未打卡</span>";
+						sbtime1 = "未打卡";
+                    }
+                }
+
+                var xbstatus = ""; //下班打卡状态
+                var sql = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='下班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='正常' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OffDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Normal') s order by s.item_checkin_time desc";
+                var data12 = process.findBySQL(sql, domainid);
+                if (data12!=null) {
+                    xbstatus = "";
+					xbtime = data12.getItemValueAsDate("checkin_time");
+					xbtime = format(xbtime,"yyyy-MM-dd HH:mm");
+					xbtime1 = xbtime;
+                } else {
+                    var sql2 = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='下班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='早退' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OffDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Early') s order by s.item_checkin_time desc";
+                    var data13 = process.findBySQL(sql2, domainid);
+                    if (data13!=null) {
+                        xbstatus = "早退";
+						xbtime = data13.getItemValueAsDate("checkin_time");
+						xbtime = format(xbtime,"yyyy-MM-dd HH:mm");
+						xbtime1 = xbtime;
+						xbtime = "<span style='color:red;'>" + xbtime + "</span>";
+                    } else {
+                        xbstatus = "下班未打卡";
+						xbtime = "<span style='color:red;'>未打卡</span>";
+						xbtime1 = "未打卡";
+                    }
+                }
+                var kqrecord = "";
+                if (""==(sbstatus) && ""==(xbstatus)) {
+                    kqrecord = "正常";
+                }
+                if (""==(sbstatus) && ""!= (xbstatus)) {
+                    kqrecord = xbstatus;
+                }
+                if (""!= (sbstatus) && ""==(xbstatus)) {
+                    kqrecord = sbstatus;
+                }
+                if (""!= (sbstatus) && ""!= (xbstatus)) {
+                    if ("上班未打卡"==(sbstatus) && "下班未打卡"==(xbstatus)) {
+                        kqrecord = "缺勤";
+                    } else {
+                        kqrecord = sbstatus + "、" + xbstatus;
+                    }
+                }
+                if ("正常"!=(kqrecord)) {
+                    kqrecord = "<span style='color:red;'>" + kqrecord + "</span>";
+                }
+				var worktime = "";
+				if(sbtime1.indexOf("未打卡")==-1&&xbtime1.indexOf("未打卡")==-1){
+					var sbtime2 = parseDate(sbtime1,"yyyy-MM-dd HH:mm").getTime();
+					var xbtime2 = parseDate(xbtime1,"yyyy-MM-dd HH:mm").getTime();
+					var timeDifference = xbtime2 - sbtime2;
+					var timeDifferenceInMinutes = Math.floor(timeDifference / (1000 * 60));
+					if(sbtime1>time3||xbtime1<time4){
+						
+					}else{
+						timeDifferenceInMinutes=timeDifferenceInMinutes-60;
+					}
+					var worktime = (timeDifferenceInMinutes/60).toFixed(2);
+					if(worktime<8){
+						if(!isNotNull(remarks)){
+							worktime = "<span style='color:red;'>" + worktime + "</span>";
+						}
+					}
+				}
+                html += "<tr align=center><td style='font-size:14pt;font-family:仿宋;height:30pt;'>营销部</td><td style='font-size:14pt;font-family:仿宋'>" + name + "</td><td style='font-size:14pt;font-family:仿宋'>" + kqrecord + "</td><td style='font-size:14pt;font-family:仿宋'>"+sbtime+"</td><td style='font-size:14pt;font-family:仿宋'>"+xbtime+"</td><td style='font-size:14pt;font-family:仿宋'>"+worktime+"</td><td style='font-size:14pt;font-family:仿宋'>"+remarks+"</td></tr>";
+            }
+        }
+		
+		var deptid = getDeptIdByNameAndLevelAndDomainid("技术部",1,domainid);
+		var deptUnderUserList = getUsersByDptId(deptid);
+        for (var iter = deptUnderUserList.iterator(); iter.hasNext(); ) {
+            var UserInfo = iter.next();
+            var name = UserInfo.getName();
+            var userid = UserInfo.getId();
+            var status = UserInfo.getStatus();
+            if ("1"==(status)) {
+				
+				//先判断是否请假了
+				var remarks = "";
+				var leave_sql="select * from tlk_LeaveApplication where item_Applicant='"+userid+"' and ((item_StartTime>='"+time1+"' and item_StartTime<='"+time2+"') or (item_EndTime>='"+time1+"' and item_EndTime<='"+time2+"') or (item_StartTime<'"+time1+"' and item_EndTime>'"+time1+"')) and statelabel != '' and statelabel is Not Null  and statelabel!='未提交'";
+				var data_leave = process.findBySQL(leave_sql, domainid);
+				if (data_leave != null) {
+                    var LeaveType = data_leave.getItemValueAsString("LeaveType");//请假类型
+					var StartTime = data_leave.getItemValueAsDate("StartTime");//请假开始时间
+					var EndTime = data_leave.getItemValueAsDate("EndTime");//请假结束时间
+					StartTime = format(StartTime,"yyyy-MM-dd HH:mm");
+					EndTime = format(EndTime,"yyyy-MM-dd HH:mm");
+					var LeaveDays = data_leave.getItemValueAsString("LeaveDays");//请假天数
+					
+					remarks = LeaveType+"，"+LeaveDays+"天";
+                }
+				
+                var sbstatus = ""; //上班打卡状态
+                var sbtime = ""; //上班打卡时间
+				var xbtime = ""; //下班打卡时间
+				var sbtime1 = ""; //上班打卡时间
+				var xbtime1 = ""; //下班打卡时间
+                var sql = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='上班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='正常' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OnDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Normal') s order by s.item_checkin_time";
+
+                var data10 = process.findBySQL(sql, domainid);
+                if (data10 != null) {
+                    sbstatus = "";
+					sbtime = data10.getItemValueAsDate("checkin_time");
+					sbtime = format(sbtime,"yyyy-MM-dd HH:mm");
+					sbtime1 = sbtime;
+                } else {
+                    var sql2 = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='上班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='迟到' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OnDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Late') s order by s.item_checkin_time";
+                    var data11 = process.findBySQL(sql2, domainid);
+                    if (data11 != null) {
+                        sbstatus = "迟到";
+						sbtime = data11.getItemValueAsDate("checkin_time");
+						sbtime = format(sbtime,"yyyy-MM-dd HH:mm");
+						sbtime1 = sbtime;
+						sbtime = "<span style='color:red;'>" + sbtime + "</span>";
+                    } else {
+                        sbstatus = "上班未打卡";
+						sbtime = "<span style='color:red;'>未打卡</span>";
+						sbtime1 = "未打卡";
+                    }
+                }
+
+                var xbstatus = ""; //下班打卡状态
+                var sql = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='下班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='正常' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OffDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Normal') s order by s.item_checkin_time desc";
+                var data12 = process.findBySQL(sql, domainid);
+                if (data12!=null) {
+                    xbstatus = "";
+					xbtime = data12.getItemValueAsDate("checkin_time");
+					xbtime = format(xbtime,"yyyy-MM-dd HH:mm");
+					xbtime1 = xbtime;
+                } else {
+                    var sql2 = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='下班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='早退' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OffDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Early') s order by s.item_checkin_time desc";
+                    var data13 = process.findBySQL(sql2, domainid);
+                    if (data13!=null) {
+                        xbstatus = "早退";
+						xbtime = data13.getItemValueAsDate("checkin_time");
+						xbtime = format(xbtime,"yyyy-MM-dd HH:mm");
+						xbtime1 = xbtime;
+						xbtime = "<span style='color:red;'>" + xbtime + "</span>";
+                    } else {
+                        xbstatus = "下班未打卡";
+						xbtime = "<span style='color:red;'>未打卡</span>";
+						xbtime1 = "未打卡";
+                    }
+                }
+                var kqrecord = "";
+                if (""==(sbstatus) && ""==(xbstatus)) {
+                    kqrecord = "正常";
+                }
+                if (""==(sbstatus) && ""!= (xbstatus)) {
+                    kqrecord = xbstatus;
+                }
+                if (""!= (sbstatus) && ""==(xbstatus)) {
+                    kqrecord = sbstatus;
+                }
+                if (""!= (sbstatus) && ""!= (xbstatus)) {
+                    if ("上班未打卡"==(sbstatus) && "下班未打卡"==(xbstatus)) {
+                        kqrecord = "缺勤";
+                    } else {
+                        kqrecord = sbstatus + "、" + xbstatus;
+                    }
+                }
+                if ("正常"!=(kqrecord)) {
+                    kqrecord = "<span style='color:red;'>" + kqrecord + "</span>";
+                }
+				var worktime = "";
+				if(sbtime1.indexOf("未打卡")==-1&&xbtime1.indexOf("未打卡")==-1){
+					var sbtime2 = parseDate(sbtime1,"yyyy-MM-dd HH:mm").getTime();
+					var xbtime2 = parseDate(xbtime1,"yyyy-MM-dd HH:mm").getTime();
+					var timeDifference = xbtime2 - sbtime2;
+					var timeDifferenceInMinutes = Math.floor(timeDifference / (1000 * 60));
+					if(sbtime1>time3||xbtime1<time4){
+						
+					}else{
+						timeDifferenceInMinutes=timeDifferenceInMinutes-60;
+					}
+					var worktime = (timeDifferenceInMinutes/60).toFixed(2);
+					if(worktime<8){
+						if(!isNotNull(remarks)){
+							worktime = "<span style='color:red;'>" + worktime + "</span>";
+						}
+					}
+				}
+                html += "<tr align=center><td style='font-size:14pt;font-family:仿宋;height:30pt;'>技术部</td><td style='font-size:14pt;font-family:仿宋'>" + name + "</td><td style='font-size:14pt;font-family:仿宋'>" + kqrecord + "</td><td style='font-size:14pt;font-family:仿宋'>"+sbtime+"</td><td style='font-size:14pt;font-family:仿宋'>"+xbtime+"</td><td style='font-size:14pt;font-family:仿宋'>"+worktime+"</td><td style='font-size:14pt;font-family:仿宋'>"+remarks+"</td></tr>";
+            }
+        }
+
+        var deptid = getDeptIdByNameAndLevelAndDomainid("后勤部",1,domainid);
+		var deptUnderUserList = getUsersByDptId(deptid);
+        for (var iter = deptUnderUserList.iterator(); iter.hasNext(); ) {
+            var UserInfo = iter.next();
+            var name = UserInfo.getName();
+            var userid = UserInfo.getId();
+            var status = UserInfo.getStatus();
+            if ("1"==(status)&&"林晓芬"!=(name)) {
+				
+				//先判断是否请假了
+				var remarks = "";
+				var leave_sql="select * from tlk_LeaveApplication where item_Applicant='"+userid+"' and ((item_StartTime>='"+time1+"' and item_StartTime<='"+time2+"') or (item_EndTime>='"+time1+"' and item_EndTime<='"+time2+"') or (item_StartTime<'"+time1+"' and item_EndTime>'"+time1+"')) and statelabel != '' and statelabel is Not Null  and statelabel!='未提交'";
+				var data_leave = process.findBySQL(leave_sql, domainid);
+				if (data_leave != null) {
+                    var LeaveType = data_leave.getItemValueAsString("LeaveType");//请假类型
+					var StartTime = data_leave.getItemValueAsDate("StartTime");//请假开始时间
+					var EndTime = data_leave.getItemValueAsDate("EndTime");//请假结束时间
+					StartTime = format(StartTime,"yyyy-MM-dd HH:mm");
+					EndTime = format(EndTime,"yyyy-MM-dd HH:mm");
+					var LeaveDays = data_leave.getItemValueAsString("LeaveDays");//请假天数
+					
+					remarks = LeaveType+"，"+LeaveDays+"天";
+                }
+				
+                var sbstatus = ""; //上班打卡状态
+                var sbtime = ""; //上班打卡时间
+				var xbtime = ""; //下班打卡时间
+				var sbtime1 = ""; //上班打卡时间
+				var xbtime1 = ""; //下班打卡时间
+                var sql = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='上班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='正常' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OnDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Normal') s order by s.item_checkin_time";
+
+                var data10 = process.findBySQL(sql, domainid);
+                if (data10 != null) {
+                    sbstatus = "";
+					sbtime = data10.getItemValueAsDate("checkin_time");
+					sbtime = format(sbtime,"yyyy-MM-dd HH:mm");
+					sbtime1 = sbtime;
+                } else {
+                    var sql2 = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='上班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='迟到' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OnDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Late') s order by s.item_checkin_time";
+                    var data11 = process.findBySQL(sql2, domainid);
+                    if (data11 != null) {
+                        sbstatus = "迟到";
+						sbtime = data11.getItemValueAsDate("checkin_time");
+						sbtime = format(sbtime,"yyyy-MM-dd HH:mm");
+						sbtime1 = sbtime;
+						sbtime = "<span style='color:red;'>" + sbtime + "</span>";
+                    } else {
+                        sbstatus = "上班未打卡";
+						sbtime = "<span style='color:red;'>未打卡</span>";
+						sbtime1 = "未打卡";
+                    }
+                }
+
+                var xbstatus = ""; //下班打卡状态
+                var sql = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='下班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='正常' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OffDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Normal') s order by s.item_checkin_time desc";
+                var data12 = process.findBySQL(sql, domainid);
+                if (data12!=null) {
+                    xbstatus = "";
+					xbtime = data12.getItemValueAsDate("checkin_time");
+					xbtime = format(xbtime,"yyyy-MM-dd HH:mm");
+					xbtime1 = xbtime;
+                } else {
+                    var sql2 = "select s.* from (select domainid,item_wecom_checkin_time AS item_checkin_time from tlk_ClockInRecords where item_checkin_app='企业微信' and item_wecom_user='" + userid + "' and item_wecom_checkin_type='下班打卡' and item_wecom_checkin_time>='" + time1 + "' and item_wecom_checkin_time<='" + time2 + "' and item_wecom_exception_type='早退' UNION ALL SELECT domainid,item_dd_checkin_time AS item_checkin_time FROM tlk_ClockInRecords WHERE item_checkin_app='钉钉' and item_dd_user='" + userid + "' and item_dd_checkin_type='OffDuty' and item_dd_checkin_time>='" + time1 + "' and item_dd_checkin_time<='" + time2 + "' and item_dd_exception_type='Early') s order by s.item_checkin_time desc";
+                    var data13 = process.findBySQL(sql2, domainid);
+                    if (data13!=null) {
+                        xbstatus = "早退";
+						xbtime = data13.getItemValueAsDate("checkin_time");
+						xbtime = format(xbtime,"yyyy-MM-dd HH:mm");
+						xbtime1 = xbtime;
+						xbtime = "<span style='color:red;'>" + xbtime + "</span>";
+                    } else {
+                        xbstatus = "下班未打卡";
+						xbtime = "<span style='color:red;'>未打卡</span>";
+						xbtime1 = "未打卡";
+                    }
+                }
+                var kqrecord = "";
+                if (""==(sbstatus) && ""==(xbstatus)) {
+                    kqrecord = "正常";
+                }
+                if (""==(sbstatus) && ""!= (xbstatus)) {
+                    kqrecord = xbstatus;
+                }
+                if (""!= (sbstatus) && ""==(xbstatus)) {
+                    kqrecord = sbstatus;
+                }
+                if (""!= (sbstatus) && ""!= (xbstatus)) {
+                    if ("上班未打卡"==(sbstatus) && "下班未打卡"==(xbstatus)) {
+                        kqrecord = "缺勤";
+                    } else {
+                        kqrecord = sbstatus + "、" + xbstatus;
+                    }
+                }
+                if ("正常"!=(kqrecord)) {
+                    kqrecord = "<span style='color:red;'>" + kqrecord + "</span>";
+                }
+				var worktime = "";
+				if(sbtime1.indexOf("未打卡")==-1&&xbtime1.indexOf("未打卡")==-1){
+					var sbtime2 = parseDate(sbtime1,"yyyy-MM-dd HH:mm").getTime();
+					var xbtime2 = parseDate(xbtime1,"yyyy-MM-dd HH:mm").getTime();
+					var timeDifference = xbtime2 - sbtime2;
+					var timeDifferenceInMinutes = Math.floor(timeDifference / (1000 * 60));
+					if(sbtime1>time3||xbtime1<time4){
+						
+					}else{
+						timeDifferenceInMinutes=timeDifferenceInMinutes-60;
+					}
+					var worktime = (timeDifferenceInMinutes/60).toFixed(2);
+					if(worktime<8){
+						if(!isNotNull(remarks)){
+							worktime = "<span style='color:red;'>" + worktime + "</span>";
+						}
+					}
+				}
+                html += "<tr align=center><td style='font-size:14pt;font-family:仿宋;height:30pt;'>后勤部</td><td style='font-size:14pt;font-family:仿宋'>" + name + "</td><td style='font-size:14pt;font-family:仿宋'>" + kqrecord + "</td><td style='font-size:14pt;font-family:仿宋'>"+sbtime+"</td><td style='font-size:14pt;font-family:仿宋'>"+xbtime+"</td><td style='font-size:14pt;font-family:仿宋'>"+worktime+"</td><td style='font-size:14pt;font-family:仿宋'>"+remarks+"</td></tr>";
+            }
+        }
+
+        html += "</table>";
+		
+        var roleid = getRoleIdByName("总经理");
+        var users = UserProcessBean.queryByRoleAndDomain(roleid, domainid);
+        for (var iter2 = users.iterator(); users != null && iter2.hasNext(); ) {
+            var user = iter2.next();
+            var email = user.getEmail();
+            var userId = user.getId();
+            var UserVO = UserProcessBean.doView(userId);
+            var WebUser = new (Java.type('cn.myapps.core.web.WebUser'))(UserVO);
+            var EmailUtil = new (Java.type('cn.myapps.core.util.mail.EmailUtil'))(WebUser);
+            EmailUtil.sendEmailBySystemUser(email, subject, html);
+        }
+		
+		var deptid = getDeptIdByNameAndLevelAndDomainid("营销部",1,domainid);
+		var deptUnderUserList = getUsersByDptId(deptid);
+        for (var iter = deptUnderUserList.iterator(); iter.hasNext(); ) {
+            var user = iter.next();
+			var userid = user.getId();
+			var email = user.getEmail();
+            var status = user.getStatus();
+			if(status=="1"){
+				var UserVO = UserProcessBean.doView(userid);
+				var WebUser = new (Java.type('cn.myapps.core.web.WebUser'))(UserVO);
+				var EmailUtil = new (Java.type('cn.myapps.core.util.mail.EmailUtil'))(WebUser);
+				EmailUtil.sendEmailBySystemUser(email, subject, html);
+			}
+		}
+		var deptid = getDeptIdByNameAndLevelAndDomainid("技术部",1,domainid);
+		var deptUnderUserList = getUsersByDptId(deptid);
+        for (var iter = deptUnderUserList.iterator(); iter.hasNext(); ) {
+            var user = iter.next();
+			var userid = user.getId();
+			var email = user.getEmail();
+            var status = user.getStatus();
+			if(status=="1"){
+				var UserVO = UserProcessBean.doView(userid);
+				var WebUser = new (Java.type('cn.myapps.core.web.WebUser'))(UserVO);
+				var EmailUtil = new (Java.type('cn.myapps.core.util.mail.EmailUtil'))(WebUser);
+				EmailUtil.sendEmailBySystemUser(email, subject, html);
+			}
+		}
+		var deptid = getDeptIdByNameAndLevelAndDomainid("后勤部",1,domainid);
+		var deptUnderUserList = getUsersByDptId(deptid);
+        for (var iter = deptUnderUserList.iterator(); iter.hasNext(); ) {
+            var user = iter.next();
+            var userid = user.getId();
+			var email = user.getEmail();
+            var status = user.getStatus();
+			if(status=="1"){
+				var UserVO = UserProcessBean.doView(userid);
+				var WebUser = new (Java.type('cn.myapps.core.web.WebUser'))(UserVO);
+				var EmailUtil = new (Java.type('cn.myapps.core.util.mail.EmailUtil'))(WebUser);
+				EmailUtil.sendEmailBySystemUser(email, subject, html);
+			}
+		}
+    }
+})()]]></taskScript>
+  <modifyTime>2023-12-13T16:43:17.000+08:00</modifyTime>
+  <creator>超级管理员</creator>
+  <creatorid>__EBEeM3Etz9hVs5wvv6k</creatorid>
+  <totalRuntimes>0</totalRuntimes>
+  <state>0</state>
+  <startupType>1</startupType>
+  <dayOfMonth>1</dayOfMonth>
+  <repeatTimes>0</repeatTimes>
+  <frequency>0</frequency>
+  <executedCount>0</executedCount>
+  <rDate></rDate>
+  <rTime>12:00:00</rTime>
+</task>

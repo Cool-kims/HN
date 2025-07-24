@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="__uCdgeQB9e4ro4Z9W2lV">
+  <name>同步钉钉考勤记录</name>
+  <parentId>__e26UoRuP21suGmSxY3e</parentId>
+  <type>13</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <colorType></colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[#include "basic";
+(function(){
+	
+	var dingdingSecretCache = new (Java.type('cn.myapps.core.support.dingding.util.DingdingSecretCache'))();
+	var ddApiService = new (Java.type('cn.myapps.core.support.dingding.service.DdApiService'))();
+	var accessToken=ddApiService.getAccessToken(dingdingSecretCache.get(getDomainid()));
+	
+	var userlist = new (Java.type('java.util.ArrayList'))();
+	var users = getAllUsers();
+	for(var iter=users.iterator();users !=null && iter.hasNext();){
+		var user=iter.next();
+		var ddUserId=user.getDdUserId();
+		if(isNotNull(ddUserId)){
+			userlist.add(ddUserId);
+		}
+	}
+	
+	var userTotal=userlist.size();//总用户数
+	var pagesize=50;//每页用户数
+	var pagecount=0;//总页数
+	var m = userTotal % pagesize;
+	if (m > 0) {
+		pagecount = userTotal / pagesize;
+		pagecount = Math.floor(pagecount)+1;
+	} else {
+		pagecount = userTotal / pagesize;
+	}
+	
+	var todate = getToday();
+	var starttime = format(adjustDay(todate,-7),"yyyy-MM-dd HH:mm:ss"); 
+	var endtime = format(todate,"yyyy-MM-dd HH:mm:ss");
+	
+	var sql="select max(domainid) as domainid,max(item_dd_checkin_time) as item_dd_checkin_time from tlk_ClockInRecords where item_checkin_app='钉钉'";
+	var data=findBySQL(sql);
+	if(data!=null){
+		starttime=data.getItemValueAsDate("dd_checkin_time");
+	}
+
+	//每50个用户调一次接口（钉钉接口限制每次50位用户）
+	for(var j=1;j<=pagecount;j++){
+		var sublist = getUserByPage(userlist,pagesize,j);
+
+		var inputjson = createObject("net.sf.json.JSONObject"); 
+		inputjson.put("checkDateFrom",String(starttime));
+		inputjson.put("checkDateTo",String(endtime));
+		inputjson.put("userIds",sublist);
+		
+		var url = "https://oapi.dingtalk.com/attendance/listRecord?access_token="+accessToken;
+		
+		var dingdingHttpsRequestUtil = new (Java.type('cn.myapps.core.support.dingding.util.DingdingHttpsRequestUtil'))();
+		var result = dingdingHttpsRequestUtil.post(url,inputjson.toString());
+		println("inputjson--->"+inputjson.toString());
+		println("result--->"+result);
+		
+		if(result!=null){
+			var errcode = result.getInt("errcode");
+			if(errcode!=0){
+				var errmsg = result.getString("errmsg");
+				return "同步异常："+errmsg;
+			}
+			
+			var domainProcess=getDomainProcess();
+			var domainvo=domainProcess.doView(getDomainid());
+			var domainName=domainvo.getName();
+			var userProcess=getUserProcess();
+			
+			var process = getDocumentProcess();
+			var application=getApplication();            
+			var params = createParamsTable();            
+			var formProcess = getFormProcess();            
+			var Form = formProcess.doViewByFormName("ClockInRecords", application);
+			
+			var recordresult = result.getJSONArray("recordresult");
+			for(var i=0;i<recordresult.size();i++){
+				var userinfo = recordresult.getJSONObject(i);
+				var userId = userinfo.get("userId");
+				var checkType = userinfo.get("checkType");
+				var locationResult = userinfo.get("locationResult");
+				var timeResult = userinfo.get("timeResult");
+				var userCheckTime = userinfo.getDouble("userCheckTime");
+				println(userCheckTime)
+				var sourceType = userinfo.get("sourceType");
+				
+				if(!"NotSigned"==(timeResult)){
+					var zdoc = process.doNew(Form, getWebUser(), params);
+					zdoc.addStringItem("dd_user",userProcess.getUserByDdUserIdAndDoaminName(userId,domainName).getId());
+					zdoc.addStringItem("dd_checkin_type",checkType);
+					zdoc.addStringItem("dd_exception_type",timeResult);
+					zdoc.addDateItem("dd_checkin_time",new Date(userCheckTime));
+					zdoc.addStringItem("dd_sourcetype",sourceType);
+					zdoc.addStringItem("dd_locationresult",locationResult);
+					zdoc.addStringItem("checkin_app","钉钉");
+					process.doCreate(zdoc);
+				}
+			}
+		}else{
+			return "同步异常!";
+		}
+	}
+
+})();
+]]></afterActionScript>
+  <hiddenScript><![CDATA[true;]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>2</orderno>
+  <parentView>__e26UoRuP21suGmSxY3e</parentView>
+  <impmappingconfigid></impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <icon></icon>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <workFlowType>0</workFlowType>
+  <contextMenu>true</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <label><![CDATA[]]></label>
+  <processPreview>false</processPreview>
+</activity>

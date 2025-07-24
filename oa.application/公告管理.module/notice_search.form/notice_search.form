@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__j4epqFeKdKwtLdKcxZn">
+  <name>notice_search</name>
+  <parentId>__omj4XzaIuuj5Lecx1U8</parentId>
+  <description>公告查询头</description>
+  <templatecontext><![CDATA[<table width="100%" height="60" cellpadding="1" cellspacing="1" style="" align="left">
+    <tbody>
+        <tr>
+            <td style="text-align: right;" nowrap="nowrap" width="15%" align="right">标题&nbsp;title</td>
+            <td style=""><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__fLE8yTDWtlcezmURS0Y" text="text" name="title" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" discript="标题" validaterule="" valuescript="" width="" widthunit="px" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" style="white-space: nowrap;" /></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;" nowrap="nowrap">创建时间&nbsp;Creation time</td>
+            <td style="" nowrap="nowrap"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__Zdpl3aYRrtcDdRRIHxQ" type="text" fieldtype="VALUE_TYPE_DATE" name="searchBeginTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="0" refreshfields="" editmode="01" style="white-space: nowrap;" />至<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__AQk26wRv5ZH8FeNE26P" type="text" fieldtype="VALUE_TYPE_DATE" name="searchEndTime" width="" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="true" prev_name="searchBeginTime" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="YMD" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="0" refreshfields="" editmode="01" style="white-space: nowrap;" /></td>
+        </tr>
+    </tbody>
+</table>]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"notice_search","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>1</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

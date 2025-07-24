@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="__fsKCQd0zFeSoVi6LsTO">
+  <name>收文待办摘要</name>
+  <parentId>__uq3dozboEM3B1ma1ikE</parentId>
+  <title>收文待办摘要</title>
+  <type>00</type>
+  <formId>__uq3dozboEM3B1ma1ikE</formId>
+  <fieldNames>title</fieldNames>
+  <summaryScript><![CDATA[]]></summaryScript>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

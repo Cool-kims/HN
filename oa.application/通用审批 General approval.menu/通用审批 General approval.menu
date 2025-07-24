@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__Bh7F88WMq6Hswvlrmth">
+  <name>通用审批 General approval</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description>通用审批</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p79_Orderies.png","icontype":"img"}</ico>
+  <linkType></linkType>
+  <actionContent><![CDATA[__il5C14c1YSQpULOyuRS]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>60</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

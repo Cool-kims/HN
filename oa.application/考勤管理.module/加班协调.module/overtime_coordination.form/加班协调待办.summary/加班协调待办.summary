@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summaryCfgVO id="__eqDpqxgp0U7W5mUTvtV">
+  <name>加班协调待办</name>
+  <parentId>__R7iGgBoLMpSnZAk3ChV</parentId>
+  <title>加班协调待办</title>
+  <type>00</type>
+  <formId>__R7iGgBoLMpSnZAk3ChV</formId>
+  <fieldNames>OvertimeNO;ApplicationDate;Applicant;overPersonnel;OvertimeType</fieldNames>
+  <summaryScript><![CDATA[]]></summaryScript>
+  <scope>0</scope>
+  <isShowTags>0</isShowTags>
+</summaryCfgVO>

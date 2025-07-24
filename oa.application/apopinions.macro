@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="__1ttnf9ldRHV4Cvc1ZnG">
+  <name>apopinions</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description></description>
+  <content><![CDATA[//--------------------审批意见渲染模块----------------------                
+     			   var approval_opinions = {                
+     				/**                
+     				 * 审批意见渲染模块                
+     				 * @author "peter"                
+     				 */                
+     				/**                
+     				 * obpm后台管理员角色名称                
+     				 */                
+     				_WEB_DOMAINID : "系统管理员",                
+     				/**                
+     				 * 套打文件路径                
+     				 */                
+     				TDDOCNAME : "/uploads/docfile/item/", 	               
+     				 /**                
+     				 * 系统数据库名称                
+     				 */                
+     				SYSDBNAME : "JDZGXQ_SYS",                
+     				/**                
+     				*                
+     				* domainid                
+     				*/                
+     				DOMAINID : "",                
+     				/**                
+     				 * applicationid                
+     				 */                
+     				applicationid : "",                
+     				/*                
+     				*  数据源                
+     				*/                
+     				DATASOURCENAME : "OA办公" ,                
+     				/**                
+     				 * 设置session                
+     				 */                  
+     				setSession : function(key, value) {                
+     				},                
+     				/**                
+     				 *获取隐藏的签名 by docid                
+     				 */                
+     				getYcqmDocids : function(docId,statelabel) {                
+     					var ids = "";                
+     					var sqllcq = "";               
+     					if("结束"==(statelabel)){               
+     						sqllcq ="select * from (select acthis.id,acthis.nodehis_id,acthis.name,acthis.actorid,acthis.attitude,acthis.processtime,acthis.startNodename, acthis.flowoperation,acthis.isignature  from t_flowhistory acthis where acthis.doc_id ='"+docId+"') al where not exists (select 1 from (select acthis.id,acthis.nodehis_id,acthis.name,acthis.actorid,acthis.attitude,acthis.processtime,acthis.startNodename, acthis.flowoperation,acthis.isignature  from t_flowhistory acthis where acthis.doc_id ='"+docId+"') a2 where a2.NAME = al.NAME and a2.STARTNODENAME = al.STARTNODENAME and a2.PROCESSTIME>al.PROCESSTIME ) ";                
+     					}else{               
+     						sqllcq ="select * from (select acthis.id,acthis.nodehis_id,acthis.name,acthis.actorid,acthis.attitude,acthis.processtime,relhis.startNodename, relhis.flowoperation,acthis.isignature  from T_Actorhis acthis, t_relationhis relhis where acthis.doc_id ='"+docId+"' and acthis.nodehis_id=relhis.id ) al where not exists (select 1 from (select acthis.id,acthis.nodehis_id,acthis.name,acthis.actorid,acthis.attitude,acthis.processtime,relhis.startNodename, relhis.flowoperation,acthis.isignature  from T_Actorhis acthis, t_relationhis relhis where acthis.doc_id ='"+docId+"' and acthis.nodehis_id=relhis.id ) a2 where a2.NAME = al.NAME and a2.STARTNODENAME = al.STARTNODENAME and a2.PROCESSTIME>al.PROCESSTIME ) ";                
+     					}               
+     					var datasq  = queryByDSName(approval_opinions.DATASOURCENAME,sqllcq);                
+     					if(datasq!=null && datasq.size()>0){                
+     						for(var iter = datasq.iterator();iter.hasNext();){                
+     							var doc = iter.next();                
+     							ids += doc.get("id") + ";";                
+     						}                
+     					}                
+     					return ids;                
+     				},                
+     				/**                
+     				 * 获取全部审批数据                
+     				 */                
+     				getAllHisData : function(docId,statelabel) {     //!StringUtil.isBlank(doc.getStateid())&&doc.getState()==null
+    					var doc = getCurrentDocument();    
+    					var state = doc.getState(); 
+						//println("doc.getState()："+state)                              
+    					//println("doc.getFlowInstances().size()："+doc.getFlowInstances().size());   
+						//println("doc.getStateid()："+doc.getStateid())		
+						//println("doc.getId()："+doc.getId())							
+     					var sqllc =" select al.* from (select ";                
+     					if(statelabel.indexOf("结束")>=0&&doc.getFlowInstances().size()==0&&isNotNull(doc.getStateid())){               
+     						sqllc+=" acthis.id,acthis.nodehis_id,acthis.name,acthis.actorid,acthis.attitude,acthis.processtime,acthis.startNodename,acthis.actiontime, acthis.flowoperation ";                
+     						sqllc+=" from t_flowhistory acthis where acthis.doc_id ='"+docId+"' ) al group by name,startNodename,actiontime order by processtime";      
+    						println("结束：审批历史sql===="+sqllc);						    
+     					}else{               
+     						sqllc+=" acthis.id,acthis.nodehis_id,acthis.name,acthis.actorid,acthis.attitude,acthis.actiontime,acthis.processtime,relhis.startNodename, relhis.flowoperation ";                
+     						sqllc+=" from T_Actorhis acthis,t_relationhis relhis where acthis.doc_id ='"+docId+"' and acthis.nodehis_id=relhis.id ) al group by name,startNodename,actiontime  order by processtime";       
+    						println("未结束审批历史sql===="+sqllc);						    
+     					}     
+     					var datas  = queryByDSName(approval_opinions.DATASOURCENAME,sqllc);             
+     					return datas;                
+     				},                
+     				/**                
+     				 * 获取签名样式                
+     				 */                
+     				getQmHtml : function(name,attitude,isignature,time) {            
+     			     
+     				     
+     					var qmHtml = "<div style='display: block;padding-top:10px;padding-bottom:10px;position:absolute;width:800px' class='jmqm'>  "+name+"： "+attitude+"  <div style='margin-left:20px;width:120px;height:50px;display: inline-block; position:absolute;' id='"+isignature+"'></div>  <span style='padding-left:140px'>"+time+"</span></div> \n\t\n";                
+     					if(getWebUser().getEquipment()==1){         
+     						qmHtml = "<div style='display: block;padding-top:10px;padding-bottom:10px;position:absolute;width:95%' class='jmqm'>  "+name+"： "+attitude+"  <div style='margin-left:20px;width:120px;height:50px;display: inline-block; position:absolute;' id='"+isignature+"'></div>  <span style='padding-left:140px'>"+time+"</span></div> \n\t\n";            
+     					}         
+     					return qmHtml;                
+     				},                
+     				/**                
+     				 * 获取隐藏签名样式                
+     				 */                
+     				getHideHtml : function(name,attitude,isignature,time) {                
+     					var hidHtml = "<div style='position:absolute;padding-top:10px;padding-bottom:10px' class='ycqm'>  "+name+"： "+attitude+" <div style='margin-left:20px;width:120px;height:50px;top:0px;display: inline-block; position:absolute;' id='"+isignature+"'></div>  <span style='padding-left:140px'>"+time+"</span></div> \n\t\n";               
+     					return hidHtml;                
+     				},                
+     				getReplaceItem : function(doc,ItemName){               
+     					var ItemValue = doc.getItemValueAsString(ItemName);               
+     					if (ItemValue!=null&&ItemValue.trim().length >=0) {               
+     						ItemValue = ItemValue.replace("\"","\\\"");               
+     						return ItemValue;               
+     					}               
+     				},               
+     				getReplaceAttit : function(data,ItemName){               
+     					var ItemValue = data.get(ItemName);               
+     					if (ItemValue!=null&&ItemValue.trim().length >=0) {               
+     						ItemValue = ItemValue.replace("\"","\\\"");               
+     						return ItemValue;               
+     					}               
+     				},               
+     			  getTdData : function(uuid) {              
+     					var sqllc =" select al.* from (select ";               
+     						sqllc+=" fcthis.id,fcthis.nodehis_id,fcthis.name,fcthis.actorid,fcthis.attitude,fcthis.processtime,fcthis.startNodename, fcthis.flowoperation,fcthis.isignature ";               
+     						sqllc+=" from t_flowhistory fcthis where fcthis.doc_id ='"+uuid+"' ";        
+     						sqllc+=" union all ";        
+     						sqllc+=" select acthis.id,acthis.nodehis_id,acthis.name,acthis.actorid,acthis.attitude,acthis.processtime,relhis.startNodename, relhis.flowoperation,acthis.isignature ";               
+     						sqllc+=" from T_Actorhis acthis,t_relationhis relhis where acthis.doc_id ='"+uuid+"' and acthis.nodehis_id=relhis.id ) al  order by al.processtime";     
+     					var datas  = queryByDSName(approval_opinions.DATASOURCENAME,sqllc);     
+     					return datas;               
+     				},                
+     				 getserialNumber : function(prefix) {               
+     					 var doc = getCurrentDocument();                  
+     					 var docid = doc.getId();               
+     					 var serialNumber = doc.getItemValueAsString("serialNumber");                  
+     					 if(serialNumber==null||serialNumber.trim().length<=0){                  
+     					   serialNumber=countNext2(prefix,true,false,false,4);	 		              
+     					 }               
+     					 return serialNumber;               
+     				 },      
+     				/**                
+     				 * 获取审批意见样式（无签名）                
+     				 */                
+                       getSpYj : function(name,attitude,time) {            
+                         var qmHtml = ""+name+"： "+attitude+"   "+time+" \n\t\n";    
+                         //var qmHtml = ""+name+"： "+attitude+"   "+time+" \t \n";   
+                         if(getWebUser().getEquipment()==1){         
+                           qmHtml = ""+name+"： "+attitude+"   "+time+" \n\t\n";            
+                         }       
+                         println("html======="+qmHtml)
+                         return qmHtml;                
+                       }, 			      
+     			   }]]></content>
+  <version>0</version>
+</repositoryVO>

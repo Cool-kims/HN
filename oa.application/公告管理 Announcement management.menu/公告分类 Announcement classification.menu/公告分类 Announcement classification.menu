@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__7MNtmAaCMr7p9rKTpho">
+  <name>公告分类 Announcement classification</name>
+  <parentId>__TASz1ziJ2M3qaZKJc7a</parentId>
+  <description>公告分类</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__TASz1ziJ2M3qaZKJc7a</superior>
+  <linkType>01</linkType>
+  <moduleid>__omj4XzaIuuj5Lecx1U8</moduleid>
+  <actionContent><![CDATA[__il5C14c1YSQpULOyuRS]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>15</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

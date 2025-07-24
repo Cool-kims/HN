@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repositoryVO id="__V1iDD2TFJaSYB57nld1">
+  <name>associatedDocuments</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description></description>
+  <content><![CDATA[//--------------------关联公文----------------------            
+                   function getAssociatedDocuments() {           
+                      var glgwid = getItemValueAsString("glgwid");            
+                      var glgwname = getItemValueAsString("glgwname");            
+                      var glgwlformid = getItemValueAsString("glgwlformid");            
+                      var request = $WEB.getParamsTable().getHttpRequest();//获取当前request            
+                      var html = "";//</br>            
+                      var count=1;           
+                      if(!glgwid==("")){        
+        				//println("glgwid=========="+glgwid);			        
+        				//println("glgwname=========="+glgwname);			        
+        				//println("glgwlformid=========="+glgwlformid);				          
+                          var arr = splitString(glgwid, ";");              
+                          var arr1 = splitString(glgwname, ";");              
+                          var arr2 = splitString(glgwlformid, ";");              
+                          //var url= "http://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();            
+                          var applicationId = getApplication();            
+                          for (var i=0; i<arr.length; i++) {            
+  
+							html += "<o-action style='cursor:pointer' action-type='opendocument' formid='" + arr2[i] + "' docid='" + arr[i] + "' appid='" + applicationId + "' open-type='open_tab' isRefresh='true' dialog-width='600px' dialog-height='400px' exparams='' parentid=''>" +count+"."+ arr1[i] + "</o-action></br>";
+                            count++;           
+                          }            
+     
+ 						 return html;            
+					  }
+				   }]]></content>
+  <version>0</version>
+</repositoryVO>

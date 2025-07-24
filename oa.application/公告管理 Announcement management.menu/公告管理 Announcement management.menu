@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__TASz1ziJ2M3qaZKJc7a">
+  <name>公告管理 Announcement management</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <description>公告管理</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"fa fa-bullhorn","icontype":"font","iconFontColor":"rgba(250, 98, 95, 1)"}</ico>
+  <linkType></linkType>
+  <actionContent><![CDATA[__CUZCqzWdeqBVQricBXn]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>65</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

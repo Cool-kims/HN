@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataSource id="__c8t7nranRgJoyJaAdHg">
+  <name>OA办公</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <useType>JDBC</useType>
+  <driverClass>oracle.jdbc.driver.OracleDriver</driverClass>
+  <url><![CDATA[jdbc:oracle:thin:@//192.168.88.140:1521/orcl]]></url>
+  <username>sppt</username>
+  <password><![CDATA[Teemlink2010]]></password>
+  <dbType>1</dbType>
+  <poolsize>100</poolsize>
+  <timeout>3600</timeout>
+  <readonly>false</readonly>
+  <readonlyUseType>JDBC</readonlyUseType>
+  <readonlyDriverClass></readonlyDriverClass>
+  <readonlyUsername></readonlyUsername>
+  <readonlyPassword></readonlyPassword>
+  <readonlyUrl><![CDATA[]]></readonlyUrl>
+  <readonlyPoolsize></readonlyPoolsize>
+  <readonlyTimeout></readonlyTimeout>
+  <readonlyDbType>0</readonlyDbType>
+  <readonlyJndiName></readonlyJndiName>
+  <readonlyProviderUrl></readonlyProviderUrl>
+  <readonlyInitialContextFactory></readonlyInitialContextFactory>
+  <readonlyUrlPkgPrefixes></readonlyUrlPkgPrefixes>
+  <readonlySecurityPrincipal></readonlySecurityPrincipal>
+  <readonlySecurityCredentials></readonlySecurityCredentials>
+</dataSource>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__jeawVudsr5Gv8boAVFq">
+  <name>调岗申请查询 Job transfer application inquiry</name>
+  <parentId>__14p1QQwOqKqlrIk2t2y</parentId>
+  <description>调岗申请查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__14p1QQwOqKqlrIk2t2y</superior>
+  <linkType>01</linkType>
+  <moduleid>__wXopwOgzVWrFYEdrKkL</moduleid>
+  <actionContent><![CDATA[__LKXHpv4WDXDQEX6nv4J]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>10</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

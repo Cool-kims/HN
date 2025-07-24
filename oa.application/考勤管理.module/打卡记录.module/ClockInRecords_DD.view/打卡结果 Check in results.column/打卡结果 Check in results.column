@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<column id="__G9YY1Z29vhIzhC2kGyn">
+  <name>打卡结果 Check in results</name>
+  <parentId>__jdjnXYGTpzBMyEJYgcH</parentId>
+  <width></width>
+  <valueScript><![CDATA[(function(){
+  var dd_exception_type=getItemValueAsString("dd_exception_type");
+  if("Normal"==(dd_exception_type)){
+    return "正常";
+  }else if("Early"==(dd_exception_type)){
+    	return "<font color='orange'><strong>早退</strong></font>";
+  }else if("Late"==(dd_exception_type)){
+    	return "<font color='red'><strong>迟到</strong></font>";
+  }
+})();]]></valueScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <beforeScript><![CDATA[]]></beforeScript>
+  <afterScript><![CDATA[]]></afterScript>
+  <parentView>__jdjnXYGTpzBMyEJYgcH</parentView>
+  <type>COLUMN_TYPE_SCRIPT</type>
+  <labelScript><![CDATA[]]></labelScript>
+  <formid>__7rPqupkrWjWA6LR9QA8</formid>
+  <fieldName>dd_exception_type</fieldName>
+  <flowReturnCss>false</flowReturnCss>
+  <imageName></imageName>
+  <fontColor></fontColor>
+  <orderno>3</orderno>
+  <sum>false</sum>
+  <total>false</total>
+  <isOrderByField>false</isOrderByField>
+  <orderType>ASC</orderType>
+  <multiLanguageLabel></multiLanguageLabel>
+  <actionScript><![CDATA[]]></actionScript>
+  <clickSorting>true</clickSorting>
+  <sortStandard>00</sortStandard>
+  <jumpMapping></jumpMapping>
+  <jumpMode>00</jumpMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <mappingform></mappingform>
+  <formatType>simple</formatType>
+  <decimalsNum>1</decimalsNum>
+  <thouSign>false</thouSign>
+  <decimalsCurr>1</decimalsCurr>
+  <currType>zh_CN</currType>
+  <color>rgba(0,0,0,1)</color>
+  <fontSize>12</fontSize>
+  <groundColor></groundColor>
+  <showIcon>false</showIcon>
+  <iconMapping></iconMapping>
+  <buttonType>00</buttonType>
+  <buttonName></buttonName>
+  <visible>true</visible>
+  <visible4ExpExcel>true</visible4ExpExcel>
+  <visible4Print>true</visible4Print>
+  <visible4PagePrint>true</visible4PagePrint>
+  <templateForm></templateForm>
+  <icon></icon>
+  <showType>01</showType>
+  <mappingField></mappingField>
+  <showMoon>false</showMoon>
+  <showAsLabel>false</showAsLabel>
+  <showAsButton>false</showAsButton>
+  <displayType>00</displayType>
+  <displayLength></displayLength>
+  <showTitle>true</showTitle>
+  <customIcon>false</customIcon>
+  <isFilter>false</isFilter>
+  <isShowThisColumn>false</isShowThisColumn>
+  <selectOptionScript><![CDATA[]]></selectOptionScript>
+  <isEnter>false</isEnter>
+  <isShowExplain>false</isShowExplain>
+  <rowMerge>false</rowMerge>
+  <showExplainScript><![CDATA[]]></showExplainScript>
+  <jumpActOpenType>0</jumpActOpenType>
+</column>

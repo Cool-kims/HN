@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__hSvXtZ8uqgwlyxYUMuv">
+  <name>AttendanceRulesForm</name>
+  <parentId>__LJ26cpBxdWaSPgoDSXH</parentId>
+  <description>考勤规则维护</description>
+  <templatecontext><![CDATA[<div style="text-align: center;"><strong><span style="font-size: x-large;">考勤规则维护<br type="_moz" />
+</span></strong></div>
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(255, 0, 0);">注：没维护规则的部门默认按早上8点30分上班、18点下班。</span><br />
+<table width="90%" height="60" align="center" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: right;" bgcolor="#F5F5F5" width="15%" align="right"><span style="color: rgb(255, 0, 0);">*</span>部门：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" width="35%" bgcolor="#ffffff"><select classname="cn.myapps.runtime.dynaform.form.ejb.TreeDepartmentField" id="__KzJ9l5fFP935iT3Rha5" type="text" name="dept" refreshonchanged="false" readonlyshowvalonly="true" showlog="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" validaterule="" hiddenscript="" hiddenvalue="" valuescript="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" discript="部门" width="" layout="horizontal" fieldtype="VALUE_TYPE_TEXT" texttype="text" hidetype="parent" ishidetype="false" limit="" istreedepartmentfield="true" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="0" refreshfields="" editmode="01" attributeid="undefined"></select></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: right;" bgcolor="#F5F5F5" width="15%" align="right"><span style="color: rgb(255, 0, 0);">*</span>是否弹性上下班：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" width="35%" bgcolor="#ffffff"><input classname="cn.myapps.runtime.dynaform.form.ejb.RadioField" id="__6uPr8Y9HKNvqwt2Kjg8" type="radio" name="isFlexible" discript="是否弹性上下班" readonlyshowvalonly="true" showlog="true" valuescript="" optionsscript="(function(){@amp;#13;var@nbsp;opts=createOptions();@amp;#13;opts.add(@quot;是@quot;,@quot;是@quot;);@amp;#13;opts.add(@quot;否@quot;,@quot;否@quot;);@amp;#13;return@nbsp;opts;@amp;#13;})()" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" layout="horizontal" texttype="text" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" filtercondition="" refreshonchanged="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" showfieldtitle="true" instantvalidate="false" validatelibs="" editmode="01" processdescription="[];[]" optionseditmode="01" dialogview="" module="" optionsvalue="" refreshmode="1" refreshfields="desc1;starttime2;desc2;endtime2" optionstext="" attributeid="undefined" /></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: right;" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>上班时间：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" bgcolor="#ffffff"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__4P0jhHiSPyY1xhyrIv3" type="text" fieldtype="VALUE_TYPE_DATE" name="starttime1" width="120" widthunit="px" refreshonchanged="false" readonlyshowvalonly="true" showlog="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="上班时间" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="HMS" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01" attributeid="undefined" />&nbsp;<img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__Wsy6ZPmF6L41VZ5e9sb" name="desc1" valuescript="(function(){@amp;#13;@nbsp;@nbsp;var@nbsp;isFlexible=getItemValueAsString(@quot;isFlexible@quot;);@amp;#13;@nbsp;@nbsp;if(@quot;是@quot;==(isFlexible)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;return@nbsp;@quot;至@quot;;@amp;#13;@nbsp;@nbsp;}@amp;#13;@nbsp;@nbsp;return@nbsp;@quot;@quot;;@amp;#13;})();" calculateonrefresh="true" />&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__SJR3SCaXcWCuBpFibGO" type="text" fieldtype="VALUE_TYPE_DATE" name="starttime2" width="120" widthunit="px" refreshonchanged="false" readonlyshowvalonly="true" showlog="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="(function(){@amp;#13;@nbsp;@nbsp;var@nbsp;isFlexible=getItemValueAsString(@quot;isFlexible@quot;);@amp;#13;@nbsp;@nbsp;var@nbsp;starttime2=getItemValueAsDate(@quot;starttime2@quot;);@amp;#13;@nbsp;@nbsp;if(@quot;是@quot;==(isFlexible)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;if(!isNotNull(starttime2)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;return@nbsp;@quot;@#146;上班时间@#146;不能为空@quot;;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;}@amp;#13;@nbsp;@nbsp;}@amp;#13;})();" hiddenscript="(function(){@amp;#13;@nbsp;@nbsp;var@nbsp;isFlexible=getItemValueAsString(@quot;isFlexible@quot;);@amp;#13;@nbsp;@nbsp;if(@quot;是@quot;==(isFlexible)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;return@nbsp;false;@amp;#13;@nbsp;@nbsp;}@amp;#13;@nbsp;@nbsp;return@nbsp;true;@amp;#13;})();" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="HMS" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="0" refreshfields="" editmode="01" attributeid="undefined" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: right;" bgcolor="#F5F5F5"><span style="color: rgb(255, 0, 0);">*</span>下班时间：</td>
+            <td style="border: 1px solid rgb(180, 204, 238);" bgcolor="#ffffff"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__k9JNTQ4eUz4DBKPZKwU" type="text" fieldtype="VALUE_TYPE_DATE" name="endtime1" width="120" widthunit="px" refreshonchanged="false" readonlyshowvalonly="true" showlog="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="下班时间" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="HMS" processdescription="[];[]" instantvalidate="false" validatelibs="core.dynaform.form.formfield.validate.checkEmpty_system" refreshmode="0" refreshfields="" editmode="01" attributeid="undefined" />&nbsp;<img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__GckoZSoLU43OQ2S0lTa" name="desc2" valuescript="(function(){@amp;#13;@nbsp;@nbsp;var@nbsp;isFlexible=getItemValueAsString(@quot;isFlexible@quot;);@amp;#13;@nbsp;@nbsp;if(@quot;是@quot;==(isFlexible)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;return@nbsp;@quot;至@quot;;@amp;#13;@nbsp;@nbsp;}@amp;#13;@nbsp;@nbsp;return@nbsp;@quot;@quot;;@amp;#13;})();" calculateonrefresh="true" />&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__coQlovhdHYPP77zluDv" type="text" fieldtype="VALUE_TYPE_DATE" name="endtime2" width="120" widthunit="px" refreshonchanged="false" readonlyshowvalonly="true" showlog="true" isdefaultvalue="false" calculateonrefresh="true" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="(function(){@amp;#13;@nbsp;@nbsp;var@nbsp;isFlexible=getItemValueAsString(@quot;isFlexible@quot;);@amp;#13;@nbsp;@nbsp;var@nbsp;endtime2=getItemValueAsDate(@quot;endtime2@quot;);@amp;#13;@nbsp;@nbsp;if(@quot;是@quot;==(isFlexible)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;if(!isNotNull(endtime2)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;return@nbsp;@quot;@#146;下班时间@#146;不能为空@quot;;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;}@amp;#13;@nbsp;@nbsp;}@amp;#13;})();" hiddenscript="(function(){@amp;#13;@nbsp;@nbsp;var@nbsp;isFlexible=getItemValueAsString(@quot;isFlexible@quot;);@amp;#13;@nbsp;@nbsp;if(@quot;是@quot;==(isFlexible)){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;return@nbsp;false;@amp;#13;@nbsp;@nbsp;}@amp;#13;@nbsp;@nbsp;return@nbsp;true;@amp;#13;})();" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" hidetype="parent" ishidetype="false" filtercondition="" datepattern="HMS" processdescription="[];[]" instantvalidate="false" validatelibs="" refreshmode="0" refreshfields="" editmode="01" attributeid="undefined" /></td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">&nbsp;</div>
+<br />
+<br />
+<br type="_moz" />]]></templatecontext>
+  <type>1</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"AttendanceRulesForm","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>1</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

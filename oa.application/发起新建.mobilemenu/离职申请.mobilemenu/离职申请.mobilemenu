@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__ZyKPnCeHQQMNpB7QZBa">
+  <name>离职申请</name>
+  <parentId>__iO2mkW0ozLXsWMAkb0H</parentId>
+  <description>离职申请</description>
+  <multiLanguageLabel></multiLanguageLabel>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon/p143_Quit.png","icontype":"img"}</ico>
+  <superior>__iO2mkW0ozLXsWMAkb0H</superior>
+  <linkName></linkName>
+  <linkType>00</linkType>
+  <moduleid>__wXopwOgzVWrFYEdrKkL</moduleid>
+  <directory></directory>
+  <actionContent><![CDATA[__grSo4AQ7rbIwOb4DIgw]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>true</isUsual>
+  <isMobile>true</isMobile>
+  <orderno>0</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

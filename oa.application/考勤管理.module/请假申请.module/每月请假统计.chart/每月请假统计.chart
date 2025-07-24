@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chart id="__FE6InPjCq55xuO67k5P">
+  <name>每月请假统计</name>
+  <parentId>__XGmg3jTk1QWIhzDrgas</parentId>
+  <description></description>
+  <scripttext><![CDATA[(function(){
+	var sql = "select DATE_FORMAT( ITEM_StartTime, '%m' ) AS ITEM_月份,sum( ITEM_LeaveDays ) AS ITEM_每月请假天数 FROM tlk_leaveapplication WHERE ITEM_Applicant='"+getWebUser().getId()+"' AND STATELABEL='结束' AND YEAR(ITEM_StartTime) = YEAR(NOW()) GROUP BY DATE_FORMAT( ITEM_StartTime, '%Y-%m' )";
+	println("sql:"+sql);
+		var station1list=[];
+		var station2list=[];
+		var map = {'01':'','02':'','03':'','04':'','05':'','06':'','07':'','08':'','09':'','10':'','11':'','12':''}; 
+	
+		var service = (Java.type('cn.myapps.core.designtime.common.service.DesignTimeServiceFactory')).resolve("cn.myapps.designtime.datasource.service.DataSourceDesignTimeService");
+		var list = createObject("java.util.ArrayList"); 
+		var query =	service.queryDataSourceSQL("OA办公",sql,"__TcboMScMPR4UuIbksem"); 
+		if(query!=null){   	
+            for(var  i = 0 ; i <query.size() ; i++) { 
+               var doc=query.get(i); 
+			   
+				var station1=doc.get("ITEM_月份");
+				var station2=doc.get("ITEM_每月请假天数");
+								
+				station2=round(parseDouble(station2),0);	
+				//station2list.push(new String(station2));
+				map[station1] = new String(station2);
+				
+             }  
+			 println("map="+JSON.stringify(map));
+			 for(var i =1;i<13;i++){
+				 if(i < 10){
+					 i = '0' +i;
+				 }
+				 station2list.push(map[i]);
+			 }
+			println("station2list="+JSON.stringify(station2list));
+		} 
+	
+ var option = {
+    title : {
+        text: '每月请假天数',
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['请假天数']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'请假天数',
+            type:'bar',
+            data:station2list,
+        },
+       
+    ]
+};
+ return option;
+ })()]]></scripttext>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <viewId>__5IMemZbonGItTesw3Ck</viewId>
+  <searchFormId></searchFormId>
+  <fontSize>12</fontSize>
+  <chartName>barChart</chartName>
+</chart>

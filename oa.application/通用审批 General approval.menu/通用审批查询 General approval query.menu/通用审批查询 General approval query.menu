@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__30mgNrJuAhVCZufDfpZ">
+  <name>通用审批查询 General approval query</name>
+  <parentId>__Bh7F88WMq6Hswvlrmth</parentId>
+  <description>通用审批查询</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>__Bh7F88WMq6Hswvlrmth</superior>
+  <linkType>01</linkType>
+  <moduleid>__viKzAdJiU6ClOXvX4d1</moduleid>
+  <actionContent><![CDATA[__Z1YLyyAeywHeVIwPYcv]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>10</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>

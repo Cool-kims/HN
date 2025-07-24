@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<role id="__ypYHcTG6tHoO8YoHE4x">
+  <name>人事主管</name>
+  <parentId>__TcboMScMPR4UuIbksem</parentId>
+  <roleNo>007</roleNo>
+  <status>1</status>
+  <defaultRole>false</defaultRole>
+  <sortId>167636303045800000</sortId>
+  <permissions><![CDATA[[{"operationCode":1002,"operationId":"__IazdWNevISqRKLeF656","resId":"__IazdWNevISqRKLeF656","resName":"菜单","resType":2,"roleId":"","type":1},{"operationCode":1002,"operationId":"__mNmrxe9jOKkj97EtkYY","resId":"__mNmrxe9jOKkj97EtkYY","resName":"菜单","resType":2,"roleId":"","type":1},{"operationCode":1002,"operationId":"__f1dAaF2TTiJOFXbNf10","resId":"__f1dAaF2TTiJOFXbNf10","resName":"菜单","resType":2,"roleId":"","type":1}]]]></permissions>
+  <orderNo>0</orderNo>
+</role>
