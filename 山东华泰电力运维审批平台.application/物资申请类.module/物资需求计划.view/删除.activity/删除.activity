@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<activity id="__3uuSGT4dnegy6R7hjkO">
+<activity id="__HTuxv8MtRDvw8duZIox">
   <name>删除</name>
   <parentId>11e7-ef14-67ed7984-8f99-af63cc0890b3</parentId>
   <type>3</type>
   <onActionForm></onActionForm>
   <onActionView></onActionView>
   <colorType></colorType>
-  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <beforeActionScript><![CDATA[#include "RecordsDelete";
+adminDelete();]]></beforeActionScript>
   <afterActionScript><![CDATA[]]></afterActionScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <readonlyScript><![CDATA[]]></readonlyScript>
@@ -35,7 +36,6 @@
   <workFlowType>0</workFlowType>
   <contextMenu>true</contextMenu>
   <showInToolbar>true</showInToolbar>
-  <label><![CDATA[#include "RecordsDelete";
-adminDelete();]]></label>
+  <label><![CDATA[]]></label>
   <processPreview>false</processPreview>
 </activity>
