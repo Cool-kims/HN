@@ -3,8 +3,6 @@
   <name>保存并新建</name>
   <parentId>__11e7-ef13-4f3945ab-8f99-af63cc0890b3</parentId>
   <type>42</type>
-  <onActionForm></onActionForm>
-  <onActionView></onActionView>
   <onActionFlow></onActionFlow>
   <onActionPrint></onActionPrint>
   <colorType>default</colorType>
@@ -29,10 +27,10 @@ var times=getItemValueAsString("日期");
 var kmwz=getItemValue("科目位置");
 var bm=getItemValue("部门");
 if(bm=="11e6-b717-dd4adb75-9274-2d649aa1d98e"&&kmwz.indexOf("付款申请单")>=0){
-    msg="物资部,付款申请单提报不纳入费用控制.<br />The material department, the payment application form is not included in the cost control.";
+    msg="物资部,付款申请单提报不纳入费用控制.  The material department, the payment application form is not included in the cost control.";
 }else{
     if (!isNotNull(cost)) {
-        msg="费用类型不能为空.<br />The type of cost can not be empty.";
+        msg="费用类型不能为空.  The type of cost can not be empty.";
     }else{
 
         if(number==null||number.trim().length<=0){
@@ -42,13 +40,15 @@ if(bm=="11e6-b717-dd4adb75-9274-2d649aa1d98e"&&kmwz.indexOf("付款申请单")>=
             var datas = findBySQL(sql);
             if (!isNotNull(datas)) {
             } else {
-                msg="该部门存在数据.<br />There is data in the Department.";
+                msg="该部门存在数据.  There is data in the Department.";
             }
         }
     }    
 }
     msg;]]></beforeActionScript>
   <afterActionScript><![CDATA[]]></afterActionScript>
+  <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
+  <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
   <hiddenScript><![CDATA[var value = true;
         var userName = getWebUser().getName();//获取用户
         var roleid = getRoleIdByName("年度费用预算");
@@ -76,22 +76,21 @@ if(bm=="11e6-b717-dd4adb75-9274-2d649aa1d98e"&&kmwz.indexOf("付款申请单")>=
   <readonlyScript><![CDATA[]]></readonlyScript>
   <startFlowScript><![CDATA[]]></startFlowScript>
   <editMode>0</editMode>
-  <flowShowType>ST01</flowShowType>
   <fileNameScript><![CDATA[]]></fileNameScript>
+  <iconurl></iconurl>
   <orderno>2</orderno>
   <stateToShow></stateToShow>
   <parentForm>__11e7-ef13-4f3945ab-8f99-af63cc0890b3</parentForm>
-  <impmappingconfigid></impmappingconfigid>
   <jumpType>0</jumpType>
-  <expSub>true</expSub>
+  <expSub>false</expSub>
   <icon></icon>
-  <disableFlowNode>true</disableFlowNode>
-  <changeFlowOperator>true</changeFlowOperator>
-  <changeFlowCc>true</changeFlowCc>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
   <multiLanguageLabel></multiLanguageLabel>
   <dispatcherMode>0</dispatcherMode>
   <dispatcherUrl><![CDATA[]]></dispatcherUrl>
-  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
   <jumpMode>0</jumpMode>
   <jumpActOpenType>0</jumpActOpenType>
   <withOld>false</withOld>
@@ -104,6 +103,7 @@ if(bm=="11e6-b717-dd4adb75-9274-2d649aa1d98e"&&kmwz.indexOf("付款申请单")>=
   <contextMenu>false</contextMenu>
   <showInToolbar>true</showInToolbar>
   <transpond>选择</transpond>
-  <targetList></targetList>
+  <targetList>|</targetList>
+  <label><![CDATA[]]></label>
   <processPreview>false</processPreview>
 </activity>

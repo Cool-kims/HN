@@ -2,7 +2,7 @@
 <form id="__11e7-ef13-4f396cbe-8f99-af63cc0890b3">
   <name>年度费用预算</name>
   <parentId>11e7-ef13-4f38d164-8f99-af63cc0890b3</parentId>
-  <sortId>151365253822500000</sortId>
+  <description></description>
   <templatecontext><![CDATA[<p style="text-align: center;">&nbsp;</p>
 <table width="800" align="center" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
     <tbody>
@@ -15,7 +15,7 @@
         </tr>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">部门</td>
-            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><select classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="11e7-e469-4fc52b30-bd5c-c9b904edfddb" type="text" name="部门" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" limitbyuser="false" departmentlevel="-1" relatedfield="" isdepartmentfield="true" defaultoptiontype="16" allowempty="false" discript="" filtercondition="" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01"></select></td>
+            <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><select classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="11e7-e469-4fc52b30-bd5c-c9b904edfddb" type="text" name="部门" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" limitbyuser="false" departmentlevel="-1" relatedfield="" isdepartmentfield="true" defaultoptiontype="16" allowempty="false" discript="" filtercondition="" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" showlog="true" width="180" widthunit="px" hidetype="parent" ishidetype="false" instantvalidate="false" attributeid="undefined"></select></td>
         </tr>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">金额(卢比)</td>
@@ -26,12 +26,22 @@
 <p style="text-align: center;">&nbsp;</p>
 <p style="text-align: center;">&nbsp;</p>]]></templatecontext>
   <type>1</type>
+  <styleId></styleId>
   <showLog>false</showLog>
   <showLogType>default</showLogType>
   <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
   <showType>old</showType>
   <showWaterMark>false</showWaterMark>
-  <version>10</version>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
   <mappingStr><![CDATA[{"formName":"年度费用预算","tableName":"","columnMappings":[]}]]></mappingStr>
   <orderno>0</orderno>
   <permissionType>public</permissionType>

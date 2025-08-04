@@ -3,14 +3,16 @@
   <name>保存</name>
   <parentId>__11e7-ef13-4f39e1f8-8f99-af63cc0890b3</parentId>
   <type>34</type>
-  <onActionForm>选择</onActionForm>
-  <onActionView></onActionView>
   <onActionFlow></onActionFlow>
   <onActionPrint></onActionPrint>
+  <colorType></colorType>
   <beforeActionScript><![CDATA[]]></beforeActionScript>
   <afterActionScript><![CDATA[]]></afterActionScript>
+  <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
+  <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
   <hiddenScript><![CDATA[var booleans=true;
-var bzr=getItemValueAsString("编制人");
+var parent = getParentDocument();
+var bzr=parent.getItemValueAsString("编制人");
 var dlr=getWebUser().getName();
 var roles=getWebUser().getRoles();
 for(var iter=roles.iterator();roles!=null&&iter.hasNext();){
@@ -28,29 +30,33 @@ booleans;]]></hiddenScript>
   <startFlowScript><![CDATA[]]></startFlowScript>
   <editMode>0</editMode>
   <fileNameScript><![CDATA[]]></fileNameScript>
+  <iconurl></iconurl>
   <orderno>1</orderno>
   <stateToShow></stateToShow>
   <parentForm>__11e7-ef13-4f39e1f8-8f99-af63cc0890b3</parentForm>
-  <impmappingconfigid></impmappingconfigid>
   <jumpType>0</jumpType>
-  <expSub>true</expSub>
+  <expSub>false</expSub>
   <icon></icon>
-  <disableFlowNode>true</disableFlowNode>
-  <changeFlowOperator>true</changeFlowOperator>
-  <changeFlowCc>true</changeFlowCc>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
   <multiLanguageLabel></multiLanguageLabel>
   <dispatcherMode>0</dispatcherMode>
   <dispatcherUrl><![CDATA[]]></dispatcherUrl>
-  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
   <jumpMode>0</jumpMode>
   <jumpActOpenType>0</jumpActOpenType>
   <withOld>false</withOld>
   <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
   <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
   <workFlowType>0</workFlowType>
   <contextMenu>false</contextMenu>
   <showInToolbar>true</showInToolbar>
   <transpond>选择</transpond>
-  <targetList></targetList>
+  <targetList>|</targetList>
+  <label><![CDATA[]]></label>
   <processPreview>false</processPreview>
 </activity>

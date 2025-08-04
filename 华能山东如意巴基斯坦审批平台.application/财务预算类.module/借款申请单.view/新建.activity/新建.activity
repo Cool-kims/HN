@@ -8,7 +8,7 @@
   <colorType></colorType>
   <beforeActionScript><![CDATA[]]></beforeActionScript>
   <afterActionScript><![CDATA[]]></afterActionScript>
-  <hiddenScript><![CDATA[]]></hiddenScript>
+  <hiddenScript><![CDATA[true]]></hiddenScript>
   <readonlyScript><![CDATA[]]></readonlyScript>
   <editMode>0</editMode>
   <fileNameScript><![CDATA[]]></fileNameScript>
