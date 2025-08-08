@@ -145,7 +145,7 @@ if(author==null){
 &lt;PASS_CONDITION_OR&gt;0&lt;/PASS_CONDITION_OR&gt;
 &lt;PASS_CONDITION_AND&gt;1&lt;/PASS_CONDITION_AND&gt;
 &lt;PASS_CONDITION_ORDERLY_AND&gt;2&lt;/PASS_CONDITION_ORDERLY_AND&gt;
-&lt;actorListScript&gt;&lt;![CDATA[var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
+&lt;actorListScript&gt;&lt;![CDATA[var _pAppointApprover = getSessionValue(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
 var isRight = false;
 var roleName=getRoleByRoleNo(@quot;1003@quot;,getApplication());	//1003&#26159;&#37096;&#38376;&#21103;&#20027;&#20219;&#32534;&#21495;
 var roleId = getRoleIdByName(roleName);
@@ -1147,7 +1147,7 @@ false;&lt;/condition&gt;
 var submitTo = getParameter(@quot;submitTo@quot;);
 //println(@quot;====================33&#36335;&#24452;&#36865;&#20986;&#26816;&#39564;&#33050;&#26412;submitTo--@gt;@quot;+submitTo);
 if(submitTo==null || submitTo==(@quot;@quot;)){
-	var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
+	var _pAppointApprover = getSessionValue(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
 	if(_pAppointApprover==null || _pAppointApprover==(@quot;@quot;)){
 		var rtn = @quot;&#35831;&#25351;&#23450;&#23457;&#25209;&#20154;&#65281;@quot;;
 		rtn;

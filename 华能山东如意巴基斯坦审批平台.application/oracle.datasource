@@ -8,8 +8,8 @@
   <username>hnry</username>
   <password><![CDATA[hnry]]></password>
   <dbType>1</dbType>
-  <poolsize>300</poolsize>
-  <timeout>10000</timeout>
+  <poolsize>600</poolsize>
+  <timeout>3600</timeout>
   <readonly>false</readonly>
   <readonlyUseType>JDBC</readonlyUseType>
   <readonlyDbType>0</readonlyDbType>

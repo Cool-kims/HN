@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<form id="__svdCx1DknzRqWepGSrV">
+  <name>月度资金预算追加审批表_S</name>
+  <parentId>11e7-ef14-67d9ca67-8f99-af63cc0890b3</parentId>
+  <description></description>
+  <templatecontext><![CDATA[<p>&nbsp;&nbsp;编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__cDEv5jTV8u166Avuilh" text="text" name="编号" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; 经办人：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__PALBK61vhLxXllu6kva" text="text" name="编制人" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" />&nbsp; &nbsp; 追加预算项目：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__45NSIpWiVKJqxlTxs3x" text="text" name="追加预算项目" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>]]></templatecontext>
+  <type>256</type>
+  <styleId></styleId>
+  <showLog>false</showLog>
+  <showLogType>default</showLogType>
+  <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
+  <showType>old</showType>
+  <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"月度资金预算追加审批表_S","tableName":"","columnMappings":[]}]]></mappingStr>
+  <orderno>1</orderno>
+  <permissionType>public</permissionType>
+  <layoutType>horizontal</layoutType>
+</form>

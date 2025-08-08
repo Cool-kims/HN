@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="__TmGQzhkuI5ZOIM5Rir6">
+  <name>department_plan_copy1</name>
+  <parentId>11e9-7a26-62f52745-9820-539e9af1e136</parentId>
+  <description></description>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime>2025-08-07T18:53:28.750+08:00</lastModifyTime>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e9-7a26-62f52744-9820-539e9af1e136</relatedForm>
+  <permissionType>public</permissionType>
+  <openType>293</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>

@@ -11,10 +11,10 @@ var curDoc = getCurrentDocument();
 var docid = curDoc.getId();
 var _pNo = getItemValueAsString("_pNo");
 var request = $WEB.getParamsTable().getHttpRequest();
-request.getSession().setAttribute("_pSaveAndNew",_pNo);  //设置session值 
-request.getSession().setAttribute("_pSaveAndNewDocid",docid);  //设置session值 ]]></beforeActionScript>
+setSessionValue("_pSaveAndNew",_pNo);  //设置session值 
+setSessionValue("_pSaveAndNewDocid",docid);  //设置session值 ]]></beforeActionScript>
   <afterActionScript><![CDATA[//执行后
-var _pSaveAndNewDocid = getSession("_pSaveAndNewDocid");	//获取session值
+var _pSaveAndNewDocid = getSessionValue("_pSaveAndNewDocid");	//获取session值
 var doc = findDocument(_pSaveAndNewDocid);
 var flowId = "11e9-7a26-62fe9d07-9820-539e9af1e136";	//表单绑定的要启动的流程id
 var webUser = getWebUser();

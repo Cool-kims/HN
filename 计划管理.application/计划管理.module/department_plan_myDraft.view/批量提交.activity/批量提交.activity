@@ -13,9 +13,9 @@
 // if(_pAppointApprover!=null && !_pAppointApprover==("")){
 // //	println("================_pAppointApprover2-->"+_pAppointApprover);
 //     var request = $WEB.getParamsTable().getHttpRequest();
-//     request.getSession().setAttribute("_pAppointApprover",_pAppointApprover);  //设置session值 
+//     setSessionValue("_pAppointApprover",_pAppointApprover);  //设置session值 
 // }]]></beforeActionScript>
-  <afterActionScript><![CDATA[// if(getSession("_pAppointApprover")!=null){
+  <afterActionScript><![CDATA[// if(getSessionValue("_pAppointApprover")!=null){
 //     request.getSession().removeAttribute("_pAppointApprover");  //销毁session值
 // } ]]></afterActionScript>
   <hiddenScript><![CDATA[]]></hiddenScript>

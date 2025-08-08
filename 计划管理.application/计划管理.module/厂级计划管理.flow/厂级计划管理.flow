@@ -388,7 +388,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;/cn.myapps.runtime.workflow.element.ManualNode&gt;
 &lt;cn.myapps.runtime.workflow.element.ManualNode&gt;
 &lt;actorListScript&gt;&lt;![CDATA[//TIMELIMIT=true&#26159;&#36229;&#26102;&#33258;&#21160;&#25552;&#20132;  
-  var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;  
+  var _pAppointApprover = getSessionValue(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;  
   var roleName=getRoleByRoleNo(@quot;1010@quot;,getApplication());	//1010&#26159;&#21378;&#39046;&#23548;&#32534;&#21495;  
   var roleId = getRoleIdByName(roleName);  
   var users = getUsersByRoleId(roleId);  
@@ -2196,7 +2196,7 @@ if(isTimeLimit!=null &amp;&amp; !isTimeLimit==(@quot;true@quot;)){
 	var submitTo = getParameter(@quot;submitTo@quot;);
 //	println(@quot;====================33&#36335;&#24452;&#36865;&#20986;&#26816;&#39564;&#33050;&#26412;submitTo--&gt;@quot;+submitTo);
 	if(submitTo==null || submitTo==(@quot;@quot;)){
-		var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
+		var _pAppointApprover = getSessionValue(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
 		if(_pAppointApprover==null || _pAppointApprover==(@quot;@quot;)){
 			var rtn = @quot;&#35831;&#25351;&#23450;&#23457;&#25209;&#20154;&#65281;@quot;;
 			rtn;
@@ -3450,7 +3450,7 @@ if(webUser.getName()==(@quot;admin@quot;)){
 		}
 	}
 	var request = $WEB.getParamsTable().getHttpRequest();
-	request.getSession().setAttribute(@quot;_pAppointApprover@quot;,actorId);  //&#35774;&#32622;session&#20540; 
+	setSessionValue(@quot;_pAppointApprover@quot;,actorId);  //&#35774;&#32622;session&#20540; 
 }
 **/&lt;/action&gt;
 &lt;pointstack&gt;40;291;274;291&lt;/pointstack&gt;
@@ -3460,7 +3460,7 @@ if(webUser.getName()==(@quot;admin@quot;)){
 //     var submitTo = getParameter(@quot;submitTo@quot;);
 // //	println(@quot;====================33&#36335;&#24452;&#36865;&#20986;&#26816;&#39564;&#33050;&#26412;submitTo--&gt;@quot;+submitTo);
 //     if(submitTo==null || submitTo==(@quot;@quot;)){
-//         var _pAppointApprover = getSession(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
+//         var _pAppointApprover = getSessionValue(@quot;_pAppointApprover@quot;);	//&#33719;&#21462;session&#20540;
 //         if(_pAppointApprover==null || _pAppointApprover==(@quot;@quot;)){
 //             var rtn = @quot;&#35831;&#25351;&#23450;&#23457;&#25209;&#20154;&#65281;@quot;;
 //             rtn;

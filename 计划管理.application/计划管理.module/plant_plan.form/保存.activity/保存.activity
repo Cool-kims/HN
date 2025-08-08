@@ -6,7 +6,7 @@
   <onActionFlow></onActionFlow>
   <onActionPrint></onActionPrint>
   <colorType></colorType>
-  <beforeActionScript><![CDATA[var _pSaveAndNewDocid = getSession("_pSaveAndNewDocid");	//获取session值
+  <beforeActionScript><![CDATA[var _pSaveAndNewDocid = getSessionValue("_pSaveAndNewDocid");	//获取session值
 var doc = findDocument(_pSaveAndNewDocid);
 var flowId = "11e9-7a26-62fe4ee0-9820-539e9af1e136";	//表单绑定的要启动的流程id
 var webUser = getWebUser();

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="__dXvEHRwLyLMpyYSED6y">
+  <name>保存并启动流程</name>
+  <parentId>__11f0-05f9-09a7e9a5-a6ad-3b96a4b440c9</parentId>
+  <type>4</type>
+  <onActionPrint></onActionPrint>
+  <colorType></colorType>
+  <beforeActionScript><![CDATA[
+#include "customlibs";
+var number=getItemValue("编号");
+var doc = getCurrentDocument(); 
+var filename = doc.getFormname();
+var formname="";
+if(filename!=null) {
+formname = filename.substring(filename.lastIndexOf("/")+1, filename.length);
+}
+if(number==null||number.trim().length()<=0){
+  number=getNextNo(formname,'编号','YDZJYSZJSPD');
+  doc.findItem("编号").setValue(number);
+}
+]]></beforeActionScript>
+  <afterActionScript><![CDATA[]]></afterActionScript>
+  <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
+  <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <startFlowScript><![CDATA[]]></startFlowScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <iconurl></iconurl>
+  <orderno>0</orderno>
+  <stateToShow></stateToShow>
+  <parentForm>__11f0-05f9-09a7e9a5-a6ad-3b96a4b440c9</parentForm>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <icon></icon>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <actionScript><![CDATA[]]></actionScript>
+  <workFlowType>0</workFlowType>
+  <contextMenu>false</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <transpond></transpond>
+  <targetList>|</targetList>
+  <label><![CDATA[]]></label>
+  <processPreview>false</processPreview>
+</activity>
