@@ -2,7 +2,7 @@
 <column id="11e8-6986-dd1b7bdf-9dd9-7742dbd80144">
   <name>估算金额</name>
   <parentId>11e8-6986-dd1b7bdd-9dd9-7742dbd80144</parentId>
-  <width>100px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e8-6986-dd1b7bdd-9dd9-7742dbd80144</parentView>

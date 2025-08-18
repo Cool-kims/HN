@@ -2,7 +2,7 @@
 <column id="11e7-d632-c0e8a40c-b0cf-41bab8fafee8">
   <name>计划单价</name>
   <parentId>11e7-ef14-67ecdd32-8f99-af63cc0890b3</parentId>
-  <width>80px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef14-67ecdd32-8f99-af63cc0890b3</parentView>

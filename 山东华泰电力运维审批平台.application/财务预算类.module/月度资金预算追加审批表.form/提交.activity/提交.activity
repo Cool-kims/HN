@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<activity id="__iFdWbFujLr97QrhGeF9">
+<activity id="__qKU42k52FVstv8b6ngb">
   <name>提交</name>
   <parentId>__11f0-05f9-09a7e9a5-a6ad-3b96a4b440c9</parentId>
   <type>5</type>
@@ -10,7 +10,15 @@
   <afterActionScript><![CDATA[]]></afterActionScript>
   <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
   <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
-  <hiddenScript><![CDATA[]]></hiddenScript>
+  <hiddenScript><![CDATA[var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+//println("fstate==="+fstate);
+var booleans=false;
+if(fstate==null){
+	booleans=true;
+}
+booleans;
+]]></hiddenScript>
   <readonlyScript><![CDATA[]]></readonlyScript>
   <startFlowScript><![CDATA[]]></startFlowScript>
   <editMode>0</editMode>

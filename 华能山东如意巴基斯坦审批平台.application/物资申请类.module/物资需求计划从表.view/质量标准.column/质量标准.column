@@ -2,7 +2,7 @@
 <column id="11e7-e16b-817e2f3a-b4c9-3596f39b7578">
   <name>质量标准</name>
   <parentId>11e7-ef13-4f4e5473-8f99-af63cc0890b3</parentId>
-  <width>80px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef13-4f4e5473-8f99-af63cc0890b3</parentView>

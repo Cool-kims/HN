@@ -2,7 +2,7 @@
 <column id="11e7-d4d8-57752957-b0cf-41bab8fafee8">
   <name>型号规格</name>
   <parentId>11e7-ef16-894be1ff-8f99-af63cc0890b3</parentId>
-  <width>120px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef16-894be1ff-8f99-af63cc0890b3</parentView>

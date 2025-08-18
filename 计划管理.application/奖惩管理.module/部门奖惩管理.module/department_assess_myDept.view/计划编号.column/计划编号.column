@@ -2,7 +2,7 @@
 <column id="11e3-4a9f-c464ea1b-ba70-679dc534e2ac">
   <name>计划编号</name>
   <parentId>11e9-7a26-62fc04b6-9820-539e9af1e136</parentId>
-  <width>80px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e9-7a26-62fc04b6-9820-539e9af1e136</parentView>

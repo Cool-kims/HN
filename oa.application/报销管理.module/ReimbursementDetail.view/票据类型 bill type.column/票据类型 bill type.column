@@ -2,7 +2,7 @@
 <column id="__X0pkS6PoPfmrXP2yNP1">
   <name>票据类型 bill type</name>
   <parentId>__8sCVBGIp1LimmxxrJgD</parentId>
-  <width>200</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <beforeScript><![CDATA[]]></beforeScript>

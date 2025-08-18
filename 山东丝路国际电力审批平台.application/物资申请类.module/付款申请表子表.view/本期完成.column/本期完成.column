@@ -2,7 +2,7 @@
 <column id="11e8-005d-92fe0734-8497-93502d158b33">
   <name>本期完成</name>
   <parentId>11e8-005d-92fe0730-8497-93502d158b33</parentId>
-  <width>100px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e8-005d-92fe0730-8497-93502d158b33</parentView>

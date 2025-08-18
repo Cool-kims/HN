@@ -2,7 +2,7 @@
 <column id="11e7-d740-8b253665-ae95-47caf4f32d12">
   <name>联系人</name>
   <parentId>11e7-ef14-ffacfa2c-8f99-af63cc0890b3</parentId>
-  <width>120px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef14-ffacfa2c-8f99-af63cc0890b3</parentView>

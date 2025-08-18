@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<activity id="__dXvEHRwLyLMpyYSED6y">
+<activity id="__W1hRzB0mCl52ddyQOz0">
   <name>保存并启动流程</name>
   <parentId>__11f0-05f9-09a7e9a5-a6ad-3b96a4b440c9</parentId>
   <type>4</type>
@@ -14,7 +14,7 @@ var formname="";
 if(filename!=null) {
 formname = filename.substring(filename.lastIndexOf("/")+1, filename.length);
 }
-if(number==null||number.trim().length()<=0){
+if(number==null||number.trim().length<=0){
   number=getNextNo(formname,'编号','YDZJYSZJSPD');
   doc.findItem("编号").setValue(number);
 }
@@ -22,8 +22,20 @@ if(number==null||number.trim().length()<=0){
   <afterActionScript><![CDATA[]]></afterActionScript>
   <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
   <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
-  <hiddenScript><![CDATA[]]></hiddenScript>
-  <readonlyScript><![CDATA[]]></readonlyScript>
+  <hiddenScript><![CDATA[var doc=getCurrentDocument();
+var fstate=doc.getStateid();
+var booleans=true;
+if(fstate==null){
+	booleans=false;
+}
+booleans;]]></hiddenScript>
+  <readonlyScript><![CDATA[var booleans=true;
+var bzr=getItemValueAsString("编制人");
+var dlr=getWebUser().getName();
+if(dlr==(bzr)){
+booleans=false;
+}
+booleans;]]></readonlyScript>
   <startFlowScript><![CDATA[]]></startFlowScript>
   <editMode>0</editMode>
   <fileNameScript><![CDATA[]]></fileNameScript>

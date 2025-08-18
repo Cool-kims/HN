@@ -2,7 +2,7 @@
 <column id="__DGQFCbaEhNa3S0kLuky">
   <name>报销类别 Reimbursement category</name>
   <parentId>__8sCVBGIp1LimmxxrJgD</parentId>
-  <width>200</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <beforeScript><![CDATA[]]></beforeScript>

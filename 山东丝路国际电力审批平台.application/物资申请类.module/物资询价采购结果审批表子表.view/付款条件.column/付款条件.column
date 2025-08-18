@@ -2,7 +2,7 @@
 <column id="11e7-d89f-c2b1a0c4-ae95-47caf4f32d12">
   <name>付款条件</name>
   <parentId>11e7-ef16-894c7e50-8f99-af63cc0890b3</parentId>
-  <width>80px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef16-894c7e50-8f99-af63cc0890b3</parentView>

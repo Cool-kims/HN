@@ -2,7 +2,7 @@
 <column id="11e8-6986-dd1b7bde-9dd9-7742dbd80144">
   <name>维修维护内容</name>
   <parentId>11e8-6986-dd1b7bdd-9dd9-7742dbd80144</parentId>
-  <width>500px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e8-6986-dd1b7bdd-9dd9-7742dbd80144</parentView>

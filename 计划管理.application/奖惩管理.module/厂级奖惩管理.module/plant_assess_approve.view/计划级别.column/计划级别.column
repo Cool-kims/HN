@@ -2,7 +2,7 @@
 <column id="11e3-4b78-66a27bce-9e60-2fb8180195a0">
   <name>计划级别</name>
   <parentId>11e9-7a26-62fc52dd-9820-539e9af1e136</parentId>
-  <width>55px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e9-7a26-62fc52dd-9820-539e9af1e136</parentView>

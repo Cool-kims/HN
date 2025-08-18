@@ -2,7 +2,7 @@
 <column id="11e8-01c7-b6edaffb-b72e-e754fb65a041">
   <name>结算总价</name>
   <parentId>11e8-01c7-b6edaff5-b72e-e754fb65a041</parentId>
-  <width>100px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e8-01c7-b6edaff5-b72e-e754fb65a041</parentView>

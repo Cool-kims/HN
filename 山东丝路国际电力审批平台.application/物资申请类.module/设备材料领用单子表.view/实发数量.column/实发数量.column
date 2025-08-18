@@ -2,7 +2,7 @@
 <column id="11e7-da5c-11c18137-ae95-47caf4f32d12">
   <name>实发数量</name>
   <parentId>11e7-ef16-894ca565-8f99-af63cc0890b3</parentId>
-  <width>12%</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef16-894ca565-8f99-af63cc0890b3</parentView>

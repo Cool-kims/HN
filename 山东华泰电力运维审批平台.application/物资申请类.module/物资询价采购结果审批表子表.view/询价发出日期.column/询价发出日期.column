@@ -2,7 +2,7 @@
 <column id="11e7-d89f-c2b1a0c0-ae95-47caf4f32d12">
   <name>询价发出日期</name>
   <parentId>11e7-ef14-67ed526c-8f99-af63cc0890b3</parentId>
-  <width>160px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef14-67ed526c-8f99-af63cc0890b3</parentView>

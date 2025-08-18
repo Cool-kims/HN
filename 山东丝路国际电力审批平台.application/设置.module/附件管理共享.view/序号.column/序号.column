@@ -2,7 +2,7 @@
 <column id="11e3-e7a9-7e56704c-8083-9d9a7554ffba">
   <name>序号</name>
   <parentId>11e7-ef16-89485f35-8f99-af63cc0890b3</parentId>
-  <width>40px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef16-89485f35-8f99-af63cc0890b3</parentView>

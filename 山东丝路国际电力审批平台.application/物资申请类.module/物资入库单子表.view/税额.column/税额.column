@@ -2,7 +2,7 @@
 <column id="11e8-5dae-e784c1d3-b989-097caeda21f3">
   <name>税额</name>
   <parentId>11e7-ef16-894bbaeb-8f99-af63cc0890b3</parentId>
-  <width>110px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef16-894bbaeb-8f99-af63cc0890b3</parentView>

@@ -2,7 +2,7 @@
 <column id="11e7-d658-3475ca01-ae95-47caf4f32d12">
   <name>物资名称</name>
   <parentId>11e7-ef14-67ed0444-8f99-af63cc0890b3</parentId>
-  <width>80px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e7-ef14-67ed0444-8f99-af63cc0890b3</parentView>

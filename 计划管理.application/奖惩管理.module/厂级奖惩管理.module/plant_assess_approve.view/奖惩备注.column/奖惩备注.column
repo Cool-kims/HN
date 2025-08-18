@@ -2,7 +2,7 @@
 <column id="11e3-5d57-482a33ec-9c02-23a16b519783">
   <name>奖惩备注</name>
   <parentId>11e9-7a26-62fc52dd-9820-539e9af1e136</parentId>
-  <width>250px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e9-7a26-62fc52dd-9820-539e9af1e136</parentView>

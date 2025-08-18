@@ -2,7 +2,7 @@
 <column id="11e3-4c11-add180d1-ab7e-1b0ecc67ce0a">
   <name>流程状态</name>
   <parentId>11e9-7a26-62fc2bcb-9820-539e9af1e136</parentId>
-  <width>60px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e9-7a26-62fc2bcb-9820-539e9af1e136</parentView>

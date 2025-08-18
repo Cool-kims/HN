@@ -2,7 +2,7 @@
 <column id="__O54IY5nkJORcrIyvDza">
   <name>报销金额(元) Reimbursement amount (yuan)</name>
   <parentId>__8sCVBGIp1LimmxxrJgD</parentId>
-  <width>200</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <beforeScript><![CDATA[]]></beforeScript>

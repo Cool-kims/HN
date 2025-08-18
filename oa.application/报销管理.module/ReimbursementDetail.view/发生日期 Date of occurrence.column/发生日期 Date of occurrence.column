@@ -2,7 +2,7 @@
 <column id="__i1TWUGwQ3GvfjxEezlA">
   <name>发生日期 Date of occurrence</name>
   <parentId>__8sCVBGIp1LimmxxrJgD</parentId>
-  <width>200</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <beforeScript><![CDATA[]]></beforeScript>

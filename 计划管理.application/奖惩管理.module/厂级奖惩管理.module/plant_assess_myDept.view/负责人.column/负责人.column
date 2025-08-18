@@ -2,7 +2,7 @@
 <column id="11e3-4b78-657f0a34-9e60-2fb8180195a0">
   <name>负责人</name>
   <parentId>11e9-7a26-62fc2bcc-9820-539e9af1e136</parentId>
-  <width>50px</width>
+  <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <parentView>11e9-7a26-62fc2bcc-9820-539e9af1e136</parentView>
