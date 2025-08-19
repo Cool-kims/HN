@@ -5,13 +5,13 @@
   <description>差旅费报销单 Travel claims reimbursement</description>
   <type>00</type>
   <opentarget>detail</opentarget>
-  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
   <superior>11e7-ef13-4f49727a-8f99-af63cc0890b3</superior>
   <linkName>差旅费报销单 Travel claims reimbursement</linkName>
   <linkType>01</linkType>
   <moduleid>11e7-ef13-4f3aa555-8f99-af63cc0890b3</moduleid>
   <directory>portal</directory>
-  <actionContent><![CDATA[11e7-fb8c-1a45e1ad-b36b-a111d0b35b26]]></actionContent>
+  <actionContent><![CDATA[__24VfxZskEUc0vi0hPUT]]></actionContent>
   <queryString><![CDATA[[]]]></queryString>
   <permissionType>private</permissionType>
   <showType>0</showType>
@@ -19,4 +19,5 @@
   <isUsual>false</isUsual>
   <isMobile>false</isMobile>
   <orderno>205</orderno>
+  <showtotalrow>false</showtotalrow>
 </resourceVO>

@@ -3,12 +3,10 @@
   <name>提交</name>
   <parentId>__11e7-ef14-ff9a3585-8f99-af63cc0890b3</parentId>
   <type>5</type>
-  <onActionForm></onActionForm>
-  <onActionView></onActionView>
   <onActionFlow>11e7-ef14-ffb02eba-8f99-af63cc0890b3</onActionFlow>
   <onActionPrint></onActionPrint>
   <colorType>default</colorType>
-  <beforeActionScript><![CDATA[#include "comm";
+  <beforeActionScript><![CDATA[/*#include "comm";
 
 var doc=getCurrentDocument();
 //第一节点
@@ -38,9 +36,11 @@ if (isFirtNode1){
 		}
 	}
 	//str;
-}
+}*/
 ]]></beforeActionScript>
   <afterActionScript><![CDATA[]]></afterActionScript>
+  <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
+  <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
   <hiddenScript><![CDATA[var doc=getCurrentDocument();
 var fstate=doc.getStateid();
 //println("fstate==="+fstate);
@@ -52,22 +52,21 @@ booleans;]]></hiddenScript>
   <readonlyScript><![CDATA[]]></readonlyScript>
   <startFlowScript><![CDATA[]]></startFlowScript>
   <editMode>0</editMode>
-  <flowShowType>ST01</flowShowType>
   <fileNameScript><![CDATA[]]></fileNameScript>
+  <iconurl></iconurl>
   <orderno>2</orderno>
   <stateToShow></stateToShow>
   <parentForm>__11e7-ef14-ff9a3585-8f99-af63cc0890b3</parentForm>
-  <impmappingconfigid></impmappingconfigid>
   <jumpType>0</jumpType>
-  <expSub>true</expSub>
+  <expSub>false</expSub>
   <icon></icon>
-  <disableFlowNode>true</disableFlowNode>
-  <changeFlowOperator>true</changeFlowOperator>
-  <changeFlowCc>true</changeFlowCc>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
   <multiLanguageLabel></multiLanguageLabel>
   <dispatcherMode>0</dispatcherMode>
   <dispatcherUrl><![CDATA[]]></dispatcherUrl>
-  <dispatcherParams><![CDATA[]]></dispatcherParams>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
   <jumpMode>0</jumpMode>
   <jumpActOpenType>0</jumpActOpenType>
   <withOld>false</withOld>
@@ -80,6 +79,7 @@ booleans;]]></hiddenScript>
   <contextMenu>false</contextMenu>
   <showInToolbar>true</showInToolbar>
   <transpond>选择</transpond>
-  <targetList></targetList>
+  <targetList>|</targetList>
+  <label><![CDATA[]]></label>
   <processPreview>false</processPreview>
 </activity>

@@ -11,7 +11,7 @@
   <type>COLUMN_TYPE_FIELD</type>
   <labelScript><![CDATA[]]></labelScript>
   <formid>__11e8-21e8-78c78142-991c-29ec8acb9806</formid>
-  <fieldName>合同承办人</fieldName>
+  <fieldName>编制人</fieldName>
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
   <fontColor></fontColor>

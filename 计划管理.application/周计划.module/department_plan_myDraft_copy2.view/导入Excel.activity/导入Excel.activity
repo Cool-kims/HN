@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<activity id="__vZW4U4IOq02slq8aOxR">
+  <name>导入Excel</name>
+  <parentId>11e9-7a26-62fcc81e-9820-539e9af1e136</parentId>
+  <type>27</type>
+  <onActionForm></onActionForm>
+  <onActionView></onActionView>
+  <colorType></colorType>
+  <beforeActionScript><![CDATA[]]></beforeActionScript>
+  <afterActionScript><![CDATA[//部门计划/我的草稿计划/Excel导入执行后脚本，批量启动导入数据的流程
+var flowid = "11e9-7a26-62fe9d07-9820-539e9af1e136";	//流程id
+var sql = "select * from tlk_department_plan_copy1 where (statelabel is null or statelabel = '')";
+var docs = queryBySQL(sql);
+if(docs!=null && docs.size()>0){
+	for(var it = docs.iterator();it.hasNext();){
+        var process = getDocumentProcess();//申明文档业务处理类
+        var doc = it.next();
+        var params = createParamsTable();               
+        params.setParameter("_flowid",flowid);         
+        process.doStartFlowOrUpdate(doc,params,getWebUser());
+	}
+}]]></afterActionScript>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <readonlyScript><![CDATA[]]></readonlyScript>
+  <editMode>0</editMode>
+  <fileNameScript><![CDATA[]]></fileNameScript>
+  <orderno>1</orderno>
+  <parentView>11e9-7a26-62fcc81e-9820-539e9af1e136</parentView>
+  <impmappingconfigid>11e9-925a-544ac950-8327-9973b9254e25</impmappingconfigid>
+  <jumpType>0</jumpType>
+  <expSub>false</expSub>
+  <icon></icon>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
+  <multiLanguageLabel></multiLanguageLabel>
+  <dispatcherMode>0</dispatcherMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
+  <dispatcherParams><![CDATA[[{"paramKey":"","paramValue":""}]]]></dispatcherParams>
+  <jumpMode>0</jumpMode>
+  <jumpActOpenType>0</jumpActOpenType>
+  <withOld>false</withOld>
+  <actionType>0</actionType>
+  <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
+  <actionSelection>0</actionSelection>
+  <relatedFormId></relatedFormId>
+  <workFlowType>0</workFlowType>
+  <contextMenu>true</contextMenu>
+  <showInToolbar>true</showInToolbar>
+  <label><![CDATA[]]></label>
+  <processPreview>false</processPreview>
+</activity>

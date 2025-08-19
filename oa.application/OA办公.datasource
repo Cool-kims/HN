@@ -6,7 +6,7 @@
   <driverClass>oracle.jdbc.driver.OracleDriver</driverClass>
   <url><![CDATA[jdbc:oracle:thin:@//192.168.88.140:1521/orcl]]></url>
   <username>sppt</username>
-  <password><![CDATA[Teemlink2010]]></password>
+  <password><![CDATA[SPPT]]></password>
   <dbType>1</dbType>
   <poolsize>100</poolsize>
   <timeout>3600</timeout>

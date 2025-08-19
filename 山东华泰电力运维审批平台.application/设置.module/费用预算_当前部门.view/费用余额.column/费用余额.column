@@ -16,13 +16,12 @@ mybalance("费用",money,did,times,cost).toFixed(2)+"";
   <parentView>11e8-2343-f9e649d5-991c-29ec8acb9806</parentView>
   <type>COLUMN_TYPE_SCRIPT</type>
   <labelScript><![CDATA[]]></labelScript>
-  <formid></formid>
   <fieldName></fieldName>
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
   <fontColor></fontColor>
   <orderno>6</orderno>
-  <sum>false</sum>
+  <sum>true</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>
   <orderType>ASC</orderType>
