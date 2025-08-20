@@ -8,13 +8,14 @@
   <expandQueryForm>false</expandQueryForm>
   <orderno>0</orderno>
   <isAllowDrag>true</isAllowDrag>
+  <dataSourceId>11e9-83bd-f221a71c-9b63-ffda5b016ece</dataSourceId>
   <pagination>true</pagination>
   <pageLines>30</pageLines>
   <showTotalRow>true</showTotalRow>
   <refresh>false</refresh>
   <refreshAll>false</refreshAll>
   <newPage>false</newPage>
-  <lastModifyTime class="sql-date">2019-08-18T16:04:36.000+08:00</lastModifyTime>
+  <lastModifyTime>2019-08-18T00:04:36.000+08:00</lastModifyTime>
   <readonly>false</readonly>
   <displayType>relatedForm</displayType>
   <defaultShowMode>month</defaultShowMode>
@@ -25,6 +26,7 @@
   <autoCompose>false</autoCompose>
   <relatedForm>__11e9-7a26-62f52744-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
+  <filterScript><![CDATA[]]></filterScript>
   <sqlFilterScript><![CDATA[var webUser = getWebUser();
 var departments = webUser.getDepartments();
 var depId = "";
@@ -38,10 +40,11 @@ for(var iter = departments.iterator();iter.hasNext();){
 
 	if (depVOId != null && depVOId.trim().length >0){
 		var deptProcess = createProcess("cn.myapps.core.authtime.department.service.DepartmentProcess");
-		var odeps = deptProcess.getSuperiorDeptListExcludeCurrent(depVOId);//当前部门上级的id集合
+		var odeps = getSuperiorDeptList(depVOId);//当前部门上级的id集合
 		if(odeps != null && odeps.size()>0){
 			for (var it =odeps.iterator(); it.hasNext();){
 				var department = it.next();
+				println("===>"+department.getName());
 	            l=department.getLevel();  //获取部门的等级(int类型)0往后部门等级越低。
 	            if(l==1){
 	            	 depId = department.getId();//取得各级部门名称并合并
@@ -114,9 +117,10 @@ if (author != null && author.trim().length > 0) {
 }
 println("本部门综合计划查询11"+sql);
 sql;]]></sqlFilterScript>
+  <procedureFilterScript><![CDATA[]]></procedureFilterScript>
   <filterCondition><![CDATA[[]]]></filterCondition>
   <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
-  <authorityCondition>[{_authFields:'departmentField__pDepartment',_authFieldScope:'default'},{_authFields:'departmentField__pDepartment',_authFieldScope:'allLower'}]</authorityCondition>
+  <authorityCondition>[{"_authFields":"departmentField__pDepartment","_authFieldScope":"default"},{"_authFields":"departmentField__pDepartment","_authFieldScope":"allLower"}]</authorityCondition>
   <openType>1</openType>
   <editMode>02</editMode>
   <width>0</width>

@@ -1,28 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="11e3-46b2-63f5c169-8183-e7f4dcdf2bee">
+<column id="__4kDH88wnasSFM9pMzJk">
   <name>计划级别</name>
   <parentId>11e9-7a26-62faa505-9820-539e9af1e136</parentId>
-  <parentView>11e9-7a26-62faa505-9820-539e9af1e136</parentView>
+  <width></width>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <afterScript><![CDATA[]]></afterScript>
   <type>COLUMN_TYPE_FIELD</type>
+  <labelScript><![CDATA[]]></labelScript>
   <formid>__11e9-7a26-62f463d1-9820-539e9af1e136</formid>
   <fieldName>_pLevel</fieldName>
   <flowReturnCss>false</flowReturnCss>
-  <orderno>7</orderno>
+  <imageName></imageName>
+  <fontColor></fontColor>
+  <orderno>4</orderno>
   <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>
+  <orderType>ASC</orderType>
+  <multiLanguageLabel></multiLanguageLabel>
+  <actionScript><![CDATA[]]></actionScript>
   <clickSorting>true</clickSorting>
+  <sortStandard>00</sortStandard>
+  <jumpMode>00</jumpMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
   <formatType>simple</formatType>
   <thouSign>false</thouSign>
-  <color>000000</color>
+  <color>rgba(0,0,0,1)</color>
   <fontSize>12</fontSize>
-  <groundColor>FFFFFF</groundColor>
+  <groundColor></groundColor>
   <showIcon>false</showIcon>
   <iconMapping></iconMapping>
   <visible>true</visible>
   <visible4ExpExcel>true</visible4ExpExcel>
   <visible4Print>true</visible4Print>
   <visible4PagePrint>true</visible4PagePrint>
+  <showType>01</showType>
+  <mappingField></mappingField>
   <showMoon>false</showMoon>
   <showAsLabel>false</showAsLabel>
   <showAsButton>false</showAsButton>
@@ -32,8 +45,10 @@
   <customIcon>false</customIcon>
   <isFilter>false</isFilter>
   <isShowThisColumn>false</isShowThisColumn>
+  <selectOptionScript><![CDATA[]]></selectOptionScript>
   <isEnter>false</isEnter>
   <isShowExplain>false</isShowExplain>
   <rowMerge>false</rowMerge>
+  <showExplainScript><![CDATA[]]></showExplainScript>
   <jumpActOpenType>0</jumpActOpenType>
 </column>

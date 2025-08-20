@@ -8,13 +8,14 @@
   <expandQueryForm>false</expandQueryForm>
   <orderno>0</orderno>
   <isAllowDrag>true</isAllowDrag>
+  <dataSourceId>11e9-83bd-f221a71c-9b63-ffda5b016ece</dataSourceId>
   <pagination>true</pagination>
   <pageLines>30</pageLines>
   <showTotalRow>true</showTotalRow>
   <refresh>false</refresh>
   <refreshAll>false</refreshAll>
   <newPage>false</newPage>
-  <lastModifyTime class="sql-date">2019-07-25T20:56:39.000+08:00</lastModifyTime>
+  <lastModifyTime>2019-07-25T12:56:39.000+08:00</lastModifyTime>
   <readonly>false</readonly>
   <displayType>relatedForm</displayType>
   <defaultShowMode>month</defaultShowMode>
@@ -23,8 +24,10 @@
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f48ae5-9820-539e9af1e136</searchFormId>
   <autoCompose>false</autoCompose>
+  <styleId>11e9-7a26-62fa309a-9820-539e9af1e136</styleId>
   <relatedForm>__11e9-7a26-62f43cbd-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
+  <filterScript><![CDATA[]]></filterScript>
   <sqlFilterScript><![CDATA[var webUser = getWebUser();
 var departments = webUser.getDepartments();
 var depId = "";
@@ -38,7 +41,7 @@ for(var iter = departments.iterator();iter.hasNext();){
 
 	if (depVOId != null && depVOId.trim().length >0){
 		var deptProcess = createProcess("cn.myapps.core.authtime.department.service.DepartmentProcess");
-		var odeps = deptProcess.getSuperiorDeptListExcludeCurrent(depVOId);//当前部门上级的id集合
+		var odeps = getSuperiorDeptList(depVOId);//当前部门上级的id集合
 		if(odeps != null && odeps.size()>0){
 			for (var it =odeps.iterator(); it.hasNext();){
 				var department = it.next();
@@ -114,9 +117,10 @@ if (author != null && author.trim().length > 0) {
 }
 println("部门本部门计划综合查询"+sql)
 sql;]]></sqlFilterScript>
-  <filterCondition><![CDATA[[{field:'_pNo',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pEndTime',operator:'>=',type:'03',match:'_pEndTime1'},{field:'_pSource',operator:'LIKE',type:'03',match:'_pSource'},{field:'_pTitle',operator:'LIKE',type:'03',match:'_pTitle'},{field:'_pEndTime',operator:'<=',type:'03',match:'_pEndTime2'},{field:'$StateLabel',operator:'LIKE',type:'03',match:'_stateLabel'},{field:'_p2Department',operator:'LIKE',type:'03',match:'_p2Department'},{field:'_pResponsible',operator:'LIKE',type:'03',match:'_pResponsible'},{field:'_isCancel',operator:'LIKE',type:'03',match:'_isCancel'},{field:'_pCheckDepartment',operator:'LIKE',type:'03',match:'_pCheckDepartment'},{field:'_pChecker',operator:'LIKE',type:'03',match:'_pChecker'},{field:'_isDefer',operator:'LIKE',type:'03',match:'_isDefer'},{field:'_p2Type',operator:'LIKE',type:'03',match:'_p2Type'},{field:'$Author',operator:'LIKE',type:'03',match:'_pCreater'}]]]></filterCondition>
+  <procedureFilterScript><![CDATA[]]></procedureFilterScript>
+  <filterCondition><![CDATA[[{"field":"_pNo","operator":"LIKE","type":"03","match":"_pNo","ipField":"","numField":0,"daField":"","sfField":"_pNo","syField":""},{"field":"_pEndTime","operator":">=","type":"03","match":"_pEndTime1","ipField":"","numField":0,"daField":"","sfField":"_pEndTime1","syField":""},{"field":"_pSource","operator":"LIKE","type":"03","match":"_pSource","ipField":"","numField":0,"daField":"","sfField":"_pSource","syField":""},{"field":"_pTitle","operator":"LIKE","type":"03","match":"_pTitle","ipField":"","numField":0,"daField":"","sfField":"_pTitle","syField":""},{"field":"_pEndTime","operator":"<=","type":"03","match":"_pEndTime2","ipField":"","numField":0,"daField":"","sfField":"_pEndTime2","syField":""},{"field":"$StateLabel","operator":"LIKE","type":"03","match":"_stateLabel","ipField":"","numField":0,"daField":"","sfField":"_stateLabel","syField":""},{"field":"_p2Department","operator":"LIKE","type":"03","match":"_p2Department","ipField":"","numField":0,"daField":"","sfField":"_p2Department","syField":""},{"field":"_pResponsible","operator":"LIKE","type":"03","match":"_pResponsible","ipField":"","numField":0,"daField":"","sfField":"_pResponsible","syField":""},{"field":"_isCancel","operator":"LIKE","type":"03","match":"_isCancel","ipField":"","numField":0,"daField":"","sfField":"_isCancel","syField":""},{"field":"_pCheckDepartment","operator":"LIKE","type":"03","match":"_pCheckDepartment","ipField":"","numField":0,"daField":"","sfField":"_pCheckDepartment","syField":""},{"field":"_pChecker","operator":"LIKE","type":"03","match":"_pChecker","ipField":"","numField":0,"daField":"","sfField":"_pChecker","syField":""},{"field":"_isDefer","operator":"LIKE","type":"03","match":"_isDefer","ipField":"","numField":0,"daField":"","sfField":"_isDefer","syField":""},{"field":"_p2Type","operator":"LIKE","type":"03","match":"_p2Type","ipField":"","numField":0,"daField":"","sfField":"_p2Type","syField":""},{"field":"$Author","operator":"LIKE","type":"03","match":"_pCreater","ipField":"","numField":0,"daField":"","sfField":"_pCreater","syField":""}]]]></filterCondition>
   <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
-  <authorityCondition>[{_authFields:'departmentField__pDepartment',_authFieldScope:'default'},{_authFields:'departmentField__pDepartment',_authFieldScope:'allLower'}]</authorityCondition>
+  <authorityCondition>[{"_authFields":"departmentField__pDepartment","_authFieldScope":"default"},{"_authFields":"departmentField__pDepartment","_authFieldScope":"allLower"}]</authorityCondition>
   <openType>1</openType>
   <editMode>02</editMode>
   <width>0</width>

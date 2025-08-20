@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chart id="__ghlziVrWsnuO6xZXasq">
+  <name>周计划报表</name>
+  <parentId>11e9-9cba-e3a4d088-bffc-fd2f695754f0</parentId>
+  <description></description>
+  <scripttext><![CDATA[(function(){
+	try{
+		var nameList=[];
+		var integralList=[];
+		var deptProcess = createProcess("cn.myapps.core.authtime.department.service.DepartmentProcess");
+		var sql ="select domainid,item__pDepartment,sum(item__pAssessTotal) as item__pAssessTotal from tlk_week_assess where item__pDepartment is NOT NULL group by domainid,item__pDepartment ORDER BY ITEM__PASSESSTOTAL DESC";
+		var service = Java.type("cn.myapps.core.designtime.common.service.DesignTimeServiceFactory").resolve("cn.myapps.core.designtime.datasource.service.DataSourceDesignTimeService");
+		var query =	service.queryDataSourceSQL("JhglDataSource",sql,"11e9-83bd-91f5e6cf-9b63-ffda5b016ece");
+		if(query!=null&&query.size()>0){
+			for(var iterator = query.iterator();iterator.hasNext();){
+				var doc = iterator.next();
+				var item__pDepartment = doc.get("item__pDepartment");
+				var deptVo = deptProcess.doView(item__pDepartment);
+				var name="";
+				if(deptVo!=null){
+					name = deptVo.getName();
+				}
+				var item_integral = doc.get("item__pAssessTotal");
+				nameList.push(new String(name));
+				integralList.push(new String(item_integral));
+			}
+		}
+	}catch(e){}
+ var option = {
+    title : {
+        text: '周计划奖惩报表',
+subtext: '数据来自周计划奖惩表'
+    },
+   color:['	#7FFFAA'],
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['奖罚']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+   xAxis: {
+    max: 'dataMax',
+     type : 'category',
+     axisLabel: { 
+		 interval: 0, 
+		 rotate: 45,  // 增大旋转角度，适合更长的文本
+		 margin: 10,  // 增加与轴线的距离，避免文字重叠
+		 formatter: function(value) {
+			 // 超过8个字符自动换行
+			 if (value.length > 8) {
+				 return value.substring(0,8) + '\n' + value.substring(8);
+			 }
+			 return value;
+		 },
+		 // 文字样式调整
+		 textStyle: {
+			 fontSize: 10
+		 }
+	 },
+     data : nameList
+  },
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'奖罚合计',
+            type:'bar',
+            data:integralList,
+        }
+    ]
+};
+
+	println("option--->"+option.toString());
+	return option;
+})
+()]]></scripttext>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <viewId></viewId>
+  <searchFormId></searchFormId>
+  <fontSize>12</fontSize>
+  <chartName></chartName>
+</chart>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="11e9-b8d2-a0f9d0f5-9c70-0ba95739f67e">
+<column id="__3le3WLOeMdNsdCfXuzd">
   <name>执行部门</name>
   <parentId>11e9-7a26-62fa7df2-9820-539e9af1e136</parentId>
   <width></width>
-  <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
-  <parentView>11e9-7a26-62fa7df2-9820-539e9af1e136</parentView>
+  <afterScript><![CDATA[]]></afterScript>
   <type>COLUMN_TYPE_FIELD</type>
+  <labelScript><![CDATA[]]></labelScript>
   <formid>__11e9-7a26-62f463d1-9820-539e9af1e136</formid>
   <fieldName>_pDepartment</fieldName>
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
   <fontColor></fontColor>
-  <orderno>7</orderno>
+  <orderno>5</orderno>
   <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>
@@ -21,38 +21,34 @@
   <actionScript><![CDATA[]]></actionScript>
   <clickSorting>true</clickSorting>
   <sortStandard>00</sortStandard>
-  <jumpMapping></jumpMapping>
-  <mappingform></mappingform>
+  <jumpMode>00</jumpMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
   <formatType>simple</formatType>
-  <decimalsNum></decimalsNum>
   <thouSign>false</thouSign>
-  <decimalsCurr></decimalsCurr>
-  <color>000000</color>
+  <color>rgba(0,0,0,1)</color>
   <fontSize>12</fontSize>
-  <groundColor>FFFFFF</groundColor>
+  <groundColor></groundColor>
   <showIcon>false</showIcon>
   <iconMapping></iconMapping>
-  <buttonType></buttonType>
-  <buttonName></buttonName>
   <visible>true</visible>
   <visible4ExpExcel>true</visible4ExpExcel>
   <visible4Print>true</visible4Print>
   <visible4PagePrint>true</visible4PagePrint>
-  <templateForm></templateForm>
-  <icon></icon>
   <showType>01</showType>
   <mappingField></mappingField>
   <showMoon>false</showMoon>
   <showAsLabel>false</showAsLabel>
   <showAsButton>false</showAsButton>
   <displayType>00</displayType>
-  <displayLength></displayLength>
+  <displayLength>-1</displayLength>
   <showTitle>true</showTitle>
   <customIcon>false</customIcon>
   <isFilter>false</isFilter>
   <isShowThisColumn>false</isShowThisColumn>
+  <selectOptionScript><![CDATA[]]></selectOptionScript>
   <isEnter>false</isEnter>
   <isShowExplain>false</isShowExplain>
   <rowMerge>false</rowMerge>
+  <showExplainScript><![CDATA[]]></showExplainScript>
   <jumpActOpenType>0</jumpActOpenType>
 </column>

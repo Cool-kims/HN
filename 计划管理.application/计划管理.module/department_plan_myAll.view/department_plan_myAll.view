@@ -8,13 +8,14 @@
   <expandQueryForm>false</expandQueryForm>
   <orderno>0</orderno>
   <isAllowDrag>true</isAllowDrag>
+  <dataSourceId></dataSourceId>
   <pagination>true</pagination>
   <pageLines>30</pageLines>
   <showTotalRow>true</showTotalRow>
   <refresh>false</refresh>
   <refreshAll>false</refreshAll>
   <newPage>false</newPage>
-  <lastModifyTime class="sql-date">2019-07-25T21:04:49.000+08:00</lastModifyTime>
+  <lastModifyTime>2019-07-25T13:04:49.000+08:00</lastModifyTime>
   <readonly>false</readonly>
   <displayType>relatedForm</displayType>
   <defaultShowMode>month</defaultShowMode>
@@ -23,11 +24,15 @@
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f4b1fa-9820-539e9af1e136</searchFormId>
   <autoCompose>false</autoCompose>
+  <styleId>11e9-7a26-62f43cbf-9820-539e9af1e136</styleId>
   <relatedForm>__11e9-7a26-62f43cbd-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
-  <filterCondition><![CDATA[[{field:'_pNo',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pEndTime',operator:'>=',type:'03',match:'_pEndTime1'},{field:'_pSource',operator:'LIKE',type:'03',match:'_pSource'},{field:'_pTitle',operator:'LIKE',type:'03',match:'_pTitle'},{field:'_pEndTime',operator:'<=',type:'03',match:'_pEndTime2'},{field:'_p2Department',operator:'LIKE',type:'03',match:'_p2Department'},{field:'_pResponsible',operator:'LIKE',type:'03',match:'_pResponsible'},{field:'_pCheckDepartment',operator:'LIKE',type:'03',match:'_pCheckDepartment'},{field:'_pChecker',operator:'LIKE',type:'03',match:'_pChecker'},{field:'_p2Type',operator:'LIKE',type:'03',match:'_p2Type'}]]]></filterCondition>
+  <filterScript><![CDATA[]]></filterScript>
+  <sqlFilterScript><![CDATA[]]></sqlFilterScript>
+  <procedureFilterScript><![CDATA[]]></procedureFilterScript>
+  <filterCondition><![CDATA[[{"field":"_pNo","operator":"LIKE","type":"03","match":"_pNo","ipField":"","numField":0,"daField":"","sfField":"_pNo","syField":""},{"field":"_pEndTime","operator":">=","type":"03","match":"_pEndTime1","ipField":"","numField":0,"daField":"","sfField":"_pEndTime1","syField":""},{"field":"_pSource","operator":"LIKE","type":"03","match":"_pSource","ipField":"","numField":0,"daField":"","sfField":"_pSource","syField":""},{"field":"_pTitle","operator":"LIKE","type":"03","match":"_pTitle","ipField":"","numField":0,"daField":"","sfField":"_pTitle","syField":""},{"field":"_pEndTime","operator":"<=","type":"03","match":"_pEndTime2","ipField":"","numField":0,"daField":"","sfField":"_pEndTime2","syField":""},{"field":"_p2Department","operator":"LIKE","type":"03","match":"_p2Department","ipField":"","numField":0,"daField":"","sfField":"_p2Department","syField":""},{"field":"_pResponsible","operator":"LIKE","type":"03","match":"_pResponsible","ipField":"","numField":0,"daField":"","sfField":"_pResponsible","syField":""},{"field":"_pCheckDepartment","operator":"LIKE","type":"03","match":"_pCheckDepartment","ipField":"","numField":0,"daField":"","sfField":"_pCheckDepartment","syField":""},{"field":"_pChecker","operator":"LIKE","type":"03","match":"_pChecker","ipField":"","numField":0,"daField":"","sfField":"_pChecker","syField":""},{"field":"_p2Type","operator":"LIKE","type":"03","match":"_p2Type","ipField":"","numField":0,"daField":"","sfField":"_p2Type","syField":""}]]]></filterCondition>
   <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
-  <authorityCondition>[{_authFields:'author',_authFieldScope:'itself'}]</authorityCondition>
+  <authorityCondition>[{"_authFields":"author","_authFieldScope":"itself"}]</authorityCondition>
   <openType>1</openType>
   <editMode>00</editMode>
   <width>0</width>

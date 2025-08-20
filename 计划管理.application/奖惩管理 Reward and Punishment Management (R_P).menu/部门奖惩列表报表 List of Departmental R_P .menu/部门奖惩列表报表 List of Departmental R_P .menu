@@ -2,16 +2,16 @@
 <resourceVO id="11e9-7a26-62fa0938-9820-539e9af1e136">
   <name>部门奖惩列表报表 List of Departmental R_P </name>
   <parentId>11e9-7a26-62fa0931-9820-539e9af1e136</parentId>
-  <description>部门奖惩列表报表 List of Departmental R&P </description>
+  <description>部门奖惩列表报表 List of Departmental RP </description>
   <type>00</type>
   <opentarget>detail</opentarget>
-  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
   <superior>11e9-7a26-62fa0931-9820-539e9af1e136</superior>
-  <linkName>部门奖惩列表报表 List of Departmental R&P </linkName>
+  <linkName>部门奖惩列表报表 List of Departmental RP </linkName>
   <linkType>02</linkType>
   <moduleid>11e9-7a26-62f4d911-9820-539e9af1e136</moduleid>
   <directory>portal</directory>
-  <actionContent><![CDATA[11e9-7a26-62f43cb0-9820-539e9af1e136]]></actionContent>
+  <actionContent><![CDATA[__Xe3k8ZBurq3pggxjtHy]]></actionContent>
   <queryString><![CDATA[[]]]></queryString>
   <permissionType>public</permissionType>
   <showType>0</showType>
@@ -19,4 +19,5 @@
   <isUsual>false</isUsual>
   <isMobile>false</isMobile>
   <orderno>9</orderno>
+  <showtotalrow>false</showtotalrow>
 </resourceVO>

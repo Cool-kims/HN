@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="11e9-aef5-118b1a20-9896-1df69bbca83d">
+<column id="__H4o9hXnINNtpaafvd2u">
   <name>专项</name>
   <parentId>11e9-7a26-62fb4155-9820-539e9af1e136</parentId>
   <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
+  <beforeScript><![CDATA[]]></beforeScript>
+  <afterScript><![CDATA[]]></afterScript>
   <parentView>11e9-7a26-62fb4155-9820-539e9af1e136</parentView>
   <type>COLUMN_TYPE_FIELD</type>
+  <labelScript><![CDATA[]]></labelScript>
   <formid>__11e9-7a26-62f463d1-9820-539e9af1e136</formid>
   <fieldName>_pSpecial</fieldName>
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
   <fontColor></fontColor>
-  <orderno>16</orderno>
+  <orderno>9</orderno>
   <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>
@@ -22,17 +25,20 @@
   <clickSorting>true</clickSorting>
   <sortStandard>00</sortStandard>
   <jumpMapping></jumpMapping>
+  <jumpMode>00</jumpMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
   <mappingform></mappingform>
   <formatType>simple</formatType>
-  <decimalsNum></decimalsNum>
+  <decimalsNum>1</decimalsNum>
   <thouSign>false</thouSign>
-  <decimalsCurr></decimalsCurr>
-  <color>000000</color>
+  <decimalsCurr>1</decimalsCurr>
+  <currType>zh_CN</currType>
+  <color>rgba(0,0,0,1)</color>
   <fontSize>12</fontSize>
-  <groundColor>FFFFFF</groundColor>
+  <groundColor></groundColor>
   <showIcon>false</showIcon>
   <iconMapping></iconMapping>
-  <buttonType></buttonType>
+  <buttonType>00</buttonType>
   <buttonName></buttonName>
   <visible>true</visible>
   <visible4ExpExcel>true</visible4ExpExcel>
@@ -51,8 +57,10 @@
   <customIcon>false</customIcon>
   <isFilter>false</isFilter>
   <isShowThisColumn>false</isShowThisColumn>
+  <selectOptionScript><![CDATA[]]></selectOptionScript>
   <isEnter>false</isEnter>
   <isShowExplain>false</isShowExplain>
   <rowMerge>false</rowMerge>
+  <showExplainScript><![CDATA[]]></showExplainScript>
   <jumpActOpenType>0</jumpActOpenType>
 </column>

@@ -40,7 +40,7 @@ for(var iter = departments.iterator();iter.hasNext();){
 
     if (depVOId != null && depVOId.trim().length >0){
         var deptProcess = createProcess("cn.myapps.core.authtime.department.service.DepartmentProcess");
-        var odeps = deptProcess.getSuperiorDeptListExcludeCurrent(depVOId);//当前部门上级的id集合
+        var odeps = getSuperiorDeptList(depVOId);//当前部门上级的id集合
         if(odeps != null && odeps.size()>0){
             for (var it =odeps.iterator(); it.hasNext();){
                 var department = it.next();

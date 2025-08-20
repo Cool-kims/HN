@@ -8,13 +8,14 @@
   <expandQueryForm>false</expandQueryForm>
   <orderno>0</orderno>
   <isAllowDrag>true</isAllowDrag>
+  <dataSourceId>11e9-83bd-f221a71c-9b63-ffda5b016ece</dataSourceId>
   <pagination>true</pagination>
   <pageLines>30</pageLines>
   <showTotalRow>true</showTotalRow>
   <refresh>false</refresh>
   <refreshAll>false</refreshAll>
   <newPage>false</newPage>
-  <lastModifyTime class="sql-date">2020-04-26T14:25:44.000+08:00</lastModifyTime>
+  <lastModifyTime>2020-04-26T06:25:44.000+08:00</lastModifyTime>
   <readonly>false</readonly>
   <displayType>relatedForm</displayType>
   <defaultShowMode>month</defaultShowMode>
@@ -25,6 +26,7 @@
   <autoCompose>false</autoCompose>
   <relatedForm>__11e9-7a26-62f463d1-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
+  <filterScript><![CDATA[]]></filterScript>
   <sqlFilterScript><![CDATA[//月度我的执行计划视图Sql
 var webUser = getWebUser();
 var userName = webUser.getName();
@@ -123,8 +125,10 @@ if (_pSpecial != null && _pSpecial.trim().length > 0) {
     sql += " and ITEM__pSpecial like  '%" + _pSpecial + "%'";
 }
 sql;]]></sqlFilterScript>
-  <filterCondition><![CDATA[[{field:'_pNo',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pEndTime',operator:'>=',type:'03',match:'_pEndTime1'},{field:'_pType',operator:'=',type:'00',match:'月度'},{field:'_pTitle',operator:'LIKE',type:'03',match:'_pTitle'},{field:'_pEndTime',operator:'<=',type:'03',match:'_pEndTime2'},{field:'_pLevel',operator:'LIKE',type:'03',match:'_pLevel'},{field:'_pDepartment',operator:'LIKE',type:'03',match:'_pDepartment'},{field:'_p2Department',operator:'LIKE',type:'03',match:'_p2Department'},{field:'_pCheckDepartment',operator:'LIKE',type:'03',match:'_pCheckDepartment'},{field:'_pChecker',operator:'LIKE',type:'03',match:'_pChecker'},{field:'_isDefer',operator:'LIKE',type:'03',match:'_isDefer'},{field:'_pSpecial',operator:'=',type:'03',match:'_pSpecial'},{field:'_pSource',operator:'LIKE',type:'03',match:'_pSource'},{field:'$StateLabel',operator:'=',type:'00',match:'计划执行'},{field:'_pResponsible',operator:'LIKE',type:'04',match:'curruserid'}]]]></filterCondition>
+  <procedureFilterScript><![CDATA[]]></procedureFilterScript>
+  <filterCondition><![CDATA[[{"field":"_pNo","operator":"LIKE","type":"03","match":"_pNo","ipField":"","numField":0,"daField":"","sfField":"_pNo","syField":""},{"field":"_pEndTime","operator":">=","type":"03","match":"_pEndTime1","ipField":"","numField":0,"daField":"","sfField":"_pEndTime1","syField":""},{"field":"_pType","operator":"=","type":"00","match":"月度","ipField":"月度","numField":0,"daField":"","sfField":"","syField":""},{"field":"_pTitle","operator":"LIKE","type":"03","match":"_pTitle","ipField":"","numField":0,"daField":"","sfField":"_pTitle","syField":""},{"field":"_pEndTime","operator":"<=","type":"03","match":"_pEndTime2","ipField":"","numField":0,"daField":"","sfField":"_pEndTime2","syField":""},{"field":"_pLevel","operator":"LIKE","type":"03","match":"_pLevel","ipField":"","numField":0,"daField":"","sfField":"_pLevel","syField":""},{"field":"_pDepartment","operator":"LIKE","type":"03","match":"_pDepartment","ipField":"","numField":0,"daField":"","sfField":"_pDepartment","syField":""},{"field":"_p2Department","operator":"LIKE","type":"03","match":"_p2Department","ipField":"","numField":0,"daField":"","sfField":"_p2Department","syField":""},{"field":"_pCheckDepartment","operator":"LIKE","type":"03","match":"_pCheckDepartment","ipField":"","numField":0,"daField":"","sfField":"_pCheckDepartment","syField":""},{"field":"_pChecker","operator":"LIKE","type":"03","match":"_pChecker","ipField":"","numField":0,"daField":"","sfField":"_pChecker","syField":""},{"field":"_isDefer","operator":"LIKE","type":"03","match":"_isDefer","ipField":"","numField":0,"daField":"","sfField":"_isDefer","syField":""},{"field":"_pSpecial","operator":"=","type":"03","match":"_pSpecial","ipField":"","numField":0,"daField":"","sfField":"_pSpecial","syField":""},{"field":"_pSource","operator":"LIKE","type":"03","match":"_pSource","ipField":"","numField":0,"daField":"","sfField":"_pSource","syField":""},{"field":"$StateLabel","operator":"=","type":"00","match":"计划执行","ipField":"计划执行","numField":0,"daField":"","sfField":"","syField":""},{"field":"_pResponsible","operator":"LIKE","type":"04","match":"curruserid","ipField":"","numField":0,"daField":"","sfField":"","syField":"curruserid"}]]]></filterCondition>
   <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <authorityCondition>[]</authorityCondition>
   <openType>1</openType>
   <editMode>02</editMode>
   <width>0</width>

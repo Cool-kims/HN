@@ -145,7 +145,7 @@
       
    if (depVOId != null @amp;@amp; depVOId.trim().length @gt;0){    
    var deptProcess = createProcess(@quot;cn.myapps.core.authtime.department.service.DepartmentProcess@quot;);    
-   var odeps = deptProcess.getSuperiorDeptListExcludeCurrent(depVOId);//&#24403;&#21069;&#37096;&#38376;&#19978;&#32423;&#30340;id&#38598;&#21512;    
+   var odeps = getSuperiorDeptList(depVOId);//&#24403;&#21069;&#37096;&#38376;&#19978;&#32423;&#30340;id&#38598;&#21512;    
    if(odeps != null @amp;@amp; odeps.size()@gt;0){    
    for (var it =odeps.iterator(); it.hasNext();){    
    var department = it.next();    
