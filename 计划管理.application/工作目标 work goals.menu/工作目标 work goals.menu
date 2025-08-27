@@ -5,11 +5,12 @@
   <description>工作目标 work goals</description>
   <type>00</type>
   <opentarget>detail</opentarget>
-  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <ico>{"icon":"/uploads/lib/icon/p80_Record2.png","icontype":"img"}</ico>
   <linkName>工作目标 work goals</linkName>
+  <linkType></linkType>
   <moduleid>11e9-7a26-62f5002e-9820-539e9af1e136</moduleid>
   <directory>portal</directory>
-  <actionContent><![CDATA[11e9-7a26-62fc52e1-9820-539e9af1e136]]></actionContent>
+  <actionContent><![CDATA[]]></actionContent>
   <queryString><![CDATA[[]]]></queryString>
   <permissionType>public</permissionType>
   <showType>0</showType>
@@ -17,5 +18,5 @@
   <isUsual>false</isUsual>
   <isMobile>false</isMobile>
   <orderno>5</orderno>
-  <showtotalrow>true</showtotalrow>
+  <showtotalrow>false</showtotalrow>
 </resourceVO>

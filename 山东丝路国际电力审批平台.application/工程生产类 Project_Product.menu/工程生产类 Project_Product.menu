@@ -2,12 +2,14 @@
 <resourceVO id="11e7-ef16-8947ea64-8f99-af63cc0890b3">
   <name>工程生产类 Project_Product</name>
   <parentId>11e7-ef12-74ef29ec-8f99-af63cc0890b3</parentId>
-  <description>工程生产类 Project&Product</description>
+  <description>工程生产类 ProjectProduct</description>
   <type>00</type>
   <opentarget>detail</opentarget>
-  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
-  <linkName>工程生产类 Project&Product</linkName>
+  <ico>{"icon":"/uploads/lib/icon/p27_Repair.png","icontype":"img"}</ico>
+  <linkName>工程生产类 ProjectProduct</linkName>
+  <linkType></linkType>
   <directory>portal</directory>
+  <actionContent><![CDATA[]]></actionContent>
   <queryString><![CDATA[[]]]></queryString>
   <permissionType>private</permissionType>
   <showType>0</showType>
@@ -15,4 +17,5 @@
   <isUsual>false</isUsual>
   <isMobile>false</isMobile>
   <orderno>3</orderno>
+  <showtotalrow>false</showtotalrow>
 </resourceVO>

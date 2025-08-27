@@ -189,12 +189,12 @@ try {
 				userId = _pResponsible;
 			}
 	        var user = getUserById(userId);
-	        var webuser = new Packages.cn.myapps.core.user.action.WebUser(user);
+	        var webuser = new Packages.cn.myapps.core.web.WebUser(user);
 	        var process = getDocumentProcess();//申明文档业务处理类
 	        var doc = process.doNew(form,webuser,createParamsTable());//创建记录
 //	        doc.setFlowid("flowid");//flowid为对应的流程Id.
 	        
-			var uuid = new (Java.type('cn.myapps.util.sequence.Sequence'))();
+			var uuid = new (Java.type('cn.myapps.core.util.sequence.Sequence'))();
 			doc.setId(uuid.getSequence());
 			doc.addStringItem("_pNo",_pNo);
 			doc.addStringItem("_pTitle",_pTitle);
@@ -612,12 +612,12 @@ try {
 	        }
 			println("===================_pNo-->"+_pNo);
 			println("===================user-->"+user);
-	        var webuser = new Packages.cn.myapps.core.user.action.WebUser(user);
+	        var webuser = new Packages.cn.myapps.core.web.WebUser(user);
 	        var process = getDocumentProcess();//申明文档业务处理类
 	        var doc = process.doNew(form,webuser,createParamsTable());//创建记录
 //	        doc.setFlowid("flowid");//flowid为对应的流程Id.
 
-			var uuid = new (Java.type('cn.myapps.util.sequence.Sequence'))();
+			var uuid = new (Java.type('cn.myapps.core.util.sequence.Sequence'))();
 			doc.setId(uuid.getSequence());
 			doc.addStringItem("_pNo",_pNo);
 			doc.addStringItem("_pTitle",_pTitle);

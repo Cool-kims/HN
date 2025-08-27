@@ -5,9 +5,11 @@
   <description>安全生产类 Safety Product</description>
   <type>00</type>
   <opentarget>detail</opentarget>
-  <ico>{"icon":"/portal/H5/resource/images/icon_menu_default.png","icontype":"img"}</ico>
+  <ico>{"icon":"/uploads/lib/icon/p50_security.png","icontype":"img"}</ico>
   <linkName>安全生产类 Safety Product</linkName>
+  <linkType></linkType>
   <directory>portal</directory>
+  <actionContent><![CDATA[]]></actionContent>
   <queryString><![CDATA[[]]]></queryString>
   <permissionType>private</permissionType>
   <showType>0</showType>
@@ -15,4 +17,5 @@
   <isUsual>false</isUsual>
   <isMobile>false</isMobile>
   <orderno>6</orderno>
+  <showtotalrow>false</showtotalrow>
 </resourceVO>
