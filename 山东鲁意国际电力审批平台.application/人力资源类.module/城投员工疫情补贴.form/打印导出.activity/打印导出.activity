@@ -35,7 +35,7 @@ var url=url1+"/"+getmyprefix()+"nxreport/reportJsp/pubShowRpt.jsp?rptName=CTYGYQ
 url;]]></dispatcherUrl>
   <dispatcherParams><![CDATA[[]]]></dispatcherParams>
   <jumpMode>1</jumpMode>
-  <jumpActOpenType>0</jumpActOpenType>
+  <jumpActOpenType>2</jumpActOpenType>
   <withOld>false</withOld>
   <actionType>0</actionType>
   <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>

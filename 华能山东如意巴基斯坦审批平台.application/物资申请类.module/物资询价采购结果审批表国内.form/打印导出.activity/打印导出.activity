@@ -3,29 +3,28 @@
   <name>打印导出</name>
   <parentId>__11ea-b158-191d4b99-b204-9943e185f520</parentId>
   <type>43</type>
-  <onActionForm></onActionForm>
-  <onActionView></onActionView>
   <onActionFlow></onActionFlow>
   <onActionPrint></onActionPrint>
   <colorType>default</colorType>
   <beforeActionScript><![CDATA[]]></beforeActionScript>
   <afterActionScript><![CDATA[]]></afterActionScript>
+  <retractBeforeActionScript><![CDATA[]]></retractBeforeActionScript>
+  <retractAfterActionScript><![CDATA[]]></retractAfterActionScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <readonlyScript><![CDATA[]]></readonlyScript>
   <startFlowScript><![CDATA[]]></startFlowScript>
   <editMode>0</editMode>
-  <flowShowType>ST01</flowShowType>
   <fileNameScript><![CDATA[]]></fileNameScript>
+  <iconurl></iconurl>
   <orderno>4</orderno>
   <stateToShow></stateToShow>
   <parentForm>__11ea-b158-191d4b99-b204-9943e185f520</parentForm>
-  <impmappingconfigid></impmappingconfigid>
   <jumpType>0</jumpType>
-  <expSub>true</expSub>
+  <expSub>false</expSub>
   <icon></icon>
-  <disableFlowNode>true</disableFlowNode>
-  <changeFlowOperator>true</changeFlowOperator>
-  <changeFlowCc>true</changeFlowCc>
+  <disableFlowNode>false</disableFlowNode>
+  <changeFlowOperator>false</changeFlowOperator>
+  <changeFlowCc>false</changeFlowCc>
   <multiLanguageLabel></multiLanguageLabel>
   <dispatcherMode>0</dispatcherMode>
   <dispatcherUrl><![CDATA[#include "customlibs";
@@ -35,7 +34,7 @@ var url=url1+"/"+getmyprefix()+"nxreport/reportJsp/pubShowRpt.jsp?rptName=WZXJCG
 url;]]></dispatcherUrl>
   <dispatcherParams><![CDATA[[]]]></dispatcherParams>
   <jumpMode>1</jumpMode>
-  <jumpActOpenType>0</jumpActOpenType>
+  <jumpActOpenType>2</jumpActOpenType>
   <withOld>false</withOld>
   <actionType>0</actionType>
   <actionDispatcherUrlScript><![CDATA[]]></actionDispatcherUrlScript>
@@ -46,6 +45,11 @@ url;]]></dispatcherUrl>
   <contextMenu>false</contextMenu>
   <showInToolbar>true</showInToolbar>
   <transpond>选择</transpond>
-  <targetList></targetList>
+  <targetList>|</targetList>
+  <label><![CDATA[]]></label>
   <processPreview>false</processPreview>
-</activity>
+</activity>             
+             
+             
+             
+             
