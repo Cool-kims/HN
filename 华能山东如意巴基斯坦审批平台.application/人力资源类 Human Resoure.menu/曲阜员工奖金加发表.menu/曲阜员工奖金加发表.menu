@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__0h9R6Qu5ON7rf1rDtwy">
+  <name>曲阜员工奖金加发表</name>
+  <parentId>11e7-ef13-4f4999ab-8f99-af63cc0890b3</parentId>
+  <description>曲阜员工奖金加发表</description>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f4999ab-8f99-af63cc0890b3</superior>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f4442cb-8f99-af63cc0890b3</moduleid>
+  <actionContent><![CDATA[__Q9l72ljC5SGG4xwtQGL]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>26</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>             
+             
+             
+             
+             

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceVO id="__y97dq35wypyq8xvQofh">
+  <name>曲阜员工境外补贴发放明细</name>
+  <parentId>11e7-ef13-4f4999ab-8f99-af63cc0890b3</parentId>
+  <description>曲阜员工境外补贴发放明细</description>
+  <multiLanguageLabel></multiLanguageLabel>
+  <opentarget>detail</opentarget>
+  <ico>{"icon":"/uploads/lib/icon_menu_default.png","icontype":"img"}</ico>
+  <superior>11e7-ef13-4f4999ab-8f99-af63cc0890b3</superior>
+  <linkName></linkName>
+  <linkType>01</linkType>
+  <moduleid>11e7-ef13-4f4442cb-8f99-af63cc0890b3</moduleid>
+  <directory></directory>
+  <actionContent><![CDATA[__mXExnf50mI5rIg0l4ZK]]></actionContent>
+  <queryString><![CDATA[[]]]></queryString>
+  <permissionType>public</permissionType>
+  <showType>0</showType>
+  <status>1</status>
+  <isUsual>false</isUsual>
+  <isMobile>false</isMobile>
+  <orderno>28</orderno>
+  <showtotalrow>false</showtotalrow>
+</resourceVO>             
+             
+             
+             
+             
