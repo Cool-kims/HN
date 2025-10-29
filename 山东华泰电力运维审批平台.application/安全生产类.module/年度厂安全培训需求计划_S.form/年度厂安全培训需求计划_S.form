@@ -2,16 +2,8 @@
 <form id="__11e7-ef14-67d9ca64-8f99-af63cc0890b3">
   <name>年度厂安全培训需求计划_S</name>
   <parentId>11e7-ef14-67d891d5-8f99-af63cc0890b3</parentId>
-  <sortId>148128155227600000</sortId>
-  <templatecontext><![CDATA[
-
-
-
-
-
-
-
-<script>
+  <description></description>
+  <templatecontext><![CDATA[<script>
 jQuery(document).ready(function(){
         setTimeout(function(){
                 jQuery("div.changeColor_red").each(function(){
@@ -54,22 +46,36 @@ jQuery(document).ready(function(){
             <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;：新增</td>
             <td bgcolor="#0000ff" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;&nbsp;</td>
             <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：审批中&nbsp;</td>
-            <td bgcolor="#408a10" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid"></td>
+            <td bgcolor="#408a10" width="40" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">&nbsp;</td>
             <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：已批准</td>
-            <td bgcolor="#ff0000" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid"></td>
+            <td bgcolor="#ff0000" style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid" width="40">&nbsp;</td>
             <td style="border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid; border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid">：作废</td>
         </tr>
     </tbody>
 </table>]]></templatecontext>
   <type>256</type>
+  <styleId></styleId>
   <showLog>false</showLog>
   <showLogType>default</showLogType>
   <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
   <showType>old</showType>
   <showWaterMark>false</showWaterMark>
-  <version>15</version>
-  <mappingStr><![CDATA[{"formName":"年度厂安全培训需求计划_S","tableName":"","columnMappings":[],"excelMapping":"{'excelDocInfo':{}}"}]]></mappingStr>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"年度厂安全培训需求计划_S","tableName":"","columnMappings":[]}]]></mappingStr>
   <orderno>0</orderno>
   <permissionType>public</permissionType>
   <layoutType>horizontal</layoutType>
-</form>
+</form>             
+             
+             
+             
+             

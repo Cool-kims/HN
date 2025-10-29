@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListView id="__hq9NNIP1zcVqXIbPHxB">
+  <name>测试</name>
+  <parentId>11e7-ef13-4f4442cb-8f99-af63cc0890b3</parentId>
+  <showIsEdit>false</showIsEdit>
+  <selectCheckbox>true</selectCheckbox>
+  <expandQueryForm>false</expandQueryForm>
+  <orderno>0</orderno>
+  <isAllowDrag>true</isAllowDrag>
+  <dataSourceId></dataSourceId>
+  <pagination>true</pagination>
+  <pageLines>10</pageLines>
+  <showTotalRow>true</showTotalRow>
+  <refresh>false</refresh>
+  <refreshAll>false</refreshAll>
+  <newPage>false</newPage>
+  <lastModifyTime>2025-10-15T00:07:32.000+08:00</lastModifyTime>
+  <readonly>false</readonly>
+  <displayType>relatedForm</displayType>
+  <defaultShowMode>month</defaultShowMode>
+  <collapsibleShowMode>normal</collapsibleShowMode>
+  <showWaterMark>false</showWaterMark>
+  <showActivityColumnType>0</showActivityColumnType>
+  <searchFormId>__11ec-9094-462174f1-8d21-7b6c7f682898</searchFormId>
+  <autoCompose>false</autoCompose>
+  <relatedForm>__11e9-082d-1aec3908-bdcc-87b7f930abeb</relatedForm>
+  <permissionType>public</permissionType>
+  <filterScript><![CDATA[]]></filterScript>
+  <sqlFilterScript><![CDATA[]]></sqlFilterScript>
+  <procedureFilterScript><![CDATA[]]></procedureFilterScript>
+  <filterCondition><![CDATA[[]]]></filterCondition>
+  <commonFilterCondition><![CDATA[[]]]></commonFilterCondition>
+  <authorityCondition>[]</authorityCondition>
+  <openType>293</openType>
+  <editMode>00</editMode>
+  <width>0</width>
+  <height>0</height>
+</ListView>             
+             
+             
+             
+             

@@ -98,23 +98,7 @@
   <orderno>1</orderno>
   <permissionType>public</permissionType>
   <layoutType>horizontal</layoutType>
-</form>             
-             
-             
-             
-             
-  
- <recordModeScript><![CDATA[]]></recordModeScript>
-  <showType>old</showType>
-  <showWaterMark>false</showWaterMark>
-  <waterMarkScript></waterMarkScript>
-  <version>0</version>
-  <isopenablescript><![CDATA[]]></isopenablescript>
-  <iseditablescript><![CDATA[]]></iseditablescript>
-  <mappingStr><![CDATA[{"formName":"","tableName":"","columnMappings":[]}]]></mappingStr>
-  <orderno>1</orderno>
-  <permissionType>public</permissionType>
-</form>             
+</form>          
              
              
              

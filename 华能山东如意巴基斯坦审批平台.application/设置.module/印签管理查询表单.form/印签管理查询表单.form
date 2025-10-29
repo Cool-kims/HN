@@ -3,41 +3,46 @@
   <name>印签管理查询表单</name>
   <parentId>11e7-ef13-4f38d164-8f99-af63cc0890b3</parentId>
   <description>印签管理查询表单</description>
-  <sortId>140219500685900000</sortId>
-  <templatecontext><![CDATA[
-
-
-
-
-
-
-
-<table cellSpacing="1" cellPadding="1" width="600" border="1" style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid">
+  <templatecontext><![CDATA[<table cellspacing="1" cellpadding="1" width="600" border="1" style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid">
     <tbody>
         <tr>
             <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; text-align: right; border-left: rgb(180,204,238) 1px solid">名称：</td>
-            <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid"><input id="11e3-eeb0-9959f0bf-abeb-ad0d1ecb7157" value="" name="C_名称" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" numberpattern="" mobile="true" calculateonrefresh="false" refreshonchanged="false" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" valuescript="" validaterule="" discript="" bordertype="false" fieldkeyevent="Tabkey" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" text="text" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+            <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid"><input id="__35GjofrR1oSwOISBOwD" value="" name="C_名称" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" numberpattern="" mobile="true" calculateonrefresh="false" refreshonchanged="false" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" valuescript="" validaterule="" discript="" bordertype="false" fieldkeyevent="Tabkey" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" text="text" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
             <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; text-align: right; border-left: rgb(180,204,238) 1px solid">帐号：</td>
-            <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid"><input id="11e3-eeb0-995c3ab0-abeb-ad0d1ecb7157" value="" name="C_帐号" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" numberpattern="" mobile="true" calculateonrefresh="false" refreshonchanged="false" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" valuescript="" validaterule="" discript="" bordertype="false" fieldkeyevent="Tabkey" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" text="text" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
+            <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid"><input id="__0VJVEjUunbNyPBlbBlC" value="" name="C_帐号" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" numberpattern="" mobile="true" calculateonrefresh="false" refreshonchanged="false" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" valuescript="" validaterule="" discript="" bordertype="false" fieldkeyevent="Tabkey" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" text="text" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" /></td>
         </tr>
         <tr>
             <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; text-align: right; border-left: rgb(180,204,238) 1px solid">是否公章：&nbsp;</td>
-            <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid"><select id="11e3-eeb0-99611cb4-abeb-ad0d1ecb7157" module="" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" mobile="true" calculateonrefresh="false" refreshonchanged="false" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" valuescript="" validaterule="" discript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" optionstext="" optionsvalue="" dialogview="" optionseditmode="01" optionsscript="@quot;;否;是@quot;;" style="width: 132px" name="C_是否公章"></select></td>
+            <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid"><select id="__PGI9jDdsUQOJWVNpTHj" module="" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" mobile="true" calculateonrefresh="false" refreshonchanged="false" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" valuescript="" validaterule="" discript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" optionstext="" optionsvalue="" dialogview="" optionseditmode="01" optionsscript="@quot;;否;是@quot;;" style="width: 132px" name="C_是否公章"></select></td>
             <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; text-align: right; border-left: rgb(180,204,238) 1px solid">&nbsp;是否有效：</td>
-            <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; text-align: left; border-left: rgb(180,204,238) 1px solid"><select id="11e3-eeb0-99611cb5-abeb-ad0d1ecb7157" module="" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" mobile="true" calculateonrefresh="false" refreshonchanged="false" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" valuescript="" validaterule="" discript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" optionstext="" optionsvalue="" dialogview="" optionseditmode="01" optionsscript="@quot;;是;否@quot;;" style="width: 132px" name="C_是否有效"></select></td>
+            <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; text-align: left; border-left: rgb(180,204,238) 1px solid"><select id="__OChmnktPQ5MRWmqIK3L" module="" editmode="01" validatelibs="" filtercondition="" processdescription="[];[]" mobile="true" calculateonrefresh="false" refreshonchanged="false" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" hiddenscript="" valuescript="" validaterule="" discript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" classname="cn.myapps.runtime.dynaform.form.ejb.SelectField" optionstext="" optionsvalue="" dialogview="" optionseditmode="01" optionsscript="@quot;;是;否@quot;;" style="width: 132px" name="C_是否有效"></select></td>
         </tr>
     </tbody>
 </table>
 <p>&nbsp;</p>]]></templatecontext>
   <type>256</type>
+  <styleId></styleId>
   <showLog>false</showLog>
   <showLogType>default</showLogType>
   <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
   <showType>old</showType>
   <showWaterMark>false</showWaterMark>
-  <version>18</version>
-  <mappingStr><![CDATA[{"formName":"印签管理查询表单","tableName":"","columnMappings":[],"excelMapping":"{}"}]]></mappingStr>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
+  <mappingStr><![CDATA[{"formName":"印签管理查询表单","tableName":"","columnMappings":[]}]]></mappingStr>
   <orderno>0</orderno>
   <permissionType>public</permissionType>
   <layoutType>horizontal</layoutType>
-</form>
+</form>             
+             
+             
+             
+             
