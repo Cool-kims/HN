@@ -34,7 +34,7 @@ try {
   <hiddenScript><![CDATA[//“保存并带数据新建”按钮隐藏脚本
 var stateLabel = getStateLabel();
 var rtn = true;
-if(stateLabel==null || stateLabel == ("计划起草")){
+if(!isNotNull(stateLabel) || stateLabel == ("计划起草")){
     rtn = false;
 }
 rtn;]]></hiddenScript>
