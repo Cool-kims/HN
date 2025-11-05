@@ -4,32 +4,41 @@
   <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
   <description></description>
   <type>1</type>
-  <runningTime>2025-11-05T14:09:24.000+08:00</runningTime>
+  <runningTime>2025-11-05T15:11:32.000+08:00</runningTime>
   <interval>15</interval>
   <period>34</period>
   <runtimes>0</runtimes>
   <terminateScript><![CDATA[]]></terminateScript>
-  <taskScript><![CDATA[(function(){
-	var docProcess = getDocumentProcess();
-	var sql = "select '11e7-ef11-bb0c7e25-8f99-af63cc0890b3' as domainid, docid as id, '"+getApplication()+"' as applicationid from t_relationhis group by docid";
-	var datas = queryBySQL(sql);
-	var flowHistoryService = new (Java.type('cn.myapps.core.runtime.workflow.storage.runtime.ejb.FlowHistoryServiceImpl'))(getApplication());
-	var flowRuntimeService = new (Java.type('cn.myapps.core.runtime.workflow.storage.runtime.ejb.FlowRuntimeServiceImpl'))(getApplication());
-	for(var iterator = datas.iterator();iterator.hasNext();){
-		var doc = iterator.next();
-		doc = docProcess.doView(doc.getId());
-		if(doc != null && doc.getState() != null && doc.getState().getState() == 1048576){
-			//创建t_flowhistory表数据
-			flowHistoryService.doCreateFlowHistory(doc);
-			//删除历史相关表数据
-			flowHistoryService.doRemoveRelationHISByDocument(doc.getId());
-			//删除当前审批表数据
-			flowRuntimeService.doRemoveFlowStateRT(doc.getStateid());
-			flowRuntimeService.doRemoveNodeRTByFlowStateRT(doc.getStateid());
-		}
-	}
+  <taskScript><![CDATA[(function () {
+    var docProcess = getDocumentProcess();
+    var sql = "select '11e7-ef11-bb0c7e25-8f99-af63cc0890b3' as domainid, docid as id, '" + getApplication() + "' as applicationid from t_relationhis group by docid";
+    var datas;
+    var dpg = docProcess.queryBySQL(sql,"11e7-ef11-bb0c7e25-8f99-af63cc0890b3");
+    if (dpg != null) {
+        datas = dpg.datas;
+    } else {
+        datas = null;
+    }
+    var flowHistoryService = new(Java.type('cn.myapps.core.runtime.workflow.storage.runtime.ejb.FlowHistoryServiceImpl'))(getApplication());
+    var flowRuntimeService = new(Java.type('cn.myapps.core.runtime.workflow.storage.runtime.ejb.FlowRuntimeServiceImpl'))(getApplication());
+    if (datas != null && datas.size() > 0) {
+        for (var iterator = datas.iterator(); iterator.hasNext(); ) {
+            var doc = iterator.next();
+            doc = docProcess.doView(doc.getId());
+            if (doc != null && doc.getState() != null && doc.getState().getState() == 1048576) {
+                //创建t_flowhistory表数据
+                flowHistoryService.doCreateFlowHistory(doc);
+                //删除历史相关表数据
+                flowHistoryService.doRemoveRelationHISByDocument(doc.getId());
+                //删除当前审批表数据
+                flowRuntimeService.doRemoveFlowStateRT(doc.getStateid());
+                flowRuntimeService.doRemoveNodeRTByFlowStateRT(doc.getStateid());
+            }
+        }
+    }
+
 })()]]></taskScript>
-  <modifyTime>2025-11-05T14:09:24.000+08:00</modifyTime>
+  <modifyTime>2025-11-05T15:11:32.000+08:00</modifyTime>
   <creator>超级管理员</creator>
   <creatorid>__HbCTerw2UHZlsl3JJh4</creatorid>
   <totalRuntimes>0</totalRuntimes>
