@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="__UpmlCqyqCSgk8cR7gNc2">
-  <name>身份证号</name>
-  <parentId>__hq9NNIP1zcVqXIbPHxB</parentId>
-  <parentView>__hq9NNIP1zcVqXIbPHxB</parentView>
+<column id="__mVGVCSovaKFZjxwdlfA">
+  <name>进度款</name>
+  <parentId>11e9-a233-6cd7bafc-8d81-499a5f60dbf2</parentId>
+  <width></width>
+  <hiddenScript><![CDATA[]]></hiddenScript>
+  <afterScript><![CDATA[]]></afterScript>
   <type>COLUMN_TYPE_FIELD</type>
-  <formid>__11e9-082d-1aec3908-bdcc-87b7f930abeb</formid>
-  <fieldName>身份证号</fieldName>
+  <labelScript><![CDATA[]]></labelScript>
+  <formid>__11e9-59b1-7b74b408-9daa-bf7ae5f506d2</formid>
+  <fieldName>进度款</fieldName>
   <flowReturnCss>false</flowReturnCss>
-  <orderno>6</orderno>
+  <imageName></imageName>
+  <fontColor></fontColor>
+  <orderno>8</orderno>
   <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>
+  <orderType>ASC</orderType>
+  <multiLanguageLabel></multiLanguageLabel>
+  <actionScript><![CDATA[]]></actionScript>
   <clickSorting>true</clickSorting>
+  <sortStandard>00</sortStandard>
+  <jumpMode>00</jumpMode>
+  <dispatcherUrl><![CDATA[]]></dispatcherUrl>
   <formatType>simple</formatType>
   <thouSign>false</thouSign>
   <color>rgba(0,0,0,1)</color>
@@ -24,6 +35,7 @@
   <visible4Print>true</visible4Print>
   <visible4PagePrint>true</visible4PagePrint>
   <showType>01</showType>
+  <mappingField></mappingField>
   <showMoon>false</showMoon>
   <showAsLabel>false</showAsLabel>
   <showAsButton>false</showAsButton>
@@ -33,12 +45,10 @@
   <customIcon>false</customIcon>
   <isFilter>false</isFilter>
   <isShowThisColumn>false</isShowThisColumn>
+  <selectOptionScript><![CDATA[]]></selectOptionScript>
   <isEnter>false</isEnter>
   <isShowExplain>false</isShowExplain>
   <rowMerge>false</rowMerge>
+  <showExplainScript><![CDATA[]]></showExplainScript>
   <jumpActOpenType>0</jumpActOpenType>
-</column>             
-             
-             
-             
-             
+</column>

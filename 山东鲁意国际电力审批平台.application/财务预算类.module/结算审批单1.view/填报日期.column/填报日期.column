@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<column id="__VNd8LNAuEbRSnP2JuUi">
-  <name>申请人</name>
-  <parentId>11e7-ef16-894ccc78-8f99-af63cc0890b3</parentId>
+<column id="__8U2n4LUy7HZCGfAAWsi">
+  <name>填报日期</name>
+  <parentId>11e9-a233-6cd7bafc-8d81-499a5f60dbf2</parentId>
   <width></width>
   <valueScript><![CDATA[]]></valueScript>
   <hiddenScript><![CDATA[]]></hiddenScript>
   <beforeScript><![CDATA[]]></beforeScript>
   <afterScript><![CDATA[]]></afterScript>
-  <parentView>11e7-ef16-894ccc78-8f99-af63cc0890b3</parentView>
+  <parentView>11e9-a233-6cd7bafc-8d81-499a5f60dbf2</parentView>
   <type>COLUMN_TYPE_FIELD</type>
   <labelScript><![CDATA[]]></labelScript>
-  <formid>__11e7-ef16-89426caa-8f99-af63cc0890b3</formid>
-  <fieldName>编制人</fieldName>
+  <formid>__11e9-59b1-7b74b408-9daa-bf7ae5f506d2</formid>
+  <fieldName>编制日期</fieldName>
   <flowReturnCss>false</flowReturnCss>
   <imageName></imageName>
   <fontColor></fontColor>
-  <orderno>5</orderno>
+  <orderno>2</orderno>
   <sum>false</sum>
   <total>false</total>
   <isOrderByField>false</isOrderByField>

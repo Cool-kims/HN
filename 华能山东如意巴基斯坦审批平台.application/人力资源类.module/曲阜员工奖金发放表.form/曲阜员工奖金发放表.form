@@ -67,7 +67,7 @@
     </tbody>
 </table>
 <p>&nbsp;</p>
-<p><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__peSmifMYEAF5x3QI1Lx" text="hidden" name="编制人" texttype="hidden" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="var@nbsp;value@nbsp;=@nbsp;getItemValueAsString(@quot;编制人@quot;);@nbsp;@amp;#13;if@nbsp;(value==null@nbsp;||@nbsp;value.trim().length()@lt;=0){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;value@nbsp;=@nbsp;getWebUser().getName();@nbsp;@amp;#13;}@amp;#13;value;" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>
+<p><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__peSmifMYEAF5x3QI1Lx" text="hidden" name="编制人" texttype="hidden" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="var@nbsp;value@nbsp;=@nbsp;getItemValueAsString(@quot;编制人@quot;);@nbsp;@amp;#13;if@nbsp;(value==null@nbsp;||@nbsp;value.trim().length@lt;=0){@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;@nbsp;value@nbsp;=@nbsp;getWebUser().getName();@nbsp;@amp;#13;}@amp;#13;value;" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" hidetype="parent" ishidetype="false" layout="horizontal" showlog="true" arrow="false" width="" widthunit="px" worklimitchecked="false" textareamaxlimit="" secrettext="false" defaultvalueisnull="false" instantvalidate="false" attributeid="undefined" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>]]></templatecontext>
@@ -92,10 +92,4 @@
   <orderno>1</orderno>
   <permissionType>public</permissionType>
   <layoutType>horizontal</layoutType>
-</form>             
-             
-             
-             
-             
-       
-             
+</form>

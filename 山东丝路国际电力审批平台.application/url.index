@@ -1,5 +1,5 @@
 #
-#Tue Sep 16 20:21:58 CST 2025
+#Wed Nov 05 14:35:44 CST 2025
 11e7-ef16-8949229c-8f99-af63cc0890b3=/山东丝路国际电力审批平台.application/安全生产类.module/月度评优审批.view/月度评优审批.view
 11e7-ef16-894cf38e-8f99-af63cc0890b3=/山东丝路国际电力审批平台.application/人力资源类.module/调整工资审批表.view/调整工资审批表.view
 11e5-da0c-bb32a7df-bca3-1787d71be9d4=/山东丝路国际电力审批平台.application/行政管理类.module/用车申请单.form/返回.activity/返回.activity
@@ -1377,8 +1377,8 @@ __UrAaGwbMTvkwzRPRJtb=/山东丝路国际电力审批平台.application/财务�
 11e7-1043-6583a9c2-a640-b1bae03855be=/山东丝路国际电力审批平台.application/物资申请类.module/物资付汇申请单.view/领取人证件类型.column/领取人证件类型.column
 11e7-1043-6583a9a8-a640-b1bae03855be=/山东丝路国际电力审批平台.application/物资申请类.module/物资付汇申请单.view/支票号.column/支票号.column
 11e7-d89f-b76309c3-ae95-47caf4f32d12=/山东丝路国际电力审批平台.application/物资申请类.module/物资询价采购结果审批表.view/编号.column/编号.column
-__11e7-ef16-8944dcc9-8f99-af63cc0890b3=/山东丝路国际电力审批平台.application/燃料供应类.module/燃料采购计划审批单.form/燃料采购计划审批单.form
 11e7-ef16-8947ea8b-8f99-af63cc0890b3=/山东丝路国际电力审批平台.application/安全生产类%20Safety%20Product.menu/厂年度安全培训需求计划Plant%20Annual%20Safety%20Training%20requirements%20Plan.menu/厂年度安全培训需求计划Plant%20Annual%20Safety%20Training%20requirements%20Plan.menu
+__11e7-ef16-8944dcc9-8f99-af63cc0890b3=/山东丝路国际电力审批平台.application/燃料供应类.module/燃料采购计划审批单.form/燃料采购计划审批单.form
 __11e7-ef16-893cc707-8f99-af63cc0890b3=/山东丝路国际电力审批平台.application/行政管理类.module/用印审批单_S.form/用印审批单_S.form
 11e7-d579-c9b3eb58-b0cf-41bab8fafee8=/山东丝路国际电力审批平台.application/物资申请类.module/采购计划单子单.form/保存并新建.activity/保存并新建.activity
 11e7-2afd-6ed5d7c9-8761-4dec8d466141=/山东丝路国际电力审批平台.application/燃料供应类.module/燃料结算审批单_2.view/接收热值.column/接收热值.column
@@ -2346,6 +2346,7 @@ __11e7-ef16-894049a3-8f99-af63cc0890b3=/山东丝路国际电力审批平台.app
 11e7-de24-d560f6ad-b437-cf34914d0c3c=/山东丝路国际电力审批平台.application/工程生产类.module/工程邀请招标申请表.view/当前处理人.column/当前处理人.column
 11e6-bc3d-bf1d8b2d-8865-edb9ee0ca8a3=/山东丝路国际电力审批平台.application/人力资源类.module/公司授课培训申请表.form/返回.activity/返回.activity
 11e5-da30-6ddc7d53-bca3-1787d71be9d4=/山东丝路国际电力审批平台.application/行政管理类.module/机票申请单.view/申请原因.column/申请原因.column
+__cLwyvmkMg8iYe4EKYxn=/山东丝路国际电力审批平台.application/处理流程历史数据d.task/处理流程历史数据d.task
 11ef-a61a-f6eb97c5-9e3d-9f45d4459cac=/山东丝路国际电力审批平台.application/物资申请类.module/施工服务项目到货验收单.view/供货单位.column/供货单位.column
 11e7-218d-f6057f29-a60c-cf927eb9b3bb=/山东丝路国际电力审批平台.application/燃料供应类.module/关税结算审批单.view/编号.column/编号.column
 11e7-0191-e2bb49b0-a14b-a508f8c0a621=/山东丝路国际电力审批平台.application/燃料供应类.module/内陆运输计划审批单.view/发货单位.column/发货单位.column
@@ -2694,8 +2695,8 @@ __dWqtNsFdjNCqgrEsJN2=/山东丝路国际电力审批平台.application/行政�
 11e7-c361-d495caa9-9051-454adfbb5217=/山东丝路国际电力审批平台.application/财务预算类.module/银行付汇申请单.form/付款申请单.activity/付款申请单.activity
 __9OjrJjM5PQwPh4SqH5U=/山东丝路国际电力审批平台.application/财务预算类.module/结算审批单1.view/编制日期.column/编制日期.column
 11e7-ef16-89527225-8f99-af63cc0890b3=/山东丝路国际电力审批平台.application/物资申请类.module/基建物资临时验收单.flow/基建物资临时验收单.flow
-11e7-218e-45bdab06-a60c-cf927eb9b3bb=/山东丝路国际电力审批平台.application/燃料供应类.module/运费结算审批单.view/实际付款总金额.column/实际付款总金额.column
 11e6-ff61-03f6b8c4-b80e-290de7346242=/山东丝路国际电力审批平台.application/燃料供应类.module/燃料结算审批单.view/当前处理人.column/当前处理人.column
+11e7-218e-45bdab06-a60c-cf927eb9b3bb=/山东丝路国际电力审批平台.application/燃料供应类.module/运费结算审批单.view/实际付款总金额.column/实际付款总金额.column
 11e7-d632-c0e8a407-b0cf-41bab8fafee8=/山东丝路国际电力审批平台.application/物资申请类.module/物资紧急计划申请单子表.view/序号.column/序号.column
 11e6-b9fa-8e7714f3-a67f-d73469cc37a7=/山东丝路国际电力审批平台.application/安全生产类.module/重大事故隐患治理验收单.view/编制日期.column/编制日期.column
 11e7-da5c-11c18135-ae95-47caf4f32d12=/山东丝路国际电力审批平台.application/物资申请类.module/设备材料领用单子表.view/单位.column/单位.column
