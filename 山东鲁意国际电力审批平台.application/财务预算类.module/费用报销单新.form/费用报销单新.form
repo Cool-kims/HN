@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table border="1" width="800" align="center" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center;">
@@ -93,7 +93,7 @@
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="0" cellpadding="1" cellspacing="1">
+<table width="800" align="center" border="0" cellpadding="0" cellspacing="0">
     <tbody>
         <tr>
             <td>注：通讯费、业务招待费、每月回家交通费需提交归口部门签字，其他项不需要。</td>

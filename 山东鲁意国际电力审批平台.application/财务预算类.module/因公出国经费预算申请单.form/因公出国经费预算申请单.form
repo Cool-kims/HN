@@ -21,7 +21,7 @@
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center"><span style="font-size: 10.5pt; font-family: 宋体; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">团组名称</span></td>

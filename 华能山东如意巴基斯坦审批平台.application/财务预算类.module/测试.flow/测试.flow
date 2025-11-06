@@ -3,7 +3,7 @@
   <name>测试</name>
   <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
   <authorname></authorname>
-  <lastmodify>2025-06-05T11:30:59.803+08:00</lastmodify>
+  <lastmodify>2025-11-06T15:40:53.324+08:00</lastmodify>
   <subject>测试</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -17,7 +17,7 @@
 &lt;actorListScript&gt;&lt;![CDATA[]]&gt;&lt;/actorListScript&gt;
 &lt;jumpNameScript&gt;&lt;![CDATA[]]&gt;&lt;/jumpNameScript&gt;
 &lt;jump&gt;false&lt;/jump&gt;
-&lt;jumpTo&gt;undefined&lt;/jumpTo&gt;
+&lt;jumpTo&gt;NaN&lt;/jumpTo&gt;
 &lt;actorEditMode&gt;0&lt;/actorEditMode&gt;
 &lt;deptlist&gt;&lt;/deptlist&gt;
 &lt;namelist&gt;(R11ea-f3e6-e62651e4-a410-2f3d7ac9a701|&#24352;&#32418;&#26757;&#26435;&#38480;;)&lt;/namelist&gt;
@@ -89,8 +89,8 @@
 &lt;name&gt;&#25552;&#20132;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;242.375&lt;/x&gt;
-&lt;y&gt;242&lt;/y&gt;
+&lt;x&gt;248.35000228881836&lt;/x&gt;
+&lt;y&gt;90.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -109,8 +109,8 @@
 &lt;name&gt;&#24320;&#22987;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;137.4375&lt;/x&gt;
-&lt;y&gt;94&lt;/y&gt;
+&lt;x&gt;101.35000228881836&lt;/x&gt;
+&lt;y&gt;103.80000305175781&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -132,8 +132,8 @@
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;549&lt;/x&gt;
-&lt;y&gt;95&lt;/y&gt;
+&lt;x&gt;502.35000228881836&lt;/x&gt;
+&lt;y&gt;103.80000305175781&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -159,7 +159,7 @@
 &lt;processDescription&gt;&lt;/processDescription&gt;
 &lt;formlist&gt;undefined&lt;/formlist&gt;
 &lt;action&gt;&lt;/action&gt;
-&lt;pointstack&gt;137.4375;94;242.375;242&lt;/pointstack&gt;
+&lt;pointstack&gt;137;94;242;242&lt;/pointstack&gt;
 &lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
 &lt;id&gt;1749094248272&lt;/id&gt;
 &lt;name&gt;&lt;/name&gt;
@@ -178,7 +178,7 @@
 &lt;processDescription&gt;&lt;/processDescription&gt;
 &lt;formlist&gt;undefined&lt;/formlist&gt;
 &lt;action&gt;&lt;/action&gt;
-&lt;pointstack&gt;242.375;242;549;95&lt;/pointstack&gt;
+&lt;pointstack&gt;242;242;549;95&lt;/pointstack&gt;
 &lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
 &lt;id&gt;1749094250326&lt;/id&gt;
 &lt;name&gt;&lt;/name&gt;

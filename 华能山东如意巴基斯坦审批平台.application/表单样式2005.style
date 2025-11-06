@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleRepositoryVO id="__BsnkGNnSaUosGiFCKao">
+  <name>表单样式2005</name>
+  <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
+  <content><![CDATA[/* 提高选择器优先级 + !important 强制覆盖 */
+table {
+  border-collapse: collapse !important; /* 合并边框必须强制生效，否则会出现双边框 */
+  border: 1px solid black !important; /* 表格外边框强制 1px 黑色 */
+  /* 额外增加优先级：排除可能的默认样式干扰 */
+  border-spacing: 0 !important; /* 确保边框间距为 0 */
+}
+
+/* 表头和单元格同样强制生效 */
+table th,
+table td {
+  border: 1px solid black !important; /* 单元格边框强制 1px 黑色 */
+  /* 避免内容与边框挤压，可选 */
+  padding: 5px !important;
+}]]></content>
+  <version>0</version>
+</styleRepositoryVO>

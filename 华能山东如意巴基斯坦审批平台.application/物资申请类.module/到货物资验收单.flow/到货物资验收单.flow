@@ -3,7 +3,7 @@
   <name>到货物资验收单</name>
   <parentId>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-07-16T16:20:10.887+08:00</lastmodify>
+  <lastmodify>2025-11-06T14:49:30.922+08:00</lastmodify>
   <subject>到货物资验收单</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -18,8 +18,8 @@
 &lt;name&gt;&#24320;&#22987;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;217.46306610107422&lt;/x&gt;
-&lt;y&gt;178.90556236596353&lt;/y&gt;
+&lt;x&gt;102.35000228881836&lt;/x&gt;
+&lt;y&gt;155.8000030517578&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -110,8 +110,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#29289;&#36164;&#37096;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;335.4630661010742&lt;/x&gt;
-&lt;y&gt;166.9054876611964&lt;/y&gt;
+&lt;x&gt;249.70000457763672&lt;/x&gt;
+&lt;y&gt;148.60000610351562&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -208,8 +208,8 @@ println(deptid);
 &lt;name&gt;&#39564;&#25910;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;543.9261322021484&lt;/x&gt;
-&lt;y&gt;171.81099399858456&lt;/y&gt;
+&lt;x&gt;501.0500068664551&lt;/x&gt;
+&lt;y&gt;150.40000915527344&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -231,8 +231,8 @@ println(deptid);
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;757.4630661010742&lt;/x&gt;
-&lt;y&gt;177.90546524976622&lt;/y&gt;
+&lt;x&gt;755.0500068664551&lt;/x&gt;
+&lt;y&gt;159.40000915527344&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;

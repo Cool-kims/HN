@@ -4,7 +4,7 @@
   <parentId>11e7-ef14-ff9ec999-8f99-af63cc0890b3</parentId>
   <description>到货物资验收单子单</description>
   <sortId>151217813386400000</sortId>
-  <templatecontext><![CDATA[<table width="600" border="1" style="border: 1px solid rgb(180, 204, 238);">
+  <templatecontext><![CDATA[<table width="600" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0;">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">序号</td>

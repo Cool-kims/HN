@@ -4,7 +4,7 @@
   <parentId>11e7-ef14-ff979d38-8f99-af63cc0890b3</parentId>
   <description>印签管理表单</description>
   <sortId>140211037294300000</sortId>
-  <templatecontext><![CDATA[<table cellspacing="1" cellpadding="1" width="600" border="1" style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid">
+  <templatecontext><![CDATA[<table cellspacing="0" cellpadding="0" width="600" border="1" style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid">
     <tbody>
         <tr>
             <td style="border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid; border-bottom: rgb(180,204,238) 1px solid; text-align: right; border-left: rgb(180,204,238) 1px solid">名称：</td>

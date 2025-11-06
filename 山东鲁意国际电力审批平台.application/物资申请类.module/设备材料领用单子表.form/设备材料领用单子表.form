@@ -4,7 +4,7 @@
   <parentId>11e7-ef14-ff9ec999-8f99-af63cc0890b3</parentId>
   <sortId>151254535401000000</sortId>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table width="600" align="center" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+<table width="600" align="center" border="1" cellpadding="0" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">序号</td>

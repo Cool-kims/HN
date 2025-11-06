@@ -3,7 +3,7 @@
   <name>月度评优审批</name>
   <parentId>11e7-ef14-ff983997-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table border="1" cellspacing="1" cellpadding="1" width="700" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+  <templatecontext><![CDATA[<table border="1" cellspacing="0" cellpadding="0" width="700" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
     <tbody>
         <tr>
             <td colspan="4" style="border-bottom: #b4ccee 1px solid; text-align: center; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">

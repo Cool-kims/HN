@@ -4,7 +4,7 @@
   <parentId>11e7-ef14-ff9ec999-8f99-af63cc0890b3</parentId>
   <description>新添加物资入库查询表单111</description>
   <sortId>151185795482600000</sortId>
-  <templatecontext><![CDATA[<table height="62" cellspacing="1" cellpadding="1" width="731" border="0" style="border: medium none; height: 62px; width: 731px;">
+  <templatecontext><![CDATA[<table height="62" cellspacing="0" cellpadding="0" width="731" border="0" style="border: medium none; height: 62px; width: 731px;">
     <tbody>
         <tr>
             <td nowrap="noWrap" style="border: medium none; text-align: right;">编号：</td>

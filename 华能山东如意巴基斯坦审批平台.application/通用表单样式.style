@@ -2,7 +2,11 @@
 <styleRepositoryVO id="11e7-ef13-4f3acc67-8f99-af63cc0890b3">
   <name>通用表单样式</name>
   <parentId>11e7-ef11-cdb65345-8f99-af63cc0890b3</parentId>
-  <content><![CDATA[.mytable {
+  <content><![CDATA[.formwrapper .formTable-wrap .formHtml table{
+	border-spacing: 0!important;
+}
+
+.mytable {
 	font-family: 微软雅黑, 宋体;
 	border-bottom: rgb(180,204,238) 2px solid; 
 	border-left: rgb(180,204,238) 2px solid; 
@@ -59,5 +63,5 @@ padding-right:2px;
 }
 ]]></content>
   <version>79</version>
-  <lastmodifytime class="sql-date">2018-01-22T13:55:09.000+08:00</lastmodifytime>
+  <lastmodifytime>2018-01-22T13:55:09.000+08:00</lastmodifytime>
 </styleRepositoryVO>

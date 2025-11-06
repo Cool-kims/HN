@@ -6,7 +6,7 @@
   <templatecontext><![CDATA[<p>&nbsp;</p>
 <p><br />
 &nbsp;</p>
-<table width="800" align="center" border="1" style="border: 1px solid rgb(180, 204, 238);">
+<table width="800" align="center" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0;">
     <caption>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__2DVMXxTwClTer48pPdc" name="QZed3a81ca8" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__kLF1rWIwJuHVnKrgkUv" name="QZ6b9ead594" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" /></span></h3>

@@ -19,7 +19,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center" style="border: 1px solid rgb(180, 204, 238);">
+<table border="1" width="800" align="center" style="border: 1px solid rgb(180, 204, 238); border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center; border: 1px solid rgb(180, 204, 238);">
@@ -121,8 +121,4 @@
   <orderno>0</orderno>
   <permissionType>public</permissionType>
   <layoutType>horizontal</layoutType>
-</form>             
-             
-             
-             
-             
+</form>

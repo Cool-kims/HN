@@ -3,7 +3,7 @@
   <name>物资询价采购结果审批表子表</name>
   <parentId>11e7-ef14-ff9ec999-8f99-af63cc0890b3</parentId>
   <sortId>151235564879800000</sortId>
-  <templatecontext><![CDATA[<table width="600" align="center" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+  <templatecontext><![CDATA[<table width="600" align="center" border="1" cellpadding="0" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">

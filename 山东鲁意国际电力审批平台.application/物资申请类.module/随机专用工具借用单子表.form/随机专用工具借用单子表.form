@@ -5,7 +5,7 @@
   <description>借用单子表444</description>
   <sortId>151218022102600000</sortId>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table border="1" style="border: 1px solid rgb(180, 204, 238);" align="left">
+<table border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0;" align="left">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238); text-align: center;">工具名称</td>

@@ -3,7 +3,7 @@
   <name>请假单</name>
   <parentId>11e7-ef14-ff9be342-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center" border="1">
+  <templatecontext><![CDATA[<table border="1" width="800" align="center" style="border-spacing:0">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-family: Arial;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__iOTnxBF0w51OnztngeW" name="QZ1e402f971" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></span>&nbsp;</h3>

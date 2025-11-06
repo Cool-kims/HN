@@ -3,7 +3,7 @@
   <name>休假审批单</name>
   <parentId>11e7-ef14-ffa335af-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center" border="1">
+  <templatecontext><![CDATA[<table width="800" align="center" border="1" style="border-spacing:0">
     <caption>
     <h3 style="text-align: center;"><b style="font-size: 12px"><span style="font-size: 16pt; font-family: 黑体"><span style="font-size: x-large;"><img src="plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-e237-2779ed2d-bd5c-c9b904edfddb" name="QZ4d8de7fed" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></span></b></h3>
     <h3 style="text-align: center;"><span style="font-size: 12pt; font-family: 黑体"><span style="font-size: large;"><img src="plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-e237-364ddafe-bd5c-c9b904edfddb" name="QZ02c6f4b8b" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" /></span></span></h3>

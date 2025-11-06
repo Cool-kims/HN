@@ -3,7 +3,7 @@
   <name>物资单一来源采购申请单子表</name>
   <parentId>11e7-ef14-ff9ec999-8f99-af63cc0890b3</parentId>
   <sortId>151210599591500000</sortId>
-  <templatecontext><![CDATA[<table width="600" border="1" style="border: 1px solid rgb(180, 204, 238);" align="center">
+  <templatecontext><![CDATA[<table width="600" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0;" align="center">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">序号</td>

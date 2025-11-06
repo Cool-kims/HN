@@ -3,7 +3,7 @@
   <name>物资询价采购结果审批表国内</name>
   <parentId>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-07-16T16:21:52.214+08:00</lastmodify>
+  <lastmodify>2025-11-06T14:52:06.832+08:00</lastmodify>
   <subject>物资询价采购结果审批表国内</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -18,8 +18,8 @@
 &lt;name&gt;&#24320;&#22987;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;85.46306610107422&lt;/x&gt;
-&lt;y&gt;169.90535692785386&lt;/y&gt;
+&lt;x&gt;53.35000228881836&lt;/x&gt;
+&lt;y&gt;152.8000030517578&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -110,8 +110,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#35810;&#20215;&#21592;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;206.46306610107422&lt;/x&gt;
-&lt;y&gt;158.90531210499356&lt;/y&gt;
+&lt;x&gt;200.70000457763672&lt;/x&gt;
+&lt;y&gt;145.40000915527344&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -202,8 +202,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#37096;&#38376;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;424.4630661010742&lt;/x&gt;
-&lt;y&gt;155.90528969356342&lt;/y&gt;
+&lt;x&gt;451.7000045776367&lt;/x&gt;
+&lt;y&gt;145.40000915527344&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -294,8 +294,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#20998;&#31649;&#39046;&#23548;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;626.4630661010742&lt;/x&gt;
-&lt;y&gt;149.90529342880177&lt;/y&gt;
+&lt;x&gt;699.0500068664551&lt;/x&gt;
+&lt;y&gt;145.40000915527344&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -317,8 +317,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;819.4630661010742&lt;/x&gt;
-&lt;y&gt;233.90532331070864&lt;/y&gt;
+&lt;x&gt;502.0500068664551&lt;/x&gt;
+&lt;y&gt;308.40000915527344&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -408,8 +408,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#24635;&#32463;&#29702;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;661&lt;/x&gt;
-&lt;y&gt;321&lt;/y&gt;
+&lt;x&gt;700.3500022888184&lt;/x&gt;
+&lt;y&gt;301.8000030517578&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;

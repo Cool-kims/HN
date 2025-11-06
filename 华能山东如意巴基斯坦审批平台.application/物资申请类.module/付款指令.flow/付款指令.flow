@@ -3,7 +3,7 @@
   <name>付款指令</name>
   <parentId>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-06-26T18:31:14.406+08:00</lastmodify>
+  <lastmodify>2025-11-06T14:50:28.661+08:00</lastmodify>
   <subject>付款指令</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -18,8 +18,8 @@
 &lt;name&gt;&#24320;&#22987;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;207&lt;/x&gt;
-&lt;y&gt;102&lt;/y&gt;
+&lt;x&gt;55.35000228881836&lt;/x&gt;
+&lt;y&gt;104.80000305175781&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -41,8 +41,8 @@
 &lt;name&gt;&#25209;&#20934;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;402&lt;/x&gt;
-&lt;y&gt;231&lt;/y&gt;
+&lt;x&gt;55.70000457763672&lt;/x&gt;
+&lt;y&gt;253.60000610351562&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -61,7 +61,7 @@
 getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;jumpNameScript&gt;&lt;![CDATA[]]&gt;&lt;/jumpNameScript&gt;
 &lt;jump&gt;false&lt;/jump&gt;
-&lt;jumpTo&gt;undefined&lt;/jumpTo&gt;
+&lt;jumpTo&gt;NaN&lt;/jumpTo&gt;
 &lt;actorEditMode&gt;1&lt;/actorEditMode&gt;
 &lt;deptlist&gt;&lt;/deptlist&gt;
 &lt;namelist&gt;(R11e7-ef13-4f4999d2-8f99-af63cc0890b3|&#19987;&#24037;;)&lt;/namelist&gt;
@@ -133,8 +133,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32463;&#21150;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;342.5625&lt;/x&gt;
-&lt;y&gt;100&lt;/y&gt;
+&lt;x&gt;201.70000457763672&lt;/x&gt;
+&lt;y&gt;97.60000610351562&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -225,8 +225,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32463;&#21150;&#37096;&#38376;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;519&lt;/x&gt;
-&lt;y&gt;105&lt;/y&gt;
+&lt;x&gt;452.7000045776367&lt;/x&gt;
+&lt;y&gt;97.60000610351562&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -316,8 +316,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#36130;&#21153;&#19982;&#39044;&#31639;&#37096;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;773&lt;/x&gt;
-&lt;y&gt;117&lt;/y&gt;
+&lt;x&gt;697.7000045776367&lt;/x&gt;
+&lt;y&gt;97.60000610351562&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -408,8 +408,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#20998;&#31649;&#39046;&#23548;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;725&lt;/x&gt;
-&lt;y&gt;230&lt;/y&gt;
+&lt;x&gt;696.7000045776367&lt;/x&gt;
+&lt;y&gt;243.60000610351562&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -499,8 +499,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#24635;&#32463;&#29702;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;527&lt;/x&gt;
-&lt;y&gt;232&lt;/y&gt;
+&lt;x&gt;444.7000045776367&lt;/x&gt;
+&lt;y&gt;243.60000610351562&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;

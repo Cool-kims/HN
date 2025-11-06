@@ -5,7 +5,7 @@
   <sortId>152574970930300000</sortId>
   <templatecontext><![CDATA[<p>&nbsp;</p>
 <h2 style="text-align: center;">银行账户信息维护&nbsp;</h2>
-<table width="600" align="center" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+<table width="600" align="center" border="1" cellpadding="0" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">姓名：</td>
