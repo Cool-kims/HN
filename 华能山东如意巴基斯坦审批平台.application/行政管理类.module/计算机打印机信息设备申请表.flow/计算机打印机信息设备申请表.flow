@@ -3,7 +3,7 @@
   <name>计算机打印机信息设备申请表</name>
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-08-05T20:08:37.190+08:00</lastmodify>
+  <lastmodify>2025-11-07T11:08:55.952+08:00</lastmodify>
   <subject>计算机打印机信息设备申请表</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -18,8 +18,8 @@
 &lt;name&gt;&#24320;&#22987;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;25&lt;/x&gt;
-&lt;y&gt;107&lt;/y&gt;
+&lt;x&gt;29.35000228881836&lt;/x&gt;
+&lt;y&gt;121.80000305175781&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -110,8 +110,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#30003;&#35831;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;148&lt;/x&gt;
-&lt;y&gt;107&lt;/y&gt;
+&lt;x&gt;148.35000228881836&lt;/x&gt;
+&lt;y&gt;112.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -202,8 +202,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#37096;&#38376;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;347.125&lt;/x&gt;
-&lt;y&gt;107&lt;/y&gt;
+&lt;x&gt;345.35000228881836&lt;/x&gt;
+&lt;y&gt;112.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -310,8 +310,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32463;&#29702;&#24037;&#20316;&#37096;&#20027;&#20219;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;795.5625&lt;/x&gt;
-&lt;y&gt;104&lt;/y&gt;
+&lt;x&gt;794.3500022888184&lt;/x&gt;
+&lt;y&gt;112.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -402,8 +402,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#20998;&#31649;&#39046;&#23548;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;807.125&lt;/x&gt;
-&lt;y&gt;277&lt;/y&gt;
+&lt;x&gt;795.7000045776367&lt;/x&gt;
+&lt;y&gt;296.6000061035156&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -425,8 +425,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#25209;&#20934;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;405.5625&lt;/x&gt;
-&lt;y&gt;303&lt;/y&gt;
+&lt;x&gt;387.7000045776367&lt;/x&gt;
+&lt;y&gt;303.6000061035156&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -516,8 +516,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#24635;&#32463;&#29702;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;560.5625&lt;/x&gt;
-&lt;y&gt;205&lt;/y&gt;
+&lt;x&gt;568.4000091552734&lt;/x&gt;
+&lt;y&gt;294.6000061035156&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -607,8 +607,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32463;&#29702;&#37096;&#20449;&#24687;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;565.125&lt;/x&gt;
-&lt;y&gt;112&lt;/y&gt;
+&lt;x&gt;566.3500022888184&lt;/x&gt;
+&lt;y&gt;112.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -902,7 +902,7 @@ rtn;]]&gt;&lt;/validateScript&gt;
 &lt;processDescription&gt;&lt;/processDescription&gt;
 &lt;formlist&gt;&lt;/formlist&gt;
 &lt;action&gt;&lt;/action&gt;
-&lt;pointstack&gt;561;233;309;230&lt;/pointstack&gt;
+&lt;pointstack&gt;561;233;645.6499977111816;448.1999969482422;309;230&lt;/pointstack&gt;
 &lt;validateScript&gt;&lt;![CDATA[var rtn=@quot;@quot;;
 
 

@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
         },300);
 });
 </script>
-<table border="0" cellspacing="1" cellpadding="1" width="731" height="62" style="border-bottom: medium none; border-left: medium none; width: 731px; height: 62px; border-top: medium none; border-right: medium none">
+<table border="0" cellspacing="0" cellpadding="0" width="731" height="62" style="border-bottom: medium none; border-left: medium none; width: 731px; height: 62px; border-top: medium none; border-right: medium none">
     <tbody>
         <tr>
             <td nowrap="noWrap" style="border-bottom: medium none; text-align: right; border-left: medium none; border-top: medium none; border-right: medium none">名称：</td>

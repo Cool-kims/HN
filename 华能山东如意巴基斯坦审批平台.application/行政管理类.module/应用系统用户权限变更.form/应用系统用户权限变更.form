@@ -3,7 +3,7 @@
   <name>应用系统用户权限变更</name>
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table align="center" width="800" border="1" style="border: 1px solid rgb(180, 204, 238);">
+  <templatecontext><![CDATA[<table align="center" width="800" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-e237-dcba399c-bd5c-c9b904edfddb" name="QZ816ce09e2" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>

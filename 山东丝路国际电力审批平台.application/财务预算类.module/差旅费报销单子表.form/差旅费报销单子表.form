@@ -3,7 +3,7 @@
   <name>差旅费报销单子表</name>
   <parentId>11e7-ef16-89391d5b-8f99-af63cc0890b3</parentId>
   <sortId>148152130969200000</sortId>
-  <templatecontext><![CDATA[<table width="950" border="1" style="border: 1px solid rgb(180, 204, 238);" cellspacing="1" cellpadding="1">
+  <templatecontext><![CDATA[<table width="950" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0;" cellspacing="0" cellpadding="0">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238); text-align: right;">出发地star：</td>

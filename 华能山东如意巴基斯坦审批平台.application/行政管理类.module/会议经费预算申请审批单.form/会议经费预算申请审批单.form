@@ -3,7 +3,7 @@
   <name>会议经费预算申请审批单</name>
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table border="1" width="600" align="center">
+  <templatecontext><![CDATA[<table border="1" width="600" align="center" style="border-spacing:0">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-family: Arial;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-d4d2-8450606c-b0cf-41bab8fafee8" name="QZ99e485ad9" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></span>&nbsp;</h3>
@@ -31,7 +31,7 @@
         </tr>
         <tr>
             <td colspan="6" style="text-align: center"><span style="font-family: 宋体; font-size: 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-font-kerning: 1.0pt; mso-bidi-font-family: 'Times New Roman'"><span lang="EN-US" style="font-family: 'Times New Roman','serif'; font-size: 10.5pt; mso-fareast-font-family: 黑体; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-font-kerning: 1.0pt">
-            <table border="1" cellspacing="1" cellpadding="1" width="700" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+            <table border="1" cellspacing="0" cellpadding="0" width="700" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
                 <tbody>
                     <tr>
                         <td style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">序号No</td>

@@ -2,14 +2,14 @@
 <form id="__11ed-6a39-f16bfee2-8221-d1692677ae63">
   <name>用车</name>
   <parentId>11e7-ef13-4f4442cb-8f99-af63cc0890b3</parentId>
-  <sortId>166910326144200000</sortId>
+  <description></description>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table width="800" align="center">
+<table border="1" width="800" align="center" style="border-spacing:0">
     <caption><strong><span style="font-size: larger;">&nbsp;&nbsp; &nbsp;华能山东如意（巴基斯坦）能源（私人）有限公司</span></strong></caption><caption><strong><span style="font-size: larger;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Huaneng Shandong Ruyi(Pakistan) Energy Private.,Ltd</span></strong><span style="font-size: 12px;">&nbsp;</span></caption><caption>
     <p><font size="4"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;用车申请单</b></font></p>
     <p><font size="4"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Car application form</b></font></p>
     <p>&nbsp;</p>
-    <table width="800" align="center">
+    <table width="800" align="center" style="border-spacing:0">
         <tbody>
             <tr>
                 <td colspan="2" style="text-align: right;">&nbsp;编号</td>
@@ -18,7 +18,7 @@
             </tr>
         </tbody>
     </table>
-    <table border="1" width="800" align="center">
+    <table width="800" align="center" border="1" style="border-spacing:0">
         <tbody>
             <tr>
                 <td rowspan="6" nowrap="noWrap">用车申请</td>
@@ -106,12 +106,22 @@
 </table>
 <p>&nbsp;</p>]]></templatecontext>
   <type>1</type>
+  <styleId></styleId>
   <showLog>false</showLog>
   <showLogType>default</showLogType>
   <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
   <showType>old</showType>
   <showWaterMark>false</showWaterMark>
+  <waterMarkScript></waterMarkScript>
   <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
   <mappingStr><![CDATA[{"formName":"用车","tableName":"","columnMappings":[]}]]></mappingStr>
   <orderno>0</orderno>
   <permissionType>public</permissionType>

@@ -31,9 +31,9 @@
         </tr>
     </tbody>
 </table>
-<p style="font-size: 12px;">&nbsp;&nbsp;<a href="#Middle">Middle</a></p>
-<p style="font-size: 12px;"><a href="#Bottom">Bottom</a></p>
-<table width="900" align="center" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(0, 0, 0);">
+<p style="font-size: 12px;">&nbsp;&nbsp;</p>
+<p style="font-size: 12px;">&nbsp;</p>
+<table width="900" align="center" border="1" cellpadding="0" cellspacing="0" style="border: 1px solid rgb(0, 0, 0);">
     <tbody>
         <tr>
             <td colspan="2" style="border: 1px solid rgb(0, 0, 0); text-align: center;">职务Duty</td>
@@ -216,16 +216,16 @@
 <p style="font-size: 12px; text-align: center;"><span style="font-size: 21px;"><b><a name="Middle"></a>ترسیلات زرکادرخواست فارم&nbsp;</b></span><strong style="font-size: 21px;">汇款申请书</strong></p>
 <div style="font-size: 12px; text-align: center;"><b><span style="font-size: 16pt;">Remittance Application Form</span></b></div>
 <div style="font-size: 12px;">&nbsp;</div>
-<div style="font-size: 12px;">&nbsp;<a href="#Top">Top</a></div>
-<div style="font-size: 12px;"><a href="#Bottom">Bottom</a></div>
-<table width="800" align="center" border="0" cellpadding="1" cellspacing="1">
+<div style="font-size: 12px;">&nbsp;</div>
+<div style="font-size: 12px;">&nbsp;</div>
+<table width="800" align="center" border="0" cellpadding="0" cellspacing="0">
     <tbody>
         <tr>
             <td style="text-align: right;">编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__kPpu4OklX6Mv0DBmkqv" text="readonly" name="付汇单编号" texttype="readonly" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="6">
@@ -485,8 +485,8 @@
     </tbody>
 </table>
 <p>&nbsp;</p>
-<p><a name="Bottom"></a><a href="#Top">Top</a></p>
-<p><a href="#Middle">Middle</a></p>]]></templatecontext>
+<p><a name="Bottom"></a></p>
+<p>&nbsp;</p>]]></templatecontext>
   <type>1</type>
   <styleId></styleId>
   <showLog>false</showLog>

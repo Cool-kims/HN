@@ -3,7 +3,7 @@
   <name>合同审批表</name>
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table border="1" width="800" align="center" style="border-spacing:0">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-family: Arial;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__6kqxHIlvRLqhiN5IS7y" name="QZf6357c900" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></span>&nbsp;</h3>
@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center">合同类型</td>

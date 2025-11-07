@@ -4,7 +4,7 @@
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <description></description>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table border="1" cellspacing="1" cellpadding="1" width="850" align="center" style="border: 1px solid rgb(180, 204, 238);">
+<table border="1" cellspacing="0" cellpadding="0" width="850" align="center" style="border: 1px solid rgb(180, 204, 238);">
     <tbody>
         <tr>
             <td colspan="4" style="border: 1px solid rgb(180, 204, 238); text-align: center;">

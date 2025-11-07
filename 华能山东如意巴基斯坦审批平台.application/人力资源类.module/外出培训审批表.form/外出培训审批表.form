@@ -3,7 +3,7 @@
   <name>外出培训审批表</name>
   <parentId>11e7-ef13-4f4442cb-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center" border="1">
+  <templatecontext><![CDATA[<table width="800" align="center" border="1" style="border-spacing:0">
     <caption>
     <div style="text-align: center; line-height: 24pt" align="center">
     <h3><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-e237-dcba399c-bd5c-c9b904edfddb" name="QZ9b81fa568" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>

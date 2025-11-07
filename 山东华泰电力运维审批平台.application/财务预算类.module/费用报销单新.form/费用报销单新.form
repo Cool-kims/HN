@@ -8,8 +8,8 @@
 <h3 style="text-align: -webkit-center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__H0Uj7dFAecPe5ly76f4" name="QZ917af6b6a" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" /></span></h3>
 <h3 style="text-align: -webkit-center;"><strong style="font-size: 12px;"><span style="font-size: x-large;">费用报销单</span></strong></h3>
 <p style="text-align: -webkit-center;">Expense Reimbursement Application<input id="__vXDoKHFKqAYU0Omcwl6" classname="cn.myapps.runtime.dynaform.form.ejb.ButtonField" value="清空签字" type="button" name="清空签字" mobile="false" impmappingconfigid="" transpond="" hiddenscript="" refreshonchanged="true" calculateonrefresh="false" hiddenvalue="" printhiddenvalue="" readonlyscript="" approvelimit="" afteractionscript="" beforeactionscript="var@nbsp;cid=getId();@amp;#13;var@nbsp;bzr=getItemValueAsString(@quot;编制人@quot;);@amp;#13;var@nbsp;name=getWebUser().getName();@amp;#13;//var@nbsp;bh=getItemValueAsString(@quot;编号@quot;);@amp;#13;if(name==(bzr)){@amp;#13;@amp;#13;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;ClearSignatureLogic(@quot;ITEM_经办人=@#146;@#146;,ITEM_部门主任=@#146;@#146;,item_费用归口管理部门=@#146;@#146;,ITEM_税务会计=@#146;@#146;,item_付汇总经理=@#146;@#146;,item_付汇财务主任=@#146;@#146;,ITEM_财务会计=@#146;@#146;,ITEM_财务主任=@#146;@#146;,ITEM_分管领导=@#146;@#146;,ITEM_总会计师=@#146;@#146;,ITEM_总经理=@#146;@#146;@quot;,@nbsp;@quot;@quot;,@nbsp;true);@amp;#13;var@nbsp;sql=@quot;update@nbsp;TLK_费用报销单新@nbsp;set@nbsp;ITEM_经办人=@#146;@#146;,ITEM_部门主任=@#146;@#146;,item_费用归口管理部门=@#146;@#146;,ITEM_税务会计=@#146;@#146;,item_付汇总经理=@#146;@#146;,item_付汇财务主任=@#146;@#146;,ITEM_财务会计=@#146;@#146;,ITEM_财务主任=@#146;@#146;,ITEM_分管领导=@#146;@#146;,ITEM_总会计师=@#146;@#146;,ITEM_总经理=@#146;@#146;@nbsp;where@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;@amp;#13;println(@quot;sql===@quot;+sql);@amp;#13;//@nbsp;updateByDSName(@quot;oracle@quot;,sql);@amp;#13;}name=getWebUser().getLoginno();@amp;#13;var@nbsp;qzsql=@quot;select@nbsp;id,domainid,formid,applicationid,to_char(item_印签)@nbsp;item_印签字符@nbsp;from@nbsp;tlk_印签管理表单@nbsp;where@nbsp;item_帐号=@#146;@quot;+name+@quot;@#146;@quot;;//根据当前登录人的姓名从签字表中选取对应记录&#9;@amp;#13;var@nbsp;datas@nbsp;=@nbsp;queryBySQL(qzsql);@amp;#13;var@nbsp;yqzf=@quot;@quot;;@amp;#13;var@nbsp;jqzf=@quot;@quot;;@amp;#13;if(datas!=null){@amp;#13;for(var@nbsp;iterator@nbsp;=@nbsp;datas.iterator();@nbsp;iterator.hasNext();){@amp;#13;&#9;&#9;var@nbsp;doc@nbsp;=@nbsp;iterator.next();@amp;#13;&#9;&#9;@nbsp;yqzf@nbsp;=@nbsp;doc.getItemValueAsString(@quot;印签字符@quot;);//数据库字段名称@amp;#13;&#9;//&#9;@nbsp;println(@quot;yqzf===@quot;+yqzf);@amp;#13;&#9;&#9;var@nbsp;yqzfx=new@nbsp;(Java.type(@#146;java.lang.String@#146;))(yqzf);@amp;#13;&#9;&#9;//println(@quot;yqzfx==@quot;+yqzfx);@amp;#13;&#9;&#9;//println(@quot;长度==@quot;+yqzfx.length-48);@amp;#13;&#9;&#9;@nbsp;var@nbsp;jqzf=yqzfx.substring(yqzfx.length-48,yqzfx.length-8);@amp;#13;&#9;}@amp;#13;&#9;@amp;#13;@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;ClearSignatureLogic(@quot;ITEM_经办人=@#146;@#146;,ITEM_部门主任=@#146;@#146;,item_费用归口管理部门=@#146;@#146;,ITEM_税务会计=@#146;@#146;,item_付汇总经理=@#146;@#146;,item_付汇财务主任=@#146;@#146;,ITEM_财务会计=@#146;@#146;,ITEM_财务主任=@#146;@#146;,ITEM_分管领导=@#146;@#146;,ITEM_总会计师=@#146;@#146;,ITEM_总经理=@#146;@#146;@quot;,@nbsp;jqzf,@nbsp;false);@amp;#13;@nbsp;@nbsp;@nbsp;@nbsp;var@nbsp;sgjl=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_经办人=@#146;@#146;@nbsp;where@nbsp;item_经办人@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,sgjl);@amp;#13;&#9;var@nbsp;sgxmfzr=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_部门主任=@#146;@#146;@nbsp;where@nbsp;item_部门主任@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,sgxmfzr);@amp;#13;&#9;var@nbsp;swkj=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_税务会计=@#146;@#146;@nbsp;where@nbsp;item_税务会计@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,swkj);@amp;#13;&#9;var@nbsp;hqbm1=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_财务会计=@#146;@#146;@nbsp;where@nbsp;item_财务会计@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,hqbm1);@amp;#13;&#9;var@nbsp;hqbm2=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_财务主任=@#146;@#146;@nbsp;where@nbsp;item_财务主任@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,hqbm2);@amp;#13;&#9;var@nbsp;hqbm3=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_分管领导=@#146;@#146;@nbsp;where@nbsp;item_分管领导@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,hqbm3);@amp;#13;&#9;var@nbsp;hqbm4=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_总会计师=@#146;@#146;@nbsp;where@nbsp;item_总会计师@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,hqbm4);@amp;#13;&#9;var@nbsp;hqbm5=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_总经理=@#146;@#146;@nbsp;where@nbsp;item_总经理@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,hqbm5);@amp;#13;&#9;var@nbsp;hqbm6=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_付汇总经理=@#146;@#146;@nbsp;where@nbsp;item_付汇总经理@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,hqbm6);@amp;#13;&#9;var@nbsp;hqbm7=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_付汇财务主任=@#146;@#146;@nbsp;where@nbsp;item_付汇财务主任@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,hqbm7);@amp;#13;&#9;var@nbsp;hqbm8=@quot;update@nbsp;tlk_费用报销单新@nbsp;set@nbsp;item_费用归口管理部门=@#146;@#146;@nbsp;where@nbsp;item_费用归口管理部门@nbsp;like@nbsp;@#146;%@quot;+jqzf+@quot;%@#146;@nbsp;and@nbsp;id=@#146;@quot;+cid+@quot;@#146;@quot;;@amp;#13;&#9;//@nbsp;updateByDSName(@quot;oracle@quot;,hqbm8);@amp;#13;@amp;#13;@amp;#13;@amp;#13;}" actionprint="" statetoshow="" dispatcherparams="" dispatcherurl="" dispatchermode="0" jumptype="0" jumpmode="0" filenamescript="" flowshowtype="ST01" startflowscript="" actionflow="" flowmode="2" withold="false" acttype="13" targetlist="" actionform="" actionview="" jumpactopentype="0" refreshmode="0" refreshfields="" label="" colortype="fff" hiddenprintscript="" hidetype="parent" ishidetype="false" datafield="" signaturetype="HTML" signatureaction="signature" actiondispatcherurlscript="" actiontype="0" actionselection="0" actionscript="" relatedformid="" /></p>
-<p style="text-align: left;"><a href="#Middle">Middle</a></p>
-<p style="text-align: left;"><a href="#Bottom">Bottom</a></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
 <table width="800" align="center">
     <caption>    </caption>
     <tbody>
@@ -21,7 +21,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center;">报销部门Department</td>
@@ -105,16 +105,16 @@
 <hr />
 <p style="text-align: center;"><a name="Middle"></a>v<span style="text-align: center; font-size: 21px;"><b>ترسیلات زرکادرخواست فارم&nbsp;</b></span><strong style="text-align: center; font-size: 21px;">汇款申请书</strong></p>
 <div style="font-size: 12px; text-align: center;"><b><span style="font-size: 16pt;">Remittance Application Form</span></b></div>
-<div style="font-size: 12px;"><a href="#Top">Top</a></div>
-<div style="font-size: 12px;"><a href="#Bottom">Bottom</a></div>
-<table width="800" align="center" border="0" cellpadding="1" cellspacing="1">
+<div style="font-size: 12px;">&nbsp;</div>
+<div style="font-size: 12px;">&nbsp;</div>
+<table width="800" align="center" border="0" cellpadding="0" cellspacing="0">
     <tbody>
         <tr>
             <td style="text-align: right;">编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__B1oeKTSwLGADk8tRaDG" text="readonly" name="付汇单编号" texttype="readonly" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="6">
@@ -374,8 +374,8 @@
     </tbody>
 </table>
 <p>&nbsp;</p>
-<p><a href="#Top">Top</a></p>
-<p><a href="#Middle">Middle</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;<a name="Bottom"></a></p>]]></templatecontext>
   <type>1</type>
   <styleId></styleId>

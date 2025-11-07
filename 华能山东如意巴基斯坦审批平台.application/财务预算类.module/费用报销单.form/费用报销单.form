@@ -3,7 +3,7 @@
   <name>费用报销单</name>
   <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table border="1" width="800" align="center" style="border-spacing:0">
     <caption>
     <h3>
     <div>华能山东如意（巴基斯坦）能源（私人）有限公司</div>
@@ -23,7 +23,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center">

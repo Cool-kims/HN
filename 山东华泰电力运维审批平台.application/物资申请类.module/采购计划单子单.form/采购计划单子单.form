@@ -4,7 +4,7 @@
   <parentId>11e7-ef14-67def9c7-8f99-af63cc0890b3</parentId>
   <sortId>151194400930600000</sortId>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table width="800" border="1" style="border: 1px solid rgb(180, 204, 238);">
+<table width="800" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0;">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">序号 Serial Number</td>

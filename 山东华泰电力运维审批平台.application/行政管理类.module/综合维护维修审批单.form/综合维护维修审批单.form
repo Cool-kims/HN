@@ -3,7 +3,7 @@
   <name>综合维护维修审批单</name>
   <parentId>11e7-ef14-67dc1470-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table border="1" cellspacing="1" cellpadding="1" width="850" style="border: 1px solid rgb(180, 204, 238);" align="center">
+  <templatecontext><![CDATA[<table border="1" cellspacing="0" cellpadding="0" width="850" style="border: 1px solid rgb(180, 204, 238);" align="center">
     <tbody>
         <tr>
             <td colspan="4" style="border: 1px solid rgb(180, 204, 238); text-align: center;">

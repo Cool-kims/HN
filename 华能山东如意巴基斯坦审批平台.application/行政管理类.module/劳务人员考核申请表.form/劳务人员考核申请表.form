@@ -3,7 +3,7 @@
   <name>劳务人员考核申请表</name>
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table width="800" align="center" style="border-spacing:0">
     <caption>
     <h3><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__amzUezPkAt7rGhkLaxt" name="QZ48dccf9c9" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
     <h3><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__2Am2zspo7ECybc8blHU" name="QZ0a847ce67" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" /></span></h3>
@@ -23,7 +23,7 @@
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td rowspan="4" colspan="4" style="text-align: center">

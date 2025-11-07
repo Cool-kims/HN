@@ -21,7 +21,7 @@
         </tr>
     </tbody>
 </table>
-<table width="900" border="1" style="border: 1px solid rgb(180, 204, 238);" align="center" name="xs1">
+<table width="900" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0" align="center" name="xs1">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">
@@ -40,7 +40,7 @@
             <div>接待时间</div>
             <div>Time of Reception</div>
             </td>
-            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__bN7OHKsmZRpkyRT6EUR" type="text" fieldtype="VALUE_TYPE_DATE" name="接待时间" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.DateField" id="__bN7OHKsmZRpkyRT6EUR" type="text" fieldtype="VALUE_TYPE_DATE" name="接待时间" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" limit="false" prev_name="" discript="" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" filtercondition="" datepattern="YMD" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" /></td>
             <td style="border: 1px solid rgb(180, 204, 238);">
             <div>接待人</div>
             <div>Receiver</div>
@@ -65,7 +65,7 @@
             <div>接待地点</div>
             <div>Reception Place</div>
             </td>
-            <td style="border: 1px solid rgb(180, 204, 238);">&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__ADaSKnSnIJxTKWCqjRv" text="text" name="接待地点" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="接待地点" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
+            <td style="border: 1px solid rgb(180, 204, 238);"><input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__ADaSKnSnIJxTKWCqjRv" text="text" name="接待地点" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="接待地点" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
             <td style="border: 1px solid rgb(180, 204, 238);">
             <div>陪客人数</div>
             <div>Number of Accompanied</div>
@@ -183,7 +183,7 @@
     </tbody>
 </table>
 <p>&nbsp;</p>
-<table width="900" align="center" border="0" cellpadding="1" cellspacing="1" name="xs2">
+<table width="900" align="center" border="0" cellpadding="0" cellspacing="0" name="xs2">
     <tbody>
         <tr>
             <td style="text-align: center;"><span style="font-size: medium;"><img src="http://172.18.110.171/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__btbFFbo6O3uqFq7bhjB" name="QZ46aeff4ea" valuescript="fromname();" calculateonrefresh="true" style="font-size: 13.3333px;" /></span></td>

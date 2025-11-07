@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center">
@@ -58,7 +58,7 @@
             <td colspan="2"><input id="__3iBNkeQZWXIuLmGGMUD" class="cn.myapps.runtime.dynaform.form.ejb.DateField" value="" name="到货日期" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_DATE" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" limit="false" prev_name="" datepattern="YMD" /></td>
             <td style="text-align: right">结算日期<br />
             account days</td>
-            <td><input id="__LKmE7b4gPxXObF8mwuU" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="9" value="" name="结算日期" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_DATE" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" limit="false" prev_name="" datepattern="YMD" style=" width: 73px" /></td>
+            <td><input id="__LKmE7b4gPxXObF8mwuU" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="9" value="" name="结算日期" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_DATE" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" limit="false" prev_name="" datepattern="YMD" style=" width: 173px" /></td>
             <td style="text-align: center">燃料名称<br />
             fuel name</td>
             <td colspan="2"><input id="__G9yWyhwSTpouOF6MogD" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="燃料名称" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" /></td>
@@ -73,8 +73,10 @@
             <td style="text-align: right">结算单价<br />
             unit price of settlement</td>
             <td><input id="__HenfFXDDYk4rMIU9END" class="cn.myapps.runtime.dynaform.form.ejb.InputField" size="9" value="" name="结算单价" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" style=" width: 72px" /></td>
-            <td>合同单价<br />
-            unit price of contract</td>
+            <td>
+            <div style="text-align: center;">合同单价</div>
+            <div style="text-align: center;">unit price of contract</div>
+            </td>
             <td colspan="2"><input id="__uhvru7DKn4k7OkyS0HS" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="合同单价" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" /></td>
         </tr>
         <tr>
@@ -85,7 +87,7 @@
             <td colspan="2"><input id="__AIi4hvnvWAfQsmDjB5B" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="结算热值" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" /></td>
             <td style="text-align: right">挥发份（daf）：</td>
             <td><input id="__JRI2L3Zens4m08c5gH6" class="cn.myapps.runtime.dynaform.form.ejb.InputField" size="9" value="" name="结算挥发" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" style=" width: 75px" /></td>
-            <td>硫份（arb）：</td>
+            <td style="text-align: center;">硫份（arb）：</td>
             <td colspan="2"><input id="__TWUzjxA5WzzwOyOE2bR" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="结算硫份" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" /></td>
         </tr>
         <tr>
@@ -95,7 +97,7 @@
             <td colspan="2"><input id="__2YYS8jcMLupvVwaD5CJ" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="接收热值" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" /></td>
             <td style="text-align: right">挥发份（daf）：</td>
             <td><input id="__ukJkGYLfQjPjzdsx09d" class="cn.myapps.runtime.dynaform.form.ejb.InputField" size="10" value="" name="接收挥发" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" style=" width: 77px" /></td>
-            <td>硫份（arb）：</td>
+            <td style="text-align: center;">硫份（arb）：</td>
             <td colspan="2"><input id="__TofdoVYlJo3PEWTqYF8" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="接收硫份" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldkeyevent="Tabkey" text="text" fieldtype="VALUE_TYPE_VARCHAR" numberpattern="" bordertype="false" filtercondition="" discript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" /></td>
         </tr>
         <tr>

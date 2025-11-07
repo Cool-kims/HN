@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td>印章名称<span lang="EN-US" style="font-family: 'Times New Roman','serif'; color: black; font-size: 12pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-font-kerning: 1.0pt; mso-fareast-font-family: 宋体; mso-themecolor: text1">Stamp Name</span></td>

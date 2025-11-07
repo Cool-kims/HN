@@ -23,7 +23,7 @@
         </tr>
     </tbody>
 </table>
-<table align="center" width="750" border="1" style="border: 1px solid rgb(180, 204, 238);">
+<table align="center" width="750" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0;">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center; border: 1px solid rgb(180, 204, 238);">合同名称Contract Name</td>
@@ -174,14 +174,14 @@
 <div style="text-align: center;"><b><span style="font-size: 16pt;">Remittance Application Form</span></b></div>
 <div><a href="#Top">Top</a></div>
 <div><a href="#Bottom">Bottom</a></div>
-<table width="800" align="center" border="0" cellpadding="1" cellspacing="1">
+<table width="800" align="center" border="0" cellpadding="0" cellspacing="0">
     <tbody>
         <tr>
             <td style="text-align: right;">编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__uZU6UuV2cHXKFFsSJ3b" text="readonly" name="付汇单编号" texttype="readonly" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></td>
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="6">

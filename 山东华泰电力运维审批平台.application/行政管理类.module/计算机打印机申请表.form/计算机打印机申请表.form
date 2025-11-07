@@ -4,7 +4,7 @@
   <parentId>11e7-ef14-67dc1470-8f99-af63cc0890b3</parentId>
   <description></description>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <caption>
     <div style="text-align: center; line-height: 24pt" align="center">
     <h3 style="text-align: center;">&nbsp;<img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__7XXnTzBU0fVtTXHkxWJ" name="QZ152a684b9" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" style="font-size: x-large;" /></h3>

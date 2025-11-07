@@ -3,7 +3,7 @@
   <name>新增资产审批单</name>
   <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-08-05T19:57:21.520+08:00</lastmodify>
+  <lastmodify>2025-11-07T10:44:19.640+08:00</lastmodify>
   <subject>新增资产审批单</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -18,8 +18,8 @@
 &lt;name&gt;&#24320;&#22987;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;10&lt;/x&gt;
-&lt;y&gt;89&lt;/y&gt;
+&lt;x&gt;17.35000228881836&lt;/x&gt;
+&lt;y&gt;108.80000305175781&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -110,8 +110,8 @@
 &lt;name&gt;&#36164;&#20135;&#20351;&#29992;&#37096;&#38376;&#20027;&#20219;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;318.5625&lt;/x&gt;
-&lt;y&gt;94&lt;/y&gt;
+&lt;x&gt;301.35000228881836&lt;/x&gt;
+&lt;y&gt;103.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -201,8 +201,8 @@
 &lt;name&gt;&#36164;&#20135;&#31649;&#29702;&#37096;&#38376;&#20027;&#20219;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;521.125&lt;/x&gt;
-&lt;y&gt;93&lt;/y&gt;
+&lt;x&gt;499.35000228881836&lt;/x&gt;
+&lt;y&gt;101.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -292,8 +292,8 @@
 &lt;name&gt;&#36130;&#21153;&#19982;&#39044;&#31639;&#37096;&#20027;&#20219;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;752.6875&lt;/x&gt;
-&lt;y&gt;89&lt;/y&gt;
+&lt;x&gt;702.3500022888184&lt;/x&gt;
+&lt;y&gt;102.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -383,8 +383,8 @@
 &lt;name&gt;&#20998;&#31649;&#21103;&#24635;&#32463;&#29702;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;977.125&lt;/x&gt;
-&lt;y&gt;90&lt;/y&gt;
+&lt;x&gt;902.3500022888184&lt;/x&gt;
+&lt;y&gt;101.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -474,8 +474,8 @@
 &lt;name&gt;&#24635;&#32463;&#29702;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;915.5625&lt;/x&gt;
-&lt;y&gt;226&lt;/y&gt;
+&lt;x&gt;902.3500022888184&lt;/x&gt;
+&lt;y&gt;228.8000030517578&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -566,7 +566,7 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#30003;&#35831;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;108.5625&lt;/x&gt;
+&lt;x&gt;108&lt;/x&gt;
 &lt;y&gt;101&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -657,8 +657,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#22266;&#23450;&#36164;&#20135;&#20250;&#35745;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;601.125&lt;/x&gt;
-&lt;y&gt;224&lt;/y&gt;
+&lt;x&gt;705.3500022888184&lt;/x&gt;
+&lt;y&gt;224.8000030517578&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -680,8 +680,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;378&lt;/x&gt;
-&lt;y&gt;230&lt;/y&gt;
+&lt;x&gt;552.3500022888184&lt;/x&gt;
+&lt;y&gt;236.8000030517578&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;

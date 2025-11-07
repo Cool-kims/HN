@@ -11,7 +11,7 @@
 
 
 
-<table border="1" cellSpacing="1" cellPadding="1" width="384" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; width: 384px; height: 90px; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+<table border="1" cellspacing="0" cellpadding="0" width="384" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; width: 384px; height: 90px; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
     <tbody>
         <tr>
             <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">用户姓名：</td>

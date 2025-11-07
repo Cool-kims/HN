@@ -3,7 +3,7 @@
   <name>奖励通知单</name>
   <parentId>11e7-ef13-4f455447-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table width="800" align="center" style="border-spacing:0">
     <caption>
     <h3 style="text-align: center;">&nbsp;</h3>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__uFVD5I9nGC3WD6srWJn" name="QZ7b709a9de" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="2" nowrap="noWrap" style="text-align: center"><span style="font-family: 宋体; font-size: 10.5pt; mso-font-kerning: 1.0pt; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><span style="font-family: 宋体; font-size: 10.5pt; mso-font-kerning: 1.0pt; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">奖励部门</span></span></td>

@@ -3,7 +3,7 @@
   <name>年度厂安全培训需求计划</name>
   <parentId>11e7-ef16-8937bdb9-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table border="1" cellspacing="1" cellpadding="1" width="600" style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">
+  <templatecontext><![CDATA[<table border="1" cellspacing="0" cellpadding="0" width="600" style="border-bottom: rgb(180,204,238) 1px solid; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">
     <tbody>
         <tr>
             <td colspan="5" style="border-bottom: rgb(180,204,238) 1px solid; text-align: right; border-left: rgb(180,204,238) 1px solid; border-top: rgb(180,204,238) 1px solid; border-right: rgb(180,204,238) 1px solid">

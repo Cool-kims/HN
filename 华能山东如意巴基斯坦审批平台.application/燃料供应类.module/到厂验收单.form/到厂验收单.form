@@ -3,7 +3,7 @@
   <name>到厂验收单</name>
   <parentId>11e7-ef13-4f4665c4-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table width="800" align="center" style="border-spacing:0?=S?&lt;!;; border-spacing:0">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__m1bASAUqoG9NHxQUZZI" name="QZf9e067870" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table width="839" align="center" border="1" style="height: 310px; width: 839px">
+<table width="839" align="center" border="1" style="height: 310px; width: 839px?=S?&lt;!;; border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center">运输单位<br />

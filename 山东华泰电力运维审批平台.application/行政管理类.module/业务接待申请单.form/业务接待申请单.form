@@ -21,7 +21,7 @@
         </tr>
     </tbody>
 </table>
-<table width="900" border="1" align="center" name="xs1" style="border: 1px solid rgb(180, 204, 238);">
+<table width="900" border="1" align="center" name="xs1" style="border: 1px solid rgb(180, 204, 238); border-spacing:0">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">
@@ -189,7 +189,7 @@
     </tbody>
 </table>
 <p>&nbsp;</p>
-<table width="900" align="center" border="0" cellpadding="1" cellspacing="1" name="xs2">
+<table width="900" align="center" border="0" cellpadding="0" cellspacing="0" name="xs2">
     <tbody>
         <tr>
             <td style="text-align: center;"><span style="font-size: medium;"><img src="http://172.18.110.171/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__o1W8JU2onnw6PqGmXfZ" name="QZ021ba1ed6" valuescript="fromname();" calculateonrefresh="true" style="font-size: 13.3333px;" /></span></td>

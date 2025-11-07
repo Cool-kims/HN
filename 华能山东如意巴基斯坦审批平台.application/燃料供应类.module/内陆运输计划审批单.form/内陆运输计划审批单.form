@@ -3,7 +3,7 @@
   <name>内陆运输计划审批单</name>
   <parentId>11e7-ef13-4f4665c4-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table border="0" width="800" align="center">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-e237-dcba399c-bd5c-c9b904edfddb" name="QZb3c74020c" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center">

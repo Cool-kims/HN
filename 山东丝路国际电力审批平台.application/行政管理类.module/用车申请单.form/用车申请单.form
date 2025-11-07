@@ -19,7 +19,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td rowspan="4" nowrap="noWrap">用车申请</td>

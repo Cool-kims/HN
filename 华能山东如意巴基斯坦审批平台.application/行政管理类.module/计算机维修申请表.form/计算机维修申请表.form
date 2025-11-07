@@ -3,7 +3,7 @@
   <name>计算机维修申请表</name>
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table border="1" width="800" align="center">
+  <templatecontext><![CDATA[<table width="800" align="center" border="1" style="border-spacing:0">
     <caption>
     <div style="text-align: center; line-height: 24pt" align="center"><b><span style="color: black; font-size: 18pt"><b><span style="color: black; font-size: 18pt">
     <div align="center">&nbsp;</div>

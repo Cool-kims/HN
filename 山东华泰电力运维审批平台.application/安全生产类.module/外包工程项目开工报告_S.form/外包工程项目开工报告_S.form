@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
         },300);
 });
 </script>
-<table height="62" cellspacing="1" cellpadding="1" width="731" border="0" style="border-top: medium none; height: 62px; border-right: medium none; border-bottom: medium none; border-left: medium none; width: 731px">
+<table height="62" cellspacing="0" cellpadding="0" width="731" border="0" style="border-top: medium none; height: 62px; border-right: medium none; border-bottom: medium none; border-left: medium none; width: 731px">
     <tbody>
         <tr>
             <td nowrap="noWrap" style="border-top: medium none; border-right: medium none; border-bottom: medium none; text-align: right; border-left: medium none">编号：</td>

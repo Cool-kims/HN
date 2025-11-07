@@ -4,7 +4,7 @@
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <description></description>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table width="800" align="center">
+<table border="1" width="800" align="center" style="border-spacing:0">
     <caption>
     <div align="center"><span style="font-size: 16pt;"><img src="http://172.18.110.171/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__PwlFTG7YMxsRKEKw6kt" name="QZc503a4655" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></div>
     <div align="center"><span style="font-size: 12pt;"><img src="http://172.18.110.171/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__nB1mbR5wwTumU8SgOhG" name="QZ63fe56d27" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" /></span></div>
@@ -19,7 +19,7 @@
         </tr>
     </tbody>
 </table>
-<table width="800" align="center" border="1">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td><span style="font-family: SimSun, serif; font-size: 10.5pt;">来宾单位<span lang="EN-US" style="font-family: 宋体; font-size: 10.5pt;">Guest</span></span></td>

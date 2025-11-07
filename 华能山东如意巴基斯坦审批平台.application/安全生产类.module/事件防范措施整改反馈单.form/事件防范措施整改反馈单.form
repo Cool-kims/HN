@@ -3,7 +3,7 @@
   <name>事件防范措施整改反馈单</name>
   <parentId>11e7-ef13-4f396cc3-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table width="800" align="center" style="border-spacing:0">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__N3r87u0nDhugvLFsKeV" name="QZ0bb6beffe" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
@@ -19,7 +19,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center"><font face="宋体"><span style="font-size: 14px">事故类别</span></font></td>

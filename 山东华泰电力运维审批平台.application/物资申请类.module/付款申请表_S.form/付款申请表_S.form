@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
         },300);
 });
 </script>
-<table cellspacing="1" cellpadding="1" width="731" border="0" style="">
+<table cellspacing="0" cellpadding="0" width="731" border="0" style="">
     <tbody>
         <tr>
             <td nowrap="noWrap" style="text-align: right;">编号：</td>

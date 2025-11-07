@@ -3,7 +3,7 @@
   <name>异地任职挂职借用人员交通费</name>
   <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ebc0-d998d6df-9710-39a000f28f4a</authorname>
-  <lastmodify>2025-08-05T19:54:58.012+08:00</lastmodify>
+  <lastmodify>2025-11-07T10:36:39.969+08:00</lastmodify>
   <subject>异地任职挂职借用人员交通费</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -110,8 +110,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32534;&#21046;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;190.5625&lt;/x&gt;
-&lt;y&gt;154&lt;/y&gt;
+&lt;x&gt;190.35000228881836&lt;/x&gt;
+&lt;y&gt;146.8000030517578&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -202,8 +202,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#37096;&#38376;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;417.5625&lt;/x&gt;
-&lt;y&gt;148&lt;/y&gt;
+&lt;x&gt;416.35000228881836&lt;/x&gt;
+&lt;y&gt;146.8000030517578&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -293,8 +293,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#36130;&#21153;&#19982;&#39044;&#31639;&#37096;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;290.5625&lt;/x&gt;
-&lt;y&gt;276&lt;/y&gt;
+&lt;x&gt;417.7000045776367&lt;/x&gt;
+&lt;y&gt;271.6000061035156&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -404,8 +404,8 @@ var roles=getUsersByRoleId(roleid1);
 &lt;name&gt;&#32463;&#29702;&#24037;&#20316;&#37096;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;700.5625&lt;/x&gt;
-&lt;y&gt;268&lt;/y&gt;
+&lt;x&gt;698.4000091552734&lt;/x&gt;
+&lt;y&gt;271.20001220703125&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -427,8 +427,8 @@ var roles=getUsersByRoleId(roleid1);
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;151&lt;/x&gt;
-&lt;y&gt;281&lt;/y&gt;
+&lt;x&gt;225.35000228881836&lt;/x&gt;
+&lt;y&gt;281.8000030517578&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -518,8 +518,8 @@ var roles=getUsersByRoleId(roleid1);
 &lt;name&gt;&#20154;&#21147;&#36164;&#28304;&#37096;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;701.5625&lt;/x&gt;
-&lt;y&gt;140&lt;/y&gt;
+&lt;x&gt;699.3500022888184&lt;/x&gt;
+&lt;y&gt;146.8000030517578&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;

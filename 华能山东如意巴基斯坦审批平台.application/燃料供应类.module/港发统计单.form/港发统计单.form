@@ -3,7 +3,7 @@
   <name>港发统计单</name>
   <parentId>11e7-ef13-4f4665c4-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table border="0" width="800" align="center" style="border-spacing:0?=S?&lt;!;; border-spacing:0">
     <caption>
     <p style="text-align: center;">&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="11e7-e237-dcba399c-bd5c-c9b904edfddb" name="QZ25c89fadd" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
@@ -20,7 +20,7 @@
         </tr>
     </tbody>
 </table>
-<table width="839" align="center" border="1" style="height: 310px; width: 839px">
+<table width="839" align="center" border="1" style="height: 310px; width: 839px?=S?&lt;!;; border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center;">运输单位<br />
@@ -40,7 +40,7 @@
             <td colspan="2" style="text-align: center;"><input id="11e7-2180-6cca586f-a60c-cf927eb9b3bb" class="cn.myapps.runtime.dynaform.form.ejb.InputField" value="" name="目的地" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" fieldkeyevent="Tabkey" text="text" filtercondition="" discript="" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" bordertype="false" numberpattern="" fieldtype="VALUE_TYPE_VARCHAR" /></td>
             <td colspan="2" style="text-align: center;"><span style="text-align: left">发运时间<br />
             time of shipment </span></td>
-            <td style="text-align: center;"><input id="11e7-2289-64f32650-a60c-cf927eb9b3bb" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="14" value="" name="发运时间" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" fieldtype="VALUE_TYPE_DATE" filtercondition="" discript="" limit="false" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" datepattern="YMD" prev_name="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" style=" width: 108px" /></td>
+            <td style="text-align: center;" nowrap="nowrap" align="center"><input id="11e7-2289-64f32650-a60c-cf927eb9b3bb" class="cn.myapps.runtime.dynaform.form.ejb.DateField" size="14" value="" name="发运时间" mobile="true" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" fieldtype="VALUE_TYPE_DATE" filtercondition="" discript="" limit="false" refreshonchanged="false" calculateonrefresh="false" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" datepattern="YMD" prev_name="" texttype="text" editmode="01" isdefaultvalue="false" processdescription="[];[]" valuescript="" validatelibs="" validaterule="" style=" width: 108px" /></td>
         </tr>
         <tr>
             <td colspan="4" style="text-align: center;">发运量（吨）<br />

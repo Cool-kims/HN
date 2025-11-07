@@ -3,7 +3,7 @@
   <name>到港验收单</name>
   <parentId>11e7-ef13-4f4665c4-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table border="0" width="800" align="center">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__RTKIzvFOjjwPgGDnhTz" name="QZef782ba72" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
@@ -19,7 +19,7 @@
         </tr>
     </tbody>
 </table>
-<table width="839" align="center" border="1" style="height: 310px; width: 839px">
+<table width="839" align="center" border="1" style="height: 310px; width: 839px?=S?&lt;!;; border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center">供货单位<br />

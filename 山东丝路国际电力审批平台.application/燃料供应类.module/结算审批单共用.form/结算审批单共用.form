@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
         },300);
 });
 </script>
-<table border="0" cellspacing="1" cellpadding="1" width="731" style="">
+<table border="0" cellspacing="0" cellpadding="0" width="731" style="">
     <tbody>
         <tr>
             <td nowrap="noWrap" style="text-align: right;">合同名称：</td>

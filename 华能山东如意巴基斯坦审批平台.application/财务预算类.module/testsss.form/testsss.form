@@ -3,7 +3,7 @@
   <name>testsss</name>
   <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table border="1" width="800" align="center" style="border-spacing:0">
     <caption>
     <p><strong><span style="font-size: x-large">华能山东如意（巴基斯坦）能源（私人）有限公司</span></strong></p>
     <p><strong><span style="font-size: x-large">Huaneng Shandong Ruyi (Pakistan) Energy (Private) Limited</span></strong></p>

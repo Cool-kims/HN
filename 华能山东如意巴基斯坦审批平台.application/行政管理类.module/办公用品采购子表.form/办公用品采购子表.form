@@ -3,7 +3,7 @@
   <name>办公用品采购子表</name>
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <sortId>145606871559000000</sortId>
-  <templatecontext><![CDATA[<table border="1" cellspacing="1" cellpadding="1" width="500" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
+  <templatecontext><![CDATA[<table border="1" cellspacing="0" cellpadding="0" width="500" style="border-bottom: #b4ccee 1px solid; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">
     <tbody>
         <tr>
             <td style="border-bottom: #b4ccee 1px solid; text-align: right; border-left: #b4ccee 1px solid; border-top: #b4ccee 1px solid; border-right: #b4ccee 1px solid">名称</td>

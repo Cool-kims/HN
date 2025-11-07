@@ -3,7 +3,7 @@
   <name>固定无形资产转资清单新</name>
   <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-08-05T19:55:31.578+08:00</lastmodify>
+  <lastmodify>2025-11-07T10:40:26.058+08:00</lastmodify>
   <subject>固定无形资产转资清单新</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -18,8 +18,8 @@
 &lt;name&gt;&#24320;&#22987;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;85&lt;/x&gt;
-&lt;y&gt;72&lt;/y&gt;
+&lt;x&gt;84.35000228881836&lt;/x&gt;
+&lt;y&gt;81.80000305175781&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -41,8 +41,8 @@
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;373&lt;/x&gt;
-&lt;y&gt;198&lt;/y&gt;
+&lt;x&gt;1189.3500022888184&lt;/x&gt;
+&lt;y&gt;83.80000305175781&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -224,7 +224,7 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#36164;&#20135;&#31649;&#29702;&#37096;&#38376;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;458.5625&lt;/x&gt;
+&lt;x&gt;458&lt;/x&gt;
 &lt;y&gt;72&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -315,8 +315,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#36130;&#21153;&#37096;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;762.5625&lt;/x&gt;
-&lt;y&gt;76&lt;/y&gt;
+&lt;x&gt;699.3500022888184&lt;/x&gt;
+&lt;y&gt;73.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -406,8 +406,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#22266;&#23450;&#36164;&#20135;&#20250;&#35745;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;578.5625&lt;/x&gt;
-&lt;y&gt;185&lt;/y&gt;
+&lt;x&gt;955.7000045776367&lt;/x&gt;
+&lt;y&gt;73.60000610351562&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;

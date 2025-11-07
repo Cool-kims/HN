@@ -3,7 +3,7 @@
   <name>支票领用申请单旧</name>
   <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-08-05T19:28:48.161+08:00</lastmodify>
+  <lastmodify>2025-11-07T10:45:14.185+08:00</lastmodify>
   <subject>支票领用申请单旧</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -18,8 +18,8 @@
 &lt;name&gt;&#24320;&#22987;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;33&lt;/x&gt;
-&lt;y&gt;109&lt;/y&gt;
+&lt;x&gt;44.35000228881836&lt;/x&gt;
+&lt;y&gt;123.80000305175781&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -109,8 +109,8 @@
 &lt;name&gt;&#20986;&#32435;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;353.5625&lt;/x&gt;
-&lt;y&gt;111&lt;/y&gt;
+&lt;x&gt;351.35000228881836&lt;/x&gt;
+&lt;y&gt;111.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -200,8 +200,8 @@
 &lt;name&gt;&#23457;&#26680;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;555.5625&lt;/x&gt;
-&lt;y&gt;108&lt;/y&gt;
+&lt;x&gt;553.3500022888184&lt;/x&gt;
+&lt;y&gt;111.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -291,8 +291,8 @@
 &lt;name&gt;&#36130;&#21153;&#20027;&#20219;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;776.5625&lt;/x&gt;
-&lt;y&gt;106&lt;/y&gt;
+&lt;x&gt;775.3500022888184&lt;/x&gt;
+&lt;y&gt;111.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -314,8 +314,8 @@
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;833.5625&lt;/x&gt;
-&lt;y&gt;240&lt;/y&gt;
+&lt;x&gt;996.7000045776367&lt;/x&gt;
+&lt;y&gt;125.60000610351562&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -406,8 +406,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32534;&#21046;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;161&lt;/x&gt;
-&lt;y&gt;111&lt;/y&gt;
+&lt;x&gt;160.35000228881836&lt;/x&gt;
+&lt;y&gt;111.80000305175781&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;

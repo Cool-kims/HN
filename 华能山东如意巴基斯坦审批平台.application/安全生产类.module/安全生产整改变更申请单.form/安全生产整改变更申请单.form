@@ -3,7 +3,7 @@
   <name>安全生产整改变更申请单</name>
   <parentId>11e7-ef13-4f396cc3-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table width="800" align="center" style="border-spacing:0">
     <caption>
     <p>&nbsp;</p>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__oz6xiZKOzHDRfV11SGQ" name="QZ048ae2ab5" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
@@ -19,7 +19,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center"><span style="font-family: 宋体; font-size: 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-ascii-font-family: 'Times New Roman'">变更申请单位（班组）</span></td>

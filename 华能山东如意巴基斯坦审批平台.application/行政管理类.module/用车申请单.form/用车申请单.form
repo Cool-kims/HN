@@ -4,7 +4,7 @@
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <description></description>
   <templatecontext><![CDATA[<p><span style="text-align: center;">&nbsp;</span></p>
-<table width="800" align="center">
+<table width="800" align="center" style="border-spacing:0">
     <caption>
     <h3 style="text-align: center;"><span style="font-family: Arial;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__fe3cKdqn89h7WUOZX0W" name="QZa8b3d34f9" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></span>&nbsp;</h3>
     <h3 style="text-align: center;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__VpXpCuMLGbKCw2q0Uwj" name="QZ3bbc81e44" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" style="font-size: x-large;" /></h3>
@@ -19,7 +19,7 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td rowspan="7" nowrap="noWrap">用车申请</td>

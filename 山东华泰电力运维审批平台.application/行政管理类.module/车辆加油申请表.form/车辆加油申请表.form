@@ -11,7 +11,7 @@
 <p>&nbsp;</p>
 <h4 style="text-align: center;"><span style="font-size: medium;"><b><span style="font-family: 宋体;">Application for Vehicle's R</span></b><b><span style="font-family: 宋体;">efueling</span></b></span></h4>
 <p class="MsoNormal" style="text-align: center;">&nbsp;<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="__vF0RSxDwQx8RD8e9TUn" text="hidden" name="编号" texttype="hidden" hidetype="parent" ishidetype="false" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" layout="horizontal" readonlyshowvalonly="true" showlog="true" arrow="false" discript="" validaterule="" valuescript="" width="" widthunit="px" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" worklimitchecked="false" textareamaxlimit="" isdefaultvalue="false" calculateonrefresh="false" mobile="true" secrettext="false" defaultvalueisnull="false" numberpattern="" processdescription="[];[]" filtercondition="" instantvalidate="false" validatelibs="" editmode="01" refreshmode="0" refreshfields="" attributeid="undefined" /></p>
-<table width="80%" align="center" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+<table width="80%" align="center" border="1" cellpadding="0" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">

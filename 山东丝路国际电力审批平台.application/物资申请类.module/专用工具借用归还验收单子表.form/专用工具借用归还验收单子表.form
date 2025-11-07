@@ -5,7 +5,7 @@
   <description>归还验收子表333</description>
   <sortId>151202372189700000</sortId>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table width="600" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(180, 204, 238);">
+<table width="600" border="1" cellpadding="0" cellspacing="0" style="border: 1px solid rgb(180, 204, 238);">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238); text-align: center;"><strong>专用工具名称</strong></td>

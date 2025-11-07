@@ -3,7 +3,7 @@
   <name>物资紧急计划申请单子表</name>
   <parentId>11e7-ef14-67def9c7-8f99-af63cc0890b3</parentId>
   <sortId>151203083541900000</sortId>
-  <templatecontext><![CDATA[<table width="800" align="center" border="1" style="border: 1px solid rgb(180, 204, 238);">
+  <templatecontext><![CDATA[<table width="800" align="center" border="1" style="border: 1px solid rgb(180, 204, 238);border-spacing:0;">
     <tbody>
         <tr>
             <td style="border: 1px solid rgb(180, 204, 238);">序号</td>

@@ -5,7 +5,7 @@
   <description>工具归还333</description>
   <sortId>151202554645200000</sortId>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table height="62" cellspacing="1" cellpadding="1" width="731" border="0" style="border: medium none; height: 62px; width: 731px;">
+<table height="62" cellspacing="0" cellpadding="0" width="731" border="0" style="border: medium none; height: 62px; width: 731px;">
     <tbody>
         <tr>
             <td nowrap="noWrap" style="border: medium none; text-align: right;">编号：</td>

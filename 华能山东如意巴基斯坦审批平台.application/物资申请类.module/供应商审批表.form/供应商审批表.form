@@ -3,7 +3,7 @@
   <name>供应商审批表</name>
   <parentId>11e7-ef13-4f3fd5b5-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table width="800" align="center">
+  <templatecontext><![CDATA[<table width="800" align="center" style="border-spacing:0">
     <caption>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__2gFcrLbG8VyiB8qP1mp" name="QZfadcd9625" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="../image/form/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__Iell8UKe2uJuljO8cey" name="QZ44a019dc0" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" /></span></h3>
@@ -18,12 +18,12 @@
         </tr>
     </tbody>
 </table>
-<table border="1" width="800" align="center">
+<table width="800" align="center" border="1" style="border-spacing:0">
     <tbody>
         <tr>
             <td colspan="4" style="text-align: center">企业名称</td>
             <td colspan="2"><input id="__W1p5Z4w1fwjHIKgDp3w" class="cn.myapps.runtime.dynaform.form.ejb.InputField" name="企业名称" value="" size="28" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.InputField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" bordertype="false" numberpattern="" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" text="text" fieldkeyevent="Tabkey" discript="" filtercondition="" valuescript="" style="width: 218px" /></td>
-            <td style="text-align: right">成立时间</td>
+            <td style="text-align: right" align="right" nowrap="nowrap">成立时间</td>
             <td colspan="2"><input id="__B7LTVoaLCQc0X1gXxzB" class="cn.myapps.runtime.dynaform.form.ejb.DateField" name="成立时间" value="" readonlyscript="" printhiddenvalue="" hiddenprintscript="" hiddenvalue="" calculateonrefresh="false" refreshonchanged="false" hiddenscript="" classname="cn.myapps.runtime.dynaform.form.ejb.DateField" mobile="true" validaterule="" validatelibs="" processdescription="[];[]" isdefaultvalue="false" editmode="01" texttype="text" fieldtype="VALUE_TYPE_DATE" discript="" filtercondition="" valuescript="" prev_name="" datepattern="YMD" limit="false" /></td>
         </tr>
         <tr>

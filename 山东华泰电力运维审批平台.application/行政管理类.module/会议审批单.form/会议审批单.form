@@ -3,7 +3,7 @@
   <name>会议审批单</name>
   <parentId>11e7-ef14-67dc1470-8f99-af63cc0890b3</parentId>
   <description></description>
-  <templatecontext><![CDATA[<table border="1" width="600" align="center">
+  <templatecontext><![CDATA[<table border="1" width="600" align="center" style="border-spacing:0">
     <caption>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__o2jMIm95lgyQqwm9krv" name="QZ288a920ce" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;fromname();" calculateonrefresh="true" /></span></h3>
     <h3 style="text-align: center;"><span style="font-size: x-large;"><img src="http://127.0.0.1:3390/core/dynaform/form/webeditor/editor/plugins/calctextfield/calctextfield.gif" classname="cn.myapps.runtime.dynaform.form.ejb.CalctextField" id="__87HObEKkPezEnUUMmr2" name="QZ027c859de" valuescript="#include@nbsp;@quot;fromkongzhi@quot;;@amp;#13;englishname();" calculateonrefresh="true" /></span></h3>

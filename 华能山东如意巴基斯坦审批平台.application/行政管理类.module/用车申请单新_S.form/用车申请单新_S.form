@@ -4,7 +4,7 @@
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <sortId>157484802640500000</sortId>
   <templatecontext><![CDATA[<p>&nbsp;</p>
-<table height="62" cellspacing="1" cellpadding="1" width="731" border="0" style="border-width: medium; border-style: none; border-color: initial; height: 62px; width: 731px;">
+<table height="62" cellspacing="0" cellpadding="0" width="731" border="0" style="border-width: medium; border-style: none; border-color: initial; height: 62px; width: 731px;">
     <tbody>
         <tr>
             <td nowrap="noWrap" style="border-width: medium; border-style: none; border-color: initial; text-align: right;">申请人：</td>
