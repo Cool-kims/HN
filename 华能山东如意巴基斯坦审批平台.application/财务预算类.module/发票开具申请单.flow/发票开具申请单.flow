@@ -3,7 +3,7 @@
   <name>发票开具申请单</name>
   <parentId>11e7-ef13-4f3aa555-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-11-07T18:50:00.037+08:00</lastmodify>
+  <lastmodify>2025-11-08T11:40:15.194+08:00</lastmodify>
   <subject>发票开具申请单</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -110,7 +110,7 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32463;&#21150;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;213.5625&lt;/x&gt;
+&lt;x&gt;213&lt;/x&gt;
 &lt;y&gt;51&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -202,7 +202,7 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32463;&#21150;&#37096;&#38376;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;391.5625&lt;/x&gt;
+&lt;x&gt;391&lt;/x&gt;
 &lt;y&gt;53&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -293,7 +293,7 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#31246;&#21153;&#20250;&#35745;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;586.5625&lt;/x&gt;
+&lt;x&gt;586&lt;/x&gt;
 &lt;y&gt;54&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -384,7 +384,7 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#36130;&#21153;&#37096;&#36127;&#36131;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;587.5625&lt;/x&gt;
+&lt;x&gt;587&lt;/x&gt;
 &lt;y&gt;166&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -567,8 +567,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#24635;&#20250;&#35745;&#24072;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;248&lt;/x&gt;
-&lt;y&gt;166&lt;/y&gt;
+&lt;x&gt;205.5625&lt;/x&gt;
+&lt;y&gt;165&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -590,8 +590,8 @@ getUs(@quot;&#32534;&#21046;&#20154;@quot;);]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;78&lt;/x&gt;
-&lt;y&gt;164&lt;/y&gt;
+&lt;x&gt;76.5625&lt;/x&gt;
+&lt;y&gt;171&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;

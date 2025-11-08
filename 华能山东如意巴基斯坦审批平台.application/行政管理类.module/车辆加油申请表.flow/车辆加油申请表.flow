@@ -3,7 +3,7 @@
   <name>车辆加油申请表</name>
   <parentId>11e7-ef13-4f3d166e-8f99-af63cc0890b3</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-08-05T20:24:05.632+08:00</lastmodify>
+  <lastmodify>2025-11-08T11:52:30.765+08:00</lastmodify>
   <subject>车辆加油申请表</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -110,8 +110,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#30003;&#35831;&#20154;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;200&lt;/x&gt;
-&lt;y&gt;158&lt;/y&gt;
+&lt;x&gt;199.5625&lt;/x&gt;
+&lt;y&gt;146&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -202,7 +202,7 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
 &lt;x&gt;448.5625&lt;/x&gt;
-&lt;y&gt;154&lt;/y&gt;
+&lt;y&gt;146&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -292,8 +292,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#36127;&#36131;&#20154;&#31614;&#23383;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;740.5625&lt;/x&gt;
-&lt;y&gt;151&lt;/y&gt;
+&lt;x&gt;738.5625&lt;/x&gt;
+&lt;y&gt;149&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
@@ -315,8 +315,8 @@ getjbr();]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#32467;&#26463;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;1001.5625&lt;/x&gt;
-&lt;y&gt;165&lt;/y&gt;
+&lt;x&gt;998.5625&lt;/x&gt;
+&lt;y&gt;154&lt;/y&gt;
 &lt;width&gt;50&lt;/width&gt;
 &lt;height&gt;50&lt;/height&gt;
 &lt;m_width&gt;50&lt;/m_width&gt;
