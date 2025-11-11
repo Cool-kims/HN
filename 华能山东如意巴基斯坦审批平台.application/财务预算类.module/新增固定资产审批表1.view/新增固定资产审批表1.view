@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e8-90cd-0eef9da6-8eac-4b89bdea6b09</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-8e91-248f1987-8eac-4b89bdea6b09</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'编号'},{field:'编制人',operator:'LIKE',type:'03',match:'申请人'},{field:'资产编号',operator:'LIKE',type:'03',match:'资产编号'},{field:'资产名称',operator:'LIKE',type:'03',match:'资产名称'},{field:'管理部门',operator:'LIKE',type:'03',match:'管理部门'}]]]></filterCondition>

@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11ea-8fb1-21b5b093-bcf0-133beec42517</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11ea-8f91-e37c1083-bcf0-133beec42517</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'编制人',operator:'LIKE',type:'03',match:'编制人'},{field:'开票事由',operator:'LIKE',type:'03',match:'开票事由'}]]]></filterCondition>

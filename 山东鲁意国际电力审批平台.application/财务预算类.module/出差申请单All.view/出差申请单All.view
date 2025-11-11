@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e7-ef14-ff9a3582-8f99-af63cc0890b3</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e7-ef14-ff999938-8f99-af63cc0890b3</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'C_编号'},{field:'出差要办事项',operator:'LIKE',type:'03',match:'C_出差要办事项'},{field:'编制人',operator:'LIKE',type:'03',match:'C_编制人'},{field:'编制日期',operator:'LIKE',type:'03',match:'C_编制日期'}]]]></filterCondition>

@@ -22,7 +22,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e7-ef14-67dab4d4-8f99-af63cc0890b3</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-3500-fea5c946-94e7-ef330bda161e</relatedForm>
   <permissionType>public</permissionType>
   <filterScript><![CDATA[]]></filterScript>

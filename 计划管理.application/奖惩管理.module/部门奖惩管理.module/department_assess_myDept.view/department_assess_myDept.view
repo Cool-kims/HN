@@ -22,7 +22,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f4d913-9820-539e9af1e136</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e9-7a26-62f4d910-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
   <sqlFilterScript><![CDATA[//本部门奖惩综合查询

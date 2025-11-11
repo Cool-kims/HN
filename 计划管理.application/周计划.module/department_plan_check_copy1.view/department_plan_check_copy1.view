@@ -22,7 +22,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f52746-9820-539e9af1e136</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e9-7a26-62f52744-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
   <filterCondition><![CDATA[[{field:'_pNo',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pEndTime',operator:'>=',type:'03',match:'_pEndTime1'},{field:'_pSource',operator:'LIKE',type:'03',match:'_pSource'},{field:'_pTitle',operator:'LIKE',type:'03',match:'_pTitle'},{field:'_pEndTime',operator:'<=',type:'03',match:'_pEndTime2'},{field:'_p2Type',operator:'LIKE',type:'03',match:'_p2Type'},{field:'_isDefer',operator:'LIKE',type:'03',match:'_isDefer'},{field:'_p2Department',operator:'LIKE',type:'03',match:'_p2Department'},{field:'_pResponsible',operator:'LIKE',type:'03',match:'_pResponsible'},{field:'_pCheckDepartment',operator:'LIKE',type:'03',match:'_pCheckDepartment'},{field:'_pChecker',operator:'LIKE',type:'03',match:'_pChecker'},{field:'$StateLabel',operator:'=',type:'00',match:'计划验收'}]]]></filterCondition>

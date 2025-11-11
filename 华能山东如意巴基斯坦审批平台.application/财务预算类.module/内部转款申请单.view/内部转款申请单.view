@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11ec-0f0b-936cca6a-9490-7b63f9ebffcd</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11ec-0f08-56ae6f53-9490-7b63f9ebffcd</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'部门',operator:'LIKE',type:'03',match:'经办部门'},{field:'用途',operator:'LIKE',type:'03',match:'用途'}]]]></filterCondition>

@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11ed-63ba-838260cb-b23a-7b41347f3771</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11ed-63b6-c0fdf5c3-b23a-7b41347f3771</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'支票号码',operator:'LIKE',type:'03',match:'支票号码'},{field:'用途',operator:'LIKE',type:'03',match:'用途'}]]]></filterCondition>

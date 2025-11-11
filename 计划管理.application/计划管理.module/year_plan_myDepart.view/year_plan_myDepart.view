@@ -22,7 +22,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f4b1fd-9820-539e9af1e136</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e9-7a26-62f463d1-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
   <filterCondition><![CDATA[[{field:'_pNo',operator:'LIKE',type:'03',match:'_pNo'},{field:'_pEndTime',operator:'>=',type:'03',match:'_pEndTime1'},{field:'_pType',operator:'=',type:'00',match:'年度'},{field:'_pTitle',operator:'LIKE',type:'03',match:'_pTitle'},{field:'_pEndTime',operator:'<=',type:'03',match:'_pEndTime2'},{field:'_pDepartment',operator:'LIKE',type:'03',match:'_pDepartment'},{field:'_p2Department',operator:'LIKE',type:'03',match:'_p2Department'},{field:'_pResponsible',operator:'LIKE',type:'03',match:'_pResponsible'},{field:'_pCheckDepartment',operator:'LIKE',type:'03',match:'_pCheckDepartment'},{field:'_pChecker',operator:'LIKE',type:'03',match:'_pChecker'},{field:'_isDefer',operator:'LIKE',type:'03',match:'_isDefer'},{field:'_pSource',operator:'LIKE',type:'03',match:'_pSource'},{field:'$StateLabel',operator:'IN',type:'00',match:'计划执行,执行部门主任取消审核,验收人取消审核,验收部门主任取消审核,厂领导取消审批,执行部门主任延期审核,验收人延期审核,验收部门主任延期审核,厂领导延期审批,计划验收,验收部门主任验收,厂领导验收'}]]]></filterCondition>

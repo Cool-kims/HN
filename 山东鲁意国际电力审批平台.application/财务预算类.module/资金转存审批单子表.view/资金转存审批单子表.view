@@ -20,7 +20,7 @@
   <collapsibleShowMode>normal</collapsibleShowMode>
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-5ddb-419cb4d3-b989-097caeda21f3</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[]]]></filterCondition>

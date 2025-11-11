@@ -21,7 +21,7 @@
   <collapsibleShowMode>normal</collapsibleShowMode>
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e9-7a26-62f5002b-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
   <filterCondition><![CDATA[[]]]></filterCondition>

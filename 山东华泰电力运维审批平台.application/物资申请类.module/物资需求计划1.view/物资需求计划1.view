@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e7-ef14-67e33fc7-8f99-af63cc0890b3</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e7-ef14-67e318b6-8f99-af63cc0890b3</relatedForm>
   <permissionType>public</permissionType>
   <sqlFilterScript><![CDATA[var bh = getItemValue("编号");

@@ -40,7 +40,7 @@
 	}
 })()]]></confirmActivityScript>
   <searchFormId></searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-7181-8beced3e-88b0-372d6ed18679</relatedForm>
   <permissionType>public</permissionType>
   <filterScript><![CDATA[]]></filterScript>

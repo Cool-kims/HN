@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e8-9359-78c578f5-8eac-4b89bdea6b09</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-915c-cef2d74f-8eac-4b89bdea6b09</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'采购订单号',operator:'LIKE',type:'03',match:'采购订单号'},{field:'资产编号',operator:'LIKE',type:'03',match:'资产编号'},{field:'资产明细分类',operator:'LIKE',type:'03',match:'资产明细分类'},{field:'资产名称',operator:'LIKE',type:'03',match:'资产名称'}]]]></filterCondition>

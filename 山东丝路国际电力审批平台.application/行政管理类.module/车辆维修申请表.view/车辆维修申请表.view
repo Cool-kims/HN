@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e7-ef16-893e26a7-8f99-af63cc0890b3</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e7-ef16-893dff96-8f99-af63cc0890b3</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'申请人',operator:'LIKE',type:'03',match:'C_申请人'},{field:'车辆号码',operator:'LIKE',type:'03',match:'C_车辆号码'},{field:'日期',operator:'>=',type:'03',match:'日期范围1'},{field:'日期',operator:'<=',type:'03',match:'日期范围2'}]]]></filterCondition>

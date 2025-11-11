@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e8-397f-ac833650-94e7-ef330bda161e</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-397f-38a1d595-94e7-ef330bda161e</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'工程名称',operator:'LIKE',type:'03',match:'工程名称'},{field:'项目预算',operator:'LIKE',type:'03',match:'项目预算'},{field:'费用来源',operator:'LIKE',type:'03',match:'费用来源'},{field:'地点',operator:'LIKE',type:'03',match:'地点'}]]]></filterCondition>

@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e8-a5f5-d133e684-910a-c9d6f560e02b</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-a5c9-f1e07aaa-910a-c9d6f560e02b</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'编号'},{field:'编制人',operator:'LIKE',type:'03',match:'编制人'},{field:'追加预算项目',operator:'LIKE',type:'03',match:'追加预算项目'}]]]></filterCondition>

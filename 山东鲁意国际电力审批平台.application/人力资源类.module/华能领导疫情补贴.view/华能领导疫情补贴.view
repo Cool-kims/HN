@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11ed-73d2-dffe13d2-8221-d1692677ae63</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11ed-73d0-f21f695b-8221-d1692677ae63</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'C_编号'},{field:'编制人',operator:'LIKE',type:'03',match:'编制人'},{field:'编制日期',operator:'LIKE',type:'03',match:'编制日期'}]]]></filterCondition>

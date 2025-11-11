@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e7-ef13-4f3b8fc2-8f99-af63cc0890b3</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-3274-933e0302-94e7-ef330bda161e</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'摘要',operator:'LIKE',type:'03',match:'C_摘要'},{field:'编号',operator:'LIKE',type:'03',match:'C_编号'},{field:'编制人',operator:'LIKE',type:'03',match:'编制人'},{field:'编制日期',operator:'>=',type:'03',match:'编制日期'},{field:'费用类型名称',operator:'LIKE',type:'03',match:'费用类型'}]]]></filterCondition>

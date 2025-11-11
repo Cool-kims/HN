@@ -21,7 +21,7 @@
   <collapsibleShowMode>normal</collapsibleShowMode>
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e7-ef14-ff9c7f8a-8f99-af63cc0890b3</relatedForm>
   <permissionType>public</permissionType>
   <sqlFilterScript><![CDATA[var sql="select '11e5-e41c-4daf4ef0-8038-491baf11ff74' id,'11e5-a311-b7f9f028-8332-bde5be574d88' applicaitonid,'__11e7-ef14-ff9c7f8a-8f99-af63cc0890b3' formid,'11e5-a38f-351caad9-8332-bde5be574d88' domainid, sum(item_总估算金额) as item_本月费用,item_申请月份 from sxmd.tlk_办公用品采购审批单 group by  item_申请月份";

@@ -22,7 +22,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f50029-9820-539e9af1e136</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e9-7a26-62f4d916-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
   <sqlFilterScript><![CDATA[var sql = "select * from tlk_plant_assess where 1=1 ";

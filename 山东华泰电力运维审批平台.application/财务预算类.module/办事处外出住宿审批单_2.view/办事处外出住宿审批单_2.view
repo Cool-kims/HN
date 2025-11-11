@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11ed-f51a-bbaf5cb3-9fd5-29ccd4df9cbd</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11ed-f519-8d308c36-9fd5-29ccd4df9cbd</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'申请部门',operator:'LIKE',type:'03',match:'申请部门'},{field:'出差事由',operator:'LIKE',type:'03',match:'出差事由'}]]]></filterCondition>

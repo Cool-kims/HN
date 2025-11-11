@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e8-c92a-7a97110c-910a-c9d6f560e02b</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-c921-e63e0cd7-910a-c9d6f560e02b</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'合同编号',operator:'LIKE',type:'03',match:'合同编号'},{field:'合同名称',operator:'LIKE',type:'03',match:'合同名称'}]]]></filterCondition>

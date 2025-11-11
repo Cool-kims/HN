@@ -19,7 +19,7 @@
   <collapsibleShowMode>normal</collapsibleShowMode>
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-526e-f1e58157-8c7f-45024b0e47eb</relatedForm>
   <permissionType>public</permissionType>
   <openType>1</openType>

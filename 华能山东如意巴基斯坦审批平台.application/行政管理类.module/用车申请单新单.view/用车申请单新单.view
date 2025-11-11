@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11ec-4eac-650069bc-a820-076ba649f927</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11ec-4ea4-cb46f22d-a820-076ba649f927</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[]]]></filterCondition>

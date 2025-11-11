@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e8-df2e-0169555f-b085-9104e867fe61</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e8-9df2-0d89efbf-8eac-4b89bdea6b09</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'编号',operator:'LIKE',type:'03',match:'编号'},{field:'固定资产编号',operator:'LIKE',type:'03',match:'固定资产编号'},{field:'固定资产名称',operator:'LIKE',type:'03',match:'固定资产名称'}]]]></filterCondition>

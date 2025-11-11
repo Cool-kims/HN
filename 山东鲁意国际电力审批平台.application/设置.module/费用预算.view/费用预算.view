@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e7-ef14-ff983993-8f99-af63cc0890b3</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e7-ef14-ff98127f-8f99-af63cc0890b3</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'部门',operator:'LIKE',type:'03',match:'部门'},{field:'科目位置',operator:'LIKE',type:'03',match:'科目位置'},{field:'编号',operator:'LIKE',type:'03',match:'费用类型BH'}]]]></filterCondition>

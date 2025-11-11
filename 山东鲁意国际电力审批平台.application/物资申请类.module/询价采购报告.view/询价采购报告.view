@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11ec-783a-66c33c54-b810-7bae9f65952d</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11ec-5cbc-cae7f9f3-811e-db6d5a39b39c</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'采购编号',operator:'LIKE',type:'03',match:'采购编号'},{field:'采购名称',operator:'LIKE',type:'03',match:'采购名称'}]]]></filterCondition>

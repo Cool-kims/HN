@@ -23,7 +23,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f4b1fb-9820-539e9af1e136</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <styleId>11e9-7a26-62f43cbf-9820-539e9af1e136</styleId>
   <relatedForm>__11e9-7a26-62f463d1-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>

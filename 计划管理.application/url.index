@@ -1,5 +1,5 @@
 #
-#Sat Nov 08 16:46:59 CST 2025
+#Tue Nov 11 11:31:52 CST 2025
 11e3-ed5b-85d607f1-8931-197da320cc28=/计划管理.application/工作目标.module/month_work_goal.form/返回.activity/返回.activity
 11e9-6e8b-7cab6f0c-90bd-0d6549f0be12=/计划管理.application/周计划2.module/department_plan_copy2.view/申请延期的时间.column/申请延期的时间.column
 __11e9-7a26-62f48ae5-9820-539e9af1e136=/计划管理.application/计划管理.module/department_plan_synthesis_query_myDepart_select.form/department_plan_synthesis_query_myDepart_select.form
@@ -12,8 +12,8 @@ __TjzJQ9D4RNZ1p9YPk4e=/计划管理.application/奖惩管理.module/周奖惩管
 11e9-7a26-62f5e9b4-9820-539e9af1e136=/计划管理.application/英文English.mulitlang
 __11e9-7a26-62f5c29a-9820-539e9af1e136=/计划管理.application/周计划2.module/plant_plan_simple_select_copy2.form/plant_plan_simple_select_copy2.form
 __TXkc4MG7Lz0CcrtqhDa=/计划管理.application/周计划.module/department_plan_copy1.view/延期时间.column/延期时间.column
-11e3-4839-2433d8a6-aafd-27751264211a=/计划管理.application/计划管理.module/month_plan_synthesis_query_myDepart.view/流程状态.column/流程状态.column
 11e9-6c0c-e7a1aaf5-9685-45806841e4ce=/计划管理.application/周计划测试.module/week_plan_3.view/延期理由.column/延期理由.column
+11e3-4839-2433d8a6-aafd-27751264211a=/计划管理.application/计划管理.module/month_plan_synthesis_query_myDepart.view/流程状态.column/流程状态.column
 11e9-b9c6-11a4b1cd-9c70-0ba95739f67e=/计划管理.application/计划管理.module/上月未验收厂级计划.view/计划级别.column/计划级别.column
 11e9-aef4-df6ff399-9896-1df69bbca83d=/计划管理.application/计划管理.module/上月未验收厂级计划.view/专项.column/专项.column
 11e3-b61b-6fe55720-b898-d593ad39d510=/计划管理.application/计划管理.module/department_plan_myDepart.view/流程状态.column/流程状态.column
@@ -26,23 +26,23 @@ __dALTEy2MtlDrcgOoc92=/计划管理.application/流程中心.widget
 __ceNTAVFSk7C5OlaAZFk=/计划管理.application/周计划.module/department_plan_synthesis_query_copy2.view/负责人.column/负责人.column
 11e9-7a26-62f9e1fa-9820-539e9af1e136=/计划管理.application/奖惩管理.module/部门奖惩管理.module/department_assess.form/部门绩效待办.summary/部门绩效待办.summary
 __trlPBksmiLde5wt0bPB=/计划管理.application/计划管理.module/plant_plan_myDepart_check.view/完成时间.column/完成时间.column
-__HDGfswOqqArgkd4ATs8=/计划管理.application/计划管理.module/year_plan_myCheck.view/计划编号.column/计划编号.column
 __jHQTu1rECsDytgmHOSU=/计划管理.application/计划管理.module/year_plan_myDraft.view/计划来源.column/计划来源.column
+__HDGfswOqqArgkd4ATs8=/计划管理.application/计划管理.module/year_plan_myCheck.view/计划编号.column/计划编号.column
 11e3-46c6-1f3458fa-8183-e7f4dcdf2bee=/计划管理.application/周计划.module/department_plan_defer_cancel_copy1.view/计划标题.column/计划标题.column
 11e9-6b75-253e0d7a-9685-45806841e4ce=/计划管理.application/周计划测试.module/week_plan_1.view/个人\=47班组.column/个人\=47班组.column
 11e9-6b75-6b92d088-9685-45806841e4ce=/计划管理.application/周计划测试.module/week_plan_2.view/配合人.column/配合人.column
 11e9-9cc1-604338aa-bffc-fd2f695754f0=/计划管理.application/奖惩管理.module/周奖惩管理.module/week_assess_approve.view/计划标题.column/计划标题.column
-__DsgYMk0UWT7tn8mOPgc=/计划管理.application/计划管理.module/month_plan_synthesis_query.view/计划类型.column/计划类型.column
-11e9-7a26-62fb6867-9820-539e9af1e136=/计划管理.application/计划管理.module/year_plan_check.view/year_plan_check.view
 11e3-46b2-63f5c16f-8183-e7f4dcdf2bee=/计划管理.application/计划管理.module/year_plan_defer_cancel.view/负责人.column/负责人.column
+11e9-7a26-62fb6867-9820-539e9af1e136=/计划管理.application/计划管理.module/year_plan_check.view/year_plan_check.view
+__DsgYMk0UWT7tn8mOPgc=/计划管理.application/计划管理.module/month_plan_synthesis_query.view/计划类型.column/计划类型.column
 11e9-a6f0-279971e3-82fc-f1e434779323=/计划管理.application/周计划.module/department_plan_synthesis_query_myDepart_copy1.view/导出本部门周计划.activity/导出本部门周计划.activity
 __suQmNkG697NSwihmWsq=/计划管理.application/计划管理.module/department_plan_synthesis_query.view/计划标题.column/计划标题.column
-11e9-6b75-253e0d76-9685-45806841e4ce=/计划管理.application/周计划测试.module/week_plan_1.view/计划标题.column/计划标题.column
 __BYZ5CDmjyk6MCYZ4W31=/计划管理.application/计划管理.module/month_plan_appoint_checker.view/计划编号.column/计划编号.column
+11e9-6b75-253e0d76-9685-45806841e4ce=/计划管理.application/周计划测试.module/week_plan_1.view/计划标题.column/计划标题.column
 __2rmOc8l460GRcHa4Qoe=/计划管理.application/计划管理.module/month_plan_myDepart.view/计划来源.column/计划来源.column
 11e3-4b75-df9f1c11-9e60-2fb8180195a0=/计划管理.application/奖惩管理.module/厂级奖惩管理.module/plant_assess_synthesis_query.view/计划类型.column/计划类型.column
-__JB5wqvgK5bExLDNWTxq=/计划管理.application/计划管理.module/month_plan_myDepart.view/导出excel.activity/导出excel.activity
 __eWSv3Pm7uIyruCIp2dP=/计划管理.application/计划管理.module/year_plan_myExecute.view/计划编号.column/计划编号.column
+__JB5wqvgK5bExLDNWTxq=/计划管理.application/计划管理.module/month_plan_myDepart.view/导出excel.activity/导出excel.activity
 11e9-7a26-62fa3074-9820-539e9af1e136=/计划管理.application/副总师.role
 __kds8BQoR2Xrg7y6Ygtj=/计划管理.application/周计划.module/department_plan_check_copy1.view/汇报时间.column/汇报时间.column
 11e9-6b75-253e0d78-9685-45806841e4ce=/计划管理.application/周计划测试.module/week_plan_1.view/计划来源.column/计划来源.column

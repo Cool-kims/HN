@@ -22,7 +22,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f54e5c-9820-539e9af1e136</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e9-7a26-62f52744-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
   <filterScript><![CDATA[var userId = getWebUser().getId();

@@ -22,7 +22,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e9-7a26-62f54e59-9820-539e9af1e136</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e9-7a26-62f52744-9820-539e9af1e136</relatedForm>
   <permissionType>private</permissionType>
   <filterScript><![CDATA[//我的待验收计划视图Sql

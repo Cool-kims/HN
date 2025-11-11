@@ -21,7 +21,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11ee-b8c9-bfe42073-848a-7d3c8a2cef35</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11ee-b59a-cebdf2a9-848a-7d3c8a2cef35</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[{field:'编制人',operator:'LIKE',type:'03',match:'编制人'},{field:'专题会议题',operator:'LIKE',type:'03',match:'专题会议题'}]]]></filterCondition>

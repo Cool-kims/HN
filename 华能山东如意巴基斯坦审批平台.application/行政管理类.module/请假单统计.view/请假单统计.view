@@ -22,7 +22,7 @@
   <showWaterMark>false</showWaterMark>
   <showActivityColumnType>0</showActivityColumnType>
   <searchFormId>__11e7-ef13-4f3e7614-8f99-af63cc0890b3</searchFormId>
-  <autoCompose>false</autoCompose>
+  <autoCompose>true</autoCompose>
   <relatedForm>__11e7-ef13-4f3e00da-8f99-af63cc0890b3</relatedForm>
   <permissionType>public</permissionType>
   <sqlFilterScript><![CDATA[var sql="select  id,'11e5-a311-b7f9f028-8332-bde5be574d88' applicaitonid,formid,'11e5-a38f-351caad9-8332-bde5be574d88' domainid,item_姓名,item_请假类别,item_天数,item_开始时间,item_结束时间,item_部门,item_编制日期 from sxmd.tlk_请假单 order by  item_编制日期";

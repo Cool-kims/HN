@@ -3,7 +3,7 @@
   <name>厂级计划管理</name>
   <parentId>11e9-7a26-62f43cbe-9820-539e9af1e136</parentId>
   <authorname>11e7-ef11-86509590-8f99-af63cc0890b3</authorname>
-  <lastmodify>2025-11-08T16:44:38.440+08:00</lastmodify>
+  <lastmodify>2025-11-11T11:31:52.897+08:00</lastmodify>
   <subject>厂级计划管理</subject>
   <flow>&lt;cn.myapps.runtime.workflow.element.FlowDiagram&gt;
 &lt;flowstatus&gt;16&lt;/flowstatus&gt;
@@ -115,7 +115,7 @@
 &lt;name&gt;&#35745;&#21010;&#36215;&#33609;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;2.5625&lt;/x&gt;
+&lt;x&gt;2&lt;/x&gt;
 &lt;y&gt;330&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -250,7 +250,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#35745;&#21010;&#36215;&#33609;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;-0.4375&lt;/x&gt;
+&lt;x&gt;0&lt;/x&gt;
 &lt;y&gt;192&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -371,7 +371,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#23457;&#26680;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;2.125&lt;/x&gt;
+&lt;x&gt;2&lt;/x&gt;
 &lt;y&gt;67&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -566,7 +566,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#21378;&#39046;&#23548;&#23457;&#25209;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;221.5625&lt;/x&gt;
+&lt;x&gt;221&lt;/x&gt;
 &lt;y&gt;264&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -716,7 +716,7 @@ userlist;]]&gt;&lt;/actorListScript&gt;
 &lt;name&gt;&#35745;&#21010;&#25191;&#34892;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;503.5625&lt;/x&gt;
+&lt;x&gt;503&lt;/x&gt;
 &lt;y&gt;322&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -838,7 +838,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#35745;&#21010;&#39564;&#25910;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;703.5625&lt;/x&gt;
+&lt;x&gt;703&lt;/x&gt;
 &lt;y&gt;171&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -959,7 +959,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#21378;&#39046;&#23548;&#39564;&#25910;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;937.125&lt;/x&gt;
+&lt;x&gt;937&lt;/x&gt;
 &lt;y&gt;128&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -1083,7 +1083,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#21462;&#28040;&#23457;&#26680;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;279.5625&lt;/x&gt;
+&lt;x&gt;279&lt;/x&gt;
 &lt;y&gt;43&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -1184,7 +1184,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#39564;&#25910;&#20154;&#21462;&#28040;&#23457;&#26680;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;280.5625&lt;/x&gt;
+&lt;x&gt;280&lt;/x&gt;
 &lt;y&gt;423&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -1446,7 +1446,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#21378;&#39046;&#23548;&#21462;&#28040;&#23457;&#25209;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;722.125&lt;/x&gt;
+&lt;x&gt;722&lt;/x&gt;
 &lt;y&gt;-7&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -1547,7 +1547,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#25191;&#34892;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;338.5625&lt;/x&gt;
+&lt;x&gt;338&lt;/x&gt;
 &lt;y&gt;569&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -1648,7 +1648,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#39564;&#25910;&#20154;&#24310;&#26399;&#23457;&#26680;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;524.125&lt;/x&gt;
+&lt;x&gt;524&lt;/x&gt;
 &lt;y&gt;457&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -1769,7 +1769,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#24310;&#26399;&#23457;&#26680;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;637.5625&lt;/x&gt;
+&lt;x&gt;637&lt;/x&gt;
 &lt;y&gt;601&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -1910,7 +1910,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#21378;&#39046;&#23548;&#24310;&#26399;&#23457;&#25209;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;827.5625&lt;/x&gt;
+&lt;x&gt;827&lt;/x&gt;
 &lt;y&gt;506&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -2011,7 +2011,7 @@ rtn;]]&gt;&lt;/timeLimitScript&gt;
 &lt;name&gt;&#39564;&#25910;&#37096;&#38376;&#20027;&#20219;&#39564;&#25910;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
-&lt;x&gt;920.125&lt;/x&gt;
+&lt;x&gt;920&lt;/x&gt;
 &lt;y&gt;8&lt;/y&gt;
 &lt;width&gt;150&lt;/width&gt;
 &lt;height&gt;70&lt;/height&gt;
@@ -3797,6 +3797,49 @@ rtn;&lt;/condition&gt;
 &lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
 &lt;id&gt;1574241891026&lt;/id&gt;
 &lt;name&gt;36&lt;/name&gt;
+&lt;scale&gt;0&lt;/scale&gt;
+&lt;note&gt;&lt;/note&gt;
+&lt;/cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;cn.myapps.runtime.workflow.element.Relation&gt;
+&lt;state&gt;&lt;/state&gt;
+&lt;startnodeid&gt;1383545263538&lt;/startnodeid&gt;
+&lt;endnodeid&gt;1383545356464&lt;/endnodeid&gt;
+&lt;ispassed&gt;false&lt;/ispassed&gt;
+&lt;isreturn&gt;false&lt;/isreturn&gt;
+&lt;condition&gt;//&#40664;&#35748;false,&#24403;&#21069;&#30331;&#24405;&#29992;&#25143;&#26159;&#21103;&#24635;&#24072;or&#21378;&#39046;&#23548;&#26102;true
+ 
+ var webUser = getWebUser();
+ 
+ var roles = webUser.getRoles();
+ 
+ var rtn = false;
+ 
+ for(var iter = roles.iterator();iter.hasNext();){
+ 
+ 	var role = iter.next();
+ 
+ 	var roleNo = role.getRoleNo();
+ 
+ 	if(roleNo==1004 || roleNo==1006){
+ 
+ 		rtn = true;
+ 
+ 		break;
+ 
+ 	}
+ 
+ }
+ 
+ rtn;&lt;/condition&gt;
+&lt;filtercondition&gt;&lt;/filtercondition&gt;
+&lt;editMode&gt;01&lt;/editMode&gt;
+&lt;processDescription&gt;&lt;/processDescription&gt;
+&lt;formlist&gt;&lt;/formlist&gt;
+&lt;action&gt;&lt;/action&gt;
+&lt;pointstack&gt;2;330;221;264&lt;/pointstack&gt;
+&lt;validateScript&gt;&lt;![CDATA[]]&gt;&lt;/validateScript&gt;
+&lt;id&gt;1762831868367&lt;/id&gt;
+&lt;name&gt;&lt;/name&gt;
 &lt;scale&gt;0&lt;/scale&gt;
 &lt;note&gt;&lt;/note&gt;
 &lt;/cn.myapps.runtime.workflow.element.Relation&gt;
