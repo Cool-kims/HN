@@ -19,6 +19,24 @@
   <defaultShowMode>month</defaultShowMode>
   <collapsibleShowMode>normal</collapsibleShowMode>
   <showWaterMark>false</showWaterMark>
+    <removeActivityScript><![CDATA[(function() {
+	var doc = getCurrentDocument();
+	var docid = doc.getId();
+	var docProcess = getDocProcess(getApplication());	
+	docProcess.doRemove(docid);
+})()]]></removeActivityScript>
+  <confirmActivityScript><![CDATA[(function() {
+	var doc = getCurrentDocument();
+
+	var tmp = doc.getIstmp();
+	
+	var docProcess = getDocProcess(getApplication());	
+	if(!tmp){
+		docProcess.doUpdate(doc);	
+	}else{
+		docProcess.doCreate(doc);
+	}
+})()]]></confirmActivityScript>
   <showActivityColumnType>0</showActivityColumnType>
   <autoCompose>true</autoCompose>
   <relatedForm>__11e7-ef13-4f4442c8-8f99-af63cc0890b3</relatedForm>

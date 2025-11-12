@@ -24,6 +24,24 @@
   <relatedForm>__11e7-ef13-4f3ffcc6-8f99-af63cc0890b3</relatedForm>
   <permissionType>public</permissionType>
   <filterCondition><![CDATA[[]]]></filterCondition>
+    <removeActivityScript><![CDATA[(function() {
+	var doc = getCurrentDocument();
+	var docid = doc.getId();
+	var docProcess = getDocProcess(getApplication());	
+	docProcess.doRemove(docid);
+})()]]></removeActivityScript>
+  <confirmActivityScript><![CDATA[(function() {
+	var doc = getCurrentDocument();
+
+	var tmp = doc.getIstmp();
+	
+	var docProcess = getDocProcess(getApplication());	
+	if(!tmp){
+		docProcess.doUpdate(doc);	
+	}else{
+		docProcess.doCreate(doc);
+	}
+})()]]></confirmActivityScript>
   <openType>288</openType>
   <editMode>00</editMode>
   <width>0</width>
