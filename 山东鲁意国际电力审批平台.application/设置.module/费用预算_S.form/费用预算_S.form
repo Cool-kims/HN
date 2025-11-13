@@ -2,16 +2,26 @@
 <form id="__11e7-ef14-ff983993-8f99-af63cc0890b3">
   <name>费用预算_S</name>
   <parentId>11e7-ef14-ff979d38-8f99-af63cc0890b3</parentId>
-  <sortId>151442905248200000</sortId>
-  <templatecontext><![CDATA[<p>部门：<select classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="11e7-eb79-1a3ffa40-b963-ed61b29a709b" type="text" name="部门" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" limitbyuser="false" departmentlevel="-1" relatedfield="" isdepartmentfield="true" defaultoptiontype="16" allowempty="true" discript="" filtercondition="" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01"></select>&nbsp;费用科目：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-eb7a-2e44877b-b963-ed61b29a709b" text="text" name="科目位置" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>
+  <description></description>
+  <templatecontext><![CDATA[<p>部门：<select classname="cn.myapps.runtime.dynaform.form.ejb.DepartmentField" id="11e7-eb79-1a3ffa40-b963-ed61b29a709b" type="text" name="部门" refreshonchanged="false" readonlyshowvalonly="true" isdefaultvalue="false" calculateonrefresh="false" mobile="true" valuescript="" validaterule="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" fieldtype="VALUE_TYPE_VARCHAR" texttype="text" limitbyuser="false" departmentlevel="-1" relatedfield="" isdepartmentfield="true" defaultoptiontype="16" allowempty="true" discript="" filtercondition="" processdescription="[];[]" validatelibs="" refreshmode="0" refreshfields="" editmode="01" showlog="true" width="180" widthunit="px" hidetype="parent" ishidetype="false" instantvalidate="false" attributeid="undefined"></select>&nbsp;费用科目：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-eb7a-2e44877b-b963-ed61b29a709b" text="text" name="科目位置" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>
 <p>费用编号：<input classname="cn.myapps.runtime.dynaform.form.ejb.InputField" id="11e7-eb7a-b0b922b4-b963-ed61b29a709b" text="text" name="费用类型BH" texttype="text" fieldtype="VALUE_TYPE_VARCHAR" fieldkeyevent="Tabkey" readonlyshowvalonly="true" discript="" validaterule="" valuescript="" hiddenscript="" hiddenvalue="" hiddenprintscript="" printhiddenvalue="" readonlyscript="" refreshonchanged="false" isdefaultvalue="false" calculateonrefresh="false" mobile="true" numberpattern="" processdescription="[];[]" filtercondition="" validatelibs="" editmode="01" refreshmode="0" refreshfields="" /></p>]]></templatecontext>
   <type>256</type>
+  <styleId></styleId>
   <showLog>false</showLog>
   <showLogType>default</showLogType>
   <openComment>false</openComment>
+  <commentTitleScript><![CDATA[]]></commentTitleScript>
+  <commentFlagScript><![CDATA[]]></commentFlagScript>
+  <commentHiddenScrtipt><![CDATA[]]></commentHiddenScrtipt>
+  <commentExecuteScript><![CDATA[]]></commentExecuteScript>
+  <recordMode>every</recordMode>
+  <recordModeScript><![CDATA[]]></recordModeScript>
   <showType>old</showType>
   <showWaterMark>false</showWaterMark>
-  <version>16</version>
+  <waterMarkScript></waterMarkScript>
+  <version>1</version>
+  <isopenablescript><![CDATA[]]></isopenablescript>
+  <iseditablescript><![CDATA[]]></iseditablescript>
   <mappingStr><![CDATA[{"formName":"费用预算_S","tableName":"","columnMappings":[]}]]></mappingStr>
   <orderno>0</orderno>
   <permissionType>public</permissionType>
